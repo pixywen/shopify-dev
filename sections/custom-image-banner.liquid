@@ -1,0 +1,196 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+
+<div class="custom-banner">
+  {%- if section.settings.image != blank -%}
+    <div class="custom-banner__media">
+      {{
+        section.settings.image
+        | image_url: width: 3840
+        | image_tag:
+          loading: 'lazy',
+          width: section.settings.image.width,
+          height: section.settings.image.height,
+          class: 'custom-banner__image'
+      }}
+    </div>
+  {%- endif -%}
+
+  <div class="custom-banner__content">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'heading' -%}
+          <h2 class="custom-banner__heading">{{ block.settings.heading | escape }}</h2>
+        {%- when 'text' -%}
+          <div class="custom-banner__text">{{ block.settings.text }}</div>
+        {%- when 'buttons' -%}
+          <div class="custom-banner__buttons">
+            {%- if block.settings.button_label_1 != blank -%}
+              <a href="{{ block.settings.button_link_1 }}" class="button button--primary">
+                {{ block.settings.button_label_1 | escape }}
+              </a>
+            {%- endif -%}
+          </div>
+      {%- endcase -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+<style>
+  .custom-banner {
+    margin-top: -80px;
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    overflow: hidden;
+  }
+
+  .custom-banner__media {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+
+  .custom-banner__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .custom-banner__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    z-index: 2;
+    width: 100%;
+    max-width: var(--page-width);
+    padding: 0 4rem;
+  }
+
+  .custom-banner__heading {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .custom-banner__text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  @media screen and (max-width: 749px) {
+    .custom-banner__content {
+      padding: 0 1.5rem;
+    }
+
+    .custom-banner__heading {
+      font-size: 2rem;
+    }
+
+    .custom-banner__text {
+      font-size: 1rem;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Custom Image Banner",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Banner Image"
+    },
+    {
+      "type": "select",
+      "id": "desktop_content_position",
+      "options": [
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+      "label": "Desktop Content Position"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Image Banner",
+          "label": "Heading"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Give customers details about the banner image(s) or content on the template.",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "buttons",
+      "name": "Buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label_1",
+          "default": "Button label",
+          "label": "Button Label"
+        },
+        {
+          "type": "url",
+          "id": "button_link_1",
+          "label": "Button Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Image Banner",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "buttons"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %} 

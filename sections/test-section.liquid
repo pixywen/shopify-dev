@@ -1,0 +1,67 @@
+
+<h1>测试 Section</h1>
+<p>此 Section 用于测试 Liquid 对象的取值。</p>
+
+<h2>商店信息</h2>
+<p><strong>商店名称:</strong> {{ shop.name }}</p>
+<p><strong>商店域名:</strong> {{ shop.domain }}</p>
+<p><strong>联系邮箱:</strong> {{ shop.email }}</p>
+<p><strong>货币:</strong> {{ shop.currency }}</p>
+
+<h2>客户信息</h2>
+  {% if customer %}
+    <p><strong>客户 ID:</strong> {{ customer.id }}</p>
+    <p><strong>客户邮箱:</strong> {{ customer.email }}</p>
+    <p><strong>客户姓名:</strong> {{ customer.first_name }} {{ customer.last_name }}</p>
+    <p><strong>客户总消费:</strong> {{ customer.total_spent | money }}</p>
+    <p><strong>客户订单数:</strong> {{ customer.orders_count }}</p>
+  {% else %}
+    <p>当前未登录客户。</p>
+  {% endif %}
+
+  <h2>产品信息</h2>
+  {% if product %}
+    <p><strong>产品名称:</strong> {{ product.title }}</p>
+    <p><strong>产品描述:</strong> {{ product.description }}</p>
+    <p><strong>价格:</strong> {{ product.price | money }}</p>
+    <p><strong>库存状态:</strong> {% if product.available %} 有库存 {% else %} 缺货 {% endif %}</p>
+    <p><strong>图片:</strong></p>
+    {% for image in product.images %}
+      <img src="{{ image.src }}" alt="{{ product.title }}" width="200">
+    {% endfor %}
+  {% else %}
+    <p>未检测到产品对象。</p>
+  {% endif %}
+
+<h2>所有商品</h2>
+<ul>
+  {% for product in collections.all.products %}
+    <li>
+      <a href="{{ product.url }}">
+        <h3>{{ product.title }}</h3>
+        <p>{{ product.price | money }}</p>
+        <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+      </a>
+    </li>
+  {% endfor %}
+</ul> 
+
+{% schema %}
+{
+  "name": "gg-test-section",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ],
+  "presets": [
+    {
+      "name": "gg-test-section"
+    }
+  ]
+}
+{% endschema %}
