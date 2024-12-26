@@ -3,6 +3,12 @@
 <link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-cart-notification.css' | asset_url }}" media="print" onload="this.media='all'">
 
+{% if template == 'index' %}
+  <style>
+    .section-header{margin-bottom:0}.header-wrapper--border-bottom{border-bottom:.1rem solid rgba(255,255,255,.08)}.overflow-hidden-desktop .header-wrapper,.overflow-hidden-tablet .header-wrapper{position:initial;width:initial;background:initial;color:initial;background:var(--gradient-background)}.header-wrapper summary.header__menu-item+ul span,.header-wrapper summary.header__menu-item+ul svg,.overflow-hidden-desktop .header-wrapper .disclosure__button svg,.overflow-hidden-desktop .header-wrapper .disclosure__button>span,.overflow-hidden-desktop .header-wrapper .list-menu span,.overflow-hidden-desktop .header-wrapper a svg,.overflow-hidden-desktop .header-wrapper details>span,.overflow-hidden-desktop .header-wrapper h1.header__heading span.h2,.overflow-hidden-desktop .header-wrapper summary svg,.overflow-hidden-desktop details[open]>.header__menu-item,.overflow-hidden-tablet .header-wrapper .disclosure__button svg,.overflow-hidden-tablet .header-wrapper .disclosure__button>span,.overflow-hidden-tablet .header-wrapper .list-menu span,.overflow-hidden-tablet .header-wrapper a svg,.overflow-hidden-tablet .header-wrapper details>span,.overflow-hidden-tablet .header-wrapper h1.header__heading span.h2,.overflow-hidden-tablet .header-wrapper summary svg,.overflow-hidden-tablet details[open]>.header__menu-item,.scrolled-past-header .header-wrapper .disclosure__button svg,.scrolled-past-header .header-wrapper .disclosure__button>span,.scrolled-past-header .header-wrapper .list-menu span,.scrolled-past-header .header-wrapper a svg,.scrolled-past-header .header-wrapper details>span,.scrolled-past-header .header-wrapper h1.header__heading span.h2,.scrolled-past-header .header-wrapper summary svg,.scrolled-past-header details[open]>.header__menu-item{color:rgba(var(--color-foreground),.75)!important}.header-wrapper{position:absolute;width:100%;background:0 0;color:#fff}.header-wrapper .disclosure__button svg,.header-wrapper .disclosure__button>span,.header-wrapper .list-menu span,.header-wrapper a svg,.header-wrapper details>span,.header-wrapper h1.header__heading span.h2,.header-wrapper summary svg,details[open]>.header__menu-item{color:#fff!important}.scrolled-past-header .header-wrapper{position:absolute;width:100%;background:0 0;color:rgb(var(--color-foreground))!important}.header-localization .disclosure .localization-form__select:hover{text-decoration-color:white}
+  </style>
+{% endif %}
+
 {%- if settings.predictive_search_enabled -%}
   <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
@@ -70,53 +76,6 @@
       padding-top: 0.5rem;
     }
   }
-
-  /* START: 自定义透明菜单样式 */
-  .header-wrapper {
-    position: absolute;  /* 使header浮在主图上 */
-    width: 100%;
-    z-index: 10;
-    background: rgba(255, 255, 255, 0.1) !important;  /* 半透明背景 */
-    backdrop-filter: blur(5px);  /* 磨砂玻璃效果 */
-  }
-
-  .header {
-    background: transparent;
-    padding: 1rem 3rem;
-  }
-
-  /* 菜单文字样式 */
-  .list-menu__item--link {
-    color: #ffffff;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  /* 图标颜色 */
-  .header__icon .icon {
-    color: #ffffff;
-  }
-
-  /* Logo颜色调整 */
-  .header__heading-logo {
-    filter: brightness(0) invert(1);  /* 使logo变为白色 */
-  }
-
-  /* 滚动时的样式变化 */
-  .scrolled-past-header .header-wrapper {
-    background: rgba(255, 255, 255, 0.9) !important;
-  }
-
-  .scrolled-past-header .list-menu__item--link,
-  .scrolled-past-header .header__icon .icon {
-    color: #000000;
-  }
-
-  .scrolled-past-header .header__heading-logo {
-    filter: none;
-  }
-  /* END: 自定义透明菜单样式 */
 </style>
 
 {%- style -%}
