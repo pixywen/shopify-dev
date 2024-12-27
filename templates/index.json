@@ -19,66 +19,89 @@
             "heading_size": "h0"
           }
         },
-        "button": {
-          "type": "buttons",
+        "text_DieWR4": {
+          "type": "text",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
           }
         }
       },
       "block_order": [
         "heading",
-        "button"
+        "text_DieWR4"
       ],
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
-        "image_behavior": "none",
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-3",
+        "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "gg_featured_collection_QU3GkP": {
+      "type": "gg-featured-collection",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
+        "title": "BEST SELLERS",
+        "collection": "种草系列"
+      }
+    },
+    "gg_collection_list_xfJMae": {
+      "type": "gg-collection-list",
+      "blocks": {
+        "featured_collection_EgtYJM": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "种草系列"
+          }
+        },
+        "featured_collection_8Kmcne": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hydrogen"
+          }
+        },
+        "featured_collection_yziDAL": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "automated-collection"
+          }
+        },
+        "featured_collection_68Ytwe": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_EgtYJM",
+        "featured_collection_8Kmcne",
+        "featured_collection_yziDAL",
+        "featured_collection_68Ytwe"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 2,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "padding_top": 44,
+        "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "gg_featured_collection_QU3GkP",
+    "gg_collection_list_xfJMae"
   ]
 }
