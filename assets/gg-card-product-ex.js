@@ -10,27 +10,26 @@ class ProductCardEx extends HTMLElement {
   }
 
   init() {
-    console.log('ProductCardEx initializing...'); // 添加调试日志
+    console.log('ProductCardEx initializing...'); 
     
-    // 使用 document 查找元素，因为组件可能还未挂载
-    const cardWrapper = document.querySelector('.card-wrapper');
-    if (!cardWrapper) {
-      console.log('Card wrapper not found'); // 调试日志
-      return;
-    }
+    // 使用 this 而不是 document 来限制查找范围
+    // if (!this.querySelector('.card-wrapper')) {
+    //   console.log('Card wrapper not found'); 
+    //   return;
+    // }
 
-    this.mainImage = cardWrapper.querySelector('[data-main-image]');
-    this.colorSwatches = cardWrapper.querySelectorAll('.color-swatch');
+    // 只在当前组件内查找元素
+    this.mainImage = this.querySelector('[data-main-image]');
+    this.colorSwatches = this.querySelectorAll('.color-swatch');
     
-    console.log('Main image:', this.mainImage); // 调试日志
-    console.log('Color swatches:', this.colorSwatches); // 调试日志
+    console.log('Main image:', this.mainImage);
+    console.log('Color swatches:', this.colorSwatches);
 
     if (!this.colorSwatches.length || !this.mainImage) {
-      console.log('Required elements not found'); // 调试日志
+      console.log('Required elements not found');
       return;
     }
 
-    // 保存初始状态
     this.originalImage = {
       src: this.mainImage.src,
       srcset: this.mainImage.srcset
@@ -70,29 +69,46 @@ class ProductCardEx extends HTMLElement {
     event.stopPropagation();
 
     const swatch = event.currentTarget;
-    console.log('Click:', swatch.dataset.variantImage); // 调试日志
+    const variantImage = swatch.dataset.variantImage;
     
-    const newImage = swatch.dataset.variantImage;
-    if (newImage && this.mainImage) {
-      this.updateImage(newImage);
-    }
+    // 获取基础URL和版本号
+    const baseUrl = variantImage.split('?')[0];
+    const version = variantImage.match(/\?v=\d+/)?.[0] || '';
+    
+    // 构建新的 srcset
+    const widths = [165, 360, 533, 720, 940];
+    let newSrcset = widths
+      .map(width => `${baseUrl}${version}&width=${width} ${width}w`)
+      .join(',');
+    
+    // 添加原始尺寸（不带width参数）
+    //newSrcset += `,${baseUrl}${version} 1024w`;
+
+    // 更新图片
+    this.mainImage.srcset = newSrcset;
+    this.mainImage.src = `${baseUrl}${version}&width=533`;  // 默认尺寸
+    
+    // 保持其他属性不变
+    this.mainImage.sizes = "(min-width: 1200px) 267px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)";
   }
 
   updateImage(imageUrl) {
     if (!this.mainImage || !imageUrl) return;
-    console.log('Updating image to:', imageUrl); // 调试日志
+    console.log('Updating image to:', imageUrl);
 
+    // 获取基础URL和版本号
+    const baseUrl = imageUrl.split('?')[0];
+    const version = imageUrl.match(/\?v=\d+/)?.[0] || '';
+
+    console.log('baseUrl:', baseUrl); // 调试日志
     // 构建新的 srcset
     const widths = [165, 360, 533, 720, 940, 1066];
     const newSrcset = widths
-      .map(width => {
-        const url = imageUrl.replace(/(_\d+x)?\.([^.]+)$/, `_${width}x.$2`);
-        return `${url} ${width}w`;
-      })
-      .join(', ');
+    .map(width => `${baseUrl}${version}&width=${width} ${width}w`)
+    .join(',');
 
-    this.mainImage.src = imageUrl;
     this.mainImage.srcset = newSrcset;
+    this.mainImage.src = `${baseUrl}${version}&width=533`;  // 默认尺寸
   }
 
   resetImage() {
