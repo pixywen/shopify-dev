@@ -104,7 +104,7 @@
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
-            {% render 'card-product',
+            {% render 'gg-card-product-origin',
               card_product: product,
               media_aspect_ratio: section.settings.image_ratio,
               image_shape: section.settings.image_shape,
@@ -136,7 +136,7 @@
                 endcase
               %}
               {%- assign placeholder_image = 'product-apparel-' | append: ridx -%}
-              {% render 'card-product',
+              {% render 'gg-card-product-origin',
                 show_vendor: section.settings.show_vendor,
                 media_aspect_ratio: section.settings.image_ratio,
                 image_shape: section.settings.image_shape,
@@ -199,7 +199,7 @@
 
 {% schema %}
 {
-  "name": "inner-featured-collection",
+  "name": "t:sections.featured-collection.name",
   "tag": "section",
   "class": "section",
   "disabled_on": {
@@ -497,7 +497,7 @@
   ],
   "presets": [
     {
-      "name": "inner-featured-collection"
+      "name": "GG Featured Collection-Normal"
     }
   ]
 }
