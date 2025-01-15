@@ -123,3 +123,59 @@
 .mega-menu__list--condensed .mega-menu__link {
   font-weight: normal;
 }
+
+.header-wrapper {
+  /* height: 100px; */
+  /* display: flex; */
+  /* align-items: center; */
+  background-color: #FFF;
+}
+header.header {
+  padding-bottom: 0;
+  padding-top: 0;
+  height: 100px;
+}
+
+header.header .header__inline-menu {
+  height: 100%;
+  line-height: 100px; 
+}
+
+.list-menu {
+  height: 100%;
+}
+summary.header__menu-item {
+  height: 100px;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none !important;
+  color: rgba(0, 0, 0, 1);
+}
+.mega-menu .header__menu-item span {
+  color: rgba(0, 0, 0, 1) !important;
+}
+.header__menu-item {
+  transition: .2s;
+}
+.header__menu-item[aria-expanded=true] {
+  background: rgba(0, 0, 0, 1);
+}
+.header__menu-item[aria-expanded=true] span {
+  color: white !important;
+}
+.header__menu-item:hover {
+  background: rgba(0, 0, 0, 1);
+}
+.header__menu-item:hover span {
+  color: white !important;
+  text-decoration: none;
+}
+.header-wrapper--border-bottom {
+  border-bottom: none;
+}
+.header__menu-item .icon-caret {
+  display: none;
+}
+summary.list-menu__item {
+  padding-right: 1.2rem !important;
+}
