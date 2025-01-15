@@ -171,7 +171,7 @@
         if section.settings.menu_type_desktop == 'dropdown'
           render 'header-dropdown-menu'
         elsif section.settings.menu_type_desktop != 'drawer'
-          render 'header-mega-menu'
+          render 'gg-header-mega-menu'
         endif
       endif
     %}
@@ -644,6 +644,28 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "menu_image",
+      "name": "菜单图片",
+      "settings": [
+        {
+          "type": "text",
+          "id": "menu_title",
+          "label": "菜单标题",
+          "info": "输入要匹配的菜单标题，例如：'Clothing'"
+        },
+        {
+          "type": "image_picker",
+          "id": "menu_image",
+          "label": "菜单图片"
+        },
+        {
+          "type": "url",
+          "id": "menu_link",
+          "label": "图片链接（可选）"
+        }
+      ]
     }
   ]
 }

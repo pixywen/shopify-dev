@@ -1,3 +1,41 @@
+/* 菜单图片 */
+
+.mega-menu__container {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.mega-menu__list {
+  flex: 1;
+  min-width: 0;
+}
+
+.mega-menu__image {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.mega-menu__feature-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.mega-menu__image-link:hover .mega-menu__feature-image {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 989px) {
+  .mega-menu__image {
+    display: none;
+  }
+}
+
+/* 菜单图片结束 */
+
 .mega-menu {
   position: static;
 }
