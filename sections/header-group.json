@@ -37,6 +37,37 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "menu_image_yzYhqG": {
+          "type": "menu_image",
+          "settings": {
+            "menu_title": "Clothing",
+            "menu_image": "shopify://shop_images/6_jpg.jpg",
+            "menu_link": ""
+          }
+        },
+        "menu_image_KYFgwt": {
+          "type": "menu_image",
+          "settings": {
+            "menu_title": "Packs",
+            "menu_image": "shopify://shop_images/jpg.jpg",
+            "menu_link": ""
+          }
+        },
+        "menu_image_68jr6X": {
+          "type": "menu_image",
+          "settings": {
+            "menu_title": "Accessories",
+            "menu_image": "shopify://shop_images/d_2_jpg.jpg",
+            "menu_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "menu_image_yzYhqG",
+        "menu_image_KYFgwt",
+        "menu_image_68jr6X"
+      ],
       "settings": {
         "logo_position": "middle-left",
         "menu": "link-list-1",
