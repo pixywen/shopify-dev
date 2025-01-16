@@ -1,0 +1,102 @@
+.double-banner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  width: 100%;
+}
+
+.double-banner__item {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.double-banner__image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.double-banner__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.double-banner__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 2rem;
+}
+
+.double-banner__subtitle {
+  color: #fff;
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+  text-align: center;
+}
+
+.double-banner__title {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+.double-banner__button {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.double-banner__button .icon-arrow {
+  margin-left: 0.5rem;
+}
+
+/* Hover Effects */
+.double-banner__image-wrapper:hover .double-banner__image {
+  transform: scale(1.05);
+}
+
+.double-banner__image-wrapper:hover .double-banner__content {
+  opacity: 1;
+}
+
+.double-banner__button:hover {
+  background: #f0f0f0;
+}
+
+/* Responsive */
+@media screen and (max-width: 749px) {
+  .double-banner {
+    grid-template-columns: 1fr;
+  }
+  
+  .double-banner__title {
+    font-size: 1.5rem;
+  }
+  
+  .double-banner__subtitle {
+    font-size: 0.875rem;
+  }
+  
+  .double-banner__button {
+    padding: 0.75rem 1.5rem;
+  }
+} 

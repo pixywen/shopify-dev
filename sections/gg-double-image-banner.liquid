@@ -1,0 +1,105 @@
+{{ 'gg-double-image-banner.css' | asset_url | stylesheet_tag }}
+
+<div class="double-banner section-{{ section.id }}">
+  {%- for block in section.blocks -%}
+    <div class="double-banner__item" {{ block.shopify_attributes }}>
+      {%- if block.settings.image != blank -%}
+        <div class="double-banner__image-wrapper">
+          <img
+            srcset="{%- if block.settings.image.width >= 550 -%}{{ block.settings.image | image_url: width: 550 }} 550w,{%- endif -%}
+              {%- if block.settings.image.width >= 720 -%}{{ block.settings.image | image_url: width: 720 }} 720w,{%- endif -%}
+              {%- if block.settings.image.width >= 990 -%}{{ block.settings.image | image_url: width: 990 }} 990w,{%- endif -%}
+              {%- if block.settings.image.width >= 1100 -%}{{ block.settings.image | image_url: width: 1100 }} 1100w,{%- endif -%}
+              {{ block.settings.image | image_url }} {{ block.settings.image.width }}w"
+            src="{{ block.settings.image | image_url: width: 990 }}"
+            sizes="50vw"
+            alt="{{ block.settings.image.alt | escape }}"
+            loading="lazy"
+            width="{{ block.settings.image.width }}"
+            height="{{ block.settings.image.width }}"
+            class="double-banner__image"
+          >
+          <div class="double-banner__content">
+            {%- if block.settings.subtitle != blank -%}
+              <p class="double-banner__subtitle">{{ block.settings.subtitle }}</p>
+            {%- endif -%}
+            {%- if block.settings.title != blank -%}
+              <h2 class="double-banner__title">{{ block.settings.title }}</h2>
+            {%- endif -%}
+            {%- if block.settings.button_label != blank and block.settings.button_link != blank -%}
+              <a href="{{ block.settings.button_link }}" class="double-banner__button">
+                {{ block.settings.button_label }}
+                <span class="icon-arrow">
+                  <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L6 6L1 11" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </span>
+              </a>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- else -%}
+        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
+    </div>
+  {%- endfor -%}
+</div>
+
+{% schema %}
+{
+  "name": "GG-双图片横幅",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 2,
+  "blocks": [
+    {
+      "type": "banner",
+      "name": "横幅",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "图片"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "副标题",
+          "default": "副标题"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "主标题",
+          "default": "主标题"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "按钮文字",
+          "default": "SHOP NOW"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "按钮链接"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "GG-双图片横幅",
+      "blocks": [
+        {
+          "type": "banner"
+        },
+        {
+          "type": "banner"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %} 
