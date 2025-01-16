@@ -43,30 +43,41 @@
 
 .double-banner__subtitle {
   color: #fff;
-  font-size: 1rem;
+  font-size: 24px;
+  font-weight: 400;
   margin: 0 0 0.5rem;
   text-align: center;
+  letter-spacing: 0px;
 }
 
 .double-banner__title {
   color: #fff;
-  font-size: 2rem;
+  font-size: 48px;
+  font-weight: 600;
   margin: 0 0 1.5rem;
   text-align: center;
+  letter-spacing: 0px;
+  line-height: 58px;
 }
 
 .double-banner__button {
+  width: 212px;
+  height: 54px;
   display: inline-flex;
   align-items: center;
-  padding: 1rem 2rem;
+  justify-content: center;
   background: #fff;
   color: #000;
+  font-weight: 500;
+  font-size: 18px;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  padding-left: 12px;
 }
 
 .double-banner__button .icon-arrow {
-  margin-left: 0.5rem;
+  margin-left: 25px;
+  width: 11px;
 }
 
 /* Hover Effects */
