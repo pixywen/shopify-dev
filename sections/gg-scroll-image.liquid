@@ -1,0 +1,111 @@
+<link rel="stylesheet" href="{{ 'gg-scroll-image.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'gg-scroll-image.css' | asset_url | stylesheet_tag }}</noscript>
+
+{%- style -%}
+.scroll-image-wrapper {
+  --scroll-speed: {{ section.settings.scroll_speed }}s;
+  --gap: {{ section.settings.gap }}px;
+}
+{%- endstyle -%}
+
+<div class="scroll-image-wrapper">
+  <div class="scroll-image-container">
+    <div class="scroll-image-track">
+      {%- for block in section.blocks -%}
+        <div class="scroll-image-item" {{ block.shopify_attributes }}>
+          {%- if block.settings.image != blank -%}
+            <img 
+              srcset="{%- if block.settings.image.width >= 165 -%}{{ block.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
+                {%- if block.settings.image.width >= 360 -%}{{ block.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
+                {%- if block.settings.image.width >= 535 -%}{{ block.settings.image | image_url: width: 535 }} 535w,{%- endif -%}
+                {{ block.settings.image | image_url }} {{ block.settings.image.width }}w"
+              src="{{ block.settings.image | image_url: width: 360 }}"
+              sizes="(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
+                (min-width: 750px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
+                calc(100vw - 30px)"
+              alt="{{ block.settings.image.alt | escape }}"
+              loading="lazy"
+              width="{{ block.settings.image.width }}"
+              height="{{ block.settings.image.height }}"
+            >
+          {%- else -%}
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+    <!-- 复制一份用于无缝滚动 -->
+    <div class="scroll-image-track">
+      {%- for block in section.blocks -%}
+        <div class="scroll-image-item" {{ block.shopify_attributes }}>
+          {%- if block.settings.image != blank -%}
+            <img 
+              srcset="{%- if block.settings.image.width >= 165 -%}{{ block.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
+                {%- if block.settings.image.width >= 360 -%}{{ block.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
+                {%- if block.settings.image.width >= 535 -%}{{ block.settings.image | image_url: width: 535 }} 535w,{%- endif -%}
+                {{ block.settings.image | image_url }} {{ block.settings.image.width }}w"
+              src="{{ block.settings.image | image_url: width: 360 }}"
+              sizes="(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
+                (min-width: 750px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
+                calc(100vw - 30px)"
+              alt="{{ block.settings.image.alt | escape }}"
+              loading="lazy"
+              width="{{ block.settings.image.width }}"
+              height="{{ block.settings.image.height }}"
+            >
+          {%- else -%}
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "GG-滚动品牌图",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "scroll_speed",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "s",
+      "label": "滚动速度",
+      "default": 30
+    },
+    {
+      "type": "range", 
+      "id": "gap",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "图片间距",
+      "default": 30
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "品牌图片",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "图片"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "滚动品牌图"
+    }
+  ]
+}
+{% endschema %} 

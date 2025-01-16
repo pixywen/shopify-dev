@@ -1,0 +1,49 @@
+.scroll-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-image-container {
+  display: flex;
+  width: 100%;
+}
+
+.scroll-image-track {
+  display: flex;
+  gap: var(--gap, 30px);
+  padding: 1rem 0;
+  animation: scroll var(--scroll-speed, 30s) linear infinite;
+}
+
+.scroll-image-item {
+  flex: 0 0 auto;
+}
+
+.scroll-image-item img {
+  display: block;
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* 鼠标悬停时暂停动画 */
+.scroll-image-wrapper:hover .scroll-image-track {
+  animation-play-state: paused;
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 749px) {
+  .scroll-image-item img {
+    height: 40px;
+  }
+} 
