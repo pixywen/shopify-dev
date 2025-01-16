@@ -293,6 +293,8 @@
 {%- endif -%}
 
 {% javascript %}
+ 
+
   class StickyHeader extends HTMLElement {
     constructor() {
       super();
@@ -322,6 +324,45 @@
       window.addEventListener('scroll', this.onScrollHandler, false);
 
       this.createObserver();
+
+      const headerInlineMenu = Array.from(document.querySelectorAll('.header__menu-item'))
+      headerInlineMenu.forEach(item => {
+        const detailsElement = item.closest('details'); 
+        const megaMenuContent = detailsElement.querySelector('.mega-menu__content'); 
+        item.addEventListener('mouseenter', () => {
+          this.header.classList.add('scrolled-past-header');
+        });
+        item.addEventListener('mouseleave', (event) => {
+          const isInMegaMenu = megaMenuContent && megaMenuContent.contains(event.relatedTarget);
+          const isInHeaderMenu = headerInlineMenu.some(menuItem =>
+            menuItem.contains(event.relatedTarget)
+          );
+          const hasExpandedMenu = headerInlineMenu.some(menuItem => 
+            menuItem.getAttribute('aria-expanded') === 'true'
+          );
+          console.log('item', item.getAttribute('aria-expanded'))
+          if (!isInMegaMenu && !isInHeaderMenu && !hasExpandedMenu) {
+            this.header.classList.remove('scrolled-past-header'); // 移除类名
+          }
+        });
+      })
+
+      // 全局监听鼠标移出事件
+      document.addEventListener('click', (event) => {
+        const isInHeaderMenu = Array.from(headerInlineMenu).some(menuItem =>
+          menuItem.contains(event.target)
+        );
+
+        const isInAnyMegaMenu = Array.from(headerInlineMenu).some(menuItem => {
+          const megaMenuContent = menuItem.querySelector('.mega-menu__content');
+          return megaMenuContent && megaMenuContent.contains(event.target);
+        });
+
+        // 如果点击的位置既不在 header__menu-item，也不在任何 mega-menu__content 中
+        if (!isInHeaderMenu && !isInAnyMegaMenu) {
+          this.header.classList.remove('scrolled-past-header');
+        }
+      });
     }
 
     setHeaderHeight() {
