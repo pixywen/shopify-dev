@@ -44,6 +44,54 @@
         "show_text_below": false
       }
     },
+    "gg_scroll_image_zqhRNf": {
+      "type": "gg-scroll-image",
+      "blocks": {
+        "image_87GGLL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2x.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_87GGLL"
+      ],
+      "settings": {
+        "scroll_speed": 30,
+        "gap": 30
+      }
+    },
+    "gg_double_image_banner_YFmVwF": {
+      "type": "gg-double-image-banner",
+      "blocks": {
+        "banner_npKCK9": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/1_e3d7d337-ee1e-49ef-bbcd-cf2f4f91c7c9.jpg",
+            "subtitle": "Classic collection",
+            "title": "Do-it-all Jacket",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://products/正经客机-a"
+          }
+        },
+        "banner_xrUmaj": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/2_ea2381e4-ae79-48ab-b90b-33e678f48feb.jpg",
+            "subtitle": "F/W 2024 collection",
+            "title": "Aerogel Puffer",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://products/正经客机-d"
+          }
+        }
+      },
+      "block_order": [
+        "banner_npKCK9",
+        "banner_xrUmaj"
+      ],
+      "settings": {}
+    },
     "gg_featured_collection_QU3GkP": {
       "type": "gg-featured-collection",
       "settings": {
@@ -216,6 +264,8 @@
   },
   "order": [
     "image_banner",
+    "gg_scroll_image_zqhRNf",
+    "gg_double_image_banner_YFmVwF",
     "gg_featured_collection_QU3GkP",
     "gg_collection_list_xfJMae",
     "collapsible_content_hzUqMA",
