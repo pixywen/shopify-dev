@@ -9,39 +9,20 @@
  */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
-          }
-        },
-        "text_DieWR4": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text_DieWR4"
-      ],
+    "gg_image_banner_V4rbFP": {
+      "type": "gg-image-banner",
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "small_heading_above": "Trusted By 1,500 Customers",
+        "heading": "Gear for Every Adventure",
+        "small_heading_below": "From freezing cold to rainy days, Alpargali has you covered.",
+        "button_label": "SHOP NOW",
+        "button_link": "",
+        "content_position": "center",
+        "text_size": "medium",
+        "image": "shopify://shop_images/Banner.jpg",
+        "video": "shopify://files/videos/顶部-banner视频.mp4",
+        "description": "",
+        "image_height": "medium"
       }
     },
     "gg_scroll_image_zqhRNf": {
@@ -263,7 +244,7 @@
     }
   },
   "order": [
-    "image_banner",
+    "gg_image_banner_V4rbFP",
     "gg_scroll_image_zqhRNf",
     "gg_double_image_banner_YFmVwF",
     "gg_featured_collection_QU3GkP",
