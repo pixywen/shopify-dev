@@ -554,3 +554,96 @@
   width: 100%;
   height: 100%;
 }
+
+.gg-banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.small-heading-above {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  opacity: 0.8;
+}
+
+.banner-heading {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+.small-heading-below {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner-button-wrapper {
+  margin-top: 32px;
+}
+
+.banner-button-wrapper .button {
+  display: inline-block;
+  padding: 16px 32px;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.banner-button-wrapper .button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* 响应式样式 */
+@media screen and (max-width: 768px) {
+  .banner-heading {
+    font-size: 32px;
+  }
+
+  .small-heading-above {
+    font-size: 12px;
+  }
+
+  .small-heading-below {
+    font-size: 16px;
+  }
+
+  .banner-button-wrapper .button {
+    padding: 12px 24px;
+  }
+}
+
+/* 确保内容在视频/图片上层显示 */
+.gg-banner-container {
+  position: relative;
+}
+
+.gg-banner-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); /* 添加半透明遮罩，使文字更清晰 */
+  z-index: 1;
+}
