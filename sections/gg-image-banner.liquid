@@ -5,7 +5,7 @@
   assign video_alt = section.settings.video.alt | default: section.settings.description
 -%}
 
-<div class="gg-banner-container">
+<div class="gg-banner-container" data-height="{{ section.settings.image_height | default: 'medium' }}">
   <div class="gg-banner-content">
     {%- if section.settings.small_heading_above != blank -%}
       <p class="small-heading-above">{{ section.settings.small_heading_above | escape }}</p>
@@ -42,7 +42,7 @@
   {%- endif -%}
 
   {%- if section.settings.video != blank or section.settings.video_url != blank -%}
-    <div class="gg-banner-video" style="display: none;">
+    <div class="gg-banner-video" style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
       {%- if section.settings.video == null and section.settings.video_url != null -%}
         {%- if section.settings.video_url.type == 'youtube' -%}
           <iframe
@@ -85,30 +85,23 @@
     const imageContainer = document.querySelector('.gg-banner-image');
     const videoContainer = document.querySelector('.gg-banner-video');
 
-    if (video) {
+    if (video && videoContainer) {
+      // 初始状态隐藏视频容器
+      videoContainer.style.opacity = '0';
+      videoContainer.style.display = 'block';
+
       video.addEventListener('error', function(e) {
         console.error('Video loading error:', e);
+        videoContainer.style.display = 'none';
         if (imageContainer) {
           imageContainer.style.display = 'block';
         }
       });
 
-      if (video.readyState >= 3) {
-        if (imageContainer) {
-          imageContainer.style.display = 'none';
-        }
-        if (videoContainer) {
-          videoContainer.style.display = 'block';
-        }
-      }
-
       video.addEventListener('loadeddata', function() {
-        if (imageContainer) {
-          imageContainer.style.display = 'none';
-        }
-        if (videoContainer) {
-          videoContainer.style.display = 'block';
-        }
+        // 使用淡入效果显示视频
+        videoContainer.style.transition = 'opacity 0.3s ease';
+        videoContainer.style.opacity = '1';
       });
     }
   });
