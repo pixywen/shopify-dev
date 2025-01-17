@@ -200,6 +200,7 @@ summary.list-menu__item {
 
 .scrolled-past-header .header-wrapper {
   background: white;
+  transition: .5s;
 }
 @media screen and (min-width: 990px) {
   .header--middle-left {
