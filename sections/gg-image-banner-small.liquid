@@ -1,4 +1,4 @@
-{{ 'gg-section-image-banner.css' | asset_url | stylesheet_tag }}
+{{ 'gg-section-image-banner-small.css' | asset_url | stylesheet_tag }}
 
 {%- liquid
   assign video_id = section.settings.video.id | default: section.settings.video_url.id
@@ -116,7 +116,7 @@
 
 {% schema %}
 {
-  "name": "GG-图片(视频)Banner",
+  "name": "GG-图片(视频)Banner-小",
   "settings": [
     {
       "type": "header",
@@ -241,7 +241,7 @@
   ],
   "presets": [
     {
-      "name": "GG-图片(视频)Banner"
+      "name": "GG-图片(视频)Banner-小"
     }
   ]
 }
