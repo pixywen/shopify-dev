@@ -558,10 +558,10 @@
 .gg-banner-content {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 70px;
+  transform: translateY(-50%);
   z-index: 2;
-  text-align: center;
+  text-align: left;
   color: #ffffff;
   width: 100%;
   max-width: 800px;
@@ -569,11 +569,13 @@
 }
 
 .small-heading-above {
-  font-size: 14px;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 16px;
   opacity: 0.8;
+  font-weight: 300;
+  text-decoration-line: underline;
 }
 
 .banner-heading {
@@ -581,15 +583,14 @@
   font-weight: bold;
   line-height: 1.2;
   margin: 0 0 16px;
+  color: #FFF;
 }
 
 .small-heading-below {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
   margin-bottom: 24px;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .banner-button-wrapper {
