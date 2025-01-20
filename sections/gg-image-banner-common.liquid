@@ -1,0 +1,249 @@
+{{ 'gg-section-image-banner-common.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign section_id = 'banner-' | append: section.id
+  assign video_id = section.settings.video.id | default: section.settings.video_url.id
+  assign video_alt = section.settings.video.alt | default: section.settings.description
+-%}
+
+<div class="gg-banner-container" 
+     data-height="{{ section.settings.image_height | default: 'medium' }}"
+     data-section-id="{{ section_id }}">
+  <div class="gg-banner-content">
+    {%- if section.settings.small_heading_above != blank -%}
+      <p class="small-heading-above">{{ section.settings.small_heading_above | escape }}</p>
+    {%- endif -%}
+
+    {%- if section.settings.heading != blank -%}
+      <h2 class="banner-heading">{{ section.settings.heading | escape }}</h2>
+    {%- endif -%}
+
+    {%- if section.settings.small_heading_below != blank -%}
+      <p class="small-heading-below">{{ section.settings.small_heading_below | escape }}</p>
+    {%- endif -%}
+
+    {%- if section.settings.button_label != blank -%}
+      <div class="banner-button-wrapper">
+        <a href="{{ section.settings.button_link }}" class="button">
+          {{ section.settings.button_label | escape }}
+        </a>
+      </div>
+    {%- endif -%}
+  </div>
+
+  {%- if section.settings.image != blank -%}
+    <div class="gg-banner-image" data-section-id="{{ section_id }}">
+      {%- assign image_height = section.settings.image_height | default: 'medium' -%}
+      {{ section.settings.image | image_url: width: 3840 | image_tag:
+        loading: 'eager',
+        width: section.settings.image.width,
+        height: section.settings.image.height,
+        class: "banner__media-image",
+        sizes: "100vw"
+      }}
+    </div>
+  {%- endif -%}
+
+  {%- if section.settings.video != blank or section.settings.video_url != blank -%}
+    <div class="gg-banner-video" data-section-id="{{ section_id }}" style="display: none;">
+      {%- if section.settings.video == null and section.settings.video_url != null -%}
+        {%- if section.settings.video_url.type == 'youtube' -%}
+          <iframe
+            id="video-{{ section_id }}"
+            src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1&loop=1&playlist={{ video_id }}&mute=1"
+            class="js-youtube"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+            title="{{ section.settings.description | escape }}"
+          ></iframe>
+        {%- else -%}
+          <iframe
+            id="video-{{ section_id }}"
+            src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1&loop=1&muted=1"
+            class="js-vimeo"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+            title="{{ section.settings.description | escape }}"
+          ></iframe>
+        {%- endif -%}
+      {%- else -%}
+        {{
+          section.settings.video
+          | video_tag:
+            autoplay: true,
+            loop: true,
+            muted: true,
+            playsinline: true,
+            controls: false,
+            id: 'video-' | append: section_id
+        }}
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const sectionId = '{{ section_id }}';
+    const video = document.querySelector('.gg-banner-container[data-section-id="' + sectionId + '"] iframe, ' + 
+                                      '.gg-banner-container[data-section-id="' + sectionId + '"] video');
+    const imageContainer = document.querySelector('.gg-banner-image[data-section-id="' + sectionId + '"]');
+    const videoContainer = document.querySelector('.gg-banner-video[data-section-id="' + sectionId + '"]');
+
+    console.log('Section ID:', sectionId);
+    console.log('Video:', video);
+    console.log('Image Container:', imageContainer);
+    console.log('Video Container:', videoContainer);
+
+    if (video && videoContainer) {
+      videoContainer.style.opacity = '0';
+      videoContainer.style.display = 'block';
+
+      video.addEventListener('error', function(e) {
+        console.error('Video loading error:', e);
+        videoContainer.style.display = 'none';
+        if (imageContainer) {
+          imageContainer.style.display = 'block';
+        }
+      });
+
+      video.addEventListener('loadeddata', function() {
+        videoContainer.style.transition = 'opacity 0.3s ease';
+        videoContainer.style.opacity = '1';
+      });
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "GG-通用图片(视频)Banner",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Banner Content"
+    },
+    {
+      "type": "text",
+      "id": "small_heading_above",
+      "label": "Small heading above",
+      "default": "Trusted By 1,500 Customers"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Main heading",
+      "default": "Gear for Every Adventure"
+    },
+    {
+      "type": "text",
+      "id": "small_heading_below",
+      "label": "Small heading below",
+      "default": "From freezing cold to rainy days, Alpargali has you covered."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "SHOP NOW"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "select",
+      "id": "content_position",
+      "label": "Content position",
+      "options": [
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "text_size",
+      "label": "Text size",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "medium"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Banner Image"
+    },
+    {
+      "type": "header",
+      "content": "Video"
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Video file"
+    },
+    {
+      "type": "video_url",
+      "id": "video_url",
+      "accept": ["youtube", "vimeo"],
+      "label": "Video URL",
+      "info": "Support YouTube or Vimeo URL"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "Video description",
+      "info": "Description for accessibility"
+    },
+    {
+      "type": "select",
+      "id": "image_height",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "medium",
+      "label": "Banner Height"
+    }
+  ],
+  "presets": [
+    {
+      "name": "GG-通用图片(视频)Banner"
+    }
+  ]
+}
+{% endschema %} 

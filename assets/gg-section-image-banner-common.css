@@ -1,0 +1,149 @@
+.gg-banner-container--common {
+  position: relative;
+  width: 100%;
+  padding-top: 57.5%; /* 1104/1920 = 0.575 或 57.5% */
+  overflow: hidden;
+}
+
+.gg-banner-image--common,
+.gg-banner-video--common {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 确保视频和iframe正确填充容器 */
+.gg-banner-video--common iframe,
+.gg-banner-video--common video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* 确保内容始终在最上层 */
+.gg-banner-content--common {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.gg-banner-image--common {
+  z-index: 1;
+}
+
+.gg-banner-video--common {
+  z-index: 2;
+}
+
+/* 确保遮罩层在视频之上，内容之下 */
+.gg-banner-container--common::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.small-heading-above--common {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+.banner-heading--common {
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0 0 16px;
+  color: #FFF;
+}
+
+.small-heading-below--common {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner-button-wrapper--common {
+  margin-top: 32px;
+}
+
+.banner-button-wrapper--common .button--common {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.banner-button-wrapper--common .button--common:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* 响应式样式 */
+@media screen and (max-width: 768px) {
+  .banner-heading--common {
+    font-size: 28px;
+  }
+
+  .small-heading-above--common {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+
+  .small-heading-below--common {
+    font-size: 16px;
+  }
+
+  .banner-button-wrapper--common .button--common {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gg-banner-content--common {
+    padding: 0 15px;
+  }
+
+  .banner-heading--common {
+    font-size: 24px;
+  }
+
+  .small-heading-above--common {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .small-heading-below--common {
+    font-size: 14px;
+  }
+} 
