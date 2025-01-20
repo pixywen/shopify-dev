@@ -21,6 +21,7 @@
         "text_size": "medium",
         "image": "shopify://shop_images/Banner.jpg",
         "video": "shopify://files/videos/顶部-banner视频.mp4",
+        "video_url": "",
         "description": "",
         "image_height": "medium"
       }
@@ -126,6 +127,50 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "gg_image_banner_common_ARcgWG": {
+      "type": "gg-image-banner-common",
+      "settings": {
+        "small_heading_above": "",
+        "heading": "Shell Jackets",
+        "small_heading_below": "",
+        "button_label": "SHOP NOW",
+        "button_link": "",
+        "content_position": "center",
+        "text_size": "medium",
+        "image": "shopify://shop_images/shell_jackets.jpg",
+        "video": "shopify://files/videos/下面视频- shell jackets_7201445b-1d25-4ee4-ab44-30855566ac44.mp4",
+        "description": "",
+        "image_height": "medium"
+      }
+    },
+    "gg_image_banner_common_XyH39W": {
+      "type": "gg-image-banner-common",
+      "settings": {
+        "small_heading_above": "Trusted By 1,500 Customers",
+        "heading": "Gear for Every Adventure",
+        "small_heading_below": "From freezing cold to rainy days, Alpargali has you covered.",
+        "button_label": "SHOP NOW",
+        "button_link": "",
+        "content_position": "center",
+        "text_size": "medium",
+        "description": "",
+        "image_height": "medium"
+      }
+    },
+    "gg_image_banner_common_CHdPGU": {
+      "type": "gg-image-banner-common",
+      "settings": {
+        "small_heading_above": "Trusted By 1,500 Customers",
+        "heading": "Gear for Every Adventure",
+        "small_heading_below": "From freezing cold to rainy days, Alpargali has you covered.",
+        "button_label": "SHOP NOW",
+        "button_link": "",
+        "content_position": "center",
+        "text_size": "medium",
+        "description": "",
+        "image_height": "medium"
       }
     },
     "collapsible_content_hzUqMA": {
@@ -249,6 +294,9 @@
     "gg_double_image_banner_YFmVwF",
     "gg_featured_collection_QU3GkP",
     "gg_collection_list_xfJMae",
+    "gg_image_banner_common_ARcgWG",
+    "gg_image_banner_common_XyH39W",
+    "gg_image_banner_common_CHdPGU",
     "collapsible_content_hzUqMA",
     "newsletter_niX7pB"
   ]
