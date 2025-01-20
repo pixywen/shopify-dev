@@ -6,25 +6,25 @@
   assign video_alt = section.settings.video.alt | default: section.settings.description
 -%}
 
-<div class="gg-banner-container" 
+<div class="gg-banner-container--common" 
      data-height="{{ section.settings.image_height | default: 'medium' }}"
      data-section-id="{{ section_id }}">
-  <div class="gg-banner-content">
+  <div class="gg-banner-content--common">
     {%- if section.settings.small_heading_above != blank -%}
-      <p class="small-heading-above">{{ section.settings.small_heading_above | escape }}</p>
+      <p class="small-heading-above--common">{{ section.settings.small_heading_above | escape }}</p>
     {%- endif -%}
 
     {%- if section.settings.heading != blank -%}
-      <h2 class="banner-heading">{{ section.settings.heading | escape }}</h2>
+      <h2 class="banner-heading--common">{{ section.settings.heading | escape }}</h2>
     {%- endif -%}
 
     {%- if section.settings.small_heading_below != blank -%}
-      <p class="small-heading-below">{{ section.settings.small_heading_below | escape }}</p>
+      <p class="small-heading-below--common">{{ section.settings.small_heading_below | escape }}</p>
     {%- endif -%}
 
     {%- if section.settings.button_label != blank -%}
-      <div class="banner-button-wrapper">
-        <a href="{{ section.settings.button_link }}" class="button">
+      <div class="banner-button-wrapper--common">
+        <a href="{{ section.settings.button_link }}" class="button--common">
           {{ section.settings.button_label | escape }}
         </a>
       </div>
@@ -32,24 +32,23 @@
   </div>
 
   {%- if section.settings.image != blank -%}
-    <div class="gg-banner-image" data-section-id="{{ section_id }}">
+    <div class="gg-banner-image--common" data-section-id="{{ section_id }}">
       {%- assign image_height = section.settings.image_height | default: 'medium' -%}
       {{ section.settings.image | image_url: width: 3840 | image_tag:
         loading: 'eager',
         width: section.settings.image.width,
         height: section.settings.image.height,
-        class: "banner__media-image",
+        class: "banner__media-image--common",
         sizes: "100vw"
       }}
     </div>
   {%- endif -%}
 
   {%- if section.settings.video != blank or section.settings.video_url != blank -%}
-    <div class="gg-banner-video" data-section-id="{{ section_id }}" style="display: none;">
+    <div class="gg-banner-video--common" data-section-id="{{ section_id }}" style="display: none;">
       {%- if section.settings.video == null and section.settings.video_url != null -%}
         {%- if section.settings.video_url.type == 'youtube' -%}
           <iframe
-            id="video-{{ section_id }}"
             src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=0&loop=1&playlist={{ video_id }}&mute=1&rel=0"
             class="js-youtube"
             allow="autoplay; encrypted-media"
@@ -58,7 +57,6 @@
           ></iframe>
         {%- else -%}
           <iframe
-            id="video-{{ section_id }}"
             src="https://player.vimeo.com/video/{{ video_id }}?autoplay=0&loop=1&muted=1&api=1"
             class="js-vimeo"
             allow="autoplay; encrypted-media"
@@ -74,8 +72,7 @@
             loop: true,
             muted: true,
             playsinline: true,
-            controls: false,
-            id: 'video-' | append: section_id
+            controls: false
         }}
       {%- endif -%}
     </div>
@@ -85,15 +82,17 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const sectionId = '{{ section_id }}';
-    const video = document.querySelector('.gg-banner-container[data-section-id="' + sectionId + '"] iframe, ' + 
-                                      '.gg-banner-container[data-section-id="' + sectionId + '"] video');
-    const imageContainer = document.querySelector('.gg-banner-image[data-section-id="' + sectionId + '"]');
-    const videoContainer = document.querySelector('.gg-banner-video[data-section-id="' + sectionId + '"]');
+    const video = document.querySelector(
+      '.gg-banner-container--common[data-section-id="' + sectionId + '"] .gg-banner-video--common video, ' + 
+      '.gg-banner-container--common[data-section-id="' + sectionId + '"] .gg-banner-video--common iframe'
+    );
+    const imageContainer = document.querySelector('.gg-banner-image--common[data-section-id="' + sectionId + '"]');
+    const videoContainer = document.querySelector('.gg-banner-video--common[data-section-id="' + sectionId + '"]');
 
-    console.log('Section ID:', sectionId);
-    console.log('Video:', video);
-    console.log('Image Container:', imageContainer);
-    console.log('Video Container:', videoContainer);
+    console.log('Debug - Section ID:', sectionId);
+    console.log('Debug - Video Element:', video);
+    console.log('Debug - Video Container:', videoContainer);
+    console.log('Debug - Image Container:', imageContainer);
 
     if (video && videoContainer) {
       videoContainer.style.opacity = '0';
@@ -116,7 +115,7 @@
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             if (video.tagName.toLowerCase() === 'video') {
-              video.play();
+              video.play().catch(e => console.log('Video play error:', e));
             } else if (video.tagName.toLowerCase() === 'iframe') {
               if (video.src.includes('youtube')) {
                 video.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
