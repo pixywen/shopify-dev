@@ -1,7 +1,7 @@
 .gg-banner-container--common {
   position: relative;
   width: 100%;
-  padding-top: 57.5%; /* 1104/1920 = 0.575 或 57.5% */
+  padding-top: 37.5%; /* 1104/1920 = 0.575 或 57.5% */
   overflow: hidden;
 }
 
