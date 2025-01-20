@@ -13,7 +13,11 @@
   width: 100%;
   height: 100%;
 }
-
+.banner__media-image--common {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* 确保视频和iframe正确填充容器 */
 .gg-banner-video--common iframe,
 .gg-banner-video--common video {
@@ -69,11 +73,12 @@
 }
 
 .banner-heading--common {
-  font-size: 42px;
-  font-weight: bold;
+  font-size: 48px;
+  font-weight: 400;
   line-height: 1.2;
   margin: 0 0 16px;
   color: #FFF;
+  letter-spacing: 0px;
 }
 
 .small-heading-below--common {
@@ -90,16 +95,18 @@
 }
 
 .banner-button-wrapper--common .button--common {
+  width: 212.96px;
+  height: 54.84px;
   display: inline-block;
   padding: 14px 28px;
-  background-color: #ffffff;
-  color: #000000;
+  color: #FFF;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px;
   transition: all 0.3s ease;
   border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 1);
 }
 
 .banner-button-wrapper--common .button--common:hover {
