@@ -1,0 +1,144 @@
+.gg-three-banner-container {
+  position: relative;
+  width: 100%;
+  padding: 40px 0;
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.gg-three-banner-content {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  padding: 0 0 0 70px;
+  flex-shrink: 0;
+}
+
+.small-heading-above {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  opacity: 0.8;
+  font-weight: 300;
+  text-decoration-line: underline;
+}
+
+.banner-heading {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0 0 16px;
+  color: #000;
+}
+
+.small-heading-below {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  max-width: 600px;
+}
+
+.banner-button-wrapper {
+  margin-top: 32px;
+}
+
+.banner-button-wrapper .button {
+  display: inline-block;
+  padding: 16px 32px;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.banner-button-wrapper .button:hover {
+  background-color: #333333;
+}
+
+.gg-three-banner-images {
+  display: flex;
+  gap: 20px;
+  padding-right: 70px;
+  flex-grow: 1;
+  min-width: 0; /* 防止flex子元素溢出 */
+}
+
+.banner-image-item {
+  flex: 1;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.banner-image:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 1200px) {
+  .gg-three-banner-container {
+    flex-direction: column;
+    padding: 30px 0;
+    gap: 30px;
+  }
+
+  .gg-three-banner-content {
+    padding: 0 20px;
+    margin-bottom: 0;
+  }
+
+  .gg-three-banner-images {
+    width: 100%;
+    padding: 0 20px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+
+  .gg-three-banner-images::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
+
+  .banner-image-item {
+    flex: 0 0 calc(80% - 14px);
+    min-width: 280px;
+  }
+
+  .banner-heading {
+    font-size: 32px;
+  }
+
+  .small-heading-above {
+    font-size: 16px;
+  }
+
+  .small-heading-below {
+    font-size: 16px;
+  }
+
+  .banner-button-wrapper .button {
+    padding: 12px 24px;
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .gg-three-banner-content {
+    padding-left: 40px;
+  }
+
+  .gg-three-banner-images {
+    padding-right: 40px;
+  }
+} 

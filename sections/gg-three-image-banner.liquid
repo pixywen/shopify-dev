@@ -1,0 +1,125 @@
+{{ 'gg-section-three-image-banner.css' | asset_url | stylesheet_tag }}
+
+<div class="gg-three-banner-container">
+  <div class="gg-three-banner-content">
+    {%- if section.settings.small_heading_above != blank -%}
+      <p class="small-heading-above">{{ section.settings.small_heading_above | escape }}</p>
+    {%- endif -%}
+
+    {%- if section.settings.heading != blank -%}
+      <h2 class="banner-heading">{{ section.settings.heading | escape }}</h2>
+    {%- endif -%}
+
+    {%- if section.settings.small_heading_below != blank -%}
+      <p class="small-heading-below">{{ section.settings.small_heading_below | escape }}</p>
+    {%- endif -%}
+
+    {%- if section.settings.button_label != blank -%}
+      <div class="banner-button-wrapper">
+        <a href="{{ section.settings.button_link }}" class="button">
+          {{ section.settings.button_label | escape }}
+        </a>
+      </div>
+    {%- endif -%}
+  </div>
+
+  <div class="gg-three-banner-images">
+    {%- if section.settings.image_1 != blank -%}
+      <div class="banner-image-item">
+        {{ section.settings.image_1 | image_url: width: 800 | image_tag:
+          loading: 'eager',
+          width: section.settings.image_1.width,
+          height: section.settings.image_1.height,
+          class: "banner-image"
+        }}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.image_2 != blank -%}
+      <div class="banner-image-item">
+        {{ section.settings.image_2 | image_url: width: 800 | image_tag:
+          loading: 'eager',
+          width: section.settings.image_2.width,
+          height: section.settings.image_2.height,
+          class: "banner-image"
+        }}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.image_3 != blank -%}
+      <div class="banner-image-item">
+        {{ section.settings.image_3 | image_url: width: 800 | image_tag:
+          loading: 'eager',
+          width: section.settings.image_3.width,
+          height: section.settings.image_3.height,
+          class: "banner-image"
+        }}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "GG-三图片横幅",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Banner Content"
+    },
+    {
+      "type": "text",
+      "id": "small_heading_above",
+      "label": "Small heading above",
+      "default": "ALPARGALI"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Main heading",
+      "default": "Gallary"
+    },
+    {
+      "type": "text",
+      "id": "small_heading_below",
+      "label": "Small heading below",
+      "default": "From freezing cold to rainy days, Alpargali has you covered."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "SHOP NOW"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Images"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "First Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Second Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Third Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "GG-三图片横幅"
+    }
+  ]
+}
+{% endschema %} 
