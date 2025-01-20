@@ -148,13 +148,15 @@
     "gg_image_banner_common_XyH39W": {
       "type": "gg-image-banner-common",
       "settings": {
-        "small_heading_above": "Trusted By 1,500 Customers",
-        "heading": "Gear for Every Adventure",
-        "small_heading_below": "From freezing cold to rainy days, Alpargali has you covered.",
+        "small_heading_above": "",
+        "heading": "Insulated Jackets",
+        "small_heading_below": "",
         "button_label": "SHOP NOW",
         "button_link": "",
         "content_position": "center",
         "text_size": "medium",
+        "image": "shopify://shop_images/insulated_jackets.jpg",
+        "video": "shopify://files/videos/下面视频-insulated jackets_d2396b19-2eb5-451d-9fd5-dcafff96a7d8.mp4",
         "description": "",
         "image_height": "medium"
       }
@@ -162,13 +164,15 @@
     "gg_image_banner_common_CHdPGU": {
       "type": "gg-image-banner-common",
       "settings": {
-        "small_heading_above": "Trusted By 1,500 Customers",
-        "heading": "Gear for Every Adventure",
-        "small_heading_below": "From freezing cold to rainy days, Alpargali has you covered.",
+        "small_heading_above": "",
+        "heading": "Vests",
+        "small_heading_below": "",
         "button_label": "SHOP NOW",
         "button_link": "",
         "content_position": "center",
         "text_size": "medium",
+        "image": "shopify://shop_images/vest.jpg",
+        "video": "shopify://files/videos/下面视频-vests_4ffb3692-f2c3-48ff-bbca-9e72e5b39d1b.mp4",
         "description": "",
         "image_height": "medium"
       }
