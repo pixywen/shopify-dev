@@ -1,11 +1,14 @@
 {{ 'gg-section-image-banner.css' | asset_url | stylesheet_tag }}
 
 {%- liquid
+  assign section_id = 'banner-' | append: section.id
   assign video_id = section.settings.video.id | default: section.settings.video_url.id
   assign video_alt = section.settings.video.alt | default: section.settings.description
 -%}
 
-<div class="gg-banner-container" data-height="{{ section.settings.image_height | default: 'medium' }}">
+<div class="gg-banner-container" 
+     data-height="{{ section.settings.image_height | default: 'medium' }}"
+     data-section-id="{{ section_id }}">
   <div class="gg-banner-content">
     {%- if section.settings.small_heading_above != blank -%}
       <p class="small-heading-above">{{ section.settings.small_heading_above | escape }}</p>
@@ -29,7 +32,7 @@
   </div>
 
   {%- if section.settings.image != blank -%}
-    <div class="gg-banner-image">
+    <div class="gg-banner-image" data-section-id="{{ section_id }}">
       {%- assign image_height = section.settings.image_height | default: 'medium' -%}
       {{ section.settings.image | image_url: width: 3840 | image_tag:
         loading: 'eager',
@@ -42,12 +45,11 @@
   {%- endif -%}
 
   {%- if section.settings.video != blank or section.settings.video_url != blank -%}
-    <div class="gg-banner-video" style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    <div class="gg-banner-video" data-section-id="{{ section_id }}" style="display: none;">
       {%- if section.settings.video == null and section.settings.video_url != null -%}
         {%- if section.settings.video_url.type == 'youtube' -%}
           <iframe
-            id="banner-video"
-            src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1&loop=1&playlist={{ video_id }}&mute=1"
+            src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=0&loop=1&playlist={{ video_id }}&mute=1&rel=0"
             class="js-youtube"
             allow="autoplay; encrypted-media"
             allowfullscreen
@@ -55,8 +57,7 @@
           ></iframe>
         {%- else -%}
           <iframe
-            id="banner-video"
-            src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1&loop=1&muted=1"
+            src="https://player.vimeo.com/video/{{ video_id }}?autoplay=0&loop=1&muted=1&api=1"
             class="js-vimeo"
             allow="autoplay; encrypted-media"
             allowfullscreen
@@ -67,7 +68,6 @@
         {{
           section.settings.video
           | video_tag:
-            id: 'banner-video',
             autoplay: true,
             loop: true,
             muted: true,
@@ -81,15 +81,17 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const video = document.getElementById('banner-video');
-    const imageContainer = document.querySelector('.gg-banner-image');
-    const videoContainer = document.querySelector('.gg-banner-video');
+    const sectionId = '{{ section_id }}';
+    const video = document.querySelector('.gg-banner-container[data-section-id="' + sectionId + '"] iframe, ' + 
+                                      '.gg-banner-container[data-section-id="' + sectionId + '"] video');
+    const imageContainer = document.querySelector('.gg-banner-image[data-section-id="' + sectionId + '"]');
+    const videoContainer = document.querySelector('.gg-banner-video[data-section-id="' + sectionId + '"]');
 
     if (video && videoContainer) {
-      // 初始状态隐藏视频容器
       videoContainer.style.opacity = '0';
       videoContainer.style.display = 'block';
 
+      // 处理视频错误
       video.addEventListener('error', function(e) {
         console.error('Video loading error:', e);
         videoContainer.style.display = 'none';
@@ -98,11 +100,45 @@
         }
       });
 
+      // 视频加载完成后显示
       video.addEventListener('loadeddata', function() {
-        // 使用淡入效果显示视频
         videoContainer.style.transition = 'opacity 0.3s ease';
         videoContainer.style.opacity = '1';
       });
+
+      // 创建 Intersection Observer
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // 视频进入可视区域
+            if (video.tagName.toLowerCase() === 'video') {
+              video.play();
+            } else if (video.tagName.toLowerCase() === 'iframe') {
+              if (video.src.includes('youtube')) {
+                video.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+              } else if (video.src.includes('vimeo')) {
+                video.contentWindow.postMessage('{"method":"play"}', '*');
+              }
+            }
+          } else {
+            // 视频离开可视区域
+            if (video.tagName.toLowerCase() === 'video') {
+              video.pause();
+            } else if (video.tagName.toLowerCase() === 'iframe') {
+              if (video.src.includes('youtube')) {
+                video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+              } else if (video.src.includes('vimeo')) {
+                video.contentWindow.postMessage('{"method":"pause"}', '*');
+              }
+            }
+          }
+        });
+      }, {
+        threshold: 0.3 // 当30%的视频可见时触发
+      });
+
+      // 开始观察视频容器
+      observer.observe(videoContainer);
     }
   });
 </script>
