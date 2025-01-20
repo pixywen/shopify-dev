@@ -1,0 +1,250 @@
+{{ 'gg-section-featured-products.css' | asset_url | stylesheet_tag }}
+
+<div class="gg-featured-products">
+  <div class="featured-products-header">
+    {%- if section.settings.title != blank -%}
+      <h2 class="featured-products-title">{{ section.settings.title | escape }}</h2>
+    {%- endif -%}
+  </div>
+
+  <div class="featured-products-grid">
+    {%- for block in section.blocks -%}
+      {%- if block.settings.product != blank -%}
+        {%- assign product = block.settings.product -%}
+        <div class="featured-product-card" {{ block.shopify_attributes }}>
+          <div class="product-media-container">
+            {%- for i in (1..3) -%}
+              {%- capture main_image_key -%}main_image_{{ i }}{%- endcapture -%}
+              {%- capture model_image_key -%}model_image_{{ i }}{%- endcapture -%}
+              {%- assign main_image = block.settings[main_image_key] -%}
+              {%- assign model_image = block.settings[model_image_key] -%}
+              {%- if main_image != blank -%}
+                {%- if forloop.first -%}
+                  <img 
+                    src="{{ main_image | image_url: width: 600 }}"
+                    alt="{{ product.title }}"
+                    class="product-image main-image"
+                    loading="lazy"
+                    data-main-image
+                    data-variant-index="{{ i }}"
+                  >
+                {%- endif -%}
+                
+                {%- if model_image != blank -%}
+                  <img 
+                    src="{{ model_image | image_url: width: 600 }}"
+                    alt="{{ product.title }} on model"
+                    class="product-image model-image"
+                    loading="lazy"
+                    data-model-image
+                    data-variant-index="{{ i }}"
+                  >
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+
+          <div class="product-info">
+            <h3 class="product-title">{{ product.title }}</h3>
+            
+            <div class="product-price">
+              {%- if product.compare_at_price > product.price -%}
+                <span class="price-item price-sale">{{ product.price | money }}</span>
+                <span class="price-item price-compare">{{ product.compare_at_price | money }}</span>
+              {%- else -%}
+                <span class="price-item">{{ product.price | money }}</span>
+              {%- endif -%}
+            </div>
+
+            <div class="color-options">
+              {%- for i in (1..3) -%}
+                {%- capture color_key -%}color_{{ i }}{%- endcapture -%}
+                {%- capture color_name_key -%}color_name_{{ i }}{%- endcapture -%}
+                {%- capture main_image_key -%}main_image_{{ i }}{%- endcapture -%}
+                {%- capture model_image_key -%}model_image_{{ i }}{%- endcapture -%}
+                {%- assign color = block.settings[color_key] -%}
+                {%- assign color_name = block.settings[color_name_key] -%}
+                {%- assign main_image = block.settings[main_image_key] -%}
+                {%- if main_image != blank and color != blank -%}
+                  <button 
+                    class="color-selector{% if forloop.first %} active{% endif %}"
+                    data-variant-index="{{ i }}"
+                    data-main-image="{{ main_image | image_url: width: 600 }}"
+                    data-model-image="{{ block.settings[model_image_key] | image_url: width: 600 }}"
+                    style="background-image: url({{ color | image_url: width: 100 }})"
+                    aria-label="Select {{ color_name }}"
+                  >
+                  </button>
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+<script>
+  class FeaturedProduct {
+    constructor(container) {
+      this.container = container;
+      this.mainImage = container.querySelector('[data-main-image]');
+      this.modelImage = container.querySelector('[data-model-image]');
+      this.colorSelectors = container.querySelectorAll('.color-selector');
+      
+      this.init();
+    }
+
+    init() {
+      // 处理颜色选择器点击
+      this.colorSelectors.forEach(selector => {
+        selector.addEventListener('click', () => {
+          // 移除其他选择器的active类
+          this.colorSelectors.forEach(s => s.classList.remove('active'));
+          selector.classList.add('active');
+
+          // 更新主图和模特图
+          const mainImageUrl = selector.dataset.mainImage;
+          const modelImageUrl = selector.dataset.modelImage;
+          
+          if (mainImageUrl && modelImageUrl) {
+            this.mainImage.src = mainImageUrl;
+            this.modelImage.src = modelImageUrl;
+          }
+        });
+      });
+
+      // 处理图片悬停效果
+      if (this.mainImage && this.modelImage) {
+        this.container.addEventListener('mouseenter', () => {
+          this.mainImage.style.opacity = '0';
+          this.modelImage.style.opacity = '1';
+        });
+
+        this.container.addEventListener('mouseleave', () => {
+          this.mainImage.style.opacity = '1';
+          this.modelImage.style.opacity = '0';
+        });
+      }
+    }
+  }
+
+  // 初始化所有产品卡片
+  document.addEventListener('DOMContentLoaded', () => {
+    const productCards = document.querySelectorAll('.featured-product-card');
+    productCards.forEach(card => new FeaturedProduct(card));
+  });
+</script>
+
+{% schema %}
+{
+  "name": "GG-特色商品",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Best Seller"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+          "type": "header",
+          "content": "Color Variant 1"
+        },
+        {
+          "type": "text",
+          "id": "color_name_1",
+          "label": "Color Name",
+          "default": "Black"
+        },
+        {
+          "type": "image_picker",
+          "id": "color_1",
+          "label": "Color Swatch Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "main_image_1",
+          "label": "Main Product Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "model_image_1",
+          "label": "Model Image"
+        },
+        {
+          "type": "header",
+          "content": "Color Variant 2"
+        },
+        {
+          "type": "text",
+          "id": "color_name_2",
+          "label": "Color Name",
+          "default": "White"
+        },
+        {
+          "type": "image_picker",
+          "id": "color_2",
+          "label": "Color Swatch Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "main_image_2",
+          "label": "Main Product Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "model_image_2",
+          "label": "Model Image"
+        },
+        {
+          "type": "header",
+          "content": "Color Variant 3"
+        },
+        {
+          "type": "text",
+          "id": "color_name_3",
+          "label": "Color Name"
+        },
+        {
+          "type": "image_picker",
+          "id": "color_3",
+          "label": "Color Swatch Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "main_image_3",
+          "label": "Main Product Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "model_image_3",
+          "label": "Model Image"
+        }
+      ],
+      "limit": 4
+    }
+  ],
+  "presets": [
+    {
+      "name": "GG-特色商品",
+      "blocks": [
+        {
+          "type": "product"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %} 
