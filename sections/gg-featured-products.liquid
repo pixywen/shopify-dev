@@ -89,6 +89,7 @@
   class FeaturedProduct {
     constructor(container) {
       this.container = container;
+      this.mediaContainer = container.querySelector('.product-media-container');
       this.mainImage = container.querySelector('[data-main-image]');
       this.modelImage = container.querySelector('[data-model-image]');
       this.colorSelectors = container.querySelectorAll('.color-selector');
@@ -104,11 +105,14 @@
           this.colorSelectors.forEach(s => s.classList.remove('active'));
           selector.classList.add('active');
 
-          // 更新主图和模特图
+          // 更新主图和模特图的源
           const mainImageUrl = selector.dataset.mainImage;
           const modelImageUrl = selector.dataset.modelImage;
           
           if (mainImageUrl && modelImageUrl) {
+            // 在切换图片源时，确保显示主图
+            this.mainImage.style.opacity = '1';
+            this.modelImage.style.opacity = '0';
             this.mainImage.src = mainImageUrl;
             this.modelImage.src = modelImageUrl;
           }
@@ -117,12 +121,12 @@
 
       // 处理图片悬停效果
       if (this.mainImage && this.modelImage) {
-        this.container.addEventListener('mouseenter', () => {
+        this.mediaContainer.addEventListener('mouseenter', () => {
           this.mainImage.style.opacity = '0';
           this.modelImage.style.opacity = '1';
         });
 
-        this.container.addEventListener('mouseleave', () => {
+        this.mediaContainer.addEventListener('mouseleave', () => {
           this.mainImage.style.opacity = '1';
           this.modelImage.style.opacity = '0';
         });
