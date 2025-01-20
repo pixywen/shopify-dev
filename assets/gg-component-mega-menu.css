@@ -125,12 +125,12 @@
 }
 
 .header-wrapper {
-  /* height: 100px; */
-  /* display: flex; */
-  /* align-items: center; */
+  
   background: rgba(0, 0, 0, 0);
 }
-
+.section-header {
+  z-index: 100 !important;
+}
 @media screen and (min-width: 990px) {
   .header__inline-menu {
       display: flex;
