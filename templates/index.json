@@ -94,6 +94,7 @@
         "text_size": "medium",
         "image": "shopify://shop_images/shell_jackets.jpg",
         "video": "shopify://files/videos/下面视频- shell jackets_7201445b-1d25-4ee4-ab44-30855566ac44.mp4",
+        "video_url": "",
         "description": "",
         "image_height": "medium"
       }
@@ -110,6 +111,7 @@
         "text_size": "medium",
         "image": "shopify://shop_images/insulated_jackets.jpg",
         "video": "shopify://files/videos/下面视频-insulated jackets_d2396b19-2eb5-451d-9fd5-dcafff96a7d8.mp4",
+        "video_url": "",
         "description": "",
         "image_height": "medium"
       }
@@ -126,8 +128,22 @@
         "text_size": "medium",
         "image": "shopify://shop_images/vest.jpg",
         "video": "shopify://files/videos/下面视频-vests_4ffb3692-f2c3-48ff-bbca-9e72e5b39d1b.mp4",
+        "video_url": "",
         "description": "",
         "image_height": "medium"
+      }
+    },
+    "gg_three_image_banner_wVXhhw": {
+      "type": "gg-three-image-banner",
+      "settings": {
+        "small_heading_above": "ALPARGALI",
+        "heading": "Gallary",
+        "small_heading_below": "From freezing cold to rainy days, Alpargali has you covered.",
+        "button_label": "SHOP NOW",
+        "button_link": "",
+        "image_1": "shopify://shop_images/3_a3df2a68-cdf6-4a56-bd94-69c87a13ffa0.jpg",
+        "image_2": "shopify://shop_images/1_4d7157ea-e861-4c47-9ff2-c619f56c1128.jpg",
+        "image_3": "shopify://shop_images/2_fc3f91ce-4260-4ebc-b75e-14f137b4dd33.jpg"
       }
     },
     "collapsible_content_hzUqMA": {
@@ -253,6 +269,7 @@
     "gg_image_banner_common_ARcgWG",
     "gg_image_banner_common_XyH39W",
     "gg_image_banner_common_CHdPGU",
+    "gg_three_image_banner_wVXhhw",
     "collapsible_content_hzUqMA",
     "newsletter_niX7pB"
   ]
