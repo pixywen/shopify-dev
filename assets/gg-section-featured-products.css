@@ -28,6 +28,16 @@
   position: relative;
 }
 
+.product-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.product-link:hover {
+  opacity: 0.9;
+}
+
 /* 产品图片容器 */
 .product-media-container {
   position: relative;
@@ -35,6 +45,7 @@
   overflow: hidden;
   background-color: #F5F5F5;
   margin-bottom: 16px;
+  cursor: pointer;
 }
 
 /* 产品图片样式 */
