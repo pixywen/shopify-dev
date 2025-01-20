@@ -82,53 +82,6 @@
         "show_vendor": true
       }
     },
-    "gg_collection_list_xfJMae": {
-      "type": "gg-collection-list",
-      "blocks": {
-        "featured_collection_EgtYJM": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "种草系列"
-          }
-        },
-        "featured_collection_8Kmcne": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "hydrogen"
-          }
-        },
-        "featured_collection_yziDAL": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "automated-collection"
-          }
-        },
-        "featured_collection_68Ytwe": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_EgtYJM",
-        "featured_collection_8Kmcne",
-        "featured_collection_yziDAL",
-        "featured_collection_68Ytwe"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 2,
-        "color_scheme": "",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "gg_image_banner_common_ARcgWG": {
       "type": "gg-image-banner-common",
       "settings": {
@@ -297,7 +250,6 @@
     "gg_scroll_image_zqhRNf",
     "gg_double_image_banner_YFmVwF",
     "gg_featured_collection_QU3GkP",
-    "gg_collection_list_xfJMae",
     "gg_image_banner_common_ARcgWG",
     "gg_image_banner_common_XyH39W",
     "gg_image_banner_common_CHdPGU",
