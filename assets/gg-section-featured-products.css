@@ -11,8 +11,12 @@
 }
 
 .featured-products-title {
-  font-size: 32px;
-  font-weight: 500;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 44px;
+  text-decoration-line: underline;
+  color: rgba(0, 0, 0, 1);
   margin: 0;
 }
 
@@ -20,7 +24,7 @@
 .featured-products-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 24px;
 }
 
 /* 产品卡片样式 */
@@ -41,7 +45,7 @@
 /* 产品图片容器 */
 .product-media-container {
   position: relative;
-  aspect-ratio: 3/4;
+  aspect-ratio: 430 / 600;
   overflow: hidden;
   background-color: #F5F5F5;
   margin-bottom: 16px;
@@ -73,8 +77,11 @@
 }
 
 .product-title {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 29px;
+  color: rgba(0, 0, 0, 1);
   margin: 0 0 8px;
 }
 
@@ -88,8 +95,10 @@
 }
 
 .price-sale {
-  color: #FF0000;
   margin-right: 8px;
+  font-size: 20px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 1);
 }
 
 .price-compare {
@@ -104,8 +113,8 @@
 }
 
 .color-selector {
-  width: 24px;
-  height: 24px;
+  width: 80px;
+  height: 80px;
   border: 1px solid #DDD;
   padding: 0;
   cursor: pointer;
@@ -115,7 +124,7 @@
 }
 
 .color-selector.active {
-  border: 2px solid #000;
+  border: 1px solid rgba(0, 0, 0, 1);
 }
 
 .color-selector:hover {
