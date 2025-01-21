@@ -42,13 +42,7 @@
           "type": "link_list",
           "settings": {
             "heading": "About Us",
-            "menu": "footer"
-          }
-        },
-        "brand_information_pAwAie": {
-          "type": "brand_information",
-          "settings": {
-            "show_social": true
+            "menu": "about-us"
           }
         }
       },
@@ -56,8 +50,7 @@
         "footer_newsletter_Ad7QGr",
         "link_list_a4CpeD",
         "link_list_4igcKJ",
-        "link_list_neXi9A",
-        "brand_information_pAwAie"
+        "link_list_neXi9A"
       ],
       "settings": {
         "color_scheme": "scheme-4",
