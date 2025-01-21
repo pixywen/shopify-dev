@@ -27,22 +27,28 @@
         "link_list_a4CpeD": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
+            "heading": "Need Help?",
+            "menu": "needhelp"
           }
         },
         "link_list_4igcKJ": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
+            "heading": "Shop",
+            "menu": "shop"
           }
         },
         "link_list_neXi9A": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
+            "heading": "About Us",
             "menu": "footer"
+          }
+        },
+        "brand_information_pAwAie": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
           }
         }
       },
@@ -50,7 +56,8 @@
         "footer_newsletter_Ad7QGr",
         "link_list_a4CpeD",
         "link_list_4igcKJ",
-        "link_list_neXi9A"
+        "link_list_neXi9A",
+        "brand_information_pAwAie"
       ],
       "settings": {
         "color_scheme": "scheme-4",
