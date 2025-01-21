@@ -24,33 +24,36 @@
             "success_message": "感谢订阅！"
           }
         },
-        "link_list_a4CpeD": {
-          "type": "link_list",
+        "gg_menu_list_zyjMtP": {
+          "type": "gg_menu_list",
           "settings": {
-            "heading": "Need Help?",
+            "heading": "Need Help？",
             "menu": "needhelp"
           }
         },
-        "link_list_4igcKJ": {
-          "type": "link_list",
+        "gg_menu_list_nested_b3f9EN": {
+          "type": "gg_menu_list_nested",
           "settings": {
             "heading": "Shop",
             "menu": "shop"
           }
         },
-        "link_list_neXi9A": {
-          "type": "link_list",
+        "gg_menu_social_UP6GrN": {
+          "type": "gg_menu_social",
           "settings": {
             "heading": "About Us",
-            "menu": "about-us"
+            "menu": "about-us",
+            "show_social": true,
+            "show_login_button": true,
+            "login_button_text": "Log In"
           }
         }
       },
       "block_order": [
         "footer_newsletter_Ad7QGr",
-        "link_list_a4CpeD",
-        "link_list_4igcKJ",
-        "link_list_neXi9A"
+        "gg_menu_list_zyjMtP",
+        "gg_menu_list_nested_b3f9EN",
+        "gg_menu_social_UP6GrN"
       ],
       "settings": {
         "color_scheme": "scheme-4",
