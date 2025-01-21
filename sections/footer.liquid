@@ -1,10 +1,10 @@
 {% comment %}theme-check-disable UndefinedObject{% endcomment %}
-{{ 'section-footer.css' | asset_url | stylesheet_tag }}
+{{ 'gg-section-footer.css' | asset_url | stylesheet_tag }}
 {{ 'gg-footer-newsletter.css' | asset_url | stylesheet_tag }}
 {% comment %} {{ 'component-newsletter.css' | asset_url | stylesheet_tag }} {% endcomment %}
 {{ 'component-list-menu.css' | asset_url | stylesheet_tag }}
 {{ 'component-list-payment.css' | asset_url | stylesheet_tag }}
-{{ 'component-list-social.css' | asset_url | stylesheet_tag }}
+{{ 'gg-component-list-social.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .footer {
@@ -211,6 +211,86 @@
                           </h3>
                         {%- endif -%}
                       {% endform %}
+                    </div>
+                  {%- when 'gg_menu_list' -%}
+                    <div class="footer-block__gg-menu" {{ block.shopify_attributes }}>
+                      {% comment %} {%- if block.settings.heading != blank -%}
+                        <h2 class="footer-block__heading inline-richtext">{{ block.settings.heading }}</h2>
+                      {%- endif -%} {% endcomment %}
+                      
+                      {%- if block.settings.menu != blank -%}
+                        <ul class="footer-block__gg-menu-list list-unstyled">
+                          {%- for link in block.settings.menu.links -%}
+                            <li>
+                              <a href="{{ link.url }}" class="gg-menu-item{% if link.active %} gg-menu-item--active{% endif %}">
+                                {{ link.title | escape }}
+                              </a>
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      {%- endif -%}
+                    </div>
+
+                  {%- when 'gg_menu_list_nested' -%}
+                    <div class="footer-block__gg-menu-nested" {{ block.shopify_attributes }}>
+                      {% comment %} {%- if block.settings.heading != blank -%}
+                        <h2 class="footer-block__heading inline-richtext">{{ block.settings.heading }}</h2>
+                      {%- endif -%}
+                       {% endcomment %}
+                      {%- if block.settings.menu != blank -%}
+                        <ul class="footer-block__gg-menu-list-nested list-unstyled">
+                          {%- for link in block.settings.menu.links -%}
+                            <li class="gg-menu-item-nested{% if link.links.size > 0 %} has-submenu{% endif %}">
+                              <a href="{{ link.url }}" class="gg-menu-item-nested__link{% if link.active %} gg-menu-item-nested--active{% endif %}">
+                                {{ link.title | escape }}
+                              </a>
+                              
+                              {%- if link.links.size > 0 -%}
+                                <ul class="gg-submenu-list list-unstyled">
+                                  {%- for child_link in link.links -%}
+                                    <li>
+                                      <a href="{{ child_link.url }}" class="gg-submenu-item{% if child_link.active %} gg-submenu-item--active{% endif %}">
+                                        {{ child_link.title | escape }}
+                                      </a>
+                                    </li>
+                                  {%- endfor -%}
+                                </ul>
+                              {%- endif -%}
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      {%- endif -%}
+                    </div>
+
+                  {%- when 'gg_menu_social' -%}
+                    <div class="footer-block__gg-menu-social" {{ block.shopify_attributes }}>
+                      {% comment %} {%- if block.settings.heading != blank -%}
+                        <h2 class="footer-block__heading inline-richtext">{{ block.settings.heading }}</h2>
+                      {%- endif -%}
+                       {% endcomment %}
+                      {%- if block.settings.menu != blank -%}
+                        <ul class="footer-block__gg-menu-social-list list-unstyled">
+                          {%- for link in block.settings.menu.links -%}
+                            <li>
+                              <a href="{{ link.url }}" class="gg-menu-social-item{% if link.active %} gg-menu-social-item--active{% endif %}">
+                                {{ link.title | escape }}
+                              </a>
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      {%- endif -%}
+
+                      <div class="footer-block__gg-menu-social-bottom">
+                        {%- if block.settings.show_social -%}
+                          {%- render 'gg-social-icons', class: 'gg-menu-social__list-social' -%}
+                        {%- endif -%}
+
+                        {%- if block.settings.show_login_button -%}
+                          <a href="{{ routes.account_login_url }}" class="gg-menu-social__login-button button">
+                            {{ block.settings.login_button_text | default: '登录' }}
+                          </a>
+                        {%- endif -%}
+                      </div>
                     </div>
                 {%- endcase -%}
               </div>
@@ -520,6 +600,86 @@
           "id": "success_message",
           "label": "成功提示文字",
           "default": "感谢订阅！"
+        }
+      ]
+    },
+    {
+      "type": "gg_menu_list",
+      "name": "GG 菜单列表",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "标题",
+          "default": "快速链接"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "菜单",
+          "default": "footer"
+        }
+      ]
+    },
+    {
+      "type": "gg_menu_list_nested",
+      "name": "GG 二级菜单",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "标题",
+          "default": "分类导航"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "菜单",
+          "default": "main-menu"
+        }
+      ]
+    },
+    {
+      "type": "gg_menu_social",
+      "name": "GG 菜单+社交",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "标题",
+          "default": "快速链接"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "菜单",
+          "default": "footer"
+        },
+        {
+          "type": "header",
+          "content": "社交媒体设置"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_social",
+          "label": "显示社交图标",
+          "default": true
+        },
+        {
+          "type": "header",
+          "content": "登录按钮设置"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_login_button",
+          "label": "显示登录按钮",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "login_button_text",
+          "label": "按钮文字",
+          "default": "登录"
         }
       ]
     }
