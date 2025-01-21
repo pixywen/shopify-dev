@@ -2,7 +2,9 @@ footer.footer {
   border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
   padding-top: 88px;
 }
-
+footer.footer .gg-list-social {
+    justify-content: flex-start;
+}
 .footer:not(.color-scheme-1) {
   border-top: none;
 }
