@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="{{ 'gg-scroll-image.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript>{{ 'gg-scroll-image.css' | asset_url | stylesheet_tag }}</noscript>
+<link rel="stylesheet" href="{{ 'gg-scroll-image.css' | asset_url }}">
+{% comment %} <noscript>{{ 'gg-scroll-image.css' | asset_url | stylesheet_tag }}</noscript> {% endcomment %}
 
 {%- style -%}
 .scroll-image-wrapper {
@@ -10,7 +10,7 @@
 
 <div class="scroll-image-wrapper">
   <div class="scroll-image-container">
-    <div class="scroll-image-track">
+    <div class="scroll-image-track" data-track="first">
       {%- for block in section.blocks -%}
         <div class="scroll-image-item" {{ block.shopify_attributes }}>
           {%- if block.settings.image != blank -%}
@@ -34,8 +34,31 @@
         </div>
       {%- endfor -%}
     </div>
-    <!-- 复制一份用于无缝滚动 -->
-    <div class="scroll-image-track">
+    <div class="scroll-image-track" data-track="second">
+      {%- for block in section.blocks -%}
+        <div class="scroll-image-item" {{ block.shopify_attributes }}>
+          {%- if block.settings.image != blank -%}
+            <img 
+              srcset="{%- if block.settings.image.width >= 165 -%}{{ block.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
+                {%- if block.settings.image.width >= 360 -%}{{ block.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
+                {%- if block.settings.image.width >= 535 -%}{{ block.settings.image | image_url: width: 535 }} 535w,{%- endif -%}
+                {{ block.settings.image | image_url }} {{ block.settings.image.width }}w"
+              src="{{ block.settings.image | image_url: width: 360 }}"
+              sizes="(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
+                (min-width: 750px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
+                calc(100vw - 30px)"
+              alt="{{ block.settings.image.alt | escape }}"
+              loading="lazy"
+              width="{{ block.settings.image.width }}"
+              height="{{ block.settings.image.height }}"
+            >
+          {%- else -%}
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+    <div class="scroll-image-track" data-track="third">
       {%- for block in section.blocks -%}
         <div class="scroll-image-item" {{ block.shopify_attributes }}>
           {%- if block.settings.image != blank -%}
