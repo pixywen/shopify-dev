@@ -124,11 +124,11 @@
 }
 
 /* 响应式布局 */
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   .featured-products-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-}
+} */
 
 @media screen and (max-width: 768px) {
   .featured-products-grid {

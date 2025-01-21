@@ -22,7 +22,21 @@
                 {%- if main_image != blank -%}
                   {%- if forloop.first -%}
                     <img 
-                      src="{{ main_image | image_url: width: 600 }}"
+                      srcset="
+                        {%- if main_image.width >= 165 -%}{{ main_image | image_url: width: 165 }} 165w,{%- endif -%}
+                        {%- if main_image.width >= 360 -%}{{ main_image | image_url: width: 360 }} 360w,{%- endif -%}
+                        {%- if main_image.width >= 533 -%}{{ main_image | image_url: width: 533 }} 533w,{%- endif -%}
+                        {%- if main_image.width >= 720 -%}{{ main_image | image_url: width: 720 }} 720w,{%- endif -%}
+                        {%- if main_image.width >= 940 -%}{{ main_image | image_url: width: 940 }} 940w,{%- endif -%}
+                        {{ main_image | image_url }} {{ main_image.width }}w
+                      "
+                      sizes="
+                        (min-width: 1400px) 320px,
+                        (min-width: 768px) calc((100vw - 80px) / 4),
+                        (min-width: 480px) calc((100vw - 40px) / 2),
+                        calc(100vw - 30px)
+                      "
+                      src="{{ main_image | image_url: width: 533 }}"
                       alt="{{ product.title }}"
                       class="product-image main-image"
                       loading="lazy"
@@ -33,7 +47,21 @@
                   
                   {%- if model_image != blank -%}
                     <img 
-                      src="{{ model_image | image_url: width: 600 }}"
+                      srcset="
+                        {%- if model_image.width >= 165 -%}{{ model_image | image_url: width: 165 }} 165w,{%- endif -%}
+                        {%- if model_image.width >= 360 -%}{{ model_image | image_url: width: 360 }} 360w,{%- endif -%}
+                        {%- if model_image.width >= 533 -%}{{ model_image | image_url: width: 533 }} 533w,{%- endif -%}
+                        {%- if model_image.width >= 720 -%}{{ model_image | image_url: width: 720 }} 720w,{%- endif -%}
+                        {%- if model_image.width >= 940 -%}{{ model_image | image_url: width: 940 }} 940w,{%- endif -%}
+                        {{ model_image | image_url }} {{ model_image.width }}w
+                      "
+                      sizes="
+                        (min-width: 1400px) 320px,
+                        (min-width: 768px) calc((100vw - 80px) / 4),
+                        (min-width: 480px) calc((100vw - 40px) / 2),
+                        calc(100vw - 30px)
+                      "
+                      src="{{ model_image | image_url: width: 533 }}"
                       alt="{{ product.title }} on model"
                       class="product-image model-image"
                       loading="lazy"
