@@ -130,7 +130,6 @@
     }
 
     init() {
-      // 处理颜色选择器点击
       this.colorSelectors.forEach(selector => {
         selector.addEventListener('click', () => {
           // 移除其他选择器的active类
@@ -145,7 +144,25 @@
             // 在切换图片源时，确保显示主图
             this.mainImage.style.opacity = '1';
             this.modelImage.style.opacity = '0';
+            
+            // 更新主图的所有图片源
+            this.mainImage.srcset = `
+              ${mainImageUrl.replace('600x', '165x')} 165w,
+              ${mainImageUrl.replace('600x', '360x')} 360w,
+              ${mainImageUrl.replace('600x', '533x')} 533w,
+              ${mainImageUrl.replace('600x', '720x')} 720w,
+              ${mainImageUrl.replace('600x', '940x')} 940w
+            `;
             this.mainImage.src = mainImageUrl;
+
+            // 更新模特图的所有图片源
+            this.modelImage.srcset = `
+              ${modelImageUrl.replace('600x', '165x')} 165w,
+              ${modelImageUrl.replace('600x', '360x')} 360w,
+              ${modelImageUrl.replace('600x', '533x')} 533w,
+              ${modelImageUrl.replace('600x', '720x')} 720w,
+              ${modelImageUrl.replace('600x', '940x')} 940w
+            `;
             this.modelImage.src = modelImageUrl;
           }
         });
