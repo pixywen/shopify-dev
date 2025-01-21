@@ -38,24 +38,40 @@
 .footer-newsletter__input {
   width: 100%;
   padding: 1rem;
-  border: 1px solid rgba(var(--color-foreground), 0.1);
+  border: none;
   border-radius: 0;
   background: transparent;
   color: rgb(var(--color-foreground));
+  font-size: 24px;
+  font-weight: 400;
+  border-bottom: 0.5px solid rgba(121, 121, 121, 1);
+  
+}
+
+input.footer-newsletter__input:focus-visible {
+  outline: none !important;
+  outline-offset: unset;
+  box-shadow: none;
 }
 
 /* 提交按钮样式 */
 .footer-newsletter__submit {
-  width: 100%;
-  padding: 1rem;
-  background-color: rgb(var(--color-button));
-  color: rgb(var(--color-button-text));
+  width: 184px;
+  height: 40px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 29px;
+  color: rgba(0, 0, 0, 1);
   border: none;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: 500;
+  min-height: auto;
+  margin-top: 53px;
 }
-
+.footer-newsletter__submit::after{
+  content: none;
+}
 /* 消息提示样式 */
 .footer-newsletter__message {
   margin-top: 1rem;
@@ -71,11 +87,7 @@
 }
 
 /* 响应式布局 */
-@media screen and (min-width: 750px) {
-  .footer-newsletter__field-wrapper {
-    flex-direction: row;
-  }
-  
+@media screen and (max-width: 750px) {
   .footer-newsletter__submit {
     width: auto;
     min-width: 120px;

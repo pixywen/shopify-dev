@@ -1,5 +1,6 @@
-.footer {
+footer.footer {
   border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  padding-top: 88px;
 }
 
 .footer:not(.color-scheme-1) {
@@ -7,10 +8,31 @@
 }
 
 .footer__content-top {
-  padding-bottom: 5rem;
+  padding: 0 225px;
   display: block;
 }
+.footer__blocks-wrapper  {
+  justify-content: space-between;
+}
+.footer-block__heading {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 29px;
+  color: rgba(255, 255, 255, 1);
+  text-align: left;
+}
+.footer-newsletter__text {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  text-align: left;
+}
 
+.footer .footer-block {
+  max-width: 280px;
+  min-width: 270px;
+}
 @media screen and (max-width: 749px) {
   .footer .grid {
     display: block;
@@ -33,15 +55,16 @@
   }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (max-width: 750px) {
   .footer__content-top .grid {
     row-gap: 6rem;
     margin-bottom: 0;
+    padding: 0;
   }
+
 }
 
 .footer__content-bottom {
-  border-top: solid 0.1rem rgba(var(--color-foreground), 0.08);
   padding-top: 3rem;
 }
 
@@ -496,11 +519,13 @@
     }
   }
 
-  @media screen and (min-width: 750px) {
+  @media screen and (max-width: 750px) {
     .footer__content-top .grid {
       margin-left: -3rem;
     }
-
+    .footer__content-top {
+      padding: 0;
+    }
     .footer__content-top .grid__item {
       padding-left: 3rem;
     }
@@ -552,29 +577,30 @@
 
 /* 登录按钮样式 */
 .gg-menu-social__login-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 12rem;
-  padding: 1rem 2rem;
-  background-color: rgb(var(--color-button));
-  color: rgb(var(--color-button-text));
-  border: none;
-  border-radius: 0.4rem;
-  font-size: 1.4rem;
-  font-weight: 500;
+  width: 172px;
+  height: 44px;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 1);
   text-decoration: none;
   text-align: center;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  background: none;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  min-height: auto;
 }
-
+.gg-menu-social__login-button::after {
+  content: none;
+}
 .gg-menu-social__login-button:hover {
   background-color: rgba(var(--color-button), 0.8);
 }
 
 /* 响应式调整 */
-@media screen and (min-width: 750px) {
+@media screen and (max-width: 750px) {
   .footer-block__gg-menu-social-bottom {
     flex-direction: row;
     align-items: center;
@@ -616,12 +642,15 @@
 /* 一级菜单链接样式 - 加粗和下划线 */
 .gg-menu-item-nested__link {
   display: inline-block;
-  padding: 0.8rem 0;
+  padding: 0;
   color: rgb(var(--color-foreground));
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: 600; /* 加粗 */
-  border-bottom: 1px solid rgba(var(--color-foreground), 0.2); /* 下划线 */
   transition: all 0.3s ease;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 22px;
 }
 
 /* 一级菜单链接悬停效果 */
@@ -637,17 +666,12 @@
 
 /* 二级菜单列表容器 */
 .gg-submenu-list {
-  margin-top: 0.8rem;
-  margin-left: 1.6rem;
-  padding-left: 1.2rem;
-  border-left: 1px solid rgba(var(--color-foreground), 0.08);
+  
 }
 
 /* 二级菜单项链接 - 普通样式，无下划线 */
 .gg-submenu-item {
   display: inline-block;
-  padding: 0.6rem 0;
-  margin: 0.4rem 0;
   color: rgba(var(--color-foreground), 0.75);
   text-decoration: none;
   font-size: 0.9em;
@@ -667,7 +691,7 @@
 }
 
 /* 响应式调整 */
-@media screen and (min-width: 750px) {
+@media screen and (max-width: 750px) {
   /* 调整桌面端间距 */
   .footer-block__gg-menu-list-nested {
     gap: 1.6rem;
@@ -715,11 +739,12 @@
   padding: 0.8rem 2rem;
   margin: 0.4rem 0;
   border-radius: 3rem;
-  background-color: rgba(var(--color-foreground), 0.04);
   color: rgb(var(--color-foreground));
   text-decoration: none;
   font-size: 1.4rem;
   transition: all 0.3s ease;
+  border-radius: 24.09px;
+  border: 1px solid rgba(255, 255, 255, 1);
 }
 
 /* 菜单项悬停效果 */
@@ -730,8 +755,7 @@
 
 /* 菜单项激活状态 */
 .gg-menu-item--active {
-  background-color: rgb(var(--color-foreground));
-  color: rgb(var(--color-background));
+  color: #FFF;
 }
 
 /* 响应式调整 */
