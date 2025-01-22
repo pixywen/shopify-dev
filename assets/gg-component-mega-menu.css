@@ -3,16 +3,26 @@
 .mega-menu__container {
   display: flex;
   align-items: flex-start;
-  gap: 3rem;
+  gap: 85px;
+  padding: 0 74px;
 }
 
 .mega-menu__list {
   flex: 1;
   min-width: 0;
+  padding-left: 0;
 }
 
+.mega-menu__list a {
+  font-size: 20px;
+  font-weight: 600;
+}
+.mega-menu__list .list-unstyled a {
+  font-weight: 400;
+}
 .mega-menu__image {
-  width: 300px;
+  width: 450px;
+  height: 300px;
   flex-shrink: 0;
 }
 
@@ -20,7 +30,7 @@
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 8px;
+  object-fit: cover;
   transition: transform 0.3s ease;
 }
 
@@ -70,13 +80,15 @@
 .mega-menu[open] .mega-menu__content {
   opacity: 1;
   transform: translateY(0);
+  margin: auto;
+  max-width: 1397px;
 }
 
 .mega-menu__list {
-  display: grid;
-  gap: 1.8rem 4rem;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  display: flex;
+  justify-content: space-between;
   list-style: none;
+  flex: 1;
 }
 
 .mega-menu__link {
