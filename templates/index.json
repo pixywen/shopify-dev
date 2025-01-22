@@ -212,88 +212,6 @@
         "image_3": "shopify://shop_images/2_fc3f91ce-4260-4ebc-b75e-14f137b4dd33.jpg"
       }
     },
-    "collapsible_content_hzUqMA": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_V6rRHk": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "What size should I choose?",
-            "icon": "none",
-            "row_content": "<p>What size should I choose?</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_wjFDEk": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How can I return a product?",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_YKHJG7": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can I change my order?",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_GXW4Ct": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How to care for my jacket?",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_kMNghH": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Do l need to set up an account to place an order?",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_kweGtM": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Why was my order canceled?",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_V6rRHk",
-        "collapsible_row_wjFDEk",
-        "collapsible_row_YKHJG7",
-        "collapsible_row_GXW4Ct",
-        "collapsible_row_kMNghH",
-        "collapsible_row_kweGtM"
-      ],
-      "disabled": true,
-      "settings": {
-        "caption": "",
-        "heading": "<strong>FAQs</strong>",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "",
-        "container_color_scheme": "",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "newsletter_niX7pB": {
       "type": "newsletter",
       "blocks": {
@@ -326,6 +244,44 @@
         "padding_top": 80,
         "padding_bottom": 52
       }
+    },
+    "gg_newsletter_XhcArK": {
+      "type": "gg-newsletter",
+      "blocks": {
+        "heading_J64CAh": {
+          "type": "heading",
+          "settings": {
+            "heading": "Let's Stay Connected",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_ULyQLQ": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Subscribe to get special offers, free giveaways, and exclusive deals.</p>"
+          }
+        },
+        "email_form_Dp6WrN": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_J64CAh",
+        "paragraph_ULyQLQ",
+        "email_form_Dp6WrN"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "show_bottom_content": true,
+        "feature1_text": "Free Shipping over $169",
+        "feature2_text": "2 Kickstarter Successful Campaigns",
+        "feature3_text": "Lifetime Guarantee",
+        "feature4_text": "Trusted By 15,00+ Customers"
+      }
     }
   },
   "order": [
@@ -337,7 +293,7 @@
     "gg_image_banner_common_XyH39W",
     "gg_image_banner_common_CHdPGU",
     "gg_three_image_banner_wVXhhw",
-    "collapsible_content_hzUqMA",
-    "newsletter_niX7pB"
+    "newsletter_niX7pB",
+    "gg_newsletter_XhcArK"
   ]
 }
