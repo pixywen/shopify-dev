@@ -120,6 +120,64 @@
           </div>
       {%- endcase -%}
     {%- endfor -%}
+    
+    {% if section.settings.show_bottom_content %}
+      <div class="newsletter__bottom-content">
+        <div class="newsletter__features">
+          {% if section.settings.feature1_icon != blank or section.settings.feature1_text != blank %}
+            <div class="newsletter__feature">
+              {% if section.settings.feature1_icon != blank %}
+                <div class="newsletter__feature-icon">
+                  {{ section.settings.feature1_icon | inline_svg }}
+                </div>
+              {% endif %}
+              {% if section.settings.feature1_text != blank %}
+                <p class="newsletter__feature-text">{{ section.settings.feature1_text }}</p>
+              {% endif %}
+            </div>
+          {% endif %}
+          
+          {% if section.settings.feature2_icon != blank or section.settings.feature2_text != blank %}
+            <div class="newsletter__feature">
+              {% if section.settings.feature2_icon != blank %}
+                <div class="newsletter__feature-icon">
+                  {{ section.settings.feature2_icon | inline_svg }}
+                </div>
+              {% endif %}
+              {% if section.settings.feature2_text != blank %}
+                <p class="newsletter__feature-text">{{ section.settings.feature2_text }}</p>
+              {% endif %}
+            </div>
+          {% endif %}
+          
+          {% if section.settings.feature3_icon != blank or section.settings.feature3_text != blank %}
+            <div class="newsletter__feature">
+              {% if section.settings.feature3_icon != blank %}
+                <div class="newsletter__feature-icon">
+                  {{ section.settings.feature3_icon | inline_svg }}
+                </div>
+              {% endif %}
+              {% if section.settings.feature3_text != blank %}
+                <p class="newsletter__feature-text">{{ section.settings.feature3_text }}</p>
+              {% endif %}
+            </div>
+          {% endif %}
+          
+          {% if section.settings.feature4_icon != blank or section.settings.feature4_text != blank %}
+            <div class="newsletter__feature">
+              {% if section.settings.feature4_icon != blank %}
+                <div class="newsletter__feature-icon">
+                  {{ section.settings.feature4_icon | inline_svg }}
+                </div>
+              {% endif %}
+              {% if section.settings.feature4_text != blank %}
+                <p class="newsletter__feature-text">{{ section.settings.feature4_text }}</p>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
   </div>
 </div>
 
@@ -171,6 +229,56 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 52
+    },
+    {
+      "type": "checkbox",
+      "id": "show_bottom_content",
+      "label": "显示底部内容",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "feature1_icon",
+      "label": "功能1图标"
+    },
+    {
+      "type": "text",
+      "id": "feature1_text",
+      "label": "功能1文字",
+      "default": "免费配送超过$169"
+    },
+    {
+      "type": "image_picker",
+      "id": "feature2_icon",
+      "label": "功能2图标"
+    },
+    {
+      "type": "text", 
+      "id": "feature2_text",
+      "label": "功能2文字",
+      "default": "2个Kickstarter成功活动"
+    },
+    {
+      "type": "image_picker",
+      "id": "feature3_icon",
+      "label": "功能3图标"
+    },
+    {
+      "type": "text",
+      "id": "feature3_text", 
+      "label": "功能3文字",
+      "default": "终身保修"
+    },
+    {
+      "type": "image_picker",
+      "id": "feature4_icon",
+      "label": "功能4图标"
+    },
+    {
+      "type": "text",
+      "id": "feature4_text",
+      "label": "功能4文字",
+      "default": "超过15,000位信任客户"
     }
   ],
   "blocks": [
