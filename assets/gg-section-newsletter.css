@@ -208,7 +208,7 @@
 
 @media screen and (max-width: 989px) {
   .newsletter__features {
-    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
   }
 }
 
