@@ -209,11 +209,13 @@
 @media screen and (max-width: 989px) {
   .newsletter__features {
     flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
 @media screen and (max-width: 749px) {
   .newsletter__features {
     flex-wrap: wrap;
+    flex-direction: column;
   }
 }
