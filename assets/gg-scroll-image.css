@@ -1,6 +1,6 @@
 .scroll-image-wrapper {
   width: 100%;
-  padding: 12px 0 85px;
+  padding: 12px 0 65px;
   overflow: hidden;
   position: relative;
 }
@@ -13,7 +13,6 @@
 .scroll-image-track {
   display: flex;
   gap: var(--gap, 30px);
-  padding: 1rem 0;
   animation: scroll var(--scroll-speed, 30s) linear infinite;
 }
 
