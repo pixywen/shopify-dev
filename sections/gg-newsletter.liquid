@@ -126,6 +126,9 @@
         <div class="newsletter__features">
           {% if section.settings.feature1_icon != blank or section.settings.feature1_text != blank %}
             <div class="newsletter__feature">
+              settings: {{ section.settings }}
+              image_url: {{ image_url }}
+              inline_svg: {{ inline_svg }}
               {% if section.settings.feature1_icon != blank %}
                 <div class="newsletter__feature-icon">
                   {% assign file_extension = section.settings.feature1_icon.src | split: '.' | last %}
