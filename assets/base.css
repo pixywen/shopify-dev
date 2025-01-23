@@ -94,8 +94,10 @@
 }
 
 .login-button .login-text {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  font-weight: 600;
   text-transform: uppercase;  /* 文字大写 */
 }
 
@@ -107,12 +109,19 @@
 
 /* 移除默认的图标和间距样式 */
 .login-button.header__icon--account {
-  display: inline-flex;
+  width: 140px;
+  height: 38.22px;
+  border-radius: 18.67px;
+  background: rgba(255, 255, 255, 1);
   align-items: center;
   justify-content: center;
   min-height: unset;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  text-decoration:none !important;
+  transition: .5s;
+}
+
+.scrolled-past-header .login-button.header__icon--account {
+  background: rgba(0, 0, 0, 1);
 }
 
 .login-button.header__icon--account .svg-wrapper {
@@ -2590,8 +2599,13 @@ input[type='checkbox'] {
 }
 
 .header__icon .svg-wrapper {
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
+}
+
+.header__icon .svg-wrapper svg{
+  width: 100%;
+  height: 100%;
 }
 
 .header__icon::after {
