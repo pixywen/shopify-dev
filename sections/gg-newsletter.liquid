@@ -128,7 +128,12 @@
             <div class="newsletter__feature">
               {% if section.settings.feature1_icon != blank %}
                 <div class="newsletter__feature-icon">
-                  {{ section.settings.feature1_icon | image_url | inline_svg }}
+                  {% assign file_extension = section.settings.feature1_icon.src | split: '.' | last %}
+                  {% if file_extension == 'svg' %}
+                    {{ section.settings.feature1_icon | image_url | inline_svg }}
+                  {% else %}
+                    {{ section.settings.feature1_icon | image_url: width: 52 | image_tag: loading: 'lazy', width: 52, height: 50 }}
+                  {% endif %}
                 </div>
               {% endif %}
               {% if section.settings.feature1_text != blank %}
@@ -141,7 +146,12 @@
             <div class="newsletter__feature">
               {% if section.settings.feature2_icon != blank %}
                 <div class="newsletter__feature-icon">
-                  {{ section.settings.feature2_icon | image_url | inline_svg }}
+                  {% assign file_extension = section.settings.feature2_icon.src | split: '.' | last %}
+                  {% if file_extension == 'svg' %}
+                    {{ section.settings.feature2_icon | image_url | inline_svg }}
+                  {% else %}
+                    {{ section.settings.feature2_icon | image_url: width: 52 | image_tag: loading: 'lazy', width: 52, height: 50 }}
+                  {% endif %}
                 </div>
               {% endif %}
               {% if section.settings.feature2_text != blank %}
@@ -154,7 +164,12 @@
             <div class="newsletter__feature">
               {% if section.settings.feature3_icon != blank %}
                 <div class="newsletter__feature-icon">
-                  {{ section.settings.feature3_icon | image_url | inline_svg }}
+                  {% assign file_extension = section.settings.feature3_icon.src | split: '.' | last %}
+                  {% if file_extension == 'svg' %}
+                    {{ section.settings.feature3_icon | image_url | inline_svg }}
+                  {% else %}
+                    {{ section.settings.feature3_icon | image_url: width: 52 | image_tag: loading: 'lazy', width: 52, height: 50 }}
+                  {% endif %}
                 </div>
               {% endif %}
               {% if section.settings.feature3_text != blank %}
@@ -163,11 +178,18 @@
             </div>
           {% endif %}
           
-          {% if section.settings.feature4_icon != blank %}
+          {% if section.settings.feature4_icon != blank or section.settings.feature4_text != blank %}
             <div class="newsletter__feature">
-              <div class="newsletter__feature-icon">
-                {{ section.settings.feature4_icon | image_url | inline_svg }}
-              </div>
+              {% if section.settings.feature4_icon != blank %}
+                <div class="newsletter__feature-icon">
+                  {% assign file_extension = section.settings.feature4_icon.src | split: '.' | last %}
+                  {% if file_extension == 'svg' %}
+                    {{ section.settings.feature4_icon | image_url | inline_svg }}
+                  {% else %}
+                    {{ section.settings.feature4_icon | image_url: width: 52 | image_tag: loading: 'lazy', width: 52, height: 50 }}
+                  {% endif %}
+                </div>
+              {% endif %}
               {% if section.settings.feature4_text != blank %}
                 <p class="newsletter__feature-text">{{ section.settings.feature4_text }}</p>
               {% endif %}
