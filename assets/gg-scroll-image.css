@@ -1,5 +1,6 @@
 .scroll-image-wrapper {
   width: 100%;
+  padding: 12px 0 85px;
   overflow: hidden;
   position: relative;
 }
@@ -22,7 +23,7 @@
 
 .scroll-image-item img {
   display: block;
-  height: 60px;
+  height: 91px;
   width: auto;
   object-fit: contain;
 }
