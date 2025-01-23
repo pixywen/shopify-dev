@@ -1,6 +1,4 @@
 /* gavegame*/
-
-
 :root {
   --alpha-button-background: 1;
   --alpha-button-border: 1;
@@ -75,56 +73,6 @@
   --shadow-blur-radius: var(--media-shadow-blur-radius);
   --shadow-opacity: var(--media-shadow-opacity);
   --shadow-visible: var(--media-shadow-visible);
-}
-
-  
-.login-button {
-  background: white;
-  color: black;
-  padding: 8px 24px;
-  border-radius: 50px;  /* 圆角按钮 */
-  margin-left: 20px;    /* 与购物车的间距 */
-  text-decoration: none; /* 移除下划线 */
-  transition: all 0.3s ease;
-  white-space: nowrap;  /* 防止文字换行 */
-}
-
-.login-button:hover {
-  text-decoration: none;  /* 悬停时也不显示下划线 */
-}
-
-.login-button .login-text {
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;  /* 文字大写 */
-}
-
-/* 当菜单展开时的样式 */
-.scrolled-past-header .login-button {
-  background: black;
-  color: white;
-}
-
-/* 移除默认的图标和间距样式 */
-.login-button.header__icon--account {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: unset;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-.login-button.header__icon--account .svg-wrapper {
-  display: none;
-}
-
-/* 确保按钮不会在小屏幕上挤压 */
-@media screen and (max-width: 989px) {
-  .login-button {
-    margin-left: 12px;
-    padding: 6px 16px;
-  }
 }
 
 /* base */
