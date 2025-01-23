@@ -163,13 +163,11 @@
             </div>
           {% endif %}
           
-          {% if section.settings.feature4_icon != blank or section.settings.feature4_text != blank %}
+          {% if section.settings.feature4_icon %}
             <div class="newsletter__feature">
-              {% if section.settings.feature4_icon != blank %}
-                <div class="newsletter__feature-icon">
-                  {{ section.settings.feature4_icon | inline_svg }}
-                </div>
-              {% endif %}
+              <div class="newsletter__feature-icon">
+                {{ section.settings.feature4_icon | asset_url | file_url: 'svg' | inline_svg }}
+              </div>
               {% if section.settings.feature4_text != blank %}
                 <p class="newsletter__feature-text">{{ section.settings.feature4_text }}</p>
               {% endif %}
