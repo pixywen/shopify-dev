@@ -1,7 +1,7 @@
 .gg-three-banner-container {
   position: relative;
   width: 100%;
-  padding: 40px 0;
+  padding: 150px 0;
   background-color: #F5F5F5;
   display: flex;
   align-items: center;
@@ -90,7 +90,7 @@
 @media screen and (max-width: 1200px) {
   .gg-three-banner-container {
     /* flex-direction: column; */
-    padding: 30px 0;
+    padding: 150px 0;
     gap: 30px;
   }
 

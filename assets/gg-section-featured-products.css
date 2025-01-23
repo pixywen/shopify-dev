@@ -1,5 +1,5 @@
 .gg-featured-products {
-  padding: 60px 20px;
+  padding: 100px 20px 120px;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -7,7 +7,7 @@
 /* 标题样式 */
 .featured-products-header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 69px;
 }
 
 .featured-products-title {
@@ -115,7 +115,7 @@
 .color-selector {
   width: 80px;
   height: 80px;
-  border: 1px solid #DDD;
+  border: none;
   padding: 0;
   cursor: pointer;
   background-size: cover;
