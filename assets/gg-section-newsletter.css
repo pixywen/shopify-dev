@@ -1,6 +1,44 @@
 /*
 * GG-邮件
 */
+.newsletter{
+}
+.newsletter .newsletter__wrapper{
+  padding-top: 127px;
+  background: rgba(233, 233, 233, 1);
+}
+.newsletter .inline-richtext {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 34px;
+  color: rgba(0, 0, 0, 1);
+}
+.newsletter .field::after {
+  content: none;
+}
+.newsletter .newsletter__subheading {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 28.8px;
+  color: rgba(0, 0, 0, 1);
+}
+.newsletter .field__input {
+  font-size: 20px;
+}
+.newsletter .asd {
+  display: none;
+}
+.newsletter .field__label {
+  font-size: 20px;
+  left: 3.2rem;
+  top: 1.4rem;
+  color: rgba(0, 0, 0, 1);
+}
+.newsletter .newsletter-form__button {
+  display: none;
+}
 .newsletter-form {
   display: flex;
   flex-direction: column;
@@ -8,9 +46,10 @@
   align-items: center;
   width: 100%;
   position: relative;
+  margin-top: 5rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (max-width: 750px) {
   .newsletter-form {
     align-items: flex-start;
     margin: 0 auto;
@@ -23,7 +62,8 @@
 }
 
 .newsletter-form__field-wrapper .field__input {
-  padding-right: 5rem;
+  padding: 0 3.2rem;
+  height: 5.6rem;
 }
 
 .newsletter-form__field-wrapper .field {
@@ -93,7 +133,7 @@
 }
 
 .newsletter__wrapper > * + * {
-  margin-top: 2rem;
+  margin-top: 2.1rem;
 }
 
 .newsletter__wrapper > * + .newsletter-form {
@@ -101,13 +141,13 @@
 }
 
 .newsletter__subheading {
-  max-width: 70rem;
+  max-width: 90rem;
   margin-left: auto;
   margin-right: auto;
 }
 
 .newsletter__wrapper .newsletter-form__field-wrapper {
-  max-width: 36rem;
+  max-width: 38.5rem;
 }
 
 .newsletter-form__field-wrapper .newsletter-form__message {
@@ -127,7 +167,7 @@
 }
 
 .newsletter__bottom-content {
-  margin-top: 4rem;
+  margin-top: 12.9rem;
   width: 100%;
 }
 
