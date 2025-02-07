@@ -1,0 +1,73 @@
+.gg-rich-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.gg-rich-text__banner {
+  margin-bottom: 50px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.gg-rich-text__banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gg-rich-text__content > * + * {
+  margin-top: 50px;
+}
+
+.gg-rich-text__main-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: rgb(var(--color-foreground));
+}
+
+.gg-rich-text__paragraph {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+.gg-rich-text__section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.gg-rich-text__subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: rgb(var(--color-foreground));
+}
+
+.gg-rich-text__text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+.gg-rich-text__divider {
+  margin-top: 24px;
+  border: none;
+  height: 1px;
+  background: rgba(var(--color-foreground), 0.08);
+}
+
+@media screen and (max-width: 749px) {
+  .gg-rich-text__content > * + * {
+    margin-top: 40px;
+  }
+  
+  .gg-rich-text__main-title {
+    font-size: 22px;
+  }
+  
+  .gg-rich-text__subtitle {
+    font-size: 18px;
+  }
+} 
