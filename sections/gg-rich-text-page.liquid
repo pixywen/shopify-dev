@@ -2,8 +2,8 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
   }
 
   .gg-rich-text-{{ section.id }} {
@@ -12,47 +12,35 @@
     padding-right: {{ section.settings.padding_right }}px;
   }
 
-  .gg-rich-text-{{ section.id }} .gg-rich-text__content > * + * {
-    margin-top: {{ section.settings.blocks_spacing }}px;
-  }
-
-  .gg-rich-text-{{ section.id }} .gg-rich-text__main-title {
-    {% if section.settings.heading_font != blank %}
-      font-family: {{ section.settings.heading_font.family }}, {{ section.settings.heading_font.fallback_families }};
-      font-style: {{ section.settings.heading_font.style }};
-    {% endif %}
-    font-size: {{ section.settings.heading_size }}px;
-    font-weight: {{ section.settings.heading_weight }};
-    line-height: {{ section.settings.heading_line_height }};
-  }
-
-  .gg-rich-text-{{ section.id }} .gg-rich-text__subtitle {
-    {% if section.settings.subtitle_font != blank %}
-      font-family: {{ section.settings.subtitle_font.family }}, {{ section.settings.subtitle_font.fallback_families }};
-      font-style: {{ section.settings.subtitle_font.style }};
-    {% endif %}
-    font-size: {{ section.settings.subtitle_size }}px;
-    font-weight: {{ section.settings.subtitle_weight }};
-    line-height: {{ section.settings.subtitle_line_height }};
-  }
-
-  .gg-rich-text-{{ section.id }} .gg-rich-text__paragraph,
-  .gg-rich-text-{{ section.id }} .gg-rich-text__text {
-    {% if section.settings.text_font != blank %}
-      font-family: {{ section.settings.text_font.family }}, {{ section.settings.text_font.fallback_families }};
-      font-style: {{ section.settings.text_font.style }};
-    {% endif %}
-    font-size: {{ section.settings.text_size }}px;
-    font-weight: {{ section.settings.text_weight }};
-    line-height: {{ section.settings.text_line_height }};
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+  {% for block in section.blocks %}
+    .gg-rich-text__block-{{ block.id }} {
+      margin-top: {{ block.settings.margin_top }}px;
+      margin-bottom: {{ block.settings.margin_bottom }}px;
+      
+      {% case block.type %}
+        {% when 'heading' %}
+          font-family: {{ block.settings.font.family }}, {{ block.settings.font.fallback_families }};
+          font-size: {{ block.settings.font_size }}px;
+          font-weight: {{ block.settings.font_weight }};
+          letter-spacing: {{ block.settings.letter_spacing }}px;
+          line-height: {{ block.settings.line_height }}px;
+        
+        {% when 'subheading' %}
+          font-family: {{ block.settings.font.family }}, {{ block.settings.font.fallback_families }};
+          font-size: {{ block.settings.font_size }}px;
+          font-weight: {{ block.settings.font_weight }};
+          letter-spacing: {{ block.settings.letter_spacing }}px;
+          line-height: {{ block.settings.line_height }}px;
+        
+        {% when 'text' %}
+          font-family: {{ block.settings.font.family }}, {{ block.settings.font.fallback_families }};
+          font-size: {{ block.settings.font_size }}px;
+          font-weight: {{ block.settings.font_weight }};
+          letter-spacing: {{ block.settings.letter_spacing }}px;
+          line-height: {{ block.settings.line_height }}px;
+      {% endcase %}
     }
-  }
+  {% endfor %}
 {%- endstyle -%}
 
 <div class="gg-rich-text gg-rich-text-{{ section.id }} section-{{ section.id }}-padding">
@@ -69,25 +57,26 @@
   <div class="gg-rich-text__content">
     {% for block in section.blocks %}
       {% case block.type %}
-        {% when 'main_title' %}
-          <h1 class="gg-rich-text__main-title">{{ block.settings.title }}</h1>
-        
-        {% when 'paragraph' %}
-          <div class="gg-rich-text__paragraph">
+        {% when 'heading' %}
+          <h1 class="gg-rich-text__block-{{ block.id }}">
+            {{ block.settings.text }}
+          </h1>
+
+        {% when 'subheading' %}
+          <h2 class="gg-rich-text__block-{{ block.id }}">
+            {{ block.settings.text }}
+          </h2>
+
+        {% when 'text' %}
+          <div class="gg-rich-text__block-{{ block.id }}">
             {{ block.settings.text }}
           </div>
-        
-        {% when 'section' %}
-          <div class="gg-rich-text__section">
-            {% if block.settings.show_divider %}
-              <hr class="gg-rich-text__divider">
-            {% endif %}
-            <h2 class="gg-rich-text__subtitle">{{ block.settings.title }}</h2>
-            <div class="gg-rich-text__text">{{ block.settings.text }}</div>
-          </div>
+
+        {% when 'divider' %}
+          <hr class="gg-rich-text__block-{{ block.id }} gg-rich-text__divider">
 
         {% when 'table' %}
-          <div class="gg-rich-text__table-wrapper">
+          <div class="gg-rich-text__block-{{ block.id }} gg-rich-text__table-wrapper">
             <table class="gg-rich-text__table">
               <thead>
                 <tr>
@@ -138,133 +127,6 @@
     },
     {
       "type": "range",
-      "id": "blocks_spacing",
-      "min": 20,
-      "max": 100,
-      "step": 5,
-      "unit": "px",
-      "label": "模块间距",
-      "default": 50
-    },
-    {
-      "type": "header",
-      "content": "主标题样式"
-    },
-    {
-      "type": "font_picker",
-      "id": "heading_font",
-      "label": "主标题字体",
-      "default": "helvetica_n4",
-      "info": "留空则使用主题默认字体"
-    },
-    {
-      "type": "range",
-      "id": "heading_size",
-      "min": 16,
-      "max": 60,
-      "step": 1,
-      "unit": "px",
-      "label": "主标题字号",
-      "default": 24
-    },
-    {
-      "type": "range",
-      "id": "heading_weight",
-      "min": 400,
-      "max": 900,
-      "step": 100,
-      "label": "主标题字重",
-      "default": 700
-    },
-    {
-      "type": "range",
-      "id": "heading_line_height",
-      "min": 1,
-      "max": 2,
-      "step": 0.1,
-      "label": "主标题行高",
-      "default": 1.4
-    },
-    {
-      "type": "header",
-      "content": "小标题样式"
-    },
-    {
-      "type": "font_picker",
-      "id": "subtitle_font",
-      "label": "小标题字体",
-      "default": "helvetica_n4",
-      "info": "留空则使用主题默认字体"
-    },
-    {
-      "type": "range",
-      "id": "subtitle_size",
-      "min": 14,
-      "max": 40,
-      "step": 1,
-      "unit": "px",
-      "label": "小标题字号",
-      "default": 20
-    },
-    {
-      "type": "range",
-      "id": "subtitle_weight",
-      "min": 400,
-      "max": 900,
-      "step": 100,
-      "label": "小标题字重",
-      "default": 600
-    },
-    {
-      "type": "range",
-      "id": "subtitle_line_height",
-      "min": 1,
-      "max": 2,
-      "step": 0.1,
-      "label": "小标题行高",
-      "default": 1.4
-    },
-    {
-      "type": "header",
-      "content": "正文样式"
-    },
-    {
-      "type": "font_picker",
-      "id": "text_font",
-      "label": "正文字体",
-      "default": "helvetica_n4",
-      "info": "留空则使用主题默认字体"
-    },
-    {
-      "type": "range",
-      "id": "text_size",
-      "min": 12,
-      "max": 24,
-      "step": 1,
-      "unit": "px",
-      "label": "正文字号",
-      "default": 16
-    },
-    {
-      "type": "range",
-      "id": "text_weight",
-      "min": 400,
-      "max": 700,
-      "step": 100,
-      "label": "正文字重",
-      "default": 400
-    },
-    {
-      "type": "range",
-      "id": "text_line_height",
-      "min": 1,
-      "max": 2,
-      "step": 0.1,
-      "label": "正文行高",
-      "default": 1.6
-    },
-    {
-      "type": "range",
       "id": "padding_left",
       "min": 0,
       "max": 100,
@@ -306,48 +168,256 @@
   ],
   "blocks": [
     {
-      "type": "main_title",
-      "name": "大标题",
-      "limit": 1,
+      "type": "heading",
+      "name": "主标题",
       "settings": [
         {
           "type": "text",
-          "id": "title",
-          "label": "标题文本",
-          "default": "标题"
+          "id": "text",
+          "label": "标题文本"
+        },
+        {
+          "type": "font_picker",
+          "id": "font",
+          "label": "字体",
+          "default": "montserrat_n6"
+        },
+        {
+          "type": "range",
+          "id": "font_size",
+          "min": 12,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "label": "字号",
+          "default": 32
+        },
+        {
+          "type": "range",
+          "id": "font_weight",
+          "min": 400,
+          "max": 900,
+          "step": 100,
+          "label": "字重",
+          "default": 600
+        },
+        {
+          "type": "range",
+          "id": "letter_spacing",
+          "min": -2,
+          "max": 10,
+          "step": 0.5,
+          "unit": "px",
+          "label": "字距",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "line_height",
+          "min": 12,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "label": "行高",
+          "default": 40
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "px",
+          "label": "上边距",
+          "default": 25
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "px",
+          "label": "下边距",
+          "default": 25
         }
       ]
     },
     {
-      "type": "paragraph",
-      "name": "文本段落",
+      "type": "subheading",
+      "name": "子标题",
       "settings": [
         {
-          "type": "richtext",
+          "type": "text",
           "id": "text",
-          "label": "段落内容"
+          "label": "标题文本"
+        },
+        {
+          "type": "font_picker",
+          "id": "font",
+          "label": "字体",
+          "default": "montserrat_n6"
+        },
+        {
+          "type": "range",
+          "id": "font_size",
+          "min": 12,
+          "max": 48,
+          "step": 1,
+          "unit": "px",
+          "label": "字号",
+          "default": 16
+        },
+        {
+          "type": "range",
+          "id": "font_weight",
+          "min": 400,
+          "max": 900,
+          "step": 100,
+          "label": "字重",
+          "default": 600
+        },
+        {
+          "type": "range",
+          "id": "letter_spacing",
+          "min": -2,
+          "max": 10,
+          "step": 0.5,
+          "unit": "px",
+          "label": "字距",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "line_height",
+          "min": 12,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "label": "行高",
+          "default": 32
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "px",
+          "label": "上边距",
+          "default": 25
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "px",
+          "label": "下边距",
+          "default": 25
         }
       ]
     },
     {
-      "type": "section",
-      "name": "带标题的段落",
+      "type": "text",
+      "name": "正文",
       "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "小标题"
-        },
         {
           "type": "richtext",
           "id": "text",
-          "label": "段落内容"
+          "label": "文本内容"
         },
         {
-          "type": "checkbox",
-          "id": "show_divider",
-          "label": "显示分割线",
-          "default": true
+          "type": "font_picker",
+          "id": "font",
+          "label": "字体",
+          "default": "montserrat_n4"
+        },
+        {
+          "type": "range",
+          "id": "font_size",
+          "min": 12,
+          "max": 48,
+          "step": 1,
+          "unit": "px",
+          "label": "字号",
+          "default": 16
+        },
+        {
+          "type": "range",
+          "id": "font_weight",
+          "min": 400,
+          "max": 700,
+          "step": 100,
+          "label": "字重",
+          "default": 400
+        },
+        {
+          "type": "range",
+          "id": "letter_spacing",
+          "min": -2,
+          "max": 10,
+          "step": 0.5,
+          "unit": "px",
+          "label": "字距",
+          "default": 1
+        },
+        {
+          "type": "range",
+          "id": "line_height",
+          "min": 12,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "label": "行高",
+          "default": 27
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "px",
+          "label": "上边距",
+          "default": 25
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "px",
+          "label": "下边距",
+          "default": 25
+        }
+      ]
+    },
+    {
+      "type": "divider",
+      "name": "分割线",
+      "settings": [
+        {
+          "type": "range",
+          "id": "margin_top",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "px",
+          "label": "上边距",
+          "default": 25
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "px",
+          "label": "下边距",
+          "default": 25
         }
       ]
     },
@@ -402,6 +472,26 @@
           "id": "row1_col4",
           "label": "第1行第4列",
           "default": "Your local Post Office or regional carrier may provide the final delivery"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "px",
+          "label": "上边距",
+          "default": 25
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "px",
+          "label": "下边距",
+          "default": 25
         }
       ]
     }

@@ -51,14 +51,12 @@
 }
 
 .gg-rich-text__divider {
-  margin-bottom: 24px;
   border: none;
   height: 1px;
   background: rgba(var(--color-foreground), 0.08);
 }
 
 .gg-rich-text__table-wrapper {
-  margin-top: 50px;
   overflow-x: auto;
 }
 
