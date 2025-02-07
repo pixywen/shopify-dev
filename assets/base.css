@@ -137,8 +137,8 @@
 }
 
 /* base */
-#MainContent {
-  background: rgba(240, 240, 240, 1);
+body {
+  background: rgba(240, 240, 240, 1) !important;
 }
 
 .page-width {

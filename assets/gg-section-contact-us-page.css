@@ -1,3 +1,9 @@
+.gg-contact {
+  max-width: 78.5rem;
+  padding-bottom: 160px !important;
+  padding-top: 113px !important;
+}
+
 .gg-contact img {
   max-width: 100%;
 }
@@ -12,30 +18,42 @@
 
 /* 表单字段基础样式 */
 .gg-field {
+  display: flex;
+  flex-direction: column-reverse;
   position: relative;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
+  
 }
 
 .gg-field__input {
-  padding: 1.5rem;
-  border-radius: 0.4rem;
-  border: 0.1rem solid rgba(var(--color-foreground), 0.2);
+  padding: 26px 20px;
+  height: 56px;
+  border: none;
+  font-size: 16px;
   width: 100%;
   transition: border-color 0.3s ease;
+  background: white;
 }
 
 .gg-field__label {
-  position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 28.8px;
+  color: rgba(0, 0, 0, 1);
+  text-align: left;
+  vertical-align: top;
+  position: relative;
   pointer-events: none;
   transition: all 0.3s ease;
+  margin-bottom: 15px;
 }
-
+.gg-field__label::after {
+  content: ':'
+}
 .gg-field__input:focus + .gg-field__label,
 .gg-field__input:not(:placeholder-shown) + .gg-field__label {
-  top: 0.8rem;
-  font-size: 1.2rem;
+  
 }
 
 /* 文本区域特殊样式 */
@@ -44,7 +62,7 @@
   resize: vertical;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (max-width: 750px) {
   .gg-field {
     margin-bottom: 2rem;
   }
@@ -54,13 +72,23 @@
   margin-top: 3rem;
 }
 
-@media screen and (min-width: 750px) {
+.gg-contact__button button {
+  width: 100%;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 28.8px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 750px) {
   .gg-contact__button {
     margin-top: 4rem;
   }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (max-width: 750px) {
   .gg-contact__fields {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
