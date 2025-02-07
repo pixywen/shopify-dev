@@ -1,6 +1,7 @@
 .gg-rich-text {
   max-width: 800px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .gg-rich-text__banner {
@@ -52,13 +53,45 @@
 }
 
 .gg-rich-text__divider {
-  margin-top: 24px;
+  margin-bottom: 24px;
   border: none;
   height: 1px;
   background: rgba(var(--color-foreground), 0.08);
 }
 
+.gg-rich-text__table-wrapper {
+  margin-top: 50px;
+  overflow-x: auto;
+}
+
+.gg-rich-text__table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #FFFFFF;
+}
+
+.gg-rich-text__table th,
+.gg-rich-text__table td {
+  padding: 16px;
+  text-align: left;
+  border: 1px solid rgba(var(--color-foreground), 0.08);
+}
+
+.gg-rich-text__table th {
+  font-weight: 600;
+  background: rgba(var(--color-foreground), 0.03);
+}
+
+.gg-rich-text__table td {
+  font-size: 14px;
+  color: rgba(var(--color-foreground), 0.75);
+}
+
 @media screen and (max-width: 749px) {
+  .gg-rich-text {
+    padding: 0 16px;
+  }
+  
   .gg-rich-text__content > * + * {
     margin-top: 40px;
   }
@@ -69,5 +102,11 @@
   
   .gg-rich-text__subtitle {
     font-size: 18px;
+  }
+  
+  .gg-rich-text__table th,
+  .gg-rich-text__table td {
+    padding: 12px;
+    font-size: 13px;
   }
 } 

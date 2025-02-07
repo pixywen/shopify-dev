@@ -14,18 +14,14 @@
   }
 {%- endstyle -%}
 
-<div class="gg-rich-text page-width section-{{ section.id }}-padding">
+<div class="gg-rich-text section-{{ section.id }}-padding">
   {% if section.settings.image != blank %}
     <div class="gg-rich-text__banner">
-      {%- if section.settings.image != blank -%}
-        {{ section.settings.image | image_url: width: 3000 | image_tag:
-          loading: 'lazy',
-          sizes: "100vw",
-          widths: '375, 550, 750, 1100, 1500, 2000, 3000'
-        }}
-      {%- else -%}
-        {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
-      {%- endif -%}
+      {{ section.settings.image | image_url: width: 3000 | image_tag:
+        loading: 'lazy',
+        sizes: "100vw",
+        widths: '375, 550, 750, 1100, 1500, 2000, 3000'
+      }}
     </div>
   {% endif %}
 
@@ -42,11 +38,33 @@
         
         {% when 'section' %}
           <div class="gg-rich-text__section">
-            <h2 class="gg-rich-text__subtitle">{{ block.settings.title }}</h2>
-            <div class="gg-rich-text__text">{{ block.settings.text }}</div>
             {% if block.settings.show_divider %}
               <hr class="gg-rich-text__divider">
             {% endif %}
+            <h2 class="gg-rich-text__subtitle">{{ block.settings.title }}</h2>
+            <div class="gg-rich-text__text">{{ block.settings.text }}</div>
+          </div>
+
+        {% when 'table' %}
+          <div class="gg-rich-text__table-wrapper">
+            <table class="gg-rich-text__table">
+              <thead>
+                <tr>
+                  {% for header in block.settings.headers %}
+                    <th>{{ header }}</th>
+                  {% endfor %}
+                </tr>
+              </thead>
+              <tbody>
+                {% for row in block.settings.rows %}
+                  <tr>
+                    {% for cell in row %}
+                      <td>{{ cell }}</td>
+                    {% endfor %}
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
           </div>
       {% endcase %}
     {% endfor %}
@@ -57,7 +75,6 @@
 {
   "name": "GG-富文本页面",
   "tag": "section",
-  "class": "section",
   "settings": [
     {
       "type": "image_picker",
@@ -131,22 +148,65 @@
           "default": true
         }
       ]
+    },
+    {
+      "type": "table",
+      "name": "表格",
+      "settings": [
+        {
+          "type": "text",
+          "id": "header_1",
+          "label": "表头1",
+          "default": "Shipping Method"
+        },
+        {
+          "type": "text",
+          "id": "header_2",
+          "label": "表头2",
+          "default": "Processed Time"
+        },
+        {
+          "type": "text",
+          "id": "header_3",
+          "label": "表头3",
+          "default": "Estimated Delivery"
+        },
+        {
+          "type": "text",
+          "id": "header_4",
+          "label": "表头4",
+          "default": "Notice"
+        },
+        {
+          "type": "text",
+          "id": "row1_col1",
+          "label": "第1行第1列",
+          "default": "Standard Shipping"
+        },
+        {
+          "type": "text",
+          "id": "row1_col2",
+          "label": "第1行第2列",
+          "default": "1-2 business days"
+        },
+        {
+          "type": "text",
+          "id": "row1_col3",
+          "label": "第1行第3列",
+          "default": "4-10 business days"
+        },
+        {
+          "type": "text",
+          "id": "row1_col4",
+          "label": "第1行第4列",
+          "default": "Your local Post Office or regional carrier may provide the final delivery"
+        }
+      ]
     }
   ],
   "presets": [
     {
-      "name": "GG-富文本页面",
-      "blocks": [
-        {
-          "type": "main_title"
-        },
-        {
-          "type": "paragraph"
-        },
-        {
-          "type": "section"
-        }
-      ]
+      "name": "GG-富文本页面"
     }
   ]
 }
