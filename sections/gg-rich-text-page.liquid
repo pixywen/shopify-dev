@@ -50,19 +50,19 @@
             <table class="gg-rich-text__table">
               <thead>
                 <tr>
-                  {% for header in block.settings.headers %}
-                    <th>{{ header }}</th>
-                  {% endfor %}
+                  <th>{{ block.settings.header_1 }}</th>
+                  <th>{{ block.settings.header_2 }}</th>
+                  <th>{{ block.settings.header_3 }}</th>
+                  <th>{{ block.settings.header_4 }}</th>
                 </tr>
               </thead>
               <tbody>
-                {% for row in block.settings.rows %}
-                  <tr>
-                    {% for cell in row %}
-                      <td>{{ cell }}</td>
-                    {% endfor %}
-                  </tr>
-                {% endfor %}
+                <tr>
+                  <td>{{ block.settings.row1_col1 }}</td>
+                  <td>{{ block.settings.row1_col2 }}</td>
+                  <td>{{ block.settings.row1_col3 }}</td>
+                  <td>{{ block.settings.row1_col4 }}</td>
+                </tr>
               </tbody>
             </table>
           </div>
