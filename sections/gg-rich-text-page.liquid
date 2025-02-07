@@ -6,6 +6,12 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  .gg-rich-text-{{ section.id }} {
+    max-width: {{ section.settings.content_width }}px;
+    padding-left: {{ section.settings.padding_left }}px;
+    padding-right: {{ section.settings.padding_right }}px;
+  }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -14,7 +20,7 @@
   }
 {%- endstyle -%}
 
-<div class="gg-rich-text section-{{ section.id }}-padding">
+<div class="gg-rich-text gg-rich-text-{{ section.id }} section-{{ section.id }}-padding">
   {% if section.settings.image != blank %}
     <div class="gg-rich-text__banner">
       {{ section.settings.image | image_url: width: 3000 | image_tag:
@@ -80,6 +86,40 @@
       "type": "image_picker",
       "id": "image",
       "label": "头部图片"
+    },
+    {
+      "type": "header",
+      "content": "布局设置"
+    },
+    {
+      "type": "range",
+      "id": "content_width",
+      "min": 600,
+      "max": 1600,
+      "step": 50,
+      "unit": "px",
+      "label": "内容最大宽度",
+      "default": 800
+    },
+    {
+      "type": "range",
+      "id": "padding_left",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "左边距",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_right",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "右边距",
+      "default": 20
     },
     {
       "type": "range",

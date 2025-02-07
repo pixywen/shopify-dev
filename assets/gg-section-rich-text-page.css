@@ -1,7 +1,5 @@
 .gg-rich-text {
-  max-width: 800px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .gg-rich-text__banner {
@@ -89,7 +87,8 @@
 
 @media screen and (max-width: 749px) {
   .gg-rich-text {
-    padding: 0 16px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   
   .gg-rich-text__content > * + * {
