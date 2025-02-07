@@ -9,13 +9,6 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
-    },
     "gg_rich_text_page_Qf8ndb": {
       "type": "gg-rich-text-page",
       "blocks": {
@@ -83,7 +76,6 @@
     }
   },
   "order": [
-    "main",
     "gg_rich_text_page_Qf8ndb"
   ]
 }
