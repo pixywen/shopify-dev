@@ -184,7 +184,8 @@ summary.header__menu-item {
   background: rgba(0, 0, 0, 1);
 }
 .header__menu-item[aria-expanded=true] span,
-div.scrolled-past-header .header-wrapper .list-menu .header__menu-item[aria-expanded=true] span{
+div.scrolled-past-header .header-wrapper .list-menu .header__menu-item[aria-expanded=true] span,
+.non-home sticky-header.header-wrapper .list-menu .header__menu-item[aria-expanded=true] span{
   color: white !important;
 }
 
@@ -192,7 +193,8 @@ div.scrolled-past-header .header__menu-item:hover,
 .header__menu-item:hover {
   background: rgba(0, 0, 0, 1);
 }
-div.scrolled-past-header .header-wrapper .list-menu span{
+div.scrolled-past-header .header-wrapper .list-menu span,
+.non-home sticky-header.header-wrapper .list-menu span{
   color: rgba(0, 0, 0, 1) !important;
 }
 div.scrolled-past-header .header__menu-item:hover span,
@@ -210,7 +212,8 @@ summary.list-menu__item {
   padding-right: 1.2rem !important;
 }
 
-div.scrolled-past-header sticky-header.header-wrapper {
+div.scrolled-past-header sticky-header.header-wrapper,
+.non-home sticky-header.header-wrapper {
   background: white;
   transition: .5s;
 }
