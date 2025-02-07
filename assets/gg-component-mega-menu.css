@@ -188,7 +188,12 @@ div.scrolled-past-header .header-wrapper .list-menu .header__menu-item[aria-expa
 .non-home sticky-header.header-wrapper .list-menu .header__menu-item[aria-expanded=true] span{
   color: white !important;
 }
-
+.header__heading svg {
+  fill: white;
+}
+div.scrolled-past-header .header__heading svg {
+  fill: black;
+}
 div.scrolled-past-header .header__menu-item:hover,
 .header__menu-item:hover {
   background: rgba(0, 0, 0, 1);
