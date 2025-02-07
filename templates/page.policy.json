@@ -22,13 +22,27 @@
         "main_title_HzpYLL": {
           "type": "main_title",
           "settings": {
-            "title": "Policy"
+            "title": "Shipping Policy"
           }
         },
         "paragraph_bwgTJc": {
           "type": "paragraph",
           "settings": {
-            "text": ""
+            "text": "<p>We offer free shipping on all orders over $169.</p>"
+          }
+        },
+        "section_gwMx8K": {
+          "type": "section",
+          "settings": {
+            "title": "How long does it take for my order to ship once it is placed?",
+            "text": "<p>Online orders are usually shipped within 1-2 business days from the time they are placed. During sale periods, processing times may increase by an additional 1-2 business days. *Orders placed after 11am PST on Fridays or over the weekend will be processed the following Monday. Estimated delivery times do not include processing time, holidays, or pending time. Orders cannot be canceled or edited once placed. Please allow 48 hours after processing for a tracking update.</p>",
+            "show_divider": true
+          }
+        },
+        "paragraph_3YFGbb": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>You can track your order via the Shipment Notification E-mail(s).Please note that you may receive more than one Shipment Notification E-mail if item(s) from your order are shipping separately.If tracking information on the shipping carrier page for your order is not showing activity/movement for more than 5 business days, please contact Customer Service.</p>"
           }
         },
         "section_4LcpFD": {
@@ -43,6 +57,8 @@
       "block_order": [
         "main_title_HzpYLL",
         "paragraph_bwgTJc",
+        "section_gwMx8K",
+        "paragraph_3YFGbb",
         "section_4LcpFD"
       ],
       "settings": {
