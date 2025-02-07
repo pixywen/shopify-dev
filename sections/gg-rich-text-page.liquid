@@ -1,5 +1,58 @@
 {{ 'gg-section-rich-text-page.css' | asset_url | stylesheet_tag }}
 
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="gg-rich-text page-width section-{{ section.id }}-padding">
+  {% if section.settings.image != blank %}
+    <div class="gg-rich-text__banner">
+      {%- if section.settings.image != blank -%}
+        {{ section.settings.image | image_url: width: 3000 | image_tag:
+          loading: 'lazy',
+          sizes: "100vw",
+          widths: '375, 550, 750, 1100, 1500, 2000, 3000'
+        }}
+      {%- else -%}
+        {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
+    </div>
+  {% endif %}
+
+  <div class="gg-rich-text__content">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'main_title' %}
+          <h1 class="gg-rich-text__main-title">{{ block.settings.title }}</h1>
+        
+        {% when 'paragraph' %}
+          <div class="gg-rich-text__paragraph">
+            {{ block.settings.text }}
+          </div>
+        
+        {% when 'section' %}
+          <div class="gg-rich-text__section">
+            <h2 class="gg-rich-text__subtitle">{{ block.settings.title }}</h2>
+            <div class="gg-rich-text__text">{{ block.settings.text }}</div>
+            {% if block.settings.show_divider %}
+              <hr class="gg-rich-text__divider">
+            {% endif %}
+          </div>
+      {% endcase %}
+    {% endfor %}
+  </div>
+</div>
+
 {% schema %}
 {
   "name": "GG-富文本页面",
