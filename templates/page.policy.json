@@ -18,10 +18,12 @@
             "title": "Shipping Policy"
           }
         },
-        "paragraph_bwgTJc": {
-          "type": "paragraph",
+        "section_YFtKci": {
+          "type": "section",
           "settings": {
-            "text": "<p>We offer free shipping on all orders over $169.</p>"
+            "title": "We offer free shipping on all orders over $169.",
+            "text": "",
+            "show_divider": false
           }
         },
         "section_gwMx8K": {
@@ -55,14 +57,14 @@
             "header_4": "Notice",
             "row1_col1": "Standard Shipping",
             "row1_col2": "1-2 business days",
-            "row1_col3": "4-10 business days",
+            "row1_col3": "4-10 business days（Excluded Alaska and Hawaii)",
             "row1_col4": "Your local Post Office or regional carrier may provide the final delivery"
           }
         }
       },
       "block_order": [
         "main_title_HzpYLL",
-        "paragraph_bwgTJc",
+        "section_YFtKci",
         "section_gwMx8K",
         "paragraph_3YFGbb",
         "section_4LcpFD",
