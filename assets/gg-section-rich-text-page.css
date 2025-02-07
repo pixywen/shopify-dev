@@ -14,7 +14,6 @@
   display: block;
 }
 
-
 .gg-rich-text__content > * + * {
   margin-top: 50px;
 }
@@ -77,7 +76,6 @@
 }
 
 .gg-rich-text__table th {
-  font-weight: 600;
   background: rgba(var(--color-foreground), 0.03);
 }
 

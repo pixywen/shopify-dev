@@ -17,12 +17,20 @@
   }
 
   .gg-rich-text-{{ section.id }} .gg-rich-text__main-title {
+    {% if section.settings.heading_font != blank %}
+      font-family: {{ section.settings.heading_font.family }}, {{ section.settings.heading_font.fallback_families }};
+      font-style: {{ section.settings.heading_font.style }};
+    {% endif %}
     font-size: {{ section.settings.heading_size }}px;
     font-weight: {{ section.settings.heading_weight }};
     line-height: {{ section.settings.heading_line_height }};
   }
 
   .gg-rich-text-{{ section.id }} .gg-rich-text__subtitle {
+    {% if section.settings.subtitle_font != blank %}
+      font-family: {{ section.settings.subtitle_font.family }}, {{ section.settings.subtitle_font.fallback_families }};
+      font-style: {{ section.settings.subtitle_font.style }};
+    {% endif %}
     font-size: {{ section.settings.subtitle_size }}px;
     font-weight: {{ section.settings.subtitle_weight }};
     line-height: {{ section.settings.subtitle_line_height }};
@@ -30,6 +38,10 @@
 
   .gg-rich-text-{{ section.id }} .gg-rich-text__paragraph,
   .gg-rich-text-{{ section.id }} .gg-rich-text__text {
+    {% if section.settings.text_font != blank %}
+      font-family: {{ section.settings.text_font.family }}, {{ section.settings.text_font.fallback_families }};
+      font-style: {{ section.settings.text_font.style }};
+    {% endif %}
     font-size: {{ section.settings.text_size }}px;
     font-weight: {{ section.settings.text_weight }};
     line-height: {{ section.settings.text_line_height }};
@@ -139,6 +151,13 @@
       "content": "主标题样式"
     },
     {
+      "type": "font_picker",
+      "id": "heading_font",
+      "label": "主标题字体",
+      "default": "helvetica_n4",
+      "info": "留空则使用主题默认字体"
+    },
+    {
       "type": "range",
       "id": "heading_size",
       "min": 16,
@@ -154,7 +173,6 @@
       "min": 400,
       "max": 900,
       "step": 100,
-      "unit": "",
       "label": "主标题字重",
       "default": 700
     },
@@ -164,13 +182,19 @@
       "min": 1,
       "max": 2,
       "step": 0.1,
-      "unit": "",
       "label": "主标题行高",
       "default": 1.4
     },
     {
       "type": "header",
       "content": "小标题样式"
+    },
+    {
+      "type": "font_picker",
+      "id": "subtitle_font",
+      "label": "小标题字体",
+      "default": "helvetica_n4",
+      "info": "留空则使用主题默认字体"
     },
     {
       "type": "range",
@@ -188,7 +212,6 @@
       "min": 400,
       "max": 900,
       "step": 100,
-      "unit": "",
       "label": "小标题字重",
       "default": 600
     },
@@ -198,13 +221,19 @@
       "min": 1,
       "max": 2,
       "step": 0.1,
-      "unit": "",
       "label": "小标题行高",
       "default": 1.4
     },
     {
       "type": "header",
       "content": "正文样式"
+    },
+    {
+      "type": "font_picker",
+      "id": "text_font",
+      "label": "正文字体",
+      "default": "helvetica_n4",
+      "info": "留空则使用主题默认字体"
     },
     {
       "type": "range",
@@ -222,7 +251,6 @@
       "min": 400,
       "max": 700,
       "step": 100,
-      "unit": "",
       "label": "正文字重",
       "default": 400
     },
@@ -232,7 +260,6 @@
       "min": 1,
       "max": 2,
       "step": 0.1,
-      "unit": "",
       "label": "正文行高",
       "default": 1.6
     },
