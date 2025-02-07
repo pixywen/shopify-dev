@@ -52,6 +52,19 @@
             "text": "",
             "show_divider": true
           }
+        },
+        "table_kwW3Di": {
+          "type": "table",
+          "settings": {
+            "header_1": "Shipping Method",
+            "header_2": "Processed Time",
+            "header_3": "Estimated Delivery",
+            "header_4": "Notice",
+            "row1_col1": "Standard Shipping",
+            "row1_col2": "1-2 business days",
+            "row1_col3": "4-10 business days",
+            "row1_col4": "Your local Post Office or regional carrier may provide the final delivery"
+          }
         }
       },
       "block_order": [
@@ -59,7 +72,8 @@
         "paragraph_bwgTJc",
         "section_gwMx8K",
         "paragraph_3YFGbb",
-        "section_4LcpFD"
+        "section_4LcpFD",
+        "table_kwW3Di"
       ],
       "settings": {
         "image": "shopify://shop_images/insulated_jackets.jpg",
