@@ -16,12 +16,37 @@
         "padding_bottom": 28
       }
     },
-    "gg_contact_us_page_CxdTPn": {
-      "type": "gg-contact-us-page",
+    "gg_rich_text_page_Qf8ndb": {
+      "type": "gg-rich-text-page",
+      "blocks": {
+        "main_title_HzpYLL": {
+          "type": "main_title",
+          "settings": {
+            "title": "Policy"
+          }
+        },
+        "paragraph_bwgTJc": {
+          "type": "paragraph",
+          "settings": {
+            "text": ""
+          }
+        },
+        "section_4LcpFD": {
+          "type": "section",
+          "settings": {
+            "title": "",
+            "text": "",
+            "show_divider": true
+          }
+        }
+      },
+      "block_order": [
+        "main_title_HzpYLL",
+        "paragraph_bwgTJc",
+        "section_4LcpFD"
+      ],
       "settings": {
-        "heading": "Contact form",
-        "heading_size": "h1",
-        "color_scheme": "",
+        "image": "shopify://shop_images/insulated_jackets.jpg",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -29,6 +54,6 @@
   },
   "order": [
     "main",
-    "gg_contact_us_page_CxdTPn"
+    "gg_rich_text_page_Qf8ndb"
   ]
 }
