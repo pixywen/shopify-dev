@@ -363,6 +363,10 @@
         recipientFormCollapsed: `{{ 'recipient.form.collapsed' | t }}`,
         countrySelectorSearchCount: `{{ 'localization.country_results_count' | t: count: '[count]' }}`,
       };
+      //判断是否为首页，并添加类名
+      if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
+        document.body.classList.add('non-home');
+      }
     </script>
 
     {%- if settings.predictive_search_enabled -%}
