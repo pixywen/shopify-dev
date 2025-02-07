@@ -8,7 +8,6 @@
  * ------------------------------------------------------------
  */
 {
-  
   "sections": {
     "gg_rich_text_page_Qf8ndb": {
       "type": "gg-rich-text-page",
@@ -71,6 +70,19 @@
       ],
       "settings": {
         "content_width": 1200,
+        "blocks_spacing": 50,
+        "heading_font": "montserrat_n5",
+        "heading_size": 24,
+        "heading_weight": 700,
+        "heading_line_height": 1.4,
+        "subtitle_font": "montserrat_n5",
+        "subtitle_size": 20,
+        "subtitle_weight": 600,
+        "subtitle_line_height": 1.4,
+        "text_font": "montserrat_n3",
+        "text_size": 16,
+        "text_weight": 400,
+        "text_line_height": 1.6,
         "padding_left": 20,
         "padding_right": 20,
         "padding_top": 36,
