@@ -12,6 +12,29 @@
     padding-right: {{ section.settings.padding_right }}px;
   }
 
+  .gg-rich-text-{{ section.id }} .gg-rich-text__content > * + * {
+    margin-top: {{ section.settings.blocks_spacing }}px;
+  }
+
+  .gg-rich-text-{{ section.id }} .gg-rich-text__main-title {
+    font-size: {{ section.settings.heading_size }}px;
+    font-weight: {{ section.settings.heading_weight }};
+    line-height: {{ section.settings.heading_line_height }};
+  }
+
+  .gg-rich-text-{{ section.id }} .gg-rich-text__subtitle {
+    font-size: {{ section.settings.subtitle_size }}px;
+    font-weight: {{ section.settings.subtitle_weight }};
+    line-height: {{ section.settings.subtitle_line_height }};
+  }
+
+  .gg-rich-text-{{ section.id }} .gg-rich-text__paragraph,
+  .gg-rich-text-{{ section.id }} .gg-rich-text__text {
+    font-size: {{ section.settings.text_size }}px;
+    font-weight: {{ section.settings.text_weight }};
+    line-height: {{ section.settings.text_line_height }};
+  }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -140,6 +163,118 @@
       "unit": "px",
       "label": "下边距",
       "default": 36
+    },
+    {
+      "type": "range",
+      "id": "blocks_spacing",
+      "min": 20,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "模块间距",
+      "default": 50
+    },
+    {
+      "type": "header",
+      "content": "主标题样式"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 16,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "label": "主标题字号",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "heading_weight",
+      "min": 400,
+      "max": 900,
+      "step": 100,
+      "unit": "",
+      "label": "主标题字重",
+      "default": 700
+    },
+    {
+      "type": "range",
+      "id": "heading_line_height",
+      "min": 1,
+      "max": 2,
+      "step": 0.1,
+      "unit": "",
+      "label": "主标题行高",
+      "default": 1.4
+    },
+    {
+      "type": "header",
+      "content": "小标题样式"
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "min": 14,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "label": "小标题字号",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "subtitle_weight",
+      "min": 400,
+      "max": 900,
+      "step": 100,
+      "unit": "",
+      "label": "小标题字重",
+      "default": 600
+    },
+    {
+      "type": "range",
+      "id": "subtitle_line_height",
+      "min": 1,
+      "max": 2,
+      "step": 0.1,
+      "unit": "",
+      "label": "小标题行高",
+      "default": 1.4
+    },
+    {
+      "type": "header",
+      "content": "正文样式"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "正文字号",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "text_weight",
+      "min": 400,
+      "max": 700,
+      "step": 100,
+      "unit": "",
+      "label": "正文字重",
+      "default": 400
+    },
+    {
+      "type": "range",
+      "id": "text_line_height",
+      "min": 1,
+      "max": 2,
+      "step": 0.1,
+      "unit": "",
+      "label": "正文行高",
+      "default": 1.6
     }
   ],
   "blocks": [
