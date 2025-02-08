@@ -114,3 +114,22 @@
     {%- endfor -%}
   </ul>
 </nav>
+<script>
+  const scrolledPastHeader = document.querySelector('.section-header')
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".mega-menu").forEach((menu) => {
+      menu.addEventListener("mouseenter", function () {
+        this.setAttribute("open", "true"); // 悬停时展开
+      });
+
+      menu.addEventListener("mouseleave", function () {
+        this.removeAttribute("open"); // 移开时折叠
+        console.log('scrolledPastHeader', scrolledPastHeader)
+        scrolledPastHeader.classList.remove('scrolled-past-header')
+      });
+      menu.querySelector("summary").addEventListener("click", function (event) {
+        event.preventDefault(); // 阻止默认行为，防止点击控制 open
+      });
+    });
+  });
+</script>

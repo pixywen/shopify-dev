@@ -83,7 +83,9 @@
   margin: auto;
   max-width: 1397px;
 }
-
+details:hover {
+  cursor: pointer;
+}
 .mega-menu__list {
   display: flex;
   justify-content: space-between;
@@ -195,7 +197,8 @@ div.scrolled-past-header .header__heading svg {
   fill: black;
 }
 div.scrolled-past-header .header__menu-item:hover,
-.header__menu-item:hover {
+.header__menu-item:hover,
+.mega-menu[open] .header__menu-item {
   background: rgba(0, 0, 0, 1);
 }
 div.scrolled-past-header .header-wrapper .list-menu span,
@@ -203,7 +206,8 @@ div.scrolled-past-header .header-wrapper .list-menu span,
   color: rgba(0, 0, 0, 1) !important;
 }
 div.scrolled-past-header .header__menu-item:hover span,
-.header__menu-item:hover span {
+.header__menu-item:hover span,
+details.mega-menu[open] summary.header__menu-item span{
   color: white !important;
   text-decoration: none;
 }
