@@ -128,8 +128,8 @@
             <div class="newsletter__feature">
               {% if section.settings.feature1_icon != blank %}
                 <div class="newsletter__feature-icon">
-                  {% assign file_extension = section.settings.feature1_icon.src | split: '.' | last %}
-                  {% if file_extension == 'svg' %}
+                  {% assign file_extension = section.settings.feature1_icon.src | split: '.' | last | downcase %}
+                  {% if file_extension == 'svg' or file_extension == 'SVG' %}
                     <img src="{{ section.settings.feature1_icon | image_url }}" loading="lazy" width="52" height="50" alt="">
                   {% else %}
                     {{ section.settings.feature1_icon | image_url: width: 52 | image_tag: loading: 'lazy', width: 52, height: 50 }}
@@ -146,8 +146,8 @@
             <div class="newsletter__feature">
               {% if section.settings.feature2_icon != blank %}
                 <div class="newsletter__feature-icon">
-                  {% assign file_extension = section.settings.feature2_icon.src | split: '.' | last %}
-                  {% if file_extension == 'svg' %}
+                  {% assign file_extension = section.settings.feature2_icon.src | split: '.' | last | downcase %}
+                  {% if file_extension == 'svg' or file_extension == 'SVG' %}
                     <img src="{{ section.settings.feature2_icon | image_url }}" loading="lazy" width="52" height="50" alt="">
                   {% else %}
                     {{ section.settings.feature2_icon | image_url: width: 52 | image_tag: loading: 'lazy', width: 52, height: 50 }}
@@ -164,8 +164,8 @@
             <div class="newsletter__feature">
               {% if section.settings.feature3_icon != blank %}
                 <div class="newsletter__feature-icon">
-                  {% assign file_extension = section.settings.feature3_icon.src | split: '.' | last %}
-                  {% if file_extension == 'svg' %}
+                  {% assign file_extension = section.settings.feature3_icon.src | split: '.' | last | downcase %}
+                  {% if file_extension == 'svg' or file_extension == 'SVG' %}
                     <img src="{{ section.settings.feature3_icon | image_url }}" loading="lazy" width="52" height="50" alt="">
                   {% else %}
                     {{ section.settings.feature3_icon | image_url: width: 52 | image_tag: loading: 'lazy', width: 52, height: 50 }}
@@ -182,8 +182,8 @@
             <div class="newsletter__feature">
               {% if section.settings.feature4_icon != blank %}
                 <div class="newsletter__feature-icon">
-                  {% assign file_extension = section.settings.feature4_icon.src | split: '.' | last %}
-                  {% if file_extension == 'svg' %}
+                  {% assign file_extension = section.settings.feature4_icon.src | split: '.' | last | downcase %}
+                  {% if file_extension == 'svg' or file_extension == 'SVG' %}
                     <img src="{{ section.settings.feature4_icon | image_url }}" loading="lazy" width="52" height="50" alt="">
                   {% else %}
                     {{ section.settings.feature4_icon | image_url: width: 52 | image_tag: loading: 'lazy', width: 52, height: 50 }}
