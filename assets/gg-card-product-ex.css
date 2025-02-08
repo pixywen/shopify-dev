@@ -41,7 +41,7 @@
   transition: transform 0.2s ease;
   appearance: none;
   -webkit-appearance: none;
-  background-size: contain; /* 确保图片完整显示且不变形 */
+  background-size: cover; /* 确保图片完整显示且不变形 */
   background-position: center;
   background-repeat: no-repeat;
   z-index: 1;
@@ -49,7 +49,7 @@
 
 
 .color-swatch:hover {
-  /* transform: scale(1.05); */
+  transform: scale(1.05);
 }
 
 .color-swatch--active {
