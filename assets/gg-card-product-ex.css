@@ -3,6 +3,10 @@
   position: relative;
 }
 
+.card__media {
+  background-color: rgba(var(--color-foreground), 0.04); /* 产品图片区域的背景色，默认是浅灰色 */
+}
+
 .media {
   position: relative;
 }
