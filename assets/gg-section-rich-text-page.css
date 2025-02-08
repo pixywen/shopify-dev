@@ -7,7 +7,9 @@
   border-radius: 8px;
   overflow: hidden;
 }
-
+div.gg-rich-text__block-table_kwW3Di {
+  margin-bottom: 73px;
+}
 .gg-rich-text__banner img {
   width: 100%;
   height: auto;
@@ -62,15 +64,17 @@
 
 .gg-rich-text__table {
   width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
   background: #FFFFFF;
+  text-align: center;
 }
 
 .gg-rich-text__table th,
 .gg-rich-text__table td {
   padding: 16px;
-  text-align: left;
-  border: 1px solid rgba(var(--color-foreground), 0.08);
+  text-align: center;
+  border: 1px solid rgba(184, 184, 184, 1);
 }
 
 .gg-rich-text__table th {
