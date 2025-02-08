@@ -82,6 +82,14 @@
   color: rgba(var(--color-foreground), 0.75);
 }
 
+.gg-rich-text__table td p {
+  margin: 0;
+}
+
+.gg-rich-text__table td p + p {
+  margin-top: 0.5em;
+}
+
 @media screen and (max-width: 749px) {
   .gg-rich-text {
     padding-left: 16px;
