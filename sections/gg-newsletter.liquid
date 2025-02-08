@@ -130,7 +130,7 @@
                 <div class="newsletter__feature-icon">
                   {% assign file_extension = section.settings.feature1_icon.src | split: '.' | last %}
                   {% if file_extension == 'svg' %}
-                    {{ section.settings.feature1_icon | image_url | inline_svg }}
+                    <img src="{{ section.settings.feature1_icon | image_url }}" loading="lazy" width="52" height="50" alt="">
                   {% else %}
                     {{ section.settings.feature1_icon | image_url: width: 52 | image_tag: loading: 'lazy', width: 52, height: 50 }}
                   {% endif %}
@@ -148,7 +148,7 @@
                 <div class="newsletter__feature-icon">
                   {% assign file_extension = section.settings.feature2_icon.src | split: '.' | last %}
                   {% if file_extension == 'svg' %}
-                    {{ section.settings.feature2_icon | image_url | inline_svg }}
+                    <img src="{{ section.settings.feature2_icon | image_url }}" loading="lazy" width="52" height="50" alt="">
                   {% else %}
                     {{ section.settings.feature2_icon | image_url: width: 52 | image_tag: loading: 'lazy', width: 52, height: 50 }}
                   {% endif %}
@@ -166,7 +166,7 @@
                 <div class="newsletter__feature-icon">
                   {% assign file_extension = section.settings.feature3_icon.src | split: '.' | last %}
                   {% if file_extension == 'svg' %}
-                    {{ section.settings.feature3_icon | image_url | inline_svg }}
+                    <img src="{{ section.settings.feature3_icon | image_url }}" loading="lazy" width="52" height="50" alt="">
                   {% else %}
                     {{ section.settings.feature3_icon | image_url: width: 52 | image_tag: loading: 'lazy', width: 52, height: 50 }}
                   {% endif %}
@@ -184,7 +184,7 @@
                 <div class="newsletter__feature-icon">
                   {% assign file_extension = section.settings.feature4_icon.src | split: '.' | last %}
                   {% if file_extension == 'svg' %}
-                    {{ section.settings.feature4_icon | image_url | inline_svg }}
+                    <img src="{{ section.settings.feature4_icon | image_url }}" loading="lazy" width="52" height="50" alt="">
                   {% else %}
                     {{ section.settings.feature4_icon | image_url: width: 52 | image_tag: loading: 'lazy', width: 52, height: 50 }}
                   {% endif %}
