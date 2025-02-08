@@ -69,6 +69,15 @@ class ProductCardEx extends HTMLElement {
     event.stopPropagation();
 
     const swatch = event.currentTarget;
+    
+    // 移除其他色块的激活状态
+    this.colorSwatches.forEach(s => {
+      s.classList.remove('color-swatch--active');
+    });
+    
+    // 为当前点击的色块添加激活状态
+    swatch.classList.add('color-swatch--active');
+    
     const variantImage = swatch.dataset.variantImage;
     
     // 获取基础URL和版本号

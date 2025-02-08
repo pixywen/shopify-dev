@@ -47,11 +47,11 @@
   transform: scale(1.1);
 }
 
-/* 暂时不需要选中状态样式
+
 .color-swatch--active {
   box-shadow: 0 0 0 2px #000;
 }
-*/
+
 
 .visually-hidden {
   position: absolute;
