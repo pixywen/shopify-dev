@@ -1,0 +1,73 @@
+{% comment %}
+  面包屑导航
+{% endcomment %}
+{{ 'gg-component-breadcrumb.css' | asset_url | stylesheet_tag }} 
+
+<nav class="breadcrumb page-width" aria-label="breadcrumb">
+  <ol class="breadcrumb__list">
+    {%- if collection or product -%}
+      {%- assign current_collection = collection -%}
+      {%- assign breadcrumb_items = '' -%}
+      
+      {%- if product -%}
+        {%- comment -%}仅使用产品的 parent_collection，如未配置则不显示面包屑{%- endcomment -%}
+        {%- assign parent_handle = product.metafields.custom.parent_collection | handleize -%}
+        {%- if parent_handle -%}
+          {%- assign current_collection = collections[parent_handle] -%}
+        {%- else -%}
+          {%- assign current_collection = blank -%}
+        {%- endif -%}
+      {%- endif -%}
+
+      {%- if current_collection != blank -%}
+        {%- comment -%}递归查找父级系列直到根系列{%- endcomment -%}
+        {%- assign temp_collection = current_collection -%}
+        {%- assign max_depth = 3 -%}
+
+        {%- for i in (1..max_depth) -%}
+          {%- if temp_collection != blank -%}
+           
+            {%- unless forloop.first and product == blank -%}
+              {%- capture breadcrumb_item -%}
+                <li class="breadcrumb__item">
+                  <a href="{{ temp_collection.url }}" class="breadcrumb__link">{{ temp_collection.title }}</a>
+                </li>
+              {%- endcapture -%}
+            
+              {%- assign breadcrumb_items = breadcrumb_item | append: breadcrumb_items -%}
+            {%- endunless -%}
+            
+            {%- if temp_collection.metafields.custom.parent_collection -%}
+              {%- assign parent_handle = temp_collection.metafields.custom.parent_collection | handleize -%}
+              {%- assign temp_collection = collections[parent_handle] -%}
+              {%- if temp_collection == blank -%}
+                {%- break -%}
+              {%- endif -%}
+            {%- else -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+
+        {%- if breadcrumb_items != blank -%}
+          {{ breadcrumb_items }}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endif -%}
+  </ol>
+</nav>
+
+{% schema %}
+{
+  "name": "GG-产品&系列面包屑",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "presets": [
+    {
+        "name": "GG-产品&系列面包屑"
+    }
+  ]
+}
+{% endschema %}
+

@@ -38,6 +38,11 @@
   }
 {%- endstyle -%}
 
+{% comment %} {% for option in collection.sort_options %}
+  <p>Option Value: {{ option.value }}</p>
+  <p>Option Name: {{ option.name }}</p>
+{% endfor %} {% endcomment %}
+
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
   {%- paginate collection.products by section.settings.products_per_page -%}
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
@@ -57,14 +62,22 @@
                   id="SortBy"
                   aria-describedby="a11y-refresh-page-message"
                 >
-                  {%- for option in collection.sort_options -%}
+                  {%- assign custom_sort_options = 
+                    "manual:Our Recommendation,price-ascending:Price Low to High,price-descending:Price High to Low,created-descending:What's New,best-selling:Rating" 
+                    | split: ',' -%}
+                  
+                  {%- for custom_option in custom_sort_options -%}
+                    {%- assign option_parts = custom_option | split: ':' -%}
+                    {%- assign option_value = option_parts[0] -%}
+                    {%- assign option_name = option_parts[1] -%}
+                    
                     <option
-                      value="{{ option.value | escape }}"
-                      {% if option.value == sort_by %}
+                      value="{{ option_value | escape }}"
+                      {% if option_value == sort_by %}
                         selected="selected"
                       {% endif %}
                     >
-                      {{ option.name | escape }}
+                      {{ option_name | escape }}
                     </option>
                   {%- endfor -%}
                 </select>
@@ -100,7 +113,7 @@
     {%- endif -%}
 
     <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical page-width{% endif %}">
-      {{ 'component-facets.css' | asset_url | stylesheet_tag }}
+      {{ 'gg-component-facets.css' | asset_url | stylesheet_tag }}
       <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
       {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
         <aside
@@ -109,7 +122,7 @@
           id="main-collection-filters"
           data-id="{{ section.id }}"
         >
-          {% render 'facets',
+          {% render 'gg-facets',
             results: collection,
             enable_filtering: section.settings.enable_filtering,
             enable_sorting: section.settings.enable_sorting,

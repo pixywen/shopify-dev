@@ -209,12 +209,12 @@
       "show_less": "Show less",
       "max_price": "The highest price is {{ price }}",
       "product_count": {
-        "one": "{{ product_count }} of {{ count }} product",
-        "other": "{{ product_count }} of {{ count }} products"
+        "one": "{{ product_count }} of {{ count }} result",
+        "other": "{{ product_count }} of {{ count }} results"
       },
       "product_count_simple": {
-        "one": "{{ count }} product",
-        "other": "{{ count }} products"
+        "one": "{{ count }} result",
+        "other": "{{ count }} results"
       },
       "reset": "Reset",
       "sort_button": "Sort",
@@ -223,6 +223,8 @@
       "clear_filter": "Remove filter"
     }
   },
+
+
   "templates": {
     "search": {
       "no_results": "No results found for “{{ terms }}”. Check the spelling or use a different word or phrase.",

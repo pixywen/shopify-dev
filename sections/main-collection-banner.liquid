@@ -1,5 +1,8 @@
 {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
-{{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
+{% comment %}
+  使用 gg-component-collection-hero.css 替代 component-collection-hero.css
+{% endcomment %}
+{{ 'gg-component-collection-hero.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   @media screen and (max-width: 749px) {
@@ -44,6 +47,9 @@
     {%- endif -%}
   </div>
 </div>
+
+<!-- 添加分割线，使用 page-width 类控制宽度 -->
+<div class="collection-hero__divider page-width">&nbsp;</div>
 
 {% schema %}
 {
