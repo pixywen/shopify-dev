@@ -211,6 +211,39 @@
         "image_2": "shopify://shop_images/1_4d7157ea-e861-4c47-9ff2-c619f56c1128.jpg",
         "image_3": "shopify://shop_images/2_fc3f91ce-4260-4ebc-b75e-14f137b4dd33.jpg"
       }
+    },
+    "newsletter_94DYAy": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_XWhhqW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_xtU76d": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
+          }
+        },
+        "email_form_EpaFJr": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_XWhhqW",
+        "paragraph_xtU76d",
+        "email_form_EpaFJr"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -221,6 +254,7 @@
     "gg_image_banner_common_ARcgWG",
     "gg_image_banner_common_XyH39W",
     "gg_image_banner_common_CHdPGU",
-    "gg_three_image_banner_wVXhhw"
+    "gg_three_image_banner_wVXhhw",
+    "newsletter_94DYAy"
   ]
 }
