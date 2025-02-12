@@ -502,7 +502,10 @@
       "password_mismatch": "Passwords don't match",
       "show_password": "Show password",
       "hide_password": "Hide password",
-      "passwords_dont_match": "Passwords don't match"
+      "passwords_dont_match": "Passwords don't match",
+      "terms_html": "I have read and agree to the <a href=\"{{ terms_url }}\" class=\"link\">Terms of Use</a> and Privacy Policy",
+      "terms_url": "Terms of Use page URL",
+      "offers": "I'd like to receive exclusive offers and promotions"
     },
     "reset_password": {
       "title": "Reset account password",

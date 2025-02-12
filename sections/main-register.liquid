@@ -148,7 +148,33 @@
       </span>
       {{ 'customer.register.passwords_dont_match' | t }}
     </span>
-    <button>
+    <div class="register-checkbox">
+      <input
+        type="checkbox"
+        name="terms_accepted"
+        id="RegisterForm-terms"
+        {% if section.settings.default_terms_checked %}checked{% endif %}
+        required
+      >
+      <label for="RegisterForm-terms">
+        {{ 'customer.register.terms_html' | t: terms_url: section.settings.terms_url }}
+      </label>
+    </div>
+
+    <div class="register-checkbox">
+      <input
+        type="checkbox"
+        id="RegisterForm-offers"
+        {% if section.settings.default_offers_checked %}checked{% endif %}
+      >
+      <label for="RegisterForm-offers">
+        {{ 'customer.register.offers' | t }}
+      </label>
+    </div>
+
+    <input type="hidden" name="customer[tags]" id="customer-tags" value="">
+
+    <button id="register-submit" {% unless section.settings.default_terms_checked %}disabled{% endunless %}>
       {{ 'customer.register.submit' | t }}
     </button>
   {%- endform -%}
@@ -187,6 +213,31 @@
         event.preventDefault();
       }
     });
+
+    const termsCheckbox = document.getElementById('RegisterForm-terms');
+    const submitButton = document.getElementById('register-submit');
+    
+    termsCheckbox.addEventListener('change', function() {
+      submitButton.disabled = !this.checked;
+      if (this.checked) {
+        submitButton.classList.remove('button--disabled');
+      } else {
+        submitButton.classList.add('button--disabled');
+      }
+    });
+
+    const offersCheckbox = document.getElementById('RegisterForm-offers');
+    const customerTags = document.getElementById('customer-tags');
+    
+    // 初始化标签值
+    if (offersCheckbox.checked) {
+      customerTags.value = 'receive exclusive offers';
+    }
+    
+    // 监听复选框变化
+    offersCheckbox.addEventListener('change', function() {
+      customerTags.value = this.checked ? 'receive exclusive offers' : '';
+    });
   });
 </script>
 
@@ -218,6 +269,23 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "checkbox",
+      "id": "default_terms_checked",
+      "label": "Default Terms Checkbox State",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "default_offers_checked",
+      "label": "Default Offers Checkbox State",
+      "default": false
+    },
+    {
+      "type": "url",
+      "id": "terms_url",
+      "label": "Terms of Use Page URL"
     }
   ]
 }

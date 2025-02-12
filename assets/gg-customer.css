@@ -753,3 +753,68 @@ li[data-address] > h2 {
 .addresses form > div:nth-of-type(7) + div[id] {
   margin-top: 1.5rem;
 }
+
+.checkbox-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.checkbox-field {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  text-align: left;
+}
+
+.checkbox-field input[type="checkbox"] {
+  margin: 0.3rem 0 0;
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox-field label {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.checkbox-field .link {
+  text-decoration: underline;
+}
+
+button.button--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.field input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.field input[type="checkbox"] + label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Checkbox styles */
+.register-checkbox {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.register-checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px 0 0;
+  flex: none;
+}
+
+.register-checkbox label {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin: 0;
+}
