@@ -9,6 +9,10 @@
  */
 {
   "sections": {
+    "gg_breadcrumb_yr7zeq": {
+      "type": "gg-breadcrumb",
+      "settings": {}
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -102,6 +106,7 @@
     }
   },
   "order": [
+    "gg_breadcrumb_yr7zeq",
     "main",
     "related-products"
   ]
