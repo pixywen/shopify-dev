@@ -505,7 +505,9 @@
       "passwords_dont_match": "Passwords don't match",
       "terms_html": "I have read and agree to the <a href=\"{{ terms_url }}\" class=\"link\">Terms of Use</a> and Privacy Policy",
       "terms_url": "Terms of Use page URL",
-      "offers": "I'd like to receive exclusive offers and promotions"
+      "offers": "I'd like to receive exclusive offers and promotions",
+      "have_account": "Already have an account with Alpargali?",
+      "sign_in": "SIGN IN"
     },
     "reset_password": {
       "title": "Reset account password",

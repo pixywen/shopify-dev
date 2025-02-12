@@ -177,6 +177,13 @@
     <button id="register-submit" {% unless section.settings.default_terms_checked %}disabled{% endunless %}>
       {{ 'customer.register.submit' | t }}
     </button>
+
+    <div class="login-prompt">
+      <p>{{ 'customer.register.have_account' | t }}</p>
+      <a href="{{ routes.account_login_url }}" class="button">
+        {{ 'customer.register.sign_in' | t }}
+      </a>
+    </div>
   {%- endform -%}
 </div>
 
