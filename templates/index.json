@@ -211,6 +211,7 @@
         "image_2": "shopify://shop_images/1_4d7157ea-e861-4c47-9ff2-c619f56c1128.jpg",
         "image_3": "shopify://shop_images/2_fc3f91ce-4260-4ebc-b75e-14f137b4dd33.jpg"
       }
+<<<<<<< HEAD
     },
     "newsletter_94DYAy": {
       "type": "newsletter",
@@ -253,6 +254,8 @@
         "feature4_icon": "shopify://shop_images/icon-index-email-bottom-4.svg",
         "feature4_text": "Trusted By 15,00+ Customers"
       }
+=======
+>>>>>>> parent of e08b98a (Update from Shopify for theme shopify-dev/master)
     }
   },
   "order": [
@@ -263,7 +266,6 @@
     "gg_image_banner_common_ARcgWG",
     "gg_image_banner_common_XyH39W",
     "gg_image_banner_common_CHdPGU",
-    "gg_three_image_banner_wVXhhw",
-    "newsletter_94DYAy"
+    "gg_three_image_banner_wVXhhw"
   ]
 }
