@@ -818,3 +818,18 @@ button.button--disabled {
   line-height: 1.5;
   margin: 0;
 }
+
+.login-prompt {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.login-prompt p {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.login-prompt .button {
+  text-decoration: none;
+  display: inline-block;
+}
