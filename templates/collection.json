@@ -9,6 +9,10 @@
  */
 {
   "sections": {
+    "gg_breadcrumb_bJw9Fj": {
+      "type": "gg-breadcrumb",
+      "settings": {}
+    },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
@@ -39,6 +43,7 @@
     }
   },
   "order": [
+    "gg_breadcrumb_bJw9Fj",
     "banner",
     "product-grid"
   ]
