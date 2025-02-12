@@ -127,69 +127,11 @@
         {{ form.errors.messages.password }}.
       </span>
     {%- endif -%}
-    <div class="field">
-      <input
-        type="password"
-        id="RegisterForm-password-confirm"
-        aria-required="true"
-        {% if form.errors contains 'password' %}
-          aria-invalid="true"
-          aria-describedby="RegisterForm-password-confirm-error"
-        {% endif %}
-        placeholder="{{ 'customer.register.confirm_password' | t }}"
-      >
-      <label for="RegisterForm-password-confirm">
-        {{ 'customer.register.confirm_password' | t }}
-      </label>
-    </div>
-    <span id="RegisterForm-password-confirm-error" class="form__message" style="display: none;">
-      <span class="svg-wrapper">
-        {{- 'icon-error.svg' | inline_asset_content -}}
-      </span>
-      {{ 'customer.register.passwords_dont_match' | t }}
-    </span>
     <button>
       {{ 'customer.register.submit' | t }}
     </button>
   {%- endform -%}
 </div>
-
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('form[action="/account"]');
-    const password = document.getElementById('RegisterForm-password');
-    const confirmPassword = document.getElementById('RegisterForm-password-confirm');
-    const errorMessage = document.getElementById('RegisterForm-password-confirm-error');
-    
-    // 验证密码匹配函数
-    const validatePasswords = () => {
-      if (confirmPassword.value && password.value !== confirmPassword.value) {
-        errorMessage.style.display = 'block';
-        confirmPassword.setAttribute('aria-invalid', 'true');
-        return false;
-      } else {
-        errorMessage.style.display = 'none';
-        confirmPassword.removeAttribute('aria-invalid');
-        return true;
-      }
-    };
-
-    // 密码输入框失去焦点时验证
-    password.addEventListener('blur', validatePasswords);
-    
-    // 确认密码输入框失去焦点时验证
-    confirmPassword.addEventListener('blur', validatePasswords);
-    
-    // 表单提交时验证
-    form.addEventListener('submit', function(event) {
-      if (!validatePasswords()) {
-        event.preventDefault();
-      }
-    });
-  });
-</script>
-
 
 {% schema %}
 {

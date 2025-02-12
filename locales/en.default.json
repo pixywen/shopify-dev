@@ -437,16 +437,17 @@
     "log_out": "Log out",
     "login_page": {
       "cancel": "Cancel",
-      "create_account": "Create account",
+      "create_account": "CREATE AN ACCOUNT",
       "email": "Email",
       "forgot_password": "Forgot your password?",
       "guest_continue": "Continue",
       "guest_title": "Continue as a guest",
       "password": "Password",
-      "title": "Login",
-      "sign_in": "Sign in",
+      "title": "Sign In",
+      "sign_in": "SIGN IN",
       "submit": "Submit",
-      "alternate_provider_separator": "or"
+      "alternate_provider_separator": "or",
+      "no_account_prompt": "Don't have an account with Alpargali?"
     },
     "order": {
       "title": "Order {{ name }}",
@@ -490,12 +491,18 @@
       "success": "We've sent you an email with a link to update your password."
     },
     "register": {
-      "title": "Create account",
+      "title": "New Account",
       "first_name": "First name",
       "last_name": "Last name",
       "email": "Email",
       "password": "Password",
-      "submit": "Create"
+      "submit": "Create",
+      "have_account_prompt": "Already have an account with Alpargali?",
+      "confirm_password": "Confirm New Password",
+      "password_mismatch": "Passwords don't match",
+      "show_password": "Show password",
+      "hide_password": "Hide password",
+      "passwords_dont_match": "Passwords don't match"
     },
     "reset_password": {
       "title": "Reset account password",
