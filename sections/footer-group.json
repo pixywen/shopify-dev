@@ -11,49 +11,6 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "gg_newsletter_nCpHiA": {
-      "type": "gg-newsletter",
-      "blocks": {
-        "heading_CthqcU": {
-          "type": "heading",
-          "settings": {
-            "heading": "Let's Stay Connected",
-            "heading_size": "h1"
-          }
-        },
-        "paragraph_WtTLid": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Subscribe to get special offers, free giveaways, and exclusive deals.</p>"
-          }
-        },
-        "email_form_AeyfJ4": {
-          "type": "email_form",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading_CthqcU",
-        "paragraph_WtTLid",
-        "email_form_AeyfJ4"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52,
-        "show_bottom_content": true,
-        "feature1_icon": "shopify://shop_images/icon-index-email-bottom-1.svg",
-        "feature1_text": "Free Shipping over $169",
-        "feature2_icon": "shopify://shop_images/icon-index-email-bottom-2.svg",
-        "feature2_text": "2 Kickstarter Successful Campaigns",
-        "feature3_icon": "shopify://shop_images/icon-index-email-bottom-3.svg",
-        "feature3_text": "Lifetime Guarantee",
-        "feature4_icon": "shopify://shop_images/icon-index-email-bottom-4.svg",
-        "feature4_text": "Trusted By 15,00+ Customers"
-      }
-    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -115,7 +72,6 @@
     }
   },
   "order": [
-    "gg_newsletter_nCpHiA",
     "footer"
   ]
 }

@@ -211,33 +211,32 @@
         "image_2": "shopify://shop_images/1_4d7157ea-e861-4c47-9ff2-c619f56c1128.jpg",
         "image_3": "shopify://shop_images/2_fc3f91ce-4260-4ebc-b75e-14f137b4dd33.jpg"
       }
-<<<<<<< HEAD
     },
-    "newsletter_94DYAy": {
-      "type": "newsletter",
+    "gg_newsletter_FaMF9W": {
+      "type": "gg-newsletter",
       "blocks": {
-        "heading_XWhhqW": {
+        "heading_8btTLY": {
           "type": "heading",
           "settings": {
             "heading": "Let's Stay Connected",
             "heading_size": "h1"
           }
         },
-        "paragraph_xtU76d": {
+        "paragraph_YdDxnN": {
           "type": "paragraph",
           "settings": {
-              "text": "<p>Subscribe to get special offers, free giveaways, and exclusive deals.</p>"
+            "text": "<p>Subscribe to get special offers, free giveaways, and exclusive deals.</p>"
           }
         },
-        "email_form_EpaFJr": {
+        "email_form_wCBTgq": {
           "type": "email_form",
           "settings": {}
         }
       },
       "block_order": [
-        "heading_XWhhqW",
-        "paragraph_xtU76d",
-        "email_form_EpaFJr"
+        "heading_8btTLY",
+        "paragraph_YdDxnN",
+        "email_form_wCBTgq"
       ],
       "settings": {
         "color_scheme": "",
@@ -248,14 +247,12 @@
         "feature1_icon": "shopify://shop_images/icon-index-email-bottom-1.svg",
         "feature1_text": "Free Shipping over $169",
         "feature2_icon": "shopify://shop_images/icon-index-email-bottom-2.svg",
-        "feature2_text": "2 Kickstarter Successful Campaigns",
+        "feature2_text": "2个Kickstarter成功活动",
         "feature3_icon": "shopify://shop_images/icon-index-email-bottom-3.svg",
         "feature3_text": "Lifetime Guarantee",
         "feature4_icon": "shopify://shop_images/icon-index-email-bottom-4.svg",
         "feature4_text": "Trusted By 15,00+ Customers"
       }
-=======
->>>>>>> parent of e08b98a (Update from Shopify for theme shopify-dev/master)
     }
   },
   "order": [
@@ -266,6 +263,7 @@
     "gg_image_banner_common_ARcgWG",
     "gg_image_banner_common_XyH39W",
     "gg_image_banner_common_CHdPGU",
-    "gg_three_image_banner_wVXhhw"
+    "gg_three_image_banner_wVXhhw",
+    "gg_newsletter_FaMF9W"
   ]
 }
