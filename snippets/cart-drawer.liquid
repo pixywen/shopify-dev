@@ -142,7 +142,9 @@
                             {{- item.product.title | escape -}}
                           </a>
 
-                          {%- if item.original_price != item.final_price -%}
+                          {% comment %} 此处需注释，单价 {% endcomment %}
+
+                          {% comment %} {%- if item.original_price != item.final_price -%}
                             <div class="cart-item__discounted-prices">
                               <span class="visually-hidden">
                                 {{ 'products.product.price.regular_price' | t }}
@@ -161,14 +163,18 @@
                             <div class="product-option">
                               {{ item.original_price | money }}
                             </div>
-                          {%- endif -%}
+                          {%- endif -%} {% endcomment %}
 
+                         
                           {%- if item.product.has_only_default_variant == false
                             or item.properties.size != 0
                             or item.selling_plan_allocation != null
                           -%}
                             <dl>
-                              {%- if item.product.has_only_default_variant == false -%}
+
+                             {% comment %} 此处需注释，更改变体属性显示格式 {% endcomment %}
+
+                              {% comment %} {%- if item.product.has_only_default_variant == false -%}
                                 {%- for option in item.options_with_values -%}
                                   <div class="product-option">
                                     <dt>{{ option.name }}:</dt>
@@ -178,7 +184,19 @@
                                     </dd>
                                   </div>
                                 {%- endfor -%}
+                              {%- endif -%} {% endcomment %}
+
+                              {%- if item.product.has_only_default_variant == false -%}
+                                <div class="product-option">
+                                  {%- for option in item.options_with_values -%}
+                                    <span class="option-value">
+                                      {{ option.value }}{% unless forloop.last %} / {% endunless %}
+                                    </span>
+                                  {%- endfor -%}
+                                </div>
                               {%- endif -%}
+
+                             
 
                               {%- for property in item.properties -%}
                                 {%- assign property_first_char = property.first | slice: 0 -%}
@@ -330,16 +348,7 @@
                                 id="CartDrawer-Remove-{{ item.index | plus: 1 }}"
                                 data-index="{{ item.index | plus: 1 }}"
                               >
-                                <button
-                                  type="button"
-                                  class="button button--tertiary cart-remove-button"
-                                  aria-label="{{ 'sections.cart.remove_title' | t: title: item.title | escape }}"
-                                  data-variant-id="{{ item.variant.id }}"
-                                >
-                                  <span class="svg-wrapper">
-                                    {{- 'icon-remove.svg' | inline_asset_content -}}
-                                  </span>
-                                </button>
+                                <span class="remove-text">Remove</span>
                               </cart-remove-button>
                             </div>
                             {%- if has_qty_rules or has_vol_pricing -%}

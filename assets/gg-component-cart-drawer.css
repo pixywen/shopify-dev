@@ -403,3 +403,19 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
     margin-left: 0;
   }
 }
+
+.remove-text {
+  font-size: 1.4rem;
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgb(var(--color-foreground));
+}
+
+cart-remove-button button {
+  display: none;
+}
+
+.option-value {
+  font-size: 1.4rem;
+  color: rgba(var(--color-foreground), 0.75);
+}
