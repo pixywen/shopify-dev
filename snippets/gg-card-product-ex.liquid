@@ -1,5 +1,6 @@
 {% comment %}
   Renders a product card
+  自定义项，为产品卡片添加了色卡选择器，当鼠标移动或选中对应色卡时，在对应的产品项切换主图。
 
   Accepts:
   - card_product: {Object} Product Liquid object (optional)
@@ -18,7 +19,7 @@
   - placeholder_image: {String} The placeholder image to use when no product exists. Default: 'product-apparel-2' (optional)
 
   Usage:
-  {% render 'card-product', show_vendor: section.settings.show_vendor %}
+  {% render 'gg-card-product-ex', show_vendor: section.settings.show_vendor %}
 {% endcomment %}
 {%- unless skip_styles -%}
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
