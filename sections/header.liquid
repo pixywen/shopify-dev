@@ -138,23 +138,24 @@ i.icon-swym-wishlist {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transition: opacity .3s ease;
+    transition: all .3s ease;
 }
 
 /* 首页状态 */
 {% if template == 'index' %}
     .header-wrapper .swym-wishlist:before {
-        filter: brightness(0) invert(1); /* 使图标变白 */
+        filter: brightness(0) invert(1);
     }
     
     div.scrolled-past-header .swym-wishlist:before {
-        filter: none; /* 恢复原色 */
+        filter: none;
     }
 {% endif %}
 
-/* 交互状态 */
+/* 交互状态 - 添加放大效果 */
 .swym-wishlist:hover:before {
     opacity: 0.7;
+    transform: translate(-50%, -50%) scale(1.1);
 }
 
 /* 菜单展开时的状态 */
@@ -185,8 +186,8 @@ i.icon-swym-wishlist {
 }
 
 .header__icon--cart svg {
-    width: 24px;
-    height: 24px;
+    width: 34px;
+    height: 34px;
     transition: fill .3s ease;
 }
 
@@ -240,6 +241,32 @@ i.icon-swym-wishlist {
     color: white;
     background: rgba(var(--color-foreground), .75);
     border-radius: 9px;
+}
+
+/* Login按钮基础样式 */
+.header__icon--account {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    width: 34px;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Login按钮文字样式 */
+.login-text {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+}
+
+/* Login按钮hover效果 */
+.header__icon--account:hover .login-text {
+    opacity: 0.7;
+    transform: scale(1.1);
 }
 {% endstyle %}
 
