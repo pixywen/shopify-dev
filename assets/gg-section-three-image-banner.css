@@ -48,7 +48,7 @@
 .gg-three-banner-container .banner-button-wrapper .button {
   width: 212.96px;
   height: 54px;
-  text-align: center;
+  line-height: 22px;
   background-color: #000000;
   color: #ffffff;
   text-decoration: none;
@@ -56,6 +56,17 @@
   font-weight: 500;
   font-size: 18px;
   transition: all 0.3s ease;
+  padding-left: 45px;
+  position: relative;
+}
+
+.gg-three-banner-container .banner-button-wrapper .button svg {
+  position: absolute;
+  top: 21px;
+  right: 24px;
+}
+.gg-three-banner-container .banner-button-wrapper .button path {
+  fill: #FFF;
 }
 
 .gg-three-banner-container .banner-button-wrapper .button:hover {

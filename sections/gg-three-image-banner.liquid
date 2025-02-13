@@ -18,6 +18,7 @@
       <div class="banner-button-wrapper">
         <a href="{{ section.settings.button_link }}" class="button">
           {{ section.settings.button_label | escape }}
+          {{ 'icon-button-arrow.svg' | inline_asset_content }}
         </a>
       </div>
     {%- endif -%}
