@@ -120,57 +120,47 @@
     text-decoration: none;
 }
 
-/* 移除focus状态的下划线 */
-.swym-wishlist:focus {
-    text-decoration: none;
-    outline: none;
-}
-
+/* 隐藏原始字体图标 */
 i.icon-swym-wishlist {
-    font-family: 'swym-font';
-    font-style: normal;
-    vertical-align: middle;
-    transition: color .3s ease;
+    display: none;
 }
 
-i.icon-swym-wishlist:after {
+/* 添加SVG图标 */
+.swym-wishlist:before {
     content: '';
-    font-size: 24px;
-    line-height: 1;
-    text-align: center;
-    display: inline;
-}
-
-/* SWYM ready状态 */
-.swym-ready i.icon-swym-wishlist:after {
-    content: '\f004';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 34px;
+    height: 34px;
+    background-image: url('{{ 'icon-wishlist.svg' | asset_url }}');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: opacity .3s ease;
 }
 
 /* 首页状态 */
 {% if template == 'index' %}
-    .header-wrapper .icon-swym-wishlist {
-        color: white !important;
+    .header-wrapper .swym-wishlist:before {
+        filter: brightness(0) invert(1); /* 使图标变白 */
     }
     
-    div.scrolled-past-header .icon-swym-wishlist {
-        color: rgba(var(--color-foreground), .75) !important;
-    }
-{% else %}
-    /* 非首页状态 */
-    .header-wrapper .icon-swym-wishlist {
-        color: rgba(var(--color-foreground), .75) !important;
+    div.scrolled-past-header .swym-wishlist:before {
+        filter: none; /* 恢复原色 */
     }
 {% endif %}
 
 /* 交互状态 */
-.swym-wishlist:hover .icon-swym-wishlist {
+.swym-wishlist:hover:before {
     opacity: 0.7;
 }
 
 /* 菜单展开时的状态 */
-.header__menu-item[aria-expanded=true] ~ .swym-wishlist .icon-swym-wishlist,
-.header__menu-item:hover ~ .swym-wishlist .icon-swym-wishlist {
-    color: rgba(var(--color-foreground), .75) !important;
+.header__menu-item[aria-expanded=true] ~ .swym-wishlist:before,
+.header__menu-item:hover ~ .swym-wishlist:before {
+    filter: none;
 }
 
 /* 购物车图标基础样式 */
