@@ -1,5 +1,3 @@
-
-
 <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-search.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -104,7 +102,156 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
 {%- endstyle -%}
+
+
+{% style %}
+/* SWYM 收藏图标基础样式 */
+.swym-wishlist {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    width: 34px;
+    padding: 0;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+/* 移除focus状态的下划线 */
+.swym-wishlist:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+i.icon-swym-wishlist {
+    font-family: 'swym-font';
+    font-style: normal;
+    vertical-align: middle;
+    transition: color .3s ease;
+}
+
+i.icon-swym-wishlist:after {
+    content: '';
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+    display: inline;
+}
+
+/* SWYM ready状态 */
+.swym-ready i.icon-swym-wishlist:after {
+    content: '\f004';
+}
+
+/* 首页状态 */
+{% if template == 'index' %}
+    .header-wrapper .icon-swym-wishlist {
+        color: white !important;
+    }
+    
+    div.scrolled-past-header .icon-swym-wishlist {
+        color: rgba(var(--color-foreground), .75) !important;
+    }
+{% else %}
+    /* 非首页状态 */
+    .header-wrapper .icon-swym-wishlist {
+        color: rgba(var(--color-foreground), .75) !important;
+    }
+{% endif %}
+
+/* 交互状态 */
+.swym-wishlist:hover .icon-swym-wishlist {
+    opacity: 0.7;
+}
+
+/* 菜单展开时的状态 */
+.header__menu-item[aria-expanded=true] ~ .swym-wishlist .icon-swym-wishlist,
+.header__menu-item:hover ~ .swym-wishlist .icon-swym-wishlist {
+    color: rgba(var(--color-foreground), .75) !important;
+}
+
+/* 购物车图标基础样式 */
+.header__icon--cart {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    width: 34px;
+    padding: 0;
+    text-decoration: none;
+}
+
+.header__icon--cart .svg-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s ease;
+}
+
+.header__icon--cart svg {
+    width: 24px;
+    height: 24px;
+    transition: fill .3s ease;
+}
+
+/* 首页状态 */
+{% if template == 'index' %}
+    .header-wrapper .header__icon--cart svg {
+        fill: white !important;
+    }
+    
+    div.scrolled-past-header .header__icon--cart svg {
+        fill: rgba(var(--color-foreground), .75) !important;
+    }
+{% else %}
+    /* 非首页状态 */
+    .header-wrapper .header__icon--cart svg {
+        fill: rgba(var(--color-foreground), .75) !important;
+    }
+{% endif %}
+
+/* 交互状态 */
+.header__icon--cart:hover .svg-wrapper {
+    opacity: 0.7;
+}
+
+/* 菜单展开时的状态 */
+.header__menu-item[aria-expanded=true] ~ .header__icon--cart svg,
+.header__menu-item:hover ~ .header__icon--cart svg {
+    fill: rgba(var(--color-foreground), .75) !important;
+}
+
+/* 移除focus状态的下划线和outline */
+.header__icon--cart:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+/* 购物车数量气泡样式 */
+.cart-count-bubble {
+    position: absolute;
+    top: 8px;
+    right: -6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 4px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    color: white;
+    background: rgba(var(--color-foreground), .75);
+    border-radius: 9px;
+}
+{% endstyle %}
 
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
 
@@ -241,17 +388,23 @@
           </localization-form>
         {%- endif -%}
       </div>
+
+      <a href="#swym-wishlist" class="swym-wishlist">
+        <i aria-hidden="true" focusable="false" role="presentation" class="icon icon-swym-wishlist"></i>
+      </a>
       
       {% comment %}
         {% render 'header-search', input_id: 'Search-In-Modal' %}
       {% endcomment %}
       {% comment %} 购物车 {% endcomment %}
+
+      
     
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {% if cart == empty %}
-          <span class="svg-wrapper">{{'icon-cart-empty.svg' | inline_asset_content }}</span>
+          <span class="svg-wrapper">{{'icon-cart-empty-ex.svg' | inline_asset_content }}</span>
         {% else %}
-          <span class="svg-wrapper">{{'icon-cart.svg' | inline_asset_content }}</span>
+          <span class="svg-wrapper">{{'icon-cart-empty-ex.svg' | inline_asset_content }}</span>
         {% endif %}
       <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
       {%- if cart != empty -%}
