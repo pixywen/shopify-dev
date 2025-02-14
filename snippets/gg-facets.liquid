@@ -167,7 +167,7 @@
                       id="Facet-{{ forloop.index }}-{{ section.id }}"
                       class="parent-display {% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical{% endif %}"
                     >
-                      {%- if filter_type != 'vertical' -%}
+                      {% comment %} {%- if filter_type != 'vertical' -%}
                         <div class="facets__header">
                           <div>
                             <span class="facets__selected">
@@ -185,7 +185,7 @@
                             </a>
                           </facet-remove>
                         </div>
-                      {%- endif -%}
+                      {%- endif -%} {% endcomment %}
                       <fieldset class="facets-wrap parent-wrap {% if filter_type == 'vertical' %} facets-wrap-vertical{% endif %}">
                         <legend class="visually-hidden">{{ filter.label | escape }}</legend>
                         {%- liquid

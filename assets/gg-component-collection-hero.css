@@ -1,3 +1,7 @@
+.collection-hero {
+  background: none !important;
+}
+
 .collection-hero__inner {
   display: flex;
   flex-direction: column;
@@ -34,7 +38,9 @@
     padding-bottom: 0;
   }
 }
-
+.collection-hero__text-wrapper {
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
 /* 标题字体 */
 .collection-hero__title {
   margin: 2.5rem 0;
