@@ -32,9 +32,16 @@
     margin: 0 auto 2rem;
   }
 
+  .account-name {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+
   .account-email {
     color: #666;
     margin-bottom: 1rem;
+    font-size: 14px;
   }
 
   .account-logout {
@@ -54,34 +61,47 @@
   }
 
   .account-card {
-    background: #fff;
+    background-color: #ffffff;
     border-radius: 12px;
     padding: 2rem;
     text-align: center;
     box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
     text-decoration: none;
     color: inherit;
+    border: 2px solid transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: block;
   }
 
   .account-card:hover {
     transform: translateY(-5px);
+    border-color: #000;
+    text-decoration: none;
   }
 
   .account-card__icon {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .account-card__icon svg {
-    width: 32px;
-    height: 32px;
-    fill: none;
-    stroke: currentColor;
+  .account-card__icon img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    object-fit: contain;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translateZ(0);
   }
 
   .account-card__title {
     font-size: 20px;
     margin-bottom: 0.5rem;
+    text-decoration: none;
   }
 
   .account-card__desc {
@@ -97,10 +117,11 @@
       {{ customer.name | slice: 0 | upcase }}
     </div>
     <h1 class="customer__title">Welcome, {{ customer.first_name }}!</h1>
+    <div class="account-name">{{ customer.name }}</div>
     <div class="account-email">{{ customer.email }}</div>
     <a href="{{ routes.account_logout_url }}" class="account-logout">
       <span class="svg-wrapper">
-        {{- 'icon-account.svg' | inline_asset_content -}}
+        {{- 'icon-account.svg' | asset_url | inline_asset_content -}}
       </span>
       {{ 'customer.log_out' | t }}
     </a>
@@ -109,9 +130,9 @@
   <!-- 卡片导航 -->
   <div class="account-cards">
     <!-- 订单历史卡片 -->
-    <a href="{{ routes.account_url }}/orders" class="account-card">
+    <a href="{{ section.settings.orders_page }}" class="account-card">
       <div class="account-card__icon">
-        {{- 'icon-order-history.svg' | asset_url | inline_asset_content -}}
+        <img src="{{ 'icon-order-history.svg' | asset_url }}" alt="Order History" loading="lazy" width="50" height="50">
       </div>
       <h2 class="account-card__title">Order History</h2>
       <div class="account-card__desc">View your orders</div>
@@ -120,7 +141,7 @@
     <!-- 地址簿卡片 -->
     <a href="{{ routes.account_addresses_url }}" class="account-card">
       <div class="account-card__icon">
-        {{- 'icon-address-book.svg' | asset_url | inline_asset_content -}}
+        <img src="{{ 'icon-address-book.svg' | asset_url }}" alt="Address Book" loading="lazy" width="50" height="50">
       </div>
       <h2 class="account-card__title">Address Book</h2>
       <div class="account-card__desc">Manage your address</div>
@@ -129,7 +150,7 @@
     <!-- 联系我们卡片 -->
     <a href="{{ section.settings.contact_page }}" class="account-card">
       <div class="account-card__icon">
-        {{- 'icon-contact-us.svg' | asset_url | inline_asset_content -}}
+        <img src="{{ 'icon-contact-us.svg' | asset_url }}" alt="Contact Us" loading="lazy" width="50" height="50">
       </div>
       <h2 class="account-card__title">Contact Us</h2>
       <div class="account-card__desc">Contact us for prompt assistance</div>
@@ -141,6 +162,12 @@
 {
   "name": "t:sections.main-account.name",
   "settings": [
+    {
+      "type": "url",
+      "id": "orders_page",
+      "label": "Orders Page URL",
+      "default": "/account/orders"
+    },
     {
       "type": "page",
       "id": "contact_page",
