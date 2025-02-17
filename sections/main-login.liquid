@@ -140,7 +140,7 @@
           </label>
         </div>
 
-        <a href="#recover">
+        <a href="#recover" class="gg-forgot_password">
           {{ 'customer.login_page.forgot_password' | t }}
         </a>
       {%- endif -%}
@@ -153,7 +153,7 @@
         <p>{{ 'customer.login_page.no_account_prompt' | t }}</p>
       </div>
 
-      <a href="{{ routes.account_register_url }}">
+      <a href="{{ routes.account_register_url }}" class="gg-register">
         {{ 'customer.login_page.create_account' | t }}
       </a>
     {%- endform -%}

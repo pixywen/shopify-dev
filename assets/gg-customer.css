@@ -1,14 +1,69 @@
+.customer.login {
+  padding-top: 67px;
+  max-width: 368px;
+}
+
+#login {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 24.38px;
+  color: rgba(0, 0, 0, 1);
+  border-bottom: solid 1px rgba(184, 184, 184, 1);
+  padding-bottom: 36px;
+}
+
+.customer.login .field {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.customer .field:after {
+  content: none;
+}
+
+.customer.login .field label,
+.customer .field input:focus ~ label {
+  position: relative;
+  left: auto;
+  top: auto;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 14.63px;
+  color: rgba(56, 56, 56, 1);
+  margin-bottom: 5px;
+}
+
+.customer .field input {
+  width: 368px;
+  height: 42px;
+  padding: 12px 15px !important;
+  border: 1px solid rgba(184, 184, 184, 1);
+}
+
 .customer:not(.account):not(.order) {
   margin: 0 auto;
-  max-width: 33.4rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  max-width: 36.8rem;
   text-align: center;
 }
 
-@media screen and (min-width: 750px) {
+.customer.login a.gg-forgot_password {
+  width: auto;
+  margin-top: 17px;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 12.19px;
+  text-decoration-line: underline;
+  color: rgba(56, 56, 56, 1);
+  text-align: right;
+}
+
+@media screen and (max-width: 750px) {
   .customer:not(.account):not(.order) {
-    max-width: 47.8rem;
+    max-width: 36.8rem;
   }
 }
 
@@ -22,7 +77,14 @@
 }
 
 .customer button {
-  margin: 4rem 0 1.5rem;
+  width: 100%;
+  height: 48px;
+  margin: 28px 0 15px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 14.63px;
+  color: rgba(255, 255, 255, 1);
 }
 
 .customer ul {
@@ -345,7 +407,27 @@
 }
 
 .login p {
-  margin: 1.5rem 0;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 14.63px;
+  color: rgba(56, 56, 56, 1);
+  margin: 0;
+}
+
+#customer_login .gg-register {
+  width: 100%;
+  height: 48px;
+  opacity: 1;
+  background: rgba(249, 248, 248, 1);
+  text-decoration: none;
+  border: 1px solid rgba(184, 184, 184, 1);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 48px;
+  color: rgba(56, 56, 56, 1);
+  margin-top: 19px;
 }
 
 .login h3 {
