@@ -138,6 +138,9 @@
           <label for="CustomerPassword">
             {{ 'customer.login_page.password' | t }}
           </label>
+          <div class="gg-password-icon" onclick="togglePassword()">
+            {{ 'icon-eye.svg' | inline_asset_content }}
+          </div>
         </div>
 
         <a href="#recover" class="gg-forgot_password">
@@ -172,6 +175,17 @@
     </div>
   {%- endif -%}
 </div>
+<script>
+  
+  function togglePassword () {
+      const passwordField = document.getElementById('CustomerPassword');
+      if (passwordField.type === 'password') {
+        passwordField.type = 'text';
+      } else {
+        passwordField.type = 'password';
+      }
+    }
+</script>
 
 {% schema %}
 {

@@ -65,6 +65,15 @@
   text-align: right;
 }
 
+.gg-password-icon {
+  position: absolute;
+  width: 14px;
+  height: 10px;
+  right: 12px;
+  top: 30px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 750px) {
   .customer:not(.account):not(.order) {
     max-width: 36.8rem;
