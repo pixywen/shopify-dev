@@ -83,7 +83,7 @@
   color: black;
   padding: 8px 24px;
   border-radius: 50px;  /* 圆角按钮 */
-  margin-left: 20px;    /* 与购物车的间距 */
+  margin-left: 30px;    /* 与购物车的间距 */
   text-decoration: none; /* 移除下划线 */
   transition: all 0.3s ease;
   white-space: nowrap;  /* 防止文字换行 */
