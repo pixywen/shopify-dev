@@ -109,7 +109,7 @@
   <!-- 卡片导航 -->
   <div class="account-cards">
     <!-- 订单历史卡片 -->
-    <a href="{{ routes.account_url }}/orders" class="account-card">
+    <a href="{{ section.settings.order_history }}" class="account-card">
       <div class="account-card__icon">
         {{- 'icon-order-history.svg' | asset_url | inline_asset_content -}}
       </div>
@@ -141,6 +141,11 @@
 {
   "name": "t:sections.main-account.name",
   "settings": [
+    {
+      "type": "page",
+      "id": "order_history",
+      "label": "Order History Page"
+    },
     {
       "type": "page",
       "id": "contact_page",
