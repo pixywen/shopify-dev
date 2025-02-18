@@ -120,6 +120,9 @@
         <label for="CustomerEmail">
           {{ 'customer.login_page.email' | t }}
         </label>
+        <div class="gg-register-icon">
+          {{ 'icon-email.svg' | inline_asset_content }}
+        </div>
       </div>
 
       {%- if form.password_needed -%}
@@ -138,6 +141,9 @@
           <label for="CustomerPassword">
             {{ 'customer.login_page.password' | t }}
           </label>
+          <div class="gg-register-icon">
+            {{ 'icon-key.svg' | inline_asset_content }}
+          </div>
           <div class="gg-password-icon" onclick="togglePassword()">
             {{ 'icon-eye.svg' | inline_asset_content }}
           </div>

@@ -55,6 +55,9 @@
       <label for="RegisterForm-FirstName">
         {{ 'customer.register.first_name' | t }}
       </label>
+      <div class="gg-register-icon">
+        {{ 'icon-user.svg' | inline_asset_content }}
+      </div>
     </div>
     <div class="field">
       <input
@@ -70,6 +73,9 @@
       <label for="RegisterForm-LastName">
         {{ 'customer.register.last_name' | t }}
       </label>
+      <div class="gg-register-icon">
+        {{ 'icon-user.svg' | inline_asset_content }}
+      </div>
     </div>
     <div class="field">
       <input
@@ -92,6 +98,9 @@
       <label for="RegisterForm-email">
         {{ 'customer.register.email' | t }}
       </label>
+      <div class="gg-register-icon">
+        {{ 'icon-email.svg' | inline_asset_content }}
+      </div>
     </div>
     {%- if form.errors contains 'email' -%}
       <span id="RegisterForm-email-error" class="form__message">
@@ -117,6 +126,12 @@
       <label for="RegisterForm-password">
         {{ 'customer.register.password' | t }}
       </label>
+      <div class="gg-register-icon gg-register-eye">
+        {{ 'icon-key.svg' | inline_asset_content }}
+      </div>
+      <div class="gg-password-icon" onclick="togglePassword()">
+        {{ 'icon-eye.svg' | inline_asset_content }}
+      </div>
     </div>
     {%- if form.errors contains 'password' -%}
       <span id="RegisterForm-password-error" class="form__message">
@@ -141,6 +156,12 @@
       <label for="RegisterForm-password-confirm">
         {{ 'customer.register.confirm_password' | t }}
       </label>
+      <div class="gg-register-icon">
+        {{ 'icon-key.svg' | inline_asset_content }}
+      </div>
+      <div class="gg-password-icon" onclick="togglePasswordConfirm()">
+        {{ 'icon-eye.svg' | inline_asset_content }}
+      </div>
     </div>
     <span id="RegisterForm-password-confirm-error" class="form__message" style="display: none;">
       <span class="svg-wrapper">
@@ -187,7 +208,25 @@
   {%- endform -%}
 </div>
 
-
+<script>
+  
+  function togglePasswordConfirm () {
+      const passwordField = document.getElementById('RegisterForm-password-confirm');
+      if (passwordField.type === 'password') {
+        passwordField.type = 'text';
+      } else {
+        passwordField.type = 'password';
+      }
+    }
+  function togglePassword () {
+      const passwordField = document.getElementById('RegisterForm-password');
+      if (passwordField.type === 'password') {
+        passwordField.type = 'text';
+      } else {
+        passwordField.type = 'password';
+      }
+    }
+</script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('form[action="/account"]');
