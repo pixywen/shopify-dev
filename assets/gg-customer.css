@@ -22,7 +22,9 @@
 .customer .field:after {
   content: none;
 }
-
+.gg-register-icon svg path {
+  fill: #000;
+}
 .customer.login .field label,
 .customer .field input:focus ~ label,
 .customer .field label,
