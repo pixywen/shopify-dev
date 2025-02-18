@@ -55,6 +55,9 @@
       <label for="RegisterForm-FirstName">
         {{ 'customer.register.first_name' | t }}
       </label>
+      <div class="gg-register-icon">
+        {{ 'icon-user.svg' | inline_asset_content }}
+      </div>
     </div>
     <div class="field">
       <input
@@ -70,6 +73,9 @@
       <label for="RegisterForm-LastName">
         {{ 'customer.register.last_name' | t }}
       </label>
+      <div class="gg-register-icon">
+        {{ 'icon-user.svg' | inline_asset_content }}
+      </div>
     </div>
     <div class="field">
       <input
@@ -92,6 +98,9 @@
       <label for="RegisterForm-email">
         {{ 'customer.register.email' | t }}
       </label>
+      <div class="gg-register-icon">
+        {{ 'icon-email.svg' | inline_asset_content }}
+      </div>
     </div>
     {%- if form.errors contains 'email' -%}
       <span id="RegisterForm-email-error" class="form__message">
@@ -117,6 +126,9 @@
       <label for="RegisterForm-password">
         {{ 'customer.register.password' | t }}
       </label>
+      <div class="gg-register-icon">
+        {{ 'icon-key.svg' | inline_asset_content }}
+      </div>
     </div>
     {%- if form.errors contains 'password' -%}
       <span id="RegisterForm-password-error" class="form__message">
@@ -141,6 +153,9 @@
       <label for="RegisterForm-password-confirm">
         {{ 'customer.register.confirm_password' | t }}
       </label>
+      <div class="gg-register-icon">
+        {{ 'icon-key.svg' | inline_asset_content }}
+      </div>
     </div>
     <span id="RegisterForm-password-confirm-error" class="form__message" style="display: none;">
       <span class="svg-wrapper">

@@ -43,7 +43,7 @@
 .customer .field input {
   width: 368px;
   height: 42px;
-  padding: 12px 15px !important;
+  padding: 12px 15px 12px 30px !important;
   border: 1px solid rgba(184, 184, 184, 1);
 }
 
@@ -72,6 +72,13 @@
   right: 12px;
   top: 30px;
   cursor: pointer;
+}
+
+.gg-register-icon {
+  position: absolute;
+  cursor: pointer;
+  top: 30px;
+  left: 15px;
 }
 
 @media screen and (max-width: 750px) {
