@@ -109,31 +109,39 @@
   <!-- 卡片导航 -->
   <div class="account-cards">
     <!-- 订单历史卡片 -->
-    <a href="{{ section.settings.order_history }}" class="account-card">
+    {% if section.settings.order_history %}
+      <a href="{{ section.settings.order_history.url }}" class="account-card">
+    {% else %}
+      <div class="account-card">
+    {% endif %}
       <div class="account-card__icon">
-        {{- 'icon-order-history.svg' | asset_url | inline_asset_content -}}
+        <img src="{{ 'icon-order-history.svg' | asset_url }}" alt="Order History" width="32" height="32">
       </div>
       <h2 class="account-card__title">Order History</h2>
       <div class="account-card__desc">View your orders</div>
-    </a>
+    {% if section.settings.order_history %}</a>{% else %}</div>{% endif %}
 
     <!-- 地址簿卡片 -->
     <a href="{{ routes.account_addresses_url }}" class="account-card">
       <div class="account-card__icon">
-        {{- 'icon-address-book.svg' | asset_url | inline_asset_content -}}
+        <img src="{{ 'icon-address-book.svg' | asset_url }}" alt="Address Book" width="32" height="32">
       </div>
       <h2 class="account-card__title">Address Book</h2>
       <div class="account-card__desc">Manage your address</div>
     </a>
 
     <!-- 联系我们卡片 -->
-    <a href="{{ section.settings.contact_page }}" class="account-card">
+    {% if section.settings.contact_page %}
+      <a href="{{ section.settings.contact_page.url }}" class="account-card">
+    {% else %}
+      <div class="account-card">
+    {% endif %}
       <div class="account-card__icon">
-        {{- 'icon-contact-us.svg' | asset_url | inline_asset_content -}}
+        <img src="{{ 'icon-contact-us.svg' | asset_url }}" alt="Contact Us" width="32" height="32">
       </div>
       <h2 class="account-card__title">Contact Us</h2>
       <div class="account-card__desc">Contact us for prompt assistance</div>
-    </a>
+    {% if section.settings.contact_page %}</a>{% else %}</div>{% endif %}
   </div>
 </div>
 

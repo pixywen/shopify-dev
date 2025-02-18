@@ -220,7 +220,9 @@
       "sort_button": "Sort",
       "sort_by_label": "Sort by:",
       "to": "To",
-      "clear_filter": "Remove filter"
+      "clear_filter": "Remove filter",
+      "of": "of",
+      "products_total": "results"
     }
   },
 
@@ -253,7 +255,10 @@
       "title": "Search results",
       "search_for": "Search for “{{ terms }}”",
       "suggestions": "Suggestions",
-      "pages": "Pages"
+      "pages": "Pages",
+      "results_for": "Results for \"{{ terms }}\":",
+      "results_count": "results"
+
     },
     "cart": {
       "cart": "Cart"

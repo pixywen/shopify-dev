@@ -21,7 +21,7 @@
 <div class="customer order section-{{ section.id }}-padding">
   <h1>{{ 'customer.orders.title' | t }}</h1>
 
-  {% paginate customer.orders by 20 %}
+  {%- paginate customer.orders by 20 -%}
     {%- if customer.orders.size > 0 -%}
       <table role="table" class="order-history">
         <caption class="visually-hidden">{{ 'customer.orders.title' | t }}</caption>
@@ -65,7 +65,7 @@
     {%- if paginate.pages > 1 -%}
       {%- render 'pagination', paginate: paginate -%}
     {%- endif -%}
-  {% endpaginate %}
+  {%- endpaginate -%}
 </div>
 
 {% schema %}
