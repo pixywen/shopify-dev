@@ -1,0 +1,40 @@
+{% comment %}
+  双列产品图组件
+  功能：响应式双列布局，支持颜色变体切换
+{% endcomment %}
+
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+{%- assign current_color = current_variant.option1 -%}
+
+<div class="media-gallery-ex-wrapper">
+  <gg-media-gallery-ex 
+    id="MediaGalleryEx-{{ section.id }}"
+    data-current-color="{{ current_color | escape }}"
+  >
+    <div class="media-gallery-ex__main">
+      {%- for media in product.media -%}
+        <div class="media-item{% if forloop.first %} is-active{% endif %}" 
+             data-media-id="{{ media.id }}"
+             data-media-color="{{ media.alt | split: '|' | first | strip }}">
+          {% render 'product-thumbnail', 
+            media: media,
+            lazy_load: true,
+            modal_id: section.id
+          %}
+        </div>
+      {%- endfor -%}
+    </div>
+    
+    {% comment %} <div class="media-gallery-ex__thumbs">
+      {%- for media in product.media -%}
+        <div class="thumb-item{% if forloop.first %} is-active{% endif %}" 
+             data-media-id="{{ media.id }}"
+             data-media-color="{{ media.alt | split: '|' | first | strip }}">
+          {{ media.preview_image | image_url: width: 150 | image_tag: loading: 'lazy' }}
+        </div>
+      {%- endfor -%}
+    </div> {% endcomment %}
+  </gg-media-gallery-ex>
+</div>
+
+{{ 'gg-media-gallery-ex.css' | asset_url | stylesheet_tag }} 

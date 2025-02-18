@@ -78,7 +78,7 @@
   <div class="page-width">
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
       <div class="grid__item product__media-wrapper">
-        {% render 'gg-product-media-gallery', 
+        {% render 'gg-product-media-gallery-ex', 
         product: product,
         section: section,
         variant_images: variant_images %}
@@ -706,7 +706,8 @@
     {%- if product.media.size > 0 -%}
       <script src="{{ 'product-modal.js' | asset_url }}" defer="defer"></script>
       <script src="{{ 'variant-picker.js' | asset_url }}" defer="defer"></script>
-      <script src="{{ 'gg-media-gallery.js' | asset_url }}" defer="defer"></script>
+      {% comment %} <script src="{{ 'gg-media-gallery.js' | asset_url }}" defer="defer"></script> {% endcomment %}
+      <script src="{{ 'gg-media-gallery-ex.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
     {%- if first_3d_model -%}
