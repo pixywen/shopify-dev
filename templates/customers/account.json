@@ -12,6 +12,8 @@
     "main": {
       "type": "main-account",
       "settings": {
+        "order_history": "history-order",
+        "contact_page": "contact",
         "padding_top": 36,
         "padding_bottom": 36
       }
