@@ -42,18 +42,6 @@
             "show_gift_card_recipient": false
           }
         },
-        "icon_with_text_WkRxmm": {
-          "type": "icon-with-text",
-          "settings": {
-            "layout": "horizontal",
-            "icon_1": "heart",
-            "heading_1": "Heading",
-            "icon_2": "return",
-            "heading_2": "Heading",
-            "icon_3": "truck",
-            "heading_3": "Heading"
-          }
-        },
         "complementary_MMXapa": {
           "type": "complementary",
           "settings": {
@@ -66,6 +54,33 @@
             "image_ratio": "square",
             "enable_quick_add": true
           }
+        },
+        "collapsible_tab_yAPYME": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Details",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible_tab_GyWCqX": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Specs",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible_tab_4bGyQa": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -74,8 +89,10 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "icon_with_text_WkRxmm",
-        "complementary_MMXapa"
+        "complementary_MMXapa",
+        "collapsible_tab_yAPYME",
+        "collapsible_tab_GyWCqX",
+        "collapsible_tab_4bGyQa"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -95,6 +112,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
