@@ -59,11 +59,30 @@
 
 @media (max-width: 750px) {
   .media-gallery-ex__main {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    grid-template-columns: unset;
+    height: auto;
+    padding: 0 15px 15px;
+    -webkit-overflow-scrolling: touch;
   }
-  
+
+  .media-item {
+    flex: 0 0 85%;
+    margin-right: 15px;
+    scroll-snap-align: start;
+    min-height: auto;
+    display: block !important;
+  }
+
   .media-gallery-ex__thumbs {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .media-gallery-ex__main::-webkit-scrollbar {
+    display: none;
   }
 }
 
