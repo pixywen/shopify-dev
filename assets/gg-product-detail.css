@@ -112,4 +112,29 @@
   .block-content {
     font-size: 1.3rem;
   }
+}
+
+/* 评价小组件容器 */
+.review-widget-container {
+  margin: 2rem 0;
+}
+
+.no-reviews-message {
+  padding: 2rem;
+  text-align: center;
+  background: rgba(var(--color-background), 0.05);
+  border-radius: 8px;
+}
+
+/* 确保评价小组件响应式显示 */
+.review-widget-container iframe,
+.review-widget-container > div {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+@media (max-width: 750px) {
+  .review-widget-container {
+    margin: 1rem 0;
+  }
 } 

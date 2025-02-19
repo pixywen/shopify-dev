@@ -21,6 +21,9 @@ class ProductDetailTabs {
       }
     });
 
+    // 监听评价标签切换
+    document.addEventListener('shopify:section:load', () => this.initReviewWidget());
+
     this.init();
   }
 
@@ -49,6 +52,11 @@ class ProductDetailTabs {
     // 添加active类
     tabItem.classList.add('active');
     targetPane.classList.add('active');
+
+    // 如果切换到评价标签，初始化小组件
+    if (targetId === 'reviews') {
+      this.initReviewWidget();
+    }
   }
 
   activateTab(targetId) {
@@ -104,6 +112,17 @@ class ProductDetailTabs {
       this.contentPanes = this.container.querySelectorAll('.gg-tab-content .gg-content-pane');
     });
     observer.observe(this.container, { childList: true, subtree: true });
+  }
+
+  // 初始化评价小组件
+  initReviewWidget() {
+    const reviewsPane = this.container.querySelector('#reviews');
+    if (reviewsPane && reviewsPane.classList.contains('active')) {
+      // 触发 Judge.me 小组件重新加载
+      if (window.jdgm && typeof window.jdgm.widgetLoad === 'function') {
+        window.jdgm.widgetLoad();
+      }
+    }
   }
 }
 
