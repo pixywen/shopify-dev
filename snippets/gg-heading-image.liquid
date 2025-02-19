@@ -1,0 +1,22 @@
+{%- liquid
+  assign heading = block.settings.heading | strip
+  assign image = block.settings.image
+-%}
+
+{%- unless heading == blank and image == blank -%}
+  <div class="gg-heading-image" {{ block.shopify_attributes }}>
+    {%- unless heading == blank -%}
+      <h3 class="heading-text">{{ heading }}</h3>
+    {%- endunless -%}
+    
+    {%- if image != blank -%}
+      <div class="feature-image">
+        <img src="{{ image | image_url: width: 1200 }}" 
+             alt="{{ heading | default: 'Feature image' }}" 
+             loading="lazy" 
+             width="800" 
+             height="{{ 800 | divided_by: image.aspect_ratio | round }}">
+      </div>
+    {%- endif -%}
+  </div>
+{%- endunless -%}

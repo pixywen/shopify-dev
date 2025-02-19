@@ -1,0 +1,113 @@
+/* 基础布局 */
+.gg-product-detail__container {
+  margin: 40px 0;
+  position: relative;
+}
+
+/* 标签导航 */
+.gg-tab-nav {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid rgba(var(--color-border), 0.2);
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+}
+
+.gg-tab-item {
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  position: relative;
+  color: rgba(var(--color-foreground), 0.6);
+}
+
+.gg-tab-item.active {
+  color: rgb(var(--color-foreground)) !important;
+  font-weight: 600;
+}
+
+.gg-tab-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: -13px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: rgb(var(--color-foreground));
+}
+
+/* 内容区域 */
+.gg-content-pane {
+  display: none !important;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gg-content-pane.active {
+  display: block !important;
+  opacity: 1 !important;
+}
+
+.content-section {
+  display: block;
+}
+
+/* 移动端适配 */
+@media (max-width: 750px) {
+  .gg-tab-nav {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 0 15px 12px;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .gg-tab-item {
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
+  
+  .gg-tab-item.active::after {
+    bottom: -12px;
+  }
+}
+
+/* 新增在现有样式之后 */
+.product-block-heading-text {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(var(--color-background), 0.05);
+  border-radius: 8px;
+}
+
+.block-heading {
+  font-size: 1.8rem;
+  color: rgb(var(--color-foreground));
+  margin-bottom: 1.2rem;
+  line-height: 1.3;
+}
+
+.block-content {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: rgba(var(--color-foreground), 0.8);
+}
+
+.block-content p {
+  margin: 0.8em 0;
+}
+
+@media (max-width: 750px) {
+  .product-block-heading-text {
+    margin: 1.5rem 0;
+    padding: 1rem;
+  }
+  
+  .block-heading {
+    font-size: 1.6rem;
+  }
+  
+  .block-content {
+    font-size: 1.3rem;
+  }
+} 

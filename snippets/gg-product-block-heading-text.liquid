@@ -1,0 +1,18 @@
+{%- liquid
+  assign heading = block.settings.heading | strip
+  assign content = block.settings.content
+-%}
+
+<div class="product-block-heading-text" 
+     {{ block.shopify_attributes }}
+     data-target-tab="{{ block.settings.target_tab }}">
+  {%- unless heading == blank -%}
+    <h3 class="block-heading">{{ heading }}</h3>
+  {%- endunless -%}
+  
+  {%- if content != blank -%}
+    <div class="block-content rte">
+      {{ content }}
+    </div>
+  {%- endif -%}
+</div> 

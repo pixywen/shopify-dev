@@ -1,0 +1,147 @@
+{{ 'gg-product-detail.css' | asset_url | stylesheet_tag }}
+{{ 'gg-product-detail.js' | asset_url | script_tag }}
+
+<div class="gg-product-detail__container">
+  <!-- 标签导航 -->
+  <nav class="gg-tab-nav">
+    {% if section.settings.show_description %}
+      <button class="gg-tab-item active" data-target="description">描述</button>
+    {% endif %}
+    {% if section.settings.show_video %}
+      <button class="gg-tab-item" data-target="video">视频</button>
+    {% endif %}
+    {% if section.settings.show_reviews %}
+      <button class="gg-tab-item" data-target="reviews">评价</button>
+    {% endif %}
+    {% if section.settings.show_faq %}
+      <button class="gg-tab-item" data-target="faq">FAQ</button>
+    {% endif %}
+  </nav>
+
+  <!-- 内容区域 -->
+  <div class="gg-tab-content">
+    {% assign tab_list = 'description|video|reviews|faq' | split: '|' %}
+    {% for tab in tab_list %}
+      {% assign setting_key = 'show_' | append: tab %}
+      {% if section.settings[setting_key] %}
+        <div class="gg-content-pane{% if forloop.first %} active{% endif %}" id="{{ tab }}">
+          <div class="gg-tab-content-inner">
+            <!-- 添加调试信息 -->
+            {% comment %}
+            <div style="color: blue; padding: 10px;">
+              当前标签: {{ tab }}<br>
+              区块数量: {{ section.blocks.size }}<br>
+              区块信息:
+              {% for block in section.blocks %}
+                [{{ block.type }}: {{ block.settings.target_tab }}]
+              {% endfor %}
+            </div>
+            {% endcomment %}
+            
+            <!-- 修改block筛选逻辑 -->
+            {% for block in section.blocks %}
+              {% if block.type == 'content_block' and block.settings.target_tab == tab %}
+                <div class="content-section" 
+                     data-block-type="{{ block.settings.block_type }}"
+                     data-target-tab="{{ tab }}">
+                  {% render 'gg-product-block-heading-text', block: block %}
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div> 
+
+{% schema %}
+    {
+      "name": "GG-产品详情",
+      "tag": "section",
+      "class": "gg-product-detail",
+      "settings": [
+        {
+          "type": "header",
+          "content": "标签显示控制"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_description",
+          "label": "显示描述标签",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_video",
+          "label": "显示视频标签",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_reviews",
+          "label": "显示评价标签",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_faq",
+          "label": "显示FAQ标签",
+          "default": true
+        }
+      ],
+      "blocks": [
+        {
+          "type": "content_block",
+          "name": "通用内容块",
+          "settings": [
+            {
+              "type": "header",
+              "content": "内容配置"
+            },
+            {
+              "type": "select",
+              "id": "block_type",
+              "label": "内容类型",
+              "options": [
+                {"value": "heading_text", "label": "标题+正文"},
+                {"value": "divider", "label": "分割线"},
+                {"value": "icon_grid", "label": "图标网格"}
+              ],
+              "default": "heading_text"
+            },
+            {
+              "type": "richtext",
+              "id": "heading",
+              "label": "标题",
+              "default": "<p>产品详情</p>",
+              "info": "仅在选择标题+正文类型时生效"
+            },
+            {
+              "type": "richtext",
+              "id": "content",
+              "label": "正文内容",
+              "default": "<p>请输入详细说明内容...</p>"
+            },
+            {
+              "type": "select",
+              "id": "target_tab",
+              "label": "所属标签页",
+              "options": [
+                {"value": "description", "label": "描述"},
+                {"value": "video", "label": "视频"},
+                {"value": "reviews", "label": "评价"},
+                {"value": "faq", "label": "FAQ"}
+              ],
+              "default": "description"
+            }
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "GG-产品详情"
+        }
+      ]
+    }
+    {% endschema %}
