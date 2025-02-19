@@ -27,7 +27,7 @@
         <div class="gg-content-pane{% if forloop.first %} active{% endif %}" id="{{ tab }}">
           <div class="gg-tab-content-inner">
             {% if tab == 'reviews' %}
-              <!-- 评价小组件 -->
+              <!-- 评价小组件-->
               <div class="review-widget-container">
                 {%- for block in section.blocks -%}
                   {%- case block.type -%}
@@ -108,8 +108,7 @@
       ]
     },
     {
-      "type": "@app",
-      "name": "App 评价"
+      "type": "@app"
     }
   ],
   "settings": [
