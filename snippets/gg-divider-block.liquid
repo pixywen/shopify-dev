@@ -1,0 +1,9 @@
+{%- style -%}
+    #Block-{{ block.id }}.gg-divider-block {
+      margin-top: {{ block.settings.margin_top }}px;
+      margin-bottom: {{ block.settings.margin_bottom }}px;
+    }
+  {%- endstyle -%}
+
+  <div id="Block-{{ block.id }}" class="gg-divider-block" {{ block.shopify_attributes }}>
+  </div>

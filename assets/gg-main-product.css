@@ -75,3 +75,55 @@
       margin-left: 0;
     }
   }
+
+/* Divider block - Start */
+.gg-divider-block {
+  width: 100%;
+  height: 1px;
+  min-height: 1px;
+  background-color: #000;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+/* Divider block - End */
+
+/* Icon Text Grid Block - Start */
+.gg-icon-text-grid {
+  margin: 15px 0;
+}
+
+.icon-grid-container {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, 1fr); /* 移动端默认两列 */
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 6px;
+}
+
+@media screen and (min-width: 750px) {
+  .icon-grid-container {
+    grid-template-columns: repeat(3, 1fr); /* 桌面端强制三列 */
+  }
+}
+
+.icon-image img {
+  width: 23px;
+  height: 23px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.icon-text {
+  font-size: 10px;
+  line-height: 1.3;
+  color: var(--color-foreground);
+  word-break: break-word;
+}
+/* Icon Text Grid Block - End */

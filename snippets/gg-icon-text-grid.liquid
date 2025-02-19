@@ -1,0 +1,41 @@
+{%- liquid
+  assign items = 0
+  for i in (1..4)
+    assign icon_key = 'icon_' | append: i
+    assign text_key = 'text_' | append: i
+    if block.settings[icon_key] != blank or block.settings[text_key] != blank
+      assign items = items | plus: 1
+    endif
+  endfor
+-%}
+
+{%- if items > 0 -%}
+  <div class="gg-icon-text-grid" {{ block.shopify_attributes }}>
+    <div class="icon-grid-container">
+      {%- for i in (1..4) -%}
+        {%- liquid
+          assign icon_key = 'icon_' | append: i
+          assign text_key = 'text_' | append: i
+          assign icon = block.settings[icon_key]
+          assign text = block.settings[text_key]
+        -%}
+        {%- if icon != blank or text != blank -%}
+          <div class="icon-item">
+            {%- if icon != blank -%}
+              <div class="icon-image">
+                <img src="{{ icon | image_url: width: 80 }}" 
+                     alt="{{ text | default: 'Icon' }}" 
+                     loading="lazy" 
+                     width="23" 
+                     height="23">
+              </div>
+            {%- endif -%}
+            {%- if text != blank -%}
+              <div class="icon-text">{{ text }}</div>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+{%- endif -%} 

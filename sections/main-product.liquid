@@ -665,6 +665,10 @@
                 </product-recommendations>
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
+              {%- when 'divider' -%}
+                {% render 'gg-divider-block', block: block %}
+              {%- when 'gg-icon-text-grid' -%}
+                {% render 'gg-icon-text-grid', block: block %}
             {%- endcase -%}
           {%- endfor -%}
           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -2079,6 +2083,98 @@
           "default": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.default",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.label",
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
+        }
+      ]
+    },
+    {
+      "type": "divider",
+      "name": "GG-分割线",
+      "settings": [
+        {
+          "type": "range",
+          "id": "margin_top",
+          "min": 0,
+          "max": 50,
+          "step": 2,
+          "unit": "px",
+          "label": "Top spacing",
+          "default": 20
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "min": 0,
+          "max": 50,
+          "step": 2,
+          "unit": "px",
+          "label": "Bottom spacing",
+          "default": 20
+        }
+      ]
+    },
+    {
+      "type": "gg-icon-text-grid",
+      "name": "GG-文字图标",
+      "settings": [
+        {
+          "type": "header",
+          "content": "图标1配置"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_1",
+          "label": "图标1"
+        },
+        {
+          "type": "text",
+          "id": "text_1",
+          "label": "文字1",
+          "default": "文字说明1"
+        },
+        {
+          "type": "header",
+          "content": "图标2配置"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_2",
+          "label": "图标2"
+        },
+        {
+          "type": "text",
+          "id": "text_2",
+          "label": "文字2",
+          "default": "文字说明2"
+        },
+        {
+          "type": "header",
+          "content": "图标3配置"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_3",
+          "label": "图标3"
+        },
+        {
+          "type": "text",
+          "id": "text_3",
+          "label": "文字3",
+          "default": "文字说明3"
+        },
+        {
+          "type": "header",
+          "content": "图标4配置"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_4",
+          "label": "图标4"
+        },
+        {
+          "type": "text",
+          "id": "text_4",
+          "label": "文字4",
+          "default": "文字说明4"
         }
       ]
     }

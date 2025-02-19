@@ -58,6 +58,16 @@
 }
 
 @media (max-width: 750px) {
+  /* 添加移动端禁用放大样式 */
+  [data-zoom-container] {
+    cursor: default !important;
+    pointer-events: none;
+  }
+
+  [data-zoom-container] img {
+    transform: none !important;
+  }
+
   .media-gallery-ex__main {
     display: flex;
     flex-wrap: nowrap;
