@@ -193,7 +193,7 @@
             "block_type": "heading_text",
             "heading": "<p>产品详情</p>",
             "content": "<p>请输入详细说明内容...</p>",
-            "target_tab": "reviews"
+            "target_tab": "faq"
           }
         }
       },
@@ -208,28 +208,12 @@
         "show_reviews": true,
         "show_faq": true
       }
-    },
-    "1739968217ac7b44d7": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_4pGBQL": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_4pGBQL"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "gg_breadcrumb_yr7zeq",
     "main",
     "related-products",
-    "gg_product_detail_Mg4rJH",
-    "1739968217ac7b44d7"
+    "gg_product_detail_Mg4rJH"
   ]
 }
