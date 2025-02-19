@@ -20,10 +20,11 @@
   cursor: pointer;
   position: relative;
   color: rgba(var(--color-foreground), 0.6);
+  transition: color 0.3s ease;
 }
 
 .gg-tab-item.active {
-  color: rgb(var(--color-foreground)) !important;
+  color: rgb(var(--color-foreground));
   font-weight: 600;
 }
 
@@ -39,18 +40,19 @@
 
 /* 内容区域 */
 .gg-content-pane {
-  display: none !important;
+  display: none;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .gg-content-pane.active {
-  display: block !important;
-  opacity: 1 !important;
+  display: block;
+  opacity: 1;
 }
 
+/* 内容块样式 */
 .content-section {
-  display: block;
+  margin-bottom: 2rem;
 }
 
 /* 移动端适配 */

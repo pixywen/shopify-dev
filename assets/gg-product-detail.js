@@ -1,46 +1,45 @@
 class ProductDetailTabs {
   constructor() {
-    console.log('初始化产品详情组件');
     this.container = document.querySelector('.gg-product-detail__container');
-    console.log('容器元素:', this.container);
-    
-    this.tabItems = this.container?.querySelectorAll('.gg-tab-nav .gg-tab-item') || [];
-    console.log('找到标签数量:', this.tabItems.length);
-    
-    this.contentPanes = this.container?.querySelectorAll('.gg-tab-content .gg-content-pane') || [];
-    console.log('找到内容面板数量:', this.contentPanes.length);
-    
-    // 简化事件监听
-    this.container.querySelector('.gg-tab-nav').addEventListener('click', (e) => {
-      const tabItem = e.target.closest('.gg-tab-item');
-      if (tabItem) {
-        this.switchTab(tabItem);
+    if (!this.container) return;
+
+    // 初始化元素
+    this.tabNav = this.container.querySelector('.gg-tab-nav');
+    this.tabItems = this.container.querySelectorAll('.gg-tab-item');
+    this.contentPanes = this.container.querySelectorAll('.gg-content-pane');
+
+    // 绑定事件
+    this.tabNav.addEventListener('click', this.handleTabClick.bind(this));
+
+    // 监听 Shopify 编辑器事件
+    document.addEventListener('shopify:section:load', () => this.init());
+    document.addEventListener('shopify:block:select', (e) => {
+      const targetTab = e.target.dataset.targetTab;
+      if (targetTab) {
+        const tabButton = this.container.querySelector(`.gg-tab-item[data-target="${targetTab}"]`);
+        if (tabButton) this.switchTab(tabButton);
       }
     });
 
     this.init();
-    this.setupContentObserver();
   }
 
   init() {
-    // 确保默认激活第一个标签
-    const initialTab = this.tabItems[0];
-    if (initialTab) {
-      initialTab.classList.add('active');
-      const targetId = initialTab.dataset.target;
-      document.getElementById(targetId)?.classList.add('active');
-    }
+    // 确保至少有一个激活的标签
+    const activeTab = this.container.querySelector('.gg-tab-item.active') || this.tabItems[0];
+    if (activeTab) this.switchTab(activeTab);
+  }
 
-    // 简化滚动检测
-    this.setupIntersectionObserver();
+  handleTabClick(e) {
+    const tabItem = e.target.closest('.gg-tab-item');
+    if (tabItem) this.switchTab(tabItem);
   }
 
   switchTab(tabItem) {
-    if (tabItem.classList.contains('active')) return;
+    if (!tabItem || tabItem.classList.contains('active')) return;
     
     const targetId = tabItem.dataset.target;
-    const targetPane = document.getElementById(targetId);
-    
+    const targetPane = this.container.querySelector(`#${targetId}`);
     if (!targetPane) return;
 
     // 移除所有active类
