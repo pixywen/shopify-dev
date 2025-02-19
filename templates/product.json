@@ -165,11 +165,45 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "gg_product_detail_Mg4rJH": {
+      "type": "gg-product-detail",
+      "blocks": {
+        "content_block_MGACxw": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "heading": "<p>产品详情</p>",
+            "content": "<p>测试产品内容</p>",
+            "target_tab": "description"
+          }
+        },
+        "content_block_rN49nb": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "heading": "<p>产品详情</p>",
+            "content": "<p>请输入详细说明内容...</p>",
+            "target_tab": "description"
+          }
+        }
+      },
+      "block_order": [
+        "content_block_MGACxw",
+        "content_block_rN49nb"
+      ],
+      "settings": {
+        "show_description": true,
+        "show_video": true,
+        "show_reviews": true,
+        "show_faq": true
+      }
     }
   },
   "order": [
     "gg_breadcrumb_yr7zeq",
     "main",
-    "related-products"
+    "related-products",
+    "gg_product_detail_Mg4rJH"
   ]
 }
