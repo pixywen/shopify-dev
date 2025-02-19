@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(`[DEBUG] Found ${zoomContainers.length} zoom containers`);
 
     // 仅定义放大状态光标
-    const ZOOMX_CURSOR = `url({{ 'icon-zoom-x.svg' | asset_url }}) 12 12, zoom-out`;
+    const ZOOMX_CURSOR = `url({{ 'icon-zoom-x.svg' | asset_url }}) 12 12, zoom-in`;
 
     zoomContainers.forEach(container => {
       const img = container.querySelector('img[data-zoomable="true"]');
