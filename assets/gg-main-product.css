@@ -127,3 +127,34 @@
   word-break: break-word;
 }
 /* Icon Text Grid Block - End */
+
+/* Heading Image Block - Start */
+.gg-heading-image {
+  margin: 20px 0;
+}
+
+.heading-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-heading);
+  margin-bottom: 15px;
+}
+
+.feature-image {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.feature-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media screen and (min-width: 750px) {
+  .heading-text {
+    font-size: 22px;
+  }
+}
+/* Heading Image Block - End */
