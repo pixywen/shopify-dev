@@ -9,7 +9,7 @@
     data-zoom-on-hover
   {% endif %}
 >
-  {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
+  {{ 'gg-section-main-product.css' | asset_url | stylesheet_tag }}
   {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
   {{ 'component-slider.css' | asset_url | stylesheet_tag }}
@@ -669,6 +669,8 @@
                 {% render 'gg-divider-block', block: block %}
               {%- when 'gg-icon-text-grid' -%}
                 {% render 'gg-icon-text-grid', block: block %}
+              {%- when 'gg-heading-image' -%}
+                {% render 'gg-heading-image', block: block %}
             {%- endcase -%}
           {%- endfor -%}
           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -2175,6 +2177,23 @@
           "id": "text_4",
           "label": "文字4",
           "default": "文字说明4"
+        }
+      ]
+    },
+    {
+      "type": "gg-heading-image",
+      "name": "GG-标题图片",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "标题文字",
+          "default": "As Featured In:"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "展示图片"
         }
       ]
     }
