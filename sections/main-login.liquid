@@ -48,6 +48,9 @@
         <label for="RecoverEmail">
           {{ 'customer.login_page.email' | t }}
         </label>
+        <div class="gg-register-icon">
+          {{ 'icon-email.svg' | inline_asset_content }}
+        </div>
       </div>
       {%- if form.errors -%}
         <small id="RecoverEmail-email-error" class="form__message">
