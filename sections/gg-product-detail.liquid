@@ -41,11 +41,11 @@
             <!-- 常规内容块 -->
             {% for block in section.blocks %}
               {% if block.type == 'content_block' and block.settings.target_tab == tab %}
-                <div class="content-section" 
-                     data-block-type="{{ block.settings.block_type }}"
-                     data-target-tab="{{ tab }}">
-                  {% render 'gg-product-block-heading-text', block: block %}
-                </div>
+                {% render 'gg-product-block-heading-text', block: block %}
+              {% elsif block.type == 'image_banner' and block.settings.target_tab == tab %}
+                {% render 'gg-product-block-image-banner', block: block %}
+              {% elsif block.type == 'carousel' and block.settings.target_tab == tab %}
+                {% render 'gg-product-block-carousel', block: block, section: section %}
               {% endif %}
             {% endfor %}
           </div>
@@ -81,6 +81,30 @@
           "default": "heading_text"
         },
         {
+          "type": "header",
+          "content": "间距设置"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "上方间距",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "default": 32,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "下方间距",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "default": 32,
+          "unit": "px"
+        },
+        {
           "type": "richtext",
           "id": "heading",
           "label": "标题",
@@ -104,6 +128,254 @@
             {"value": "faq", "label": "FAQ"}
           ],
           "default": "description"
+        }
+      ]
+    },
+    {
+      "type": "image_banner",
+      "name": "图片横幅",
+      "settings": [
+        {
+          "type": "header",
+          "content": "图片设置"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_desktop",
+          "label": "图片",
+          "info": "PC端展示 - 建议尺寸 1920 x 860 像素"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "移动端图片",
+          "info": "移动端展示 - 建议尺寸 750 x 960 像素"
+        },
+        {
+          "type": "header",
+          "content": "间距设置"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "上方间距",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "default": 32,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "下方间距",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "default": 32,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "target_tab",
+          "label": "所属标签页",
+          "options": [
+            {"value": "description", "label": "描述"},
+            {"value": "video", "label": "视频"},
+            {"value": "reviews", "label": "评价"},
+            {"value": "faq", "label": "FAQ"}
+          ],
+          "default": "description"
+        }
+      ]
+    },
+    {
+      "type": "carousel",
+      "name": "轮播组件",
+      "settings": [
+        {
+          "type": "header",
+          "content": "轮播设置"
+        },
+        {
+          "type": "header",
+          "content": "图片设置（至少配置3张）"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "图片1",
+          "info": "建议尺寸 625 x 480 像素"
+        },
+        {
+          "type": "text",
+          "id": "caption_1",
+          "label": "图片1标题"
+        },
+        {
+          "type": "text",
+          "id": "hover_text_1",
+          "label": "图片1悬浮文字",
+          "info": "鼠标悬浮时显示的文字内容，留空则不显示蒙版"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "图片2",
+          "info": "建议尺寸 625 x 480 像素"
+        },
+        {
+          "type": "text",
+          "id": "caption_2",
+          "label": "图片2标题"
+        },
+        {
+          "type": "text",
+          "id": "hover_text_2",
+          "label": "图片2悬浮文字"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_3",
+          "label": "图片3",
+          "info": "建议尺寸 625 x 480 像素"
+        },
+        {
+          "type": "text",
+          "id": "caption_3",
+          "label": "图片3标题"
+        },
+        {
+          "type": "text",
+          "id": "hover_text_3",
+          "label": "图片3悬浮文字"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_4",
+          "label": "图片4（可选）",
+          "info": "建议尺寸 625 x 480 像素"
+        },
+        {
+          "type": "text",
+          "id": "caption_4",
+          "label": "图片4标题"
+        },
+        {
+          "type": "text",
+          "id": "hover_text_4",
+          "label": "图片4悬浮文字"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_5",
+          "label": "图片5（可选）",
+          "info": "建议尺寸 625 x 480 像素"
+        },
+        {
+          "type": "text",
+          "id": "caption_5",
+          "label": "图片5标题"
+        },
+        {
+          "type": "text",
+          "id": "hover_text_5",
+          "label": "图片5悬浮文字"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_6",
+          "label": "图片6（可选）",
+          "info": "建议尺寸 625 x 480 像素"
+        },
+        {
+          "type": "text",
+          "id": "caption_6",
+          "label": "图片6标题"
+        },
+        {
+          "type": "text",
+          "id": "hover_text_6",
+          "label": "图片6悬浮文字"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_7",
+          "label": "图片7（可选）",
+          "info": "建议尺寸 625 x 480 像素"
+        },
+        {
+          "type": "text",
+          "id": "caption_7",
+          "label": "图片7标题"
+        },
+        {
+          "type": "text",
+          "id": "hover_text_7",
+          "label": "图片7悬浮文字"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_8",
+          "label": "图片8（可选）",
+          "info": "建议尺寸 625 x 480 像素"
+        },
+        {
+          "type": "text",
+          "id": "caption_8",
+          "label": "图片8标题"
+        },
+        {
+          "type": "text",
+          "id": "hover_text_8",
+          "label": "图片8悬浮文字"
+        },
+        {
+          "type": "range",
+          "id": "autoplay_speed",
+          "min": 2,
+          "max": 10,
+          "step": 1,
+          "unit": "s",
+          "label": "滚动速度",
+          "info": "数值越大，滚动越慢",
+          "default": 3
+        },
+        {
+          "type": "select",
+          "id": "target_tab",
+          "label": "所属标签页",
+          "options": [
+            {"value": "description", "label": "描述"},
+            {"value": "video", "label": "视频"},
+            {"value": "reviews", "label": "评价"},
+            {"value": "faq", "label": "FAQ"}
+          ],
+          "default": "description"
+        },
+        {
+          "type": "header",
+          "content": "间距设置"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "上方间距",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "default": 32,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "下方间距",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "default": 32,
+          "unit": "px"
         }
       ]
     },

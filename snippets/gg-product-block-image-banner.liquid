@@ -1,0 +1,42 @@
+<div class="image-banner-section" 
+  style="margin-top: {{ block.settings.margin_top }}px; margin-bottom: {{ block.settings.margin_bottom }}px;"
+  {{ block.shopify_attributes }}>
+  {%- if block.settings.image_desktop != blank or block.settings.image_mobile != blank -%}
+    <div class="banner-image-container">
+      {%- # PC端图片 -%}
+      {%- if block.settings.image_desktop != blank -%}
+        {%- assign desktop_widths = '1100, 1500, 1780, 2000, 3000' -%}
+        {{ block.settings.image_desktop | image_url: width: 3000 | image_tag:
+          class: 'banner-image banner-image--desktop',
+          widths: desktop_widths,
+          loading: 'lazy',
+          sizes: '(min-width: 750px) 100vw, 0px'
+        }}
+      {%- endif -%}
+
+      {%- # 移动端图片 -%}
+      {%- if block.settings.image_mobile != blank -%}
+        {%- assign mobile_widths = '375, 550, 750' -%}
+        {{ block.settings.image_mobile | image_url: width: 750 | image_tag:
+          class: 'banner-image banner-image--mobile',
+          widths: mobile_widths,
+          loading: 'lazy',
+          sizes: '(max-width: 749px) 100vw, 0px'
+        }}
+      {%- elsif block.settings.image_desktop != blank -%}
+        {%- # 如果没有移动端图片，使用PC端图片 -%}
+        {%- assign mobile_widths = '375, 550, 750' -%}
+        {{ block.settings.image_desktop | image_url: width: 750 | image_tag:
+          class: 'banner-image banner-image--mobile',
+          widths: mobile_widths,
+          loading: 'lazy',
+          sizes: '(max-width: 749px) 100vw, 0px'
+        }}
+      {%- endif -%}
+    </div>
+  {%- else -%}
+    <div class="banner-image-placeholder">
+      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+    </div>
+  {%- endif -%}
+</div> 

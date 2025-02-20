@@ -4,8 +4,10 @@
 -%}
 
 <div class="product-block-heading-text" 
-     {{ block.shopify_attributes }}
-     data-target-tab="{{ block.settings.target_tab }}">
+  style="margin-top: {{ block.settings.margin_top }}px; margin-bottom: {{ block.settings.margin_bottom }}px;"
+  {{ block.shopify_attributes }}
+  data-block-type="{{ block.settings.block_type }}"
+  data-target-tab="{{ block.settings.target_tab }}">
   {%- unless heading == blank -%}
     <h3 class="block-heading">{{ heading }}</h3>
   {%- endunless -%}
