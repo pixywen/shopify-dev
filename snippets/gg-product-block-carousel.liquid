@@ -18,6 +18,10 @@
     data-autoplay-speed="{{ block.settings.autoplay_speed }}"
     data-target-tab="{{ block.settings.target_tab }}">
     
+    {%- if block.settings.title != blank -%}
+      <h3 class="carousel-title">{{ block.settings.title }}</h3>
+    {%- endif -%}
+    
     <div class="carousel-container">
       <div class="carousel-track">
         {%- for index in image_array -%}

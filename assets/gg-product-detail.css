@@ -198,6 +198,14 @@
   overflow: hidden;
 }
 
+.carousel-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: rgb(var(--color-foreground));
+  margin-bottom: 2rem;
+  line-height: 1.3;
+}
+
 .carousel-container {
   position: relative;
   width: 100%;
