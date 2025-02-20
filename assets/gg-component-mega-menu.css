@@ -187,25 +187,30 @@ summary.header__menu-item {
 }
 .header__menu-item[aria-expanded=true] span,
 div.scrolled-past-header .header-wrapper .list-menu .header__menu-item[aria-expanded=true] span,
-.non-home sticky-header.header-wrapper .list-menu .header__menu-item[aria-expanded=true] span{
+.non-home sticky-header.header-wrapper .list-menu .header__menu-item[aria-expanded=true] span,
+.gradient.overflow-hidden sticky-header.header-wrapper .list-menu .header__menu-item[aria-expanded=true] span{
   color: white !important;
 }
 .header__heading svg {
   fill: white;
 }
-div.scrolled-past-header .header__heading svg {
+div.scrolled-past-header .header__heading svg,
+.gradient.overflow-hidden .header__heading svg {
   fill: black;
 }
 div.scrolled-past-header .header__menu-item:hover,
+.gradient.overflow-hidden .header__menu-item:hover,
 .header__menu-item:hover,
 .mega-menu[open] .header__menu-item {
   background: rgba(0, 0, 0, 1);
 }
 div.scrolled-past-header .header-wrapper .list-menu span,
+.gradient.overflow-hidden .header-wrapper .list-menu span,
 .non-home sticky-header.header-wrapper .list-menu span{
   color: rgba(0, 0, 0, 1) !important;
 }
 div.scrolled-past-header .header__menu-item:hover span,
+.gradient.overflow-hidden .header__menu-item:hover span,
 .header__menu-item:hover span,
 details.mega-menu[open] summary.header__menu-item span{
   color: white !important;
@@ -222,7 +227,8 @@ summary.list-menu__item {
 }
 
 div.scrolled-past-header sticky-header.header-wrapper,
-.non-home sticky-header.header-wrapper {
+.non-home sticky-header.header-wrapper,
+.gradient.overflow-hidden sticky-header.header-wrapper {
   background: white;
   transition: .5s;
 }

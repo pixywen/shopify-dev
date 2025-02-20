@@ -146,7 +146,8 @@ i.icon-swym-wishlist {
         filter: brightness(0) invert(1);
     }
     
-    div.scrolled-past-header .swym-wishlist:before {
+    div.scrolled-past-header .swym-wishlist:before,
+    .gradient.overflow-hidden .swym-wishlist:before {
         filter: none;
     }
 {% endif %}
@@ -196,8 +197,10 @@ i.icon-swym-wishlist {
         fill: white !important;
     }
     
-    div.scrolled-past-header .header__icon--cart svg {
-        fill: rgba(var(--color-foreground), .75) !important;
+    div.scrolled-past-header .header__icon--cart svg path,
+    .gradient.overflow-hidden .header__icon--cart svg path, 
+    .gradient.overflow-hidden .header__icon--cart svg path {
+        fill: black !important;
     }
 {% else %}
     /* 非首页状态 */

@@ -103,7 +103,8 @@
 
 /* 当菜单展开时的样式 */
 .scrolled-past-header .login-button,
-.non-home .login-button {
+.non-home .login-button,
+.gradient.overflow-hidden .login-button {
   background: black;
   color: white;
 }
@@ -122,7 +123,8 @@
 }
 
 .scrolled-past-header .login-button.header__icon--account,
-.non-home .login-button.header__icon--account {
+.non-home .login-button.header__icon--account,
+.gradient.overflow-hidden .login-button.header__icon--account {
   background: rgba(0, 0, 0, 1);
 }
 
