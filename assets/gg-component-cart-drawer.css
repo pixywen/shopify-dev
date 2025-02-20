@@ -10,6 +10,10 @@
   background-color: rgba(var(--color-foreground), 0.5);
   transition: visibility var(--duration-default) ease;
 }
+.shopify-section-header-hidden ~ .drawer {
+  top: 100px;
+  height: calc(100% - 100px);
+}
 
 .drawer.active {
   visibility: visible;
