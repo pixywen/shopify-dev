@@ -229,20 +229,40 @@ i.icon-swym-wishlist {
 /* 购物车数量气泡样式 */
 .cart-count-bubble {
     position: absolute;
-    top: 8px;
+    top: -3px;
     right: -6px;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 18px;
-    height: 18px;
+    min-width: 15px;
+    height: 15px;
     padding: 0 4px;
     font-size: 12px;
     font-weight: 500;
     line-height: 1;
-    color: white;
-    background: rgba(var(--color-foreground), .75);
+    color: #000;
+    background: white;
     border-radius: 9px;
+}
+
+.cart-count-bubble span {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 14px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.scrolled-past-header .cart-count-bubble,
+.non-home .cart-count-bubble,
+.gradient.overflow-hidden .cart-count-bubble {
+  background: #000;
+}
+
+.scrolled-past-header .cart-count-bubble span,
+.non-home .cart-count-bubble span,
+.gradient.overflow-hidden .cart-count-bubble span {
+  color: #FFF;
 }
 
 /* Login按钮基础样式 */
