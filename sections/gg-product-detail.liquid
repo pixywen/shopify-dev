@@ -46,6 +46,10 @@
                 {% render 'gg-product-block-image-banner', block: block %}
               {% elsif block.type == 'carousel' and block.settings.target_tab == tab %}
                 {% render 'gg-product-block-carousel', block: block, section: section %}
+              {% elsif block.type == 'video' and block.settings.target_tab == tab %}
+                {% render 'gg-product-block-video', block: block %}
+              {% elsif block.type == 'collage' and block.settings.target_tab == tab %}
+                {% render 'gg-product-block-collage', block: block %}
               {% endif %}
             {% endfor %}
           </div>
@@ -387,6 +391,229 @@
     },
     {
       "type": "@app"
+    },
+    {
+      "type": "video",
+      "name": "视频组件",
+      "settings": [
+        {
+          "type": "header",
+          "content": "标题设置"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "标题",
+          "info": "留空则不显示"
+        },
+        {
+          "type": "header",
+          "content": "视频设置 - PC端(>750px)"
+        },
+        {
+          "type": "video",
+          "id": "video_desktop",
+          "label": "视频",
+          "info": "选择 Shopify 视频"
+        },
+        {
+          "type": "url",
+          "id": "video_url_desktop",
+          "label": "视频URL",
+          "info": "支持 YouTube 或 Vimeo 链接"
+        },
+        {
+          "type": "image_picker",
+          "id": "cover_desktop",
+          "label": "视频封面",
+          "info": "建议尺寸 1920 x 1080 像素"
+        },
+        {
+          "type": "header",
+          "content": "视频设置 - 移动端(<750px)"
+        },
+        {
+          "type": "video",
+          "id": "video_mobile",
+          "label": "视频",
+          "info": "选择 Shopify 视频"
+        },
+        {
+          "type": "url",
+          "id": "video_url_mobile",
+          "label": "视频URL",
+          "info": "支持 YouTube 或 Vimeo 链接"
+        },
+        {
+          "type": "image_picker",
+          "id": "cover_mobile",
+          "label": "视频封面",
+          "info": "建议尺寸 750 x 960 像素"
+        },
+        {
+          "type": "header",
+          "content": "播放设置"
+        },
+        {
+          "type": "checkbox",
+          "id": "autoplay",
+          "label": "自动播放",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "loop",
+          "label": "循环播放",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "controls",
+          "label": "显示控制条",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "muted",
+          "label": "静音播放",
+          "default": true,
+          "info": "自动播放时必须启用静音"
+        },
+        {
+          "type": "select",
+          "id": "target_tab",
+          "label": "所属标签页",
+          "options": [
+            {"value": "description", "label": "描述"},
+            {"value": "video", "label": "视频"},
+            {"value": "reviews", "label": "评价"},
+            {"value": "faq", "label": "FAQ"}
+          ],
+          "default": "video"
+        },
+        {
+          "type": "header",
+          "content": "间距设置"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "上方间距",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "default": 32,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "下方间距",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "default": 32,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "padding_x",
+          "label": "左右边距",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "default": 0,
+          "unit": "px"
+        }
+      ]
+    },
+    {
+      "type": "collage",
+      "name": "拼贴画组件",
+      "settings": [
+        {
+          "type": "header",
+          "content": "布局设置"
+        },
+        {
+          "type": "select",
+          "id": "desktop_layout",
+          "label": "桌面端布局",
+          "options": [
+            {"value": "image_left", "label": "左图右文"},
+            {"value": "image_right", "label": "右图左文"}
+          ],
+          "default": "image_left"
+        },
+        {
+          "type": "select",
+          "id": "mobile_layout",
+          "label": "移动端布局",
+          "options": [
+            {"value": "image_top", "label": "上图下文"},
+            {"value": "image_bottom", "label": "下图上文"}
+          ],
+          "default": "image_top"
+        },
+        {
+          "type": "header",
+          "content": "内容设置"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "图片",
+          "info": "建议尺寸 960 x 960 像素"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "标题",
+          "default": "拼贴画标题"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "正文",
+          "default": "<p>在这里添加您的文字内容...</p>"
+        },
+        {
+          "type": "select",
+          "id": "target_tab",
+          "label": "所属标签页",
+          "options": [
+            {"value": "description", "label": "描述"},
+            {"value": "video", "label": "视频"},
+            {"value": "reviews", "label": "评价"},
+            {"value": "faq", "label": "FAQ"}
+          ],
+          "default": "description"
+        },
+        {
+          "type": "header",
+          "content": "间距设置"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "上方间距",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "default": 32,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "下方间距",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "default": 32,
+          "unit": "px"
+        }
+      ]
     }
   ],
   "settings": [

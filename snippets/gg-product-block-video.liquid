@@ -1,0 +1,165 @@
+{%- liquid
+  # 检查是否有视频源
+  assign has_desktop_video = false
+  assign has_mobile_video = false
+  
+  if block.settings.video_desktop != blank or block.settings.video_url_desktop != blank
+    assign has_desktop_video = true
+  endif
+  
+  if block.settings.video_mobile != blank or block.settings.video_url_mobile != blank
+    assign has_mobile_video = true
+  endif
+  
+  # 如果没有配置移动端视频，使用PC端视频
+  if has_mobile_video
+    assign mobile_video = block.settings.video_mobile
+    assign mobile_url = block.settings.video_url_mobile
+    assign mobile_cover = block.settings.cover_mobile
+  else
+    assign has_mobile_video = has_desktop_video
+    assign mobile_video = block.settings.video_desktop
+    assign mobile_url = block.settings.video_url_desktop
+    assign mobile_cover = block.settings.cover_desktop
+  endif
+-%}
+
+{%- if has_desktop_video or has_mobile_video -%}
+  <div class="product-video-section"
+    style="
+      margin-top: {{ block.settings.margin_top }}px;
+      margin-bottom: {{ block.settings.margin_bottom }}px;
+      padding-left: {{ block.settings.padding_x }}px;
+      padding-right: {{ block.settings.padding_x }}px;
+    "
+    {{ block.shopify_attributes }}>
+    
+    {%- if block.settings.title != blank -%}
+      <h3 class="video-title">{{ block.settings.title }}</h3>
+    {%- endif -%}
+    
+    <div class="video-container">
+      {%- # PC端视频 -%}
+      {%- if has_desktop_video -%}
+        <div class="video-wrapper video-desktop">
+          {%- if block.settings.cover_desktop != blank -%}
+            <div class="video-cover video-cover--desktop">
+              {{ block.settings.cover_desktop | image_url: width: 1920 | image_tag:
+                class: 'cover-image',
+                loading: 'eager',
+                widths: '375, 550, 750, 1100, 1500, 1920',
+                sizes: '100vw'
+              }}
+            </div>
+          {%- endif -%}
+          {%- if block.settings.video_desktop != blank -%}
+            {{ block.settings.video_desktop | video_tag:
+              image_size: "1024x",
+              loop: block.settings.loop,
+              autoplay: block.settings.autoplay,
+              muted: block.settings.muted,
+              controls: block.settings.controls,
+              poster: block.settings.cover_desktop,
+              preload: "none"
+            }}
+          {%- elsif block.settings.video_url_desktop != blank -%}
+            {%- # 处理 YouTube 链接 -%}
+            {%- assign video_url = block.settings.video_url_desktop -%}
+            {%- if video_url contains "youtube.com" or video_url contains "youtu.be" -%}
+              {%- # 提取 YouTube 视频 ID -%}
+              {%- assign url_parts = video_url | split: "=" -%}
+              {%- if url_parts.size > 1 -%}
+                {%- assign video_id = url_parts[1] | split: "&" | first -%}
+              {%- else -%}
+                {%- assign video_id = video_url | split: "/" | last -%}
+              {%- endif -%}
+              <iframe 
+                src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&rel=0&showinfo=0
+                  {%- if block.settings.autoplay -%}&autoplay=1{%- endif -%}
+                  {%- if block.settings.loop -%}&loop=1{%- endif -%}
+                  {%- if block.settings.muted -%}&mute=1{%- endif -%}
+                  {%- unless block.settings.controls -%}&controls=0{%- endunless -%}"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            {%- # 处理 Vimeo 链接 -%}
+            {%- elsif video_url contains "vimeo.com" -%}
+              {%- assign video_id = video_url | split: "/" | last -%}
+              <iframe
+                src="https://player.vimeo.com/video/{{ video_id }}?background=1
+                  {%- if block.settings.autoplay -%}&autoplay=1{%- endif -%}
+                  {%- if block.settings.loop -%}&loop=1{%- endif -%}
+                  {%- if block.settings.muted -%}&muted=1{%- endif -%}
+                  {%- unless block.settings.controls -%}&controls=0{%- endunless -%}"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            {%- endif -%}
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+      
+      {%- # 移动端视频 -%}
+      {%- if has_mobile_video -%}
+        <div class="video-wrapper video-mobile">
+          {%- if mobile_cover != blank -%}
+            <div class="video-cover video-cover--mobile">
+              {{ mobile_cover | image_url: width: 750 | image_tag:
+                class: 'cover-image',
+                loading: 'eager',
+                widths: '375, 550, 750',
+                sizes: '100vw'
+              }}
+            </div>
+          {%- endif -%}
+          {%- if mobile_video != blank -%}
+            {{ mobile_video | video_tag:
+              image_size: "750x",
+              loop: block.settings.loop,
+              autoplay: block.settings.autoplay,
+              muted: block.settings.muted,
+              controls: block.settings.controls,
+              poster: mobile_cover,
+              preload: "none"
+            }}
+          {%- elsif mobile_url != blank -%}
+            {%- # 处理 YouTube 链接 -%}
+            {%- if mobile_url contains "youtube.com" or mobile_url contains "youtu.be" -%}
+              {%- assign url_parts = mobile_url | split: "=" -%}
+              {%- if url_parts.size > 1 -%}
+                {%- assign video_id = url_parts[1] | split: "&" | first -%}
+              {%- else -%}
+                {%- assign video_id = mobile_url | split: "/" | last -%}
+              {%- endif -%}
+              <iframe 
+                src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&rel=0&showinfo=0
+                  {%- if block.settings.autoplay -%}&autoplay=1{%- endif -%}
+                  {%- if block.settings.loop -%}&loop=1{%- endif -%}
+                  {%- if block.settings.muted -%}&mute=1{%- endif -%}
+                  {%- unless block.settings.controls -%}&controls=0{%- endunless -%}"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            {%- # 处理 Vimeo 链接 -%}
+            {%- elsif mobile_url contains "vimeo.com" -%}
+              {%- assign video_id = mobile_url | split: "/" | last -%}
+              <iframe
+                src="https://player.vimeo.com/video/{{ video_id }}?background=1
+                  {%- if block.settings.autoplay -%}&autoplay=1{%- endif -%}
+                  {%- if block.settings.loop -%}&loop=1{%- endif -%}
+                  {%- if block.settings.muted -%}&muted=1{%- endif -%}
+                  {%- unless block.settings.controls -%}&controls=0{%- endunless -%}"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            {%- endif -%}
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+{%- endif -%} 

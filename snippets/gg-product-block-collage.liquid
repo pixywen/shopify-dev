@@ -1,0 +1,39 @@
+{%- if block.settings.image != blank -%}
+  <div class="product-collage-section"
+    style="
+      margin-top: {{ block.settings.margin_top }}px;
+      margin-bottom: {{ block.settings.margin_bottom }}px;
+    "
+    {{ block.shopify_attributes }}>
+    
+    <div class="collage-container {% if block.settings.desktop_layout == 'image_right' %}image-right{% endif %} {% if block.settings.mobile_layout == 'image_bottom' %}image-bottom{% endif %}">
+      <div class="collage-image-wrapper">
+        {{ block.settings.image | image_url: width: 960 | image_tag:
+          class: 'collage-image',
+          loading: 'lazy',
+          widths: '375, 550, 750, 960, 1100, 1500',
+          sizes: '(min-width: 750px) 50vw, 100vw'
+        }}
+      </div>
+      
+      <div class="collage-content">
+        {%- if block.settings.heading != blank -%}
+          <h3 class="collage-heading">{{ block.settings.heading }}</h3>
+        {%- endif -%}
+        
+        <div class="collage-divider">
+          <img src="{{ 'icon-short-divider.svg' | asset_url }}"
+            alt=""
+            width="100"
+            height="20"
+            loading="lazy"
+          >
+        </div>
+        
+        {%- if block.settings.text != blank -%}
+          <div class="collage-text">{{ block.settings.text }}</div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+{%- endif -%} 
