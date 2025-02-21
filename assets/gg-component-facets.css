@@ -192,6 +192,7 @@
   display: flex;
   align-items: center;
   padding: 0 19px;
+  border: 1px solid rgba(0, 0, 0, 1);
 }
 
 .facets__summary .svg-wrapper {
@@ -268,9 +269,7 @@
 }
 
 .facets__display {
-  border-width: var(--popup-border-width);
-  border-style: solid;
-  border-color: rgba(var(--color-foreground), var(--popup-border-opacity));
+  border: 1px solid rgba(0, 0, 0, 1);
   border-radius: var(--popup-corner-radius);
   box-shadow: var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius)
     rgba(var(--color-shadow), var(--popup-shadow-opacity));
@@ -509,7 +508,21 @@
 .swatch-input-wrapper {
   display: flex;
 }
-
+.swatch-input__input:active + .swatch-input__label, 
+.swatch-input__input:checked + .swatch-input__label,
+.swatch-input-wrapper,
+.swatch-input__input + .swatch-input__label:hover,
+.swatch-input__input:hover + .swatch-input__label,
+.swatch-input__input:focus-visible + .swatch-input__label {
+  outline: none !important;
+  box-shadow: none !important;
+  outline-offset: none;
+}
+span.swatch {
+  width: 15px;
+  height: 15px;
+  border-radius: 1px;
+}
 .facet-checkbox > svg,
 .facet-checkbox > .svg-wrapper {
   background-color: rgb(var(--color-background));
