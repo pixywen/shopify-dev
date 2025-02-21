@@ -4,8 +4,9 @@
   grid-template-rows: repeat(2, auto);
   padding-top: 1rem;
 }
-.section-template--24159964561772__product-grid-padding {
-  background: none;
+.gg-product-grid.gradient{
+  background: none !important;
+  background-color: none !important;
 }
 .active-facets-mobile {
   margin-bottom: 0.5rem;
