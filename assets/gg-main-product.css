@@ -158,3 +158,63 @@
   }
 }
 /* Heading Image Block - End */
+
+.product-form__buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.swym-button.swym-add-to-wishlist {
+  flex: 0 0 auto;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: rgb(var(--color-foreground));
+  color: rgb(var(--color-background));
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+/* 未收藏状态 - 白色轮廓心形 */
+.swym-button.swym-add-to-wishlist:not(.swym-added) .swym-wishlist-icon {
+  stroke: rgb(var(--color-background));
+  fill: none;
+  stroke-width: 2px;
+}
+
+/* 已收藏状态 - 白色填充心形 */
+.swym-button.swym-add-to-wishlist.swym-added .swym-wishlist-icon {
+  fill: rgb(var(--color-background));
+  stroke: none;
+}
+
+/* 图标容器 */
+.swym-button.swym-add-to-wishlist .swym-wishlist-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.product-form__custom-button {
+  flex: 0 0 auto;
+  min-width: 120px;
+  padding: 0 15px;
+  height: 45px;
+  border: 1px solid rgba(var(--color-foreground), 0.1);
+  background: rgb(var(--color-background));
+  color: rgb(var(--color-foreground));
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.product-form__custom-button:hover {
+  background: rgba(var(--color-foreground), 0.03);
+}
+
+.product-form__submit {
+  flex: 1;
+  margin-bottom: 0;
+}
