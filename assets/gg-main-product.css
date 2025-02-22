@@ -177,6 +177,17 @@
   cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 50%;
+  padding: 0;
+  background-color: rgb(var(--color-foreground)) !important;
+  opacity: 1 !important;
+}
+
+/* 禁用状态和激活状态保持一致的样式 */
+.swym-button.swym-add-to-wishlist.disabled,
+.swym-button.swym-add-to-wishlist:disabled,
+.swym-button.swym-add-to-wishlist.swym-added {
+  background: rgb(var(--color-foreground)) !important;
+  opacity: 1 !important;
 }
 
 /* 未收藏状态 - 白色轮廓心形 */
@@ -189,13 +200,23 @@
 /* 已收藏状态 - 白色填充心形 */
 .swym-button.swym-add-to-wishlist.swym-added .swym-wishlist-icon {
   fill: rgb(var(--color-background));
-  stroke: none;
+  stroke: rgb(var(--color-background));
+  stroke-width: 2px;
 }
 
-/* 图标容器 */
+/* 覆盖 Swym 的默认样式 */
 .swym-button.swym-add-to-wishlist .swym-wishlist-icon {
-  width: 20px;
-  height: 20px;
+  position: static !important;
+  transform: none !important;
+  margin: 0 !important;
+  width: 24px !important;
+  height: 24px !important;
+}
+
+/* 确保没有额外的背景遮罩 */
+.swym-button.swym-add-to-wishlist::before,
+.swym-button.swym-add-to-wishlist::after {
+  display: none !important;
 }
 
 .product-form__custom-button {
