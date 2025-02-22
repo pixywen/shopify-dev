@@ -143,6 +143,8 @@
   width: 100%;
   height: auto;
   overflow: hidden;
+  padding-left: var(--mobile-padding, 0);
+  padding-right: var(--mobile-padding, 0);
 }
 
 .banner-image {
@@ -164,6 +166,11 @@
 
 /* 响应式控制 */
 @media screen and (min-width: 750px) {
+  .banner-image-container {
+    padding-left: var(--desktop-padding, 0);
+    padding-right: var(--desktop-padding, 0);
+  }
+  
   .banner-image--desktop {
     display: block;
   }
