@@ -175,8 +175,32 @@
             "block_type": "heading_text",
             "margin_top": 32,
             "margin_bottom": 32,
-            "heading": "<p>产品详情</p>",
-            "content": "<p>测试产品内容</p>",
+            "heading": "<p>Your Ultimate All-season Jacket</p>",
+            "content": "<p>Designed for city living, globetrotting, and everything in between, Alpargali is an era-defining jacket that will keep all your adventures organized. It’s mobile storage for the modern  explorer. The dozens of features - including 14 waterproof pockets and 15k breathability - give Alpargali ultimate versatility as an everyday jacket, travel jacket, going-out jacket AND activewear. Business meetings. Leisure rides. Country hikes. Any occasion. One piece of outerwear.</p>",
+            "target_tab": "description"
+          }
+        },
+        "image_banner_MYRGBE": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/product-desc-desktop-001.png",
+            "image_mobile": "shopify://shop_images/product-desc-001-m.png",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "image_banner_DDQQKc": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/icon-pc.png",
+            "image_mobile": "shopify://shop_images/icon.png",
+            "margin_top": 0,
+            "margin_bottom": 32,
+            "padding_x_desktop": 25,
+            "padding_x_mobile": 5,
             "target_tab": "description"
           }
         },
@@ -209,6 +233,8 @@
       },
       "block_order": [
         "content_block_MGACxw",
+        "image_banner_MYRGBE",
+        "image_banner_DDQQKc",
         "content_block_rN49nb",
         "content_block_DPjhDm",
         "judge_me_reviews_review_widget_JctMNU"
