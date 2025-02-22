@@ -35,11 +35,11 @@
           "type": "quantity_selector",
           "settings": {}
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
+        "buy_buttons_ex_c7QqTL": {
+          "type": "buy_buttons_ex",
           "settings": {
             "show_dynamic_checkout": false,
-            "show_gift_card_recipient": false
+            "show_gift_card_recipient": true
           }
         },
         "divider_3i4EF3": {
@@ -121,7 +121,7 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons",
+        "buy_buttons_ex_c7QqTL",
         "divider_3i4EF3",
         "gg_icon_text_grid_TGCbKj",
         "divider_FHRHjn",
@@ -173,6 +173,8 @@
           "type": "content_block",
           "settings": {
             "block_type": "heading_text",
+            "margin_top": 32,
+            "margin_bottom": 32,
             "heading": "<p>产品详情</p>",
             "content": "<p>测试产品内容</p>",
             "target_tab": "description"
@@ -182,6 +184,8 @@
           "type": "content_block",
           "settings": {
             "block_type": "heading_text",
+            "margin_top": 32,
+            "margin_bottom": 32,
             "heading": "<p>产品详情</p>",
             "content": "<p>请输入详细说明内容...</p>",
             "target_tab": "video"
@@ -191,6 +195,8 @@
           "type": "content_block",
           "settings": {
             "block_type": "heading_text",
+            "margin_top": 32,
+            "margin_bottom": 32,
             "heading": "<p>产品详情</p>",
             "content": "<p>请输入详细说明内容...</p>",
             "target_tab": "faq"
