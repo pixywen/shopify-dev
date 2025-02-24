@@ -16,7 +16,7 @@
   "
   {{ block.shopify_attributes }}>
   
-  <div class="faq-list" style="gap: {{ block.settings.gap }}px;">
+  <div class="faq-list">
     {% assign faq_content = block.settings.faq_content %}
     {% assign titles = faq_content | split: '</title>' %}
     
