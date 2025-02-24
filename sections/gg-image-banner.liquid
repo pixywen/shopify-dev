@@ -45,7 +45,7 @@
           width: section.settings.image.width,
           height: section.settings.image.height,
           class: "banner__media-image desktop-only",
-          sizes: "(min-width: 751px) 100vw"
+          sizes: "100vw"
         }}
       {%- endif -%}
 
@@ -55,79 +55,20 @@
           width: section.settings.mobile_image.width,
           height: section.settings.mobile_image.height,
           class: "banner__media-image mobile-only",
-          sizes: "(max-width: 750px) 100vw"
+          sizes: "(max-width: 750px) 100vw, 750px"
         }}
       {%- endif -%}
     </div>
   {%- endif -%}
 
   {%- if section.settings.video != blank or section.settings.video_url != blank or section.settings.mobile_video != blank or section.settings.mobile_video_url != blank -%}
-    <div class="gg-banner-video" data-section-id="{{ section_id }}" style="display: none;">
+    <div class="gg-banner-video" data-section-id="{{ section_id }}" style="display: none;"
+      data-desktop-video="{{ section.settings.video | json | escape }}"
+      data-mobile-video="{{ section.settings.mobile_video | json | escape }}">
       <!-- 桌面端视频 -->
-      <div class="desktop-only">
-        {%- if section.settings.video == null and section.settings.video_url != null -%}
-          {%- if section.settings.video_url.type == 'youtube' -%}
-            <iframe
-              src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=0&loop=1&playlist={{ video_id }}&mute=1&rel=0"
-              class="js-youtube"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-              title="{{ section.settings.description | escape }}"
-            ></iframe>
-          {%- else -%}
-            <iframe
-              src="https://player.vimeo.com/video/{{ video_id }}?autoplay=0&loop=1&muted=1&api=1"
-              class="js-vimeo"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-              title="{{ section.settings.description | escape }}"
-            ></iframe>
-          {%- endif -%}
-        {%- else -%}
-          {{
-            section.settings.video
-            | video_tag:
-              autoplay: true,
-              loop: true,
-              muted: true,
-              playsinline: true,
-              controls: false
-          }}
-        {%- endif -%}
-      </div>
-
+      <div class="desktop-only"></div>
       <!-- 移动端视频 -->
-      <div class="mobile-only">
-        {%- if section.settings.mobile_video == null and section.settings.mobile_video_url != null -%}
-          {%- if section.settings.mobile_video_url.type == 'youtube' -%}
-            <iframe
-              src="https://www.youtube.com/embed/{{ mobile_video_id }}?enablejsapi=1&autoplay=0&loop=1&playlist={{ mobile_video_id }}&mute=1&rel=0"
-              class="js-youtube"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-              title="{{ section.settings.description | escape }}"
-            ></iframe>
-          {%- else -%}
-            <iframe
-              src="https://player.vimeo.com/video/{{ mobile_video_id }}?autoplay=0&loop=1&muted=1&api=1"
-              class="js-vimeo"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-              title="{{ section.settings.description | escape }}"
-            ></iframe>
-          {%- endif -%}
-        {%- else -%}
-          {{
-            section.settings.mobile_video
-            | video_tag:
-              autoplay: true,
-              loop: true,
-              muted: true,
-              playsinline: true,
-              controls: false
-          }}
-        {%- endif -%}
-      </div>
+      <div class="mobile-only"></div>
     </div>
   {%- endif -%}
 </div>
@@ -135,16 +76,62 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const sectionId = '{{ section_id }}';
-    const video = document.querySelector('.gg-banner-container[data-section-id="' + sectionId + '"] iframe, ' + 
-                                      '.gg-banner-container[data-section-id="' + sectionId + '"] video');
     const imageContainer = document.querySelector('.gg-banner-image[data-section-id="' + sectionId + '"]');
     const videoContainer = document.querySelector('.gg-banner-video[data-section-id="' + sectionId + '"]');
-
-    if (video && videoContainer) {
+    
+    if (!videoContainer) return;
+    
+    let currentVideo = null;
+    let observer = null;
+    
+    function loadVideo() {
+      const isMobile = window.innerWidth < 750;
+      const videoData = isMobile 
+        ? JSON.parse(videoContainer.dataset.mobileVideo || '{}')
+        : JSON.parse(videoContainer.dataset.desktopVideo || '{}');
+      
+      const container = isMobile 
+        ? videoContainer.querySelector('.mobile-only')
+        : videoContainer.querySelector('.desktop-only');
+      
+      if (!container) return;
+      if (!videoData.sources) return;
+      
+      // 清理之前的视频和观察者
+      if (currentVideo) {
+        currentVideo.pause();
+        currentVideo.remove();
+        currentVideo = null;
+      }
+      if (observer) {
+        observer.disconnect();
+        observer = null;
+      }
+      
+      // 创建新的视频元素
+      const video = document.createElement('video');
+      video.src = videoData.sources[0].url;
+      video.autoplay = true;
+      video.loop = true;
+      video.muted = true;
+      video.playsInline = true;
+      video.controls = false;
+      
+      container.innerHTML = '';
+      container.appendChild(video);
+      currentVideo = video;
+      
+      // 初始隐藏视频容器
       videoContainer.style.opacity = '0';
       videoContainer.style.display = 'block';
 
-      // 处理视频错误
+      // 视频加载完成后显示
+      video.addEventListener('loadeddata', function() {
+        videoContainer.style.transition = 'opacity 0.3s ease';
+        videoContainer.style.opacity = '1';
+      });
+      
+      // 错误处理
       video.addEventListener('error', function(e) {
         console.error('Video loading error:', e);
         videoContainer.style.display = 'none';
@@ -152,47 +139,31 @@
           imageContainer.style.display = 'block';
         }
       });
-
-      // 视频加载完成后显示
-      video.addEventListener('loadeddata', function() {
-        videoContainer.style.transition = 'opacity 0.3s ease';
-        videoContainer.style.opacity = '1';
-      });
-
-      // 创建 Intersection Observer
-      const observer = new IntersectionObserver((entries) => {
+      
+      // 创建新的 Intersection Observer
+      observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            // 视频进入可视区域
-            if (video.tagName.toLowerCase() === 'video') {
-              video.play();
-            } else if (video.tagName.toLowerCase() === 'iframe') {
-              if (video.src.includes('youtube')) {
-                video.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-              } else if (video.src.includes('vimeo')) {
-                video.contentWindow.postMessage('{"method":"play"}', '*');
-              }
-            }
+            video.play().catch(e => console.error('Video play error:', e));
           } else {
-            // 视频离开可视区域
-            if (video.tagName.toLowerCase() === 'video') {
-              video.pause();
-            } else if (video.tagName.toLowerCase() === 'iframe') {
-              if (video.src.includes('youtube')) {
-                video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-              } else if (video.src.includes('vimeo')) {
-                video.contentWindow.postMessage('{"method":"pause"}', '*');
-              }
-            }
+            video.pause();
           }
         });
       }, {
-        threshold: 0.3 // 当30%的视频可见时触发
+        threshold: 0.3
       });
-
-      // 开始观察视频容器
       observer.observe(videoContainer);
     }
+
+    // 等待页面完全加载后再加载视频
+    window.addEventListener('load', loadVideo);
+
+    // 处理窗口大小改变
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(loadVideo, 250);
+    });
   });
 </script>
 
