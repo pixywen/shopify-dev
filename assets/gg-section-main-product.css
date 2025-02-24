@@ -1,3 +1,18 @@
+.shopify-section .gradient {
+  background: rgba(240, 240, 240, 1);
+  padding-top: 0;
+}
+.breadcrumb__item .breadcrumb__link {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 24px;
+  color: rgba(128, 128, 128, 1);
+}
+.shopify-section .breadcrumb {
+  padding-top: 55px;
+  padding-bottom: 25px;
+}
 product-info {
   display: block;
 }
@@ -172,6 +187,7 @@ product-info {
   flex: 0 0 100%;
   padding: 0;
   margin: 0 0 1.2rem 0;
+  margin-top: 40px !important;
   max-width: 44rem;
   min-width: fit-content;
   border: none;
@@ -238,7 +254,7 @@ product-info {
 .product__info-container .product-form,
 .product__info-container .product__description,
 .product__info-container .icon-with-text {
-  margin: 2.5rem 0;
+  margin: 44px 0;
 }
 
 .product__text {
@@ -257,7 +273,7 @@ a.product__text {
 
 .product__title {
   word-break: break-word;
-  margin-bottom: 1.5rem;
+  margin-bottom: 25px;
 }
 
 .product__title > * {
@@ -300,11 +316,21 @@ a.product__text {
 .product__text.caption-with-letter-spacing + .product__title {
   margin-top: 0;
 }
-
+div.accordion summary {
+  padding: 19px 0 16px;
+}
 .product__accordion .accordion__content {
   padding: 0 1rem;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 100);
 }
-
+div.accordion {
+  border-top: 0.5px solid rgba(0, 0, 0, 1);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 1);
+}
 .product .price .badge {
   margin-bottom: 0.5rem;
   padding: 2px 8px;
@@ -329,7 +355,29 @@ a.product__text {
 .product .price--sold-out .price__badge-sale {
   display: none;
 }
+.price-per-item__container .quantity {
+  width: 180px;
+  height: 50px;
+  background: rgba(231, 231, 231, 1);
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+.price-per-item__container .quantity .quantity__button {
+  height: 100%;
+  color: rgba(0, 0, 0, 1);
+  padding: 0 18px;
+  width: auto;
+}
+.price-per-item__container .quantity .quantity__input {
+  height: 100%;
+  font-size: 16px;
+  font-weight: 400;
+}
+.quantity:after {
+  box-shadow: none;
+}
+.swym-button.swym-add-to-wishlist {
 
+}
 @media screen and (max-width: 750px) {
   .product__info-container {
     max-width: 60rem;

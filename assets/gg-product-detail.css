@@ -7,35 +7,30 @@
 /* 标签导航 */
 .gg-tab-nav {
   display: flex;
-  gap: 20px;
   border-bottom: 1px solid rgba(var(--color-border), 0.2);
-  padding-bottom: 12px;
-  margin-bottom: 30px;
+  margin-bottom: 96px;
 }
 
 .gg-tab-item {
+  flex: 1;
   background: none;
   border: none;
-  padding: 8px 16px;
+  padding: 23px 0;
   cursor: pointer;
   position: relative;
-  color: rgba(var(--color-foreground), 0.6);
+  color: rgba(0, 0, 0, 1);
+  font-size: 20px;
+  font-weight: 600;
   transition: color 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 1);
+  background: rgba(229, 229, 229, 1);
+  border-right: 0;
 }
 
 .gg-tab-item.active {
-  color: rgb(var(--color-foreground));
+  color: rgba(255, 255, 255, 1);
   font-weight: 600;
-}
-
-.gg-tab-item.active::after {
-  content: '';
-  position: absolute;
-  bottom: -13px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: rgb(var(--color-foreground));
+  background: rgba(0, 0, 0, 1);
 }
 
 /* 内容区域 */
@@ -71,28 +66,149 @@
 
 /* 新增在现有样式之后 */
 .product-block-heading-text {
-  padding: 1.5rem;
   background: rgba(var(--color-background), 0.05);
   border-radius: 8px;
 }
 
 .block-heading {
-  font-size: 1.8rem;
-  color: rgb(var(--color-foreground));
-  margin-bottom: 1.2rem;
-  line-height: 1.3;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 43.88px;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  margin: 0;
 }
 
+.block-heading p {
+  margin: 0;
+}
+.image-banner-section {
+  margin: 72px 0 !important;
+}
 .block-content {
-  font-size: 1.4rem;
-  line-height: 1.6;
-  color: rgba(var(--color-foreground), 0.8);
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 0px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 1);
+  max-width: 1538px;
+  margin: auto;
+  padding-top: 32px;
+  padding-bottom: 93px;
 }
 
 .block-content p {
   margin: 0.8em 0;
 }
+#judgeme_product_reviews .jdgm-rev-widg .jdgm-star {
+  color: rgba(255, 102, 0, 1);
+}
+.jdgm-rev-widg__summary-average,
+.jdgm-rev-widg__summary-text {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 19.5px;
+  color: rgba(0, 0, 0, 1);
+}
+.jdgm-widget:not(.jdgm-review-widget--small,
+.jdgm-review-widget--medium) .jdgm-rev-widg__summary+.jdgm-histogram {
+  border-color: rgba(255, 87, 51, 1) !important;
+}
+.jdgm-widget:not(.jdgm-review-widget--small,.jdgm-review-widget--medium) .jdgm-histogram+.jdgm-widget-actions-wrapper {
+  border-left: none !important;
+}
 
+.jdgm-histogram__bar-content {
+  background: rgba(255, 87, 51, 1);
+}
+.jdgm-widget-actions-wrapper a.jdgm-write-rev-link {
+  width: 300px;
+  height: 60px;
+  line-height: 60px !important;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 29.26px;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(255, 102, 0, 1);
+  padding: 0;
+  border: none;
+  text-transform: uppercase;
+  max-width: 300px !important;
+}
+
+.jdgm-sort-dropdown-wrapper select.jdgm-sort-dropdown, 
+.jdgm-sort-dropdown-wrapper span.jdgm-sort-dropdown-arrow{
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 19.5px;
+  color: rgba(255, 87, 51, 1);
+}
+
+div.jdgm-row-actions {
+  border-top: 1px solid rgba(0, 0, 0, 1);
+}
+
+.jdgm-row-profile .jdgm-rev__icon {
+  width: 50px;
+  height: 50px;
+}
+.jdgm-row-profile .jdgm-rev__icon:not(.jdgm-rev__avatar):before {
+  line-height: 50px;
+  color: rgba(255, 87, 51, 1);
+}
+.jdgm-row-profile .jdgm-rev__author {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 24.38px;
+  color: rgba(255, 87, 51, 1);
+}
+.jdgm-row-profile  {
+  display: flex;
+  align-items: center;
+}
+.jdgm-rev__title {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 21.94px;
+  color: rgba(0, 0, 0, 1);
+}
+.jdgm-rev__body {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 17.07px;
+  color: rgba(0, 0, 0, 1);
+}
+#judgeme_product_reviews .jdgm-rev-widg {
+  padding: 0 100px;
+}
+a.jdgm-write-rev-link.jdgm-write-rev-link:not([disabled]):hover,
+a.jdgm-write-rev-link.jdgm-write-rev-link:focus {
+  background: rgb(244, 117, 33);
+}
+a.jdgm-btn--border {
+  border-color: rgb(244, 117, 33);
+  color: rgba(255, 87, 51, 1);
+}
+.jdgm-form__fieldset input[type=submit].jdgm-btn--solid {
+  background: rgb(244, 117, 33);
+  border-color: rgb(244, 117, 33);
+  text-transform: uppercase;
+}
+.jdgm-form__fieldset input[type=submit].jdgm-btn--solid:hover,
+.jdgm-form__fieldset input[type=submit].jdgm-btn--solid:focus {
+  background: rgb(244, 117, 33);
+  background-color: rgb(244, 117, 33) !important;
+}
+a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
+  color: rgba(255, 87, 51, 1);
+}
 @media (max-width: 750px) {
   .product-block-heading-text {
     margin: 1.5rem 0;
@@ -489,6 +605,7 @@
   .collage-container.image-right .collage-content {
     order: 1;
   }
+<<<<<<< HEAD
 }
 
 /* FAQ Block - Start */
@@ -562,3 +679,6 @@
   color: rgba(var(--color-foreground), 0.75);
 }
 /* FAQ Block - End */ 
+=======
+} 
+>>>>>>> 0a41897 (style: 产品详情PC端优化)

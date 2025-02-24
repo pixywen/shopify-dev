@@ -93,7 +93,7 @@
 
 /* Icon Text Grid Block - Start */
 .gg-icon-text-grid {
-  margin: 15px 0;
+  margin: 0;
 }
 
 .icon-grid-container {
@@ -105,8 +105,8 @@
 .icon-item {
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 8px;
+  gap: 12px;
+  padding: 0 8px;
   background: rgba(255,255,255,0.05);
   border-radius: 6px;
 }
@@ -116,27 +116,42 @@
     grid-template-columns: repeat(3, 1fr); /* 桌面端强制三列 */
   }
 }
-
-.icon-image img {
+.icon-image {
+ width: auto;
+ height: auto;
+ display: flex;
+ align-items: center;
+}
+.icon-item:nth-child(1) .icon-image img {
+  width: 32px;
+  height: 17px;
+}
+.icon-item:nth-child(2) .icon-image img {
   width: 23px;
-  height: 23px;
-  object-fit: contain;
-  flex-shrink: 0;
+  height: 22px;
+}
+.icon-item:nth-child(3) .icon-image img {
+  width: 23px;
+  height: 21px;
 }
 
 .icon-text {
   font-size: 10px;
-  line-height: 1.3;
-  color: var(--color-foreground);
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 10px;
+  color: rgba(0, 0, 0, 1);
   word-break: break-word;
 }
 /* Icon Text Grid Block - End */
 
 /* Heading Image Block - Start */
 .gg-heading-image {
-  margin: 20px 0;
+  margin: 29px 0 20px 0;
 }
+.accordion {
 
+}
 .heading-text {
   font-size: 18px;
   font-weight: 600;
@@ -197,13 +212,14 @@
 
 .product-form__buttons {
   display: flex;
-  gap: 10px;
+  gap: 23px;
+  align-items: center;
 }
 
 .swym-button.swym-add-to-wishlist {
   flex: 0 0 auto;
-  width: 45px;
-  height: 45px;
+  width: 74px;
+  height: 69px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -245,8 +261,8 @@
   position: static !important;
   transform: none !important;
   margin: 0 !important;
-  width: 24px !important;
-  height: 24px !important;
+  width: 31px !important;
+  height: 26px !important;
 }
 
 /* 确保没有额外的背景遮罩 */
@@ -272,6 +288,13 @@
 }
 
 .product-form__submit {
-  flex: 1;
+  width: 448px;
+  height: 70px;
   margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 24.38px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
 }
