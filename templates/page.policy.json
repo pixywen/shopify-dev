@@ -74,7 +74,7 @@
         "text_CFq6PX": {
           "type": "text",
           "settings": {
-            "text": "<p>You can track your order via the Shipment Notification E-mail(s).Please note that you may receive more than one Shipment Notification E-mail if item(s) from your order are shipping separately.If tracking information on the shipping carrier page for your order is not showing activity/movement for more than 5 business days, please contact Customer Service.</p>",
+            "text": "<p>You can track your order via the Shipment Notification E-mail(s).</p><p>Please note that you may receive more than one Shipment Notification E-mail if item(s) from your order are shipping separately.If tracking information on the shipping carrier page for your order is not showing activity/movement for more than 5 business days, please contact Customer Service.</p>",
             "font": "montserrat_n4",
             "font_size": 16,
             "font_weight": 400,
@@ -104,10 +104,10 @@
             "header_2": "Processed Time",
             "header_3": "Estimated Delivery",
             "header_4": "Notice",
-            "row1_col1": "Standard Shipping",
-            "row1_col2": "1-2 business days",
-            "row1_col3": "4-10 business days（Excluded Alaska and Hawaii)",
-            "row1_col4": "Your local Post Office or regional carrier may provide the final delivery",
+            "row1_col1": "<p>Standard Shipping</p>",
+            "row1_col2": "<p>1-2 business days</p>",
+            "row1_col3": "<p>4-10 business days（Excluded Alaska and Hawaii)</p>",
+            "row1_col4": "<p>Your local Post Office or regional carrier may provide the final delivery</p>",
             "margin_top": 25,
             "margin_bottom": 25
           }

@@ -179,6 +179,16 @@ product-info {
 
 .product-form__input .form__label {
   padding-left: 0;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 21.94px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.product-form__input .form__label span {
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .product-form__input .select {
@@ -254,6 +264,31 @@ a.product__text {
   margin: 0;
 }
 
+.product__info-wrapper  .product__title h1 {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 43.2px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.price .price-item.price-item--last {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 21.94px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.price .price-item.price-item--regular {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 17.07px;
+  text-decoration-line: line-through;
+  color: rgba(128, 128, 128, 1);
+}
+
 .product__title > a {
   display: none;
 }
@@ -272,6 +307,14 @@ a.product__text {
 
 .product .price .badge {
   margin-bottom: 0.5rem;
+  padding: 2px 8px;
+  background: rgba(0, 0, 0, 1);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 14.63px;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 0;
 }
 
 .product .price__container {
@@ -287,13 +330,30 @@ a.product__text {
   display: none;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (max-width: 750px) {
   .product__info-container {
     max-width: 60rem;
   }
-
+  .product .price .badge {
+    padding: 4px 12px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .product-form__input .form__label {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .product__info-wrapper .product__title h1 {
+    font-size: 42px;
+    font-weight: 600;
+  }
+  .price .price-item.price-item--last {
+    font-size: 18px;
+    font-weight: 400;
+  }
   .product__info-container .price--on-sale .price-item--regular {
-    font-size: 1.6rem;
+    font-size: 18px;
+    font-weight: 400;
   }
 
   .product__info-container > *:first-child {
