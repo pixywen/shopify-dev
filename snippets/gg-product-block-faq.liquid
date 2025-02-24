@@ -1,0 +1,44 @@
+{% comment %}
+  FAQ 组件
+  - 支持多组可折叠内容
+  - 每组包含标题和正文
+  - 点击标题展开/收起内容
+  - 展开/收起状态有不同图标
+  
+  参数:
+  - block: block 对象，包含配置信息
+{% endcomment %}
+
+<div class="faq-block" 
+  style="
+    margin-top: {{ block.settings.margin_top }}px;
+    margin-bottom: {{ block.settings.margin_bottom }}px;
+  "
+  {{ block.shopify_attributes }}>
+  
+  <div class="faq-list" style="gap: {{ block.settings.gap }}px;">
+    {% assign faq_content = block.settings.faq_content %}
+    {% assign titles = faq_content | split: '</title>' %}
+    
+    {% for title_part in titles %}
+      {% unless forloop.last %}
+        {% assign title_content = title_part | split: '<title>' | last %}
+        {% assign next_part = titles[forloop.index] %}
+        {% assign paragraph = next_part | split: '<p>' | last | split: '</p>' | first %}
+        
+        <div class="faq-item">
+          <button class="faq-toggle" aria-expanded="false">
+            <span class="faq-title">{{ title_content }}</span>
+            <span class="faq-icon">
+              <img class="icon-close" src="{{ 'gg-icon-faq-close.svg' | asset_url }}" alt="Close">
+              <img class="icon-open" src="{{ 'gg-icon-faq-open.svg' | asset_url }}" alt="Open">
+            </span>
+          </button>
+          <div class="faq-content">
+            <div class="faq-text">{{ paragraph }}</div>
+          </div>
+        </div>
+      {% endunless %}
+    {% endfor %}
+  </div>
+</div> 

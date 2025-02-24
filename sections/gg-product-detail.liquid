@@ -50,6 +50,8 @@
                 {% render 'gg-product-block-video', block: block %}
               {% elsif block.type == 'collage' and block.settings.target_tab == tab %}
                 {% render 'gg-product-block-collage', block: block %}
+              {% elsif block.type == 'faq' and block.settings.target_tab == tab %}
+                {% render 'gg-product-block-faq', block: block %}
               {% endif %}
             {% endfor %}
           </div>
@@ -638,6 +640,64 @@
           "step": 4,
           "default": 32,
           "unit": "px"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "name": "FAQ组件",
+      "settings": [
+        {
+          "type": "header",
+          "content": "间距设置"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "上方间距",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "default": 32,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "下方间距",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "default": 32,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "gap",
+          "label": "组间距",
+          "min": 0,
+          "max": 40,
+          "step": 4,
+          "default": 0,
+          "unit": "px"
+        },
+        {
+          "type": "html",
+          "id": "faq_content",
+          "label": "FAQ内容",
+          "info": "使用 <title>问题</title><p>答案</p> 格式添加FAQ内容"
+        },
+        {
+          "type": "select",
+          "id": "target_tab",
+          "label": "所属标签页",
+          "options": [
+            {"value": "description", "label": "描述"},
+            {"value": "video", "label": "视频"},
+            {"value": "reviews", "label": "评价"},
+            {"value": "faq", "label": "FAQ"}
+          ],
+          "default": "faq"
         }
       ]
     }

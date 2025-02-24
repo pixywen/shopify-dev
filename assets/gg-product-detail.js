@@ -295,9 +295,43 @@ class ProductCarousel {
   }
 }
 
+// FAQ 组件
+class FAQBlock {
+  constructor() {
+    this.init();
+  }
+
+  init() {
+    document.querySelectorAll('.faq-toggle').forEach(toggle => {
+      toggle.addEventListener('click', this.handleToggle.bind(this));
+    });
+  }
+
+  handleToggle(event) {
+    const toggle = event.currentTarget;
+    const content = toggle.nextElementSibling;
+    const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+
+    // 更新 aria-expanded 状态
+    toggle.setAttribute('aria-expanded', !isExpanded);
+
+    // 设置内容高度
+    if (!isExpanded) {
+      content.style.height = content.scrollHeight + 'px';
+    } else {
+      content.style.height = '0';
+    }
+  }
+}
+
 // 初始化
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => new ProductDetailTabs());
 } else {
   new ProductDetailTabs();
-} 
+}
+
+// 初始化 FAQ 组件
+document.addEventListener('DOMContentLoaded', () => {
+  new FAQBlock();
+}); 
