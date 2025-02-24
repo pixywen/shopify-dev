@@ -57,7 +57,7 @@
   border-radius: 0;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 990px) {
   /* 添加移动端禁用放大样式 */
   [data-zoom-container] {
     cursor: default !important;

@@ -1,85 +1,3 @@
-@media screen and (max-width: 750px) {
-  section.product__info-container .product-form__input--pill input[type='radio'] + label {
-      width: 88px;
-      height: 80px;
-      line-height: 80px;
-    }
-    .product-info {
-      margin: 0;
-      padding: 0;
-      max-width: 100%;
-    }
-
-    .product-info .page-width {
-      margin: 0;
-      padding: 0;
-      max-width: 100%;
-    }
-
-    .product-info .product {
-      margin: 0;
-      padding: 0;
-    }
-
-    .product--thumbnail_slider .thumbnail-slider {
-      align-items: self-start;
-    }
-    .product--thumbnail_slider {
-      position: relative;
-    }
-    .product--thumbnail_slider media-gallery {
-      display: flex;
-      flex-direction: row;
-      gap: 0;
-      padding-left: 0;
-    }
-    .product--thumbnail_slider .slider-mobile-gutter:not(.thumbnail-slider) {
-      width: calc(100% - 330px);
-      padding-right: 0px;
-      padding-left: 30px;
-    }
-    .product--thumbnail_slider .thumbnail-slider {
-      width: 100px;
-      padding-left: 0;
-      margin-left: 10px;
-    }
-    .product--thumbnail_slider .slider-button {
-      display: none !important;
-    }
-    .product--thumbnail_slider
-      .thumbnail-slider
-      .thumbnail-list.slider--tablet-up {
-      height: 100%;
-      overflow-y: auto;
-      overflow-x: hidden;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-    }
-    .product--thumbnail_slider
-      .thumbnail-slider
-      .thumbnail-list.slider--tablet-up
-      .thumbnail-list__item.slider__slide {
-      width: 100%;
-      margin-bottom: 0;
-    }
-    .product-info .page-width {
-      padding-left: 0;
-    }
-    #MainContent .product-info {
-      --page-width-margin: 0;
-      margin-left: 0;
-    }
-    #MainContent .product-info .page-width {
-      padding-left: 0;
-      margin-left: 0;
-    }
-    #MainContent .product-info .product__media-wrapper {
-      margin-left: 0;
-    }
-  }
-
 /* Divider block - Start */
 .gg-divider-block {
   width: 100%;
@@ -202,10 +120,14 @@
   outline: none !important;
   border: 1px solid rgba(0, 0, 0, 1);
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 990px) {
   .heading-text {
     font-size: 24px;
     font-weight: 600;
+  }
+  .swatch-input__label .swatch {
+    width: 200px;
+    height: 200px;
   }
 }
 /* Heading Image Block - End */
@@ -297,4 +219,100 @@
   line-height: 24.38px;
   color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
+}
+@media screen and (max-width: 990px) {
+  section.product__info-container .product-form__input--pill input[type='radio'] + label {
+    width: 88px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .product-info {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .product-info .page-width {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .product-info .product {
+    margin: 0;
+    padding: 0;
+  }
+
+  .product--thumbnail_slider .thumbnail-slider {
+    align-items: self-start;
+  }
+  .product--thumbnail_slider {
+    position: relative;
+  }
+  .product--thumbnail_slider media-gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    padding-left: 0;
+  }
+  .product--thumbnail_slider .slider-mobile-gutter:not(.thumbnail-slider) {
+    width: calc(100% - 330px);
+    padding-right: 0px;
+    padding-left: 30px;
+  }
+  .product--thumbnail_slider .thumbnail-slider {
+    width: 100px;
+    padding-left: 0;
+    margin-left: 10px;
+  }
+  .product--thumbnail_slider .slider-button {
+    display: none !important;
+  }
+  .product--thumbnail_slider
+    .thumbnail-slider
+    .thumbnail-list.slider--tablet-up {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .product--thumbnail_slider
+    .thumbnail-slider
+    .thumbnail-list.slider--tablet-up
+    .thumbnail-list__item.slider__slide {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .product-info .page-width {
+    padding-left: 0;
+  }
+  #MainContent .product-info {
+    --page-width-margin: 0;
+    margin-left: 0;
+  }
+  #MainContent .product-info .page-width {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  #MainContent .product-info .product__media-wrapper {
+    margin-left: 0;
+  }
+  .swym-button.swym-add-to-wishlist {
+    width: 84px;
+    height: 79px;
+  }
+  .product-form__submit {
+    width: 510px;
+    height: 80px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .product-form__buttons {
+    max-width: none;
+  }
 }
