@@ -37,12 +37,12 @@
   {%- if section.settings.image != blank -%}
     <div class="gg-banner-image" data-section-id="{{ section_id }}">
       {%- assign image_height = section.settings.image_height | default: 'medium' -%}
-      {{ section.settings.image | image_url: width: 3840 | image_tag:
+      {{ section.settings.image | image_url: width: 1920 | image_tag:
         loading: 'eager',
         width: section.settings.image.width,
         height: section.settings.image.height,
         class: "banner__media-image",
-        sizes: "100vw"
+        sizes: "(max-width: 1920px) 100vw, 1920px"
       }}
     </div>
   {%- endif -%}
