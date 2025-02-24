@@ -1,5 +1,9 @@
-@media screen and (min-width: 769px) {
-
+@media screen and (max-width: 750px) {
+  section.product__info-container .product-form__input--pill input[type='radio'] + label {
+      width: 88px;
+      height: 80px;
+      line-height: 80px;
+    }
     .product-info {
       margin: 0;
       padding: 0;
