@@ -5,6 +5,7 @@
 {%- liquid
   assign section_id = 'banner-' | append: section.id
   assign video_id = section.settings.video.id | default: section.settings.video_url.id
+  assign mobile_video_id = section.settings.mobile_video.id | default: section.settings.mobile_video_url.id
   assign video_alt = section.settings.video.alt | default: section.settings.description
 -%}
 
@@ -34,50 +35,99 @@
     {%- endif -%}
   </div>
 
-  {%- if section.settings.image != blank -%}
+  {%- if section.settings.image != blank or section.settings.mobile_image != blank -%}
     <div class="gg-banner-image" data-section-id="{{ section_id }}">
       {%- assign image_height = section.settings.image_height | default: 'medium' -%}
-      {{ section.settings.image | image_url: width: 1920 | image_tag:
-        loading: 'eager',
-        width: section.settings.image.width,
-        height: section.settings.image.height,
-        class: "banner__media-image",
-        sizes: "(max-width: 1920px) 100vw, 1920px"
-      }}
+      
+      {%- if section.settings.image != blank -%}
+        {{ section.settings.image | image_url: width: 1920 | image_tag:
+          loading: 'eager',
+          width: section.settings.image.width,
+          height: section.settings.image.height,
+          class: "banner__media-image desktop-only",
+          sizes: "(min-width: 751px) 100vw"
+        }}
+      {%- endif -%}
+
+      {%- if section.settings.mobile_image != blank -%}
+        {{ section.settings.mobile_image | image_url: width: 750 | image_tag:
+          loading: 'eager',
+          width: section.settings.mobile_image.width,
+          height: section.settings.mobile_image.height,
+          class: "banner__media-image mobile-only",
+          sizes: "(max-width: 750px) 100vw"
+        }}
+      {%- endif -%}
     </div>
   {%- endif -%}
 
-  {%- if section.settings.video != blank or section.settings.video_url != blank -%}
+  {%- if section.settings.video != blank or section.settings.video_url != blank or section.settings.mobile_video != blank or section.settings.mobile_video_url != blank -%}
     <div class="gg-banner-video" data-section-id="{{ section_id }}" style="display: none;">
-      {%- if section.settings.video == null and section.settings.video_url != null -%}
-        {%- if section.settings.video_url.type == 'youtube' -%}
-          <iframe
-            src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=0&loop=1&playlist={{ video_id }}&mute=1&rel=0"
-            class="js-youtube"
-            allow="autoplay; encrypted-media"
-            allowfullscreen
-            title="{{ section.settings.description | escape }}"
-          ></iframe>
+      <!-- 桌面端视频 -->
+      <div class="desktop-only">
+        {%- if section.settings.video == null and section.settings.video_url != null -%}
+          {%- if section.settings.video_url.type == 'youtube' -%}
+            <iframe
+              src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=0&loop=1&playlist={{ video_id }}&mute=1&rel=0"
+              class="js-youtube"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+              title="{{ section.settings.description | escape }}"
+            ></iframe>
+          {%- else -%}
+            <iframe
+              src="https://player.vimeo.com/video/{{ video_id }}?autoplay=0&loop=1&muted=1&api=1"
+              class="js-vimeo"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+              title="{{ section.settings.description | escape }}"
+            ></iframe>
+          {%- endif -%}
         {%- else -%}
-          <iframe
-            src="https://player.vimeo.com/video/{{ video_id }}?autoplay=0&loop=1&muted=1&api=1"
-            class="js-vimeo"
-            allow="autoplay; encrypted-media"
-            allowfullscreen
-            title="{{ section.settings.description | escape }}"
-          ></iframe>
+          {{
+            section.settings.video
+            | video_tag:
+              autoplay: true,
+              loop: true,
+              muted: true,
+              playsinline: true,
+              controls: false
+          }}
         {%- endif -%}
-      {%- else -%}
-        {{
-          section.settings.video
-          | video_tag:
-            autoplay: true,
-            loop: true,
-            muted: true,
-            playsinline: true,
-            controls: false
-        }}
-      {%- endif -%}
+      </div>
+
+      <!-- 移动端视频 -->
+      <div class="mobile-only">
+        {%- if section.settings.mobile_video == null and section.settings.mobile_video_url != null -%}
+          {%- if section.settings.mobile_video_url.type == 'youtube' -%}
+            <iframe
+              src="https://www.youtube.com/embed/{{ mobile_video_id }}?enablejsapi=1&autoplay=0&loop=1&playlist={{ mobile_video_id }}&mute=1&rel=0"
+              class="js-youtube"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+              title="{{ section.settings.description | escape }}"
+            ></iframe>
+          {%- else -%}
+            <iframe
+              src="https://player.vimeo.com/video/{{ mobile_video_id }}?autoplay=0&loop=1&muted=1&api=1"
+              class="js-vimeo"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+              title="{{ section.settings.description | escape }}"
+            ></iframe>
+          {%- endif -%}
+        {%- else -%}
+          {{
+            section.settings.mobile_video
+            | video_tag:
+              autoplay: true,
+              loop: true,
+              muted: true,
+              playsinline: true,
+              controls: false
+          }}
+        {%- endif -%}
+      </div>
     </div>
   {%- endif -%}
 </div>
@@ -224,24 +274,45 @@
       "default": "medium"
     },
     {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Banner Image"
+      "type": "header",
+      "content": "Desktop Media"
     },
     {
-      "type": "header",
-      "content": "Video"
+      "type": "image_picker",
+      "id": "image",
+      "label": "Desktop Banner Image"
     },
     {
       "type": "video",
       "id": "video",
-      "label": "Video file"
+      "label": "Desktop Video file"
     },
     {
       "type": "video_url",
       "id": "video_url",
       "accept": ["youtube", "vimeo"],
-      "label": "Video URL",
+      "label": "Desktop Video URL",
+      "info": "Support YouTube or Vimeo URL"
+    },
+    {
+      "type": "header",
+      "content": "Mobile Media"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile Banner Image"
+    },
+    {
+      "type": "video",
+      "id": "mobile_video",
+      "label": "Mobile Video file"
+    },
+    {
+      "type": "video_url",
+      "id": "mobile_video_url",
+      "accept": ["youtube", "vimeo"],
+      "label": "Mobile Video URL",
       "info": "Support YouTube or Vimeo URL"
     },
     {

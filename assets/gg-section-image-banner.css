@@ -650,3 +650,15 @@
     padding: 12px 24px;
   }
 }
+
+@media screen and (min-width: 750px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .desktop-only {
+    display: none !important;
+  }
+}
