@@ -85,7 +85,8 @@
     let observer = null;
     
     function loadVideo() {
-      const isMobile = window.innerWidth < 750;
+      // const isMobile = window.innerWidth < 750;
+      const isMobile = window.matchMedia('(max-width: 749px)').matches;
       const videoData = isMobile 
         ? JSON.parse(videoContainer.dataset.mobileVideo || '{}')
         : JSON.parse(videoContainer.dataset.desktopVideo || '{}');

@@ -18,6 +18,20 @@
   height: 100%;
   object-fit: cover;
 }
+
+/* 移动端和桌面端显示控制 */
+@media screen and (min-width: 750px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .desktop-only {
+    display: none !important;
+  }
+}
+
 /* 确保视频和iframe正确填充容器 */
 .gg-banner-video--common iframe,
 .gg-banner-video--common video {

@@ -2,8 +2,6 @@
 
 {%- liquid
   assign section_id = 'banner-' | append: section.id
-  assign video_id = section.settings.video.id | default: section.settings.video_url.id
-  assign video_alt = section.settings.video.alt | default: section.settings.description
 -%}
 
 <div class="gg-banner-container--common" 
@@ -32,50 +30,40 @@
     {%- endif -%}
   </div>
 
-  {%- if section.settings.image != blank -%}
+  {%- if section.settings.image != blank or section.settings.mobile_image != blank -%}
     <div class="gg-banner-image--common" data-section-id="{{ section_id }}">
       {%- assign image_height = section.settings.image_height | default: 'medium' -%}
-      {{ section.settings.image | image_url: width: 3840 | image_tag:
-        loading: 'eager',
-        width: section.settings.image.width,
-        height: section.settings.image.height,
-        class: "banner__media-image--common",
-        sizes: "100vw"
-      }}
+      
+      {%- if section.settings.image != blank -%}
+        {{ section.settings.image | image_url: width: 1920 | image_tag:
+          loading: 'eager',
+          width: section.settings.image.width,
+          height: section.settings.image.height,
+          class: "banner__media-image--common desktop-only",
+          sizes: "100vw"
+        }}
+      {%- endif -%}
+
+      {%- if section.settings.mobile_image != blank -%}
+        {{ section.settings.mobile_image | image_url: width: 750 | image_tag:
+          loading: 'eager',
+          width: section.settings.mobile_image.width,
+          height: section.settings.mobile_image.height,
+          class: "banner__media-image--common mobile-only",
+          sizes: "(max-width: 750px) 100vw, 750px"
+        }}
+      {%- endif -%}
     </div>
   {%- endif -%}
 
-  {%- if section.settings.video != blank or section.settings.video_url != blank -%}
-    <div class="gg-banner-video--common" data-section-id="{{ section_id }}" style="display: none;">
-      {%- if section.settings.video == null and section.settings.video_url != null -%}
-        {%- if section.settings.video_url.type == 'youtube' -%}
-          <iframe
-            src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=0&loop=1&playlist={{ video_id }}&mute=1&rel=0"
-            class="js-youtube"
-            allow="autoplay; encrypted-media"
-            allowfullscreen
-            title="{{ section.settings.description | escape }}"
-          ></iframe>
-        {%- else -%}
-          <iframe
-            src="https://player.vimeo.com/video/{{ video_id }}?autoplay=0&loop=1&muted=1&api=1"
-            class="js-vimeo"
-            allow="autoplay; encrypted-media"
-            allowfullscreen
-            title="{{ section.settings.description | escape }}"
-          ></iframe>
-        {%- endif -%}
-      {%- else -%}
-        {{
-          section.settings.video
-          | video_tag:
-            autoplay: true,
-            loop: true,
-            muted: true,
-            playsinline: true,
-            controls: false
-        }}
-      {%- endif -%}
+  {%- if section.settings.video != blank or section.settings.mobile_video != blank -%}
+    <div class="gg-banner-video--common" 
+      data-section-id="{{ section_id }}" 
+      style="display: none;"
+      data-desktop-video="{{ section.settings.video | json | escape }}"
+      data-mobile-video="{{ section.settings.mobile_video | json | escape }}">
+      <div class="desktop-only"></div>
+      <div class="mobile-only"></div>
     </div>
   {%- endif -%}
 </div>
@@ -83,22 +71,64 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const sectionId = '{{ section_id }}';
-    const video = document.querySelector(
-      '.gg-banner-container--common[data-section-id="' + sectionId + '"] .gg-banner-video--common video, ' + 
-      '.gg-banner-container--common[data-section-id="' + sectionId + '"] .gg-banner-video--common iframe'
-    );
     const imageContainer = document.querySelector('.gg-banner-image--common[data-section-id="' + sectionId + '"]');
     const videoContainer = document.querySelector('.gg-banner-video--common[data-section-id="' + sectionId + '"]');
 
-    console.log('Debug - Section ID:', sectionId);
-    console.log('Debug - Video Element:', video);
-    console.log('Debug - Video Container:', videoContainer);
-    console.log('Debug - Image Container:', imageContainer);
+    
 
-    if (video && videoContainer) {
+    if (!videoContainer) return;
+    
+    let currentVideo = null;
+    let observer = null;
+    
+    function loadVideo() {
+      const isMobile = window.matchMedia('(max-width: 749px)').matches;
+      const videoData = isMobile 
+        ? JSON.parse(videoContainer.dataset.mobileVideo || '{}')
+        : JSON.parse(videoContainer.dataset.desktopVideo || '{}');
+      
+      const container = isMobile 
+        ? videoContainer.querySelector('.mobile-only')
+        : videoContainer.querySelector('.desktop-only');
+      
+      if (!container) return;
+      if (!videoData.sources) return;
+      
+      // 清理之前的视频和观察者
+      if (currentVideo) {
+        currentVideo.pause();
+        currentVideo.remove();
+        currentVideo = null;
+      }
+      if (observer) {
+        observer.disconnect();
+        observer = null;
+      }
+      
+      // 创建新的视频元素
+      const video = document.createElement('video');
+      video.src = videoData.sources[0].url;
+      video.autoplay = true;
+      video.loop = true;
+      video.muted = true;
+      video.playsInline = true;
+      video.controls = false;
+      
+      container.innerHTML = '';
+      container.appendChild(video);
+      currentVideo = video;
+      
+      // 初始隐藏视频容器
       videoContainer.style.opacity = '0';
       videoContainer.style.display = 'block';
 
+      // 视频加载完成后显示
+      video.addEventListener('loadeddata', function() {
+        videoContainer.style.transition = 'opacity 0.3s ease';
+        videoContainer.style.opacity = '1';
+      });
+      
+      // 错误处理
       video.addEventListener('error', function(e) {
         console.error('Video loading error:', e);
         videoContainer.style.display = 'none';
@@ -107,41 +137,31 @@
         }
       });
 
-      video.addEventListener('loadeddata', function() {
-        videoContainer.style.transition = 'opacity 0.3s ease';
-        videoContainer.style.opacity = '1';
-      });
-
-      const observer = new IntersectionObserver((entries) => {
+      // 创建新的 Intersection Observer
+      observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            if (video.tagName.toLowerCase() === 'video') {
-              video.play().catch(e => console.log('Video play error:', e));
-            } else if (video.tagName.toLowerCase() === 'iframe') {
-              if (video.src.includes('youtube')) {
-                video.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-              } else if (video.src.includes('vimeo')) {
-                video.contentWindow.postMessage('{"method":"play"}', '*');
-              }
-            }
+            video.play().catch(e => console.error('Video play error:', e));
           } else {
-            if (video.tagName.toLowerCase() === 'video') {
-              video.pause();
-            } else if (video.tagName.toLowerCase() === 'iframe') {
-              if (video.src.includes('youtube')) {
-                video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-              } else if (video.src.includes('vimeo')) {
-                video.contentWindow.postMessage('{"method":"pause"}', '*');
-              }
-            }
+            video.pause();
           }
         });
       }, {
         threshold: 0.3
       });
-
       observer.observe(videoContainer);
     }
+
+    // 等待页面完全加载后再加载视频
+    window.addEventListener('load', loadVideo);
+    
+    // 处理窗口大小改变
+    let resizeTimer;
+    const mediaQuery = window.matchMedia('(max-width: 749px)');
+    mediaQuery.addListener(function() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(loadVideo, 250);
+    });
   });
 </script>
 
@@ -225,7 +245,12 @@
     {
       "type": "image_picker",
       "id": "image",
-      "label": "Banner Image"
+      "label": "Desktop Banner Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile Banner Image"
     },
     {
       "type": "header",
@@ -234,14 +259,12 @@
     {
       "type": "video",
       "id": "video",
-      "label": "Video file"
+      "label": "Desktop Video file"
     },
     {
-      "type": "video_url",
-      "id": "video_url",
-      "accept": ["youtube", "vimeo"],
-      "label": "Video URL",
-      "info": "Support YouTube or Vimeo URL"
+      "type": "video",
+      "id": "mobile_video",
+      "label": "Mobile Video file"
     },
     {
       "type": "text",
