@@ -226,6 +226,16 @@
             "target_tab": "faq"
           }
         },
+        "faq_yqgwMK": {
+          "type": "faq",
+          "settings": {
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "gap": 0,
+            "faq_content": "<title>Why Alpargali Jacket?</title>\n<p>Alpargali Jacket is meticulously designed to seamlessly integrate with your daily adventures and metropolitan existence. It is the definitive jacket that redefines the era and keeps you impeccably organized. It acts as a mobile storage solution specifically engineered for the modern-day explorer. With an array of more than 30 remarkable features, encompassing 14 waterproof pockets and 15K breathability, Alpargali indisputably emerges as your quintessential everyday jacket. Embrace the unparalleled versatility offered by Alpargali – it is the solitary jacket that suffices for every season. Tailored impeccably for hiking, commuting, traveling, or simply indulging in a leisurely city stroll, Alpargali ensures that you are fully primed for any adventure that awaits. Unveil the pioneering features that render Alpargali the ultimate companion for your daily exploits, regardless of the trajectory your life takes.</p>\n<title>What is Alpargali water resistant grade? Other specifications?</title>\n<p>The water resistance grade of Alpargali is 15K. Additionally, it presents a breathability of 15K and is structured with a 2-layer design. The Durable Water Repellent (DWR) functions by imitating the way water droplets gather and roll off lotus leaves. The DWR polymer coating constructs a waterproof fabric through increasing the contact angle and surface tension, and the microscopic spikes created by the chemical coating make water droplets suspend a few microns above the actual fabric surface. Small water droplets coalesce in this situation to form larger water beads, which are then pulled off the fabric surface by gravitational force. The breathable and waterproof membrane features a micropore diameter smaller than that of water molecules to block their permeation, while being larger than that of human sweat vapor. The jacket is fabricated from 100% recycled Nylon 70D with a dual-layer configuration and showcases advanced DWR Level 3 water repellency. It undergoes rigorous testing for 15,000 mmH2O waterproof and breathability standards to ensure dryness and comfort.</p>\n<title>What weather and seasons is this jacket suitable for?</title>\n<p>The Alpargali All-Weather Jacket is designed for year-round wear, offering excellent windproof and waterproof protection. It’s perfect for all seasons, including light rain, strong winds, and colder conditions.</p>\n<title>What size should I choose?</title>\n<p>We recommend referring to our size chart to select the right size. If you're unsure, feel free to contact our customer service team for personalized advice.</p>\n<title>How to care for my jacket?</title>\n<p>Please refer to the product label for specific care instructions.</p>",
+            "target_tab": "faq"
+          }
+        },
         "judge_me_reviews_review_widget_JctMNU": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
@@ -237,6 +247,7 @@
         "image_banner_DDQQKc",
         "content_block_rN49nb",
         "content_block_DPjhDm",
+        "faq_yqgwMK",
         "judge_me_reviews_review_widget_JctMNU"
       ],
       "settings": {
