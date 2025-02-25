@@ -150,16 +150,36 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 749px) {
   .gg-featured-products {
-    padding: 40px 15px;
+    padding: 40px 0 40px 15px;
   }
 
   .featured-products-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(4, 280px);
+    gap: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    padding-right: 15px;
+    
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
 
-  .product-title {
-    font-size: 16px;
+  .featured-products-grid::-webkit-scrollbar {
+    display: none;
   }
-} 
+
+  .featured-product-card {
+    scroll-snap-align: start;
+  }
+}
+
+/* 移除或注释掉原来的 480px 媒体查询 */
+/* @media screen and (max-width: 480px) {
+  .featured-products-grid {
+    grid-template-columns: 1fr;
+  }
+} */ 
