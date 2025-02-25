@@ -58,6 +58,9 @@
   transition: all 0.3s ease;
   padding-left: 45px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 
 .gg-three-banner-container .banner-button-wrapper .button svg {
@@ -152,5 +155,47 @@
 
   .gg-three-banner-container .gg-three-banner-images {
     padding-right: 40px;
+  }
+} 
+
+@media screen and (max-width: 750px) {
+  .gg-three-banner-container {
+    padding: 14.26vw 0 19.6vw;
+    gap: 0;
+  }
+  .gg-three-banner-container .banner-heading {
+    font-size: 4.8vw;
+  }
+  .gg-three-banner-container .small-heading-below {
+    font-size: 1.86vw;
+  }
+  .gg-three-banner-container .banner-button-wrapper .button {
+    width: 19.06vw;
+    height: 5.86vw;
+    font-size: 1.86vw;
+    padding: 0 2.53vw;
+    display: flex;
+    align-items: center;
+  }
+  .gg-three-banner-container .banner-button-wrapper .button svg {
+    width: 1.06vw;
+    height: 1.2vw;
+    top: 0;
+    bottom: 0;
+    right: 2.4vw;
+    margin: auto;
+  }
+  .gg-three-banner-container .gg-three-banner-content {
+    padding: 0 1vw 0 5.33vw;
+  }
+  .gg-three-banner-container .banner-image-item {
+    width: 39.86vw;
+    height: 57.86vw;
+    flex: auto;
+    min-width: 39.86vw;
+  }
+  .gg-three-banner-container .gg-three-banner-images {
+    padding: 0;
+    gap: 0.93vw;
   }
 } 
