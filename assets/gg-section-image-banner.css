@@ -661,4 +661,21 @@
   .desktop-only {
     display: none !important;
   }
+
+  .gg-banner-container {
+    position: relative;
+    width: 100%;
+    padding-top: 147.2%; /* 1104/750 = 1.472 或 147.2% */
+    overflow: hidden;
+  }
+
+  .gg-banner-image,
+  .gg-banner-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }

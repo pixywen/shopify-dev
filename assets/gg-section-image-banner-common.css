@@ -30,6 +30,9 @@
   .desktop-only {
     display: none !important;
   }
+  .gg-banner-container--common {
+    padding-top: 60%; /* 900/1500 = 0.6 或 60% */
+  }
 }
 
 /* 确保视频和iframe正确填充容器 */
