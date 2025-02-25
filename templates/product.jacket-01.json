@@ -205,6 +205,18 @@
             "target_tab": "description"
           }
         },
+        "image_banner_kkiFwQ": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/product-detail-b-ib-03.jpg",
+            "image_mobile": "shopify://shop_images/product-detail-b-ib-03.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
         "content_block_rN49nb": {
           "type": "content_block",
           "settings": {
@@ -246,6 +258,7 @@
         "content_block_MGACxw",
         "image_banner_MYRGBE",
         "image_banner_DDQQKc",
+        "image_banner_kkiFwQ",
         "content_block_rN49nb",
         "content_block_DPjhDm",
         "faq_yqgwMK",
