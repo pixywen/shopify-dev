@@ -17,13 +17,9 @@
         "small_heading_below": "From freezing cold to rainy days, Alpargali has you covered.",
         "button_label": "SHOP NOW",
         "button_link": "",
-        "content_position": "center",
-        "text_size": "medium",
         "image": "shopify://shop_images/Banner.jpg",
         "video": "shopify://files/videos/顶部-banner视频.mp4",
-        "video_url": "",
-        "description": "",
-        "image_height": "medium"
+        "description": ""
       }
     },
     "gg_scroll_image_zqhRNf": {
@@ -43,6 +39,35 @@
         "scroll_speed": 30,
         "gap": 30
       }
+    },
+    "gg_double_image_banner_mobile_YXnVpE": {
+      "type": "gg-double-image-banner-mobile",
+      "blocks": {
+        "banner_tja83h": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/s-dib-m-01.jpg",
+            "subtitle": "Classic collection",
+            "title": "Do-it-all Jacket",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://products/do-it-all-jacket"
+          }
+        },
+        "banner_FWeBpK": {
+          "type": "banner",
+          "settings": {
+            "subtitle": "副标题",
+            "title": "主标题",
+            "button_label": "SHOP NOW",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "banner_tja83h",
+        "banner_FWeBpK"
+      ],
+      "settings": {}
     },
     "gg_double_image_banner_YFmVwF": {
       "type": "gg-double-image-banner",
@@ -156,13 +181,9 @@
         "small_heading_below": "",
         "button_label": "SHOP NOW",
         "button_link": "",
-        "content_position": "center",
-        "text_size": "medium",
         "image": "shopify://shop_images/shell_jackets.jpg",
         "video": "shopify://files/videos/下面视频- shell jackets_7201445b-1d25-4ee4-ab44-30855566ac44.mp4",
-        "video_url": "",
-        "description": "",
-        "image_height": "medium"
+        "description": ""
       }
     },
     "gg_image_banner_common_XyH39W": {
@@ -173,13 +194,9 @@
         "small_heading_below": "",
         "button_label": "SHOP NOW",
         "button_link": "",
-        "content_position": "center",
-        "text_size": "medium",
         "image": "shopify://shop_images/insulated_jackets.jpg",
         "video": "shopify://files/videos/下面视频-insulated jackets_d2396b19-2eb5-451d-9fd5-dcafff96a7d8.mp4",
-        "video_url": "",
-        "description": "",
-        "image_height": "medium"
+        "description": ""
       }
     },
     "gg_image_banner_common_CHdPGU": {
@@ -190,13 +207,9 @@
         "small_heading_below": "",
         "button_label": "SHOP NOW",
         "button_link": "",
-        "content_position": "center",
-        "text_size": "medium",
         "image": "shopify://shop_images/vest.jpg",
         "video": "shopify://files/videos/下面视频-vests_4ffb3692-f2c3-48ff-bbca-9e72e5b39d1b.mp4",
-        "video_url": "",
-        "description": "",
-        "image_height": "medium"
+        "description": ""
       }
     },
     "gg_three_image_banner_wVXhhw": {
@@ -258,6 +271,7 @@
   "order": [
     "gg_image_banner_V4rbFP",
     "gg_scroll_image_zqhRNf",
+    "gg_double_image_banner_mobile_YXnVpE",
     "gg_double_image_banner_YFmVwF",
     "gg_featured_products_McEQBe",
     "gg_image_banner_common_ARcgWG",
