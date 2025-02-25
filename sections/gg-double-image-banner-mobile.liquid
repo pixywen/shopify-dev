@@ -1,0 +1,108 @@
+{{ 'gg-double-image-banner-mobile.css' | asset_url | stylesheet_tag }}
+
+<div class="double-banner-mobile medium-hide large-up-hide section-{{ section.id }}">
+  {%- for block in section.blocks -%}
+    <div class="double-banner-mobile__item" {{ block.shopify_attributes }}>
+      {%- if block.settings.image != blank -%}
+        <div class="double-banner-mobile__image-wrapper">
+          <img
+            srcset="{%- if block.settings.image.width >= 280 -%}{{ block.settings.image | image_url: width: 280 }} 280w,{%- endif -%}
+              {%- if block.settings.image.width >= 360 -%}{{ block.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
+              {%- if block.settings.image.width >= 533 -%}{{ block.settings.image | image_url: width: 533 }} 533w,{%- endif -%}
+              {{ block.settings.image | image_url }} {{ block.settings.image.width }}w"
+            src="{{ block.settings.image | image_url: width: 280 }}"
+            sizes="280px"
+            alt="{{ block.settings.image.alt | escape }}"
+            loading="lazy"
+            width="{{ block.settings.image.width }}"
+            height="{{ block.settings.image.width }}"
+            class="double-banner-mobile__image"
+          >
+          <div class="double-banner-mobile__content">
+            {%- if block.settings.subtitle != blank -%}
+              <p class="double-banner-mobile__subtitle">{{ block.settings.subtitle }}</p>
+            {%- endif -%}
+            {%- if block.settings.title != blank -%}
+              <h2 class="double-banner-mobile__title">{{ block.settings.title }}</h2>
+            {%- endif -%}
+          </div>
+        </div>
+        {%- if block.settings.button_label != blank and block.settings.button_link != blank -%}
+          <div class="double-banner-mobile__button-wrapper">
+            <a href="{{ block.settings.button_link }}" class="double-banner-mobile__button">
+              {{ block.settings.button_label }}
+              <span class="icon-arrow">
+                <svg id="_图层_2" data-name="图层 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.22 12.64">
+                  <g id="_图层_1-2" data-name="图层 1">
+                    <path d="M10.72,5.46c.67,.39,.67,1.35,0,1.73L1.5,12.51c-.67,.38-1.5-.1-1.5-.87V1C0,.23,.83-.25,1.5,.14L10.72,5.46Z"/>
+                  </g>
+                </svg>
+              </span>
+            </a>
+          </div>
+        {%- endif -%}
+      {%- else -%}
+        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
+    </div>
+  {%- endfor -%}
+</div>
+
+{% schema %}
+{
+  "name": "GG-双图片横幅-移动端",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 2,
+  "blocks": [
+    {
+      "type": "banner",
+      "name": "横幅",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "图片"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "副标题",
+          "default": "副标题"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "主标题",
+          "default": "主标题"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "按钮文字",
+          "default": "SHOP NOW"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "按钮链接"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "GG-双图片横幅-移动端",
+      "blocks": [
+        {
+          "type": "banner"
+        },
+        {
+          "type": "banner"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %} 

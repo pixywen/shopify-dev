@@ -1,6 +1,6 @@
 {{ 'gg-double-image-banner.css' | asset_url | stylesheet_tag }}
 
-<div class="double-banner section-{{ section.id }}">
+<div class="double-banner section-{{ section.id }} small-hide">
   {%- for block in section.blocks -%}
     <div class="double-banner__item" {{ block.shopify_attributes }}>
       {%- if block.settings.image != blank -%}

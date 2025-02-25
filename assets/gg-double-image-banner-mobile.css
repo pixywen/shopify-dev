@@ -1,0 +1,94 @@
+.double-banner-mobile {
+  display: grid;
+  grid-template-columns: repeat(2, 50vw); /* 每列宽度正好是屏幕宽度的一半 */
+  gap: 0; /* 移除间距 */
+  padding: 0; /* 移除内边距 */
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.double-banner-mobile::-webkit-scrollbar {
+  display: none;
+}
+
+.double-banner-mobile__item {
+  position: relative;
+  width: 100%;
+  scroll-snap-align: start;
+}
+
+.double-banner-mobile__image-wrapper {
+  position: relative;
+  width: 100%;
+  /* 移除固定的 aspect-ratio */
+}
+
+.double-banner-mobile__image {
+  width: 100%;
+  height: auto; /* 让高度自动适应原始图片比例 */
+  object-fit: contain; /* 改为 contain 以保持原始比例 */
+  display: block; /* 防止图片底部可能出现的间隙 */
+}
+
+.double-banner-mobile__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+}
+
+.double-banner-mobile__subtitle {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 8px;
+  text-align: center;
+}
+
+.double-banner-mobile__title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.double-banner-mobile__button-wrapper {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.double-banner-mobile__button {
+  width: 160px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  padding-left: 12px;
+}
+
+.double-banner-mobile__button .icon-arrow {
+  margin-left: 15px;
+  width: 8px;
+}
+
+.double-banner-mobile__button .icon-arrow svg path {
+  fill: #fff;
+} 
