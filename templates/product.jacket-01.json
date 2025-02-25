@@ -250,6 +250,17 @@
             "margin_bottom": 32
           }
         },
+        "image_banner_xnEjDM": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/prodcut-detail-b-ib-04.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
         "collage_y7J6gW": {
           "type": "collage",
           "settings": {
@@ -261,6 +272,19 @@
             "target_tab": "description",
             "margin_top": 32,
             "margin_bottom": 0
+          }
+        },
+        "collage_RULhdH": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_right",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/product-detail-b-collage-02.jpg",
+            "heading": "Breathable Waterproof Membrane",
+            "text": "<p>Our advanced membrane begets superior breathability. Vapor escapes while water entry is blocked. And with a moisture vapor transmission rate of 15,000g/m²/24h, it significantly surpasses industry standards. No matter the conditions, you will be protected.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 32
           }
         },
         "content_block_rN49nb": {
@@ -306,7 +330,9 @@
         "image_banner_DDQQKc",
         "image_banner_kkiFwQ",
         "carousel_JgqD6V",
+        "image_banner_xnEjDM",
         "collage_y7J6gW",
+        "collage_RULhdH",
         "content_block_rN49nb",
         "content_block_DPjhDm",
         "faq_yqgwMK",
