@@ -38,12 +38,6 @@
   transform: scale(1.05);
 }
 
-@media screen and (max-width: 989px) {
-  .mega-menu__image {
-    display: none;
-  }
-}
-
 /* 菜单图片结束 */
 
 .mega-menu {
@@ -247,4 +241,21 @@ div.scrolled-past-header sticky-header.header-wrapper,
 
 .header-wrapper--border-bottom {
   border-bottom: none !important;
+}
+
+@media screen and (max-width: 989px) {
+  .mega-menu__image {
+    display: none;
+  }
+  .header__heading-logo-wrapper svg {
+    width: 23.2vw;
+    height: 6.13vw;
+  }
+  header.header {
+    height: 13.06vw;
+  }
+  #Details-menu-drawer-container svg {
+    width: 6vw;
+    height: 4.66vw;
+  }
 }

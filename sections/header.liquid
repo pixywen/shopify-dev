@@ -290,6 +290,22 @@ i.icon-swym-wishlist {
     opacity: 0.7;
     transform: scale(1.1);
 }
+@media screen and (max-width: 990px) {
+  .swym-wishlist:before {
+    width: 6.26vw;
+    height: 5.2vw;
+  }
+  .header__icon .svg-wrapper svg,
+  .header__icon--cart {
+    width: 5.73vw;
+    height: 5.73vw;
+  }
+  .cart-count-bubble {
+    top: -1vw;
+    right: -1vw;
+    left: auto;
+  }
+}
 {% endstyle %}
 
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>

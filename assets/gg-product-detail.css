@@ -213,7 +213,7 @@ a.jdgm-btn--border {
 a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
   color: rgba(255, 87, 51, 1);
 }
-@media (max-width: 750px) {
+@media (max-width: 990px) {
   .product-block-heading-text {
     margin: 0;
     padding: 0 8.66vw;
