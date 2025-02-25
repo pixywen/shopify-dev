@@ -5,16 +5,16 @@
   <!-- 标签导航 -->
   <nav class="gg-tab-nav">
     {% if section.settings.show_description %}
-      <button class="gg-tab-item active" data-target="description">描述</button>
+      <button class="gg-tab-item active" data-target="description">{{ 'sections.gg_product_detail.tabs.description' | t }}</button>
     {% endif %}
     {% if section.settings.show_video %}
-      <button class="gg-tab-item" data-target="video">视频</button>
+      <button class="gg-tab-item" data-target="video">{{ 'sections.gg_product_detail.tabs.video' | t }}</button>
     {% endif %}
     {% if section.settings.show_reviews %}
-      <button class="gg-tab-item" data-target="reviews">评价</button>
+      <button class="gg-tab-item" data-target="reviews">{{ 'sections.gg_product_detail.tabs.reviews' | t }}</button>
     {% endif %}
     {% if section.settings.show_faq %}
-      <button class="gg-tab-item" data-target="faq">FAQ</button>
+      <button class="gg-tab-item" data-target="faq">{{ 'sections.gg_product_detail.tabs.faq' | t }}</button>
     {% endif %}
   </nav>
 
