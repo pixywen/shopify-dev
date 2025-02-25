@@ -550,9 +550,9 @@
   z-index: 3; /* 提高z-index确保在视频之上 */
   text-align: left;
   color: #ffffff;
-  width: 100%;
   max-width: 800px;
   padding: 0 20px;
+  width: 100%;
 }
 
 .gg-banner-image {
@@ -634,20 +634,47 @@
 
 /* 响应式样式 */
 @media screen and (max-width: 768px) {
+  .gg-banner-content {
+    left: 0;
+    top: 63.2vw;
+    transform: none;
+    padding: 0 6.5vw;
+    text-align: center;
+  }
   .banner-heading {
-    font-size: 32px;
+    font-size: 6.4vw;
   }
 
   .small-heading-above {
-    font-size: 12px;
+    font-size: 2.66vw;
   }
 
   .small-heading-below {
-    font-size: 16px;
+    font-size: 2.66vw;
   }
-
+  .banner-button-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
   .banner-button-wrapper .button {
-    padding: 12px 24px;
+    width: 32vw;
+    height: 8vw;
+    padding: 2.13vw 3.6vw;
+    font-size: 3.2vw;
+    text-align: left;
+    line-height: 3.86vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .banner-button-wrapper .button svg {
+    width: 1.46vw;
+    height: 1.73vw;
+    top: 0;
+    right: 3vw;
+    bottom: 0;
+    margin: auto;
   }
 }
 
