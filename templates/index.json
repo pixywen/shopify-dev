@@ -200,7 +200,9 @@
         "button_label": "SHOP NOW",
         "button_link": "",
         "image": "shopify://shop_images/insulated_jackets.jpg",
+        "mobile_image": "shopify://shop_images/insulated_jackets_4319bd36-fdbc-46a4-9dc1-89131c597e4b.jpg",
         "video": "shopify://files/videos/下面视频-insulated jackets_d2396b19-2eb5-451d-9fd5-dcafff96a7d8.mp4",
+        "mobile_video": "shopify://files/videos/棉服 x手机.mov",
         "description": ""
       }
     },
@@ -213,7 +215,9 @@
         "button_label": "SHOP NOW",
         "button_link": "",
         "image": "shopify://shop_images/vest.jpg",
+        "mobile_image": "shopify://shop_images/vest_cdf42c58-986b-440c-91f0-2241f20c21f3.jpg",
         "video": "shopify://files/videos/下面视频-vests_4ffb3692-f2c3-48ff-bbca-9e72e5b39d1b.mp4",
+        "mobile_video": "shopify://files/videos/马甲 x手机.mov",
         "description": ""
       }
     },
