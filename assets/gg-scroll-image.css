@@ -44,6 +44,9 @@
 /* 响应式调整 */
 @media screen and (max-width: 749px) {
   .scroll-image-item img {
-    height: 40px;
+    height: 5.33vw;
+  }
+  .scroll-image-wrapper {
+    padding: 3.06vw 0;
   }
 } 
