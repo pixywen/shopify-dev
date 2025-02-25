@@ -91,4 +91,33 @@
 
 .double-banner-mobile__button .icon-arrow svg path {
   fill: #fff;
+}
+
+@media screen and (max-width: 750px) {
+  .double-banner-mobile__image-wrapper {
+    height: 73.46vw;
+  }
+  .double-banner-mobile__subtitle {
+    font-size: 2.4vw;
+  }
+  .double-banner-mobile__title {
+    font-size: 4vw;
+  }
+  .double-banner-mobile__content {
+    justify-content: end;
+    padding: 8vw 0;
+    background: none;
+  }
+  .double-banner-mobile__button-wrapper {
+    margin-top: 4.8vw;
+  }
+  .double-banner-mobile__button {
+    width: 28.4vw;
+    height: 7.33vw;
+    font-size: 2.4vw;
+  }
+  .double-banner-mobile__button .icon-arrow {
+    width: 1.46vw;
+    margin-left: 3.33vw;
+  }
 } 
