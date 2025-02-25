@@ -205,6 +205,101 @@
             "target_tab": "description"
           }
         },
+        "image_banner_kkiFwQ": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/product-detail-b-ib-03.jpg",
+            "image_mobile": "shopify://shop_images/product-detail-b-ib-03.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "carousel_JgqD6V": {
+          "type": "carousel",
+          "settings": {
+            "title": "14+ Pockets",
+            "image_1": "shopify://shop_images/product-detail-b-c-01-01.jpg",
+            "caption_1": "Arm Pocketswith RFID",
+            "hover_text_1": "",
+            "image_2": "shopify://shop_images/product-detail-b-c-01-02.jpg",
+            "caption_2": "4 DUAL-ACCESSCHEST POCKETS",
+            "hover_text_2": "",
+            "image_3": "shopify://shop_images/product-detail-b-c-01-03.jpg",
+            "caption_3": "Hidden BackPocket",
+            "hover_text_3": "",
+            "image_4": "shopify://shop_images/product-detail-b-c-01-04.jpg",
+            "caption_4": "Faster Transit Card Access with Sleeve Pocket",
+            "hover_text_4": "",
+            "image_5": "shopify://shop_images/product-detail-b-c-01-05.jpg",
+            "caption_5": "2 Handy Front Pockets",
+            "hover_text_5": "",
+            "image_6": "shopify://shop_images/product-detail-b-c-01-07.jpg",
+            "caption_6": "Secure Interior Zip Pockets",
+            "hover_text_6": "",
+            "image_7": "shopify://shop_images/product-detail-b-c-01-06.jpg",
+            "caption_7": "Stretchable Interior Mesh Pockets",
+            "hover_text_7": "",
+            "caption_8": "",
+            "hover_text_8": "",
+            "autoplay_speed": 3,
+            "target_tab": "description",
+            "margin_top": 32,
+            "margin_bottom": 32
+          }
+        },
+        "image_banner_xnEjDM": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/prodcut-detail-b-ib-04.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "collage_y7J6gW": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/product-detail-b-collage-01.jpg",
+            "heading": "DWR<br>Durable Water Repellent",
+            "text": "<p>Our DWR coating mimics the water-resistant lotus leaf. Polymer technology creates a waterproof surface, causing water to simply bead and slide off.</p>",
+            "target_tab": "description",
+            "margin_top": 32,
+            "margin_bottom": 0
+          }
+        },
+        "collage_RULhdH": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_right",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/product-detail-b-collage-02.jpg",
+            "heading": "Breathable Waterproof Membrane",
+            "text": "<p>Our advanced membrane begets superior breathability. Vapor escapes while water entry is blocked. And with a moisture vapor transmission rate of 15,000g/m²/24h, it significantly surpasses industry standards. No matter the conditions, you will be protected.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 32
+          }
+        },
+        "collage_cfpQpc": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/product-detail-b-collage-03.jpg",
+            "heading": "Built for Performance",
+            "text": "<p>Expert craftsma nship is at the heart of Alpargali, with over 92 fabric panels and more 40,000 stitches applies. The flexibility and comfort born of this tailoring negates the restrictive feel of traditional garments. Alpargali adapts to your body’s movements, optimizing your comfort and performance.</p>",
+            "target_tab": "description",
+            "margin_top": 32,
+            "margin_bottom": 32
+          }
+        },
         "content_block_rN49nb": {
           "type": "content_block",
           "settings": {
@@ -246,6 +341,12 @@
         "content_block_MGACxw",
         "image_banner_MYRGBE",
         "image_banner_DDQQKc",
+        "image_banner_kkiFwQ",
+        "carousel_JgqD6V",
+        "image_banner_xnEjDM",
+        "collage_y7J6gW",
+        "collage_RULhdH",
+        "collage_cfpQpc",
         "content_block_rN49nb",
         "content_block_DPjhDm",
         "faq_yqgwMK",
