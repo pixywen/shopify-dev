@@ -15,6 +15,7 @@
   {{ 'component-slider.css' | asset_url | stylesheet_tag }}
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+  {{ 'gg-component-size-guide.css' | asset_url | stylesheet_tag }}
   {{ 'gg-main-product.css' | asset_url | stylesheet_tag }}
 
   {% unless product.has_only_default_variant %}
@@ -73,6 +74,8 @@
       onload="this.media='all'"
     >
   {%- endif -%}
+
+  {% render 'gg-size-guide-modal', section: section %}
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
   <div class="page-width">
@@ -2398,6 +2401,21 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "header",
+      "content": "Size Guide"
+    },
+    {
+      "type": "image_picker",
+      "id": "size_guide_image",
+      "label": "Size Guide Image (Desktop)"
+    },
+    {
+      "type": "image_picker",
+      "id": "size_guide_image_mobile",
+      "label": "Size Guide Image (Mobile)",
+      "info": "If not set, desktop image will be used"
     }
   ]
 }

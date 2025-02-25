@@ -44,7 +44,15 @@
         </fieldset>
       {%- elsif picker_type == 'button' -%}
         <fieldset class="js product-form__input product-form__input--pill">
-          <legend class="form__label">{{ option.name }}</legend>
+          <legend class="form__label">
+            <div class="gg-size-guide-wrapper">
+              <span>{{ option.name }}:</span>
+              {%- assign option_name_downcase = option.name | downcase -%}
+              {%- if option_name_downcase == 'size' or option_name_downcase == '尺寸' -%}
+                <a href="#" class="gg-size-guide">Size Guide</a>
+              {%- endif -%}
+            </div>
+          </legend>
           {% render 'product-variant-options',
             product: product,
             option: option,
