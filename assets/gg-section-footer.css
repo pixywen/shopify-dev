@@ -767,3 +767,44 @@ footer.footer .gg-list-social {
     gap: 1.2rem;
   }
 }
+
+
+.footer-block__accordion-summary,
+.footer-block__accordion-sub-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+}
+
+.footer-block__accordion-summary::-webkit-details-marker,
+.footer-block__accordion-sub-summary::-webkit-details-marker {
+  display: none;
+}
+
+.footer-block__accordion-details[open] > summary .icon-caret,
+.footer-block__accordion-sub-details[open] > summary .icon-caret {
+  transform: rotate(180deg);
+}
+
+.icon-caret {
+  transition: transform 0.3s ease;
+}
+
+.footer-block__accordion-content,
+.footer-block__accordion-sub-content {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.footer-block__accordion-link {
+  display: block;
+  padding: 8px 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-block__accordion-link--active {
+  text-decoration: underline;
+}

@@ -7,6 +7,9 @@
 {{ 'gg-component-list-social.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+
+
+
   .footer {
     margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
   }
@@ -69,16 +72,16 @@
           >
             {%- for block in section.blocks -%}
               <div
-                class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if block.settings.small_hide %} small-hide{% endif %}{% if block.settings.medium_hide %} medium-hide{% endif %}{% if block.settings.large_up_hide %} large-up-hide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                {%- if block.settings.heading != blank -%}
+                {% comment %} {%- if block.settings.heading != blank -%}
                   <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
-                {%- endif -%}
+                {%- endif -%} {% endcomment %}
 
                 {%- case block.type -%}
                   {%- when '@app' -%}
@@ -156,9 +159,10 @@
                     </div>
                   {%- when 'footer_newsletter' -%}
                     <div class="footer-newsletter" {{ block.shopify_attributes }}>
-                      {% comment %} {%- if block.settings.heading != blank -%}
-                        <h2 class="footer-newsletter__heading">{{ block.settings.heading }}</h2>
-                      {%- endif -%} {% endcomment %}
+                      
+                      {%- if block.settings.heading != blank -%}
+                        <h2 class="footer-block__heading inline-richtext">{{ block.settings.heading }}</h2>
+                      {%- endif -%}
                       
                       {%- if block.settings.subtext != blank -%}
                         <div class="footer-newsletter__text">{{ block.settings.subtext }}</div>
@@ -214,9 +218,10 @@
                     </div>
                   {%- when 'gg_menu_list' -%}
                     <div class="footer-block__gg-menu" {{ block.shopify_attributes }}>
-                      {% comment %} {%- if block.settings.heading != blank -%}
+                      
+                      {%- if block.settings.heading != blank -%}
                         <h2 class="footer-block__heading inline-richtext">{{ block.settings.heading }}</h2>
-                      {%- endif -%} {% endcomment %}
+                      {%- endif -%}
                       
                       {%- if block.settings.menu != blank -%}
                         <ul class="footer-block__gg-menu-list list-unstyled">
@@ -233,10 +238,10 @@
 
                   {%- when 'gg_menu_list_nested' -%}
                     <div class="footer-block__gg-menu-nested" {{ block.shopify_attributes }}>
-                      {% comment %} {%- if block.settings.heading != blank -%}
+                      {%- if block.settings.heading != blank -%}
                         <h2 class="footer-block__heading inline-richtext">{{ block.settings.heading }}</h2>
                       {%- endif -%}
-                       {% endcomment %}
+
                       {%- if block.settings.menu != blank -%}
                         <ul class="footer-block__gg-menu-list-nested list-unstyled">
                           {%- for link in block.settings.menu.links -%}
@@ -264,10 +269,10 @@
 
                   {%- when 'gg_menu_social' -%}
                     <div class="footer-block__gg-menu-social" {{ block.shopify_attributes }}>
-                      {% comment %} {%- if block.settings.heading != blank -%}
+                      {%- if block.settings.heading != blank -%}
                         <h2 class="footer-block__heading inline-richtext">{{ block.settings.heading }}</h2>
                       {%- endif -%}
-                       {% endcomment %}
+
                       {%- if block.settings.menu != blank -%}
                         <ul class="footer-block__gg-menu-social-list list-unstyled">
                           {%- for link in block.settings.menu.links -%}
@@ -287,10 +292,54 @@
 
                         {%- if block.settings.show_login_button -%}
                           <a href="{{ routes.account_login_url }}" class="gg-menu-social__login-button button">
-                            {{ block.settings.login_button_text | default: '登录' }}
+                            {{ block.settings.login_button_text | default: 'Log In' }}
                           </a>
                         {%- endif -%}
                       </div>
+                    </div>
+                  {%- when 'gg_menu_accordion' -%}
+                    <div class="footer-block__accordion {% if block.settings.visibility != 'all' %}{{ block.settings.visibility }}{% endif %}" {{ block.shopify_attributes }}>
+                      {%- if block.settings.heading != blank -%}
+                        <details class="footer-block__accordion-details" open>
+                          <summary class="footer-block__accordion-summary">
+                            <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                            <span class="icon-caret"></span>
+                          </summary>
+                          {%- if block.settings.menu != blank -%}
+                            <ul class="footer-block__accordion-content">
+                              {%- for link in block.settings.menu.links -%}
+                                <li class="footer-block__accordion-item">
+                                  {%- if link.links != blank -%}
+                                    <details class="footer-block__accordion-sub-details" open>
+                                      <summary class="footer-block__accordion-sub-summary">
+                                        {{ link.title | escape }}
+                                        <span class="icon-caret"></span>
+                                      </summary>
+                                      <ul class="footer-block__accordion-sub-content">
+                                        {%- for child_link in link.links -%}
+                                          <li>
+                                            <a href="{{ child_link.url }}" class="footer-block__accordion-link{% if child_link.active %} footer-block__accordion-link--active{% endif %}">
+                                              {{ child_link.title | escape }}
+                                            </a>
+                                          </li>
+                                        {%- endfor -%}
+                                      </ul>
+                                    </details>
+                                  {%- else -%}
+                                    <a href="{{ link.url }}" class="footer-block__accordion-link{% if link.active %} footer-block__accordion-link--active{% endif %}">
+                                      {{ link.title | escape }}
+                                    </a>
+                                  {%- endif -%}
+                                </li>
+                              {%- endfor -%}
+                            </ul>
+                          {%- endif -%}
+                        </details>
+                      {%- endif -%}
+                    </div>
+                  {%- when 'gg_social_icons' -%}
+                    <div class="footer-block__gg-social-icons{% if block.settings.small_hide %} small-hide{% endif %}{% if block.settings.medium_hide %} medium-hide{% endif %}{% if block.settings.large_up_hide %} large-up-hide{% endif %}" {{ block.shopify_attributes }}>
+                      {%- render 'gg-social-icons' -%}
                     </div>
                 {%- endcase -%}
               </div>
@@ -572,6 +621,24 @@
       "limit": 1,
       "settings": [
         {
+          "type": "checkbox",
+          "id": "small_hide",
+          "label": "在移动端隐藏",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "medium_hide",
+          "label": "在平板隐藏",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "large_up_hide",
+          "label": "在桌面端隐藏",
+          "default": false
+        },
+        {
           "type": "text",
           "id": "heading",
           "label": "标题",
@@ -608,6 +675,24 @@
       "name": "GG 菜单列表",
       "settings": [
         {
+          "type": "checkbox",
+          "id": "small_hide",
+          "label": "在移动端隐藏",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "medium_hide",
+          "label": "在平板隐藏",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "large_up_hide",
+          "label": "在桌面端隐藏",
+          "default": false
+        },
+        {
           "type": "inline_richtext",
           "id": "heading",
           "label": "标题",
@@ -626,6 +711,24 @@
       "name": "GG 二级菜单",
       "settings": [
         {
+          "type": "checkbox",
+          "id": "small_hide",
+          "label": "在移动端隐藏",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "medium_hide",
+          "label": "在平板隐藏",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "large_up_hide",
+          "label": "在桌面端隐藏",
+          "default": false
+        },
+        {
           "type": "inline_richtext",
           "id": "heading",
           "label": "标题",
@@ -643,6 +746,24 @@
       "type": "gg_menu_social",
       "name": "GG 菜单+社交",
       "settings": [
+        {
+          "type": "checkbox",
+          "id": "small_hide",
+          "label": "在移动端隐藏",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "medium_hide",
+          "label": "在平板隐藏",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "large_up_hide",
+          "label": "在桌面端隐藏",
+          "default": false
+        },
         {
           "type": "inline_richtext",
           "id": "heading",
@@ -680,6 +801,66 @@
           "id": "login_button_text",
           "label": "按钮文字",
           "default": "登录"
+        }
+      ]
+    },
+    {
+      "type": "gg_menu_accordion",
+      "name": "GG 手风琴菜单",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "small_hide",
+          "label": "在移动端隐藏",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "medium_hide",
+          "label": "在平板隐藏",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "large_up_hide",
+          "label": "在桌面端隐藏",
+          "default": false
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "标题",
+          "default": "分类导航"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "菜单",
+          "default": "main-menu"
+        }
+      ]
+    },
+    {
+      "type": "gg_social_icons",
+      "name": "GG 社交图标",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "small_hide",
+          "label": "在移动端隐藏",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "medium_hide",
+          "label": "在平板隐藏",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "large_up_hide",
+          "label": "在桌面端隐藏",
+          "default": false
         }
       ]
     }
