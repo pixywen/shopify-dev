@@ -56,10 +56,11 @@
         "banner_FWeBpK": {
           "type": "banner",
           "settings": {
-            "subtitle": "副标题",
-            "title": "主标题",
+            "image": "shopify://shop_images/s-dib-m-02.jpg",
+            "subtitle": "F/W 2024 collection",
+            "title": "Aerogel Puffer",
             "button_label": "SHOP NOW",
-            "button_link": ""
+            "button_link": "shopify://products/do-it-all-jacket"
           }
         }
       },
