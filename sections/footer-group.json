@@ -48,14 +48,14 @@
           "type": "gg_social_icons",
           "settings": {
             "small_hide": false,
-            "medium_hide": false,
-            "large_up_hide": false
+            "medium_hide": true,
+            "large_up_hide": true
           }
         },
         "footer_newsletter_Ad7QGr": {
           "type": "footer_newsletter",
           "settings": {
-            "small_hide": false,
+            "small_hide": true,
             "medium_hide": false,
             "large_up_hide": false,
             "heading": "Newsletter Signup",
@@ -68,7 +68,7 @@
         "gg_menu_list_zyjMtP": {
           "type": "gg_menu_list",
           "settings": {
-            "small_hide": false,
+            "small_hide": true,
             "medium_hide": false,
             "large_up_hide": false,
             "heading": "Need Help？",
@@ -78,7 +78,7 @@
         "gg_menu_list_nested_b3f9EN": {
           "type": "gg_menu_list_nested",
           "settings": {
-            "small_hide": false,
+            "small_hide": true,
             "medium_hide": false,
             "large_up_hide": false,
             "heading": "Shop",
@@ -88,7 +88,7 @@
         "gg_menu_social_UP6GrN": {
           "type": "gg_menu_social",
           "settings": {
-            "small_hide": false,
+            "small_hide": true,
             "medium_hide": false,
             "large_up_hide": false,
             "heading": "About Us",
