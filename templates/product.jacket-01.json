@@ -287,6 +287,19 @@
             "margin_bottom": 32
           }
         },
+        "collage_cfpQpc": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/product-detail-b-collage-03.jpg",
+            "heading": "Built for Performance",
+            "text": "<p>Expert craftsma nship is at the heart of Alpargali, with over 92 fabric panels and more 40,000 stitches applies. The flexibility and comfort born of this tailoring negates the restrictive feel of traditional garments. Alpargali adapts to your body’s movements, optimizing your comfort and performance.</p>",
+            "target_tab": "description",
+            "margin_top": 32,
+            "margin_bottom": 32
+          }
+        },
         "content_block_rN49nb": {
           "type": "content_block",
           "settings": {
@@ -333,6 +346,7 @@
         "image_banner_xnEjDM",
         "collage_y7J6gW",
         "collage_RULhdH",
+        "collage_cfpQpc",
         "content_block_rN49nb",
         "content_block_DPjhDm",
         "faq_yqgwMK",
