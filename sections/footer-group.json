@@ -14,9 +14,50 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "gg_menu_accordion_YRVh8w": {
+          "type": "gg_menu_accordion",
+          "settings": {
+            "small_hide": false,
+            "medium_hide": true,
+            "large_up_hide": true,
+            "heading": "NeedHelp",
+            "menu": "needhelp"
+          }
+        },
+        "gg_menu_accordion_CqPb7t": {
+          "type": "gg_menu_accordion",
+          "settings": {
+            "small_hide": false,
+            "medium_hide": false,
+            "large_up_hide": false,
+            "heading": "分类导航",
+            "menu": "main-menu"
+          }
+        },
+        "gg_menu_accordion_dFUVcJ": {
+          "type": "gg_menu_accordion",
+          "settings": {
+            "small_hide": false,
+            "medium_hide": false,
+            "large_up_hide": false,
+            "heading": "分类导航",
+            "menu": "main-menu"
+          }
+        },
+        "gg_social_icons_ce8MtR": {
+          "type": "gg_social_icons",
+          "settings": {
+            "small_hide": false,
+            "medium_hide": false,
+            "large_up_hide": false
+          }
+        },
         "footer_newsletter_Ad7QGr": {
           "type": "footer_newsletter",
           "settings": {
+            "small_hide": false,
+            "medium_hide": false,
+            "large_up_hide": false,
             "heading": "Newsletter Signup",
             "subtext": "Sign up for exclusive offers, original stories, events and more.",
             "placeholder": "E-mail*",
@@ -27,6 +68,9 @@
         "gg_menu_list_zyjMtP": {
           "type": "gg_menu_list",
           "settings": {
+            "small_hide": false,
+            "medium_hide": false,
+            "large_up_hide": false,
             "heading": "Need Help？",
             "menu": "needhelp"
           }
@@ -34,6 +78,9 @@
         "gg_menu_list_nested_b3f9EN": {
           "type": "gg_menu_list_nested",
           "settings": {
+            "small_hide": false,
+            "medium_hide": false,
+            "large_up_hide": false,
             "heading": "Shop",
             "menu": "shop"
           }
@@ -41,6 +88,9 @@
         "gg_menu_social_UP6GrN": {
           "type": "gg_menu_social",
           "settings": {
+            "small_hide": false,
+            "medium_hide": false,
+            "large_up_hide": false,
             "heading": "About Us",
             "menu": "about-us",
             "show_social": true,
@@ -50,6 +100,10 @@
         }
       },
       "block_order": [
+        "gg_menu_accordion_YRVh8w",
+        "gg_menu_accordion_CqPb7t",
+        "gg_menu_accordion_dFUVcJ",
+        "gg_social_icons_ce8MtR",
         "footer_newsletter_Ad7QGr",
         "gg_menu_list_zyjMtP",
         "gg_menu_list_nested_b3f9EN",
