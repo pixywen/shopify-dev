@@ -219,3 +219,28 @@
     flex-direction: column;
   }
 }
+
+/* 移动端按钮样式 */
+.newsletter-button-mobile {
+  display: none; /* 默认隐藏 */
+  width: 100%;
+  height: 54px;
+  background: #000;
+  color: #FFF;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-button-mobile:hover {
+  background: #333;
+}
+
+@media screen and (max-width: 749px) {
+  .newsletter-button-mobile {
+    display: block; /* 在移动端显示 */
+  }
+}
