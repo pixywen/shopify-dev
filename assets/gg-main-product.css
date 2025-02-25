@@ -122,12 +122,12 @@
 }
 @media screen and (max-width: 990px) {
   .heading-text {
-    font-size: 24px;
+    font-size: 3.2vw;
     font-weight: 600;
   }
   .swatch-input__label .swatch {
-    width: 200px;
-    height: 200px;
+    width: 26.66vw;
+    height: 26.66vw;
   }
 }
 /* Heading Image Block - End */
@@ -220,12 +220,12 @@
   color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 750px) {
   section.product__info-container .product-form__input--pill input[type='radio'] + label {
-    width: 88px;
-    height: 80px;
-    line-height: 80px;
-    font-size: 24px;
+    width: 11.73vw;
+    height: 10.66vw;
+    line-height: 10.66vw;
+    font-size: 3.2vw;
     font-weight: 400;
   }
   .product-info {
@@ -303,16 +303,29 @@
     margin-left: 0;
   }
   .swym-button.swym-add-to-wishlist {
-    width: 84px;
-    height: 79px;
+    width: 11.2vw;
+    height: 10.53vw;
   }
   .product-form__submit {
-    width: 510px;
-    height: 80px;
-    font-size: 24px;
+    width: 68vw;
+    height: 10.66vw;
+    font-size: 3.2vw;
     font-weight: 600;
   }
   .product-form__buttons {
     max-width: none;
+    gap: 3.46vw;
+  }
+  .product__info-container .product-form {
+    margin: 6.66vw 0;
+  }
+  .icon-item {
+    gap: 1.6vw;
+  }
+  .gg-heading-image {
+    margin: 5.46vw 0;
+  }
+  .accordion__title {
+    font-size: 3.2vw;
   }
 }

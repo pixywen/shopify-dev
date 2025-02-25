@@ -50,11 +50,15 @@
   .gg-tab-nav {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    padding: 0 15px 12px;
+    padding: 0 0 12px;
+    margin-bottom: 11.86vw;
     -webkit-overflow-scrolling: touch;
   }
   
   .gg-tab-item {
+    height: 9.73vw;
+    font-size: 2.66vw;
+    padding: 0;
     flex-shrink: 0;
     scroll-snap-align: start;
   }
@@ -211,16 +215,22 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
 }
 @media (max-width: 750px) {
   .product-block-heading-text {
-    margin: 1.5rem 0;
-    padding: 1rem;
+    margin: 0;
+    padding: 0 8.66vw;
   }
   
   .block-heading {
     font-size: 1.6rem;
+    line-height: normal;
   }
   
   .block-content {
-    font-size: 1.3rem;
+    font-size: 3.2vw;
+    padding-top: 3.73vw;
+    padding-bottom: 4vw;
+  }
+  #judgeme_product_reviews .jdgm-rev-widg {
+    padding: 0 7.46vw;
   }
 }
 
@@ -558,35 +568,6 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
   color: rgba(var(--color-foreground), 0.8);
 }
 
-/* 移动端样式 */
-@media screen and (max-width: 749px) {
-  .collage-container {
-    grid-template-columns: 1fr;
-  }
-  
-  .collage-content {
-    padding: 24px;
-  }
-  
-  /* 图片在下方布局 */
-  .collage-container.image-bottom {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .collage-container.image-bottom .collage-image-wrapper {
-    order: 1;
-  }
-  
-  .collage-heading {
-    font-size: 2rem;
-  }
-  
-  .collage-text {
-    font-size: 1.4rem;
-  }
-}
-
 /* 桌面端样式 */
 @media screen and (min-width: 750px) {
   .collage-container {
@@ -689,3 +670,52 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
   color: rgba(var(--color-foreground), 0.75);
 }
 /* FAQ Block - End */
+/* 移动端样式 */
+@media screen and (max-width: 749px) {
+  .collage-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .collage-content {
+    padding: 24px;
+  }
+  
+  /* 图片在下方布局 */
+  .collage-container.image-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .collage-container.image-bottom .collage-image-wrapper {
+    order: 1;
+  }
+  
+  .collage-heading {
+    font-size: 2rem;
+  }
+  
+  .collage-text {
+    font-size: 1.4rem;
+  }
+  .faq-list {
+    gap: 6.26vw;
+    padding-bottom: 0;
+  }
+  .faq-toggle {
+    padding: 4.8vw 5.33vw 0;
+  }
+  .faq-title {
+    font-size: 4.26vw;
+  }
+  .faq-icon img {
+    width: 2.66vw;
+    height: 1.6vw;
+  }
+  .faq-item {
+    padding-bottom: 4.8vw;
+  }
+  .faq-text {
+    padding: 0 5.33vw;
+    font-size: 3.2vw;
+  }
+}

@@ -40,8 +40,11 @@ product-info {
   width: auto;
 }
 @media screen and (max-width: 990px) {
+  body {
+    font-size: 1.2rem; /* 适当缩小字体，确保适配小屏设备 */
+}
   .page-width {
-    padding: 0 56px;
+    padding: 0 7.46vw;
   }
   .page-width .product {
     flex-direction: column;
@@ -50,7 +53,7 @@ product-info {
     width: 100%;
   }
   .price-per-item__container .quantity .quantity__button {
-    padding: 0 32px;
+    padding: 0 4.26vw;
   }
   .product__column-sticky {
     display: block;
@@ -202,7 +205,7 @@ product-info {
   flex: 0 0 100%;
   padding: 0;
   margin: 0 0 1.2rem 0;
-  margin-top: 40px !important;
+  margin-top: 40px;
   max-width: 44rem;
   min-width: fit-content;
   border: none;
@@ -387,47 +390,6 @@ div.accordion {
 }
 .swym-button.swym-add-to-wishlist {
 
-}
-@media screen and (max-width: 990px) {
-  .product__info-container {
-  }
-  .price-per-item__container .quantity .quantity__input {
-    font-size: 48px;
-    font-weight: 400;
-  }
-  .quantity__button .svg-wrapper {
-    width: 28px;
-  }
-  
-  .price-per-item__container .quantity {
-    width: 306px;
-    height: 77px;
-  }
-  .product .price .badge {
-    padding: 4px 12px;
-    font-size: 16px;
-    font-weight: 400;
-  }
-  .product-form__input .form__label {
-    font-size: 24px;
-    font-weight: 600;
-  }
-  .product__info-wrapper .product__title h1 {
-    font-size: 42px;
-    font-weight: 600;
-  }
-  .price .price-item.price-item--last {
-    font-size: 18px;
-    font-weight: 400;
-  }
-  .product__info-container .price--on-sale .price-item--regular {
-    font-size: 18px;
-    font-weight: 400;
-  }
-
-  .product__info-container > *:first-child {
-    margin-top: 0;
-  }
 }
 
 .product__description-title {
@@ -1101,6 +1063,20 @@ div.accordion {
   .thumbnail-list__item.slider__slide {
     width: calc(33% - 0.6rem);
   }
+  .shopify-section .breadcrumb {
+    padding-top: 9.2vw;
+    padding-bottom: 5.73vw;
+  }
+  .breadcrumb__item .breadcrumb__link {
+    font-size: 3.2vw;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 1);
+  }
+  .breadcrumb__item:not(:last-child)::after {
+    margin: 0 1.6vw;
+  }
 }
 
 @media screen and (min-width: 750px) {
@@ -1619,5 +1595,80 @@ div.accordion {
 
   .recipient-form > input[type='checkbox']:checked + label .icon-checkmark {
     border: none;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .price {
+    display: flex;
+    align-items: center;
+  }
+  .product-media-container .media {
+    height: 85.06vw;
+    /* width: 62.4vw; */
+  }
+  
+  .product__info-container {
+  }
+  .product-form__quantity .form__label,
+  :is(.product-form__input--pill,
+  .product-form__input--swatch) legend.form__label {
+    margin-bottom: 3.2vw;
+  }
+  .price-per-item__container .quantity .quantity__input {
+    font-size: 6.4vw;
+    font-weight: 400;
+  }
+  .quantity__button .svg-wrapper {
+    width: 3.73vw;
+  }
+  
+  .price-per-item__container .quantity {
+    width: 40.8vw;
+    height: 10.26vw;
+  }
+  .product .price .badge {
+    padding: 0 1.6vw;
+    height: 4vw;
+    font-size: 2.13vw;
+    font-weight: 400;
+  }
+  .product-form__input .form__label {
+    font-size: 3.2vw;
+    font-weight: 600;
+  }
+  .product-form__input .form__label span {
+    font-size: 3.2vw;
+  }
+  .product__info-wrapper .product__title h1 {
+    font-size: 5.6vw;
+    font-weight: 600;
+  }
+  .price .price-item.price-item--last {
+    font-size: 2.4vw;
+    font-weight: 400;
+  }
+  .product__info-container .price--on-sale .price-item--regular {
+    font-size: 2.4vw;
+    font-weight: 400;
+  }
+  .product__title {
+    margin-bottom: 3.06vw;
+  }
+  .product__info-container > *:first-child {
+    margin-top: 0;
+  }
+  .product__info-container > * + * {
+    margin: 0;
+  }
+  .product-form__input {
+    margin-top: 5.33vw;
+  }
+  .product .price__container,
+  .product .price .badge {
+    margin-bottom: 0;
+  }
+  .product__accordion .accordion__content {
+    font-size: 2.66vw;
   }
 }
