@@ -3683,4 +3683,11 @@ details-disclosure > details {
   .shopify-section-header-hidden {
     top: calc(-1* var(13.06vw));
   }
+  .utility-bar {
+    height: 9.73vw;
+  }
+  .announcement-bar__message {
+    line-height: 9.73vw;
+    font-size: 2.4vw;
+  }
 }
