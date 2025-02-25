@@ -217,6 +217,39 @@
             "target_tab": "description"
           }
         },
+        "carousel_JgqD6V": {
+          "type": "carousel",
+          "settings": {
+            "title": "",
+            "image_1": "shopify://shop_images/product-detail-b-c-01-01.jpg",
+            "caption_1": "Arm Pocketswith RFID",
+            "hover_text_1": "",
+            "image_2": "shopify://shop_images/product-detail-b-c-01-02.jpg",
+            "caption_2": "4 DUAL-ACCESSCHEST POCKETS",
+            "hover_text_2": "",
+            "image_3": "shopify://shop_images/product-detail-b-c-01-03.jpg",
+            "caption_3": "Hidden BackPocket",
+            "hover_text_3": "",
+            "image_4": "shopify://shop_images/product-detail-b-c-01-04.jpg",
+            "caption_4": "Faster Transit Card Access with Sleeve Pocket",
+            "hover_text_4": "",
+            "image_5": "shopify://shop_images/product-detail-b-c-01-05.jpg",
+            "caption_5": "2 Handy Front Pockets",
+            "hover_text_5": "",
+            "image_6": "shopify://shop_images/product-detail-b-c-01-07.jpg",
+            "caption_6": "Secure Interior Zip Pockets",
+            "hover_text_6": "",
+            "image_7": "shopify://shop_images/product-detail-b-c-01-06.jpg",
+            "caption_7": "Stretchable Interior Mesh Pockets",
+            "hover_text_7": "",
+            "caption_8": "",
+            "hover_text_8": "",
+            "autoplay_speed": 3,
+            "target_tab": "description",
+            "margin_top": 32,
+            "margin_bottom": 32
+          }
+        },
         "content_block_rN49nb": {
           "type": "content_block",
           "settings": {
@@ -259,6 +292,7 @@
         "image_banner_MYRGBE",
         "image_banner_DDQQKc",
         "image_banner_kkiFwQ",
+        "carousel_JgqD6V",
         "content_block_rN49nb",
         "content_block_DPjhDm",
         "faq_yqgwMK",
