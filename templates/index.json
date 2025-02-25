@@ -185,7 +185,9 @@
         "button_label": "SHOP NOW",
         "button_link": "",
         "image": "shopify://shop_images/shell_jackets.jpg",
+        "mobile_image": "shopify://shop_images/shell_jackets_b0bfc3ab-989f-4593-ba10-36ade2371661.jpg",
         "video": "shopify://files/videos/下面视频- shell jackets_7201445b-1d25-4ee4-ab44-30855566ac44.mp4",
+        "mobile_video": "shopify://files/videos/冲锋衣 x手机.mov",
         "description": ""
       }
     },
