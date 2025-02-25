@@ -19,6 +19,8 @@
         "button_link": "",
         "image": "shopify://shop_images/Banner.jpg",
         "video": "shopify://files/videos/顶部-banner视频.mp4",
+        "mobile_image": "shopify://shop_images/banner_0e64b2de-0137-43de-99bf-925006c649de.jpg",
+        "mobile_video": "shopify://files/videos/首页banner视频-手机.mov",
         "description": ""
       }
     },
