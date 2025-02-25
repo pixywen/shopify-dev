@@ -28,20 +28,20 @@
           "type": "gg_menu_accordion",
           "settings": {
             "small_hide": false,
-            "medium_hide": false,
-            "large_up_hide": false,
-            "heading": "分类导航",
-            "menu": "main-menu"
+            "medium_hide": true,
+            "large_up_hide": true,
+            "heading": "Shop",
+            "menu": "shop"
           }
         },
         "gg_menu_accordion_dFUVcJ": {
           "type": "gg_menu_accordion",
           "settings": {
             "small_hide": false,
-            "medium_hide": false,
-            "large_up_hide": false,
-            "heading": "分类导航",
-            "menu": "main-menu"
+            "medium_hide": true,
+            "large_up_hide": true,
+            "heading": "About Us",
+            "menu": "about-us"
           }
         },
         "gg_social_icons_ce8MtR": {
