@@ -533,6 +533,10 @@
                   data-product-id="{{ product.id }}"
                 >
                   {%- if recommendations.performed and recommendations.products_count > 0 -%}
+                    <div class="complementary-count">
+                      推荐商品数量: {{ recommendations.products_count }}
+                      推荐商品数量: {{ block.settings.product_list_limit }}
+                    </div>
                     <aside
                       aria-label="{{ 'accessibility.complementary_products' | t }}"
                       {{ block.shopify_attributes -}}
@@ -668,7 +672,7 @@
                     </aside>
                   {%- endif -%}
                   {{ 'component-card.css' | asset_url | stylesheet_tag }}
-                  {{ 'component-complementary-products.css' | asset_url | stylesheet_tag }}
+                  {{ 'gg-component-complementary-products.css' | asset_url | stylesheet_tag }}
                   {%- if block.settings.enable_quick_add -%}
                     {{ 'quick-add.css' | asset_url | stylesheet_tag }}
                     <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
