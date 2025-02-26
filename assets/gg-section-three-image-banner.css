@@ -165,24 +165,33 @@
   }
   .gg-three-banner-container .banner-heading {
     font-size: 4.8vw;
+    line-height: normal;
+    margin: 0;
   }
   .gg-three-banner-container .small-heading-below {
     font-size: 1.86vw;
+    margin: 2vw 0 0;
+  }
+  .gg-three-banner-container .banner-button-wrapper {
+    margin-top: 6.22vw;
   }
   .gg-three-banner-container .banner-button-wrapper .button {
     width: 19.06vw;
     height: 5.86vw;
+    min-width: 19.06vw;
+    min-height: 5.86vw;
     font-size: 1.86vw;
     padding: 0 2.53vw;
     display: flex;
     align-items: center;
+    line-height: normal;
   }
   .gg-three-banner-container .banner-button-wrapper .button svg {
     width: 1.06vw;
     height: 1.2vw;
     top: 0;
     bottom: 0;
-    right: 2.4vw;
+    right: 2vw;
     margin: auto;
   }
   .gg-three-banner-container .gg-three-banner-content {
