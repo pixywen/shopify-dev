@@ -399,10 +399,12 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
 }
 
 .carousel-caption {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 1);
   text-align: center;
-  margin-top: 1rem;
-  font-size: 1.4rem;
-  line-height: 1.4;
 }
 
 /* @media screen and (max-width: 989px) {
@@ -563,9 +565,11 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
 }
 
 .collage-text {
-  font-size: 1.6rem;
-  line-height: 1.6;
-  color: rgba(var(--color-foreground), 0.8);
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 42px;
+  color: rgba(0, 0, 0, 1);
 }
 
 .collage-subheading {
