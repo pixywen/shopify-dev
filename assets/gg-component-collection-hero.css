@@ -125,9 +125,10 @@
   .collection-hero__image-container {
     height: 20rem;
   }
-
+  
   .collection-hero__title {
     font-size: 4.8vw;
+    margin: 0 0 6.4vw;
   }
   .full-unstyled-link {
     font-size: 2.66vw;

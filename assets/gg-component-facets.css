@@ -1291,3 +1291,16 @@ input.mobile-facets__checkbox {
     padding: 0 1rem 1rem;
   }
 }
+
+@media screen and (max-width: 750px) {
+  .product-count__text span,
+  .product-count__text span.count-number {
+    font-size: 3.2vw;
+  }
+  .mobile-facets__open-label.medium-hide {
+    display: none !important;
+  }
+  .gg-product-grid {
+    padding-top: 0;
+  }
+}

@@ -32,10 +32,10 @@
 }
 
 .color-swatch {
-  width: 80px;
-  height: 80px;
+  width: 4.16vw;
+  height: 4.16vw;
   border-radius: 0; /* 移除圆角 */
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: none;
   cursor: pointer;
   padding: 0;
   transition: transform 0.2s ease;
@@ -53,9 +53,9 @@
 }
 
 .color-swatch--active {
-  box-shadow: 0 0 0 2px #000;
+  border: 1px solid rgba(0, 0, 0, 1);
 }
-
+.color-swatch--active {}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -67,3 +67,23 @@
   white-space: nowrap;
   border: 0;
 } 
+@media only screen and (max-width: 750px) {
+  .color-swatch {
+    width: 10.66vw;
+    height: 10.66vw;
+  }
+  .card-product__color-swatches {
+    gap: 1vw;
+  }
+  .product-grid-container .page-width {
+    padding: 0 3.46vw;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .facets.small-hide {
+    display: none;
+  }
+  .medium-hide {
+    display: block !important;
+  }
+}
