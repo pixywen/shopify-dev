@@ -76,17 +76,17 @@
             "image_mobile": "shopify://shop_images/product-info-b-hi-01-m.png"
           }
         },
-        "complementary_MMXapa": {
+        "complementary_jJRN7f": {
           "type": "complementary",
           "settings": {
-            "block_heading": "Pairs Great With:",
+            "block_heading": "Pairs well with",
             "make_collapsible_row": false,
             "icon": "price_tag",
             "product_list_limit": 10,
             "products_per_page": 3,
             "pagination_style": "counter",
             "image_ratio": "square",
-            "enable_quick_add": true
+            "enable_quick_add": false
           }
         },
         "collapsible_tab_yAPYME": {
@@ -127,7 +127,7 @@
         "gg_icon_text_grid_TGCbKj",
         "divider_FHRHjn",
         "gg_heading_image_Lh8bEX",
-        "complementary_MMXapa",
+        "complementary_jJRN7f",
         "collapsible_tab_yAPYME",
         "collapsible_tab_GyWCqX",
         "collapsible_tab_4bGyQa"
