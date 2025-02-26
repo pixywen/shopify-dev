@@ -655,6 +655,11 @@
   .banner-button-wrapper {
     display: flex;
     width: 100%;
+    justify-content: center;
+  }
+  .gg-three-banner-content .banner-button-wrapper {
+    display: flex;
+    width: 100%;
     justify-content: start;
   }
   .banner-button-wrapper .button {

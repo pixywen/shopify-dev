@@ -50,14 +50,6 @@
   margin-top: 5rem;
 }
 
-@media screen and (max-width: 750px) {
-  .newsletter-form {
-    align-items: flex-start;
-    margin: 0 auto;
-    max-width: 36rem;
-  }
-}
-
 .newsletter-form__field-wrapper {
   width: 100%;
 }
@@ -206,20 +198,6 @@
   text-align: left;
 }
 
-@media screen and (max-width: 989px) {
-  .newsletter__features {
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 749px) {
-  .newsletter__features {
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-}
-
 /* 移动端按钮样式 */
 .newsletter-button-mobile {
   display: none; /* 默认隐藏 */
@@ -241,6 +219,97 @@
 
 @media screen and (max-width: 749px) {
   .newsletter-button-mobile {
+    width: 38.8vw;
+    height: 10.4vw;
+    font-size: 3.2vw;
     display: block; /* 在移动端显示 */
+    margin-top: 7.19vw;
+    padding: 0 6.4vw;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .newsletter-button-mobile svg {
+    width: 1.46vw;
+    height: 1.73vw;
+  }
+  .newsletter-button-mobile svg path {
+    fill: #FFF;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .newsletter-form {
+    align-items: center;
+    margin: 0 auto;
+    max-width: 80vw;
+  }
+  .newsletter .newsletter__wrapper {
+    padding-top: 0;
+    background: rgba(240, 240, 240, 1);
+    padding: 0 10% 12.4vw;
+  }
+  .newsletter .inline-richtext {
+    font-size: 6.4vw;
+  }
+  .newsletter .newsletter__subheading {
+    margin-top: 4vw;
+    font-size: 2.66vw;
+    padding: 0 5vw;
+  }
+  .newsletter__wrapper .newsletter-form__field-wrapper {
+    max-width: 80vw;
+  }
+  .newsletter-form__field-wrapper .field__input {
+    height: 10.66vw;
+    min-height: 10.66vw;
+    font-size: 4.8vw;
+  }
+  .newsletter .field__label {
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    font-size: 4.8vw;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: rgba(121, 121, 121, 1);
+    display: flex;
+    align-items: center;
+  }
+  .field__input:focus ~ .field__label,
+  .field__input:not(:placeholder-shown) ~ .field__label,
+  .field__input:-webkit-autofill ~ .field__label,
+  .customer .field input:focus ~ label,
+  .customer .field input:not(:placeholder-shown) ~ label,
+  .customer .field input:-webkit-autofill ~ label {
+    display: none;
+  }
+  .gg-email-arrow {
+    display: none;
+  }
+  .gg-newletter-form__wrapper {
+    margin-top: 3.86vw;
+  }
+  .newsletter__feature {
+    gap: 4.13vw;
+  }
+  .newsletter__feature-icon {
+    width: 7.19vw;
+    height: 7.19vw;
+  }
+  .newsletter__feature-text {
+    width: 28vw;
+    font-size: 2.4vw;
+    font-weight: 400;
+  }
+  .newsletter__features {
+    flex-wrap: wrap;
+    flex-direction: initial;
+    gap: 7.19vw 0;
+  }
+  .newsletter__bottom-content {
+    margin-top: 17.2vw;
   }
 }

@@ -162,6 +162,7 @@
   .gg-three-banner-container {
     padding: 14.26vw 0 19.6vw;
     gap: 0;
+    background: rgba(240, 240, 240, 1);
   }
   .gg-three-banner-container .banner-heading {
     font-size: 4.8vw;

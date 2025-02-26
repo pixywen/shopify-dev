@@ -47,7 +47,7 @@
             {{ block.settings.text }}
           </div>
         {%- when 'email_form' -%}
-          <div {{ block.shopify_attributes }}>
+          <div class="gg-newletter-form__wrapper" {{ block.shopify_attributes }}>
             {% form 'customer', class: 'newsletter-form' %}
               <input type="hidden" name="contact[tags]" value="newsletter">
               <div
@@ -78,7 +78,7 @@
                     placeholder="{{ 'newsletter.label' | t }}"
                     required
                   >
-                  <div style="position: absolute;right: 29px;top:17px;">{{ 'icon-arrow-right.svg' |  inline_asset_content }}</div>
+                  <div class="gg-email-arrow" style="position: absolute;right: 29px;top:17px;">{{ 'icon-arrow-right.svg' |  inline_asset_content }}</div>
                   <label class="field__label" for="NewsletterForm--{{ section.id }}">
                     {{ 'newsletter.label' | t }}
                   </label>
@@ -121,6 +121,7 @@
               <!-- 新增移动端按钮 -->
               <button type="submit" class="newsletter-button-mobile" name="commit">
                 SIGN ME UP
+                {{- 'icon-button-arrow.svg' | inline_asset_content -}}
               </button>
             {% endform %}
           </div>
