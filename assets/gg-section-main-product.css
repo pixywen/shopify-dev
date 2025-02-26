@@ -219,10 +219,17 @@ product-info {
   line-height: 21.94px;
   color: rgba(0, 0, 0, 1);
 }
-
+.product-form__input .form__label {
+  width: 100%;
+}
+.product-form__input .form__label a,
 .product-form__input .form__label span {
-  font-size: 18px;
   font-weight: 400;
+}
+
+.product-form__input .form__label .gg-size-guide-wrapper span {
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .product-form__input .select {
