@@ -57,15 +57,22 @@
   border: 0;
 }
 
+/* 悬停效果 */
+.gg-list-social__link:hover .gg-svg-wrapper {
+  transform: scale(1.1);
+  transition: transform 0.15s ease;
+}
+
 /* 响应式样式 */
 @media screen and (max-width: 749px) {
   .gg-list-social {
     justify-content: center;
   }
-}
-
-/* 悬停效果 */
-.gg-list-social__link:hover .gg-svg-wrapper {
-  transform: scale(1.1);
-  transition: transform 0.15s ease;
+  .gg-svg-wrapper {
+    width: 8vw;
+    height: 7.6vw;
+  }
+  .gg-list-social__item {
+    margin-right: 9.2vw;
+  }
 }
