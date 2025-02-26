@@ -289,6 +289,40 @@
             "margin_bottom": 32
           }
         },
+        "carousel_fzniPB": {
+          "type": "carousel",
+          "settings": {
+            "title": "30+ Features",
+            "image_1": "shopify://shop_images/product-detail-b-c-02-01.jpg",
+            "caption_1": "Fortified Windproof Warmth with Stand-Up Collar",
+            "hover_text_1": "1",
+            "image_2": "shopify://shop_images/product-detail-b-c-02-02.jpg",
+            "caption_2": "Adjustable Hood for 180° Field of View",
+            "hover_text_2": "",
+            "image_3": "shopify://shop_images/product-detail-b-c-02-03.jpg",
+            "caption_3": "Extended Rain Visor with Water-Repellent Coating",
+            "hover_text_3": "",
+            "image_4": "shopify://shop_images/product-detail-b-c-02-04.jpg",
+            "caption_4": "Extended Rain Visor with Water-Repellent Coating",
+            "hover_text_4": "",
+            "image_5": "shopify://shop_images/product-detail-b-c-02-05.jpg",
+            "caption_5": "Extended Rain Visor with Water-Repellent Coating",
+            "hover_text_5": "",
+            "image_6": "shopify://shop_images/product-detail-b-c-02-06.jpg",
+            "caption_6": "Front Zipper Slanted for Comfort and Style",
+            "hover_text_6": "",
+            "image_7": "shopify://shop_images/product-detail-b-c-02-07.jpg",
+            "caption_7": "Immediate Warmth with Built-In Fingerless Gloves",
+            "hover_text_7": "",
+            "image_8": "shopify://shop_images/product-detail-b-c-02-08.jpg",
+            "caption_8": "Revolutionary Shoulder Strap System",
+            "hover_text_8": "",
+            "autoplay_speed": 3,
+            "target_tab": "description",
+            "margin_top": 32,
+            "margin_bottom": 32
+          }
+        },
         "collage_cfpQpc": {
           "type": "collage",
           "settings": {
@@ -348,6 +382,7 @@
         "image_banner_xnEjDM",
         "collage_y7J6gW",
         "collage_RULhdH",
+        "carousel_fzniPB",
         "collage_cfpQpc",
         "content_block_rN49nb",
         "content_block_DPjhDm",
