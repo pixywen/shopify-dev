@@ -21,6 +21,10 @@
           <h3 class="collage-heading">{{ block.settings.heading }}</h3>
         {%- endif -%}
         
+        {%- if block.settings.subheading != blank -%}
+          <div class="collage-subheading">{{ block.settings.subheading }}</div>
+        {%- endif -%}
+        
         <div class="collage-divider">
           <img src="{{ 'icon-short-divider.svg' | asset_url }}"
             alt=""
