@@ -722,7 +722,7 @@
 
     {%- if product.media.size > 0 -%}
       <script src="{{ 'product-modal.js' | asset_url }}" defer="defer"></script>
-      <script src="{{ 'variant-picker.js' | asset_url }}" defer="defer"></script>
+      {% comment %} <script src="{{ 'variant-picker.js' | asset_url }}" defer="defer"></script> {% endcomment %}
       {% comment %} <script src="{{ 'gg-media-gallery.js' | asset_url }}" defer="defer"></script> {% endcomment %}
       <script src="{{ 'gg-media-gallery-ex.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
