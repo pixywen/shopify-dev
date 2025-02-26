@@ -86,7 +86,7 @@
             "products_per_page": 2,
             "pagination_style": "dots",
             "image_ratio": "portrait",
-            "enable_quick_add": false
+            "enable_quick_add": true
           }
         },
         "collapsible_tab_yAPYME": {
