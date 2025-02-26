@@ -31,7 +31,9 @@ footer.footer .gg-list-social {
   letter-spacing: 0px;
   text-align: left;
 }
-
+.footer-block__heading.inline-richtext {
+  width: 100%;
+}
 .footer .footer-block {
   max-width: 280px;
   min-width: 270px;
@@ -786,6 +788,20 @@ footer.footer .gg-list-social {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 1600px) {
+  .footer__content-top {
+    padding: 0 100px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .footer__content-top {
+    padding: 0 20px;
+  }
+  .footer__blocks-wrapper {
+    justify-content: space-around;
+  }
+}
 
 /* 响应式调整 */
 @media screen and (max-width: 750px) {
