@@ -568,6 +568,14 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
   color: rgba(var(--color-foreground), 0.8);
 }
 
+.collage-subheading {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: rgba(var(--color-foreground), 0.75);
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
 /* 桌面端样式 */
 @media screen and (min-width: 750px) {
   .collage-container {
@@ -717,5 +725,8 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
   .faq-text {
     padding: 0 5.33vw;
     font-size: 3.2vw;
+  }
+  .collage-subheading {
+    font-size: 1.2rem;
   }
 }
