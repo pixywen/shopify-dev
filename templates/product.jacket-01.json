@@ -72,7 +72,8 @@
           "type": "gg-heading-image",
           "settings": {
             "heading": "As Featured In:",
-            "image": "shopify://shop_images/prodcut-block-media.png"
+            "image": "shopify://shop_images/product-info-b-hi-01.png",
+            "image_mobile": "shopify://shop_images/product-info-b-hi-01-m.png"
           }
         },
         "complementary_MMXapa": {
