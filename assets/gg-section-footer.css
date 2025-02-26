@@ -31,7 +31,9 @@ footer.footer .gg-list-social {
   letter-spacing: 0px;
   text-align: left;
 }
-
+.footer-block__heading.inline-richtext {
+  width: 100%;
+}
 .footer .footer-block {
   max-width: 280px;
   min-width: 270px;
@@ -43,7 +45,7 @@ footer.footer .gg-list-social {
 
   .footer-block.grid__item {
     padding: 0;
-    margin: 4rem 0;
+    margin: 0;
     width: 100%;
   }
 
@@ -693,29 +695,6 @@ footer.footer .gg-list-social {
   font-weight: 500;
 }
 
-/* 响应式调整 */
-@media screen and (max-width: 750px) {
-  /* 调整桌面端间距 */
-  .footer-block__gg-menu-list-nested {
-    gap: 1.6rem;
-  }
-  
-  /* 调整桌面端二级菜单位置 */
-  .gg-submenu-list {
-    margin-left: 2rem;
-    padding-left: 1.6rem;
-  }
-  
-  /* 增加桌面端悬停动画 */
-  .gg-menu-item-nested__link:hover {
-    padding-left: 0.4rem; /* 轻微位移效果 */
-  }
-  
-  .gg-submenu-item:hover {
-    padding-left: 0.8rem;
-  }
-}
-
 /* GG 普通菜单样式
  * 1. 基础容器样式
  * 2. 菜单项样式 - 椭圆形边框
@@ -807,4 +786,103 @@ footer.footer .gg-list-social {
 
 .footer-block__accordion-link--active {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1600px) {
+  .footer__content-top {
+    padding: 0 100px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .footer__content-top {
+    padding: 0 20px;
+  }
+  .footer__blocks-wrapper {
+    justify-content: space-around;
+  }
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 750px) {
+  /* 调整桌面端间距 */
+  .footer-block__gg-menu-list-nested {
+    gap: 1.6rem;
+  }
+  
+  /* 调整桌面端二级菜单位置 */
+  .gg-submenu-list {
+    margin-left: 2rem;
+    padding-left: 1.6rem;
+  }
+  
+  /* 增加桌面端悬停动画 */
+  .gg-menu-item-nested__link:hover {
+    padding-left: 0.4rem; /* 轻微位移效果 */
+  }
+  
+  .gg-submenu-item:hover {
+    padding-left: 0.8rem;
+  }
+  footer.footer {
+    padding-top: 4.66vw !important;
+  }
+  .footer-block__heading {
+    font-size: 4.8vw;
+    font-weight: 600;
+    border-bottom: solid 1px rgba(80, 80, 80, 1);
+    width: 100%;
+    padding: 3.33vw 0;
+    margin: 0;
+  }
+  .footer .footer-block,
+  .footer-block__accordion-summary {
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .footer-block__accordion-content,
+  .footer-block__accordion-sub-content {
+    padding: 0;
+    margin: 0;
+  }
+  .footer-block__accordion-content li {
+    list-style: none;
+    border-bottom: solid 1px rgba(80, 80, 80, 1);
+    
+  }
+  .footer-block__accordion-content li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 3.2vw;
+    padding: 3.33vw 0;
+  }
+  .footer-block__accordion-sub-summary {
+    font-weight: 600;
+    font-size: 3.2vw;
+    border-bottom: solid 1px rgba(80, 80, 80, 1);
+    padding: 3.33vw 0;
+  }
+  li.footer-block__accordion-item {
+    padding: 0;
+  }
+  .footer__content-top {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+  summary .icon-caret {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 2.66vw;
+    height: 1.6vw;
+    display: flex;
+    align-items: center;
+  }
+  summary .icon-caret svg{
+    width: 2.66vw;
+    height: 1.6vw;
+  }
+  .footer-block__gg-social-icons {
+    margin-top: 8.53vw;
+  }
 }

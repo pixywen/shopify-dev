@@ -294,7 +294,7 @@
                         <details class="footer-block__accordion-details" open>
                           <summary class="footer-block__accordion-summary">
                             <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
-                            <span class="icon-caret"></span>
+                            <span class="icon-caret">{{ 'icon-arrow-up.svg' | inline_asset_content }}</span>
                           </summary>
                           {%- if block.settings.menu != blank -%}
                             <ul class="footer-block__accordion-content">
@@ -304,7 +304,7 @@
                                     <details class="footer-block__accordion-sub-details" open>
                                       <summary class="footer-block__accordion-sub-summary">
                                         {{ link.title | escape }}
-                                        <span class="icon-caret"></span>
+                                        <span class="icon-caret">{{ 'icon-arrow-up.svg' | inline_asset_content }}</span>
                                       </summary>
                                       <ul class="footer-block__accordion-sub-content">
                                         {%- for child_link in link.links -%}
