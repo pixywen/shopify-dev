@@ -327,9 +327,11 @@
             "image_8": "shopify://shop_images/product-detail-b-c-02-08.jpg",
             "caption_8": "Revolutionary Shoulder Strap System",
             "hover_text_8": "",
-            "caption_9": "",
+            "image_9": "shopify://shop_images/product-detail-b-c-02-09.jpg",
+            "caption_9": "13 Waterproof YKK Zippers",
             "hover_text_9": "",
-            "caption_10": "",
+            "image_10": "shopify://shop_images/product-detail-b-c-02-10.jpg",
+            "caption_10": "Multi-purpose Holder Loop",
             "hover_text_10": "",
             "caption_11": "",
             "hover_text_11": "",
@@ -355,26 +357,15 @@
             "margin_bottom": 32
           }
         },
-        "content_block_rN49nb": {
+        "content_block_RiEbHT": {
           "type": "content_block",
           "settings": {
             "block_type": "heading_text",
-            "margin_top": 32,
+            "margin_top": 68,
             "margin_bottom": 32,
-            "heading": "<p>产品详情</p>",
-            "content": "<p>请输入详细说明内容...</p>",
-            "target_tab": "video"
-          }
-        },
-        "content_block_DPjhDm": {
-          "type": "content_block",
-          "settings": {
-            "block_type": "heading_text",
-            "margin_top": 32,
-            "margin_bottom": 32,
-            "heading": "<p>产品详情</p>",
-            "content": "<p>请输入详细说明内容...</p>",
-            "target_tab": "faq"
+            "heading": "<p>The Difference is Clear</p>",
+            "content": "",
+            "target_tab": "description"
           }
         },
         "faq_yqgwMK": {
@@ -403,8 +394,7 @@
         "collage_RULhdH",
         "carousel_fzniPB",
         "collage_cfpQpc",
-        "content_block_rN49nb",
-        "content_block_DPjhDm",
+        "content_block_RiEbHT",
         "faq_yqgwMK",
         "judge_me_reviews_review_widget_JctMNU"
       ],
