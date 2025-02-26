@@ -1,4 +1,4 @@
-<modal-dialog id="SizeGuideModal-{{ section.id }}" class="gg-size-guide-modal">
+<size-guide-modal id="SizeGuideModal-{{ section.id }}" class="gg-size-guide-modal">
   <div role="dialog" class="gg-size-guide-modal__content" tabindex="-1">
     <button type="button" class="gg-size-guide-modal__close" aria-label="{{ 'accessibility.close' | t }}">
         <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
@@ -27,7 +27,7 @@
       {%- endif -%}
     </div>
   </div>
-</modal-dialog>
+</size-guide-modal>
 
 <script>
   class SizeGuideModal extends HTMLElement {
@@ -52,8 +52,8 @@
     }
   }
 
-  if (!customElements.get('modal-dialog')) {
-    customElements.define('modal-dialog', SizeGuideModal);
+  if (!customElements.get('size-guide-modal')) {
+    customElements.define('size-guide-modal', SizeGuideModal);
   }
 
   // 等待 DOM 加载完成后绑定事件
