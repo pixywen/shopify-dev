@@ -9,7 +9,7 @@
  */
 {
   "sections": {
-    "gg_breadcrumb_bJw9Fj": {
+    "gg_breadcrumb_nBKrrq": {
       "type": "gg-breadcrumb",
       "settings": {}
     },
@@ -43,7 +43,7 @@
     }
   },
   "order": [
-    "gg_breadcrumb_bJw9Fj",
+    "gg_breadcrumb_nBKrrq",
     "banner",
     "product-grid"
   ]
