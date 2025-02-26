@@ -352,7 +352,7 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
 
 .carousel-item {
   flex: 0 0 auto;
-  width: 625px; /* 固定宽度 */
+  width: calc((100% - 40px) / 3);
   transition: opacity 0.3s ease;
 }
 
@@ -363,7 +363,7 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
 .carousel-image-wrapper {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 625/480; /* 固定宽高比 */
+  aspect-ratio: 625/480;
 }
 
 .carousel-image {
@@ -405,25 +405,25 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
   line-height: 1.4;
 }
 
-@media screen and (max-width: 989px) {
+/* @media screen and (max-width: 989px) {
   .carousel-item {
     width: 420px;
   }
-}
+} */
 
 @media screen and (max-width: 749px) {
   .carousel-item {
-    width: 420px;
+    width: 83vw;
   }
 }
 
-@media screen and (min-width: 750px) {
+/* @media screen and (min-width: 750px) {
   .carousel-image {
     width: 625px;
     height: 480px;
     aspect-ratio: 625/480;
   }
-}
+} */
 
 /* 视频组件样式 */
 .product-video-section {
