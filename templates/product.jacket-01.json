@@ -209,7 +209,7 @@
           "type": "image_banner",
           "settings": {
             "image_desktop": "shopify://shop_images/product-detail-b-ib-03.jpg",
-            "image_mobile": "shopify://shop_images/product-detail-b-ib-03.jpg",
+            "image_mobile": "shopify://shop_images/product-detail-b-ib-03-m.jpg",
             "margin_top": 32,
             "margin_bottom": 32,
             "padding_x_desktop": 0,
