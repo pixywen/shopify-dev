@@ -171,7 +171,6 @@ class ProductCarousel {
     this.container = container;
     this.track = container.querySelector('.carousel-track');
     this.items = container.querySelectorAll('.carousel-item');
-    // 获取配置的速度值（2-10）
     const configSpeed = parseInt(container.dataset.autoplaySpeed);
     this.speed = configSpeed >= 2 && configSpeed <= 10 ? configSpeed : 3;
     
@@ -181,9 +180,27 @@ class ProductCarousel {
     this.animationFrame = null;
     this.isPaused = false;
     
-    this.animate = this.animate.bind(this);
+    // 检测是否为触屏设备
+    this.isTouchDevice = this.checkTouchDevice();
     
+    this.animate = this.animate.bind(this);
     this.init();
+  }
+
+  // 检测触屏设备的方法
+  checkTouchDevice() {
+    // 方法1: 检查是否支持触摸事件
+    const hasTouchEvent = 'ontouchstart' in window || 
+                         navigator.maxTouchPoints > 0 ||
+                         navigator.msMaxTouchPoints > 0;
+    
+    // 方法2: 检查是否为移动设备的浏览器
+    const isMobileBrowser = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    
+    // 方法3: 检查是否支持指针事件，且为触摸类型
+    const hasCoarsePointer = window.matchMedia('(pointer: coarse)').matches;
+    
+    return hasTouchEvent || isMobileBrowser || hasCoarsePointer;
   }
 
   init() {
@@ -207,30 +224,28 @@ class ProductCarousel {
     this.position = -totalWidth;
     this.track.style.transform = `translateX(${this.position}px)`;
     
-    // 为每个图片项添加hover事件
-    this.track.addEventListener('mouseover', (e) => {
-      const item = e.target.closest('.carousel-item');
-      if (item) {
-        this.isHovered = true;
-        // 移除其他项的hover状态
-        this.track.querySelectorAll('.carousel-item').forEach(i => i.classList.remove('hovered'));
-        // 添加当前项的hover状态
-        item.classList.add('hovered');
-      }
-    });
-    
-    this.track.addEventListener('mouseout', (e) => {
-      const item = e.target.closest('.carousel-item');
-      const relatedItem = e.relatedTarget?.closest('.carousel-item');
+    // 只在非触屏设备上添加hover事件
+    if (!this.isTouchDevice) {
+      this.track.addEventListener('mouseover', (e) => {
+        const item = e.target.closest('.carousel-item');
+        if (item) {
+          this.isHovered = true;
+          this.track.querySelectorAll('.carousel-item').forEach(i => i.classList.remove('hovered'));
+          item.classList.add('hovered');
+        }
+      });
       
-      // 只有当鼠标真正离开carousel-item时才移除hover状态
-      if (item && !relatedItem) {
-        this.isHovered = false;
-        item.classList.remove('hovered');
-      }
-    });
+      this.track.addEventListener('mouseout', (e) => {
+        const item = e.target.closest('.carousel-item');
+        const relatedItem = e.relatedTarget?.closest('.carousel-item');
+        
+        if (item && !relatedItem) {
+          this.isHovered = false;
+          item.classList.remove('hovered');
+        }
+      });
+    }
     
-    // 开始动画
     this.startAnimation();
   }
 
@@ -244,21 +259,17 @@ class ProductCarousel {
   }
 
   animate() {
-    if (!this.isHovered && !this.isPaused) {
-      // 计算移动速度（像素/帧）
-      // 速度范围：2=最快，10=最慢
+    // 在触屏设备上忽略hover状态
+    if ((!this.isTouchDevice && !this.isHovered) || (this.isTouchDevice && !this.isPaused)) {
       const baseSpeed = 0.3;
-      // 将配置速度反转：2->8, 10->0，使得数值越大速度越慢
       const speedMultiplier = 10 - this.speed;
       const speed = baseSpeed * speedMultiplier;
       
       this.position -= speed;
       
-      // 检查是否需要重置位置
       const itemWidth = this.items[0].offsetWidth;
       const totalWidth = itemWidth * this.items.length;
       
-      // 当滚动到克隆区域时，瞬间重置到对应的原始位置
       if (Math.abs(this.position) >= totalWidth * 2) {
         this.position = -totalWidth;
       }
