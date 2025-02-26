@@ -64,6 +64,19 @@
 /* Icon Text Grid Block - End */
 
 /* Heading Image Block - Start */
+
+@media screen and (max-width: 749px) {
+  .gg-heading-image .feature-image .desktop-only {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .gg-heading-image .feature-image img:not(.desktop-only) {
+    display: none;
+  }
+}
+
 .gg-heading-image {
   margin: 29px 0 20px 0;
 }

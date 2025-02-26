@@ -1,6 +1,7 @@
 {%- liquid
   assign heading = block.settings.heading | strip
   assign image = block.settings.image
+  assign image_mobile = block.settings.image_mobile
 -%}
 
 {%- unless heading == blank and image == blank -%}
@@ -11,11 +12,30 @@
     
     {%- if image != blank -%}
       <div class="feature-image">
-        <img src="{{ image | image_url: width: 1200 }}" 
-             alt="{{ heading | default: 'Feature image' }}" 
-             loading="lazy" 
-             width="800" 
-             height="{{ 800 | divided_by: image.aspect_ratio | round }}">
+        {%- if image_mobile != blank and request.display_mode != 'desktop' -%}
+          <img srcset="{{ image_mobile | image_url: width: 375 }} 375w,
+                       {{ image_mobile | image_url: width: 550 }} 550w,
+                       {{ image_mobile | image_url: width: 750 }} 750w"
+               src="{{ image_mobile | image_url: width: 550 }}"
+               sizes="(max-width: 749px) 100vw, 0"
+               alt="{{ heading | default: 'Feature image' }}"
+               loading="lazy"
+               width="{{ image_mobile.width }}"
+               height="{{ image_mobile.height }}">
+        {%- endif -%}
+        
+        <img srcset="{{ image | image_url: width: 550 }} 550w,
+                     {{ image | image_url: width: 750 }} 750w,
+                     {{ image | image_url: width: 1100 }} 1100w,
+                     {{ image | image_url: width: 1500 }} 1500w,
+                     {{ image | image_url: width: 2200 }} 2200w"
+             src="{{ image | image_url: width: 1100 }}"
+             sizes="(min-width: 750px) 100vw, 0"
+             alt="{{ heading | default: 'Feature image' }}"
+             loading="lazy"
+             width="{{ image.width }}"
+             height="{{ image.height }}"
+             {% if image_mobile != blank %}class="desktop-only"{% endif %}>
       </div>
     {%- endif -%}
   </div>
