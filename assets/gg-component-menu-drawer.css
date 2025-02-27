@@ -26,13 +26,14 @@ menu-drawer > details[open] > summary::before {
 }
 
 .menu-drawer {
-  position: absolute;
+  position: fixed;
+  left: 0;
+  top: calc(13.06vw + 9.73vw);
+  width: 100vw;
+  height: calc(100% - (13.06vw + 9.73vw));
   transform: translateX(-100%);
   visibility: hidden;
   z-index: 3;
-  left: 0;
-  top: 100%;
-  width: 100%;
   padding: 0;
   background-color: rgb(var(--color-background));
   overflow-x: hidden;
@@ -41,12 +42,10 @@ menu-drawer > details[open] > summary::before {
       rgba(var(--color-shadow), var(--drawer-shadow-opacity))
   );
 }
-
-.js .menu-drawer {
-  height: calc(100vh - 100%);
-  height: calc(var(--viewport-height, 100vh) - (var(--header-bottom-position, 100%)));
+.shopify-section-header-hidden .menu-drawer {
+  top: 13.06vw;
+  height: calc(100% - 13.06vw);
 }
-
 .js details[open] > .menu-drawer,
 .js details[open] > .menu-drawer__submenu {
   transition: transform var(--duration-default) ease, visibility var(--duration-default) ease;
@@ -262,5 +261,9 @@ details[open].menu-opening > .menu-drawer__submenu {
   .menu-drawer__inner-container {
     width: 85.33vw;
     background: #FFF;
+  }
+  .header--has-social .menu-drawer__utility-links {
+    height: 17.46vw;
+    padding: 0;
   }
 }
