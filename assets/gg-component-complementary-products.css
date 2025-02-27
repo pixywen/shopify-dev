@@ -98,6 +98,8 @@ product-recommendations.is-accordion + .accordion {
 .complementary-products__container .card--horizontal .card__content {
   padding-top: 1rem;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 750px) and (max-width: 1200px) {
@@ -134,6 +136,12 @@ product-recommendations.is-accordion + .accordion {
 .complementary-products__container .quick-add__submit {
   padding: 1.5rem 0;
   min-height: inherit;
+  width: 73px;
+  height: 26px;
+  opacity: 1;
+  font-size: 12px;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 1);
 }
 
 .complementary-products__container .quick-add__submit .icon-plus {
