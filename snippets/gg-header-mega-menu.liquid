@@ -75,10 +75,13 @@
                         {%- endif -%}
                         
                         {%- if block.settings.menu_image != blank -%}
-                          {{ block.settings.menu_image | image_url: width: 300 | image_tag:
+                          {{ block.settings.menu_image | image_url: width: 1350| image_tag:
                             loading: 'lazy',
+                            width: 450,
+                            height: 300,
                             alt: link.title,
-                            class: 'mega-menu__feature-image'
+                            class: 'mega-menu__feature-image',
+                            sizes: '(min-width: 1200px) 450px, (min-width: 990px) 375px, 375px'
                           }}
                         {%- endif -%}
 
