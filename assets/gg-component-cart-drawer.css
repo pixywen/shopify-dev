@@ -543,3 +543,23 @@ cart-remove-button button {
   line-height: 14.63px;
   color: rgba(0, 0, 0, 1);
 }
+
+
+@media screen and (max-width: 990px) {
+  .drawer {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: calc(13.06vw + 9.73vw);
+    width: 100vw;
+    height: calc(100% - (13.06vw + 9.73vw));
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(var(--color-foreground), 0.5);
+    transition: visibility var(--duration-default) ease;
+  }
+  .shopify-section-header-hidden ~ .drawer {
+    top: 13.06vw;
+    height: calc(100% - 13.06vw);
+  }
+}
