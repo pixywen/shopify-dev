@@ -34,6 +34,17 @@
                   <ul class="mega-menu__list{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
                     {%- for childlink in link.links -%}
                       <li>
+                        {% comment %}如果是第一个子菜单项且link.levels为1，添加"查看全部"链接{% endcomment %}
+                        {%- if forloop.first -%}
+                          <a
+                            id="HeaderMenu-{{ link.handle }}-discover-all"
+                            href="{{ link.url }}"
+                            class="mega-menu__link mega-menu__link--level-2 link mega-menu__link--discover-all"
+                          >
+                            Discover all
+                          </a>
+                        {%- endif -%}
+                        
                         <a
                           id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
                           href="{{ childlink.url }}"
