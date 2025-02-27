@@ -192,13 +192,20 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__account {
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 1rem 0;
-  font-size: 1.4rem;
-  color: rgb(var(--color-foreground));
-  margin-bottom: 0;
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: row !important;
+  padding: 1.5rem 3rem !important;
+}
+
+.menu-drawer__account .svg-wrapper {
+  margin-right: 1rem !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+.menu-drawer__account .login-text {
+  font-size: 1.6rem !important;
 }
 
 .menu-drawer__utility-links:has(.menu-drawer__localization) .menu-drawer__account {
