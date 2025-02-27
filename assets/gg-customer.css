@@ -82,6 +82,15 @@
   cursor: pointer;
   top: 30px;
   left: 15px;
+  width: 12px;
+  height: 12px;
+}
+
+.gg-register-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: #383838;
+  display: block;
 }
 
 @media screen and (max-width: 750px) {
