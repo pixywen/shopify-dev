@@ -534,8 +534,8 @@
                 >
                   {%- if recommendations.performed and recommendations.products_count > 0 -%}
                     <div class="complementary-count">
-                      推荐商品数量: {{ recommendations.products_count }}
-                      推荐商品数量: {{ block.settings.product_list_limit }}
+                      {% comment %} 推荐商品数量: {{ recommendations.products_count }}
+                      推荐商品数量: {{ block.settings.product_list_limit }} {% endcomment %}
                     </div>
                     <aside
                       aria-label="{{ 'accessibility.complementary_products' | t }}"
