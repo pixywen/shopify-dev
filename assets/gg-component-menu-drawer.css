@@ -241,14 +241,6 @@ details[open].menu-opening > .menu-drawer__submenu {
   padding: 1.1rem 1.1rem;
 }
 
-@media screen and (max-width: 749px) {
-  .menu-drawer.country-selector-open {
-    transform: none !important;
-    filter: none !important;
-    transition: none !important;
-  }
-}
-
 .menu-drawer__utility-links .list-social {
   display: none !important; /* 使用!important确保覆盖任何其他样式 */
 }
@@ -256,4 +248,19 @@ details[open].menu-opening > .menu-drawer__submenu {
 /* 隐藏区域/语言选择器 */
 .menu-drawer__utility-links .menu-drawer__localization {
   display: none !important; /* 使用!important确保覆盖任何其他样式 */
+}
+
+@media screen and (max-width: 749px) {
+  .menu-drawer.country-selector-open {
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+  .menu-drawer {
+    background-color: rgba(0, 0, 0, .3);
+  }
+  .menu-drawer__inner-container {
+    width: 85.33vw;
+    background: #FFF;
+  }
 }
