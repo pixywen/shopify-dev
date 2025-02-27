@@ -266,4 +266,24 @@ details[open].menu-opening > .menu-drawer__submenu {
     height: 17.46vw;
     padding: 0;
   }
+  .menu-drawer__account {
+    padding: 0 5.6vw !important;
+    height: 100%;
+    width: 100%;
+    flex-direction:unset !important;
+  }
+  .menu-drawer__account account-icon > .svg-wrapper {
+    width: 9.33vw;
+    height: 9.33vw;
+    margin-right: 3.86vw !important;
+  }
+  .menu-drawer__account account-icon > .svg-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .menu-drawer__account .login-text {
+    font-size: 3.59vw !important;
+    text-decoration: none;
+    box-shadow: none;
+  }
 }
