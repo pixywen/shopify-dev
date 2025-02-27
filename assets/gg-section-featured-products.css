@@ -112,7 +112,25 @@
   gap: 8px;
 }
 
+
 .color-selector {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+
+.color-swatch-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .color-selector {
   width: 80px;
   height: 80px;
   border: none;
@@ -121,7 +139,7 @@
   background-size: cover;
   background-position: center;
   transition: transform 0.2s ease;
-}
+} */
 
 .color-selector.active {
   border: 1px solid rgba(0, 0, 0, 1);

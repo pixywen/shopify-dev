@@ -103,9 +103,22 @@
                     data-variant-index="{{ i }}"
                     data-main-image="{{ main_image | image_url: width: 600 }}"
                     data-model-image="{{ block.settings[model_image_key] | image_url: width: 600 }}"
-                    style="background-image: url({{ color | image_url: width: 160 }})"
-                    aria-label="Select {{ color_name }}"
+                    aria-label="选择{{ color_name }}"
                   >
+                    <img 
+                      src="{{ color | image_url: width: 320 }}"
+                      srcset="
+                        {{ color | image_url: width: 80 }} 80w,
+                        {{ color | image_url: width: 165 }} 165w,
+                        {{ color | image_url: width: 360 }} 360w,
+                        {{ color | image_url: width: 533 }} 533w,
+                        {{ color | image_url: width: 720 }} 720w,
+                        {{ color | image_url: width: 940 }} 940w
+                      "
+                      sizes="(max-width: 749px) 10.66vw, 320px"
+                      alt="{{ color_name }}"
+                      class="color-swatch-image"
+                    >
                   </button>
                 {%- endif -%}
               {%- endfor -%}
@@ -192,98 +205,107 @@
 
 {% schema %}
 {
-  "name": "GG-特色商品",
+  "name": "GG-热卖商品",
   "settings": [
     {
       "type": "text",
       "id": "title",
-      "label": "Section Title",
+      "label": "栏目标题",
       "default": "Best Seller"
     }
   ],
   "blocks": [
     {
       "type": "product",
-      "name": "Product",
+      "name": "产品",
       "settings": [
         {
           "type": "product",
           "id": "product",
-          "label": "Product"
+          "label": "产品"
         },
         {
           "type": "header",
-          "content": "Color Variant 1"
+          "content": "颜色变体1"
         },
         {
           "type": "text",
           "id": "color_name_1",
-          "label": "Color Name",
+          "label": "颜色名称",
           "default": "Black"
         },
         {
           "type": "image_picker",
           "id": "color_1",
-          "label": "Color Swatch Image"
+          "label": "颜色色块图片",
+          "info": "建议尺寸: 320 * 320px"
         },
         {
           "type": "image_picker",
           "id": "main_image_1",
-          "label": "Main Product Image"
+          "label": "主产品图片",
+          "info": "建议尺寸: 860 * 1200px"
         },
         {
           "type": "image_picker",
           "id": "model_image_1",
-          "label": "Model Image"
+          "label": "模特图片",
+          "info": "建议尺寸: 860 * 1200px"
         },
         {
           "type": "header",
-          "content": "Color Variant 2"
+          "content": "颜色变体2"
         },
         {
           "type": "text",
           "id": "color_name_2",
-          "label": "Color Name",
+          "label": "颜色名称",
           "default": "White"
         },
         {
           "type": "image_picker",
           "id": "color_2",
-          "label": "Color Swatch Image"
+          "label": "颜色色块图片",
+          "info": "建议尺寸: 320 * 320px"
         },
         {
           "type": "image_picker",
           "id": "main_image_2",
-          "label": "Main Product Image"
+          "label": "主产品图片",
+          "info": "建议尺寸: 860 * 1200px"
         },
         {
           "type": "image_picker",
           "id": "model_image_2",
-          "label": "Model Image"
+          "label": "模特图片",
+          "info": "建议尺寸: 860 * 1200px"
         },
         {
           "type": "header",
-          "content": "Color Variant 3"
+          "content": "颜色变体3"
         },
         {
           "type": "text",
           "id": "color_name_3",
-          "label": "Color Name"
+          "label": "颜色名称"
         },
         {
           "type": "image_picker",
           "id": "color_3",
-          "label": "Color Swatch Image"
+          "label": "颜色色块图片",
+          "info": "建议尺寸: 320 * 320px"
         },
         {
           "type": "image_picker",
           "id": "main_image_3",
-          "label": "Main Product Image"
+            "label": "主产品图片",
+          "info": "建议尺寸: 860 * 1200px"
         },
         {
           "type": "image_picker",
           "id": "model_image_3",
-          "label": "Model Image"
+          "label": "模特图片",
+          "info": "建议尺寸: 860 * 1200px"
         }
       ],
       "limit": 4
@@ -291,7 +313,7 @@
   ],
   "presets": [
     {
-      "name": "GG-首页-特色商品(Best-Seller)",
+      "name": "GG-热卖商品",
       "blocks": [
         {
           "type": "product"
