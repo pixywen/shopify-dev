@@ -10,7 +10,7 @@
               {%- if block.settings.image.width >= 360 -%}{{ block.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
               {%- if block.settings.image.width >= 533 -%}{{ block.settings.image | image_url: width: 533 }} 533w,{%- endif -%}
               {{ block.settings.image | image_url }} {{ block.settings.image.width }}w"
-            src="{{ block.settings.image | image_url: width: 280 }}"
+            src="{{ block.settings.image | image_url: width: 750 }}"
             sizes="50vw"
             alt="{{ block.settings.image.alt | escape }}"
             loading="lazy"
@@ -63,7 +63,8 @@
         {
           "type": "image_picker",
           "id": "image",
-          "label": "图片"
+          "label": "图片",
+          "info": "建议尺寸：750 * 1102px"
         },
         {
           "type": "text",
