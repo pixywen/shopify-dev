@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 0 8px;
+  padding: 0;
   background: rgba(255,255,255,0.05);
   border-radius: 6px;
 }
@@ -333,7 +333,25 @@
     margin: 6.66vw 0;
   }
   .icon-item {
-    gap: 1.6vw;
+    gap: 0;
+  }
+  .icon-item .icon-image {
+    width: 9.5vw;
+  }
+  .icon-item:nth-child(1) .icon-image img {
+    width: 8.53vw;
+    height: 4.26vw;
+  }
+  .icon-item:nth-child(2) .icon-image img {
+    width: 5.6vw;
+    height: 5.6vw;
+  }
+  .icon-item:nth-child(3) .icon-image img {
+    width: 6vw;
+    height: 5.33vw;
+  }
+  .icon-item:nth-child(3) img {
+    margin-left: 1vw;
   }
   .gg-heading-image {
     margin: 5.46vw 0;
