@@ -20,7 +20,7 @@
 
 <div class="customer order section-{{ section.id }}-padding">
   <h1>{{ 'customer.orders.title' | t }}</h1>
-
+  {% if customer %}
   {%- paginate customer.orders by 20 -%}
     {%- if customer.orders.size > 0 -%}
       <table role="table" class="order-history">
@@ -66,6 +66,12 @@
       {%- render 'pagination', paginate: paginate -%}
     {%- endif -%}
   {%- endpaginate -%}
+  {% else %}
+  <div class="login-required">
+    <p>请先登录查看订单</p>
+    <a href="{{ routes.account_login_url }}" class="button">登录账户</a>
+  </div>
+{% endif %}
 </div>
 
 {% schema %}
