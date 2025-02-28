@@ -89,6 +89,7 @@ a.account-logout span {
 
 .account-card__icon img {
   width: 50px;
+  height: 53px;
 }
 
 .account-card:hover {
@@ -166,6 +167,7 @@ a.account-logout span {
   }
   .account-card__icon img {
     width: 6.66vw;
+    height: 7.06vw;
   }
   .account-card__icon {
     width: 6.66vw;

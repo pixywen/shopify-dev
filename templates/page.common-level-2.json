@@ -17,6 +17,17 @@
         "padding_bottom": 28
       }
     },
+    "gg_simple_image_banner_kPHg8h": {
+      "type": "gg-simple-image-banner",
+      "settings": {
+        "image": "shopify://shop_images/s-sib-brand-m.jpg",
+        "image_mobile": "shopify://shop_images/s-sib-brand-m.jpg",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0
+      }
+    },
     "gg_rich_text_page_R7exfe": {
       "type": "gg-rich-text-page",
       "settings": {
@@ -30,6 +41,7 @@
   },
   "order": [
     "main",
+    "gg_simple_image_banner_kPHg8h",
     "gg_rich_text_page_R7exfe"
   ]
 }
