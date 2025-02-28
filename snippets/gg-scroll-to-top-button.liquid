@@ -1,0 +1,94 @@
+<div class="scroll-to-top-button" aria-label="返回顶部" role="button" tabindex="0">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 37.136 39.295" fill="none">
+    <path d="M36.057 2.16H1.08C.504 2.16 0 1.654 0 1.08 0 .504.504 0 1.08 0h34.977c.576 0 1.08.504 1.08 1.08 0 .575-.504 1.08-1.08 1.08zm-18.28 2.374c.431-.432 1.151-.432 1.51 0l15.474 15.474c.432.431.432 1.151 0 1.51-.431.433-1.151.433-1.511 0L19.648 7.918v30.299c0 .576-.504 1.08-1.08 1.08-.576 0-1.08-.504-1.08-1.08v-30.3L3.887 21.52c-.431.432-1.151.432-1.511 0-.432-.432-.432-1.152 0-1.511L17.776 4.534z" fill="#000000"/>
+  </svg>
+</div>
+
+<style>
+  .scroll-to-top-button {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .scroll-to-top-button.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .scroll-to-top-button:hover {
+    background-color: #F5F5F5;
+  }
+  
+  .scroll-to-top-button svg {
+    width: 20px;
+    height: 20px;
+    /* 保持原始方向 */
+  }
+  
+  @media screen and (max-width: 749px) {
+    .scroll-to-top-button {
+      right: 20px;
+      bottom: 20px;
+      width: 40px;
+      height: 40px;
+    }
+    
+    .scroll-to-top-button svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const scrollButton = document.querySelector('.scroll-to-top-button');
+    
+    // 显示/隐藏按钮的函数
+    function toggleScrollButtonVisibility() {
+      if (window.scrollY > 300) {
+        scrollButton.classList.add('visible');
+      } else {
+        scrollButton.classList.remove('visible');
+      }
+    }
+    
+    // 滚动到顶部的函数
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+    
+    // 监听滚动事件
+    window.addEventListener('scroll', toggleScrollButtonVisibility);
+    
+    // 监听按钮点击事件
+    scrollButton.addEventListener('click', scrollToTop);
+    
+    // 支持键盘访问
+    scrollButton.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        scrollToTop();
+      }
+    });
+    
+    // 初始检查按钮可见性
+    toggleScrollButtonVisibility();
+  });
+</script> 
