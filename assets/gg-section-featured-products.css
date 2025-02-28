@@ -119,6 +119,7 @@
   position: relative;
   padding: 0;
   overflow: hidden;
+  border-width: 0;
 }
 
 .color-swatch-image {
@@ -221,6 +222,10 @@
   .color-selector {
     width: 10.66vw;
     height: 10.66vw;
+  }
+  .color-selector:hover {
+    border: solid 1px #000;
+    transform: none;
   }
 }
 
