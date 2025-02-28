@@ -20,9 +20,18 @@
   flex: 0 0 auto;
 }
 
-.scroll-image-item img {
+/* 桌面图片样式 */
+.scroll-image.desktop-only {
   display: block;
   height: 91px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* 移动图片样式 */
+.scroll-image.mobile-only {
+  display: none;
+  height: 6.8vw; /* 适合2456*116比例 */
   width: auto;
   object-fit: contain;
 }
@@ -41,11 +50,16 @@
   animation-play-state: paused;
 }
 
-/* 响应式调整 */
+/* 响应式控制 */
 @media screen and (max-width: 749px) {
-  .scroll-image-item img {
-    height: 5.33vw;
+  .scroll-image.desktop-only {
+    display: none !important;
   }
+  
+  .scroll-image.mobile-only {
+    display: block !important;
+  }
+  
   .scroll-image-wrapper {
     padding: 3.06vw 0;
   }

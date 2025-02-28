@@ -16,15 +16,40 @@
     <div class="scroll-image-track" data-track="first">
       {%- for block in section.blocks -%}
         <div class="scroll-image-item" {{ block.shopify_attributes }}>
+          <!-- 桌面端图片 -->
           {%- if block.settings.image != blank -%}
             {{ block.settings.image | image_url: width: 1920 | image_tag: 
-              class: 'scroll-image',
+              class: 'scroll-image desktop-only',
               loading: 'lazy',
               width: block.settings.image.width,
               height: block.settings.image.height,
               sizes: '100vw'
             }}
+          {%- endif -%}
+          
+          <!-- 移动端图片 -->
+          {%- if block.settings.mobile_image != blank -%}
+            {{ block.settings.mobile_image | image_url: width: 1200 | image_tag: 
+              class: 'scroll-image mobile-only',
+              loading: 'lazy',
+              width: block.settings.mobile_image.width,
+              height: block.settings.mobile_image.height,
+              sizes: '163vw'
+            }}
           {%- else -%}
+            <!-- 如果没有移动端图片，使用桌面图片 -->
+            {%- if block.settings.image != blank -%}
+              {{ block.settings.image | image_url: width: 1200 | image_tag: 
+                class: 'scroll-image mobile-only',
+                loading: 'lazy',
+                width: block.settings.image.width,
+                height: block.settings.image.height,
+                sizes: '100vw'
+              }}
+            {%- endif -%}
+          {%- endif -%}
+          
+          {%- if block.settings.image == blank and block.settings.mobile_image == blank -%}
             {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
           {%- endif -%}
         </div>
@@ -33,15 +58,40 @@
     <div class="scroll-image-track" data-track="second">
       {%- for block in section.blocks -%}
         <div class="scroll-image-item" {{ block.shopify_attributes }}>
+          <!-- 桌面端图片 -->
           {%- if block.settings.image != blank -%}
             {{ block.settings.image | image_url: width: 1920 | image_tag: 
-              class: 'scroll-image',
+              class: 'scroll-image desktop-only',
               loading: 'lazy',
               width: block.settings.image.width,
               height: block.settings.image.height,
               sizes: '100vw'
             }}
+          {%- endif -%}
+          
+          <!-- 移动端图片 -->
+          {%- if block.settings.mobile_image != blank -%}
+            {{ block.settings.mobile_image | image_url: width: 1200 | image_tag: 
+              class: 'scroll-image mobile-only',
+              loading: 'lazy',
+              width: block.settings.mobile_image.width,
+              height: block.settings.mobile_image.height,
+              sizes: '163vw'
+            }}
           {%- else -%}
+            <!-- 如果没有移动端图片，使用桌面图片 -->
+            {%- if block.settings.image != blank -%}
+              {{ block.settings.image | image_url: width: 1200 | image_tag: 
+                class: 'scroll-image mobile-only',
+                loading: 'lazy',
+                width: block.settings.image.width,
+                height: block.settings.image.height,
+                sizes: '100vw'
+              }}
+            {%- endif -%}
+          {%- endif -%}
+          
+          {%- if block.settings.image == blank and block.settings.mobile_image == blank -%}
             {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
           {%- endif -%}
         </div>
@@ -50,15 +100,40 @@
     <div class="scroll-image-track" data-track="third">
       {%- for block in section.blocks -%}
         <div class="scroll-image-item" {{ block.shopify_attributes }}>
+          <!-- 桌面端图片 -->
           {%- if block.settings.image != blank -%}
             {{ block.settings.image | image_url: width: 1920 | image_tag: 
-              class: 'scroll-image',
+              class: 'scroll-image desktop-only',
               loading: 'lazy',
               width: block.settings.image.width,
               height: block.settings.image.height,
               sizes: '100vw'
             }}
+          {%- endif -%}
+          
+          <!-- 移动端图片 -->
+          {%- if block.settings.mobile_image != blank -%}
+            {{ block.settings.mobile_image | image_url: width: 1200 | image_tag: 
+              class: 'scroll-image mobile-only',
+              loading: 'lazy',
+              width: block.settings.mobile_image.width,
+              height: block.settings.mobile_image.height,
+              sizes: '163vw'
+            }}
           {%- else -%}
+            <!-- 如果没有移动端图片，使用桌面图片 -->
+            {%- if block.settings.image != blank -%}
+              {{ block.settings.image | image_url: width: 1200 | image_tag: 
+                class: 'scroll-image mobile-only',
+                loading: 'lazy',
+                width: block.settings.image.width,
+                height: block.settings.image.height,
+                sizes: '100vw'
+              }}
+            {%- endif -%}
+          {%- endif -%}
+          
+          {%- if block.settings.image == blank and block.settings.mobile_image == blank -%}
             {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
           {%- endif -%}
         </div>
@@ -103,6 +178,11 @@
           "type": "image_picker",
           "id": "image",
           "label": "品牌图片，建议尺寸：1920px * 91px"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_image",
+          "label": "移动端品牌图片，建议尺寸：1200px * 91px"
         }
       ]
     }
