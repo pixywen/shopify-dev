@@ -122,3 +122,64 @@ a.account-logout span {
   line-height: 14.63px;
   color: rgba(0, 0, 0, 1);
 }
+
+@media screen and (max-width: 749px) {
+  .customer.account {
+    padding-top: 10.8vw;
+    padding-bottom: 30.8vw;
+  }
+  .account-avatar {
+    width: 10.66vw;
+    height: 10.66vw;
+    margin: 0 auto 2.66vw;
+    font-size: 4.8vw;
+  }
+  .account-header {
+    margin-bottom: 10.93vw;
+  }
+  h1.customer__title {
+    font-size: 4.8vw;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: normal;
+    padding-bottom: 3.2vw;
+  }
+  .account-email {
+    font-size: 3.2vw;
+  }
+  a.account-logout span {
+    font-size: 2.4vw;
+  }
+  a.account-logout {
+    margin-top: 5.33vw;
+  }
+  a.account-logout svg, a.account-logout .svg-wrapper {
+    width: 3.46vw;
+    height: 3.46vw;
+  }
+  .account-cards {
+    gap: 3.2vw;
+  }
+  .account-cards .account-card {
+    width: 77.33vw;
+    height: 25.33vw;
+  }
+  .account-card__icon img {
+    width: 6.66vw;
+  }
+  .account-card__icon {
+    width: 6.66vw;
+    height: 6.66vw;
+    margin-bottom: 0;
+  }
+  h2.account-card__title {
+    font-size: 2.66vw;
+    margin-top: 2vw;
+    margin-bottom: 0.4vw;
+    line-height: normal;
+  }
+  .account-card__desc {
+    font-size: 1.6vw;
+    
+  }
+}
