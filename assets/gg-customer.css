@@ -1091,3 +1091,66 @@ button.button--disabled {
   color: rgba(56, 56, 56, 1);
   margin-top: 19px;
 }
+
+@media only screen and (max-width: 750px) {
+  .customer.addresses .gg-address-title {
+    font-size: 4.8vw;
+    line-height: normal;
+    padding-bottom: 0;
+  }
+  .customer.addresses a {
+    font-size: 2.4vw;
+    line-height: normal;
+  }
+  .customer.addresses .gg-address-add__btn {
+    width: 36.53vw;
+    height: 6.4vw;
+    font-size: 2.1vw;
+    line-height: 6.4vw;
+    min-height: auto;
+    min-width: auto;
+    margin: 3.2vw 0 0;
+  }
+  .gg-address-list {
+    margin: 0;
+    padding-top: 7.46vw;
+  }
+  .gg-address-list li {
+    margin-top: 0;
+  }
+  .customer.addresses .gg-address-list h2 {
+    margin: 0;
+    font-size: 4.8vw;
+    line-height: normal;
+  }
+  .customer.addresses .gg-address-list__default {
+    width: 80vw;
+    margin: 4vw auto 0;
+    padding-top: 4.53vw;
+    padding-bottom: 6.13vw;
+    min-height: 32vw;
+  }
+  .addresses ul p {
+    font-size: 2.13vw;
+  }
+  .customer.addresses .gg-address-list__default .gg-edit-button,
+  .customer.addresses .gg-address-list__default .gg-delete-button {
+    width: 16.93vw;
+    height: 6.4vw;
+    min-width: auto;
+    min-height: auto;
+    font-size: 2.13vw;
+    top: 19.46vw;
+    margin: 0;
+  }
+  .customer.addresses .gg-address-list__default .gg-edit-button {
+    left: 21.73vw;
+  }
+  .customer.addresses .gg-address-list__default .gg-delete-button {
+    right: 21.73vw;
+  }
+  .addresses form {
+    padding: 0 2vw;
+    overflow: hidden;
+  }
+}
