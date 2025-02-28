@@ -68,8 +68,8 @@
   {%- endpaginate -%}
   {% else %}
   <div class="login-required">
-    <p>请先登录查看订单</p>
-    <a href="{{ routes.account_login_url }}" class="button">登录账户</a>
+    <p>Please log in to view your orders.</p>
+    {% comment %} <a href="{{ routes.account_login_url }}" class="button">登录账户</a> {% endcomment %}
   </div>
 {% endif %}
 </div>
