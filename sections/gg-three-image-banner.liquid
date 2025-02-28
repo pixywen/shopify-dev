@@ -27,7 +27,7 @@
   <div class="gg-three-banner-images">
     {%- if section.settings.image_1 != blank -%}
       <div class="banner-image-item">
-        {{ section.settings.image_1 | image_url: width: 800 | image_tag:
+        {{ section.settings.image_1 | image_url: width: 900 | image_tag:
           loading: 'eager',
           width: section.settings.image_1.width,
           height: section.settings.image_1.height,
@@ -38,7 +38,7 @@
 
     {%- if section.settings.image_2 != blank -%}
       <div class="banner-image-item">
-        {{ section.settings.image_2 | image_url: width: 800 | image_tag:
+        {{ section.settings.image_2 | image_url: width: 900 | image_tag:
           loading: 'eager',
           width: section.settings.image_2.width,
           height: section.settings.image_2.height,
@@ -49,7 +49,7 @@
 
     {%- if section.settings.image_3 != blank -%}
       <div class="banner-image-item">
-        {{ section.settings.image_3 | image_url: width: 800 | image_tag:
+        {{ section.settings.image_3 | image_url: width: 900 | image_tag:
           loading: 'eager',
           width: section.settings.image_3.width,
           height: section.settings.image_3.height,
@@ -66,55 +66,55 @@
   "settings": [
     {
       "type": "header",
-      "content": "Banner Content"
+      "content": "横幅内容"
     },
     {
       "type": "text",
       "id": "small_heading_above",
-      "label": "Small heading above",
+      "label": "上方小标题",
       "default": "ALPARGALI"
     },
     {
       "type": "text",
       "id": "heading",
-      "label": "Main heading",
+      "label": "主标题",
       "default": "Gallary"
     },
     {
       "type": "text",
       "id": "small_heading_below",
-      "label": "Small heading below",
+      "label": "下方小标题",
       "default": "From freezing cold to rainy days, Alpargali has you covered."
     },
     {
       "type": "text",
       "id": "button_label",
-      "label": "Button label",
+      "label": "按钮文本",
       "default": "SHOP NOW"
     },
     {
       "type": "url",
       "id": "button_link",
-      "label": "Button link"
+      "label": "按钮链接"
     },
     {
       "type": "header",
-      "content": "Images"
+      "content": "图片设置"
     },
     {
       "type": "image_picker",
       "id": "image_1",
-      "label": "First Image"
+      "label": "第一张图片"
     },
     {
       "type": "image_picker",
       "id": "image_2",
-      "label": "Second Image"
+      "label": "第二张图片"
     },
     {
       "type": "image_picker",
       "id": "image_3",
-      "label": "Third Image"
+      "label": "第三张图片"
     }
   ],
   "presets": [
