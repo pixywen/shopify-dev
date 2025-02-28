@@ -361,10 +361,22 @@
           "type": "content_block",
           "settings": {
             "block_type": "heading_text",
-            "margin_top": 68,
-            "margin_bottom": 32,
+            "margin_top": 0,
+            "margin_bottom": 0,
             "heading": "<p>The Difference is Clear</p>",
             "content": "",
+            "target_tab": "description"
+          }
+        },
+        "image_banner_XfyKGt": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/product-detail-b-ib-05.png",
+            "image_mobile": "shopify://shop_images/product-detail-b-ib-05-m.png",
+            "margin_top": 0,
+            "margin_bottom": 32,
+            "padding_x_desktop": 6,
+            "padding_x_mobile": 0,
             "target_tab": "description"
           }
         },
@@ -395,6 +407,7 @@
         "carousel_fzniPB",
         "collage_cfpQpc",
         "content_block_RiEbHT",
+        "image_banner_XfyKGt",
         "faq_yqgwMK",
         "judge_me_reviews_review_widget_JctMNU"
       ],
