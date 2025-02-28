@@ -44,6 +44,7 @@
         },
         "divider_3i4EF3": {
           "type": "divider",
+          "disabled": true,
           "settings": {
             "margin_top": 20,
             "margin_bottom": 20
