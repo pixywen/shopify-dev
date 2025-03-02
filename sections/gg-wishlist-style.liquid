@@ -1,0 +1,70 @@
+{% stylesheet %}
+
+/* .swym-wishlist-container-title-bar {
+  display: none !important;
+} */
+
+.swym-wishlist-context-menu,
+.swym-action-container {
+  display: none !important;
+}
+
+/* 隐藏详情页面中的标题 */
+.swym-wishlist-detail-header {
+  display: none !important;
+}
+
+/* 只为顶部标题添加心形图标 */
+.swym-wishlist-container-title-bar .swym-wishlist-main-title {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+.swym-wishlist-container-title-bar .swym-wishlist-main-title::before {
+  content: '' !important;
+  display: inline-block !important;
+  width: 24px !important;
+  height: 24px !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'%3E%3Cpath d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: contain !important;
+}
+
+.swym-wishlist-detail-separator{
+  display: none !important;
+}
+
+.swym-wishlist-image-wrapper {
+  position: relative !important;
+  width: 100% !important;
+  padding-bottom: 136.32% !important; /* 936:1276 Aspect Ratio */
+  overflow: hidden !important;
+  border-radius: 4px !important;
+}
+
+.swym-wishlist-image-wrapper .swym-wishlist-image {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: auto !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: cover !important;
+}
+
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Wishlist Style Override",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Wishlist Style Override"
+    }
+  ]
+}
+{% endschema %} 
