@@ -266,10 +266,12 @@
     "contact": {
       "form": {
         "title": "Contact form",
-        "name": "Name",
-        "email": "Email",
-        "phone": "Phone number",
+        "name": "Full Name",
+        "email": "E-mail",
+        "phone": "Phone Number",
         "comment": "Comment",
+        "message": "Message",
+        "message_placeholder": "write your message",
         "send": "Send",
         "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
         "error_heading": "Please adjust the following:"
