@@ -11,9 +11,52 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 40,
         "padding_bottom": 40
+      }
+    },
+    "gg_rich_text_page_U3MwqC": {
+      "type": "gg-rich-text-page",
+      "blocks": {
+        "heading_dRVJkq": {
+          "type": "heading",
+          "settings": {
+            "text": "Contact",
+            "font": "montserrat_n6",
+            "font_size": 32,
+            "font_weight": 600,
+            "letter_spacing": 0,
+            "line_height": 40,
+            "margin_top": 25,
+            "margin_bottom": 25
+          }
+        },
+        "text_h8cgAm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’re here to help with any questions or feedback you might have about our products. Reach out to us through any of the following methods:</p><p> </p><ul><li>Email: hello@alpargali.com – Mon - Fri 9am - 6pm PT</li><li>Social Media: Instagram/Facebook, etc</li></ul>",
+            "font": "montserrat_n4",
+            "font_size": 16,
+            "font_weight": 400,
+            "letter_spacing": 1,
+            "line_height": 27,
+            "margin_top": 25,
+            "margin_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading_dRVJkq",
+        "text_h8cgAm"
+      ],
+      "settings": {
+        "content_width": 1200,
+        "padding_left": 20,
+        "padding_right": 20,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "gg_contact_us_page_tQbFiy": {
@@ -22,13 +65,14 @@
         "heading": "",
         "heading_size": "h1",
         "color_scheme": "",
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     }
   },
   "order": [
     "main",
+    "gg_rich_text_page_U3MwqC",
     "gg_contact_us_page_tQbFiy"
   ]
 }
