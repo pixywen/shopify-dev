@@ -64,12 +64,6 @@
   resize: vertical;
 }
 
-@media screen and (max-width: 750px) {
-  .gg-field {
-    margin-bottom: 2rem;
-  }
-}
-
 .gg-contact__button {
   margin-top: 3rem;
 }
@@ -84,20 +78,6 @@
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 750px) {
-  .gg-contact__button {
-    margin-top: 4rem;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .gg-contact__fields {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 2rem;
-  }
-}
-
 /* 错误状态样式 */
 .gg-field--with-error .gg-field__input {
   border-color: rgba(var(--color-error), 0.4);
@@ -110,3 +90,36 @@
   display: flex;
   align-items: center;
 } 
+
+
+@media screen and (max-width: 750px) {
+  .gg-contact {
+    padding: 0 7.6vw 0 9.06vw;
+  }
+  .gg-contact__fields {
+    
+  }
+  .gg-field__label {
+    font-size: 2.4vw;
+    margin-bottom: 1.6vw;
+    line-height: 2.8vw;
+    font-weight: 600;
+  }
+  .gg-contact__button button {
+    height: 10.93vw;
+    font-size: 3.2vw;
+  }
+  .gg-contact__button {
+    margin-top: 4.13vw;
+  }
+  .gg-field__input {
+    height: 9.46vw;
+    padding: 3.2vw 3.59vw 3.2vw;
+    font-size: 2.4vw;
+    border: 1px solid rgba(184, 184, 184, 1);
+    border-color: rgba(184, 184, 184, 1) !important;
+  }
+  .gg-field {
+    margin-bottom: 4.53vw;
+  }
+}
