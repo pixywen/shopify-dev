@@ -1,7 +1,7 @@
 .gg-contact {
   max-width: 78.5rem;
   padding-bottom: 160px !important;
-  padding-top: 113px !important;
+  padding-top: 50px !important;
 }
 
 .gg-contact img {
@@ -13,7 +13,9 @@
 }
 
 .gg-contact .icon-success {
-  margin-top: 0.2rem;
+  width: 100px;
+  display: block;
+  margin: 20px auto 20px;
 }
 
 /* 表单字段基础样式 */
