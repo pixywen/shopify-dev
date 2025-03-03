@@ -1,3 +1,15 @@
+<style>
+.swym-wishlist-container-title-bar .swym-wishlist-main-title::before {
+  content: '' !important;
+  display: inline-block !important;
+  width: 24px !important;
+  height: 24px !important;
+  background-image: url('{{ 'icon-wishlist.svg' | asset_url }}') !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: contain !important;
+}
+</style>
 {% stylesheet %}
 
 /* .swym-wishlist-container-title-bar {
@@ -53,16 +65,7 @@
   gap: 10px !important;
 }
 
-.swym-wishlist-container-title-bar .swym-wishlist-main-title::before {
-  content: '' !important;
-  display: inline-block !important;
-  width: 24px !important;
-  height: 24px !important;
-  background-image: url('{{ 'icon-wishlist.svg' | asset_url }}') !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  background-size: contain !important;
-}
+
 
 .swym-wishlist-detail-separator{
   display: none !important;
