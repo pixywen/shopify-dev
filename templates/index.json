@@ -161,6 +161,8 @@
         "small_heading_below": "",
         "button_label": "SHOP NOW",
         "button_link": "",
+        "image": "shopify://shop_images/sib-shell_jackets.jpg",
+        "mobile_image": "shopify://shop_images/sib-m-shell_jackets.jpg",
         "description": ""
       }
     },
@@ -172,6 +174,8 @@
         "small_heading_below": "",
         "button_label": "SHOP NOW",
         "button_link": "",
+        "image": "shopify://shop_images/s-ib-insulated_jackets.jpg",
+        "mobile_image": "shopify://shop_images/sib-m-insulated_jackets.jpg",
         "description": ""
       }
     },
@@ -183,6 +187,8 @@
         "small_heading_below": "",
         "button_label": "SHOP NOW",
         "button_link": "",
+        "image": "shopify://shop_images/sib-vest.jpg",
+        "mobile_image": "shopify://shop_images/sib-m-vest.jpg",
         "description": ""
       }
     },
@@ -193,7 +199,10 @@
         "heading": "Gallary",
         "small_heading_below": "From freezing cold to rainy days, Alpargali has you covered.",
         "button_label": "SHOP NOW",
-        "button_link": ""
+        "button_link": "",
+        "image_1": "shopify://shop_images/s-tib-01.jpg",
+        "image_2": "shopify://shop_images/s-tib-02.jpg",
+        "image_3": "shopify://shop_images/s-tib-03.jpg"
       }
     },
     "gg_newsletter_FaMF9W": {
@@ -228,9 +237,13 @@
         "padding_top": 40,
         "padding_bottom": 52,
         "show_bottom_content": true,
+        "feature1_icon": "shopify://shop_images/icon-index-email-bottom-1.svg",
         "feature1_text": "Free Shipping over $169",
-        "feature2_text": "2个Kickstarter成功活动",
+        "feature2_icon": "shopify://shop_images/icon-index-email-bottom-2.svg",
+        "feature2_text": "2 Kickstarter Successful Campaigns",
+        "feature3_icon": "shopify://shop_images/icon-index-email-bottom-3.svg",
         "feature3_text": "Lifetime Guarantee",
+        "feature4_icon": "shopify://shop_images/icon-index-email-bottom-4.svg",
         "feature4_text": "Trusted By 15,00+ Customers"
       }
     }
