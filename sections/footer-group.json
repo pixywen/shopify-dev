@@ -92,7 +92,7 @@
             "medium_hide": false,
             "large_up_hide": false,
             "heading": "About Us",
-            "menu": "about-us",
+            "menu": "aurora-footer-about-us",
             "show_social": true,
             "show_login_button": true,
             "login_button_text": "Log In"
