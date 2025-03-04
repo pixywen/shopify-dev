@@ -308,7 +308,23 @@
                           {%- if variant_for_value.available -%}
                             {%- liquid
                               assign swatch_value = null
-                              if value.swatch.image
+                              assign swatch_image = null
+                              
+                              # 构建特定颜色的 swatch 标识符
+                              assign swatch_identifier = 'swatch-' | append: value
+                              
+                              # 查找对应颜色的 swatch 图片
+                              for media in card_product.media
+                                if media.alt == swatch_identifier
+                                  assign swatch_image = media
+                                  break
+                                endif
+                              endfor
+                              
+                              if swatch_image
+                                assign image_url = swatch_image | image_url: width: 160
+                                assign swatch_value = 'url(' | append: image_url | append: ')'
+                              elsif value.swatch.image
                                 assign image_url = value.swatch.image | image_url: width: 160
                                 assign swatch_value = 'url(' | append: image_url | append: ')'
                               elsif value.swatch.color
@@ -321,7 +337,9 @@
                               class="color-swatch{% if forloop.first %} color-swatch--active{% endif %}"
                               data-variant-id="{{ variant_for_value.id }}"
                               data-variant-image="{{ variant_for_value.featured_media | image_url: width: 533 }}"
-                              {% if value.swatch.image %}
+                              {% if swatch_image %}
+                                style="background-image: url({{ swatch_image | image_url: width: 160 }});"
+                              {% elsif value.swatch.image %}
                                 style="background-image: url({{ value.swatch.image | image_url: width: 160 }});"
                               {% elsif value.swatch.color %}
                                 style="background-color: rgb({{ value.swatch.color.rgb }});"
