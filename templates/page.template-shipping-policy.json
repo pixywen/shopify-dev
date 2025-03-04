@@ -32,7 +32,7 @@
         "heading_cfVxM3": {
           "type": "heading",
           "settings": {
-            "text": "页面标题",
+            "text": "Shipping Policy",
             "font": "montserrat_n6",
             "font_size": 32,
             "font_weight": 600,
@@ -41,10 +41,104 @@
             "margin_top": 25,
             "margin_bottom": 25
           }
+        },
+        "subheading_Q4wqd3": {
+          "type": "subheading",
+          "settings": {
+            "text": "We offer free shipping on all orders over $169.",
+            "font": "montserrat_n6",
+            "font_size": 16,
+            "font_weight": 600,
+            "letter_spacing": 0,
+            "line_height": 32,
+            "margin_top": 25,
+            "margin_bottom": 25
+          }
+        },
+        "divider_rdLg3E": {
+          "type": "divider",
+          "settings": {
+            "margin_top": 25,
+            "margin_bottom": 25
+          }
+        },
+        "subheading_k6HBaN": {
+          "type": "subheading",
+          "settings": {
+            "text": "How long does it take for my order to ship once it is placed?",
+            "font": "montserrat_n6",
+            "font_size": 16,
+            "font_weight": 600,
+            "letter_spacing": 0,
+            "line_height": 32,
+            "margin_top": 25,
+            "margin_bottom": 25
+          }
+        },
+        "text_aAhjai": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Online orders are usually shipped within 1-2 business days from the time they are placed. During sale periods, processing times may increase by an additional 1-2 business days. *Orders placed after 11am PST on Fridays or over the weekend will be processed the following Monday. Estimated delivery times do not include processing time, holidays, or pending time. Orders cannot be canceled or edited once placed. Please allow 48 hours after processing for a tracking update.</p>",
+            "font": "montserrat_n4",
+            "font_size": 16,
+            "font_weight": 400,
+            "letter_spacing": 1,
+            "line_height": 27,
+            "margin_top": 25,
+            "margin_bottom": 25
+          }
+        },
+        "text_FYkEN3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You can track your order via the Shipment Notification E-mail(s).Please note that you may receive more than one Shipment Notification E-mail if item(s) from your order are shipping separately.If tracking information on the shipping carrier page for your order is not showing activity/movement for more than 5 business days, please contact Customer Service.</p>",
+            "font": "montserrat_n4",
+            "font_size": 16,
+            "font_weight": 400,
+            "letter_spacing": 1,
+            "line_height": 27,
+            "margin_top": 25,
+            "margin_bottom": 25
+          }
+        },
+        "subheading_dftchb": {
+          "type": "subheading",
+          "settings": {
+            "text": "Shipping Cost",
+            "font": "montserrat_n6",
+            "font_size": 16,
+            "font_weight": 600,
+            "letter_spacing": 0,
+            "line_height": 32,
+            "margin_top": 25,
+            "margin_bottom": 25
+          }
+        },
+        "table_YcAFrh": {
+          "type": "table",
+          "settings": {
+            "header_1": "Shipping Method",
+            "header_2": "Processed Time",
+            "header_3": "Estimated Delivery",
+            "header_4": "Notice",
+            "row1_col1": "<p>Standard Shipping</p>",
+            "row1_col2": "<p>1-2 business days</p>",
+            "row1_col3": "<p>4-10 business days</p>",
+            "row1_col4": "<p>Your local Post Office or regional carrier may provide the final delivery</p>",
+            "margin_top": 25,
+            "margin_bottom": 25
+          }
         }
       },
       "block_order": [
-        "heading_cfVxM3"
+        "heading_cfVxM3",
+        "subheading_Q4wqd3",
+        "divider_rdLg3E",
+        "subheading_k6HBaN",
+        "text_aAhjai",
+        "text_FYkEN3",
+        "subheading_dftchb",
+        "table_YcAFrh"
       ],
       "settings": {
         "content_width": 1200,

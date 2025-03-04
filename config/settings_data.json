@@ -152,7 +152,7 @@
         "type": "shopify://apps/wishlist-plus/blocks/wishlist-app-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
         "disabled": false,
         "settings": {
-          "storefront_layout_enabled": true,
+          "storefront_layout_enabled": false,
           "storefront_layout_type": "as-drawer",
           "storefront_layout_collection_enabled": true,
           "storefront_layout_primary_bg_color": "#000000",
