@@ -17,10 +17,10 @@
         "small_heading_below": "From freezing cold to rainy days, Alpargali has you covered.",
         "button_label": "SHOP NOW",
         "button_link": "",
-        "image": "",
-        "video": "",
-        "mobile_image": "",
-        "mobile_video": "",
+        "image": "shopify://shop_images/aurora-top-banner.jpg",
+        "video": "shopify://files/videos/aurora-top-banner.mp4",
+        "mobile_image": "shopify://shop_images/aurora-top-banner-m.jpg",
+        "mobile_video": "shopify://files/videos/aurora-top-banner-m.mov",
         "description": ""
       }
     },
@@ -29,10 +29,7 @@
       "blocks": {
         "image_64Vaeb": {
           "type": "image",
-          "settings": {
-            "image": "",
-            "mobile_image": ""
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -49,7 +46,6 @@
         "banner_tja83h": {
           "type": "banner",
           "settings": {
-            "image": "",
             "subtitle": "Classic collection",
             "title": "Do-it-all Jacket",
             "button_label": "SHOP NOW",
@@ -59,7 +55,6 @@
         "banner_FWeBpK": {
           "type": "banner",
           "settings": {
-            "image": "",
             "subtitle": "F/W 2024 collection",
             "title": "Aerogel Puffer",
             "button_label": "SHOP NOW",
@@ -79,7 +74,6 @@
         "banner_npKCK9": {
           "type": "banner",
           "settings": {
-            "image": "",
             "subtitle": "Classic collection",
             "title": "Do-it-all Jacket",
             "button_label": "SHOP NOW",
@@ -89,7 +83,6 @@
         "banner_xrUmaj": {
           "type": "banner",
           "settings": {
-            "image": "",
             "subtitle": "F/W 2024 collection",
             "title": "Aerogel Puffer",
             "button_label": "SHOP NOW",
@@ -111,13 +104,7 @@
           "settings": {
             "product": "do-it-all-jacket",
             "color_name_1": "Black",
-            "color_1": "",
-            "main_image_1": "",
-            "model_image_1": "",
             "color_name_2": "White",
-            "color_2": "",
-            "main_image_2": "",
-            "model_image_2": "",
             "color_name_3": ""
           }
         },
@@ -126,13 +113,7 @@
           "settings": {
             "product": "do-it-all-jacket",
             "color_name_1": "Black",
-            "color_1": "",
-            "main_image_1": "",
-            "model_image_1": "",
             "color_name_2": "White",
-            "color_2": "",
-            "main_image_2": "",
-            "model_image_2": "",
             "color_name_3": ""
           }
         },
@@ -141,13 +122,7 @@
           "settings": {
             "product": "do-it-all-jacket",
             "color_name_1": "Black",
-            "color_1": "",
-            "main_image_1": "",
-            "model_image_1": "",
             "color_name_2": "White",
-            "color_2": "",
-            "main_image_2": "",
-            "model_image_2": "",
             "color_name_3": ""
           }
         },
@@ -156,13 +131,7 @@
           "settings": {
             "product": "do-it-all-jacket",
             "color_name_1": "Black",
-            "color_1": "",
-            "main_image_1": "",
-            "model_image_1": "",
             "color_name_2": "White",
-            "color_2": "",
-            "main_image_2": "",
-            "model_image_2": "",
             "color_name_3": ""
           }
         }
@@ -185,10 +154,6 @@
         "small_heading_below": "",
         "button_label": "SHOP NOW",
         "button_link": "",
-        "image": "",
-        "mobile_image": "",
-        "video": "",
-        "mobile_video": "",
         "description": ""
       }
     },
@@ -200,10 +165,6 @@
         "small_heading_below": "",
         "button_label": "SHOP NOW",
         "button_link": "",
-        "image": "",
-        "mobile_image": "",
-        "video": "",
-        "mobile_video": "",
         "description": ""
       }
     },
@@ -215,10 +176,6 @@
         "small_heading_below": "",
         "button_label": "SHOP NOW",
         "button_link": "",
-        "image": "",
-        "mobile_image": "",
-        "video": "",
-        "mobile_video": "",
         "description": ""
       }
     },
@@ -229,10 +186,7 @@
         "heading": "Gallary",
         "small_heading_below": "From freezing cold to rainy days, Alpargali has you covered.",
         "button_label": "SHOP NOW",
-        "button_link": "",
-        "image_1": "",
-        "image_2": "",
-        "image_3": ""
+        "button_link": ""
       }
     },
     "gg_newsletter_FaMF9W": {
@@ -267,13 +221,9 @@
         "padding_top": 40,
         "padding_bottom": 52,
         "show_bottom_content": true,
-        "feature1_icon": "",
         "feature1_text": "Free Shipping over $169",
-        "feature2_icon": "",
         "feature2_text": "2个Kickstarter成功活动",
-        "feature3_icon": "",
         "feature3_text": "Lifetime Guarantee",
-        "feature4_icon": "",
         "feature4_text": "Trusted By 15,00+ Customers"
       }
     }
