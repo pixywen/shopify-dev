@@ -42,7 +42,6 @@
           "type": "menu_image",
           "settings": {
             "menu_title": "Clothing",
-            "menu_image": "shopify://shop_images/s-mi-01.jpg",
             "menu_link": ""
           }
         },
@@ -70,7 +69,7 @@
       ],
       "settings": {
         "logo_position": "middle-left",
-        "menu": "link-list-1",
+        "menu": "",
         "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,

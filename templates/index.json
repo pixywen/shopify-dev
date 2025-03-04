@@ -29,7 +29,10 @@
       "blocks": {
         "image_64Vaeb": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/icon-index-brand-mark.png",
+            "mobile_image": "shopify://shop_images/icon-index-brand-mark-m.png"
+          }
         }
       },
       "block_order": [
@@ -46,6 +49,7 @@
         "banner_tja83h": {
           "type": "banner",
           "settings": {
+            "image": "shopify://shop_images/s-dib-m-01.jpg",
             "subtitle": "Classic collection",
             "title": "Do-it-all Jacket",
             "button_label": "SHOP NOW",
@@ -55,6 +59,7 @@
         "banner_FWeBpK": {
           "type": "banner",
           "settings": {
+            "image": "shopify://shop_images/s-dib-m-02.jpg",
             "subtitle": "F/W 2024 collection",
             "title": "Aerogel Puffer",
             "button_label": "SHOP NOW",
@@ -74,6 +79,7 @@
         "banner_npKCK9": {
           "type": "banner",
           "settings": {
+            "image": "shopify://shop_images/s-dib-01.jpg",
             "subtitle": "Classic collection",
             "title": "Do-it-all Jacket",
             "button_label": "SHOP NOW",
@@ -83,6 +89,7 @@
         "banner_xrUmaj": {
           "type": "banner",
           "settings": {
+            "image": "shopify://shop_images/s-dib-02.jpg",
             "subtitle": "F/W 2024 collection",
             "title": "Aerogel Puffer",
             "button_label": "SHOP NOW",
