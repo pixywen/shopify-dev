@@ -42,6 +42,7 @@
           "type": "menu_image",
           "settings": {
             "menu_title": "Clothing",
+            "menu_image": "shopify://shop_images/s-mi-01.jpg",
             "menu_link": ""
           }
         },
