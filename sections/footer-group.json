@@ -21,7 +21,7 @@
             "medium_hide": true,
             "large_up_hide": true,
             "heading": "NeedHelp",
-            "menu": "needhelp"
+            "menu": ""
           }
         },
         "gg_menu_accordion_CqPb7t": {
@@ -31,7 +31,7 @@
             "medium_hide": true,
             "large_up_hide": true,
             "heading": "Shop",
-            "menu": "shop"
+            "menu": ""
           }
         },
         "gg_menu_accordion_dFUVcJ": {
@@ -72,7 +72,7 @@
             "medium_hide": false,
             "large_up_hide": false,
             "heading": "Need Help？",
-            "menu": "needhelp"
+            "menu": "aurora-footer-needhelp"
           }
         },
         "gg_menu_list_nested_b3f9EN": {
@@ -82,7 +82,7 @@
             "medium_hide": false,
             "large_up_hide": false,
             "heading": "Shop",
-            "menu": "shop"
+            "menu": ""
           }
         },
         "gg_menu_social_UP6GrN": {
