@@ -21,7 +21,7 @@
             "medium_hide": true,
             "large_up_hide": true,
             "heading": "NeedHelp",
-            "menu": ""
+            "menu": "aurora-footer-needhelp"
           }
         },
         "gg_menu_accordion_CqPb7t": {
@@ -31,7 +31,7 @@
             "medium_hide": true,
             "large_up_hide": true,
             "heading": "Shop",
-            "menu": ""
+            "menu": "aurora-main-menu"
           }
         },
         "gg_menu_accordion_dFUVcJ": {
