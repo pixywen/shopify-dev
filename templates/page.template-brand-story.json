@@ -20,6 +20,8 @@
     "gg_simple_image_banner_gKEQM4": {
       "type": "gg-simple-image-banner",
       "settings": {
+        "image": "shopify://shop_images/s-sib-brand.jpg",
+        "image_mobile": "shopify://shop_images/s-sib-brand-m.jpg",
         "padding_top": 0,
         "padding_bottom": 0,
         "padding_left": 0,
@@ -41,10 +43,24 @@
             "margin_top": 25,
             "margin_bottom": 25
           }
+        },
+        "text_Gd9d8Q": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "font": "montserrat_n4",
+            "font_size": 16,
+            "font_weight": 400,
+            "letter_spacing": 1,
+            "line_height": 27,
+            "margin_top": 25,
+            "margin_bottom": 25
+          }
         }
       },
       "block_order": [
-        "heading_cfVxM3"
+        "heading_cfVxM3",
+        "text_Gd9d8Q"
       ],
       "settings": {
         "content_width": 1200,
