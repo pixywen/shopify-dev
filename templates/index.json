@@ -163,6 +163,8 @@
         "button_link": "",
         "image": "shopify://shop_images/sib-shell_jackets.jpg",
         "mobile_image": "shopify://shop_images/sib-m-shell_jackets.jpg",
+        "video": "shopify://files/videos/sib-shell jackets.mp4",
+        "mobile_video": "shopify://files/videos/sib-m-shell jackets.mov",
         "description": ""
       }
     },
@@ -176,6 +178,8 @@
         "button_link": "",
         "image": "shopify://shop_images/s-ib-insulated_jackets.jpg",
         "mobile_image": "shopify://shop_images/sib-m-insulated_jackets.jpg",
+        "video": "shopify://files/videos/sib-insulated jackets.mp4",
+        "mobile_video": "shopify://files/videos/sib-m-shell jackets.mov",
         "description": ""
       }
     },
@@ -189,6 +193,8 @@
         "button_link": "",
         "image": "shopify://shop_images/sib-vest.jpg",
         "mobile_image": "shopify://shop_images/sib-m-vest.jpg",
+        "video": "shopify://files/videos/sib-vests.mp4",
+        "mobile_video": "shopify://files/videos/sib-m-shell.mov",
         "description": ""
       }
     },
