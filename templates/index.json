@@ -33,10 +33,15 @@
             "image": "shopify://shop_images/icon-index-brand-mark.png",
             "mobile_image": "shopify://shop_images/icon-index-brand-mark-m.png"
           }
+        },
+        "image_73Kgbh": {
+          "type": "image",
+          "settings": {}
         }
       },
       "block_order": [
-        "image_64Vaeb"
+        "image_64Vaeb",
+        "image_73Kgbh"
       ],
       "settings": {
         "scroll_speed": 30,
@@ -53,7 +58,7 @@
             "subtitle": "Classic collection",
             "title": "Do-it-all Jacket",
             "button_label": "SHOP NOW",
-            "button_link": ""
+            "button_link": "shopify://products/mens-all-weather-outdoor-jacket"
           }
         },
         "banner_FWeBpK": {
@@ -63,7 +68,7 @@
             "subtitle": "F/W 2024 collection",
             "title": "Aerogel Puffer",
             "button_label": "SHOP NOW",
-            "button_link": ""
+            "button_link": "shopify://products/graphene-lightweight-jacket"
           }
         }
       },
