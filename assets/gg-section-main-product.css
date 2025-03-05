@@ -1685,7 +1685,11 @@ div.accordion {
   .product .price .badge {
     margin-bottom: 0;
   }
+  .accordion__title {
+    font-size: 3.2vw;
+  }
   .product__accordion .accordion__content {
     font-size: 2.66vw;
+    line-height: 3.2vw;
   }
 }

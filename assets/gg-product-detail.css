@@ -72,6 +72,7 @@
 .product-block-heading-text {
   background: rgba(var(--color-background), 0.05);
   border-radius: 8px;
+  padding: 0 60px;
 }
 
 .block-heading {
@@ -213,14 +214,14 @@ a.jdgm-btn--border {
 a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
   color: rgba(255, 87, 51, 1);
 }
-@media (max-width: 990px) {
+@media screen and (max-width: 750px) {
   .product-block-heading-text {
     margin: 0;
     padding: 0 8.66vw;
   }
   
   .block-heading {
-    font-size: 1.6rem;
+    font-size: 6.4vw;
     line-height: normal;
   }
   
@@ -228,6 +229,7 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
     font-size: 3.2vw;
     padding-top: 3.73vw;
     padding-bottom: 4vw;
+    line-height: 4.26vw;
   }
   #judgeme_product_reviews .jdgm-rev-widg {
     padding: 0 7.46vw;
@@ -668,6 +670,25 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
   overflow-y: auto;
   color: rgba(var(--color-foreground), 0.75);
 }
+
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .collage-heading {
+    font-size: 24px;
+    line-height: normal;
+  }
+  .collage-subheading {
+    font-size: 18px;
+  }
+  .collage-text {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .carousel-caption {
+    font-size: 16px;
+    line-height: normal;
+  }
+}
+
 /* FAQ Block - End */
 /* 移动端样式 */
 @media screen and (max-width: 749px) {
