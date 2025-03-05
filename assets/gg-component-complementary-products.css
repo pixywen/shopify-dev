@@ -111,9 +111,9 @@ overflow: hidden;
  flex: 1;
 }
 @media screen and (min-width: 750px) and (max-width: 1200px) {
-  .complementary-products__container .card--horizontal .card__content {
+  /* .complementary-products__container .card--horizontal .card__content {
     flex-direction: column;
-  }
+  } */
 }
 
 .complementary-slide .card--text .card__content {
