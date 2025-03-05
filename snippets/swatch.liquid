@@ -1,25 +1,48 @@
-{% comment %}
+{%- comment -%}
   Renders a swatch component.
   Accepts:
   - swatch: {Object} a swatch object
   - shape: {String} swatch shape. Accepts 'square', defaults to circle.
+  - product: {Object} current product object
+  - color_name: {String} current color name
 
   Usage:
   {% render 'swatch',
-    swatch: value.swatch
-    shape: 'square'
+    swatch: value.swatch,
+    shape: 'square',
+    product: product,
+    color_name: value
   %}
-{% endcomment %}
+{%- endcomment -%}
+
 
 {%- liquid
   assign swatch_value = null
-  if swatch.image
-    assign image_url = swatch.image | image_url: width: 250
-    assign swatch_value = 'url(' | append: image_url | append: ')'
-    assign swatch_focal_point = swatch.image.presentation.focal_point
-  elsif swatch.color
-    assign swatch_value = 'rgb(' | append: swatch.color.rgb | append: ')'
+  
+  # 首先查找产品特定的色卡图片
+  if product != blank and color_name != blank
+    assign swatch_identifier = 'swatch-' | append: color_name
+    for media in product.media
+      # 使用 swatch-Color 作为色卡图片的标识
+      if media.alt == swatch_identifier
+        assign image_url = media.preview_image | image_url: width: 250
+        assign swatch_value = 'url(' | append: image_url | append: ')'
+        assign swatch_focal_point = media.presentation.focal_point
+        break
+      endif
+    endfor
   endif
+
+  # 如果没有找到产品特定的色卡，则使用默认的色卡逻辑
+  unless swatch_value
+    if swatch.image
+      assign image_url = swatch.image | image_url: width: 250
+      assign swatch_value = 'url(' | append: image_url | append: ')'
+      assign swatch_focal_point = swatch.image.presentation.focal_point
+    elsif swatch.color
+      assign swatch_value = 'rgb(' | append: swatch.color.rgb | append: ')'
+    endif
+  endunless
 -%}
 
 <span
