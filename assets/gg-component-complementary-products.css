@@ -90,7 +90,9 @@ product-recommendations.is-accordion + .accordion {
   display: flex;
   flex-direction: column;
 }
-
+.complementary-products__container .card__information {
+overflow: hidden;
+}
 .complementary-products__container .card--horizontal .card__inner {
   max-width: 100%;
 }
@@ -99,12 +101,18 @@ product-recommendations.is-accordion + .accordion {
   padding-top: 1rem;
   width: 100%;
   display: flex;
+  gap: 10px;
   justify-content: space-between;
 }
-
+.card__information .full-unstyled-link{
+ overflow: hidden;
+ white-space: nowrap;
+ text-overflow: ellipsis;
+ flex: 1;
+}
 @media screen and (min-width: 750px) and (max-width: 1200px) {
-  .complementary-products__container .card--horizontal .card__inner {
-    max-width: 25%;
+  .complementary-products__container .card--horizontal .card__content {
+    flex-direction: column;
   }
 }
 
