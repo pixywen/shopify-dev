@@ -33,15 +33,10 @@
             "image": "shopify://shop_images/icon-index-brand-mark.png",
             "mobile_image": "shopify://shop_images/icon-index-brand-mark-m.png"
           }
-        },
-        "image_73Kgbh": {
-          "type": "image",
-          "settings": {}
         }
       },
       "block_order": [
-        "image_64Vaeb",
-        "image_73Kgbh"
+        "image_64Vaeb"
       ],
       "settings": {
         "scroll_speed": 30,
