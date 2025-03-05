@@ -35,7 +35,6 @@
 
   # 如果没有找到产品特定的色卡，则使用默认的色卡逻辑
   unless swatch_value
-    echo 'Debug - Using fallback swatch logic<br>'
     if swatch.image
       assign image_url = swatch.image | image_url: width: 250
       assign swatch_value = 'url(' | append: image_url | append: ')'
