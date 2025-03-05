@@ -88,7 +88,7 @@
             "subtitle": "Classic collection",
             "title": "Do-it-all Jacket",
             "button_label": "SHOP NOW",
-            "button_link": ""
+            "button_link": "shopify://products/mens-all-weather-outdoor-jacket"
           }
         },
         "banner_xrUmaj": {
@@ -98,7 +98,7 @@
             "subtitle": "F/W 2024 collection",
             "title": "Aerogel Puffer",
             "button_label": "SHOP NOW",
-            "button_link": ""
+            "button_link": "shopify://products/graphene-lightweight-jacket"
           }
         }
       },
