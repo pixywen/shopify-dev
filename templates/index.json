@@ -153,9 +153,15 @@
         "product_dRYwKP": {
           "type": "product",
           "settings": {
-            "product": "do-it-all-jacket",
+            "product": "graphene-vest",
             "color_name_1": "Black",
-            "color_name_2": "White",
+            "color_1": "shopify://shop_images/color_08aba2e8-a248-4467-a044-3daa0a4deabb.png",
+            "main_image_1": "shopify://shop_images/4-1.jpg",
+            "model_image_1": "shopify://shop_images/4-2.jpg",
+            "color_name_2": "Sandstorm",
+            "color_2": "shopify://shop_images/color_5ad3148b-ff64-46d4-a8a6-89f5146f9a9d.png",
+            "main_image_2": "shopify://shop_images/4-3.jpg",
+            "model_image_2": "shopify://shop_images/4-4.jpg",
             "color_name_3": ""
           }
         }
