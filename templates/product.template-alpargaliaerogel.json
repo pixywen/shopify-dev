@@ -229,6 +229,62 @@
             "target_tab": "description"
           }
         },
+        "collage_byQmgc": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/product-detail-b-collage-01.jpg",
+            "heading": "1.0mm Aerogel Insulation",
+            "subheading": "Your warmth is non-negotiable",
+            "text": "<p>Aerogel, the world’s lightest solid, acts as an extraordinary thermal barrier by effectively blocking heat exchange. With a thickness of just 1.0mm, this advanced material maintains heat AND stonewalls cold air. This ensures the warmth generated inside stays inside, while the cold trying to seep in is blocked. No matter the conditions, you get maximum insulation with minimal bulk.</p>",
+            "target_tab": "description",
+            "margin_top": 32,
+            "margin_bottom": 0
+          }
+        },
+        "collage_dLqxPW": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_right",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/product-detail-b-collage-02.jpg",
+            "heading": "100% Graphene",
+            "subheading": "for Maximum Heat Retention",
+            "text": "<p>Embrace the cutting-edge power of graphene. With it, the Alpargali puffer creates unmatched warmth in any condition. The jacket features a 100% graphene panel in the center back, leveraging the material’s superior thermal conductivity to efficiently preserve body heat.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "collage_WXNq9Y": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/product-detail-b-collage-03.jpg",
+            "heading": "Sorona® Insulation",
+            "subheading": "High-performance Bio Polymer",
+            "text": "<p>Sorona® insulation is made in part with plant-based ingredients, it is a versatile fiber, and its long list of uses comes from a kink in the PTT polymer chain.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "collage_zR94Hn": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_right",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/product-detail-b-collage-04.jpg",
+            "heading": "Full-torso Defense",
+            "subheading": "Wins the War on Weather",
+            "text": "<p>The outer layer is crafted from Teflon™-coated fabric - resisting water, snow, and stains while remaining breathable. Tested to withstand 10,000mm of water, it’s engineered for the harshest conditions. And it’s fully machine washable for easy care.在这里添加您的文字内容...</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 32
+          }
+        },
         "content_block_DPjhDm": {
           "type": "content_block",
           "settings": {
@@ -237,7 +293,7 @@
             "margin_bottom": 32,
             "heading": "<p>产品详情</p>",
             "content": "<p>请输入详细说明内容...</p>",
-            "target_tab": "faq"
+            "target_tab": "description"
           }
         },
         "judge_me_reviews_review_widget_JctMNU": {
@@ -251,6 +307,10 @@
         "image_banner_Me8tAB",
         "content_block_rN49nb",
         "image_banner_9AcLc8",
+        "collage_byQmgc",
+        "collage_dLqxPW",
+        "collage_WXNq9Y",
+        "collage_zR94Hn",
         "content_block_DPjhDm",
         "judge_me_reviews_review_widget_JctMNU"
       ],
