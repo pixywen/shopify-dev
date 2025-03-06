@@ -72,7 +72,8 @@
           "type": "gg-heading-image",
           "settings": {
             "heading": "As Featured In:",
-            "image": "shopify://shop_images/prodcut-block-media.png"
+            "image": "shopify://shop_images/product-info-b-hi-01.png",
+            "image_mobile": "shopify://shop_images/product-info-b-hi-01-m.png"
           }
         },
         "complementary_MMXapa": {
@@ -93,7 +94,7 @@
           "settings": {
             "heading": "Details",
             "icon": "none",
-            "content": "",
+            "content": "<p>The Alpargali Puffer combines cutting-edge NASA-inspired technology with high-performance materials like aerogel and graphene, offering an unmatched weight-to-warmth ratio. Effective in temperatures from -40°C/-40°F to +10°C/50°F, it provides the warmth of a premium down jacket without the bulk. With a sleek design, over 30 functions, and 9 pockets, this versatile, year-round jacket is perfect for urban life and outdoor adventures alike. Whether facing extreme cold or mild weather, your comfort is guaranteed.</p>",
             "page": ""
           }
         },
@@ -102,7 +103,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "",
+            "content": "<p>Shell: Teflon-coatedInsulation: Aerogel, Graphene, SoronaWeight: 1000gBreathability: 10KWeather Resistant: YES(Teflon)Pockets: 9Suggested temperature range:-40°C/-40℉ to 20°C/68℉Packability: Easily packable for travelActivity: Adventure, Urban, Travel Aerogel Thickness: 1.0mm</p>",
             "page": ""
           }
         },
@@ -111,7 +112,7 @@
           "settings": {
             "heading": "Care",
             "icon": "none",
-            "content": "",
+            "content": "<p>Clean regularly, avoid regular detergents and fabric softenersUsage and Cleaning Frequency:- Intensive Use: Deep clean after 10 uses.- Low-Intensity Use: Deep clean every 1-2 months.</p>",
             "page": ""
           }
         }
