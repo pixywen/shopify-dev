@@ -289,10 +289,82 @@
           "type": "content_block",
           "settings": {
             "block_type": "heading_text",
+            "margin_top": 40,
+            "margin_bottom": 0,
+            "heading": "<p>Any Adventure, Anytime</p>",
+            "content": "<p>The Alpargali Puffer defies the thermometer, effective from -40°C/-40°F to +10°C /50°F. It’s like having a premium down jacket without the fill. Add in a sleek, modern design with over 30 functions including 9 pockets and we’re talking a versatile, year-round outerwear solution for the city nomad and the natural explorer. Extreme cold or mild conditions, your comfort is the same. The weather may be unpredictable. This puffer’s elite performance is not.</p>",
+            "target_tab": "description"
+          }
+        },
+        "carousel_8hkzfc": {
+          "type": "carousel",
+          "settings": {
+            "title": "",
+            "image_1": "shopify://shop_images/product-detail-b-c-01-01_2109f992-cdbb-4901-95ab-6beee2dbaee4.jpg",
+            "caption_1": "",
+            "hover_text_1": "",
+            "image_2": "shopify://shop_images/product-detail-b-c-01-02_8cd81a69-ed3a-4dc2-aeae-45ba960b9191.jpg",
+            "caption_2": "",
+            "hover_text_2": "",
+            "image_3": "shopify://shop_images/product-detail-b-c-01-03.jpg",
+            "caption_3": "",
+            "hover_text_3": "",
+            "caption_4": "",
+            "hover_text_4": "",
+            "caption_5": "",
+            "hover_text_5": "",
+            "caption_6": "",
+            "hover_text_6": "",
+            "caption_7": "",
+            "hover_text_7": "",
+            "caption_8": "",
+            "hover_text_8": "",
+            "caption_9": "",
+            "hover_text_9": "",
+            "caption_10": "",
+            "hover_text_10": "",
+            "caption_11": "",
+            "hover_text_11": "",
+            "caption_12": "",
+            "hover_text_12": "",
+            "autoplay_speed": 3,
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 32
+          }
+        },
+        "image_banner_agnmpQ": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/aa-detail-b-ib-04.jpg",
+            "image_mobile": "shopify://shop_images/aa-detail-b-ib-04-m.jpg",
+            "margin_top": 32,
+            "margin_bottom": 0,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "image_banner_iGmkgq": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/aa-detail-b-ib-05.jpg",
+            "image_mobile": "shopify://shop_images/aa-detail-b-ib-05-m.jpg",
+            "margin_top": 0,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "content_block_3WRjgm": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
             "margin_top": 32,
             "margin_bottom": 32,
-            "heading": "<p>产品详情</p>",
-            "content": "<p>请输入详细说明内容...</p>",
+            "heading": "",
+            "content": "<p>- Fleece-Lined Collar: Provides superior comfort and heating around your neck.</p><p>- YKK Zippers: Durable and wind-resistant zippers guarantee long-lasting protection.- Adjustable Hood with Drawstring: Malleable to different weather conditions, ensuring maximum coverage.</p><p>- Underarm Mesh Ventilation: Breathable mesh under the arms creates airflow, allowing heat to be efficiently redistributed so you’re never overheated OR underheated.</p><p>- Velcro Adjustable Cuffs: Customize the fit to block out cold winds and adapt to all weather conditions.</p>",
             "target_tab": "description"
           }
         },
@@ -312,6 +384,10 @@
         "collage_WXNq9Y",
         "collage_zR94Hn",
         "content_block_DPjhDm",
+        "carousel_8hkzfc",
+        "image_banner_agnmpQ",
+        "image_banner_iGmkgq",
+        "content_block_3WRjgm",
         "judge_me_reviews_review_widget_JctMNU"
       ],
       "settings": {
