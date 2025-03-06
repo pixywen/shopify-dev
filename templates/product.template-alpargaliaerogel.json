@@ -368,6 +368,29 @@
             "target_tab": "description"
           }
         },
+        "content_block_TnnFCM": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 32,
+            "margin_bottom": 0,
+            "heading": "<p>Alpargali Aerogel Puffer Jacket VS </p><p>Graphene Lightweight Jacket</p>",
+            "content": "",
+            "target_tab": "description"
+          }
+        },
+        "image_banner_xCeUjP": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/aa-detail-b-ib-06.png",
+            "image_mobile": "shopify://shop_images/aa-detail-b-ib-06-m.png",
+            "margin_top": 32,
+            "margin_bottom": 0,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
         "judge_me_reviews_review_widget_JctMNU": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
@@ -388,6 +411,8 @@
         "image_banner_agnmpQ",
         "image_banner_iGmkgq",
         "content_block_3WRjgm",
+        "content_block_TnnFCM",
+        "image_banner_xCeUjP",
         "judge_me_reviews_review_widget_JctMNU"
       ],
       "settings": {
