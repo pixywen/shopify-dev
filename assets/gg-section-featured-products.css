@@ -30,6 +30,7 @@
 /* 产品卡片样式 */
 .featured-product-card {
   position: relative;
+  overflow: hidden;
 }
 
 .product-link {
@@ -74,6 +75,7 @@
 /* 产品信息样式 */
 .product-info {
   padding: 10px 0;
+  overflow: hidden;
 }
 
 .product-title {
@@ -83,6 +85,10 @@
   line-height: 29px;
   color: rgba(0, 0, 0, 1);
   margin: 0 0 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
 }
 
 /* 价格样式 */
