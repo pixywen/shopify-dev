@@ -10,7 +10,7 @@ class MediaGalleryEx extends HTMLElement {
   initColorFilter() {
     // 改为监听标准的change事件
     document.addEventListener('change', (event) => {
-      const radioInput = event.target.closest('input[type="radio"][name*="颜色"]');
+      const radioInput = event.target.closest('input[type="radio"][name*="Color"], input[type="radio"][name*="Colour"], input[type="radio"][name*="颜色"]');
       if (radioInput && radioInput.checked) {
         const newColor = radioInput.value;
         this.filterMediaByColor(newColor);
