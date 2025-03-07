@@ -176,7 +176,7 @@
           "settings": {
             "image_desktop": "shopify://shop_images/aa-detail-b-ib-01.jpg",
             "image_mobile": "shopify://shop_images/aa-detail-b-ib-01-m.jpg",
-            "margin_top": 0,
+            "margin_top": 32,
             "margin_bottom": 0,
             "padding_x_desktop": 0,
             "padding_x_mobile": 0,
@@ -187,8 +187,8 @@
           "type": "content_block",
           "settings": {
             "block_type": "heading_text",
-            "margin_top": 0,
-            "margin_bottom": 36,
+            "margin_top": 20,
+            "margin_bottom": 40,
             "heading": "",
             "content": "<p>Lightweight puffer? Incredibly warm puffer? How about both. Introducing the Alpargali Puffer, and your best winter life. Inspired by no less than NASA technology, this jacket excels at the urban life as well as outdoor adventures. Cutting-edge materials like aerogel and graphene delivers a weight-to-warmth ratio that’s unmatched.</p>",
             "target_tab": "description"
@@ -202,7 +202,7 @@
             "margin_top": 0,
             "margin_bottom": 0,
             "padding_x_desktop": 0,
-            "padding_x_mobile": 20,
+            "padding_x_mobile": 0,
             "target_tab": "description"
           }
         },
@@ -211,7 +211,7 @@
           "settings": {
             "block_type": "heading_text",
             "margin_top": 32,
-            "margin_bottom": 0,
+            "margin_bottom": 40,
             "heading": "",
             "content": "<p>The Alpargali Puffer defies the thermometer, effective from -40°C/-40°F to +10°C /50°F. It’s like having a premium down jacket without the fill. Add in a sleek, modern design with over 30 functions including 9 pockets and we’re talking a versatile, year-round outerwear solution for the city nomad and the natural explorer. Extreme cold or mild conditions, your comfort is the same. The weather may be unpredictable. This puffer’s elite performance is not.</p>",
             "target_tab": "description"
@@ -225,7 +225,7 @@
             "margin_top": 0,
             "margin_bottom": 32,
             "padding_x_desktop": 0,
-            "padding_x_mobile": 20,
+            "padding_x_mobile": 0,
             "target_tab": "description"
           }
         },
@@ -239,7 +239,7 @@
             "subheading": "Your warmth is non-negotiable",
             "text": "<p>Aerogel, the world’s lightest solid, acts as an extraordinary thermal barrier by effectively blocking heat exchange. With a thickness of just 1.0mm, this advanced material maintains heat AND stonewalls cold air. This ensures the warmth generated inside stays inside, while the cold trying to seep in is blocked. No matter the conditions, you get maximum insulation with minimal bulk.</p>",
             "target_tab": "description",
-            "margin_top": 32,
+            "margin_top": 72,
             "margin_bottom": 0
           }
         },
@@ -282,7 +282,7 @@
             "text": "<p>The outer layer is crafted from Teflon™-coated fabric - resisting water, snow, and stains while remaining breathable. Tested to withstand 10,000mm of water, it’s engineered for the harshest conditions. And it’s fully machine washable for easy care.</p>",
             "target_tab": "description",
             "margin_top": 0,
-            "margin_bottom": 32
+            "margin_bottom": 100
           }
         },
         "content_block_DPjhDm": {
@@ -290,7 +290,7 @@
           "settings": {
             "block_type": "heading_text",
             "margin_top": 40,
-            "margin_bottom": 0,
+            "margin_bottom": 32,
             "heading": "<p>Any Adventure, Anytime</p>",
             "content": "<p>The Alpargali Puffer defies the thermometer, effective from -40°C/-40°F to +10°C /50°F. It’s like having a premium down jacket without the fill. Add in a sleek, modern design with over 30 functions including 9 pockets and we’re talking a versatile, year-round outerwear solution for the city nomad and the natural explorer. Extreme cold or mild conditions, your comfort is the same. The weather may be unpredictable. This puffer’s elite performance is not.</p>",
             "target_tab": "description"
@@ -309,12 +309,15 @@
             "image_3": "shopify://shop_images/product-detail-b-c-01-03.jpg",
             "caption_3": "",
             "hover_text_3": "",
-            "caption_4": "",
+            "image_4": "shopify://shop_images/product-detail-b-c-01-04_988833c3-3cbf-4294-9fb7-7ca2b78c36ae.jpg",
+            "caption_4": "Business",
             "hover_text_4": "",
+            "image_5": "shopify://shop_images/product-detail-b-c-01-05.jpg",
             "caption_5": "",
-            "hover_text_5": "",
+            "hover_text_5": "Outdoor Adventures",
+            "image_6": "shopify://shop_images/product-detail-b-c-01-06_01007a0e-fb72-41d9-b0e0-df845384b9b6.jpg",
             "caption_6": "",
-            "hover_text_6": "",
+            "hover_text_6": "Winter Sports",
             "caption_7": "",
             "hover_text_7": "",
             "caption_8": "",
@@ -329,8 +332,8 @@
             "hover_text_12": "",
             "autoplay_speed": 3,
             "target_tab": "description",
-            "margin_top": 0,
-            "margin_bottom": 32
+            "margin_top": 40,
+            "margin_bottom": 100
           }
         },
         "image_banner_agnmpQ": {
@@ -338,8 +341,8 @@
           "settings": {
             "image_desktop": "shopify://shop_images/aa-detail-b-ib-04.jpg",
             "image_mobile": "shopify://shop_images/aa-detail-b-ib-04-m.jpg",
-            "margin_top": 32,
-            "margin_bottom": 0,
+            "margin_top": 40,
+            "margin_bottom": 32,
             "padding_x_desktop": 0,
             "padding_x_mobile": 0,
             "target_tab": "description"
@@ -362,7 +365,7 @@
           "settings": {
             "block_type": "heading_text",
             "margin_top": 32,
-            "margin_bottom": 32,
+            "margin_bottom": 48,
             "heading": "",
             "content": "<p>- Fleece-Lined Collar: Provides superior comfort and heating around your neck.</p><p>- YKK Zippers: Durable and wind-resistant zippers guarantee long-lasting protection.- Adjustable Hood with Drawstring: Malleable to different weather conditions, ensuring maximum coverage.</p><p>- Underarm Mesh Ventilation: Breathable mesh under the arms creates airflow, allowing heat to be efficiently redistributed so you’re never overheated OR underheated.</p><p>- Velcro Adjustable Cuffs: Customize the fit to block out cold winds and adapt to all weather conditions.</p>",
             "target_tab": "description"
@@ -372,7 +375,7 @@
           "type": "content_block",
           "settings": {
             "block_type": "heading_text",
-            "margin_top": 32,
+            "margin_top": 100,
             "margin_bottom": 0,
             "heading": "<p>Alpargali Aerogel Puffer Jacket VS </p><p>Graphene Lightweight Jacket</p>",
             "content": "",
@@ -385,7 +388,7 @@
             "image_desktop": "shopify://shop_images/aa-detail-b-ib-06.png",
             "image_mobile": "shopify://shop_images/aa-detail-b-ib-06-m.png",
             "margin_top": 32,
-            "margin_bottom": 0,
+            "margin_bottom": 32,
             "padding_x_desktop": 0,
             "padding_x_mobile": 0,
             "target_tab": "description"
