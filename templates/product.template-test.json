@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "gg_breadcrumb_yr7zeq": {
       "type": "gg-breadcrumb",
@@ -198,7 +198,6 @@
           "type": "image_banner",
           "settings": {
             "image_desktop": "shopify://shop_images/aa-detail-b-ib-02.jpg",
-            "image_mobile": "shopify://shop_images/aa-detail-b-ib-02-m_70233098-3fb8-4a98-9edc-02031f3be14b.jpg",
             "margin_top": 0,
             "margin_bottom": 0,
             "padding_x_desktop": 0,
@@ -300,22 +299,18 @@
           "type": "carousel",
           "settings": {
             "title": "",
-            "image_1": "shopify://shop_images/product-detail-b-c-01-01_2109f992-cdbb-4901-95ab-6beee2dbaee4.jpg",
             "caption_1": "Daily Commute",
             "hover_text_1": "",
-            "image_2": "shopify://shop_images/product-detail-b-c-01-02_8cd81a69-ed3a-4dc2-aeae-45ba960b9191.jpg",
             "caption_2": "Global Exploration",
             "hover_text_2": "",
             "image_3": "shopify://shop_images/product-detail-b-c-01-03.jpg",
             "caption_3": "Hiking",
             "hover_text_3": "",
-            "image_4": "shopify://shop_images/product-detail-b-c-01-04_988833c3-3cbf-4294-9fb7-7ca2b78c36ae.jpg",
             "caption_4": "Business",
             "hover_text_4": "",
             "image_5": "shopify://shop_images/product-detail-b-c-01-05.jpg",
             "caption_5": "",
             "hover_text_5": "Outdoor Adventures",
-            "image_6": "shopify://shop_images/product-detail-b-c-01-06_01007a0e-fb72-41d9-b0e0-df845384b9b6.jpg",
             "caption_6": "",
             "hover_text_6": "Winter Sports",
             "caption_7": "",
@@ -397,6 +392,22 @@
         "judge_me_reviews_review_widget_JctMNU": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
+        },
+        "video_WRgmqh": {
+          "type": "video",
+          "settings": {
+            "title": "",
+            "video_url_desktop": "",
+            "video_url_mobile": "",
+            "autoplay": true,
+            "loop": true,
+            "controls": true,
+            "muted": true,
+            "target_tab": "video",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x": 0
+          }
         }
       },
       "block_order": [
@@ -416,7 +427,8 @@
         "content_block_3WRjgm",
         "content_block_TnnFCM",
         "image_banner_xCeUjP",
-        "judge_me_reviews_review_widget_JctMNU"
+        "judge_me_reviews_review_widget_JctMNU",
+        "video_WRgmqh"
       ],
       "settings": {
         "show_description": true,
