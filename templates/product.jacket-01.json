@@ -358,6 +358,17 @@
             "margin_bottom": 32
           }
         },
+        "content_block_7g9RDN": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "heading": "<p>TEST</p>",
+            "content": "<p>- Fleece-Lined Collar: Provides superior comfort and heating around your neck.</p><p>- YKK Zippers: Durable and wind-resistant zippers guarantee long-lasting protection.- Adjustable Hood with Drawstring: Malleable to different weather conditions, ensuring maximum coverage.</p><p>- Underarm Mesh Ventilation: Breathable mesh under the arms creates airflow, allowing heat to be efficiently redistributed so you’re never overheated OR underheated.</p><p>- Velcro Adjustable Cuffs: Customize the fit to block out cold winds and adapt to all weather conditions.</p>",
+            "target_tab": "description"
+          }
+        },
         "content_block_RiEbHT": {
           "type": "content_block",
           "settings": {
@@ -407,6 +418,7 @@
         "collage_RULhdH",
         "carousel_fzniPB",
         "collage_cfpQpc",
+        "content_block_7g9RDN",
         "content_block_RiEbHT",
         "image_banner_XfyKGt",
         "faq_yqgwMK",

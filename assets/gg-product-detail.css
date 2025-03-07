@@ -73,6 +73,8 @@
   background: rgba(var(--color-background), 0.05);
   border-radius: 8px;
   padding: 0 60px;
+  margin-top: 93px !important;
+  margin-bottom: 93px !important;
 }
 
 .block-heading {
@@ -89,7 +91,7 @@
   margin: 0;
 }
 .image-banner-section {
-  margin: 72px 0;
+  margin: 93px 0;
 }
 .block-content {
   font-size: 22px;
@@ -100,11 +102,11 @@
   max-width: 1538px;
   margin: auto;
   padding-top: 32px;
-  padding-bottom: 93px;
+  padding-bottom: 0;
 }
 
 .block-content p {
-  margin: 0.8em 0;
+  margin: 0;
 }
 #judgeme_product_reviews .jdgm-rev-widg .jdgm-star {
   color: rgba(255, 102, 0, 1);
@@ -228,7 +230,7 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
   .block-content {
     font-size: 3.2vw;
     padding-top: 3.73vw;
-    padding-bottom: 4vw;
+    padding-bottom: 0;
     line-height: 4.26vw;
   }
   #judgeme_product_reviews .jdgm-rev-widg {
@@ -336,6 +338,7 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
   color: rgba(0, 0, 0, 1);
   text-align: center;
   margin-bottom: 48px;
+  margin-top: 0;
 }
 
 .carousel-container {
@@ -561,7 +564,7 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
 
 .collage-text p {
   display: -webkit-box;
-  -webkit-line-clamp: 14;
+  -webkit-line-clamp: 12;
   text-overflow: ellipsis;
   word-break: break-word;
   -webkit-box-orient: vertical;
@@ -681,7 +684,7 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
 }
 @media screen and (max-width: 1600px) {
   .collage-text p {
-    -webkit-line-clamp: 10;
+    -webkit-line-clamp: 8;
   }
 }
 @media screen and (min-width: 750px) and (max-width: 1200px) {
@@ -701,7 +704,7 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
     line-height: normal;
   }
   .collage-text p {
-    -webkit-line-clamp: 8;
+    -webkit-line-clamp: 6;
   }
   .collage-content {
     display: flex;
@@ -719,7 +722,7 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
   }
   
   .collage-content {
-    padding: 6.66vw;
+    padding: 6.66vw 6.66vw 0;
   }
   
   /* 图片在下方布局 */
@@ -793,5 +796,9 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
   }
   .collage-text p {
     display: block;
+    margin-bottom: 0;
+  }
+  .product-collage-section {
+    margin-bottom: 6.8vw !important;
   }
 }
