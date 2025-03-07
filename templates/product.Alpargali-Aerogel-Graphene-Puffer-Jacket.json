@@ -1,0 +1,453 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gg_breadcrumb_yr7zeq": {
+      "type": "gg-breadcrumb",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "square"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_ex_c7QqTL": {
+          "type": "buy_buttons_ex",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "divider_3i4EF3": {
+          "type": "divider",
+          "settings": {
+            "margin_top": 20,
+            "margin_bottom": 20
+          }
+        },
+        "gg_icon_text_grid_TGCbKj": {
+          "type": "gg-icon-text-grid",
+          "settings": {
+            "icon_1": "shopify://shop_images/product-block-001-001.svg",
+            "text_1": "$189  Free Shipping",
+            "icon_2": "shopify://shop_images/product-block-001-002.svg",
+            "text_2": "Payment Security",
+            "icon_3": "shopify://shop_images/product-block-001-003.svg",
+            "text_3": "Eco-Friendly Packaging",
+            "text_4": ""
+          }
+        },
+        "divider_FHRHjn": {
+          "type": "divider",
+          "settings": {
+            "margin_top": 20,
+            "margin_bottom": 20
+          }
+        },
+        "gg_heading_image_Lh8bEX": {
+          "type": "gg-heading-image",
+          "settings": {
+            "heading": "As Featured In:",
+            "image": "shopify://shop_images/product-info-b-hi-01.png",
+            "image_mobile": "shopify://shop_images/product-info-b-hi-01-m.png"
+          }
+        },
+        "complementary_MMXapa": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs Great With:",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": true
+          }
+        },
+        "collapsible_tab_yAPYME": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Details",
+            "icon": "none",
+            "content": "<p>The Alpargali Puffer combines cutting-edge NASA-inspired technology with high-performance materials like aerogel and graphene, offering an unmatched weight-to-warmth ratio. Effective in temperatures from -40°C/-40°F to +10°C/50°F, it provides the warmth of a premium down jacket without the bulk. With a sleek design, over 30 functions, and 9 pockets, this versatile, year-round jacket is perfect for urban life and outdoor adventures alike. Whether facing extreme cold or mild weather, your comfort is guaranteed.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_GyWCqX": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Specs",
+            "icon": "none",
+            "content": "<p>Shell: Teflon-coatedInsulation: Aerogel, Graphene, SoronaWeight: 1000gBreathability: 10KWeather Resistant: YES(Teflon)Pockets: 9Suggested temperature range:-40°C/-40℉ to 20°C/68℉Packability: Easily packable for travelActivity: Adventure, Urban, Travel Aerogel Thickness: 1.0mm</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_4bGyQa": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care",
+            "icon": "none",
+            "content": "<p>Clean regularly, avoid regular detergents and fabric softenersUsage and Cleaning Frequency:- Intensive Use: Deep clean after 10 uses.- Low-Intensity Use: Deep clean every 1-2 months.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons_ex_c7QqTL",
+        "divider_3i4EF3",
+        "gg_icon_text_grid_TGCbKj",
+        "divider_FHRHjn",
+        "gg_heading_image_Lh8bEX",
+        "complementary_MMXapa",
+        "collapsible_tab_yAPYME",
+        "collapsible_tab_GyWCqX",
+        "collapsible_tab_4bGyQa"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12,
+        "size_guide_image": "shopify://shop_images/size-guide.jpg"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "gg_product_detail_Mg4rJH": {
+      "type": "gg-product-detail",
+      "blocks": {
+        "image_banner_6EqhKf": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/aa-detail-b-ib-01.jpg",
+            "image_mobile": "shopify://shop_images/aa-detail-b-ib-01-m.jpg",
+            "margin_top": 32,
+            "margin_bottom": 0,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "content_block_MGACxw": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 20,
+            "margin_bottom": 40,
+            "heading": "",
+            "content": "<p>Lightweight puffer? Incredibly warm puffer? How about both. Introducing the Alpargali Puffer, and your best winter life. Inspired by no less than NASA technology, this jacket excels at the urban life as well as outdoor adventures. Cutting-edge materials like aerogel and graphene delivers a weight-to-warmth ratio that’s unmatched.</p>",
+            "target_tab": "description"
+          }
+        },
+        "image_banner_Me8tAB": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/aa-detail-b-ib-02.jpg",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "content_block_rN49nb": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 32,
+            "margin_bottom": 40,
+            "heading": "",
+            "content": "<p>The Alpargali Puffer defies the thermometer, effective from -40°C/-40°F to +10°C /50°F. It’s like having a premium down jacket without the fill. Add in a sleek, modern design with over 30 functions including 9 pockets and we’re talking a versatile, year-round outerwear solution for the city nomad and the natural explorer. Extreme cold or mild conditions, your comfort is the same. The weather may be unpredictable. This puffer’s elite performance is not.</p>",
+            "target_tab": "description"
+          }
+        },
+        "image_banner_9AcLc8": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/aa-detail-b-ib-03.jpg",
+            "image_mobile": "shopify://shop_images/aa-detail-b-ib-03-m.jpg",
+            "margin_top": 0,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "collage_byQmgc": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/aa-detail-b-collage-01.jpg",
+            "heading": "1.0mm Aerogel Insulation",
+            "subheading": "Your warmth is non-negotiable",
+            "text": "<p>Aerogel, the world’s lightest solid, acts as an extraordinary thermal barrier by effectively blocking heat exchange. With a thickness of just 1.0mm, this advanced material maintains heat AND stonewalls cold air. This ensures the warmth generated inside stays inside, while the cold trying to seep in is blocked. No matter the conditions, you get maximum insulation with minimal bulk.</p>",
+            "target_tab": "description",
+            "margin_top": 72,
+            "margin_bottom": 0
+          }
+        },
+        "collage_dLqxPW": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_right",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/aa-detail-b-collage-02.jpg",
+            "heading": "100% Graphene",
+            "subheading": "for Maximum Heat Retention",
+            "text": "<p>Embrace the cutting-edge power of graphene. With it, the Alpargali puffer creates unmatched warmth in any condition. The jacket features a 100% graphene panel in the center back, leveraging the material’s superior thermal conductivity to efficiently preserve body heat.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "collage_WXNq9Y": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/aa-detail-b-collage-03.jpg",
+            "heading": "Sorona® Insulation",
+            "subheading": "High-performance Bio Polymer",
+            "text": "<p>Sorona® insulation is made in part with plant-based ingredients, it is a versatile fiber, and its long list of uses comes from a kink in the PTT polymer chain.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "collage_zR94Hn": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_right",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/aa-detail-b-collage-02.jpg",
+            "heading": "Full-torso Defense",
+            "subheading": "Wins the War on Weather",
+            "text": "<p>The outer layer is crafted from Teflon™-coated fabric - resisting water, snow, and stains while remaining breathable. Tested to withstand 10,000mm of water, it’s engineered for the harshest conditions. And it’s fully machine washable for easy care.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 100
+          }
+        },
+        "content_block_DPjhDm": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 40,
+            "margin_bottom": 32,
+            "heading": "<p>Any Adventure, Anytime</p>",
+            "content": "<p>The Alpargali Puffer defies the thermometer, effective from -40°C/-40°F to +10°C /50°F. It’s like having a premium down jacket without the fill. Add in a sleek, modern design with over 30 functions including 9 pockets and we’re talking a versatile, year-round outerwear solution for the city nomad and the natural explorer. Extreme cold or mild conditions, your comfort is the same. The weather may be unpredictable. This puffer’s elite performance is not.</p>",
+            "target_tab": "description"
+          }
+        },
+        "carousel_8hkzfc": {
+          "type": "carousel",
+          "settings": {
+            "title": "",
+            "image_1": "shopify://shop_images/aa-detail-b-c-01-01.jpg",
+            "caption_1": "Daily Commute",
+            "hover_text_1": "",
+            "image_2": "shopify://shop_images/aa-detail-b-c-01-02.jpg",
+            "caption_2": "Global Exploration",
+            "hover_text_2": "",
+            "image_3": "shopify://shop_images/aa-detail-b-c-01-03.jpg",
+            "caption_3": "Hiking",
+            "hover_text_3": "",
+            "image_4": "shopify://shop_images/aa-detail-b-c-01-04.jpg",
+            "caption_4": "Business",
+            "hover_text_4": "",
+            "image_5": "shopify://shop_images/aa-detail-b-c-01-05.jpg",
+            "caption_5": "Outdoor Adventures",
+            "hover_text_5": "",
+            "image_6": "shopify://shop_images/aa-detail-b-c-01-06.jpg",
+            "caption_6": "Winter Sports",
+            "hover_text_6": "Winter Sports",
+            "caption_7": "",
+            "hover_text_7": "",
+            "caption_8": "",
+            "hover_text_8": "",
+            "caption_9": "",
+            "hover_text_9": "",
+            "caption_10": "",
+            "hover_text_10": "",
+            "caption_11": "",
+            "hover_text_11": "",
+            "caption_12": "",
+            "hover_text_12": "",
+            "autoplay_speed": 3,
+            "target_tab": "description",
+            "margin_top": 40,
+            "margin_bottom": 100
+          }
+        },
+        "image_banner_agnmpQ": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/aa-detail-b-ib-04.jpg",
+            "image_mobile": "shopify://shop_images/aa-detail-b-ib-04-m.jpg",
+            "margin_top": 40,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "image_banner_iGmkgq": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/aa-detail-b-ib-05.jpg",
+            "image_mobile": "shopify://shop_images/aa-detail-b-ib-05-m.jpg",
+            "margin_top": 0,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "content_block_3WRjgm": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 32,
+            "margin_bottom": 48,
+            "heading": "",
+            "content": "<p>- Fleece-Lined Collar: Provides superior comfort and heating around your neck.</p><p>- YKK Zippers: Durable and wind-resistant zippers guarantee long-lasting protection.- Adjustable Hood with Drawstring: Malleable to different weather conditions, ensuring maximum coverage.</p><p>- Underarm Mesh Ventilation: Breathable mesh under the arms creates airflow, allowing heat to be efficiently redistributed so you’re never overheated OR underheated.</p><p>- Velcro Adjustable Cuffs: Customize the fit to block out cold winds and adapt to all weather conditions.</p>",
+            "target_tab": "description"
+          }
+        },
+        "content_block_TnnFCM": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 100,
+            "margin_bottom": 0,
+            "heading": "<p>Alpargali Aerogel Puffer Jacket VS </p><p>Graphene Lightweight Jacket</p>",
+            "content": "",
+            "target_tab": "description"
+          }
+        },
+        "image_banner_xCeUjP": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/aa-detail-b-ib-06.png",
+            "image_mobile": "shopify://shop_images/aa-detail-b-ib-06-m.png",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "video_RrT8Rc": {
+          "type": "video",
+          "settings": {
+            "title": "",
+            "video_desktop": "shopify://files/videos/aa-product-video-01.mp4",
+            "video_url_desktop": "",
+            "cover_desktop": "shopify://shop_images/aa-product-video-1.jpg",
+            "video_url_mobile": "",
+            "autoplay": true,
+            "loop": true,
+            "controls": true,
+            "muted": true,
+            "target_tab": "video",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x": 0
+          }
+        },
+        "judge_me_reviews_review_widget_JctMNU": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "image_banner_6EqhKf",
+        "content_block_MGACxw",
+        "image_banner_Me8tAB",
+        "content_block_rN49nb",
+        "image_banner_9AcLc8",
+        "collage_byQmgc",
+        "collage_dLqxPW",
+        "collage_WXNq9Y",
+        "collage_zR94Hn",
+        "content_block_DPjhDm",
+        "carousel_8hkzfc",
+        "image_banner_agnmpQ",
+        "image_banner_iGmkgq",
+        "content_block_3WRjgm",
+        "content_block_TnnFCM",
+        "image_banner_xCeUjP",
+        "video_RrT8Rc",
+        "judge_me_reviews_review_widget_JctMNU"
+      ],
+      "settings": {
+        "show_description": true,
+        "show_video": true,
+        "show_reviews": true,
+        "show_faq": false
+      }
+    }
+  },
+  "order": [
+    "gg_breadcrumb_yr7zeq",
+    "main",
+    "related-products",
+    "gg_product_detail_Mg4rJH"
+  ]
+}
