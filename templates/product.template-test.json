@@ -103,7 +103,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "<p>Shell: Teflon-coatedInsulation: Aerogel, Graphene, SoronaWeight: 1000gBreathability: 10KWeather Resistant: YES(Teflon)Pockets: 9Suggested temperature range:-40°C/-40℉ to 20°C/68℉Packability: Easily packable for travelActivity: Adventure, Urban, Travel Aerogel Thickness: 1.0mm</p>",
+            "content": "<p>Shell: Teflon-coated</p><p>Insulation: Aerogel, Graphene, SoronaWeight: 1000g</p><p>Breathability: 10K</p><p>Weather Resistant: YES(Teflon)</p><p>Pockets: 9</p><p>Suggested temperature range:-40°C/-40℉ to 20°C/68℉</p><p>Packability: Easily packable for travel</p><p>Activity: Adventure, Urban, Travel Aerogel Thickness: 1.0mm</p>",
             "page": ""
           }
         },
@@ -112,7 +112,7 @@
           "settings": {
             "heading": "Care",
             "icon": "none",
-            "content": "<p>Clean regularly, avoid regular detergents and fabric softenersUsage and Cleaning Frequency:- Intensive Use: Deep clean after 10 uses.- Low-Intensity Use: Deep clean every 1-2 months.</p>",
+            "content": "<p>Clean regularly, avoid regular detergents and fabric softeners</p><p>Usage and Cleaning Frequency:</p><p>- Intensive Use: Deep clean after 10 uses.</p><p>- Low-Intensity Use: Deep clean every 1-2 months.</p>",
             "page": ""
           }
         }
