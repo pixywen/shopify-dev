@@ -686,6 +686,8 @@
                 {% render 'gg-icon-text-grid', block: block %}
               {%- when 'gg-heading-image' -%}
                 {% render 'gg-heading-image', block: block %}
+              {%- when 'height_block' -%}
+                {% render 'gg-product-height-block', block: block %}
             {%- endcase -%}
           {%- endfor -%}
           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -2229,6 +2231,38 @@
           "id": "image_mobile",
           "label": "展示(移动端)图片",
           "info": "如不设置则使用展示图片"
+        }
+      ]
+    },
+    {
+      "name": "GG-高度块",
+      "type": "height_block",
+      "settings": [
+        {
+          "type": "range",
+          "id": "height_mobile",
+          "min": 0,
+          "max": 400,
+          "step": 1,
+          "unit": "px",
+          "label": "移动端高度",
+          "default": 100
+        },
+        {
+          "type": "range",
+          "id": "height_desktop",
+          "min": 0,
+          "max": 400,
+          "step": 1,
+          "unit": "px",
+          "label": "PC端高度",
+          "default": 200
+        },
+        {
+          "type": "textarea",
+          "id": "custom_css",
+          "label": "自定义CSS",
+          "info": "输入自定义CSS样式，样式将仅应用于当前块。例如：background: #f0f0f0;"
         }
       ]
     }
