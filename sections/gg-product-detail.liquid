@@ -52,6 +52,8 @@
                 {% render 'gg-product-block-collage', block: block %}
               {% elsif block.type == 'faq' and block.settings.target_tab == tab %}
                 {% render 'gg-product-block-faq', block: block %}
+              {%- elsif block.type == 'height-block' and block.settings.target_tab == tab -%}
+                {% render 'gg-product-height-block', block: block %}
               {% endif %}
             {% endfor %}
           </div>
@@ -768,6 +770,50 @@
             {"value": "faq", "label": "FAQ"}
           ],
           "default": "faq"
+        }
+      ]
+    },
+    {
+      "name": "GG-高度块",
+      "type": "height_block",
+      "settings": [
+        {
+          "type": "range",
+          "id": "height_mobile",
+          "min": 0,
+          "max": 400,
+          "step": 10,
+          "unit": "px",
+          "label": "移动端高度",
+          "default": 100
+        },
+        {
+          "type": "range",
+          "id": "height_desktop",
+          "min": 0,
+          "max": 400,
+          "step": 20,
+          "unit": "px",
+          "label": "PC端高度",
+          "default": 200
+        },
+        {
+          "type": "textarea",
+          "id": "custom_css",
+          "label": "自定义CSS",
+          "info": "输入自定义CSS样式，样式将仅应用于当前块。例如：background: #f0f0f0;"
+        },
+        {
+          "type": "select",
+          "id": "target_tab",
+          "label": "所属标签页",
+          "options": [
+            {"value": "description", "label": "描述"},
+            {"value": "video", "label": "视频"},
+            {"value": "reviews", "label": "评价"},
+            {"value": "faq", "label": "FAQ"}
+          ],
+          "default": "description"
         }
       ]
     }
