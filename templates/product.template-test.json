@@ -411,6 +411,60 @@
             "padding_x": 0
           }
         },
+        "video_riQjAb": {
+          "type": "video",
+          "settings": {
+            "title": "",
+            "video_desktop": "shopify://files/videos/aa-product-video-02.mp4",
+            "video_url_desktop": "",
+            "cover_desktop": "shopify://shop_images/aa-product-video-2.jpg",
+            "video_url_mobile": "",
+            "autoplay": true,
+            "loop": true,
+            "controls": true,
+            "muted": true,
+            "target_tab": "video",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x": 0
+          }
+        },
+        "video_wmc7R9": {
+          "type": "video",
+          "settings": {
+            "title": "",
+            "video_desktop": "shopify://files/videos/aa-product-video-03.mp4",
+            "video_url_desktop": "",
+            "cover_desktop": "shopify://shop_images/aa-product-video-3.jpg",
+            "video_url_mobile": "",
+            "autoplay": true,
+            "loop": true,
+            "controls": true,
+            "muted": true,
+            "target_tab": "video",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x": 0
+          }
+        },
+        "video_Uqci7M": {
+          "type": "video",
+          "settings": {
+            "title": "",
+            "video_desktop": "shopify://files/videos/aa-product-video-04.mp4",
+            "video_url_desktop": "",
+            "cover_desktop": "shopify://shop_images/aa-product-video-4.jpg",
+            "video_url_mobile": "",
+            "autoplay": true,
+            "loop": true,
+            "controls": true,
+            "muted": true,
+            "target_tab": "video",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x": 0
+          }
+        },
         "judge_me_reviews_review_widget_JctMNU": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
@@ -434,6 +488,9 @@
         "content_block_TnnFCM",
         "image_banner_xCeUjP",
         "video_RrT8Rc",
+        "video_riQjAb",
+        "video_wmc7R9",
+        "video_Uqci7M",
         "judge_me_reviews_review_widget_JctMNU"
       ],
       "settings": {
