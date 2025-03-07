@@ -172,6 +172,15 @@
     "gg_product_detail_Mg4rJH": {
       "type": "gg-product-detail",
       "blocks": {
+        "height_block_NcN3Ky": {
+          "type": "height_block",
+          "settings": {
+            "height_mobile": 100,
+            "height_desktop": 400,
+            "custom_css": "background: #f0f0f0;",
+            "target_tab": "description"
+          }
+        },
         "content_block_MGACxw": {
           "type": "content_block",
           "settings": {
@@ -397,6 +406,7 @@
         }
       },
       "block_order": [
+        "height_block_NcN3Ky",
         "content_block_MGACxw",
         "image_banner_MYRGBE",
         "image_banner_DDQQKc",
