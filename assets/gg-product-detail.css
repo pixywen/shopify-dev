@@ -51,7 +51,7 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     padding: 0 0 12px;
-    margin-bottom: 11.86vw;
+    /* margin-bottom: 11.86vw; */
     -webkit-overflow-scrolling: touch;
   }
   
@@ -337,8 +337,8 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
   line-height: 32px;
   color: rgba(0, 0, 0, 1);
   text-align: center;
-  margin-bottom: 48px;
-  margin-top: 0;
+  /* margin-bottom: 48px; */
+  /* margin-top: 0; */
 }
 
 .carousel-container {
@@ -528,7 +528,7 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px 40px 40px 115px;
+  padding: 30px 40px 0 115px;
 }
 
 .collage-heading {
@@ -692,7 +692,7 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
   }
   .collage-text {
     font-size: 14px;
-    line-height: 30px;
+    line-height: 25px;
   }
   .carousel-caption {
     font-size: 16px;
@@ -705,7 +705,7 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 40px 40px 40px 50px;
+    padding: 0px 40px 0px 50px;
   }
 }
 
@@ -764,11 +764,11 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
     font-size: 3.2vw;
   }
   .image-banner-section {
-    margin: 10.53vw 0 0;
+    /* margin: 10.53vw 0 0; */
   }
   .carousel-title {
     font-size: 6.4vw;
-    margin: 6.93vw 0;
+    /* margin: 6.93vw 0; */
     text-align: center;
   }
   .product-carousel-section {
