@@ -1,0 +1,54 @@
+{%- comment -%}
+  渲染一个空白的高度块组件
+  可以分别为移动端和PC端设置不同的高度
+
+  接受参数:
+  - block: {Object} 区块对象，包含设置
+    - settings:
+      - height_mobile: {Number} 移动端高度 (0-400px)
+      - height_desktop: {Number} PC端高度 (0-400px)
+      - custom_css: {String} 自定义CSS样式，将被限定在当前块内部 (可选)
+
+  用法:
+  {% render 'gg-product-height-block', block: block %}
+{%- endcomment -%}
+
+{%- liquid
+  # 生成唯一的类名
+  assign unique_class = 'height-block-' | append: block.id
+-%}
+
+<div class="height-block {{ unique_class }}"
+  style="
+    --height-mobile: {{ block.settings.height_mobile }}px;
+    --height-desktop: {{ block.settings.height_desktop }}px;
+  "
+  {{ block.shopify_attributes }}
+>&nbsp;</div>
+
+{% style %}
+  /* 所有样式都限定在当前块的唯一类名下 */
+  .{{ unique_class }} {
+    display: block;
+    width: 100%;
+  }
+  
+  /* 响应式高度控制 */
+  @media screen and (max-width: 749px) {
+    .{{ unique_class }} {
+      height: var(--height-mobile);
+    }
+  }
+  @media screen and (min-width: 750px) {
+    .{{ unique_class }} {
+      height: var(--height-desktop);
+    }
+  }
+
+  /* 用户自定义样式 */
+  {%- if block.settings.custom_css != blank -%}
+    .{{ unique_class }} {
+      {{ block.settings.custom_css }}
+    }
+  {%- endif -%}
+{% endstyle %} 

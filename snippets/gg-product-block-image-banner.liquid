@@ -3,6 +3,8 @@
   {%- if block.settings.image_desktop != blank or block.settings.image_mobile != blank -%}
     <div class="banner-image-container"
       style="
+        margin-top: {{ block.settings.margin_top }}px;
+        margin-bottom: {{ block.settings.margin_bottom }}px;
         {% if block.settings.padding_x_mobile != blank %}
           --mobile-padding: {{ block.settings.padding_x_mobile }}%;
         {% endif %}
