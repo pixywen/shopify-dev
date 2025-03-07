@@ -350,23 +350,12 @@
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
             "image": "shopify://shop_images/product-detail-b-collage-03.jpg",
-            "heading": "Built for Performance",
+            "heading": "TEST",
             "subheading": "",
-            "text": "<p>Expert craftsma nship is at the heart of Alpargali, with over 92 fabric panels and more 40,000 stitches applies. The flexibility and comfort born of this tailoring negates the restrictive feel of traditional garments. Alpargali adapts to your body’s movements, optimizing your comfort and performance.</p>",
+            "text": "<p>Aerogel, the world’s lightest solid, acts as an extraordinary thermal barrier by effectively blocking heat exchange. With a thickness of just 1.0mm, this advanced material maintains heat AND stonewalls cold air. This ensures the warmth generated inside stays inside, while the cold trying to seep in is blocked. No matter the conditions, you get maximum insulation with minimal bulk.</p>",
             "target_tab": "description",
             "margin_top": 32,
             "margin_bottom": 32
-          }
-        },
-        "content_block_7g9RDN": {
-          "type": "content_block",
-          "settings": {
-            "block_type": "heading_text",
-            "margin_top": 32,
-            "margin_bottom": 32,
-            "heading": "<p>TEST</p>",
-            "content": "<p>- Fleece-Lined Collar: Provides superior comfort and heating around your neck.</p><p>- YKK Zippers: Durable and wind-resistant zippers guarantee long-lasting protection.- Adjustable Hood with Drawstring: Malleable to different weather conditions, ensuring maximum coverage.</p><p>- Underarm Mesh Ventilation: Breathable mesh under the arms creates airflow, allowing heat to be efficiently redistributed so you’re never overheated OR underheated.</p><p>- Velcro Adjustable Cuffs: Customize the fit to block out cold winds and adapt to all weather conditions.</p>",
-            "target_tab": "description"
           }
         },
         "content_block_RiEbHT": {
@@ -418,7 +407,6 @@
         "collage_RULhdH",
         "carousel_fzniPB",
         "collage_cfpQpc",
-        "content_block_7g9RDN",
         "content_block_RiEbHT",
         "image_banner_XfyKGt",
         "faq_yqgwMK",
