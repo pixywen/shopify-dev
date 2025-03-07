@@ -73,6 +73,8 @@
   background: rgba(var(--color-background), 0.05);
   border-radius: 8px;
   padding: 0 60px;
+  margin-top: 93px !important;
+  margin-bottom: 93px !important;
 }
 
 .block-heading {
@@ -89,7 +91,7 @@
   margin: 0;
 }
 .image-banner-section {
-  margin: 72px 0;
+  margin: 93px 0;
 }
 .block-content {
   font-size: 22px;
@@ -100,7 +102,7 @@
   max-width: 1538px;
   margin: auto;
   padding-top: 32px;
-  padding-bottom: 93px;
+  padding-bottom: 0;
 }
 
 .block-content p {
@@ -228,7 +230,7 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
   .block-content {
     font-size: 3.2vw;
     padding-top: 3.73vw;
-    padding-bottom: 4vw;
+    padding-bottom: 0;
     line-height: 4.26vw;
   }
   #judgeme_product_reviews .jdgm-rev-widg {
@@ -336,6 +338,7 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
   color: rgba(0, 0, 0, 1);
   text-align: center;
   margin-bottom: 48px;
+  margin-top: 0;
 }
 
 .carousel-container {
@@ -719,7 +722,7 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
   }
   
   .collage-content {
-    padding: 6.66vw;
+    padding: 6.66vw 6.66vw 0;
   }
   
   /* 图片在下方布局 */
@@ -793,5 +796,9 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
   }
   .collage-text p {
     display: block;
+    margin-bottom: 0;
+  }
+  .product-collage-section {
+    margin-bottom: 6.8vw !important;
   }
 }
