@@ -563,12 +563,7 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
 }
 
 .collage-text p {
-  display: -webkit-box;
-  -webkit-line-clamp: 12;
-  text-overflow: ellipsis;
-  word-break: break-word;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  
 }
 
 .collage-subheading {
@@ -684,7 +679,7 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
 }
 @media screen and (max-width: 1600px) {
   .collage-text p {
-    -webkit-line-clamp: 8;
+   
   }
 }
 @media screen and (min-width: 750px) and (max-width: 1200px) {
@@ -704,7 +699,7 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
     line-height: normal;
   }
   .collage-text p {
-    -webkit-line-clamp: 6;
+    
   }
   .collage-content {
     display: flex;
@@ -795,8 +790,7 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
     list-style: 4.26vw;
   }
   .collage-text p {
-    display: block;
-    margin-bottom: 0;
+    
   }
   .product-collage-section {
     margin-bottom: 6.8vw !important;
