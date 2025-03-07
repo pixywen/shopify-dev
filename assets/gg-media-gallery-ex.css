@@ -101,7 +101,19 @@
     margin-right: 15px;
     scroll-snap-align: start;
     min-height: auto;
-    display: block !important;
+    /* 移除强制显示所有项目的样式，保留颜色筛选功能 */
+    /* display: block !important; */
+  }
+
+  /* 确保视频媒体项正确显示 */
+  .media-item.is-active {
+    display: block;
+  }
+
+  /* 添加视频媒体项的特殊处理 */
+  .media-item[data-media-type="video"],
+  .media-item[data-media-type="external_video"] {
+    height: auto;
   }
 
   .media-gallery-ex__thumbs {
