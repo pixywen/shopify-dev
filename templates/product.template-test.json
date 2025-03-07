@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "gg_breadcrumb_yr7zeq": {
       "type": "gg-breadcrumb",
@@ -198,6 +198,7 @@
           "type": "image_banner",
           "settings": {
             "image_desktop": "shopify://shop_images/aa-detail-b-ib-02.jpg",
+            "image_mobile": "shopify://shop_images/aa-detail-b-ib-02-m_70233098-3fb8-4a98-9edc-02031f3be14b.jpg",
             "margin_top": 0,
             "margin_bottom": 0,
             "padding_x_desktop": 0,
@@ -233,7 +234,7 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/product-detail-b-collage-01.jpg",
+            "image": "shopify://shop_images/aa-product-detail-b-collage-01.jpg",
             "heading": "1.0mm Aerogel Insulation",
             "subheading": "Your warmth is non-negotiable",
             "text": "<p>Aerogel, the world’s lightest solid, acts as an extraordinary thermal barrier by effectively blocking heat exchange. With a thickness of just 1.0mm, this advanced material maintains heat AND stonewalls cold air. This ensures the warmth generated inside stays inside, while the cold trying to seep in is blocked. No matter the conditions, you get maximum insulation with minimal bulk.</p>",
@@ -247,7 +248,7 @@
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/product-detail-b-collage-02.jpg",
+            "image": "shopify://shop_images/aa-product-detail-b-collage-02.jpg",
             "heading": "100% Graphene",
             "subheading": "for Maximum Heat Retention",
             "text": "<p>Embrace the cutting-edge power of graphene. With it, the Alpargali puffer creates unmatched warmth in any condition. The jacket features a 100% graphene panel in the center back, leveraging the material’s superior thermal conductivity to efficiently preserve body heat.</p>",
@@ -261,7 +262,7 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/product-detail-b-collage-03.jpg",
+            "image": "shopify://shop_images/aa-product-detail-b-collage-03.jpg",
             "heading": "Sorona® Insulation",
             "subheading": "High-performance Bio Polymer",
             "text": "<p>Sorona® insulation is made in part with plant-based ingredients, it is a versatile fiber, and its long list of uses comes from a kink in the PTT polymer chain.</p>",
@@ -275,7 +276,7 @@
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/product-detail-b-collage-04.jpg",
+            "image": "shopify://shop_images/aa-product-detail-b-collage-04.jpg",
             "heading": "Full-torso Defense",
             "subheading": "Wins the War on Weather",
             "text": "<p>The outer layer is crafted from Teflon™-coated fabric - resisting water, snow, and stains while remaining breathable. Tested to withstand 10,000mm of water, it’s engineered for the harshest conditions. And it’s fully machine washable for easy care.</p>",
@@ -299,18 +300,22 @@
           "type": "carousel",
           "settings": {
             "title": "",
+            "image_1": "shopify://shop_images/aa-product-detail-b-c-01-01_2109f992-cdbb-4901-95ab-6beee2dbaee4.jpg",
             "caption_1": "Daily Commute",
             "hover_text_1": "",
+            "image_2": "shopify://shop_images/aa-product-detail-b-c-01-02_8cd81a69-ed3a-4dc2-aeae-45ba960b9191.jpg",
             "caption_2": "Global Exploration",
             "hover_text_2": "",
-            "image_3": "shopify://shop_images/product-detail-b-c-01-03.jpg",
+            "image_3": "shopify://shop_images/aa-product-detail-b-c-01-03.jpg",
             "caption_3": "Hiking",
             "hover_text_3": "",
+            "image_4": "shopify://shop_images/aa-product-detail-b-c-01-04_988833c3-3cbf-4294-9fb7-7ca2b78c36ae.jpg",
             "caption_4": "Business",
             "hover_text_4": "",
-            "image_5": "shopify://shop_images/product-detail-b-c-01-05.jpg",
+            "image_5": "shopify://shop_images/aa-product-detail-b-c-01-05.jpg",
             "caption_5": "",
             "hover_text_5": "Outdoor Adventures",
+            "image_6": "shopify://shop_images/aa-product-detail-b-c-01-06_01007a0e-fb72-41d9-b0e0-df845384b9b6.jpg",
             "caption_6": "",
             "hover_text_6": "Winter Sports",
             "caption_7": "",
@@ -392,22 +397,6 @@
         "judge_me_reviews_review_widget_JctMNU": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
-        },
-        "video_WRgmqh": {
-          "type": "video",
-          "settings": {
-            "title": "",
-            "video_url_desktop": "",
-            "video_url_mobile": "",
-            "autoplay": true,
-            "loop": true,
-            "controls": true,
-            "muted": true,
-            "target_tab": "video",
-            "margin_top": 32,
-            "margin_bottom": 32,
-            "padding_x": 0
-          }
         }
       },
       "block_order": [
@@ -427,8 +416,7 @@
         "content_block_3WRjgm",
         "content_block_TnnFCM",
         "image_banner_xCeUjP",
-        "judge_me_reviews_review_widget_JctMNU",
-        "video_WRgmqh"
+        "judge_me_reviews_review_widget_JctMNU"
       ],
       "settings": {
         "show_description": true,
