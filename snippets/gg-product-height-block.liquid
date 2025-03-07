@@ -19,11 +19,12 @@
 -%}
 
 <div class="height-block {{ unique_class }}"
-  {{ block.shopify_attributes }}
   style="
     --height-mobile: {{ block.settings.height_mobile }}px;
     --height-desktop: {{ block.settings.height_desktop }}px;
-  ">&nbsp;</div>
+  "
+  {{ block.shopify_attributes }}
+>&nbsp;</div>
 
 {% style %}
   /* 所有样式都限定在当前块的唯一类名下 */
