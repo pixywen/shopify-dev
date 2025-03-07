@@ -73,8 +73,8 @@
   background: rgba(var(--color-background), 0.05);
   border-radius: 8px;
   padding: 0 60px;
-  margin-top: 93px !important;
-  margin-bottom: 93px !important;
+  /* margin-top: 93px !important; */
+  /* margin-bottom: 93px !important; */
 }
 
 .block-heading {
@@ -91,7 +91,7 @@
   margin: 0;
 }
 .image-banner-section {
-  margin: 93px 0;
+  /* margin: 93px 0; */
 }
 .block-content {
   font-size: 22px;
