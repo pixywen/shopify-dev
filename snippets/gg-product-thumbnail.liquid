@@ -300,6 +300,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
     });
+    
+    // 监听3D模型加载
+    if (window.innerWidth <= 990) { // 仅在移动端执行
+      // 使用MutationObserver监听DOM变化，检测model-viewer元素何时被添加
+      const modelObserver = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+            mutation.addedNodes.forEach((node) => {
+              // 检查是否添加了model-viewer元素
+              if (node.nodeName === 'MODEL-VIEWER' || 
+                  (node.nodeType === 1 && node.querySelector('model-viewer'))) {
+                // 找到包含此model-viewer的media-item
+                const mediaItem = node.closest('.media-item[data-media-type="model"]');
+                if (mediaItem) {
+                  // 添加一个类来触发CSS规则
+                  mediaItem.classList.add('model-loaded');
+                }
+              }
+            });
+          }
+        });
+      });
+      
+      // 开始观察整个文档
+      modelObserver.observe(document.body, { 
+        childList: true, 
+        subtree: true 
+      });
+    }
   }, 500); // 500ms延迟确保动态内容加载
 });
 </script>

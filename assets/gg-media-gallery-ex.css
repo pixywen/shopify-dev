@@ -150,6 +150,18 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  
+  /* 3D模型加载后隐藏底部静态预览图 */
+  .media-item[data-media-type="model"] product-model model-viewer + .product__media,
+  .media-item[data-media-type="model"] product-model model-viewer ~ .product__media {
+    display: none !important;
+  }
+  
+  /* 当3D模型加载完成后隐藏预览图 */
+  .media-item.model-loaded .product__modal-opener .product__media {
+    opacity: 0;
+    visibility: hidden;
+  }
 
   .media-gallery-ex__thumbs {
     grid-template-columns: repeat(3, 1fr);
