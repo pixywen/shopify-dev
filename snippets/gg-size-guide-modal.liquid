@@ -39,11 +39,21 @@
       this.addEventListener('click', (event) => {
         if (event.target === this) this.close();
       });
+      
+      // 添加键盘事件监听
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && this.hasAttribute('open')) {
+          this.close();
+        }
+      });
     }
 
     open() {
       this.setAttribute('open', '');
       document.body.style.overflow = 'hidden';
+      
+      // 添加焦点陷阱
+      this.querySelector('.gg-size-guide-modal__content').focus();
     }
 
     close() {
@@ -56,17 +66,32 @@
     customElements.define('size-guide-modal', SizeGuideModal);
   }
 
-  // 等待 DOM 加载完成后绑定事件
+  // 使用事件委托，为所有尺码表链接绑定点击事件
+  document.addEventListener('click', (event) => {
+    // 检查点击的元素或其父元素是否是尺码表链接
+    const sizeGuideLink = event.target.closest('.gg-size-guide');
+    if (sizeGuideLink) {
+      event.preventDefault();
+      
+      // 获取模态框元素
+      const sizeGuideModal = document.querySelector('#SizeGuideModal-{{ section.id }}');
+      if (sizeGuideModal) {
+        try {
+          sizeGuideModal.open();
+        } catch (error) {
+          console.error('Error opening size guide modal:', error);
+        }
+      } else {
+        console.warn('Size guide modal not found');
+      }
+    }
+  });
+  
+  // 确保模态框在DOM中存在
   document.addEventListener('DOMContentLoaded', () => {
     const sizeGuideModal = document.querySelector('#SizeGuideModal-{{ section.id }}');
-    if (!sizeGuideModal) return;
-
-    // 为所有尺码表链接绑定点击事件
-    document.querySelectorAll('.gg-size-guide').forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        sizeGuideModal.open();
-      });
-    });
+    if (!sizeGuideModal) {
+      console.warn('Size guide modal not found in DOM');
+    }
   });
 </script>

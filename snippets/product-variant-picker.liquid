@@ -49,7 +49,7 @@
               <span>{{ option.name }}:</span>
               {%- assign option_name_downcase = option.name | downcase -%}
               {%- if option_name_downcase == 'size' or option_name_downcase == '尺寸' -%}
-                <a href="#" class="gg-size-guide">Size Guide</a>
+                <a href="#size-guide" class="gg-size-guide" role="button" aria-label="{{ 'products.product.size_guide' | t }}">Size Guide</a>
               {%- endif -%}
             </div>
           </legend>

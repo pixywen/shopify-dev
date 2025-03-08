@@ -10,6 +10,10 @@
   font-size: 0.9em;
   color: inherit;
   margin-left: 10px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  padding: 2px 5px;
 }
 
 .gg-size-guide:hover {
@@ -41,6 +45,7 @@
   height: auto;
   max-height: 80vh;
   overflow-y: auto;
+  outline: none;
 }
 
 .gg-size-guide-modal__close {
@@ -56,6 +61,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 3;
 }
 
 .gg-size-guide-modal__close svg {
@@ -90,5 +96,10 @@
   .gg-size-guide-modal__close {
     right: 15px;
     top: 15px;
+  }
+  
+  .gg-size-guide {
+    padding: 5px 8px;
+    font-size: 1em;
   }
 } 
