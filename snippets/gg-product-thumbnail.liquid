@@ -145,8 +145,8 @@
           | image_tag:
             class: 'non-image-preview',
             loading: lazy,
-            sizes: sizes,
-            widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
+            widths: '493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946, 2500, 3000, 3840',
+            sizes: "(min-width: 1920px) 1946px, (min-width: 1600px) 1500px, (min-width: 1200px) 1206px, (min-width: 750px) 50vw, 100vw"
         }}
       {% comment %} <button
       class="product__media-toggle quick-add-hidden product__media-zoom-{{ section.settings.image_zoom }}"
@@ -189,8 +189,8 @@
         | image_tag:
           class: 'deferred-media-poster-image',
           loading: lazy,
-          sizes: sizes,
-          widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
+          widths: '493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946, 2500, 3000, 3840',
+          sizes: "(min-width: 1920px) 1946px, (min-width: 1600px) 1500px, (min-width: 1200px) 1206px, (min-width: 750px) 50vw, 100vw"
       }}
     </button>
     <template>
