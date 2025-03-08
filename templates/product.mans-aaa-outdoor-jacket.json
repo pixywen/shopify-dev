@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "gg_breadcrumb_yr7zeq": {
       "type": "gg-breadcrumb",
@@ -44,6 +44,7 @@
         },
         "divider_3i4EF3": {
           "type": "divider",
+          "disabled": true,
           "settings": {
             "margin_top": 20,
             "margin_bottom": 20
@@ -76,15 +77,15 @@
             "image_mobile": "shopify://shop_images/product-info-b-hi-01-m.png"
           }
         },
-        "complementary_MMXapa": {
+        "complementary_jJRN7f": {
           "type": "complementary",
           "settings": {
-            "block_heading": "Pairs Great With:",
+            "block_heading": "Pairs well with:",
             "make_collapsible_row": false,
-            "icon": "price_tag",
-            "product_list_limit": 10,
-            "products_per_page": 3,
-            "pagination_style": "counter",
+            "icon": "none",
+            "product_list_limit": 6,
+            "products_per_page": 2,
+            "pagination_style": "dots",
             "image_ratio": "square",
             "enable_quick_add": true
           }
@@ -94,7 +95,7 @@
           "settings": {
             "heading": "Details",
             "icon": "none",
-            "content": "",
+            "content": "<p>Designed for urban explorers and globetrotters alike, Alpargali is the era-defining jacket that combines style and functionality. With 14 waterproof pockets and 15k breathability, it seamlessly transitions between everyday wear, travel, business meetings, leisure rides, and outdoor adventures. One jacket for every occasion.</p>",
             "page": ""
           }
         },
@@ -103,7 +104,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "",
+            "content": "<p>Fabric: 100% Nylon 70D, 2 layer</p><p>Breathability: 10K</p><p>Waterproof: 10K</p><p>Pockets: 14</p>",
             "page": ""
           }
         },
@@ -112,7 +113,7 @@
           "settings": {
             "heading": "Care",
             "icon": "none",
-            "content": "",
+            "content": "<p>Clean regularly, avoid regular detergents and fabric softeners</p><p>Usage and Cleaning Frequency:</p><p>- Intensive Use: Deep clean after 10 uses.</p><p>- Low-Intensity Use: Deep clean every 1-2 months.</p><p>Hand washmaximum temperature 40°C</p><p>Do not bleachDo not tumble dry</p><p>Do not ironDo not dry clean</p><p>Line dry in shade</p>",
             "page": ""
           }
         }
@@ -127,7 +128,7 @@
         "gg_icon_text_grid_TGCbKj",
         "divider_FHRHjn",
         "gg_heading_image_Lh8bEX",
-        "complementary_MMXapa",
+        "complementary_jJRN7f",
         "collapsible_tab_yAPYME",
         "collapsible_tab_GyWCqX",
         "collapsible_tab_4bGyQa"
@@ -145,7 +146,8 @@
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
-        "padding_bottom": 12
+        "padding_bottom": 12,
+        "size_guide_image": "shopify://shop_images/size-guide.jpg"
       }
     },
     "related-products": {
@@ -170,36 +172,231 @@
     "gg_product_detail_Mg4rJH": {
       "type": "gg-product-detail",
       "blocks": {
+        "height_block_NcN3Ky": {
+          "type": "height_block",
+          "settings": {
+            "height_mobile": 100,
+            "height_desktop": 400,
+            "custom_css": "background: #f0f0f0;",
+            "target_tab": "description"
+          }
+        },
         "content_block_MGACxw": {
           "type": "content_block",
           "settings": {
             "block_type": "heading_text",
             "margin_top": 32,
             "margin_bottom": 32,
-            "heading": "<p>产品详情</p>",
-            "content": "<p>测试产品内容</p>",
+            "heading": "<p>Your Ultimate All-season Jacket</p>",
+            "content": "<p>Designed for city living, globetrotting, and everything in between, Alpargali is an era-defining jacket that will keep all your adventures organized. It’s mobile storage for the modern  explorer. The dozens of features - including 14 waterproof pockets and 15k breathability - give Alpargali ultimate versatility as an everyday jacket, travel jacket, going-out jacket AND activewear. Business meetings. Leisure rides. Country hikes. Any occasion. One piece of outerwear.</p>",
             "target_tab": "description"
           }
         },
-        "content_block_rN49nb": {
-          "type": "content_block",
+        "image_banner_MYRGBE": {
+          "type": "image_banner",
           "settings": {
-            "block_type": "heading_text",
+            "image_desktop": "shopify://shop_images/product-desc-desktop-001.png",
+            "image_mobile": "shopify://shop_images/product-desc-001-m.png",
             "margin_top": 32,
             "margin_bottom": 32,
-            "heading": "<p>产品详情</p>",
-            "content": "<p>请输入详细说明内容...</p>",
-            "target_tab": "video"
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
           }
         },
-        "content_block_DPjhDm": {
+        "image_banner_DDQQKc": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/icon-pc.png",
+            "image_mobile": "shopify://shop_images/icon.png",
+            "margin_top": 0,
+            "margin_bottom": 32,
+            "padding_x_desktop": 25,
+            "padding_x_mobile": 5,
+            "target_tab": "description"
+          }
+        },
+        "image_banner_kkiFwQ": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/product-detail-b-ib-03.jpg",
+            "image_mobile": "shopify://shop_images/product-detail-b-ib-03-m.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "carousel_JgqD6V": {
+          "type": "carousel",
+          "settings": {
+            "title": "14+ Pockets",
+            "image_1": "shopify://shop_images/product-detail-b-c-01-01.jpg",
+            "caption_1": "Arm Pocketswith RFID",
+            "hover_text_1": "",
+            "image_2": "shopify://shop_images/product-detail-b-c-01-02.jpg",
+            "caption_2": "4 DUAL-ACCESSCHEST POCKETS",
+            "hover_text_2": "",
+            "image_3": "shopify://shop_images/product-detail-b-c-01-03.jpg",
+            "caption_3": "Hidden BackPocket",
+            "hover_text_3": "",
+            "image_4": "shopify://shop_images/product-detail-b-c-01-04.jpg",
+            "caption_4": "Faster Transit Card Access with Sleeve Pocket",
+            "hover_text_4": "",
+            "image_5": "shopify://shop_images/product-detail-b-c-01-05.jpg",
+            "caption_5": "2 Handy Front Pockets",
+            "hover_text_5": "",
+            "image_6": "shopify://shop_images/product-detail-b-c-01-07.jpg",
+            "caption_6": "Secure Interior Zip Pockets",
+            "hover_text_6": "",
+            "image_7": "shopify://shop_images/product-detail-b-c-01-06.jpg",
+            "caption_7": "Stretchable Interior Mesh Pockets",
+            "hover_text_7": "",
+            "caption_8": "",
+            "hover_text_8": "",
+            "caption_9": "",
+            "hover_text_9": "",
+            "caption_10": "",
+            "hover_text_10": "",
+            "caption_11": "",
+            "hover_text_11": "",
+            "caption_12": "",
+            "hover_text_12": "",
+            "autoplay_speed": 3,
+            "target_tab": "description",
+            "margin_top": 32,
+            "margin_bottom": 32
+          }
+        },
+        "image_banner_xnEjDM": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/prodcut-detail-b-ib-04.jpg",
+            "image_mobile": "shopify://shop_images/prodcut-detail-b-ib-04-m.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "collage_y7J6gW": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/product-detail-b-collage-01.jpg",
+            "heading": "DWR",
+            "subheading": "Durable Water Repellent",
+            "text": "<p>Our DWR coating mimics the water-resistant lotus leaf. Polymer technology creates a waterproof surface, causing water to simply bead and slide off.</p>",
+            "target_tab": "description",
+            "margin_top": 32,
+            "margin_bottom": 0
+          }
+        },
+        "collage_RULhdH": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_right",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/product-detail-b-collage-02.jpg",
+            "heading": "Breathable Waterproof Membrane",
+            "subheading": "",
+            "text": "<p>Our advanced membrane begets superior breathability. Vapor escapes while water entry is blocked. And with a moisture vapor transmission rate of 15,000g/m²/24h, it significantly surpasses industry standards. No matter the conditions, you will be protected.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 32
+          }
+        },
+        "carousel_fzniPB": {
+          "type": "carousel",
+          "settings": {
+            "title": "30+ Features",
+            "image_1": "shopify://shop_images/product-detail-b-c-02-01.jpg",
+            "caption_1": "Fortified Windproof Warmth with Stand-Up Collar",
+            "hover_text_1": "1",
+            "image_2": "shopify://shop_images/product-detail-b-c-02-02.jpg",
+            "caption_2": "Adjustable Hood for 180° Field of View",
+            "hover_text_2": "",
+            "image_3": "shopify://shop_images/product-detail-b-c-02-03.jpg",
+            "caption_3": "Extended Rain Visor with Water-Repellent Coating",
+            "hover_text_3": "",
+            "image_4": "shopify://shop_images/product-detail-b-c-02-04.jpg",
+            "caption_4": "Extended Rain Visor with Water-Repellent Coating",
+            "hover_text_4": "",
+            "image_5": "shopify://shop_images/product-detail-b-c-02-05.jpg",
+            "caption_5": "Extended Rain Visor with Water-Repellent Coating",
+            "hover_text_5": "",
+            "image_6": "shopify://shop_images/product-detail-b-c-02-06.jpg",
+            "caption_6": "Front Zipper Slanted for Comfort and Style",
+            "hover_text_6": "",
+            "image_7": "shopify://shop_images/product-detail-b-c-02-07.jpg",
+            "caption_7": "Immediate Warmth with Built-In Fingerless Gloves",
+            "hover_text_7": "",
+            "image_8": "shopify://shop_images/product-detail-b-c-02-08.jpg",
+            "caption_8": "Revolutionary Shoulder Strap System",
+            "hover_text_8": "",
+            "image_9": "shopify://shop_images/product-detail-b-c-02-09.jpg",
+            "caption_9": "13 Waterproof YKK Zippers",
+            "hover_text_9": "",
+            "image_10": "shopify://shop_images/product-detail-b-c-02-10.jpg",
+            "caption_10": "Multi-purpose Holder Loop",
+            "hover_text_10": "",
+            "caption_11": "",
+            "hover_text_11": "",
+            "caption_12": "",
+            "hover_text_12": "",
+            "autoplay_speed": 5,
+            "target_tab": "description",
+            "margin_top": 32,
+            "margin_bottom": 32
+          }
+        },
+        "collage_cfpQpc": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/product-detail-b-collage-03.jpg",
+            "heading": "TEST",
+            "subheading": "",
+            "text": "<p>Aerogel, the world’s lightest solid, acts as an extraordinary thermal barrier by effectively blocking heat exchange. With a thickness of just 1.0mm, this advanced material maintains heat AND stonewalls cold air. This ensures the warmth generated inside stays inside, while the cold trying to seep in is blocked. No matter the conditions, you get maximum insulation with minimal bulk.</p>",
+            "target_tab": "description",
+            "margin_top": 32,
+            "margin_bottom": 32
+          }
+        },
+        "content_block_RiEbHT": {
           "type": "content_block",
           "settings": {
             "block_type": "heading_text",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "heading": "<p>The Difference is Clear</p>",
+            "content": "",
+            "target_tab": "description"
+          }
+        },
+        "image_banner_XfyKGt": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/product-detail-b-ib-05.png",
+            "image_mobile": "shopify://shop_images/product-detail-b-ib-05-m.png",
+            "margin_top": 0,
+            "margin_bottom": 32,
+            "padding_x_desktop": 6,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "faq_yqgwMK": {
+          "type": "faq",
+          "settings": {
             "margin_top": 32,
             "margin_bottom": 32,
-            "heading": "<p>产品详情</p>",
-            "content": "<p>请输入详细说明内容...</p>",
+            "gap": 0,
+            "faq_content": "<title>Why Alpargali Jacket?</title>\n<p>Alpargali Jacket is meticulously designed to seamlessly integrate with your daily adventures and metropolitan existence. It is the definitive jacket that redefines the era and keeps you impeccably organized. It acts as a mobile storage solution specifically engineered for the modern-day explorer. With an array of more than 30 remarkable features, encompassing 14 waterproof pockets and 15K breathability, Alpargali indisputably emerges as your quintessential everyday jacket. Embrace the unparalleled versatility offered by Alpargali – it is the solitary jacket that suffices for every season. Tailored impeccably for hiking, commuting, traveling, or simply indulging in a leisurely city stroll, Alpargali ensures that you are fully primed for any adventure that awaits. Unveil the pioneering features that render Alpargali the ultimate companion for your daily exploits, regardless of the trajectory your life takes.</p>\n<title>What is Alpargali water resistant grade? Other specifications?</title>\n<p>The water resistance grade of Alpargali is 15K. Additionally, it presents a breathability of 15K and is structured with a 2-layer design. The Durable Water Repellent (DWR) functions by imitating the way water droplets gather and roll off lotus leaves. The DWR polymer coating constructs a waterproof fabric through increasing the contact angle and surface tension, and the microscopic spikes created by the chemical coating make water droplets suspend a few microns above the actual fabric surface. Small water droplets coalesce in this situation to form larger water beads, which are then pulled off the fabric surface by gravitational force. The breathable and waterproof membrane features a micropore diameter smaller than that of water molecules to block their permeation, while being larger than that of human sweat vapor. The jacket is fabricated from 100% recycled Nylon 70D with a dual-layer configuration and showcases advanced DWR Level 3 water repellency. It undergoes rigorous testing for 15,000 mmH2O waterproof and breathability standards to ensure dryness and comfort.</p>\n<title>What weather and seasons is this jacket suitable for?</title>\n<p>The Alpargali All-Weather Jacket is designed for year-round wear, offering excellent windproof and waterproof protection. It’s perfect for all seasons, including light rain, strong winds, and colder conditions.</p>\n<title>What size should I choose?</title>\n<p>We recommend referring to our size chart to select the right size. If you're unsure, feel free to contact our customer service team for personalized advice.</p>\n<title>How to care for my jacket?</title>\n<p>Please refer to the product label for specific care instructions.</p>",
             "target_tab": "faq"
           }
         },
@@ -209,9 +406,20 @@
         }
       },
       "block_order": [
+        "height_block_NcN3Ky",
         "content_block_MGACxw",
-        "content_block_rN49nb",
-        "content_block_DPjhDm",
+        "image_banner_MYRGBE",
+        "image_banner_DDQQKc",
+        "image_banner_kkiFwQ",
+        "carousel_JgqD6V",
+        "image_banner_xnEjDM",
+        "collage_y7J6gW",
+        "collage_RULhdH",
+        "carousel_fzniPB",
+        "collage_cfpQpc",
+        "content_block_RiEbHT",
+        "image_banner_XfyKGt",
+        "faq_yqgwMK",
         "judge_me_reviews_review_widget_JctMNU"
       ],
       "settings": {
