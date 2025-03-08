@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "gg_breadcrumb_yr7zeq": {
       "type": "gg-breadcrumb",
@@ -329,7 +329,7 @@
             "hover_text_11": "",
             "caption_12": "",
             "hover_text_12": "",
-            "autoplay_speed": 3,
+            "autoplay_speed": 8,
             "target_tab": "description",
             "margin_top": 40,
             "margin_bottom": 100
