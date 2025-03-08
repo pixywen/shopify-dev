@@ -14,6 +14,9 @@ class MediaGalleryEx extends HTMLElement {
       }
     });
 
+    // 优化视频和3D模型在移动端的显示
+    this.optimizeNonImageMedia();
+
     this.initColorFilter();
     
     // 添加窗口大小变化监听
@@ -25,10 +28,32 @@ class MediaGalleryEx extends HTMLElement {
     const wasMobile = this.isMobile;
     this.isMobile = window.innerWidth <= 990;
     
-    // 如果设备类型发生变化，重新应用颜色筛选
+    // 如果设备类型发生变化，重新应用颜色筛选和优化
     if (wasMobile !== this.isMobile) {
       this.filterMediaByColor(this.currentColor);
+      this.optimizeNonImageMedia();
     }
+  }
+
+  // 优化视频和3D模型在移动端的显示
+  optimizeNonImageMedia() {
+    if (!this.isMobile) return;
+
+    // 处理视频和3D模型
+    const nonImageItems = Array.from(this.mediaItems).filter(item => 
+      item.getAttribute('data-media-type') === 'video' || 
+      item.getAttribute('data-media-type') === 'external_video' || 
+      item.getAttribute('data-media-type') === 'model'
+    );
+
+    nonImageItems.forEach(item => {
+      // 确保视频和3D模型的容器高度与图片一致
+      const previewImage = item.querySelector('.product__media img');
+      if (previewImage) {
+        const aspectRatio = previewImage.naturalHeight / previewImage.naturalWidth;
+        item.style.aspectRatio = `1 / ${aspectRatio}`;
+      }
+    });
   }
 
   initColorFilter() {
@@ -96,6 +121,11 @@ class MediaGalleryEx extends HTMLElement {
           block: 'nearest'
         });
       }
+    }
+
+    // 优化视频和3D模型
+    if (this.isMobile) {
+      this.optimizeNonImageMedia();
     }
   }
 }

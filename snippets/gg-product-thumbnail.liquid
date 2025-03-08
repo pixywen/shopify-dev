@@ -70,6 +70,27 @@
 .debug-outline {
   box-shadow: 0 0 0 2px red inset;
 }
+
+/* 移动端视频和3D模型优化 */
+@media (max-width: 990px) {
+  .media-type-video,
+  .media-type-external_video,
+  .media-type-model {
+    position: relative;
+  }
+  
+  .media-type-video .product__media,
+  .media-type-external_video .product__media,
+  .media-type-model .product__media {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .deferred-media {
+    position: relative;
+    z-index: 2;
+  }
+}
 </style>
 
 <div
@@ -122,6 +143,7 @@
           media.preview_image
           | image_url: width: 1946
           | image_tag:
+            class: 'non-image-preview',
             loading: lazy,
             sizes: sizes,
             widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
@@ -143,9 +165,9 @@
 
   {%- if media.media_type != 'image' -%}
     {%- if media.media_type == 'model' -%}
-      <product-model class="deferred-media media media--transparent" data-media-id="{{ media.id }}">
+      <product-model class="deferred-media media media--transparent media-mobile-optimized" data-media-id="{{ media.id }}">
     {%- else -%}
-      <deferred-media class="deferred-media media media--transparent" data-media-id="{{ media.id }}">
+      <deferred-media class="deferred-media media media--transparent media-mobile-optimized" data-media-id="{{ media.id }}">
     {%- endif -%}
     <button id="Deferred-Poster-Modal-{{ media.id }}" class="deferred-media__poster" type="button">
       <span class="deferred-media__poster-button motion-reduce">
@@ -165,6 +187,7 @@
         media.preview_image
         | image_url: width: 1946
         | image_tag:
+          class: 'deferred-media-poster-image',
           loading: lazy,
           sizes: sizes,
           widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
