@@ -94,7 +94,7 @@
           "settings": {
             "heading": "Details",
             "icon": "none",
-            "content": "<p>The Graphene Lightweight Vest features a heat-locking graphene back panel, water- and stain-resistant Teflon coating, and sustainable Sorona insulation for lightweight warmth. Its slim design is perfect for outdoor sports or layering, offering all-day comfort and versatility in any weather.</p>",
+            "content": "<p>The Alpargali Crossbody Bag is the perfect companion for those who value functionality, convenience, and style in their everyday adventures. Whether you’re commuting, running errands, or exploring the city, this bag is designed to keep you organized and prepared.</p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
@@ -105,7 +105,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "<p>Shell: Teflon-coated</p><p>Insulation: Graphene, Sorona</p><p>Pockets: 1</p>",
+            "content": "<p>Pockets: 6</p><p>Fabric: 1800D Polyester</p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
@@ -178,12 +178,24 @@
     "gg_product_detail_Mg4rJH": {
       "type": "gg-product-detail",
       "blocks": {
+        "image_banner_hM9wYk": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/mbcb-detail-b-ib-01.jpg",
+            "image_mobile": "shopify://shop_images/mbcb-detail-b-ib-01-m.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
         "collage_Va8eBx": {
           "type": "collage",
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/glj-detail-b-collage-01.jpg",
+            "image": "shopify://shop_images/mbcb-detail-b-collage-01.jpg",
             "heading": "Graphene Back Panel",
             "subheading": "",
             "text": "<p>Strategically placed graphene back panel locks in heat exactly where it's needed, providing superior warmth and efficiency without added bulk.</p>",
@@ -197,7 +209,7 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/glj-detail-b-collage-02.jpg",
+            "image": "shopify://shop_images/mbcb-detail-b-collage-02.jpg",
             "heading": "Teflon™ Coated Exterior",
             "subheading": "",
             "text": "<p>The water- and stain-resistant Teflon™ coating ensures durability and protection from the elements, keeping you dry in all weather conditions.</p>",
@@ -206,59 +218,15 @@
             "margin_bottom": 0
           }
         },
-        "collage_mjAxqr": {
-          "type": "collage",
-          "settings": {
-            "desktop_layout": "image_right",
-            "mobile_layout": "image_top",
-            "image": "shopify://shop_images/glj-detail-b-collage-03.jpg",
-            "heading": "Sorona® Insulation",
-            "subheading": "",
-            "text": "<p>Lightweight and sustainable Sorona® insulation delivers high warmth-to-weight performance, offering cozy warmth without unnecessary bulk.</p>",
-            "target_tab": "description",
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        },
-        "collage_m7QYqT": {
-          "type": "collage",
-          "settings": {
-            "desktop_layout": "image_left",
-            "mobile_layout": "image_top",
-            "image": "shopify://shop_images/glj-detail-b-collage-04.jpg",
-            "heading": "Layering Versatility",
-            "subheading": "",
-            "text": "<p>The slim profile makes it perfect for layering under heavier jackets, offering additional insulation during cold weather without compromising mobility.</p>",
-            "target_tab": "description",
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        },
-        "collage_RfcPLj": {
-          "type": "collage",
-          "settings": {
-            "desktop_layout": "image_right",
-            "mobile_layout": "image_top",
-            "image": "shopify://shop_images/glj-detail-b-collage-05.jpg",
-            "heading": "Ideal for Any Adventure",
-            "subheading": "",
-            "text": "<p>Outdoor sports, brisk walks, or as a warming layer, the Graphene Vest ensures all-day comfort and adaptability in any setting. Whether you're out on the trail or navigating the city, it’s designed to keep you warm and ready for whatever comes your way.</p>",
-            "target_tab": "description",
-            "margin_top": 0,
-            "margin_bottom": 32
-          }
-        },
         "judge_me_reviews_review_widget_JctMNU": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         }
       },
       "block_order": [
+        "image_banner_hM9wYk",
         "collage_Va8eBx",
         "collage_Tn3AJP",
-        "collage_mjAxqr",
-        "collage_m7QYqT",
-        "collage_RfcPLj",
         "judge_me_reviews_review_widget_JctMNU"
       ],
       "settings": {
