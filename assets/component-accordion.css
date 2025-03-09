@@ -47,12 +47,25 @@
 }
 
 .accordion__content {
+  padding: 1rem;
   margin-bottom: 1.5rem;
   word-break: break-word;
   overflow-x: auto;
-  padding: 0 0.6rem;
 }
 
 .accordion__content img {
   max-width: 100%;
+}
+
+.accordion__image {
+  margin: 1.5rem auto;
+  display: block;
+  text-align: center;
+}
+
+.accordion__image-element {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
