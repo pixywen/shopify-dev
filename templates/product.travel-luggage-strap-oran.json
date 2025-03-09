@@ -222,6 +222,7 @@
         "content_block_DPjhDm",
         "judge_me_reviews_review_widget_JctMNU"
       ],
+      "disabled": true,
       "settings": {
         "show_description": true,
         "show_video": true,
