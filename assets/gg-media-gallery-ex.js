@@ -3,6 +3,7 @@ class MediaGalleryEx extends HTMLElement {
     super();
     this.mediaItems = this.querySelectorAll('.media-item');
     this.currentColor = this.dataset.currentColor;
+    this.hasColorVariant = this.dataset.hasColorVariant === 'true';
     this.isMobile = window.innerWidth <= 990;
 
     // 为每个媒体项添加媒体类型标记
@@ -17,10 +18,24 @@ class MediaGalleryEx extends HTMLElement {
     // 优化视频和3D模型在移动端的显示
     this.optimizeNonImageMedia();
 
-    this.initColorFilter();
+    // 只在有颜色变体时初始化颜色筛选
+    if (this.hasColorVariant) {
+      this.initColorFilter();
+    } else {
+      // 没有颜色变体时显示所有图片
+      this.showAllMedia();
+    }
     
     // 添加窗口大小变化监听
     window.addEventListener('resize', this.handleResize.bind(this));
+  }
+
+  // 显示所有媒体项
+  showAllMedia() {
+    this.mediaItems.forEach(item => {
+      item.style.display = 'block';
+      item.classList.add('is-active');
+    });
   }
 
   // 处理窗口大小变化
@@ -28,9 +43,11 @@ class MediaGalleryEx extends HTMLElement {
     const wasMobile = this.isMobile;
     this.isMobile = window.innerWidth <= 990;
     
-    // 如果设备类型发生变化，重新应用颜色筛选和优化
+    // 如果设备类型发生变化，重新应用布局
     if (wasMobile !== this.isMobile) {
-      this.filterMediaByColor(this.currentColor);
+      if (this.hasColorVariant) {
+        this.filterMediaByColor(this.currentColor);
+      }
       this.optimizeNonImageMedia();
     }
   }
@@ -68,16 +85,19 @@ class MediaGalleryEx extends HTMLElement {
 
     // 添加变体选择变化监听（兼容Shopify标准事件）
     document.addEventListener('variant:change', (event) => {
+      if (!this.hasColorVariant) return;
       const newColor = event.detail.variant.option1;
       this.filterMediaByColor(newColor);
     });
 
     // 初始筛选
-    this.filterMediaByColor(this.currentColor);
+    if (this.currentColor) {
+      this.filterMediaByColor(this.currentColor);
+    }
   }
 
   filterMediaByColor(color) {
-    if (!color) return;
+    if (!color || !this.hasColorVariant) return;
     this.currentColor = color;
 
     // 筛选主图

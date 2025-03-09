@@ -20,14 +20,18 @@
     {%- if has_color_variant -%}
     data-current-color="{{ current_color | escape }}"
     {%- endif -%}
+    data-has-color-variant="{{ has_color_variant }}"
   >
     <div class="media-gallery-ex__main">
       {%- for media in product.media -%}
-        <div class="media-item{% if forloop.first %} is-active{% endif %}" 
+        <div class="media-item{% if forloop.first or has_color_variant == false %} is-active{% endif %}" 
              data-media-id="{{ media.id }}"
              data-media-type="{{ media.media_type }}"
              {%- if has_color_variant -%}
              data-media-color="{{ media.alt | split: '|' | first | strip }}"
+             style="display: {% if forloop.first %}block{% else %}none{% endif %};"
+             {%- else -%}
+             style="display: block;"
              {%- endif -%}>
           {% render 'gg-product-thumbnail', 
             media: media,
