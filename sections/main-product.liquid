@@ -231,7 +231,7 @@
                     </summary>
                     <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
                       {% if block.settings.image != blank and block.settings.image_position == 'top' %}
-                        <div class="accordion__image" style="max-width: {{ block.settings.image_width }}%;">
+                        <div class="accordion__image" style="width: {{ block.settings.image_width }}%; margin-left: {{ block.settings.image_margin_left }}%; margin-right: {{ block.settings.image_margin_right }}%;">
                           {%- if block.settings.image != blank -%}
                             <img
                               srcset="{{ block.settings.image | image_url: width: 165 }} 165w,
@@ -258,7 +258,7 @@
                       {{ block.settings.page.content }}
                       
                       {% if block.settings.image != blank and block.settings.image_position == 'bottom' %}
-                        <div class="accordion__image" style="max-width: {{ block.settings.image_width }}%;">
+                        <div class="accordion__image" style="width: {{ block.settings.image_width }}%; margin-left: {{ block.settings.image_margin_left }}%; margin-right: {{ block.settings.image_margin_right }}%;">
                           {%- if block.settings.image != blank -%}
                             <img
                               srcset="{{ block.settings.image | image_url: width: 165 }} 165w,
@@ -1274,6 +1274,26 @@
           ],
           "default": "bottom",
           "label": "图片位置"
+        },
+        {
+          "type": "range",
+          "id": "image_margin_left",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "label": "图片左边距",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "image_margin_right",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "label": "图片右边距",
+          "default": 0
         },
         {
           "type": "range",
