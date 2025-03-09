@@ -230,54 +230,28 @@
                       {{- 'icon-caret.svg' | inline_asset_content -}}
                     </summary>
                     <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
-                      {% if block.settings.image != blank and block.settings.image_position == 'top' %}
-                        <div class="accordion__image" style="width: {{ block.settings.image_width }}%; margin-left: {{ block.settings.image_margin_left }}%; margin-right: {{ block.settings.image_margin_right }}%;">
-                          {%- if block.settings.image != blank -%}
-                            <img
-                              srcset="{{ block.settings.image | image_url: width: 165 }} 165w,
-                                {{ block.settings.image | image_url: width: 360 }} 360w,
-                                {{ block.settings.image | image_url: width: 535 }} 535w,
-                                {{ block.settings.image | image_url: width: 750 }} 750w,
-                                {{ block.settings.image | image_url: width: 1070 }} 1070w,
-                                {{ block.settings.image | image_url: width: 1500 }} 1500w"
-                              src="{{ block.settings.image | image_url: width: 1500 }}"
-                              sizes="(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
-                                (min-width: 750px) calc(100vw - 11.5rem),
-                                calc(100vw - 4rem)"
-                              loading="lazy"
-                              width="{{ block.settings.image.width }}"
-                              height="{{ block.settings.image.height }}"
-                              alt="{{ block.settings.image_alt | default: block.settings.heading | escape }}"
-                              class="accordion__image-element"
-                            >
-                          {%- endif -%}
-                        </div>
-                      {% endif %}
-                      
                       {{ block.settings.content }}
                       {{ block.settings.page.content }}
                       
-                      {% if block.settings.image != blank and block.settings.image_position == 'bottom' %}
-                        <div class="accordion__image" style="width: {{ block.settings.image_width }}%; margin-left: {{ block.settings.image_margin_left }}%; margin-right: {{ block.settings.image_margin_right }}%;">
-                          {%- if block.settings.image != blank -%}
-                            <img
-                              srcset="{{ block.settings.image | image_url: width: 165 }} 165w,
-                                {{ block.settings.image | image_url: width: 360 }} 360w,
-                                {{ block.settings.image | image_url: width: 535 }} 535w,
-                                {{ block.settings.image | image_url: width: 750 }} 750w,
-                                {{ block.settings.image | image_url: width: 1070 }} 1070w,
-                                {{ block.settings.image | image_url: width: 1500 }} 1500w"
-                              src="{{ block.settings.image | image_url: width: 1500 }}"
-                              sizes="(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
-                                (min-width: 750px) calc(100vw - 11.5rem),
-                                calc(100vw - 4rem)"
-                              loading="lazy"
-                              width="{{ block.settings.image.width }}"
-                              height="{{ block.settings.image.height }}"
-                              alt="{{ block.settings.image_alt | default: block.settings.heading | escape }}"
-                              class="accordion__image-element"
-                            >
-                          {%- endif -%}
+                      {% if block.settings.image != blank %}
+                        <div class="accordion__image accordion__image--bottom-left" style="--image-width: {{ block.settings.image_width }}%; --image-margin-left: {{ block.settings.image_margin_left }}%; --image-margin-right: {{ block.settings.image_margin_right }}%;">
+                          <img
+                            srcset="{{ block.settings.image | image_url: width: 165 }} 165w,
+                              {{ block.settings.image | image_url: width: 360 }} 360w,
+                              {{ block.settings.image | image_url: width: 535 }} 535w,
+                              {{ block.settings.image | image_url: width: 750 }} 750w,
+                              {{ block.settings.image | image_url: width: 1070 }} 1070w,
+                              {{ block.settings.image | image_url: width: 1500 }} 1500w"
+                            src="{{ block.settings.image | image_url: width: 1500 }}"
+                            sizes="(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
+                              (min-width: 750px) calc(100vw - 11.5rem),
+                              calc(100vw - 4rem)"
+                            loading="lazy"
+                            width="{{ block.settings.image.width }}"
+                            height="{{ block.settings.image.height }}"
+                            alt="{{ block.settings.image_alt | default: block.settings.heading | escape }}"
+                            class="accordion__image-element"
+                          >
                         </div>
                       {% endif %}
                     </div>
@@ -365,7 +339,7 @@
                                 <dd>
                                   <s class="variant-item__old-price">
                                     {{ variant_price_compare | money_with_currency }}
-                                  </s>
+                                   } 
                                 </dd>
                               </dl>
                             {%- endif -%}
@@ -405,7 +379,7 @@
                                 <dd>
                                   <s class="variant-item__old-price">
                                     {{ variant_price_compare | money_with_currency }}
-                                  </s>
+                                   } 
                                 </dd>
                                 <dt class="visually-hidden">
                                   {{ 'products.product.price.sale_price' | t }}
@@ -1260,50 +1234,14 @@
           "info": "描述图片内容，用于屏幕阅读器等辅助技术"
         },
         {
-          "type": "select",
-          "id": "image_position",
-          "options": [
-            {
-              "value": "top",
-              "label": "顶部"
-            },
-            {
-              "value": "bottom",
-              "label": "底部"
-            }
-          ],
-          "default": "bottom",
-          "label": "图片位置"
-        },
-        {
-          "type": "range",
-          "id": "image_margin_left",
-          "min": 0,
-          "max": 100,
-          "step": 5,
-          "unit": "%",
-          "label": "图片左边距",
-          "default": 0
-        },
-        {
-          "type": "range",
-          "id": "image_margin_right",
-          "min": 0,
-          "max": 100,
-          "step": 5,
-          "unit": "%",
-          "label": "图片右边距",
-          "default": 0
-        },
-        {
           "type": "range",
           "id": "image_width",
-          "min": 50,
+          "min": 20,
           "max": 100,
           "step": 5,
           "unit": "%",
           "label": "图片宽度",
-          "default": 100
+          "default": 50
         }
       ]
     },
