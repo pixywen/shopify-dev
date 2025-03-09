@@ -113,6 +113,7 @@
         },
         "collapsible_tab_4bGyQa": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Care",
             "icon": "none",
