@@ -94,26 +94,34 @@
           "settings": {
             "heading": "Details",
             "icon": "none",
-            "content": "",
-            "page": ""
+            "content": "<p>The Luggage Strap is the ultimate solution for easy and secure travel. Designed for modern travelers, this strap easily attaches your bag to your luggage handle, providing hands-free convenience while you navigate through airports, train stations, or busy streets.</p>",
+            "page": "",
+            "image_alt": "",
+            "image_width": 50
           }
         },
         "collapsible_tab_GyWCqX": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Specs",
             "icon": "none",
             "content": "",
-            "page": ""
+            "page": "",
+            "image_alt": "",
+            "image_width": 50
           }
         },
         "collapsible_tab_4bGyQa": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Care",
             "icon": "none",
             "content": "",
-            "page": ""
+            "page": "",
+            "image_alt": "",
+            "image_width": 50
           }
         }
       },
