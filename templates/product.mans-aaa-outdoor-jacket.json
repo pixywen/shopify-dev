@@ -96,7 +96,12 @@
             "heading": "Details",
             "icon": "none",
             "content": "<p>Designed for urban explorers and globetrotters alike, Alpargali is the era-defining jacket that combines style and functionality. With 14 waterproof pockets and 15k breathability, it seamlessly transitions between everyday wear, travel, business meetings, leisure rides, and outdoor adventures. One jacket for every occasion.</p>",
-            "page": ""
+            "page": "",
+            "image_alt": "",
+            "image_position": "bottom",
+            "image_margin_left": 0,
+            "image_margin_right": 0,
+            "image_width": 100
           }
         },
         "collapsible_tab_GyWCqX": {
@@ -105,7 +110,12 @@
             "heading": "Specs",
             "icon": "none",
             "content": "<p>Fabric: 100% Nylon 70D, 2 layer</p><p>Breathability: 10K</p><p>Waterproof: 10K</p><p>Pockets: 14</p>",
-            "page": ""
+            "page": "",
+            "image_alt": "",
+            "image_position": "bottom",
+            "image_margin_left": 0,
+            "image_margin_right": 0,
+            "image_width": 100
           }
         },
         "collapsible_tab_4bGyQa": {
@@ -114,7 +124,13 @@
             "heading": "Care",
             "icon": "none",
             "content": "<p>Clean regularly, avoid regular detergents and fabric softeners</p><p>Usage and Cleaning Frequency:</p><p>- Intensive Use: Deep clean after 10 uses.</p><p>- Low-Intensity Use: Deep clean every 1-2 months.</p><p>Hand washmaximum temperature 40°C</p><p>Do not bleachDo not tumble dry</p><p>Do not ironDo not dry clean</p><p>Line dry in shade</p>",
-            "page": ""
+            "page": "",
+            "image": "shopify://shop_images/aao-info-icon-01.png",
+            "image_alt": "",
+            "image_position": "bottom",
+            "image_margin_left": 0,
+            "image_margin_right": 0,
+            "image_width": 50
           }
         }
       },
