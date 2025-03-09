@@ -94,8 +94,10 @@
           "settings": {
             "heading": "Details",
             "icon": "none",
-            "content": "",
-            "page": ""
+            "content": "<p>The Graphene Lightweight Jacket combines advanced graphene technology with a sleek design, offering warmth without the weight. Perfect for city life or outdoor adventures, it’s lightweight, durable, and temperature-regulating, providing comfort and style wherever you go.</p>",
+            "page": "",
+            "image_alt": "",
+            "image_width": 50
           }
         },
         "collapsible_tab_GyWCqX": {
@@ -103,8 +105,10 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "",
-            "page": ""
+            "content": "<p>Shell: Teflon-coated</p><p>Insulation: Graphene, Sorona</p><p>Pockets: 3</p>",
+            "page": "",
+            "image_alt": "",
+            "image_width": 50
           }
         },
         "collapsible_tab_4bGyQa": {
@@ -112,8 +116,11 @@
           "settings": {
             "heading": "Care",
             "icon": "none",
-            "content": "",
-            "page": ""
+            "content": "<p>Clean regularly, avoid regular detergents and fabric softenersUsage and Cleaning Frequency:- Intensive Use: Deep clean after 10 uses.- Low-Intensity Use: Deep clean every 1-2 months.</p>",
+            "page": "",
+            "image": "shopify://shop_images/gg-detail-info.png",
+            "image_alt": "",
+            "image_width": 50
           }
         }
       },
