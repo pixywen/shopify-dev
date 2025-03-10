@@ -229,12 +229,51 @@
         "show_reviews": true,
         "show_faq": true
       }
+    },
+    "gg_newsletter_DkdRra": {
+      "type": "gg-newsletter",
+      "blocks": {
+        "heading_W9X7L4": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_k7mzWF": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
+          }
+        },
+        "email_form_ct3J7q": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_W9X7L4",
+        "paragraph_k7mzWF",
+        "email_form_ct3J7q"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "show_bottom_content": true,
+        "feature1_text": "免费配送超过$169",
+        "feature2_text": "2个Kickstarter成功活动",
+        "feature3_text": "终身保修",
+        "feature4_text": "超过15,000位信任客户"
+      }
     }
   },
   "order": [
     "gg_breadcrumb_yr7zeq",
     "main",
     "related-products",
-    "gg_product_detail_Mg4rJH"
+    "gg_product_detail_Mg4rJH",
+    "gg_newsletter_DkdRra"
   ]
 }
