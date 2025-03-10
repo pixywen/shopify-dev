@@ -98,9 +98,6 @@
             "content": "<p>Designed for urban explorers and globetrotters alike, Alpargali is the era-defining jacket that combines style and functionality. With 14 waterproof pockets and 15k breathability, it seamlessly transitions between everyday wear, travel, business meetings, leisure rides, and outdoor adventures. One jacket for every occasion.</p>",
             "page": "",
             "image_alt": "",
-            "image_position": "bottom",
-            "image_margin_left": 0,
-            "image_margin_right": 0,
             "image_width": 100
           }
         },
@@ -112,9 +109,6 @@
             "content": "<p>Fabric: 100% Nylon 70D, 2 layer</p><p>Breathability: 10K</p><p>Waterproof: 10K</p><p>Pockets: 14</p>",
             "page": "",
             "image_alt": "",
-            "image_position": "bottom",
-            "image_margin_left": 0,
-            "image_margin_right": 0,
             "image_width": 100
           }
         },
@@ -127,9 +121,6 @@
             "page": "",
             "image": "shopify://shop_images/aao-info-icon-01.png",
             "image_alt": "",
-            "image_position": "bottom",
-            "image_margin_left": 0,
-            "image_margin_right": 0,
             "image_width": 50
           }
         }
@@ -434,12 +425,51 @@
         "show_reviews": true,
         "show_faq": true
       }
+    },
+    "gg_newsletter_RXbacr": {
+      "type": "gg-newsletter",
+      "blocks": {
+        "heading_Q6NUfP": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_KiBmEA": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
+          }
+        },
+        "email_form_84ceaY": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_Q6NUfP",
+        "paragraph_KiBmEA",
+        "email_form_84ceaY"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "show_bottom_content": true,
+        "feature1_text": "免费配送超过$169",
+        "feature2_text": "2个Kickstarter成功活动",
+        "feature3_text": "终身保修",
+        "feature4_text": "超过15,000位信任客户"
+      }
     }
   },
   "order": [
     "gg_breadcrumb_yr7zeq",
     "main",
     "related-products",
-    "gg_product_detail_Mg4rJH"
+    "gg_product_detail_Mg4rJH",
+    "gg_newsletter_RXbacr"
   ]
 }
