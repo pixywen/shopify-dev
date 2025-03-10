@@ -30,8 +30,68 @@
     },
     "gg_rich_text_page_R7exfe": {
       "type": "gg-rich-text-page",
+      "blocks": {
+        "text_kGpEAH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Embark with Alpargali, where innovation and exploration is woven into every stitch. The name Alpargali is a fusion of \"alpine\" (rugged, high-altitude terrain) and \"argali\" (a mountain sheep known for its remarkable resilience&rcub;. This blend captures the essence of our brand—creating functional apparel that elevates your adventures.</p>",
+            "font": "montserrat_n4",
+            "font_size": 16,
+            "font_weight": 400,
+            "letter_spacing": 1,
+            "line_height": 27,
+            "margin_top": 25,
+            "margin_bottom": 25
+          }
+        },
+        "text_HXA9RX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our mission is simple yet profound: to seamlessly transition you from city streets to rugged trails without sacrificing style or functionality. In a world where versatility is everything, Alpargali jackets are designed to not only keep pace with your dynamic lifestyle, but to enhance it.</p>",
+            "font": "montserrat_n4",
+            "font_size": 16,
+            "font_weight": 400,
+            "letter_spacing": 1,
+            "line_height": 27,
+            "margin_top": 25,
+            "margin_bottom": 25
+          }
+        },
+        "text_wxn7dP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Functionality lies at the heart of our brand. Each Alpargali jacket is meticulously engineered to endure outdoor and elemental rigors while providing the comfort needed for daily wear. From weather-resistant shells to cleverly placed pockets, our jackets are built to perform in any environment.</p>",
+            "font": "montserrat_n4",
+            "font_size": 16,
+            "font_weight": 400,
+            "letter_spacing": 1,
+            "line_height": 27,
+            "margin_top": 25,
+            "margin_bottom": 25
+          }
+        },
+        "text_yMBwV7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>But we don't stop there. We believe in design that solves problems and augments experiences. Whether you're navigating urban landscapes or conquering mountain peaks, Alpargali jackets blend seamlessly into any setting, offering solutions tailored to your needs.</p>",
+            "font": "montserrat_n4",
+            "font_size": 16,
+            "font_weight": 400,
+            "letter_spacing": 1,
+            "line_height": 27,
+            "margin_top": 25,
+            "margin_bottom": 25
+          }
+        }
+      },
+      "block_order": [
+        "text_kGpEAH",
+        "text_HXA9RX",
+        "text_wxn7dP",
+        "text_yMBwV7"
+      ],
       "settings": {
-        "content_width": 600,
+        "content_width": 1200,
         "padding_left": 20,
         "padding_right": 20,
         "padding_top": 36,
