@@ -81,9 +81,11 @@
   [data-zoom-container] img {
     transform: none !important;
   }
+  
   .media-gallery-ex__main {
     gap: 2.66vw;
   }
+  
   .media-gallery-ex__main {
     display: flex;
     flex-wrap: nowrap;
@@ -101,7 +103,64 @@
     margin-right: 15px;
     scroll-snap-align: start;
     min-height: auto;
-    display: block !important;
+    /* 移除强制显示所有项目的样式，保留颜色筛选功能 */
+    /* display: block !important; */
+  }
+
+  /* 确保视频媒体项正确显示 */
+  .media-item.is-active {
+    display: block;
+  }
+
+  /* 优化视频和3D模型的显示 */
+  .media-item[data-media-type="video"],
+  .media-item[data-media-type="external_video"],
+  .media-item[data-media-type="model"] {
+    height: auto;
+    position: relative;
+  }
+  
+  /* 修复视频和3D模型的布局问题 */
+  .media-item[data-media-type="video"] .deferred-media,
+  .media-item[data-media-type="external_video"] .deferred-media,
+  .media-item[data-media-type="model"] product-model {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  /* 隐藏重复的封面图 */
+  .media-item[data-media-type="video"] .deferred-media__poster img,
+  .media-item[data-media-type="external_video"] .deferred-media__poster img,
+  .media-item[data-media-type="model"] .deferred-media__poster img {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  /* 确保播放按钮可见 */
+  .media-item[data-media-type="video"] .deferred-media__poster-button,
+  .media-item[data-media-type="external_video"] .deferred-media__poster-button,
+  .media-item[data-media-type="model"] .deferred-media__poster-button {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* 3D模型加载后隐藏底部静态预览图 */
+  .media-item[data-media-type="model"] product-model model-viewer + .product__media,
+  .media-item[data-media-type="model"] product-model model-viewer ~ .product__media {
+    display: none !important;
+  }
+  
+  /* 当3D模型加载完成后隐藏预览图 */
+  .media-item.model-loaded .product__modal-opener .product__media {
+    opacity: 0;
+    visibility: hidden;
   }
 
   .media-gallery-ex__thumbs {
@@ -112,9 +171,11 @@
     /* display: none; */
     height: 5px;
   }
+  
   .media-gallery-ex__main::-webkit-scrollbar-track {
     background: rgba(204, 204, 204, 1);
   }
+  
   .media-gallery-ex__main::-webkit-scrollbar-thumb {
     background: rgba(0, 0, 0, 1);
     border: none;

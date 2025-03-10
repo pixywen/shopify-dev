@@ -232,6 +232,28 @@
                     <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
                       {{ block.settings.content }}
                       {{ block.settings.page.content }}
+                      
+                      {% if block.settings.image != blank %}
+                        <div class="accordion__image accordion__image--bottom-left" style="--image-width: {{ block.settings.image_width }}%; --image-margin-left: {{ block.settings.image_margin_left }}%; --image-margin-right: {{ block.settings.image_margin_right }}%;">
+                          <img
+                            srcset="{{ block.settings.image | image_url: width: 165 }} 165w,
+                              {{ block.settings.image | image_url: width: 360 }} 360w,
+                              {{ block.settings.image | image_url: width: 535 }} 535w,
+                              {{ block.settings.image | image_url: width: 750 }} 750w,
+                              {{ block.settings.image | image_url: width: 1070 }} 1070w,
+                              {{ block.settings.image | image_url: width: 1500 }} 1500w"
+                            src="{{ block.settings.image | image_url: width: 1500 }}"
+                            sizes="(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
+                              (min-width: 750px) calc(100vw - 11.5rem),
+                              calc(100vw - 4rem)"
+                            loading="lazy"
+                            width="{{ block.settings.image.width }}"
+                            height="{{ block.settings.image.height }}"
+                            alt="{{ block.settings.image_alt | default: block.settings.heading | escape }}"
+                            class="accordion__image-element"
+                          >
+                        </div>
+                      {% endif %}
                     </div>
                   </details>
                 </div>
@@ -317,7 +339,7 @@
                                 <dd>
                                   <s class="variant-item__old-price">
                                     {{ variant_price_compare | money_with_currency }}
-                                  </s>
+                                   } 
                                 </dd>
                               </dl>
                             {%- endif -%}
@@ -357,7 +379,7 @@
                                 <dd>
                                   <s class="variant-item__old-price">
                                     {{ variant_price_compare | money_with_currency }}
-                                  </s>
+                                   } 
                                 </dd>
                                 <dt class="visually-hidden">
                                   {{ 'products.product.price.sale_price' | t }}
@@ -1199,6 +1221,27 @@
           "type": "page",
           "id": "page",
           "label": "t:sections.main-product.blocks.collapsible_tab.settings.page.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "图片"
+        },
+        {
+          "type": "text",
+          "id": "image_alt",
+          "label": "图片替代文本",
+          "info": "描述图片内容，用于屏幕阅读器等辅助技术"
+        },
+        {
+          "type": "range",
+          "id": "image_width",
+          "min": 20,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "label": "图片宽度",
+          "default": 50
         }
       ]
     },

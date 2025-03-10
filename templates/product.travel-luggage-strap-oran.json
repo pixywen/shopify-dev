@@ -94,7 +94,7 @@
           "settings": {
             "heading": "Details",
             "icon": "none",
-            "content": "",
+            "content": "<p>The Luggage Strap is the ultimate solution for easy and secure travel. Designed for modern travelers, this strap easily attaches your bag to your luggage handle, providing hands-free convenience while you navigate through airports, train stations, or busy streets.</p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
@@ -102,6 +102,7 @@
         },
         "collapsible_tab_GyWCqX": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Specs",
             "icon": "none",
@@ -113,6 +114,7 @@
         },
         "collapsible_tab_4bGyQa": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Care",
             "icon": "none",
@@ -151,8 +153,7 @@
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
-        "padding_bottom": 12,
-        "size_guide_image": "shopify://shop_images/size-guide.jpg"
+        "padding_bottom": 12
       }
     },
     "related-products": {
@@ -221,6 +222,7 @@
         "content_block_DPjhDm",
         "judge_me_reviews_review_widget_JctMNU"
       ],
+      "disabled": true,
       "settings": {
         "show_description": true,
         "show_video": true,
@@ -228,31 +230,31 @@
         "show_faq": true
       }
     },
-    "gg_newsletter_7KY6KE": {
+    "gg_newsletter_DkdRra": {
       "type": "gg-newsletter",
       "blocks": {
-        "heading_NNF3X6": {
+        "heading_W9X7L4": {
           "type": "heading",
           "settings": {
             "heading": "Subscribe to our emails",
             "heading_size": "h1"
           }
         },
-        "paragraph_GDBwQ4": {
+        "paragraph_k7mzWF": {
           "type": "paragraph",
           "settings": {
             "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
           }
         },
-        "email_form_LghYDk": {
+        "email_form_ct3J7q": {
           "type": "email_form",
           "settings": {}
         }
       },
       "block_order": [
-        "heading_NNF3X6",
-        "paragraph_GDBwQ4",
-        "email_form_LghYDk"
+        "heading_W9X7L4",
+        "paragraph_k7mzWF",
+        "email_form_ct3J7q"
       ],
       "settings": {
         "color_scheme": "",
@@ -276,6 +278,6 @@
     "main",
     "related-products",
     "gg_product_detail_Mg4rJH",
-    "gg_newsletter_7KY6KE"
+    "gg_newsletter_DkdRra"
   ]
 }

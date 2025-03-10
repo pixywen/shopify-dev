@@ -94,7 +94,7 @@
           "settings": {
             "heading": "Details",
             "icon": "none",
-            "content": "",
+            "content": "<p>The Graphene Lightweight Vest features a heat-locking graphene back panel, water- and stain-resistant Teflon coating, and sustainable Sorona insulation for lightweight warmth. Its slim design is perfect for outdoor sports or layering, offering all-day comfort and versatility in any weather.</p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
@@ -105,7 +105,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "",
+            "content": "<p>Shell: Teflon-coated</p><p>Insulation: Graphene, Sorona</p><p>Pockets: 1</p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
@@ -116,8 +116,9 @@
           "settings": {
             "heading": "Care",
             "icon": "none",
-            "content": "",
+            "content": "<p>Clean regularly, avoid regular detergents and fabric softenersUsage and Cleaning Frequency:- Intensive Use: Deep clean after 10 uses.- Low-Intensity Use: Deep clean every 1-2 months.</p>",
             "page": "",
+            "image": "shopify://shop_images/gg-detail-info.png",
             "image_alt": "",
             "image_width": 50
           }
@@ -177,37 +178,74 @@
     "gg_product_detail_Mg4rJH": {
       "type": "gg-product-detail",
       "blocks": {
-        "content_block_MGACxw": {
-          "type": "content_block",
+        "collage_Va8eBx": {
+          "type": "collage",
           "settings": {
-            "block_type": "heading_text",
-            "margin_top": 32,
-            "margin_bottom": 32,
-            "heading": "<p>产品详情</p>",
-            "content": "<p>测试产品内容</p>",
-            "target_tab": "description"
+            "desktop_layout": "image_right",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/glj-detail-b-collage-01.jpg",
+            "heading": "Graphene Back Panel",
+            "subheading": "",
+            "text": "<p>Strategically placed graphene back panel locks in heat exactly where it's needed, providing superior warmth and efficiency without added bulk.</p>",
+            "target_tab": "description",
+            "margin_top": 56,
+            "margin_bottom": 0
           }
         },
-        "content_block_rN49nb": {
-          "type": "content_block",
+        "collage_Tn3AJP": {
+          "type": "collage",
           "settings": {
-            "block_type": "heading_text",
-            "margin_top": 32,
-            "margin_bottom": 32,
-            "heading": "<p>产品详情</p>",
-            "content": "<p>请输入详细说明内容...</p>",
-            "target_tab": "video"
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/glj-detail-b-collage-02.jpg",
+            "heading": "Teflon™ Coated Exterior",
+            "subheading": "",
+            "text": "<p>The water- and stain-resistant Teflon™ coating ensures durability and protection from the elements, keeping you dry in all weather conditions.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 0
           }
         },
-        "content_block_DPjhDm": {
-          "type": "content_block",
+        "collage_mjAxqr": {
+          "type": "collage",
           "settings": {
-            "block_type": "heading_text",
-            "margin_top": 32,
-            "margin_bottom": 32,
-            "heading": "<p>产品详情</p>",
-            "content": "<p>请输入详细说明内容...</p>",
-            "target_tab": "faq"
+            "desktop_layout": "image_right",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/glj-detail-b-collage-03.jpg",
+            "heading": "Sorona® Insulation",
+            "subheading": "",
+            "text": "<p>Lightweight and sustainable Sorona® insulation delivers high warmth-to-weight performance, offering cozy warmth without unnecessary bulk.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "collage_m7QYqT": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/gv-detail-b-collage-04.jpg",
+            "heading": "Layering Versatility",
+            "subheading": "",
+            "text": "<p>The slim profile makes it perfect for layering under heavier jackets, offering additional insulation during cold weather without compromising mobility.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "collage_RfcPLj": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_right",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/glj-detail-b-collage-05_3df34677-09f0-40a0-bfdc-6601a13b1b4b.jpg",
+            "heading": "Ideal for Any Adventure",
+            "subheading": "",
+            "text": "<p>Outdoor sports, brisk walks, or as a warming layer, the Graphene Vest ensures all-day comfort and adaptability in any setting. Whether you're out on the trail or navigating the city, it’s designed to keep you warm and ready for whatever comes your way.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 32
           }
         },
         "judge_me_reviews_review_widget_JctMNU": {
@@ -216,9 +254,11 @@
         }
       },
       "block_order": [
-        "content_block_MGACxw",
-        "content_block_rN49nb",
-        "content_block_DPjhDm",
+        "collage_Va8eBx",
+        "collage_Tn3AJP",
+        "collage_mjAxqr",
+        "collage_m7QYqT",
+        "collage_RfcPLj",
         "judge_me_reviews_review_widget_JctMNU"
       ],
       "settings": {
@@ -228,31 +268,31 @@
         "show_faq": true
       }
     },
-    "gg_newsletter_7KY6KE": {
+    "gg_newsletter_CGBYqh": {
       "type": "gg-newsletter",
       "blocks": {
-        "heading_NNF3X6": {
+        "heading_cipMnq": {
           "type": "heading",
           "settings": {
             "heading": "Subscribe to our emails",
             "heading_size": "h1"
           }
         },
-        "paragraph_GDBwQ4": {
+        "paragraph_CYzbTy": {
           "type": "paragraph",
           "settings": {
             "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
           }
         },
-        "email_form_LghYDk": {
+        "email_form_dT93tD": {
           "type": "email_form",
           "settings": {}
         }
       },
       "block_order": [
-        "heading_NNF3X6",
-        "paragraph_GDBwQ4",
-        "email_form_LghYDk"
+        "heading_cipMnq",
+        "paragraph_CYzbTy",
+        "email_form_dT93tD"
       ],
       "settings": {
         "color_scheme": "",
@@ -276,6 +316,6 @@
     "main",
     "related-products",
     "gg_product_detail_Mg4rJH",
-    "gg_newsletter_7KY6KE"
+    "gg_newsletter_CGBYqh"
   ]
 }
