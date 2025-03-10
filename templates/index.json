@@ -173,6 +173,10 @@
         "product_FAGLWH",
         "product_dRYwKP"
       ],
+      "custom_css": [
+        ".featured-product-card {position: relative; overflow: hidden; width: calc(25% - 20px);}",
+        ".featured-products-grid {display: flex; grid-template-columns: repeat(4, 1fr); gap: 24px; justify-content: center;}"
+      ],
       "settings": {
         "title": "Best Seller"
       }
