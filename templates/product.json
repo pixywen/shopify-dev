@@ -259,10 +259,14 @@
         "padding_top": 40,
         "padding_bottom": 52,
         "show_bottom_content": true,
-        "feature1_text": "免费配送超过$169",
-        "feature2_text": "2个Kickstarter成功活动",
-        "feature3_text": "终身保修",
-        "feature4_text": "超过15,000位信任客户"
+        "feature1_icon": "shopify://shop_images/icon-index-email-bottom-1.svg",
+        "feature1_text": "Free Shipping over $169",
+        "feature2_icon": "shopify://shop_images/icon-index-email-bottom-2.svg",
+        "feature2_text": "2 Kickstarter Successful Campaigns",
+        "feature3_icon": "shopify://shop_images/icon-index-email-bottom-3.svg",
+        "feature3_text": "Lifetime Guarantee",
+        "feature4_icon": "shopify://shop_images/icon-index-email-bottom-4.svg",
+        "feature4_text": "Trusted By 15,00+ Customers"
       }
     }
   },
