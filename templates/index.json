@@ -174,8 +174,9 @@
         "product_dRYwKP"
       ],
       "custom_css": [
-        ".featured-product-card {position: relative; overflow: hidden; width: calc(25% - 20px);}",
-        ".featured-products-grid {display: flex; grid-template-columns: repeat(4, 1fr); gap: 24px; justify-content: center;}"
+        ".featured-product-card {position: relative; overflow: hidden; width: calc(33.33% - 16px); /* 改为三等分，因为只有三个产品 */}",
+        ".featured-products-grid {display: flex; flex-wrap: wrap; gap: 24px; justify-content: center;}",
+        "/* 添加移动端适配 */@media screen and (max-width: 749px) {.featured-product-card {width: 85%; /* 移动端下每个卡片占据大部分宽度 */ margin: 0 auto; /* 居中显示 */ } .featured-products-grid {flex-direction: column; gap: 20px; }}"
       ],
       "settings": {
         "title": "Best Seller"
