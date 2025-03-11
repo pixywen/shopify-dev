@@ -35,6 +35,10 @@
         "enable_language_selector": false
       }
     },
+    "gg_wishlist_style_ry9YmN": {
+      "type": "gg-wishlist-style",
+      "settings": {}
+    },
     "header": {
       "type": "header",
       "blocks": {
@@ -88,6 +92,7 @@
   },
   "order": [
     "announcement-bar",
+    "gg_wishlist_style_ry9YmN",
     "header"
   ]
 }
