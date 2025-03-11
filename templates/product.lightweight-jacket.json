@@ -118,7 +118,6 @@
             "icon": "none",
             "content": "<p>Clean regularly, avoid regular detergents and fabric softenersUsage and Cleaning Frequency:- Intensive Use: Deep clean after 10 uses.- Low-Intensity Use: Deep clean every 1-2 months.</p>",
             "page": "",
-            "image": "shopify://shop_images/gg-detail-info.png",
             "image_alt": "",
             "image_width": 50
           }
@@ -263,7 +262,7 @@
       ],
       "settings": {
         "show_description": true,
-        "show_video": true,
+        "show_video": false,
         "show_reviews": true,
         "show_faq": true
       }
