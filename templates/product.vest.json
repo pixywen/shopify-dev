@@ -118,7 +118,6 @@
             "icon": "none",
             "content": "<p>Clean regularly, avoid regular detergents and fabric softenersUsage and Cleaning Frequency:- Intensive Use: Deep clean after 10 uses.- Low-Intensity Use: Deep clean every 1-2 months.</p>",
             "page": "",
-            "image": "shopify://shop_images/gg-detail-info.png",
             "image_alt": "",
             "image_width": 50
           }
@@ -239,13 +238,22 @@
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/glj-detail-b-collage-05_3df34677-09f0-40a0-bfdc-6601a13b1b4b.jpg",
             "heading": "Ideal for Any Adventure",
             "subheading": "",
             "text": "<p>Outdoor sports, brisk walks, or as a warming layer, the Graphene Vest ensures all-day comfort and adaptability in any setting. Whether you're out on the trail or navigating the city, it’s designed to keep you warm and ready for whatever comes your way.</p>",
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 32
+          }
+        },
+        "faq_JmmcGw": {
+          "type": "faq",
+          "settings": {
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "gap": 0,
+            "faq_content": "<title>How should I choose the size for the Graphene Vest?</title>\n<p>Select your regular size based on your usual measurements. If you’re uncertain, refer to our detailed size chart for guidance.</p>\n<title>Does the Graphene Vest have waterproof functionality?</title>\n<p>No, the Graphene Vest is not waterproof. However, it is designed for excellent breathability and lightweight comfort.</p>\n<title>How many pockets does the Graphene Vest have?</title>\n<p>The vest features 3 zippered pockets, ensuring secure storage for your essentials.</p>\n<title>Should I size down compared to a puffer vest?</title>\n<p>No, you don’t need to size down. Simply choose the same size you would wear in a puffer vest for the best fit.</p>\n<title>What is the difference between the Graphene Vest and the Graphene Lightweight Jacket?</title>\n<p>There is no functional difference; the choice depends on whether you prefer a sleeveless option (vest) or need the additional coverage of sleeves (jacket).</p>",
+            "target_tab": "faq"
           }
         },
         "judge_me_reviews_review_widget_JctMNU": {
@@ -259,11 +267,12 @@
         "collage_mjAxqr",
         "collage_m7QYqT",
         "collage_RfcPLj",
+        "faq_JmmcGw",
         "judge_me_reviews_review_widget_JctMNU"
       ],
       "settings": {
         "show_description": true,
-        "show_video": true,
+        "show_video": false,
         "show_reviews": true,
         "show_faq": true
       }

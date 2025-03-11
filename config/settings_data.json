@@ -153,8 +153,8 @@
         "disabled": false,
         "settings": {
           "storefront_layout_enabled": false,
-          "storefront_layout_type": "as-section",
-          "storefront_layout_collection_enabled": false,
+          "storefront_layout_type": "as-drawer",
+          "storefront_layout_collection_enabled": true,
           "storefront_layout_primary_bg_color": "#000000",
           "storefront_layout_primary_text_color": "#ffffff",
           "storefront_layout_secondary_bg_color": "#f4f8fe",
@@ -165,7 +165,7 @@
           "storefront_layout_action_popup_position": "left",
           "storefront_layout_drawer_position": "left",
           "storefront_layout_drawer_width": 400,
-          "storefront_layout_as_section_page": "swym-share-wishlist"
+          "storefront_layout_as_section_page": ""
         }
       }
     },
