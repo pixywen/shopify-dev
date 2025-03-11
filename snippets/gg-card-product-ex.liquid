@@ -317,7 +317,7 @@
               {%- if card_product.variants.size > 1 -%}
                 <div class="card-product__variants">
                   {%- for option in card_product.options_with_values -%}
-                    {%- if option.name == 'Color' or option.name == '颜色' -%}
+                    {%- if option.name == 'Color' or option.name == 'Colour' or option.name == '颜色' -%}
                       <div class="card-product__color-swatches">
                         {%- for value in option.values -%}
                           {%- assign variant_for_value = card_product.variants | where: "option1", value | first -%}
