@@ -119,7 +119,6 @@
             "icon": "none",
             "content": "<p>Clean regularly, avoid regular detergents and fabric softenersUsage and Cleaning Frequency:- Intensive Use: Deep clean after 10 uses.- Low-Intensity Use: Deep clean every 1-2 months.</p>",
             "page": "",
-            "image": "shopify://shop_images/gg-detail-info.png",
             "image_alt": "",
             "image_width": 50
           }
@@ -219,6 +218,16 @@
             "margin_bottom": 0
           }
         },
+        "faq_ma6Pcc": {
+          "type": "faq",
+          "settings": {
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "gap": 0,
+            "faq_content": "<title>Is the shoulder strap adjustable?</title>\n<p>Yes, the shoulder strap is fully adjustable to ensure a comfortable fit for users of different heights and preferences.</p>\n<title>Is the Alpargali Bag waterproof?</title>\n<p>Yes, the bag is made of waterproof material to protect your belongings from rain and splashes.</p>\n<title>How should I care for the bag?</title>\n<p>To clean the bag, wipe it gently with a damp cloth and mild soap if needed. Avoid using harsh chemicals or machine washing. Store the bag in a cool, dry place when not in use to maintain its shape and durability.</p>\n<title>Does the bag include any special features for organization?</title>\n<p>Absolutely! The bag includes a dedicated key ring, multiple device-specific compartments, and well-organized pockets to keep everything in place.</p>\n<title>Does the bag qualify for free shipping?</title>\n<p>We offer free shipping for orders over 169. If you purchase the bag alone, it does not qualify for free shipping.</p>",
+            "target_tab": "faq"
+          }
+        },
         "judge_me_reviews_review_widget_JctMNU": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
@@ -228,6 +237,7 @@
         "image_banner_hM9wYk",
         "collage_Va8eBx",
         "collage_Tn3AJP",
+        "faq_ma6Pcc",
         "judge_me_reviews_review_widget_JctMNU"
       ],
       "settings": {
