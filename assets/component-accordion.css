@@ -54,6 +54,7 @@
 
 .accordion__content img {
   max-width: 100%;
+  border: none;
 }
 
 .accordion__content-wrapper {
@@ -61,6 +62,7 @@
   flex-wrap: wrap;
   gap: 2rem;
   align-items: flex-start;
+  border: none;
 }
 
 .accordion__text {
@@ -71,18 +73,21 @@
 .accordion__image {
   width: var(--image-width);
   margin-top: 2rem;
+  border: none;
 }
 
 .accordion__image--bottom-left {
   float: left;
   margin-right: 2rem;
   margin-bottom: 1rem;
+  border: none;
 }
 
 .accordion__image-element {
   width: 100%;
   height: auto;
   display: block;
+  border: none;
 }
 
 @media screen and (max-width: 749px) {
@@ -90,10 +95,12 @@
     width: var(--image-width) !important;
     float: left;
     margin-right: 2rem;
+    border: none;
   }
   
   .accordion__image--bottom-left {
     margin-right: 2rem;
     margin-bottom: 1rem;
+    border: none;
   }
 }

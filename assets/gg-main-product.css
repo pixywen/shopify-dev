@@ -367,4 +367,8 @@
   .accordion__title {
     font-size: 3.2vw;
   }
+  .swym-button.swym-add-to-wishlist .swym-wishlist-icon {
+    width: 4.66vw !important;
+    height: 4vw !important;
+  }
 }
