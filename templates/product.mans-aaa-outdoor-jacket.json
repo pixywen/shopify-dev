@@ -245,7 +245,6 @@
             "image_5": "shopify://shop_images/product-detail-b-c-01-05.jpg",
             "caption_5": "2 Handy Front Pockets",
             "hover_text_5": "",
-            "image_6": "shopify://shop_images/product-detail-b-c-01-07.jpg",
             "caption_6": "Secure Interior Zip Pockets",
             "hover_text_6": "",
             "image_7": "shopify://shop_images/product-detail-b-c-01-06.jpg",
@@ -421,7 +420,7 @@
       ],
       "settings": {
         "show_description": true,
-        "show_video": true,
+        "show_video": false,
         "show_reviews": true,
         "show_faq": true
       }
