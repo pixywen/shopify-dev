@@ -99,7 +99,7 @@
         {{ 'customer.register.email' | t }}
       </label>
       <div class="gg-register-icon">
-        {{ 'icon-email.svg' | inline_asset_content }}
+        {% comment %} {{ 'icon-email.svg' | inline_asset_content }} {% endcomment %}
       </div>
     </div>
     {%- if form.errors contains 'email' -%}
