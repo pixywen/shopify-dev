@@ -16,7 +16,7 @@
         "heading": "Gear for Every Adventure",
         "small_heading_below": "From freezing cold to rainy days, Alpargali has you covered.",
         "button_label": "SHOP NOW",
-        "button_link": "",
+        "button_link": "shopify://collections/clothing",
         "image": "shopify://shop_images/aurora-top-banner.jpg",
         "video": "shopify://files/videos/aurora-top-banner.mov",
         "mobile_image": "shopify://shop_images/aurora-top-banner-m.jpg",
@@ -176,7 +176,7 @@
       "custom_css": [
         ".featured-product-card {position: relative; overflow: hidden; width: calc(33.33% - 16px); /* 改为三等分，因为只有三个产品 */}",
         ".featured-products-grid {display: flex; flex-wrap: wrap; gap: 24px; justify-content: center;}",
-        "/* 添加移动端适配 */@media screen and (max-width: 749px) {.featured-product-card {width: 85%; /* 移动端下每个卡片占据大部分宽度 */ margin: 0 auto; /* 居中显示 */ } .featured-products-grid {flex-direction: column; gap: 20px; }}"
+        " /* 添加移动端适配 */@media screen and (max-width: 749px) {.featured-product-card {width: 85%; /* 移动端下每个卡片占据大部分宽度 */ margin: 0 auto; /* 居中显示 */ } .featured-products-grid {flex-direction: column; gap: 20px; }}"
       ],
       "settings": {
         "title": "Best Seller"
