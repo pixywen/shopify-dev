@@ -795,4 +795,11 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
   .product-collage-section {
     margin-bottom: 6.8vw !important;
   }
+  .collage-divider img {
+    width: 6.4vw;
+    height: 0.13vw;
+  }
+  .product-form__input .form__label .gg-size-guide-wrapper span {
+    font-size: 3.2vw;
+  }
 }
