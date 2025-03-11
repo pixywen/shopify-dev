@@ -167,8 +167,9 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  width: 98px;
+  min-width: 98px;
   gap: 5px;
+  white-space: nowrap;
 }
 .facets__heading {
   display: block;
