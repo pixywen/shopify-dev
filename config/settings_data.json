@@ -165,7 +165,7 @@
           "storefront_layout_action_popup_position": "left",
           "storefront_layout_drawer_position": "left",
           "storefront_layout_drawer_width": 400,
-          "storefront_layout_as_section_page": ""
+          "storefront_layout_as_section_page": "swym-share-wishlist"
         }
       }
     },
