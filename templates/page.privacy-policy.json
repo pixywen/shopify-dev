@@ -19,6 +19,7 @@
     },
     "gg_simple_image_banner_kPHg8h": {
       "type": "gg-simple-image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/s-sib-brand-m.jpg",
         "image_mobile": "shopify://shop_images/s-sib-brand-m.jpg",
