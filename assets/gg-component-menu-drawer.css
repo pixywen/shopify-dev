@@ -25,6 +25,10 @@ menu-drawer > details[open] > summary::before {
   transition: opacity var(--duration-default) ease, visibility var(--duration-default) ease;
 }
 
+li.gg-discover-all #HeaderDrawer-clothing-discover-all {
+  position: relative;
+}
+
 .menu-drawer {
   position: fixed;
   left: 0;
