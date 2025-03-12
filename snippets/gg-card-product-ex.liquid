@@ -735,7 +735,7 @@
 <!-- 调试信息：产品名称 -->
 <!-- {{ card_product.title | escape }} -->
 
-{%- for option in card_product.options_with_values -%}
+{% comment %} {%- for option in card_product.options_with_values -%}
   {%- if option.name == 'Color' or option.name == 'Colour' or option.name == '颜色' -%}
     <!-- 调试信息：颜色选项 -->
     <!-- {{ option.values | json }} -->
@@ -756,4 +756,4 @@
       {%- endfor -%}
     </div>
   {%- endif -%}
-{%- endfor -%}
+{%- endfor -%} {% endcomment %}
