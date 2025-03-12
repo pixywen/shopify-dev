@@ -50,6 +50,18 @@
                             {{ link.title | escape }}
                           </button>
                           <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                            <li>
+                              <a
+                                id="HeaderDrawer-{{ link.handle }}-discover-all"
+                                href="{{ link.url }}"
+                                class="menu-drawer__menu-item link link--text list-menu__item focus-inset menu-drawer__menu-item--discover-all"
+                              >
+                                Discover all
+                                <span class="svg-wrapper">
+                                  {{- 'icon-arrow.svg' | inline_asset_content -}}
+                                </span>
+                              </a>
+                            </li>
                             {%- for childlink in link.links -%}
                               <li>
                                 {%- if childlink.links == blank -%}
