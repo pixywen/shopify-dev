@@ -97,6 +97,10 @@
   .customer:not(.account):not(.order) {
     max-width: 36.8rem;
   }
+  .gg-register-icon {
+    width: 3.42vw;
+    height: 3.42vw;
+  }
 }
 
 .customer > h1,
