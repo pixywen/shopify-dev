@@ -390,3 +390,15 @@
   ]
 }
 {% endschema %}
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const arrowButton = document.querySelector(".gg-email-arrow");
+    const newsletterForm = document.querySelector(".newsletter-form");
+
+    if (arrowButton && newsletterForm) {
+      arrowButton.addEventListener("click", function () {
+        newsletterForm.submit();
+      });
+    }
+  });
+</script>
