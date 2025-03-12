@@ -72,7 +72,7 @@
           "type": "gg-heading-image",
           "settings": {
             "heading": "As Featured In:",
-            "image": "shopify://shop_images/product-info-b-hi-01.png",
+            "image": "shopify://shop_images/product-info-b-hi-01_f193a6ad-01f8-4116-b5f2-e3d38b60c9a9.png",
             "image_mobile": "shopify://shop_images/product-info-b-hi-01-m.png"
           }
         },
@@ -94,7 +94,7 @@
           "settings": {
             "heading": "Details",
             "icon": "none",
-            "content": "<p>The Alpargali Crossbody Bag is the perfect companion for those who value functionality, convenience, and style in their everyday adventures. Whether you’re commuting, running errands, or exploring the city, this bag is designed to keep you organized and prepared.</p>",
+            "content": "<p>The <strong>Alpargali Crossbody Bag</strong> is the perfect companion for those who value functionality, convenience, and style in their everyday adventures. Whether you’re commuting, running errands, or exploring the city, this bag is designed to keep you organized and prepared.</p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
