@@ -105,7 +105,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "<p>Shell: Teflon-coated</p><p>Insulation: Graphene, Sorona</p><p>Pockets: 1</p>",
+            "content": "<p>Shell: Teflon-coated</p><p>Insulation: Graphene, Sorona</p><p>Pockets: 2</p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
@@ -116,8 +116,9 @@
           "settings": {
             "heading": "Care",
             "icon": "none",
-            "content": "<p>Clean regularly, avoid regular detergents and fabric softenersUsage and Cleaning Frequency:- Intensive Use: Deep clean after 10 uses.- Low-Intensity Use: Deep clean every 1-2 months.</p>",
+            "content": "<p>Clean regularly, avoid regular detergents and fabric softeners</p><p>Usage and Cleaning Frequency:</p><ul><li>Intensive Use: Deep clean after 10 uses.</li><li>Low-Intensity Use: Deep clean every 1-2 months.</li></ul>",
             "page": "",
+            "image": "shopify://shop_images/aao-info-icon-01.png",
             "image_alt": "",
             "image_width": 50
           }
