@@ -320,7 +320,7 @@
                     {%- if option.name == 'Color' or option.name == 'Colour' or option.name == '颜色' -%}
                       <div class="card-product__color-swatches">
                         {%- for value in option.values -%}
-                          {%- assign variant_for_value = card_product.variants | where: "option1", value | first -%}
+                          {%- assign variant_for_value = card_product.variants | where: "option1", value | where: "available", true | first -%}
                           {%- if variant_for_value.available -%}
                             {%- liquid
                               assign swatch_value = null
@@ -717,43 +717,3 @@
     </div>
   </div>
 {%- endif -%}
-
-{%- comment -%}
-  输出颜色选项和变体信息
-{%- endcomment -%}
-
-<!-- 调试信息：颜色选项 -->
-<!-- {{ option.values | json }} -->
-
-<!-- 调试信息：变体信息 -->
-<!-- {{ card_product.variants | json }} -->
-
-{%- comment -%}
-  输出产品名称和颜色选项信息
-{%- endcomment -%}
-
-<!-- 调试信息：产品名称 -->
-<!-- {{ card_product.title | escape }} -->
-
-{% comment %} {%- for option in card_product.options_with_values -%}
-  {%- if option.name == 'Color' or option.name == 'Colour' or option.name == '颜色' -%}
-    <!-- 调试信息：颜色选项 -->
-    <!-- {{ option.values | json }} -->
-    <div class="card-product__color-swatches">
-      {%- for value in option.values -%}
-        {%- assign variant_for_value = card_product.variants | where: "option1", value | first -%}
-        <!-- 调试信息：变体可用性 -->
-        <!-- 颜色: {{ value }}, 可用: {{ variant_for_value.available }} -->
-        {%- if variant_for_value.available -%}
-          {%- liquid
-            assign swatch_value = null
-            assign swatch_image = null
-            assign color_main_image = null
-            # 构建特定颜色的 swatch 标识符
-          -%}
-          <!-- 这里是渲染颜色卡的代码 -->
-        {%- endif -%}
-      {%- endfor -%}
-    </div>
-  {%- endif -%}
-{%- endfor -%} {% endcomment %}
