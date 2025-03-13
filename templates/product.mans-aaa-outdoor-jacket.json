@@ -95,7 +95,7 @@
           "settings": {
             "heading": "Details",
             "icon": "none",
-            "content": "<p>Designed for urban explorers and globetrotters alike, Alpargali is the era-defining jacket that combines style and functionality. With 14 waterproof pockets and 15k breathability, it seamlessly transitions between everyday wear, travel, business meetings, leisure rides, and outdoor adventures. One jacket for every occasion.</p>",
+            "content": "<p>Designed for urban explorers and globetrotters alike, Alpargali is the era-defining jacket that combines style and functionality. With <strong>14 waterproof pockets </strong>and <strong>15k breathability</strong>, it seamlessly transitions between <strong>everyday wear</strong>, travel, business meetings, leisure rides, and outdoor adventures. One jacket for every occasion.</p>",
             "page": "",
             "image_alt": "",
             "image_width": 100
@@ -106,7 +106,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "<p>Fabric: 100% Nylon 70D, 2 layer</p><p>Breathability: 10K</p><p>Waterproof: 10K</p><p>Pockets: 14</p>",
+            "content": "<p>Fabric: 100% Nylon 70D, 2 layer</p><p>Breathability: <strong>10K</strong></p><p>Waterproof: <strong>10K</strong></p><p>Pockets: <strong>14</strong></p>",
             "page": "",
             "image_alt": "",
             "image_width": 100
