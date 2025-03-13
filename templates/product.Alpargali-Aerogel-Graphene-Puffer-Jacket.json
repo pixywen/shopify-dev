@@ -392,8 +392,8 @@
         "image_banner_xCeUjP": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/aa-detail-b-ib-06.png",
-            "image_mobile": "shopify://shop_images/aa-detail-b-ib-06-m.png",
+            "image_desktop": "shopify://shop_images/mianyi-001-pc.png",
+            "image_mobile": "shopify://shop_images/mianyi-001-m.jpg",
             "margin_top": 32,
             "margin_bottom": 32,
             "padding_x_desktop": 0,
