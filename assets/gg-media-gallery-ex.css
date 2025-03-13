@@ -71,6 +71,115 @@
   background-color: #f5f5f5;
 } 
 
+/* 移动端图片放大功能样式 */
+.mobile-zoomable {
+  position: relative;
+  cursor: zoom-in !important;
+  pointer-events: auto !important;
+}
+
+/* 放大查看层样式 */
+.mobile-zoom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 9999;
+  display: flex;
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+}
+
+/* 返回按钮样式 */
+.mobile-zoom-back {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  cursor: pointer;
+}
+
+/* 图片计数指示器 */
+.mobile-zoom-counter {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  color: white;
+  font-size: 14px;
+  z-index: 10000;
+}
+
+/* 滑动容器样式 */
+.mobile-zoom-slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden; /* 改为hidden，完全禁用原生滚动 */
+  scroll-snap-type: none;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  touch-action: none; /* 禁用所有原生触摸行为 */
+  will-change: transform;
+  position: relative; /* 添加相对定位 */
+}
+
+/* 隐藏滚动条 */
+.mobile-zoom-slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* 单个幻灯片样式 */
+.mobile-zoom-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: none;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  touch-action: none; /* 禁用所有原生触摸行为 */
+  position: absolute; /* 使用绝对定位 */
+  left: 0; /* 默认位置 */
+  top: 0;
+  transition: transform 250ms ease-out; /* 添加平滑过渡效果，250ms适中的速度 */
+  transform: translateX(0); /* 默认不偏移 */
+}
+
+/* 放大图片样式 */
+.mobile-zoom-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain; /* 保持比例并确保完全可见 */
+  display: block; /* 消除底部间隙 */
+  margin: 0 auto; /* 水平居中 */
+  user-select: none; /* 防止用户选择 */
+  -webkit-user-select: none;
+  -webkit-touch-callout: none; /* 防止长按弹出菜单 */
+  pointer-events: none; /* 防止图片被拖动 */
+}
+
 @media (max-width: 990px) {
   /* 添加移动端禁用放大样式 */
   [data-zoom-container] {
@@ -80,6 +189,12 @@
 
   [data-zoom-container] img {
     transform: none !important;
+  }
+  
+  /* 移动端放大功能覆盖默认禁用样式 */
+  [data-zoom-container].mobile-zoomable {
+    cursor: zoom-in !important;
+    pointer-events: auto !important;
   }
   
   .media-gallery-ex__main {
