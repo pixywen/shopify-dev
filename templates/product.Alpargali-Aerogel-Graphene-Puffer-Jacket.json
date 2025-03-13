@@ -105,7 +105,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "<p>Shell: Teflon-coated</p><p>Insulation: Aerogel, Graphene, Sorona</p><p>Weight: 1000g</p><p>Breathability: 10K</p><p>Weather Resistant: YES(Teflon)</p><p>Pockets: 9</p><p>Suggested temperature range:<strong>-40°C/-40℉</strong> to <strong>+10°C/50°F</strong></p><p>Packability: Easily packable for travel</p><p>Activity: Adventure, Urban, Travel Aerogel Thickness: 1.0mm</p>",
+            "content": "<p>Shell: Teflon-coated</p><p>Insulation: Aerogel, Graphene, Sorona</p><p>Weight: <strong>1000g</strong></p><p>Breathability:<strong> 10K</strong></p><p>Weather Resistant: YES(Teflon)</p><p>Pockets: <strong>9</strong></p><p>Suggested temperature range:<strong>-40°C/-40℉</strong> to <strong>+10°C/50°F</strong></p><p>Packability: Easily packable for travel</p><p>Activity: Adventure, Urban, Travel Aerogel </p><p>Thickness: <strong>1.0mm</strong></p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
