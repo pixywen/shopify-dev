@@ -94,7 +94,7 @@
           "settings": {
             "heading": "Details",
             "icon": "none",
-            "content": "<p>The Graphene Lightweight Vest features a heat-locking graphene back panel, water- and stain-resistant Teflon coating, and sustainable Sorona insulation for lightweight warmth. Its slim design is perfect for outdoor sports or layering, offering all-day comfort and versatility in any weather.</p>",
+            "content": "<p>The Graphene <strong>Lightweight Vest</strong> features a heat-locking graphene back panel, water- and stain-resistant Teflon coating, and sustainable Sorona insulation for lightweight warmth. Its slim design is perfect for outdoor sports or layering, offering <strong>all-day</strong> comfort and versatility in <strong>any weather</strong>.</p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
@@ -105,7 +105,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "<p>Shell: Teflon-coated</p><p>Insulation: Graphene, Sorona</p><p>Pockets: 2</p>",
+            "content": "<p>Shell: Teflon-coated</p><p>Insulation: Graphene, Sorona</p><p>Pockets: <strong>2</strong></p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
