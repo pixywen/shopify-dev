@@ -183,7 +183,19 @@ class ProductCarousel {
     // 检测是否为触屏设备
     this.isTouchDevice = this.checkTouchDevice();
     
+    // 拖拽相关变量
+    this.isDragging = false;
+    this.startX = 0;
+    this.startPosition = 0;
+    this.currentTranslate = 0;
+    this.prevTranslate = 0;
+    this.dragDistance = 0;
+    
     this.animate = this.animate.bind(this);
+    this.handleDragStart = this.handleDragStart.bind(this);
+    this.handleDragMove = this.handleDragMove.bind(this);
+    this.handleDragEnd = this.handleDragEnd.bind(this);
+    
     this.init();
   }
 
@@ -227,6 +239,9 @@ class ProductCarousel {
     // 只在非触屏设备上添加hover事件
     if (!this.isTouchDevice) {
       this.track.addEventListener('mouseover', (e) => {
+        // 如果正在拖拽，不触发hover效果
+        if (this.isDragging) return;
+        
         const item = e.target.closest('.carousel-item');
         if (item) {
           this.isHovered = true;
@@ -236,6 +251,9 @@ class ProductCarousel {
       });
       
       this.track.addEventListener('mouseout', (e) => {
+        // 如果正在拖拽，不触发hover效果
+        if (this.isDragging) return;
+        
         const item = e.target.closest('.carousel-item');
         const relatedItem = e.relatedTarget?.closest('.carousel-item');
         
@@ -246,7 +264,136 @@ class ProductCarousel {
       });
     }
     
+    // 添加拖拽事件监听
+    this.addDragListeners();
+    
     this.startAnimation();
+  }
+
+  // 添加拖拽事件监听
+  addDragListeners() {
+    // 触摸事件
+    this.track.addEventListener('touchstart', this.handleDragStart, { passive: false });
+    this.track.addEventListener('touchmove', this.handleDragMove, { passive: false });
+    this.track.addEventListener('touchend', this.handleDragEnd);
+    
+    // 鼠标事件 - 对所有设备都添加，但在触屏设备上会被触摸事件覆盖
+    this.track.addEventListener('mousedown', this.handleDragStart);
+    window.addEventListener('mousemove', this.handleDragMove);
+    window.addEventListener('mouseup', this.handleDragEnd);
+    // 添加鼠标离开窗口事件，防止拖拽未完成就离开窗口
+    window.addEventListener('mouseleave', this.handleDragEnd);
+  }
+
+  // 拖拽开始
+  handleDragStart(e) {
+    // 只处理鼠标左键点击或触摸事件
+    if (e.type === 'mousedown' && e.button !== 0) return;
+    
+    this.isPaused = true;
+    this.isDragging = true;
+    
+    // 记录开始位置
+    this.startX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+    this.startPosition = this.position;
+    
+    // 添加拖拽中的样式
+    this.track.style.cursor = 'grabbing';
+    this.track.style.transition = 'none';
+    
+    // 移除所有hover效果
+    this.track.querySelectorAll('.carousel-item').forEach(item => {
+      item.classList.remove('hovered');
+    });
+    
+    // 阻止默认行为，防止页面滚动和文本选择
+    e.preventDefault();
+    
+    // 阻止事件冒泡，防止触发其他事件
+    e.stopPropagation();
+  }
+
+  // 拖拽移动
+  handleDragMove(e) {
+    if (!this.isDragging) return;
+    
+    // 计算移动距离
+    const currentX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+    this.dragDistance = currentX - this.startX;
+    
+    // 添加阻尼效果，使拖拽超出边界时有阻力感
+    const itemWidth = this.items[0].offsetWidth;
+    const totalWidth = itemWidth * this.items.length;
+    const maxDistance = totalWidth / 2;
+    
+    // 如果拖拽距离超过最大距离，添加阻尼效果
+    if (Math.abs(this.dragDistance) > maxDistance) {
+      const overDistance = Math.abs(this.dragDistance) - maxDistance;
+      const damping = 0.3; // 阻尼系数
+      const direction = this.dragDistance > 0 ? 1 : -1;
+      this.dragDistance = direction * (maxDistance + overDistance * damping);
+    }
+    
+    // 更新位置
+    this.position = this.startPosition + this.dragDistance;
+    this.track.style.transform = `translateX(${this.position}px)`;
+    
+    // 阻止默认行为，防止页面滚动
+    e.preventDefault();
+  }
+
+  // 拖拽结束
+  handleDragEnd() {
+    if (!this.isDragging) return;
+    
+    this.isDragging = false;
+    
+    // 恢复样式
+    this.track.style.cursor = '';
+    this.track.style.transition = 'transform 0.3s ease';
+    
+    // 如果拖拽距离足够大，切换到下一个/上一个
+    const itemWidth = this.items[0].offsetWidth;
+    const moveThreshold = itemWidth / 4; // 需要拖动至少1/4宽度才触发切换
+    
+    if (Math.abs(this.dragDistance) > moveThreshold) {
+      // 向左拖动，显示下一个
+      if (this.dragDistance < 0) {
+        this.position = this.startPosition - itemWidth;
+      } 
+      // 向右拖动，显示上一个
+      else {
+        this.position = this.startPosition + itemWidth;
+      }
+    } else {
+      // 拖动距离不够，回到原位
+      this.position = this.startPosition;
+    }
+    
+    // 应用最终位置
+    this.track.style.transform = `translateX(${this.position}px)`;
+    
+    // 检查是否需要重置位置（无缝循环）
+    const totalWidth = itemWidth * this.items.length;
+    setTimeout(() => {
+      this.track.style.transition = 'none';
+      if (Math.abs(this.position) >= totalWidth * 2) {
+        this.position = -totalWidth;
+      } else if (Math.abs(this.position) < totalWidth) {
+        this.position = -totalWidth * 2 + Math.abs(totalWidth - Math.abs(this.position));
+      }
+      this.track.style.transform = `translateX(${this.position}px)`;
+      
+      // 恢复过渡效果
+      setTimeout(() => {
+        this.track.style.transition = 'transform 0.3s ease';
+        // 拖拽结束后延迟恢复自动滚动
+        this.isPaused = false;
+      }, 50);
+    }, 300);
+    
+    // 重置拖拽距离
+    this.dragDistance = 0;
   }
 
   startAnimation() {
@@ -259,8 +406,8 @@ class ProductCarousel {
   }
 
   animate() {
-    // 在触屏设备上忽略hover状态
-    if ((!this.isTouchDevice && !this.isHovered) || (this.isTouchDevice && !this.isPaused)) {
+    // 在触屏设备上忽略hover状态，但在拖拽时暂停动画
+    if ((!this.isDragging) && ((!this.isTouchDevice && !this.isHovered) || (this.isTouchDevice && !this.isPaused))) {
       const baseSpeed = 0.3;
       const speedMultiplier = 10 - this.speed;
       const speed = baseSpeed * speedMultiplier;
@@ -270,8 +417,19 @@ class ProductCarousel {
       const itemWidth = this.items[0].offsetWidth;
       const totalWidth = itemWidth * this.items.length;
       
+      // 无缝循环逻辑
       if (Math.abs(this.position) >= totalWidth * 2) {
+        // 避免过渡动画
+        this.track.style.transition = 'none';
         this.position = -totalWidth;
+        
+        // 强制重绘以应用无过渡的变换
+        this.track.offsetHeight;
+        
+        // 恢复过渡效果
+        setTimeout(() => {
+          this.track.style.transition = 'transform 0.3s ease';
+        }, 20);
       }
       
       this.track.style.transform = `translateX(${this.position}px)`;
@@ -300,9 +458,21 @@ class ProductCarousel {
       cancelAnimationFrame(this.animationFrame);
       this.animationFrame = null;
     }
+    
     // 移除事件监听器
-    this.track.removeEventListener('mouseover');
-    this.track.removeEventListener('mouseout');
+    if (!this.isTouchDevice) {
+      this.track.removeEventListener('mouseover');
+      this.track.removeEventListener('mouseout');
+    }
+    
+    // 移除拖拽事件监听器
+    this.track.removeEventListener('touchstart', this.handleDragStart);
+    this.track.removeEventListener('touchmove', this.handleDragMove);
+    this.track.removeEventListener('touchend', this.handleDragEnd);
+    this.track.removeEventListener('mousedown', this.handleDragStart);
+    window.removeEventListener('mousemove', this.handleDragMove);
+    window.removeEventListener('mouseup', this.handleDragEnd);
+    window.removeEventListener('mouseleave', this.handleDragEnd);
   }
 }
 

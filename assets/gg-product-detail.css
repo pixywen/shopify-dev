@@ -345,17 +345,31 @@ a.jdgm-btn--border:not([disabled]):hover, .jdgm-btn--border:focus {
   position: relative;
   width: 100%;
   overflow: hidden;
+  touch-action: pan-y; /* 允许垂直滚动，但水平滑动会被捕获 */
 }
 
 .carousel-track {
   display: flex;
   gap: 20px;
+  cursor: grab; /* 显示抓取光标，提示用户可拖动 */
+  transition: transform 0.3s ease;
+  will-change: transform; /* 优化性能 */
+  backface-visibility: hidden; /* 减少回弹效果 */
+  -webkit-backface-visibility: hidden;
+  transform-style: preserve-3d; /* 提高性能 */
+  -webkit-transform-style: preserve-3d;
+}
+
+.carousel-track:active {
+  cursor: grabbing; /* 拖动时显示抓取中光标 */
 }
 
 .carousel-item {
   flex: 0 0 auto;
   width: calc((100% - 40px) / 3);
   transition: opacity 0.3s ease;
+  user-select: none; /* 防止拖动时选中文本 */
+  -webkit-user-drag: none; /* 防止拖动图片 */
 }
 
 .carousel-item.hovered {
