@@ -105,7 +105,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "<p>Pockets: 6</p><p>Fabric: 1800D Polyester</p>",
+            "content": "<p>Pockets: <strong>6</strong></p><p>Fabric: <strong>1800D </strong>Polyester</p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
