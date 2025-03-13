@@ -109,6 +109,7 @@
   justify-content: center;
   z-index: 10000;
   cursor: pointer;
+  padding: 0;
 }
 
 /* 图片计数指示器 */
