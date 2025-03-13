@@ -94,7 +94,7 @@
           "settings": {
             "heading": "Details",
             "icon": "none",
-            "content": "<p>The Graphene Lightweight Jacket combines advanced graphene technology with a sleek design, offering warmth without the weight. Perfect for city life or outdoor adventures, it’s lightweight, durable, and temperature-regulating, providing comfort and style wherever you go.</p>",
+            "content": "<p>The Graphene <strong>Lightweight Jacket</strong> combines advanced graphene technology with a <strong>sleek design</strong>, offering warmth without the weight. Perfect for city life or outdoor adventures, it’s lightweight, durable, and temperature-regulating, providing comfort and <strong>style wherever you go</strong>.</p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
@@ -105,7 +105,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "<p>Shell: Teflon-coated</p><p>Insulation: Graphene, Sorona</p><p>Pockets: 3</p>",
+            "content": "<p>Shell: Teflon-coated</p><p>Insulation: Graphene, Sorona</p><p>Pockets: <strong>3</strong></p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
