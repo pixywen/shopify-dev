@@ -226,6 +226,17 @@
             "target_tab": "description"
           }
         },
+        "content_block_7M4XLL": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "heading": "",
+            "content": "<p>Embrace adaptability, Alpargali is the only iacket vou'ii need <strong>all year</strong>, throuah <strong>every season</strong>. Desianed for a <strong>nature trek</strong> as much as a <strong>morning commute</strong>, a downtown stroll as much as a once-in-a-ifetime trio. Alpargallhas got your back.</p>",
+            "target_tab": "description"
+          }
+        },
         "carousel_JgqD6V": {
           "type": "carousel",
           "settings": {
@@ -461,6 +472,7 @@
         "image_banner_MYRGBE",
         "image_banner_DDQQKc",
         "image_banner_kkiFwQ",
+        "content_block_7M4XLL",
         "carousel_JgqD6V",
         "image_banner_xnEjDM",
         "collage_y7J6gW",
