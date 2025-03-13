@@ -94,7 +94,7 @@
           "settings": {
             "heading": "Details",
             "icon": "none",
-            "content": "<p>The Alpargali Puffer combines cutting-edge NASA-inspired technology with high-performance materials like aerogel and graphene, offering an unmatched weight-to-warmth ratio. Effective in temperatures from -40°C/-40°F to +10°C/50°F, it provides the warmth of a premium down jacket without the bulk. With a sleek design, over 30 functions, and 9 pockets, this versatile, year-round jacket is perfect for urban life and outdoor adventures alike. Whether facing extreme cold or mild weather, your comfort is guaranteed.</p>",
+            "content": "<p>The Alpargali Puffer combines cutting-edge <strong>NASA</strong>-inspired technology with high-performance materials like aerogel and graphene, offering an unmatched weight-to-warmth ratio. Effective in temperatures from <strong>-40°C/-40°F</strong> to <strong>+10°C/50°F</strong>, it provides the warmth of a premium down jacket without the bulk. With a sleek design, over <strong>30 functions</strong>, and <strong>9 pockets</strong>, this versatile, year-round jacket is perfect for urban life and outdoor adventures alike. Whether facing extreme cold or mild weather, your comfort is guaranteed.</p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
@@ -105,7 +105,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "<p>Shell: Teflon-coated</p><p>Insulation: Aerogel, Graphene, Sorona</p><p>Weight: 1000g</p><p>Breathability: 10K</p><p>Weather Resistant: YES(Teflon)</p><p>Pockets: 9</p><p>Suggested temperature range:-40°C/-40℉ to 10°C /50°F</p><p>Packability: Easily packable for travel</p><p>Activity: Adventure, Urban, Travel Aerogel Thickness: 1.0mm</p>",
+            "content": "<p>Shell: Teflon-coated</p><p>Insulation: Aerogel, Graphene, Sorona</p><p>Weight: 1000g</p><p>Breathability: 10K</p><p>Weather Resistant: YES(Teflon)</p><p>Pockets: 9</p><p>Suggested temperature range:<strong>-40°C/-40℉</strong> to <strong>+10°C/50°F</strong></p><p>Packability: Easily packable for travel</p><p>Activity: Adventure, Urban, Travel Aerogel Thickness: 1.0mm</p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
