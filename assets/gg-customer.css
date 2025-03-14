@@ -71,10 +71,15 @@
 .gg-password-icon {
   position: absolute;
   width: 14px;
-  height: 10px;
+  height: 11px;
   right: 12px;
   top: 30px;
   cursor: pointer;
+}
+
+.gg-password-icon svg {
+  width: 100%;
+  height: 100%;
 }
 
 .gg-register-icon {

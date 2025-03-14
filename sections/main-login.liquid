@@ -188,10 +188,14 @@
   
   function togglePassword () {
       const passwordField = document.getElementById('CustomerPassword');
+      const ggPasswordIcon = document.querySelector('.gg-password-icon')
       if (passwordField.type === 'password') {
+        console.log('1111')
         passwordField.type = 'text';
+        ggPasswordIcon.innerHTML = `{{ 'icon-eye-hide.svg' | inline_asset_content }}`
       } else {
         passwordField.type = 'password';
+        ggPasswordIcon.innerHTML = `{{ 'icon-eye.svg' | inline_asset_content }}`
       }
     }
 </script>

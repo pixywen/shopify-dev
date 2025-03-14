@@ -129,7 +129,7 @@
       <div class="gg-register-icon gg-register-eye">
         {{ 'icon-key.svg' | inline_asset_content }}
       </div>
-      <div class="gg-password-icon" onclick="togglePassword()">
+      <div class="gg-password-icon gg-password-icon1" onclick="togglePassword()">
         {{ 'icon-eye.svg' | inline_asset_content }}
       </div>
     </div>
@@ -159,7 +159,7 @@
       <div class="gg-register-icon">
         {{ 'icon-key.svg' | inline_asset_content }}
       </div>
-      <div class="gg-password-icon" onclick="togglePasswordConfirm()">
+      <div class="gg-password-icon gg-password-icon2" onclick="togglePasswordConfirm()">
         {{ 'icon-eye.svg' | inline_asset_content }}
       </div>
     </div>
@@ -212,18 +212,24 @@
   
   function togglePasswordConfirm () {
       const passwordField = document.getElementById('RegisterForm-password-confirm');
+      const ggPasswordIcon = document.querySelector('.gg-password-icon1')
       if (passwordField.type === 'password') {
         passwordField.type = 'text';
+        ggPasswordIcon.innerHTML = `{{ 'icon-eye-hide.svg' | inline_asset_content }}`
       } else {
         passwordField.type = 'password';
+        ggPasswordIcon.innerHTML = `{{ 'icon-eye.svg' | inline_asset_content }}`
       }
     }
   function togglePassword () {
       const passwordField = document.getElementById('RegisterForm-password');
+      const ggPasswordIcon = document.querySelector('.gg-password-icon2')
       if (passwordField.type === 'password') {
         passwordField.type = 'text';
+        ggPasswordIcon.innerHTML = `{{ 'icon-eye-hide.svg' | inline_asset_content }}`
       } else {
         passwordField.type = 'password';
+        ggPasswordIcon.innerHTML = `{{ 'icon-eye.svg' | inline_asset_content }}`
       }
     }
 </script>
