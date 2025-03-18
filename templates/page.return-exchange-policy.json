@@ -33,19 +33,6 @@
             "margin_bottom": 25
           }
         },
-        "text_Mdz7q4": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We have a <strong>30-day return policy</strong>, which means you have <strong>30 days</strong> after receiving your item to request a return. </p><p>To be eligible for a return, your item must be in the same condition that you received it, unworn or unused, with tags, and in its original packaging. You’ll also need the receipt or proof of purchase. </p><p>To start a return, you can contact us at <strong>hello@alpargali.com</strong>. </p><p>If your return is accepted, we’ll send you a return shipping label, as well as instructions on how and where to send your package. Items sent back to us without first requesting a return will not be accepted. </p><p>You can always contact us for any return question at <strong>hello@alpargali.com</strong>.</p>",
-            "font": "montserrat_n4",
-            "font_size": 16,
-            "font_weight": 400,
-            "letter_spacing": 1,
-            "line_height": 27,
-            "margin_top": 25,
-            "margin_bottom": 25
-          }
-        },
         "divider_rYj3qM": {
           "type": "divider",
           "settings": {
@@ -56,7 +43,7 @@
         "subheading_Uq3iGN": {
           "type": "subheading",
           "settings": {
-            "text": "Damages and issues",
+            "text": "Return Policy",
             "font": "montserrat_n4",
             "font_size": 16,
             "font_weight": 600,
@@ -69,7 +56,7 @@
         "text_mGUKFL": {
           "type": "text",
           "settings": {
-            "text": "<p>Please inspect your order upon reception and contact us immediately if the item is defective, damaged or if you receive the wrong item, so that we can evaluate the issue and make it right. </p>",
+            "text": "<p>We want you to be satisfied with your purchase. If you are not happy with your order, you may request a return within <strong>30 days</strong> of receiving the product.</p>",
             "font": "montserrat_n4",
             "font_size": 16,
             "font_weight": 400,
@@ -79,17 +66,10 @@
             "margin_bottom": 25
           }
         },
-        "divider_dcUdtq": {
-          "type": "divider",
-          "settings": {
-            "margin_top": 25,
-            "margin_bottom": 25
-          }
-        },
         "subheading_dcqRdx": {
           "type": "subheading",
           "settings": {
-            "text": "",
+            "text": "Return Conditions:",
             "font": "montserrat_n4",
             "font_size": 16,
             "font_weight": 600,
@@ -102,7 +82,7 @@
         "text_eme97D": {
           "type": "text",
           "settings": {
-            "text": "",
+            "text": "<ul><li>Items must be unused, unwashed, undamaged, and in their original packaging.</li><li>A valid order number or proof of purchase is required.</li><li>Customized, promotional, or clearance items are non-returnable unless they have quality issues.</li></ul>",
             "font": "montserrat_n4",
             "font_size": 16,
             "font_weight": 400,
@@ -115,7 +95,7 @@
         "subheading_nY4i6G": {
           "type": "subheading",
           "settings": {
-            "text": "Exceptions/Non-Returnable Items",
+            "text": "Return Process:",
             "font": "montserrat_n4",
             "font_size": 16,
             "font_weight": 600,
@@ -128,7 +108,7 @@
         "text_aTDD7z": {
           "type": "text",
           "settings": {
-            "text": "<p>We strive to ensure every customer is satisfied with their purchase. However, for hygiene and quality assurance reasons, the following clothing items cannot be returned or exchanged:</p><p>1.Worn or Washed ItemsClothing that has been worn, washed, or shows signs of use (such as stains, odors, or damages) is not eligible for return.</p><p>2.Final Sale or Clearance ItemsItems marked as \"Final Sale,\" \"Clearance,\" or sold during special promotional events are non-returnable.</p><p>3.Damaged Items Not Reported Immediately</p><p>If an item arrives damaged, customers must report it within 48 hours of receipt. Failure to report damages within this period may void eligibility for a return or exchange.</p><p>If you have any questions or concerns regarding our policy or the eligibility of your item for return, please contact us at <strong>hello@alpargali.com</strong>.</p>",
+            "text": "<ol><li>Contact our customer service (<strong>hello@apargali.com</strong>) to request a return and provide the reason.</li><li>After confirmation, we will provide you with a return address.</li><li>You will need to ship the item back at your own expense and provide a tracking number.</li><li>Once we receive the returned item and confirm it meets the conditions, we will process your refund within <strong>10 business days</strong> to your original payment method.</li></ol>",
             "font": "montserrat_n4",
             "font_size": 16,
             "font_weight": 400,
@@ -148,7 +128,7 @@
         "subheading_yWeKJE": {
           "type": "subheading",
           "settings": {
-            "text": "Exchanges",
+            "text": "Exchange Policy",
             "font": "montserrat_n4",
             "font_size": 16,
             "font_weight": 600,
@@ -161,7 +141,7 @@
         "text_JGrU9E": {
           "type": "text",
           "settings": {
-            "text": "<p>Exchanges are allowed within 30 days of receipt due to size or quality issues.Items must be unused and in original condition with all tags and accessories intact.For Assistance:Contact us at hello@alpargali.com.</p>",
+            "text": "<p>If you need to exchange an item (e.g., for a different size or color), please contact us within <strong>30 days</strong> of receiving your order. The exchange policy follows the same conditions as the return policy:</p><ul><li>Items must be unused, unwashed, undamaged, and in their original packaging.</li><li>A valid order number or proof of purchase is required.</li><li>Customized, promotional, or clearance items are non-exchangeable unless they have quality issues.</li><li>If there is a price difference between the exchanged items, you may need to pay the difference.</li></ul>",
             "font": "montserrat_n4",
             "font_size": 16,
             "font_weight": 400,
@@ -174,7 +154,7 @@
         "subheading_gT8r66": {
           "type": "subheading",
           "settings": {
-            "text": "Refunds",
+            "text": "Exchange Process:",
             "font": "montserrat_n4",
             "font_size": 16,
             "font_weight": 600,
@@ -187,7 +167,53 @@
         "text_NcL8km": {
           "type": "text",
           "settings": {
-            "text": "<p>We will notify you once we’ve received and inspected your return, and let you know if the refund was approved or not. If approved, you’ll be automatically refunded on your original payment method within 10 business days. Please remember it can take some time for your bank or credit card company to process and post the refund too. </p><p>If more than 15 business days have passed since we’ve approved your return, please contact us at hello@alpargali.com.</p>",
+            "text": "<ol><li>Contact our customer service (hello@alpargali.com) to request an exchange and provide the reason.</li><li>After confirmation, we will provide you with an exchange address.</li><li>You need to ship the item back at your own expense and provide a tracking number.</li><li>Once we receive the exchanged item, we will process the exchange within <strong>10 business days</strong> and ship the new item to you.</li></ol>",
+            "font": "montserrat_n4",
+            "font_size": 16,
+            "font_weight": 400,
+            "letter_spacing": 1,
+            "line_height": 27,
+            "margin_top": 25,
+            "margin_bottom": 25
+          }
+        },
+        "subheading_L6Ac4E": {
+          "type": "subheading",
+          "settings": {
+            "text": "Special Notes",
+            "font": "montserrat_n4",
+            "font_size": 16,
+            "font_weight": 600,
+            "letter_spacing": 0,
+            "line_height": 32,
+            "margin_top": 25,
+            "margin_bottom": 25
+          }
+        },
+        "text_eCCghe": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Return and exchange shipping costs are covered by the buyer unless the item has quality issues or was sent incorrectly.</li><li>If returning or exchanging due to personal reasons (e.g., dislike or wrong purchase), the buyer must cover the shipping costs.</li><li>If the item has quality issues or was sent incorrectly, we will cover all return/exchange costs.</li><li>We recommend using a trackable shipping method to ensure safe delivery.</li></ul>",
+            "font": "montserrat_n4",
+            "font_size": 16,
+            "font_weight": 400,
+            "letter_spacing": 1,
+            "line_height": 27,
+            "margin_top": 25,
+            "margin_bottom": 25
+          }
+        },
+        "divider_HwtMDe": {
+          "type": "divider",
+          "settings": {
+            "margin_top": 25,
+            "margin_bottom": 25
+          }
+        },
+        "text_PPM6Ra": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you have any questions, please feel free to contact our customer service team. We’re happy to assist you!</p>",
             "font": "montserrat_n4",
             "font_size": 16,
             "font_weight": 400,
@@ -200,11 +226,9 @@
       },
       "block_order": [
         "heading_RiWYdL",
-        "text_Mdz7q4",
         "divider_rYj3qM",
         "subheading_Uq3iGN",
         "text_mGUKFL",
-        "divider_dcUdtq",
         "subheading_dcqRdx",
         "text_eme97D",
         "subheading_nY4i6G",
@@ -213,7 +237,11 @@
         "subheading_yWeKJE",
         "text_JGrU9E",
         "subheading_gT8r66",
-        "text_NcL8km"
+        "text_NcL8km",
+        "subheading_L6Ac4E",
+        "text_eCCghe",
+        "divider_HwtMDe",
+        "text_PPM6Ra"
       ],
       "settings": {
         "content_width": 1200,
