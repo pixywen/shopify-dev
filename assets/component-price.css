@@ -84,10 +84,18 @@
   justify-content: center;
 }
 
-.price--on-sale .price-item--regular {
+/* ✅ 推荐替换为更精确的划线控制，仅限 sale 结构下的原价 */
+.price--on-sale .price__sale .price-item--regular {
   text-decoration: line-through;
   color: rgba(var(--color-foreground), 0.75);
   font-size: 1.3rem;
+}
+
+/* ✅ 安全兜底：普通价格永远不划线 */
+.price__regular .price-item--regular {
+  text-decoration: none;
+  color: rgb(var(--color-foreground));
+  font-size: 1.6rem;
 }
 
 .unit-price {
@@ -98,4 +106,18 @@
   margin-top: 0.2rem;
   text-transform: uppercase;
   color: rgba(var(--color-foreground), 0.7);
+}
+
+
+/* 只隐藏有打折时的旧价格，不影响 sale 显示 */
+.price--on-sale .price__regular {
+  display: none;
+}
+.price--on-sale .price__availability {
+  display: none;
+}
+
+/* 保证 sale 区块可见 */
+.price__sale {
+  display: block;
 }
