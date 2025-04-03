@@ -99,3 +99,17 @@
   text-transform: uppercase;
   color: rgba(var(--color-foreground), 0.7);
 }
+
+
+/* 只隐藏有打折时的旧价格，不影响 sale 显示 */
+.price--on-sale .price__regular {
+  display: none;
+}
+.price--on-sale .price__availability {
+  display: none;
+}
+
+/* 保证 sale 区块可见 */
+.price__sale {
+  display: block;
+}
