@@ -326,8 +326,17 @@ a.product__text {
   font-weight: 400;
   letter-spacing: 0px;
   line-height: 17.07px;
-  text-decoration-line: line-through;
   color: rgba(128, 128, 128, 1);
+}
+
+/* 只在促销时显示删除线 */
+.price--on-sale .price-item--regular {
+  text-decoration: line-through;
+}
+
+/* 确保常规价格没有删除线 */
+.price__regular .price-item--regular {
+  text-decoration: none !important;
 }
 
 .product__title > a {
