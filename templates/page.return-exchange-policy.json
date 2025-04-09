@@ -56,7 +56,7 @@
         "text_mGUKFL": {
           "type": "text",
           "settings": {
-            "text": "<p>We want you to be satisfied with your purchase. If you are not happy with your order, you may request a return within <strong>30 days</strong> of receiving the product.</p>",
+            "text": "<p>At Alpargali, we hope you are completely satisfied with every product you receive. If you are not happy with your purchase, you may request a return within <strong>30 days</strong> of receiving the item.</p>",
             "font": "montserrat_n4",
             "font_size": 16,
             "font_weight": 400,
@@ -82,7 +82,7 @@
         "text_eme97D": {
           "type": "text",
           "settings": {
-            "text": "<ul><li>Items must be unused, unwashed, undamaged, and in their original packaging.</li><li>A valid order number or proof of purchase is required.</li><li>Customized, promotional, or clearance items are non-returnable unless they have quality issues.</li></ul>",
+            "text": "<ul><li>Items must be unused, unwashed, undamaged, with original tags and packaging intact;</li><li>A valid order number or proof of purchase is required;</li><li>Promotional or discounted items are not eligible for return;</li><li>If the item has a quality issue, please contact our customer service <strong>within 48 hours</strong> of receipt and provide photos or videos as proof — we will process the return unconditionally.</li></ul>",
             "font": "montserrat_n4",
             "font_size": 16,
             "font_weight": 400,
@@ -108,7 +108,7 @@
         "text_aTDD7z": {
           "type": "text",
           "settings": {
-            "text": "<ol><li>Contact our customer service (<strong>hello@apargali.com</strong>) to request a return and provide the reason.</li><li>After confirmation, we will provide you with a return address.</li><li>You will need to ship the item back at your own expense and provide a tracking number.</li><li>Once we receive the returned item and confirm it meets the conditions, we will process your refund within <strong>10 business days</strong> to your original payment method.</li></ol>",
+            "text": "<ol><li>Contact our customer service team (hello@alpargali.com) to submit your return request and the reason;</li><li>Once confirmed, we will provide you with the return address;</li><li>Please use a trackable shipping method to return the item, and share the tracking number with us;</li><li>Once we receive the returned item and confirm it meets the return conditions, we will process your refund within <strong>5 business days</strong> to your original payment method.</li></ol><p><strong>Note:</strong> If more than <strong>10 business days</strong> have passed since your return was approved and you have not yet received your refund, please contact us at hello@alpargali.com.<br/><br/></p>",
             "font": "montserrat_n4",
             "font_size": 16,
             "font_weight": 400,
@@ -141,7 +141,7 @@
         "text_JGrU9E": {
           "type": "text",
           "settings": {
-            "text": "<p>If you need to exchange an item (e.g., for a different size or color), please contact us within <strong>30 days</strong> of receiving your order. The exchange policy follows the same conditions as the return policy:</p><ul><li>Items must be unused, unwashed, undamaged, and in their original packaging.</li><li>A valid order number or proof of purchase is required.</li><li>Customized, promotional, or clearance items are non-exchangeable unless they have quality issues.</li><li>If there is a price difference between the exchanged items, you may need to pay the difference.</li></ul>",
+            "text": "<p>If you need to exchange an item (for example, a different size or color), please contact us within <strong>30 days</strong> of receiving your product. Exchanges are subject to the following conditions:</p>",
             "font": "montserrat_n4",
             "font_size": 16,
             "font_weight": 400,
@@ -154,7 +154,7 @@
         "subheading_gT8r66": {
           "type": "subheading",
           "settings": {
-            "text": "Exchange Process:",
+            "text": "Exchange Conditions:",
             "font": "montserrat_n4",
             "font_size": 16,
             "font_weight": 600,
@@ -167,7 +167,7 @@
         "text_NcL8km": {
           "type": "text",
           "settings": {
-            "text": "<ol><li>Contact our customer service (hello@alpargali.com) to request an exchange and provide the reason.</li><li>After confirmation, we will provide you with an exchange address.</li><li>You need to ship the item back at your own expense and provide a tracking number.</li><li>Once we receive the exchanged item, we will process the exchange within <strong>10 business days</strong> and ship the new item to you.</li></ol>",
+            "text": "<ul><li>Items must be unused, unwashed, undamaged, with original tags and packaging intact;</li><li>A valid order number or proof of purchase is required;</li><li>Promotional or discounted items are not eligible for exchange;</li><li>For quality-related exchanges, please contact us <strong>within 48 hours</strong> of receipt and provide supporting photos or videos. We will process the exchange unconditionally.</li></ul>",
             "font": "montserrat_n4",
             "font_size": 16,
             "font_weight": 400,
@@ -180,7 +180,7 @@
         "subheading_L6Ac4E": {
           "type": "subheading",
           "settings": {
-            "text": "Special Notes",
+            "text": "Exchange Process:",
             "font": "montserrat_n4",
             "font_size": 16,
             "font_weight": 600,
@@ -193,12 +193,25 @@
         "text_eCCghe": {
           "type": "text",
           "settings": {
-            "text": "<ul><li>Return and exchange shipping costs are covered by the buyer unless the item has quality issues or was sent incorrectly.</li><li>If returning or exchanging due to personal reasons (e.g., dislike or wrong purchase), the buyer must cover the shipping costs.</li><li>If the item has quality issues or was sent incorrectly, we will cover all return/exchange costs.</li><li>We recommend using a trackable shipping method to ensure safe delivery.</li></ul>",
+            "text": "<ol><li>Contact our customer service team (hello@alpargali.com) to submit your exchange request and the reason;</li><li>Once confirmed, we will provide you with the exchange address;</li><li>Please use a trackable shipping method to send the item back, and provide us with the tracking number;</li><li>Once we receive the item and confirm it meets the exchange conditions, we will process and ship the replacement within <strong>5 business days</strong>.</li></ol>",
             "font": "montserrat_n4",
             "font_size": 16,
             "font_weight": 400,
             "letter_spacing": 1,
             "line_height": 27,
+            "margin_top": 25,
+            "margin_bottom": 25
+          }
+        },
+        "subheading_BHLb9T": {
+          "type": "subheading",
+          "settings": {
+            "text": "Exchange Shipping Fees:",
+            "font": "montserrat_n6",
+            "font_size": 16,
+            "font_weight": 600,
+            "letter_spacing": 0,
+            "line_height": 32,
             "margin_top": 25,
             "margin_bottom": 25
           }
@@ -240,6 +253,7 @@
         "text_NcL8km",
         "subheading_L6Ac4E",
         "text_eCCghe",
+        "subheading_BHLb9T",
         "divider_HwtMDe",
         "text_PPM6Ra"
       ],
