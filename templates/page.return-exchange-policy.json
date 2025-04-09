@@ -216,6 +216,19 @@
             "margin_bottom": 25
           }
         },
+        "text_eWUXMD": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>For exchanges due to personal reasons, the shipping cost is the buyer’s responsibility;</li><li>For exchanges due to quality issues or incorrect items, we will cover the shipping costs.</li></ul>",
+            "font": "montserrat_n4",
+            "font_size": 16,
+            "font_weight": 400,
+            "letter_spacing": 1,
+            "line_height": 27,
+            "margin_top": 25,
+            "margin_bottom": 25
+          }
+        },
         "divider_HwtMDe": {
           "type": "divider",
           "settings": {
@@ -226,7 +239,7 @@
         "text_PPM6Ra": {
           "type": "text",
           "settings": {
-            "text": "<p>If you have any questions, please feel free to contact our customer service team. We’re happy to assist you!</p>",
+            "text": "<p>If you have any questions, feel free to reach out to our customer support team at <strong>hello@alpargali.com</strong>. We’re always happy to assist you!</p>",
             "font": "montserrat_n4",
             "font_size": 16,
             "font_weight": 400,
@@ -254,6 +267,7 @@
         "subheading_L6Ac4E",
         "text_eCCghe",
         "subheading_BHLb9T",
+        "text_eWUXMD",
         "divider_HwtMDe",
         "text_PPM6Ra"
       ],
