@@ -82,7 +82,7 @@
           "type": "image",
           "name": "sign up",
           "settings": {
-            "block_css": "margin-top: 0 !important;margin-bottom: 0 !important;padding-top: 0 !important;padding-bottom: 0 !important;",
+            "block_css": "",
             "custom_html_css": "",
             "section_bg_color": "#f9f4ee",
             "padding_top": 0,
