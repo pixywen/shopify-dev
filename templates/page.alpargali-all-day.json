@@ -84,7 +84,7 @@
           "settings": {
             "block_css": "",
             "custom_html_css": "",
-            "section_bg_color": "#f0f0f0",
+            "section_bg_color": "#f9f4ee",
             "padding_top": 0,
             "padding_bottom": 0,
             "padding_top_pad": 0,
@@ -505,7 +505,7 @@
           "settings": {
             "block_css": "",
             "custom_html_css": "",
-            "section_bg_color": "#f0f0f0",
+            "section_bg_color": "#f9f4ee",
             "padding_top": 0,
             "padding_bottom": 0,
             "padding_top_pad": 0,
