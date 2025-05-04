@@ -85,7 +85,7 @@
             "block_css": "",
             "custom_html_css": "",
             "section_bg_color": "#f9f4ee",
-            "padding_top": 0,
+            "padding_top": 20,
             "padding_bottom": 0,
             "padding_top_pad": 0,
             "padding_bottom_pad": 0,
