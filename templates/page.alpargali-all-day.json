@@ -322,14 +322,6 @@
         "section_css": ""
       }
     },
-    "common_media_JNMy9r": {
-      "type": "common-media",
-      "name": "Common media",
-      "settings": {
-        "show_section": true,
-        "section_css": ""
-      }
-    },
     "common_media_hgxAUh": {
       "type": "common-media",
       "blocks": {
@@ -514,8 +506,8 @@
             "block_css": "",
             "custom_html_css": "",
             "section_bg_color": "#f9f4ee",
-            "padding_top": 0,
-            "padding_bottom": 0,
+            "padding_top": 20,
+            "padding_bottom": 20,
             "padding_top_pad": 0,
             "padding_bottom_pad": 0,
             "padding_top_mb": 0,
@@ -1009,8 +1001,8 @@
             "block_css": "",
             "custom_html_css": "",
             "section_bg_color": "#f9f4ee",
-            "padding_top": 0,
-            "padding_bottom": 0,
+            "padding_top": 20,
+            "padding_bottom": 20,
             "padding_top_pad": 0,
             "padding_bottom_pad": 0,
             "padding_top_mb": 0,
@@ -1372,8 +1364,8 @@
             "block_css": "",
             "custom_html_css": "",
             "section_bg_color": "#f9f4ee",
-            "padding_top": 0,
-            "padding_bottom": 0,
+            "padding_top": 20,
+            "padding_bottom": 20,
             "padding_top_pad": 0,
             "padding_bottom_pad": 0,
             "padding_top_mb": 0,
@@ -1691,8 +1683,8 @@
             "block_css": "",
             "custom_html_css": "",
             "section_bg_color": "#f9f4ee",
-            "padding_top": 0,
-            "padding_bottom": 0,
+            "padding_top": 20,
+            "padding_bottom": 20,
             "padding_top_pad": 0,
             "padding_bottom_pad": 0,
             "padding_top_mb": 0,
@@ -1755,7 +1747,6 @@
   "order": [
     "main",
     "common_media_FjLLqp",
-    "common_media_JNMy9r",
     "common_media_hgxAUh",
     "common_media_txYkVY",
     "common_media_FJLJJD",
