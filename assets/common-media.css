@@ -331,6 +331,18 @@ nobr {
   @media only screen and (max-width:820px){.small--text-left{text-align:left !important;}.small--text-right{text-align:right !important;}.small--text-center{text-align:center !important;}}
 
 
+@media screen and (min-width: 590px) and (max-width:990px) {
+  .common-pc--hide {
+    display: none;
+  }
+  
+  .common-pad--show {
+    display: block;
+  }
+  .common-pad--show+.common-small--hide {
+    display: none!important;
+  }
+}
 
   
   .feature-row__image-wrapper {
