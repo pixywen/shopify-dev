@@ -230,7 +230,7 @@
         "heading": "Gallary",
         "small_heading_below": "From freezing cold to rainy days, Alpargali has you covered.",
         "button_label": "SHOP NOW",
-        "button_link": "",
+        "button_link": "shopify://collections/clothing",
         "image_1": "shopify://shop_images/s-tib-01.jpg",
         "image_2": "shopify://shop_images/s-tib-02.jpg",
         "image_3": "shopify://shop_images/s-tib-03.jpg"
