@@ -215,7 +215,7 @@
         "heading": "Vests",
         "small_heading_below": "",
         "button_label": "SHOP NOW",
-        "button_link": "",
+        "button_link": "shopify://products/graphene-vest",
         "image": "shopify://shop_images/sib-vest.jpg",
         "mobile_image": "shopify://shop_images/sib-m-vest.jpg",
         "video": "shopify://files/videos/sib-vests.mp4",
