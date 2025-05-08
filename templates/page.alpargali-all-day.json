@@ -933,13 +933,13 @@
             "title_size": "60",
             "title_size_pad": "60",
             "title_size_mb": "30",
-            "title_color": "#000",
+            "title_color": "#000000",
             "subtitle": "",
             "subtitle_size_big": "16",
             "subtitle_size": "16",
             "subtitle_size_pad": "16",
             "subtitle_size_mb": "14",
-            "subtitle_color": "#000",
+            "subtitle_color": "#000000",
             "custom_html_content": "",
             "btn": "",
             "link": ""
@@ -1217,7 +1217,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "<style>\n.announcement-bar-section,\n.shopify-section-group-header-group,\n.footer\n{\ndisplay:none!important;\n}\n</style>",
+        "custom_liquid": "<style>\n.announcement-bar-section,\n.shopify-section-group-header-group\n{\ndisplay:none!important;\n}\n</style>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
