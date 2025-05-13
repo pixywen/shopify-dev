@@ -9,21 +9,6 @@
  */
 {
   "sections": {
-    "gg_image_banner_V4rbFP": {
-      "type": "gg-image-banner",
-      "settings": {
-        "small_heading_above": "🌍 Users from 61 countries and regions, 984 cities worldwide.",
-        "heading": "Gear for Every Adventure",
-        "small_heading_below": "From freezing cold to rainy days, Alpargali has you covered.",
-        "button_label": "SHOP NOW",
-        "button_link": "shopify://collections/clothing",
-        "image": "shopify://shop_images/aurora-top-banner.jpg",
-        "video": "shopify://files/videos/aurora-top-banner.mov",
-        "mobile_image": "shopify://shop_images/aurora-top-banner-m.jpg",
-        "mobile_video": "shopify://files/videos/aurora-top-banner-m.mov",
-        "description": ""
-      }
-    },
     "common_media_BrHjtL": {
       "type": "common-media",
       "blocks": {
@@ -60,9 +45,9 @@
             "text_alignment_mb": "mb-vertical-top mb-horizontal-left",
             "text_position_mb": false,
             "media_type": "image",
-            "image": "shopify://shop_images/20250513101221.jpg",
-            "image_pad": "shopify://shop_images/20250513101232.jpg",
-            "image_mb": "shopify://shop_images/20250513101232.jpg",
+            "image": "shopify://shop_images/20250513101221_00646ca2-7830-49a8-9cc2-30f5d47d6d93.jpg",
+            "image_pad": "shopify://shop_images/20250513101232_49bc41a9-d666-47a1-a96b-1191fce629ce.jpg",
+            "image_mb": "shopify://shop_images/20250513101232_49bc41a9-d666-47a1-a96b-1191fce629ce.jpg",
             "video_url": "",
             "youtube_video": "",
             "section_logo": "",
@@ -93,6 +78,21 @@
       "settings": {
         "show_section": true,
         "section_css": ""
+      }
+    },
+    "gg_image_banner_V4rbFP": {
+      "type": "gg-image-banner",
+      "settings": {
+        "small_heading_above": "🌍 Users from 61 countries and regions, 984 cities worldwide.",
+        "heading": "Gear for Every Adventure",
+        "small_heading_below": "From freezing cold to rainy days, Alpargali has you covered.",
+        "button_label": "SHOP NOW",
+        "button_link": "shopify://collections/clothing",
+        "image": "shopify://shop_images/aurora-top-banner.jpg",
+        "video": "shopify://files/videos/aurora-top-banner.mov",
+        "mobile_image": "shopify://shop_images/aurora-top-banner-m.jpg",
+        "mobile_video": "shopify://files/videos/aurora-top-banner-m.mov",
+        "description": ""
       }
     },
     "gg_scroll_image_zqhRNf": {
@@ -351,8 +351,8 @@
     }
   },
   "order": [
-    "gg_image_banner_V4rbFP",
     "common_media_BrHjtL",
+    "gg_image_banner_V4rbFP",
     "gg_scroll_image_zqhRNf",
     "gg_double_image_banner_mobile_YXnVpE",
     "gg_double_image_banner_YFmVwF",
