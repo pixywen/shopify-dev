@@ -82,6 +82,7 @@
     },
     "gg_image_banner_V4rbFP": {
       "type": "gg-image-banner",
+      "disabled": true,
       "settings": {
         "small_heading_above": "🌍 Users from 61 countries and regions, 984 cities worldwide.",
         "heading": "Gear for Every Adventure",
