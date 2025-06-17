@@ -1,0 +1,282 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gg_breadcrumb_yr7zeq": {
+      "type": "gg-breadcrumb",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "square"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_ex_c7QqTL": {
+          "type": "buy_buttons_ex",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "divider_3i4EF3": {
+          "type": "divider",
+          "settings": {
+            "margin_top": 20,
+            "margin_bottom": 20
+          }
+        },
+        "gg_icon_text_grid_TGCbKj": {
+          "type": "gg-icon-text-grid",
+          "settings": {
+            "icon_1": "shopify://shop_images/product-block-001-001.svg",
+            "text_1": "$189  Free Shipping",
+            "icon_2": "shopify://shop_images/product-block-001-002.svg",
+            "text_2": "Payment Security",
+            "icon_3": "shopify://shop_images/product-block-001-003.svg",
+            "text_3": "Eco-Friendly Packaging",
+            "text_4": ""
+          }
+        },
+        "divider_FHRHjn": {
+          "type": "divider",
+          "settings": {
+            "margin_top": 20,
+            "margin_bottom": 20
+          }
+        },
+        "gg_heading_image_Lh8bEX": {
+          "type": "gg-heading-image",
+          "settings": {
+            "heading": "As Featured In:",
+            "image": "shopify://shop_images/product-info-b-hi-01.png",
+            "image_mobile": "shopify://shop_images/product-info-b-hi-01-m.png"
+          }
+        },
+        "complementary_MMXapa": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs Great With:",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": true
+          }
+        },
+        "collapsible_tab_yAPYME": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Details",
+            "icon": "none",
+            "content": "<p>The Alpargali Puffer combines cutting-edge NASA-inspired technology with high-performance materials like aerogel and graphene, offering an unmatched weight-to-warmth ratio. Effective in temperatures from -40°C/-40°F to +10°C/50°F, it provides the warmth of a premium down jacket without the bulk. With a sleek design, over 30 functions, and 9 pockets, this versatile, year-round jacket is perfect for urban life and outdoor adventures alike. Whether facing extreme cold or mild weather, your comfort is guaranteed.</p>",
+            "page": "",
+            "image_alt": "",
+            "image_width": 50
+          }
+        },
+        "collapsible_tab_GyWCqX": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Specs",
+            "icon": "none",
+            "content": "<p>Shell: Teflon-coated</p><p>Insulation: Aerogel, Graphene, Sorona</p><p>Weight: 1000g</p><p>Breathability: 10K</p><p>Weather Resistant: YES(Teflon)</p><p>Pockets: 9</p><p>Suggested temperature range:-40°C/-40℉ to 20°C/68℉</p><p>Packability: Easily packable for travel</p><p>Activity: Adventure, Urban, Travel </p><p>Aerogel Thickness: 1.0mm</p>",
+            "page": "",
+            "image_alt": "",
+            "image_width": 50
+          }
+        },
+        "collapsible_tab_4bGyQa": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care",
+            "icon": "none",
+            "content": "<p>Clean regularly, avoid regular detergents and fabric softeners</p><p>Usage and Cleaning Frequency:</p><ul><li>Intensive Use: Deep clean after 10 uses.</li><li>Low-Intensity Use: Deep clean every 1-2 months.</li></ul>",
+            "page": "",
+            "image": "shopify://shop_images/aao-info-icon-01.png",
+            "image_alt": "",
+            "image_width": 50
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons_ex_c7QqTL",
+        "divider_3i4EF3",
+        "gg_icon_text_grid_TGCbKj",
+        "divider_FHRHjn",
+        "gg_heading_image_Lh8bEX",
+        "complementary_MMXapa",
+        "collapsible_tab_yAPYME",
+        "collapsible_tab_GyWCqX",
+        "collapsible_tab_4bGyQa"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12,
+        "size_guide_image": "shopify://shop_images/size-guide.jpg"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "gg_product_detail_Mg4rJH": {
+      "type": "gg-product-detail",
+      "blocks": {
+        "content_block_MGACxw": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "heading": "<p>产品详情</p>",
+            "content": "<p>测试产品内容</p>",
+            "target_tab": "description"
+          }
+        },
+        "content_block_rN49nb": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "heading": "<p>产品详情</p>",
+            "content": "<p>请输入详细说明内容...</p>",
+            "target_tab": "video"
+          }
+        },
+        "content_block_DPjhDm": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "heading": "<p>产品详情</p>",
+            "content": "<p>请输入详细说明内容...</p>",
+            "target_tab": "faq"
+          }
+        },
+        "judge_me_reviews_review_widget_JctMNU": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "content_block_MGACxw",
+        "content_block_rN49nb",
+        "content_block_DPjhDm",
+        "judge_me_reviews_review_widget_JctMNU"
+      ],
+      "settings": {
+        "show_description": true,
+        "show_video": true,
+        "show_reviews": true,
+        "show_faq": true
+      }
+    },
+    "gg_newsletter_7KY6KE": {
+      "type": "gg-newsletter",
+      "blocks": {
+        "heading_NNF3X6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_GDBwQ4": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
+          }
+        },
+        "email_form_LghYDk": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_NNF3X6",
+        "paragraph_GDBwQ4",
+        "email_form_LghYDk"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "show_bottom_content": true,
+        "feature1_icon": "shopify://shop_images/icon-index-email-bottom-1.svg",
+        "feature1_text": "Free Shipping over $169",
+        "feature2_icon": "shopify://shop_images/icon-index-email-bottom-2.svg",
+        "feature2_text": "2 Kickstarter Successful Campaigns",
+        "feature3_icon": "shopify://shop_images/icon-index-email-bottom-3.svg",
+        "feature3_text": "Lifetime Guarantee",
+        "feature4_icon": "shopify://shop_images/icon-index-email-bottom-4.svg",
+        "feature4_text": "Trusted By 15,00+ Customers"
+      }
+    }
+  },
+  "order": [
+    "gg_breadcrumb_yr7zeq",
+    "main",
+    "related-products",
+    "gg_product_detail_Mg4rJH",
+    "gg_newsletter_7KY6KE"
+  ]
+}
