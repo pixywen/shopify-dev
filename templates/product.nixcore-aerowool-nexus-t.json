@@ -181,10 +181,10 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/T_-1.jpg",
-            "heading": "All-Day, All-Scene Essential",
+            "image": "shopify://shop_images/T_-1_d6c1fae2-a9e5-49bc-8d12-f8e5aa4ed8dc.jpg",
+            "heading": "Featherlight Feel, Triple-Function Fabric",
             "subheading": "",
-            "text": "<p>Moisture-wicking waffle texture keeps you cool and dry — whether you're commuting, lounging, or on the move.</p>",
+            "text": "<p>Ultralight, barely-there fabric engineered with a tri-blend of fibers for optimal moisture control, dynamic thermoregulation, and natural stretch. Performance and comfort, seamlessly combined.</p>",
             "target_tab": "description",
             "margin_top": 72,
             "margin_bottom": 0
@@ -195,10 +195,10 @@
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/T_-2.jpg",
-            "heading": "Next-Gen Comfort, Sustainable Performance",
+            "image": "shopify://shop_images/T_-2_27bd5a69-82a5-4d79-86db-5cda7cb02247.jpg",
+            "heading": "Antibacterial Confidence That Lasts",
             "subheading": "",
-            "text": "<p>Crafted with SOLOTEX® — ultra-soft, breathable, wrinkle-resistant, and built to last. Better for you, better for the planet.</p>",
+            "text": "<p>Naturally antibacterial and odor-resistant — so you feel fresh, confident, and comfortable, even after hours of wear.</p>",
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 0
@@ -209,10 +209,10 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/T_-3.jpg",
-            "heading": "Style in the Details",
+            "image": "shopify://shop_images/T_-3_30a6bb26-760d-45f1-bc4a-ef4ffe5f1500.jpg",
+            "heading": "Built-In Stretch, Built For Movement",
             "subheading": "",
-            "text": "<p>Bold contrast chest pocket and hem stitching add visual punch — minimal design, maximum impact.</p>",
+            "text": "<p>Enhanced with spandex to move with you — every stretch, step, and shift feels effortless.</p>",
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 0
@@ -223,27 +223,13 @@
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/T_-4.jpg",
-            "heading": "Crafted for Comfort, Engineered to Move",
+            "image": "shopify://shop_images/T_-4_fb7ff356-d385-431f-954e-46acec7608ae.jpg",
+            "heading": "Smart Details, Everyday Ease",
             "subheading": "",
-            "text": "<p>Reduced seam thickness for a smoother touch — wear it all day without a second thought.</p>",
+            "text": "<p>Designed with a discreet back locker loop — simple, practical, and ready when you are.</p>",
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 0
-          }
-        },
-        "collage_We7R8x": {
-          "type": "collage",
-          "settings": {
-            "desktop_layout": "image_left",
-            "mobile_layout": "image_top",
-            "image": "shopify://shop_images/T_-5.jpg",
-            "heading": "Relaxed Fit, Confident Silhouette",
-            "subheading": "",
-            "text": "<p>Designed for freedom of movement with a tailored edge — looks sharp, feels effortless.</p>",
-            "target_tab": "description",
-            "margin_top": 0,
-            "margin_bottom": 32
           }
         },
         "faq_i3m3aL": {
@@ -266,7 +252,6 @@
         "collage_dLqxPW",
         "collage_WXNq9Y",
         "collage_zR94Hn",
-        "collage_We7R8x",
         "faq_i3m3aL",
         "judge_me_reviews_review_widget_JctMNU"
       ],
