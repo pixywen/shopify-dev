@@ -94,7 +94,7 @@
           "settings": {
             "heading": "Details",
             "icon": "none",
-            "content": "<p>A refined essential.</p><p>Made from Solotex® waffle-knit fabric for superior breathability and stretch.</p><p>Quick-dry, ultra-soft, and built to move.</p><p>Plant-based polymers reduce environmental impact.</p><p>Comfort. Performance. Responsibility.</p>",
+            "content": "<ul><li>Distinctive textured diamond pattern reduces fabric-to-skin contact, minimizing stickiness and keeping you dry.</li><li>Stretch and drape combine with cooling, quick-dry performance for lasting comfort.</li><li>Equipped with zippered back and thigh pockets to secure your essentials.</li><li>Adjustable ankle cuffs enable seamless transition from active to casual wear.</li><li>Texture. Comfort. Versatility.<br/><br/></li></ul>",
             "page": "",
             "image_alt": "",
             "image_width": 50
@@ -105,7 +105,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "<p>Fabric Composition</p><ul><li>Body: 60% Solotex®, 40% Polyester</li><li>Pocket Lining: 90% Nylon, 10% Spandex</li><li>Rib Knit Collar: 70% Cotton, 30% Polyester</li></ul><p>Design Features</p><ul><li>One chest pocket</li></ul>",
+            "content": "<p>Fabric：<br/>Main Fabric: </p><ul><li>92% Nylon, 8% Spandex</li></ul><p>Other Fabric: </p><ul><li>84% Nylon, 16% </li></ul><p>PolyurethanePockets：</p><ul><li>2 Front slip pockets</li><li> 1 Internal pocket</li><li>2 Back zippered pockets</li><li>1 Hidden thigh pocket</li></ul><p>Total: 6 pockets<br/><br/></p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
@@ -116,7 +116,7 @@
           "settings": {
             "heading": "Care",
             "icon": "none",
-            "content": "<ul><li>Do Not Bleach.</li><li>Wash Gently.</li><li>Avoid Direct Contact</li><li>Between The Iron And Fabric.</li><li>Lay Flat To Dry.</li><li>Do Not Dry Clean.</li></ul>",
+            "content": "<ul><li>Do Not Bleach.</li><li>Wash Gently.</li><li>Avoid Direct Contact</li><li>Between The Iron And Fabric.</li><li>Lay Flat To Dry. </li><li>Do Not Dry Clean.<br/><br/></li></ul>",
             "page": "",
             "image_alt": "",
             "image_width": 50
@@ -151,8 +151,7 @@
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
-        "padding_bottom": 12,
-        "size_guide_image": "shopify://shop_images/1cfb77d67fb4f431896b1299bd5beaba.jpg"
+        "padding_bottom": 12
       }
     },
     "related-products": {
@@ -182,10 +181,10 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/T_-1.jpg",
-            "heading": "All-Day, All-Scene Essential",
+            "image": "shopify://shop_images/1_4ff7ef62-8bf6-432e-9268-b7e8728aae3c.jpg",
+            "heading": "Quick-Dry Versatility",
             "subheading": "",
-            "text": "<p>Moisture-wicking waffle texture keeps you cool and dry — whether you're commuting, lounging, or on the move.</p>",
+            "text": "<p>Moisture-wicking with 4-way stretch for unrestricted movement — from city streets to outdoor trails.</p>",
             "target_tab": "description",
             "margin_top": 72,
             "margin_bottom": 0
@@ -196,10 +195,10 @@
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/T_-2.jpg",
-            "heading": "Next-Gen Comfort, Sustainable Performance",
+            "image": "shopify://shop_images/2_b7c379eb-3fba-43a1-bcae-34d509d0a815.jpg",
+            "heading": "Lightweight Freedom, All-Day Cool",
             "subheading": "",
-            "text": "<p>Crafted with SOLOTEX® — ultra-soft, breathable, wrinkle-resistant, and built to last. Better for you, better for the planet.</p>",
+            "text": "<p>Featherlight, fast-drying, and cool-to-the-touch — built to keep you comfortable, no matter where the day takes you.</p>",
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 0
@@ -210,10 +209,10 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/T_-3.jpg",
-            "heading": "Style in the Details",
+            "image": "shopify://shop_images/3_84338591-77a8-487a-89cf-2b0188c8b78c.jpg",
+            "heading": "Ripstop Reinforcement",
             "subheading": "",
-            "text": "<p>Bold contrast chest pocket and hem stitching add visual punch — minimal design, maximum impact.</p>",
+            "text": "<p>Gusseted crotch panel adds strength and durability — made for active days and endless motion.</p>",
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 0
@@ -224,10 +223,10 @@
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/T_-4.jpg",
-            "heading": "Crafted for Comfort, Engineered to Move",
+            "image": "shopify://shop_images/4_efe160c0-33c5-437e-9731-b521adf01c58.jpg",
+            "heading": "Pockets That Work as Hard as You Do",
             "subheading": "",
-            "text": "<p>Reduced seam thickness for a smoother touch — wear it all day without a second thought.</p>",
+            "text": "<p>Side hand pockets, secure zippered back pocket, and a hidden zip thigh pocket — gear up without the bulk.</p>",
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 0
@@ -238,12 +237,40 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/T_-5.jpg",
-            "heading": "Relaxed Fit, Confident Silhouette",
+            "image": "shopify://shop_images/5_cc75dd2c-4b7f-422a-bc4a-c6c9fba51b5f.jpg",
+            "heading": "Waist snaps by Japan’s SUN GRIP",
             "subheading": "",
-            "text": "<p>Designed for freedom of movement with a tailored edge — looks sharp, feels effortless.</p>",
+            "text": "<p>Made from recycled materials with a secure, satisfying click.</p>",
             "target_tab": "description",
             "margin_top": 0,
+            "margin_bottom": 32
+          }
+        },
+        "collage_wjNFgj": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_right",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/6_c3e68bf1-dee3-4699-97bb-d84b801c66b8.jpg",
+            "heading": "Custom Fit, Personalized Style",
+            "subheading": "",
+            "text": "<p>Adjustable drawcord hems let you fine-tune your fit — cinch it up or wear it loose.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "collage_UgGA6G": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/7_14446074-8ec4-4b76-b5d9-8991a7f31467.jpg",
+            "heading": "Slim Fit, Sharp Silhouette",
+            "subheading": "",
+            "text": "<p>A streamlined fit that moves with you and flatters your form.Inseam: 73cm–78cm (varies by size)</p>",
+            "target_tab": "description",
+            "margin_top": 32,
             "margin_bottom": 32
           }
         },
@@ -268,12 +295,14 @@
         "collage_WXNq9Y",
         "collage_zR94Hn",
         "collage_We7R8x",
+        "collage_wjNFgj",
+        "collage_UgGA6G",
         "faq_i3m3aL",
         "judge_me_reviews_review_widget_JctMNU"
       ],
       "settings": {
         "show_description": true,
-        "show_video": true,
+        "show_video": false,
         "show_reviews": true,
         "show_faq": true
       }
