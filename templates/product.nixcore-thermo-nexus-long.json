@@ -94,7 +94,7 @@
           "settings": {
             "heading": "Details",
             "icon": "none",
-            "content": "<ul><li>A modern essential.</li><li>Crafted from TENCEL™ Modal, wool, and spandex for softness, stretch, and thermoregulation.</li><li>Naturally odor-resistant, smooth on skin, and designed for everyday performance.</li><li>FSC-certified and biodegradable fibers reduce environmental impact.</li><li>Comfort. Function. Sustainability.<br/><br/></li></ul>",
+            "content": "<ul><li>A modern essential.</li><li>Crafted from <strong>TENCEL™ Modal</strong>, <strong>Merino Wool</strong>, and <strong>spandex</strong> for softness, stretch, and thermoregulation.</li><li>Naturally <strong>odor-resistant</strong>, smooth on skin, and designed for <strong>everyday performance.</strong></li><li>FSC-certified and biodegradable fibers reduce environmental impact.</li><li><strong>Comfort. Function. Sustainability.</strong><br/><br/></li></ul>",
             "page": "",
             "image_alt": "",
             "image_width": 50
@@ -105,7 +105,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "<p>Fabric： </p><ul><li>78% TENCEL™ Modal</li><li>18% Wool</li><li>4%Spandex</li></ul><p>Pocket：</p><ul><li>1 Hidden Pocket</li></ul>",
+            "content": "<p>Fabric： </p><ul><li>78% TENCEL™ Modal</li><li>18% Merino Wool</li><li>4%Spandex</li></ul><p>Pocket：</p><ul><li>1 Hidden Pocket</li></ul>",
             "page": "",
             "image_alt": "",
             "image_width": 50
