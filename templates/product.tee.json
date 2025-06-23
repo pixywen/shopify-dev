@@ -94,7 +94,7 @@
           "settings": {
             "heading": "Details",
             "icon": "none",
-            "content": "<p>A refined essential.</p><p>Made from Solotex® waffle-knit fabric for superior breathability and stretch.</p><p>Quick-dry, ultra-soft, and built to move.</p><p>Plant-based polymers reduce environmental impact.</p><p>Comfort. Performance. Responsibility.</p>",
+            "content": "<ul><li>A refined essential.</li><li>Made from <strong>Solotex® waffle-knit</strong> fabric for<strong> superior breathability and stretch</strong>.</li><li><strong>Quick-dry</strong>, <strong>ultra-soft</strong>, and built to move.</li><li>Plant-based polymers reduce environmental impact.</li><li><strong>Comfort. Performance. Responsibility.</strong></li></ul>",
             "page": "",
             "image_alt": "",
             "image_width": 50
