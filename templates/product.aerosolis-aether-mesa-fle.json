@@ -305,7 +305,7 @@
         "show_description": true,
         "show_video": false,
         "show_reviews": true,
-        "show_faq": true
+        "show_faq": false
       }
     },
     "gg_newsletter_TdjgNt": {
