@@ -89,7 +89,9 @@
         "small_heading_below": "Minimal. Functional. Effortlessly cool. Discover our latest summer-ready tees now.",
         "button_label": "Just In",
         "button_link": "shopify://collections/summer-new-arrivals",
+        "image": "shopify://shop_images/vedio-pc.jpg",
         "video": "shopify://files/videos/首页banner视频 -新品.mov",
+        "mobile_image": "shopify://shop_images/bedio-750x1104.jpg",
         "mobile_video": "shopify://files/videos/首页banner视频-新品手机 1.mov",
         "description": ""
       }
@@ -178,6 +180,7 @@
       "blocks": {
         "product_mUUiyn": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "mens-all-weather-outdoor-jacket",
             "color_name_1": "Black",
