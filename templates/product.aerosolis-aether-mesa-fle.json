@@ -151,7 +151,8 @@
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
-        "padding_bottom": 12
+        "padding_bottom": 12,
+        "size_guide_image": "shopify://shop_images/2_5b35cefd-c8d4-4f1e-b32e-e8bcd81abb07.jpg"
       }
     },
     "related-products": {
