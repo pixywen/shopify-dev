@@ -94,7 +94,7 @@
           "settings": {
             "heading": "Details",
             "icon": "none",
-            "content": "<ul><li>Distinctive textured diamond pattern reduces fabric-to-skin contact, minimizing stickiness and keeping you dry.</li><li>Stretch and drape combine with cooling, quick-dry performance for lasting comfort.</li><li>Equipped with zippered back and thigh pockets to secure your essentials.</li><li>Adjustable ankle cuffs enable seamless transition from active to casual wear.</li><li>Texture. Comfort. Versatility.<br/><br/></li></ul>",
+            "content": "<ul><li>Distinctive textured diamond pattern reduces fabric-to-skin contact, <strong>minimizing stickiness and keeping you dry</strong>.</li><li>Stretch and drape combine with <strong>cooling</strong>, <strong>quick-dry performance</strong> for lasting comfort.</li><li>Equipped with zippered back and thigh pockets to secure your essentials.</li><li>Adjustable ankle cuffs enable seamless transition from active to casual wear.</li><li><strong>Texture. Comfort. Versatility</strong>.<br/><br/></li></ul>",
             "page": "",
             "image_alt": "",
             "image_width": 50
@@ -105,7 +105,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "<p>Fabric：<br/>Main Fabric: </p><ul><li>92% Nylon, 8% Spandex</li></ul><p>Other Fabric: </p><ul><li>84% Nylon, 16% </li></ul><p>PolyurethanePockets：</p><ul><li>2 Front slip pockets</li><li> 1 Internal pocket</li><li>2 Back zippered pockets</li><li>1 Hidden thigh pocket</li></ul><p>Total: 6 pockets<br/><br/></p>",
+            "content": "<p>Fabric：<br/>Main Fabric: </p><ul><li>92% Nylon, 8% Spandex</li></ul><p>Other Fabric: </p><ul><li>84% Nylon, 16% </li></ul><p>PolyurethanePockets：</p><ul><li>2 Front slip pockets</li><li> 1 Internal pocket</li><li>2 Back zippered pockets</li><li>1 Hidden thigh pocket</li></ul><p>Total: <strong>6 pockets</strong><br/><br/></p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
