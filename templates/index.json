@@ -193,6 +193,7 @@
         },
         "product_FQmGnt": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "alpargali-aerogel-graphene-puffer-jacket",
             "color_name_1": "Black",
@@ -227,7 +228,7 @@
         "product_dRYwKP": {
           "type": "product",
           "settings": {
-            "product": "graphene-vest",
+            "product": "nixcore-aerowool-nexus-t-shirt",
             "color_name_1": "Sandstorm",
             "color_1": "shopify://shop_images/color_5ad3148b-ff64-46d4-a8a6-89f5146f9a9d.png",
             "main_image_1": "shopify://shop_images/3-1.jpg",
