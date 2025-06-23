@@ -131,11 +131,11 @@
         "banner_FWeBpK": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/s-dib-m-02.jpg",
-            "subtitle": "F/W 2024 collection",
-            "title": "Aerogel Puffer",
+            "image": "shopify://shop_images/0b793103c3042cb0eac099176cd65fb3.jpg",
+            "subtitle": "S/S 2025 Collection",
+            "title": "Urbaneon Solotex GridWave Tee",
             "button_label": "SHOP NOW",
-            "button_link": "shopify://products/graphene-lightweight-jacket"
+            "button_link": "shopify://products/urbaneon-solotex-gridwave-tee"
           }
         }
       },
