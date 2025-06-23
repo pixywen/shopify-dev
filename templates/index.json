@@ -151,7 +151,7 @@
         "banner_npKCK9": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/1_953e1874-4604-4ed3-a8bb-fc5f70d3b3e5.jpg",
+            "image": "shopify://shop_images/6845620eb8d243de1919d1ffbfffbb89.jpg",
             "subtitle": "Classic collection",
             "title": "Do-it-all Jacket",
             "button_label": "SHOP NOW",
@@ -161,7 +161,7 @@
         "banner_xrUmaj": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/2_ed513789-6241-44bd-bef5-1f74bb0f9fe0.jpg",
+            "image": "shopify://shop_images/f0ec5f05cd39b5d27359eb25658e68ae.jpg",
             "subtitle": "F/W 2024 collection",
             "title": "Aerogel Puffer",
             "button_label": "SHOP NOW",
@@ -211,16 +211,19 @@
         "product_FAGLWH": {
           "type": "product",
           "settings": {
-            "product": "graphene-lightweight-jacket",
-            "color_name_1": "Black",
-            "color_1": "shopify://shop_images/color.png",
-            "main_image_1": "shopify://shop_images/4-1.jpg",
-            "model_image_1": "shopify://shop_images/4-2.jpg",
-            "color_name_2": "Sandstorm",
-            "color_2": "shopify://shop_images/color_4e214455-21ab-41a5-abbb-b07b0860f7e5.png",
-            "main_image_2": "shopify://shop_images/4-3.jpg",
-            "model_image_2": "shopify://shop_images/4-4.jpg",
-            "color_name_3": ""
+            "product": "urbaneon-solotex-gridwave-tee",
+            "color_name_1": "Fjord Amber",
+            "color_1": "shopify://shop_images/Fjord_Amber.png",
+            "main_image_1": "shopify://shop_images/1_38e32ac4-94e4-4816-bc66-4cd661e8f064.jpg",
+            "model_image_1": "shopify://shop_images/7_1432e747-526d-4b88-b8f3-9164c2efdbf3.jpg",
+            "color_name_2": "Tundra Resin",
+            "color_2": "shopify://shop_images/Tundra_Resin.png",
+            "main_image_2": "shopify://shop_images/1_0f139672-f650-4e69-bfab-810024d1e976.jpg",
+            "model_image_2": "shopify://shop_images/3_202c81db-89ec-4b97-bc80-09cdf250a242.jpg",
+            "color_name_3": "Lichen Feldspar",
+            "color_3": "shopify://shop_images/Lichen_Feldspar.png",
+            "main_image_3": "shopify://shop_images/1_152f8e9f-d731-4d3c-97fb-ee3e743cac1d.jpg",
+            "model_image_3": "shopify://shop_images/3_a237e1f1-7903-40ed-b6c0-a41b90fdca01.jpg"
           }
         },
         "product_dRYwKP": {
