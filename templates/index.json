@@ -182,16 +182,19 @@
           "type": "product",
           "disabled": true,
           "settings": {
-            "product": "mens-all-weather-outdoor-jacket",
-            "color_name_1": "Black",
-            "color_1": "shopify://shop_images/color_a7682f58-cb09-40e3-8c56-6b6a04932e7b.png",
-            "main_image_1": "shopify://shop_images/1-1_f6d7a625-fb30-49a2-b9ae-ab6e7877c759.jpg",
-            "model_image_1": "shopify://shop_images/1-2.jpg",
-            "color_name_2": "Blue",
-            "color_2": "shopify://shop_images/color_94772457-cff1-4fbd-a39c-3c696e178b6b.png",
-            "main_image_2": "shopify://shop_images/1-3.jpg",
-            "model_image_2": "shopify://shop_images/1-4.jpg",
-            "color_name_3": ""
+            "product": "nixcore-thermo-nexus-long-sleeve-t-shirt",
+            "color_name_1": "Sandgrove",
+            "color_1": "shopify://shop_images/Sandgrove.png",
+            "main_image_1": "shopify://shop_images/Sandgrove_01.jpg",
+            "model_image_1": "shopify://shop_images/Sandgrove_06.jpg",
+            "color_name_2": "Frost Ash",
+            "color_2": "shopify://shop_images/Frost_Ash.png",
+            "main_image_2": "shopify://shop_images/Frost_Ash_01.jpg",
+            "model_image_2": "shopify://shop_images/Frost_Ash_08.jpg",
+            "color_name_3": "Moss Whisper",
+            "color_3": "shopify://shop_images/Moss_Whisper.png",
+            "main_image_3": "shopify://shop_images/Moss_Whisper_01.jpg",
+            "model_image_3": "shopify://shop_images/Moss_Whisper_main.jpg"
           }
         },
         "product_FQmGnt": {
