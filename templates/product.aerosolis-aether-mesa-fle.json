@@ -317,7 +317,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "summer-new-arrivals",
+        "collection": "more-products",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
