@@ -180,7 +180,6 @@
       "blocks": {
         "product_mUUiyn": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "nixcore-thermo-nexus-long-sleeve-t-shirt",
             "color_name_1": "Sandgrove",
@@ -199,7 +198,6 @@
         },
         "product_FQmGnt": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "aerosolis-aether-mesa-flex-pants",
             "color_name_1": "Polar Night",
@@ -258,7 +256,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "title": "Best Seller"
+        "title": "Summer New Arrivel"
       }
     },
     "gg_image_banner_common_ARcgWG": {
