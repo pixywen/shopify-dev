@@ -17,7 +17,7 @@
       "type": "main-collection-banner",
       "settings": {
         "show_collection_description": false,
-        "show_collection_image": false,
+        "show_collection_image": true,
         "color_scheme": "scheme-1"
       }
     },
