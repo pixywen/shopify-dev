@@ -187,7 +187,7 @@
             "subheading": "",
             "text": "<p>Breathable TENCEL™ Modal blended with temperature-regulating wool. Keeps you cool when it's hot, and warm when it's not. All-day comfort, all-year round.</p>",
             "target_tab": "description",
-            "margin_top": 72,
+            "margin_top": 20,
             "margin_bottom": 0
           }
         },
@@ -244,7 +244,21 @@
             "text": "<p>Back locker loop for easy hanging — because great design lives in the little things.</p>",
             "target_tab": "description",
             "margin_top": 0,
-            "margin_bottom": 32
+            "margin_bottom": 0
+          }
+        },
+        "collage_BjChdb": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_right",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/2025-06-24_122838_252.jpg",
+            "heading": "Nature’s Softest Touch",
+            "subheading": "",
+            "text": "<p>Experience the gentle luxury of 16.5um Merino wool, naturally finer than a strand of hair. Its silky texture and breathable comfort protect your skin from itchiness, delivering an irritation-free, second-skin feel.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 12
           }
         },
         "faq_i3m3aL": {
@@ -268,6 +282,7 @@
         "collage_WXNq9Y",
         "collage_zR94Hn",
         "collage_We7R8x",
+        "collage_BjChdb",
         "faq_i3m3aL",
         "judge_me_reviews_review_widget_JctMNU"
       ],
