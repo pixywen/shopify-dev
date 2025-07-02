@@ -18,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "text": "🚗 Summer New Arrivals: Free Shipping on 2 Items + 10% Off",
-            "link": ""
+            "link": "shopify://collections/summer-new-arrivals"
           }
         }
       },
