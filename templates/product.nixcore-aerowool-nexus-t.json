@@ -39,41 +39,7 @@
           "type": "buy_buttons_ex",
           "settings": {
             "show_dynamic_checkout": false,
-            "show_gift_card_recipient": true
-          }
-        },
-        "divider_3i4EF3": {
-          "type": "divider",
-          "settings": {
-            "margin_top": 20,
-            "margin_bottom": 20
-          }
-        },
-        "gg_icon_text_grid_TGCbKj": {
-          "type": "gg-icon-text-grid",
-          "settings": {
-            "icon_1": "shopify://shop_images/product-block-001-001.svg",
-            "text_1": "Buy 2, Ship Free",
-            "icon_2": "shopify://shop_images/product-block-001-002.svg",
-            "text_2": "Payment Security",
-            "icon_3": "shopify://shop_images/product-block-001-003.svg",
-            "text_3": "Eco-Friendly Packaging",
-            "text_4": ""
-          }
-        },
-        "divider_FHRHjn": {
-          "type": "divider",
-          "settings": {
-            "margin_top": 20,
-            "margin_bottom": 20
-          }
-        },
-        "gg_heading_image_Lh8bEX": {
-          "type": "gg-heading-image",
-          "settings": {
-            "heading": "As Featured In:",
-            "image": "shopify://shop_images/product-info-b-hi-01_f193a6ad-01f8-4116-b5f2-e3d38b60c9a9.png",
-            "image_mobile": "shopify://shop_images/product-info-b-hi-01-m.png"
+            "show_gift_card_recipient": false
           }
         },
         "collapsible_tab_yAPYME": {
@@ -109,6 +75,40 @@
             "image_width": 50
           }
         },
+        "gg_icon_text_grid_TGCbKj": {
+          "type": "gg-icon-text-grid",
+          "settings": {
+            "icon_1": "shopify://shop_images/product-block-001-001.svg",
+            "text_1": "Buy 2, Ship Free",
+            "icon_2": "shopify://shop_images/product-block-001-002.svg",
+            "text_2": "Payment Security",
+            "icon_3": "shopify://shop_images/product-block-001-003.svg",
+            "text_3": "Eco-Friendly Packaging",
+            "text_4": ""
+          }
+        },
+        "divider_3i4EF3": {
+          "type": "divider",
+          "settings": {
+            "margin_top": 20,
+            "margin_bottom": 20
+          }
+        },
+        "gg_heading_image_Lh8bEX": {
+          "type": "gg-heading-image",
+          "settings": {
+            "heading": "As Featured In:",
+            "image": "shopify://shop_images/product-info-b-hi-01_f193a6ad-01f8-4116-b5f2-e3d38b60c9a9.png",
+            "image_mobile": "shopify://shop_images/product-info-b-hi-01-m.png"
+          }
+        },
+        "divider_FHRHjn": {
+          "type": "divider",
+          "settings": {
+            "margin_top": 20,
+            "margin_bottom": 20
+          }
+        },
         "complementary_MMXapa": {
           "type": "complementary",
           "settings": {
@@ -129,13 +129,13 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons_ex_c7QqTL",
-        "divider_3i4EF3",
-        "gg_icon_text_grid_TGCbKj",
-        "divider_FHRHjn",
-        "gg_heading_image_Lh8bEX",
         "collapsible_tab_yAPYME",
         "collapsible_tab_GyWCqX",
         "collapsible_tab_4bGyQa",
+        "gg_icon_text_grid_TGCbKj",
+        "divider_3i4EF3",
+        "gg_heading_image_Lh8bEX",
+        "divider_FHRHjn",
         "complementary_MMXapa"
       ],
       "settings": {
