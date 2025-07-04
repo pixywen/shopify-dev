@@ -177,17 +177,17 @@
     "gg_product_detail_Mg4rJH": {
       "type": "gg-product-detail",
       "blocks": {
-        "collage_byQmgc": {
+        "collage_WXNq9Y": {
           "type": "collage",
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/T_-1_d6c1fae2-a9e5-49bc-8d12-f8e5aa4ed8dc.jpg",
-            "heading": "Featherlight Feel, Triple-Function Fabric",
+            "image": "shopify://shop_images/T_-3_30a6bb26-760d-45f1-bc4a-ef4ffe5f1500.jpg",
+            "heading": "Built-In Stretch, Built For Movement",
             "subheading": "",
-            "text": "<p>Ultralight, barely-there fabric engineered with a tri-blend of fibers for optimal moisture control, dynamic thermoregulation, and natural stretch. Performance and comfort, seamlessly combined.</p>",
+            "text": "<p>Enhanced with spandex to move with you — every stretch, step, and shift feels effortless.</p>",
             "target_tab": "description",
-            "margin_top": 20,
+            "margin_top": 0,
             "margin_bottom": 0
           }
         },
@@ -205,15 +205,15 @@
             "margin_bottom": 0
           }
         },
-        "collage_WXNq9Y": {
+        "collage_byQmgc": {
           "type": "collage",
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/T_-3_30a6bb26-760d-45f1-bc4a-ef4ffe5f1500.jpg",
-            "heading": "Built-In Stretch, Built For Movement",
+            "image": "shopify://shop_images/T_-1_d6c1fae2-a9e5-49bc-8d12-f8e5aa4ed8dc.jpg",
+            "heading": "Featherlight Feel, Triple-Function Fabric",
             "subheading": "",
-            "text": "<p>Enhanced with spandex to move with you — every stretch, step, and shift feels effortless.</p>",
+            "text": "<p>Ultralight, barely-there fabric engineered with a tri-blend of fibers for optimal moisture control, dynamic thermoregulation, and natural stretch. Performance and comfort, seamlessly combined.</p>",
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 0
@@ -253,7 +253,7 @@
             "margin_top": 32,
             "margin_bottom": 32,
             "gap": 0,
-            "faq_content": "<title>1. Aerogel is so fragile. How can it apply to the jacket?</title>\n<p>We use Feelsfree-brand aerogel, specifically engineered for apparel applications. While traditional aerogel can be fragile, Feelsfree™'s advanced formulation is designed for durability in clothing. By incorporating this specially developed aerogel, along with unique processing techniques, we ensure it maintains stability and resilience in the Alpargali™ Puffer Jacket. This allows us to offer exceptional insulation without compromising on durability or comfort, making it ideal for daily wear in extreme cold.</p>\n<title>2. What is graphene?</title>\n<p>Graphene is a single layer of carbon atoms, just one atom thick, and serves as the fundamental building block of graphite (the material found in pencils). This extraordinary material is not only stronger than steel in terms of tensile strength, but also harder than diamond, more conductive than copper, and offers superior electron mobility compared to silicon. The scientists who uncovered the properties of graphene were awarded the Nobel Prize in Physics in 2010. We incorporate graphene into high-performance fabrics to create innovative, state-of-the-art clothing.</p>\n<title>3. What is the difference between the Aerogel Puffer and the Graphene Lightweight Jacket？</title>\n<p>Warmth:\nAerogel Puffer: Built for extreme cold (down to -40°C).\nGraphene Lightweight Jacket: Suitable for mild to moderate cold.\nWeight &amp; Thickness:\nPuffer: Slightly bulkier, ideal for harsh winters.\nLightweight: Slimmer and lighter, perfect for layering or everyday wear.\nYou can also check the product descriptions for more information.</p>",
+            "faq_content": "<title>1. ❓ What is Merino wool?</title>\n<p>Merino wool is a premium natural fiber sourced from Merino sheep. It's finer, softer, and more breathable than traditional wool, making it suitable for next-to-skin wear — even in warm weather.</p>\n<title>2. ❓ Isn’t wool too warm for summer?</title>\n<p>Not this one. Our T-shirt uses ultralight 150g Merino blend fabric that's breathable, moisture-wicking, and thermoregulating — designed to keep you cool and dry even in heat and humidity.</p>\n<title>3. ❓ What are the benefits of a Merino wool T-shirt?</title>\n<p>Moisture-wicking &amp; quick-dry\n\nNaturally antibacterial &amp; odor-resistant\n\nBreathable and soft on skin\n\nEco-friendly &amp; biodegradable</p>\n<title>4.❓ Is it itchy like traditional wool?    &lt;title&gt;\n&lt;p&gt;Not at all. This T-shirt blends Merino wool with TENCEL™ Modal, giving it a smooth, irritation-free feel — perfect for sensitive skin.        &lt;p&gt;\n&lt;title&gt;5.❓ How should I wash this T-shirt?    &lt;title&gt;\n&lt;p&gt; Hand wash in cold water or machine wash on a gentle cycle. Use mild detergent. Lay flat to dry. Avoid twisting or tumble drying.       &lt;p&gt;\n&lt;title&gt;6.❓ When will my order ship?    &lt;title&gt;\n&lt;p&gt;Orders typically ship within 2–3 business days from purchase. You'll receive a tracking number as soon as your order is dispatched.        &lt;p&gt;\n&lt;title&gt;7.❓ Is it true I can wear it for multiple days without washing?    &lt;title&gt;\n&lt;p&gt;Yes! Merino wool is naturally antibacterial and odor-resistant. Many customers wear it for 2–3 days during travel or commutes without odor buildup.     &lt;p&gt;\n&lt;title&gt;8.❓ What size should I choose?    &lt;title&gt;\n&lt;p&gt;Please refer to our Size Chart for exact measurements. If you're between sizes, we recommend sizing up for a relaxed fit.        &lt;p&gt;\n&lt;title&gt;9.❓ Why Alpargali?    &lt;title&gt;\n&lt;p&gt;At Alpargali, we design apparel that balances urban function and natural comfort. Every product is built with purpose — using premium materials like Merino wool and FSC-certified TENCEL™, backed by thoughtful details and minimalist aesthetics.\nWe believe your gear should work as hard as you do — from daily commutes to weekend escapes. &lt;p&gt;</title>",
             "target_tab": "faq"
           }
         },
@@ -263,9 +263,9 @@
         }
       },
       "block_order": [
-        "collage_byQmgc",
-        "collage_dLqxPW",
         "collage_WXNq9Y",
+        "collage_dLqxPW",
+        "collage_byQmgc",
         "collage_zR94Hn",
         "collage_VWdHAp",
         "faq_i3m3aL",
@@ -274,8 +274,8 @@
       "settings": {
         "show_description": true,
         "show_video": false,
-        "show_reviews": true,
-        "show_faq": false
+        "show_reviews": false,
+        "show_faq": true
       }
     },
     "featured_collection_TknG7b": {
