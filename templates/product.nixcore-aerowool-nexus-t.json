@@ -278,31 +278,6 @@
         "show_faq": true
       }
     },
-    "gg_product_detail_GhEniy": {
-      "type": "gg-product-detail",
-      "blocks": {
-        "faq_JVfiAN": {
-          "type": "faq",
-          "settings": {
-            "margin_top": 32,
-            "margin_bottom": 32,
-            "gap": 0,
-            "faq_content": "<title>1. ❓ What is Merino wool?</title>\n<p>Merino wool is a premium natural fiber sourced from Merino sheep. It's finer, softer, and more breathable than traditional wool, making it suitable for next-to-skin wear — even in warm weather.</p>\n<title>2. ❓ Isn’t wool too warm for summer?</title>\n<p>Not this one. Our T-shirt uses ultralight 150g Merino blend fabric that's breathable, moisture-wicking, and thermoregulating — designed to keep you cool and dry even in heat and humidity.</p>\n<title>3. ❓ What are the benefits of a Merino wool T-shirt?</title>\n<p>Moisture-wicking &amp; quick-dry\n\nNaturally antibacterial &amp; odor-resistant\n\nBreathable and soft on skin\n\nEco-friendly &amp; biodegradable</p>\n<title>4.❓ Is it itchy like traditional wool?    &lt;title&gt;\n&lt;p&gt;Not at all. This T-shirt blends Merino wool with TENCEL™ Modal, giving it a smooth, irritation-free feel — perfect for sensitive skin.        &lt;p&gt;\n&lt;title&gt;5.❓ How should I wash this T-shirt?    &lt;title&gt;\n&lt;p&gt; Hand wash in cold water or machine wash on a gentle cycle. Use mild detergent. Lay flat to dry. Avoid twisting or tumble drying.       &lt;p&gt;\n&lt;title&gt;6.❓ When will my order ship?    &lt;title&gt;\n&lt;p&gt;Orders typically ship within 2–3 business days from purchase. You'll receive a tracking number as soon as your order is dispatched.        &lt;p&gt;\n&lt;title&gt;7.❓ Is it true I can wear it for multiple days without washing?    &lt;title&gt;\n&lt;p&gt;Yes! Merino wool is naturally antibacterial and odor-resistant. Many customers wear it for 2–3 days during travel or commutes without odor buildup.     &lt;p&gt;\n&lt;title&gt;8.❓ What size should I choose?    &lt;title&gt;\n&lt;p&gt;Please refer to our Size Chart for exact measurements. If you're between sizes, we recommend sizing up for a relaxed fit.        &lt;p&gt;\n&lt;title&gt;9.❓ Why Alpargali?    &lt;title&gt;\n&lt;p&gt;At Alpargali, we design apparel that balances urban function and natural comfort. Every product is built with purpose — using premium materials like Merino wool and FSC-certified TENCEL™, backed by thoughtful details and minimalist aesthetics.\nWe believe your gear should work as hard as you do — from daily commutes to weekend escapes. &lt;p&gt;</title>",
-            "target_tab": "faq"
-          }
-        }
-      },
-      "block_order": [
-        "faq_JVfiAN"
-      ],
-      "name": "GG-产品详情",
-      "settings": {
-        "show_description": false,
-        "show_video": false,
-        "show_reviews": false,
-        "show_faq": true
-      }
-    },
     "featured_collection_TknG7b": {
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
@@ -380,7 +355,6 @@
     "main",
     "related-products",
     "gg_product_detail_Mg4rJH",
-    "gg_product_detail_GhEniy",
     "featured_collection_TknG7b",
     "gg_newsletter_TdjgNt"
   ]
