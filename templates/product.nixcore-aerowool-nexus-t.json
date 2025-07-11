@@ -42,12 +42,6 @@
             "show_gift_card_recipient": false
           }
         },
-        "buy_buttons_X4KJmU": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
         "gg_icon_text_grid_TGCbKj": {
           "type": "gg-icon-text-grid",
           "settings": {
@@ -135,7 +129,6 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons_ex_c7QqTL",
-        "buy_buttons_X4KJmU",
         "gg_icon_text_grid_TGCbKj",
         "collapsible_tab_yAPYME",
         "collapsible_tab_GyWCqX",
