@@ -280,6 +280,7 @@
     },
     "featured_collection_w7t6Hb": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "title": "You May Also Like",
