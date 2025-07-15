@@ -391,7 +391,7 @@
           "type": "video",
           "settings": {
             "title": "",
-            "video_desktop": "shopify://files/videos/视频1-主.mp4",
+            "video_desktop": "",
             "video_url_desktop": "",
             "cover_desktop": "shopify://shop_images/1_ab13366d-9030-4f45-892f-9fd40d12fafa.jpg",
             "video_url_mobile": "",
@@ -409,7 +409,7 @@
           "type": "video",
           "settings": {
             "title": "",
-            "video_desktop": "shopify://files/videos/视频2.mp4",
+            "video_desktop": "",
             "video_url_desktop": "",
             "cover_desktop": "shopify://shop_images/2_d325ce94-ba02-4399-ad00-f31ad9600e79.jpg",
             "video_url_mobile": "",
@@ -427,7 +427,7 @@
           "type": "video",
           "settings": {
             "title": "",
-            "video_desktop": "shopify://files/videos/视频3.mp4",
+            "video_desktop": "",
             "video_url_desktop": "",
             "cover_desktop": "shopify://shop_images/3_409105f5-7734-4db7-9abc-39e16fa592dd.jpg",
             "video_url_mobile": "",

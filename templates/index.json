@@ -7,92 +7,20 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
-    "common_media_BrHjtL": {
-      "type": "common-media",
-      "blocks": {
-        "image_whyKpV": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "block_css": "",
-            "custom_html_css": "",
-            "section_bg_color": "",
-            "padding_top": 0,
-            "padding_bottom": 0,
-            "padding_top_pad": 0,
-            "padding_bottom_pad": 0,
-            "padding_top_mb": 0,
-            "padding_bottom_mb": 0,
-            "text_color": "#000000",
-            "is_video_banner": false,
-            "is_page_banner": false,
-            "media_page": true,
-            "media_page_pad": true,
-            "media_page_mb": true,
-            "product_name": "",
-            "show_header": false,
-            "header_text_align": "center",
-            "header_mb_text_align": "center",
-            "section_title": "",
-            "section_text": "",
-            "section_header_custom_html": "",
-            "header_margin_bottom": "80",
-            "text_align": "left",
-            "text_align_mb": "center",
-            "text_width": 100,
-            "text_alignment": "vertical-center horizontal-left",
-            "text_alignment_mb": "mb-vertical-top mb-horizontal-left",
-            "text_position_mb": false,
-            "media_type": "image",
-            "image": "shopify://shop_images/20250519115341.jpg",
-            "image_pad": "shopify://shop_images/32241747191451_.pic.jpg",
-            "image_mb": "shopify://shop_images/32231747191450_.pic.jpg",
-            "video_url": "",
-            "youtube_video": "",
-            "section_logo": "",
-            "section_logo_width": 0,
-            "text_position": "bottom",
-            "title": "",
-            "title_size_big": "60",
-            "title_size": "60",
-            "title_size_pad": "60",
-            "title_size_mb": "30",
-            "title_color": "#000000",
-            "subtitle": "",
-            "subtitle_size_big": "16",
-            "subtitle_size": "16",
-            "subtitle_size_pad": "16",
-            "subtitle_size_mb": "14",
-            "subtitle_color": "#000000",
-            "custom_html_content": "",
-            "btn": "",
-            "link": "https://www.kickstarter.com/projects/alpargalipuffer/alpargali-all-day-your-go-to-pack-for-everyday-living?ref=3w4yxt"
-          }
-        }
-      },
-      "block_order": [
-        "image_whyKpV"
-      ],
-      "name": "Common media",
-      "settings": {
-        "show_section": true,
-        "section_css": ""
-      }
-    },
     "gg_image_banner_V4rbFP": {
       "type": "gg-image-banner",
       "settings": {
-        "small_heading_above": "🌍 Users from 61 countries and regions, 984 cities worldwide.",
-        "heading": "New Season, New Essentials.",
-        "small_heading_below": "Minimal. Functional. Effortlessly cool. Discover our latest summer-ready tees now.",
-        "button_label": "just in",
-        "button_link": "shopify://collections/summer-new-arrivals",
-        "image": "shopify://shop_images/vedio-pc.jpg",
-        "video": "shopify://files/videos/首页banner视频 -新品.mov",
-        "mobile_image": "shopify://shop_images/bedio-750x1104.jpg",
-        "mobile_video": "shopify://files/videos/首页banner视频-新品手机 1.mov",
+        "small_heading_above": "🌍 Tursted By 1,500 Customers",
+        "heading": "Gear for Every Adventure",
+        "small_heading_below": "From freezing cold to rainy days, Alpargali has you covered.",
+        "button_label": "SHOP NOW",
+        "button_link": "",
+        "image": "shopify://shop_images/Banner.jpg",
+        "video": "shopify://files/videos/顶部-banner视频.mp4",
+        "mobile_image": "shopify://shop_images/banner_0e64b2de-0137-43de-99bf-925006c649de.jpg",
+        "mobile_video": "shopify://files/videos/首页banner视频-手机.mov",
         "description": ""
       }
     },
@@ -121,21 +49,21 @@
         "banner_tja83h": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/2025-06-24_115438_905.jpg",
-            "subtitle": "S/S 2025 Collection",
-            "title": "Nixcore Aerowool Nexus T-Shirt",
+            "image": "shopify://shop_images/s-dib-m-01.jpg",
+            "subtitle": "Classic collection",
+            "title": "Do-it-all Jacket",
             "button_label": "SHOP NOW",
-            "button_link": "shopify://products/nixcore-aerowool-nexus-t-shirt"
+            "button_link": "shopify://products/do-it-all-jacket"
           }
         },
         "banner_FWeBpK": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/2025-06-24_115432_876.jpg",
-            "subtitle": "S/S 2025 Collection",
-            "title": "Urbaneon Solotex GridWave Tee",
+            "image": "shopify://shop_images/s-dib-m-02.jpg",
+            "subtitle": "F/W 2024 collection",
+            "title": "Aerogel Puffer",
             "button_label": "SHOP NOW",
-            "button_link": "shopify://products/urbaneon-solotex-gridwave-tee"
+            "button_link": "shopify://products/do-it-all-jacket"
           }
         }
       },
@@ -151,21 +79,21 @@
         "banner_npKCK9": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/6845620eb8d243de1919d1ffbfffbb89.jpg",
-            "subtitle": "S/S 2025 Collection",
-            "title": "Nixcore Aerowool Nexus T-Shirt",
+            "image": "shopify://shop_images/1_e3d7d337-ee1e-49ef-bbcd-cf2f4f91c7c9.jpg",
+            "subtitle": "Classic collection",
+            "title": "Do-it-all Jacket",
             "button_label": "SHOP NOW",
-            "button_link": "shopify://products/nixcore-aerowool-nexus-t-shirt"
+            "button_link": "shopify://products/do-it-all-jacket"
           }
         },
         "banner_xrUmaj": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/f0ec5f05cd39b5d27359eb25658e68ae.jpg",
-            "subtitle": "S/S 2025 Collection",
-            "title": "Urbaneon Solotex GridWave Tee",
+            "image": "shopify://shop_images/2_ea2381e4-ae79-48ab-b90b-33e678f48feb.jpg",
+            "subtitle": "F/W 2024 collection",
+            "title": "Aerogel Puffer",
             "button_label": "SHOP NOW",
-            "button_link": "shopify://products/urbaneon-solotex-gridwave-tee"
+            "button_link": "shopify://products/正经客机-d"
           }
         }
       },
@@ -178,84 +106,75 @@
     "gg_featured_products_McEQBe": {
       "type": "gg-featured-products",
       "blocks": {
-        "product_dRYwKP": {
+        "product_mUUiyn": {
           "type": "product",
           "settings": {
-            "product": "nixcore-aerowool-nexus-t-shirt",
-            "color_name_1": "Moon Veil",
-            "main_image_1": "shopify://shop_images/Moon_Veil_01.jpg",
-            "model_image_1": "shopify://shop_images/Moon_Veil_06.jpg",
-            "color_name_2": "Abyss Pearl",
-            "color_2": "shopify://shop_images/swatch-Abyss_Pearl.png",
-            "main_image_2": "shopify://shop_images/Abyss_Pearl_01.jpg",
-            "model_image_2": "shopify://shop_images/Abyss_Pearl_08.jpg",
-            "color_name_3": "Tundra Sprout",
-            "color_3": "shopify://shop_images/swatch-Tundra_Sprout.png",
-            "main_image_3": "shopify://shop_images/Tundra_Sprout1.jpg",
-            "model_image_3": "shopify://shop_images/Tundra_Sprout3.jpg"
-          }
-        },
-        "product_FAGLWH": {
-          "type": "product",
-          "settings": {
-            "product": "urbaneon-solotex-gridwave-tee",
-            "color_name_1": "Fjord Amber",
-            "color_1": "shopify://shop_images/Fjord_Amber.png",
-            "main_image_1": "shopify://shop_images/1_38e32ac4-94e4-4816-bc66-4cd661e8f064.jpg",
-            "model_image_1": "shopify://shop_images/7_1432e747-526d-4b88-b8f3-9164c2efdbf3.jpg",
-            "color_name_2": "Tundra Resin",
-            "color_2": "shopify://shop_images/Tundra_Resin.png",
-            "main_image_2": "shopify://shop_images/1_0f139672-f650-4e69-bfab-810024d1e976.jpg",
-            "model_image_2": "shopify://shop_images/3_202c81db-89ec-4b97-bc80-09cdf250a242.jpg",
-            "color_name_3": "Lichen Feldspar",
-            "color_3": "shopify://shop_images/Lichen_Feldspar.png",
-            "main_image_3": "shopify://shop_images/1_152f8e9f-d731-4d3c-97fb-ee3e743cac1d.jpg",
-            "model_image_3": "shopify://shop_images/3_a237e1f1-7903-40ed-b6c0-a41b90fdca01.jpg"
+            "product": "do-it-all-jacket",
+            "color_name_1": "Black",
+            "color_1": "shopify://shop_images/1-1_1c65d7a5-0c29-4ba4-a61a-c4e43031ea04.png",
+            "main_image_1": "shopify://shop_images/1-1.png",
+            "model_image_1": "shopify://shop_images/1-2.png",
+            "color_name_2": "White",
+            "color_2": "shopify://shop_images/1-2_bdaa00b2-692d-4628-8187-73cdfabd8eda.png",
+            "main_image_2": "shopify://shop_images/1-3.png",
+            "model_image_2": "shopify://shop_images/1-4.png",
+            "color_name_3": ""
           }
         },
         "product_FQmGnt": {
           "type": "product",
           "settings": {
-            "product": "aerosolis-aether-mesa-flex-pants",
-            "color_name_1": "Polar Night",
-            "color_1": "shopify://shop_images/swatch-Polar_Night.png",
-            "main_image_1": "shopify://shop_images/PolarNight1.jpg",
-            "model_image_1": "shopify://shop_images/PolarNight9.jpg",
-            "color_name_2": "Rime Pod",
-            "color_2": "shopify://shop_images/watch-Rime_Pod.png",
-            "main_image_2": "shopify://shop_images/Rime_Pod4.jpg",
-            "model_image_2": "shopify://shop_images/Rime_Pod2.jpg",
+            "product": "do-it-all-jacket",
+            "color_name_1": "Black",
+            "color_1": "shopify://shop_images/1_87a97679-41b2-4d7b-b9f4-f335b52d08de.jpg",
+            "main_image_1": "shopify://shop_images/2-1.png",
+            "model_image_1": "shopify://shop_images/2-2.png",
+            "color_name_2": "White",
+            "color_2": "shopify://shop_images/2_900a5aa4-64e8-4a33-a515-34d0fb6e2602.jpg",
+            "main_image_2": "shopify://shop_images/2-3.png",
+            "model_image_2": "shopify://shop_images/2-4.png",
             "color_name_3": ""
           }
         },
-        "product_mUUiyn": {
+        "product_FAGLWH": {
           "type": "product",
           "settings": {
-            "product": "nixcore-thermo-nexus-long-sleeve-t-shirt",
-            "color_name_1": "Sandgrove",
-            "color_1": "shopify://shop_images/Sandgrove.png",
-            "main_image_1": "shopify://shop_images/Sandgrove_01.jpg",
-            "model_image_1": "shopify://shop_images/Sandgrove_06.jpg",
-            "color_name_2": "Frost Ash",
-            "color_2": "shopify://shop_images/Frost_Ash.png",
-            "main_image_2": "shopify://shop_images/Frost_Ash_01.jpg",
-            "model_image_2": "shopify://shop_images/Frost_Ash_08.jpg",
-            "color_name_3": "Moss Whisper",
-            "color_3": "shopify://shop_images/Moss_Whisper.png",
-            "main_image_3": "shopify://shop_images/Moss_Whisper_01.jpg",
-            "model_image_3": "shopify://shop_images/Moss_Whisper_main.jpg"
+            "product": "do-it-all-jacket",
+            "color_name_1": "Black",
+            "color_1": "shopify://shop_images/2-1_d42a0d9d-1a36-435e-a06d-f642c6065235.png",
+            "main_image_1": "shopify://shop_images/3-1.png",
+            "model_image_1": "shopify://shop_images/3-2.png",
+            "color_name_2": "White",
+            "color_2": "shopify://shop_images/2-2_a53a83fd-a474-4d54-8f5c-4bce362da68b.png",
+            "main_image_2": "shopify://shop_images/3-3.png",
+            "model_image_2": "shopify://shop_images/3-4.png",
+            "color_name_3": ""
+          }
+        },
+        "product_dRYwKP": {
+          "type": "product",
+          "settings": {
+            "product": "do-it-all-jacket",
+            "color_name_1": "Black",
+            "color_1": "shopify://shop_images/1_167b2091-497e-4e18-a5df-9e41287cb419.jpg",
+            "main_image_1": "shopify://shop_images/4-1.png",
+            "model_image_1": "shopify://shop_images/4-2.png",
+            "color_name_2": "White",
+            "color_2": "shopify://shop_images/2_4fb087b8-30b9-4c90-8868-3a5de60ed9d1.jpg",
+            "main_image_2": "shopify://shop_images/4-3.png",
+            "model_image_2": "shopify://shop_images/4-4.png",
+            "color_name_3": ""
           }
         }
       },
       "block_order": [
-        "product_dRYwKP",
-        "product_FAGLWH",
+        "product_mUUiyn",
         "product_FQmGnt",
-        "product_mUUiyn"
+        "product_FAGLWH",
+        "product_dRYwKP"
       ],
-      "custom_css": [],
       "settings": {
-        "title": "Summer New Arrivals"
+        "title": "Best Seller"
       }
     },
     "gg_image_banner_common_ARcgWG": {
@@ -265,10 +184,11 @@
         "heading": "Shell Jackets",
         "small_heading_below": "",
         "button_label": "SHOP NOW",
-        "button_link": "shopify://collections/shell-jackets",
-        "image": "shopify://shop_images/sib-shell_jackets.jpg",
-        "mobile_image": "shopify://shop_images/sib-m-shell_jackets.jpg",
-        "video": "shopify://files/videos/sib-shell jackets.mp4",
+        "button_link": "",
+        "image": "shopify://shop_images/shell_jackets.jpg",
+        "mobile_image": "shopify://shop_images/shell_jackets_b0bfc3ab-989f-4593-ba10-36ade2371661.jpg",
+        "video": "shopify://files/videos/下面视频- shell jackets_7201445b-1d25-4ee4-ab44-30855566ac44.mp4",
+        "mobile_video": "shopify://files/videos/冲锋衣 x手机.mov",
         "description": ""
       }
     },
@@ -279,10 +199,11 @@
         "heading": "Insulated Jackets",
         "small_heading_below": "",
         "button_label": "SHOP NOW",
-        "button_link": "shopify://collections/insulated-jackets",
-        "image": "shopify://shop_images/s-ib-insulated_jackets.jpg",
-        "mobile_image": "shopify://shop_images/sib-m-insulated_jackets.jpg",
-        "video": "shopify://files/videos/sib-insulated jackets.mp4",
+        "button_link": "",
+        "image": "shopify://shop_images/insulated_jackets.jpg",
+        "mobile_image": "shopify://shop_images/insulated_jackets_4319bd36-fdbc-46a4-9dc1-89131c597e4b.jpg",
+        "video": "shopify://files/videos/下面视频-insulated jackets_d2396b19-2eb5-451d-9fd5-dcafff96a7d8.mp4",
+        "mobile_video": "shopify://files/videos/棉服 x手机.mov",
         "description": ""
       }
     },
@@ -293,10 +214,11 @@
         "heading": "Vests",
         "small_heading_below": "",
         "button_label": "SHOP NOW",
-        "button_link": "shopify://products/graphene-vest",
-        "image": "shopify://shop_images/sib-vest.jpg",
-        "mobile_image": "shopify://shop_images/sib-m-vest.jpg",
-        "video": "shopify://files/videos/sib-vests.mp4",
+        "button_link": "",
+        "image": "shopify://shop_images/vest.jpg",
+        "mobile_image": "shopify://shop_images/vest_cdf42c58-986b-440c-91f0-2241f20c21f3.jpg",
+        "video": "shopify://files/videos/下面视频-vests_4ffb3692-f2c3-48ff-bbca-9e72e5b39d1b.mp4",
+        "mobile_video": "shopify://files/videos/马甲 x手机.mov",
         "description": ""
       }
     },
@@ -307,7 +229,7 @@
         "heading": "Gallary",
         "small_heading_below": "From freezing cold to rainy days, Alpargali has you covered.",
         "button_label": "SHOP NOW",
-        "button_link": "shopify://collections/clothing",
+        "button_link": "",
         "image_1": "shopify://shop_images/s-tib-01.jpg",
         "image_2": "shopify://shop_images/s-tib-02.jpg",
         "image_3": "shopify://shop_images/s-tib-03.jpg"
@@ -348,16 +270,15 @@
         "feature1_icon": "shopify://shop_images/icon-index-email-bottom-1.svg",
         "feature1_text": "Free Shipping over $169",
         "feature2_icon": "shopify://shop_images/icon-index-email-bottom-2.svg",
-        "feature2_text": "2 Kickstarter Successful Campaigns",
+        "feature2_text": "2个Kickstarter成功活动",
         "feature3_icon": "shopify://shop_images/icon-index-email-bottom-3.svg",
-        "feature3_text": "30-Day Returns & Exchanges",
+        "feature3_text": "Lifetime Guarantee",
         "feature4_icon": "shopify://shop_images/icon-index-email-bottom-4.svg",
-        "feature4_text": "Trusted By 15,000+ Customers"
+        "feature4_text": "Trusted By 15,00+ Customers"
       }
     }
   },
   "order": [
-    "common_media_BrHjtL",
     "gg_image_banner_V4rbFP",
     "gg_scroll_image_zqhRNf",
     "gg_double_image_banner_mobile_YXnVpE",
