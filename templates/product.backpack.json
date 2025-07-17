@@ -177,6 +177,87 @@
     "gg_product_detail_Mg4rJH": {
       "type": "gg-product-detail",
       "blocks": {
+        "content_block_JphTVU": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "heading": "<p>产品详情</p>",
+            "content": "<p>请输入详细说明内容...</p>",
+            "target_tab": "description"
+          }
+        },
+        "image_banner_WhzCRX": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/1_pc.jpg",
+            "image_mobile": "shopify://shop_images/1_e184b404-4325-4632-8adb-877d5a4086d4.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 20,
+            "target_tab": "description"
+          }
+        },
+        "image_banner_bDhrwk": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/2_pc.jpg",
+            "image_mobile": "shopify://shop_images/2_7afe04fd-47b7-4ad1-8582-3244adfa5ddc.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 20,
+            "target_tab": "description"
+          }
+        },
+        "carousel_zcQVxA": {
+          "type": "carousel",
+          "settings": {
+            "title": "15+ Strategic Pockets",
+            "image_1": "shopify://shop_images/1_ecf8f6e4-4dc2-408d-bfcd-5a7606811e82.jpg",
+            "caption_1": "",
+            "hover_text_1": "",
+            "image_2": "shopify://shop_images/2_e627471e-3241-48eb-a313-94504f179c6c.jpg",
+            "caption_2": "",
+            "hover_text_2": "",
+            "image_3": "shopify://shop_images/3_e7d77718-edae-4b94-a912-260f0caae8da.jpg",
+            "caption_3": "",
+            "hover_text_3": "",
+            "image_4": "shopify://shop_images/4_ee5145e0-6d6e-47c8-be56-d7bba1ec0192.jpg",
+            "caption_4": "",
+            "hover_text_4": "",
+            "image_5": "shopify://shop_images/5_5473d20a-1187-4b52-953d-defcfde8de79.jpg",
+            "caption_5": "",
+            "hover_text_5": "",
+            "image_6": "shopify://shop_images/6_2454f4f2-1b59-418e-9de5-82ba47dcbc1b.jpg",
+            "caption_6": "",
+            "hover_text_6": "",
+            "image_7": "shopify://shop_images/7_b95604e1-6ae8-4648-9a1e-f3d1869ffc73.jpg",
+            "caption_7": "",
+            "hover_text_7": "",
+            "image_8": "shopify://shop_images/8_a3cfacd9-3474-42ad-811b-d053bde6ac7b.jpg",
+            "caption_8": "",
+            "hover_text_8": "",
+            "image_9": "shopify://shop_images/9_f159de27-c37d-48f3-859d-ea552760c850.jpg",
+            "caption_9": "",
+            "hover_text_9": "",
+            "image_10": "shopify://shop_images/10_15857b72-49f7-44f2-bd55-d8ecb4824acb.jpg",
+            "caption_10": "",
+            "hover_text_10": "",
+            "image_11": "shopify://shop_images/11_7655f06b-7225-4929-84d5-1cc58c269dc3.jpg",
+            "caption_11": "",
+            "hover_text_11": "",
+            "image_12": "shopify://shop_images/12_922ee145-28ac-45e6-ba1e-cde054139b8b.jpg",
+            "caption_12": "",
+            "hover_text_12": "",
+            "autoplay_speed": 3,
+            "target_tab": "description",
+            "margin_top": 32,
+            "margin_bottom": 32
+          }
+        },
         "collage_byQmgc": {
           "type": "collage",
           "settings": {
@@ -263,6 +344,10 @@
         }
       },
       "block_order": [
+        "content_block_JphTVU",
+        "image_banner_WhzCRX",
+        "image_banner_bDhrwk",
+        "carousel_zcQVxA",
         "collage_byQmgc",
         "collage_dLqxPW",
         "collage_WXNq9Y",
