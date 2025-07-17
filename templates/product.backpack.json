@@ -52,12 +52,12 @@
         "gg_icon_text_grid_TGCbKj": {
           "type": "gg-icon-text-grid",
           "settings": {
-            "icon_1": "shopify://shop_images/product-block-001-001.svg",
-            "text_1": "Free Shipping on 2 Items",
-            "icon_2": "shopify://shop_images/product-block-001-002.svg",
-            "text_2": "Payment Security",
-            "icon_3": "shopify://shop_images/product-block-001-003.svg",
-            "text_3": "Eco-Friendly Packaging",
+            "icon_1": "shopify://shop_images/44b61d202bfd560e13169f625177a644.png",
+            "text_1": "Clamshell Opening",
+            "icon_2": "shopify://shop_images/f0b92390d1215d2a8525fa5d5b6de819.png",
+            "text_2": "DWR",
+            "icon_3": "shopify://shop_images/d2b3397782b28b681af20aa604f25cdc.png",
+            "text_3": "Fits up to 16” laptop",
             "text_4": ""
           }
         },
@@ -114,9 +114,9 @@
         "collapsible_tab_4bGyQa": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Care",
+            "heading": "Key Features",
             "icon": "none",
-            "content": "<ul><li>Do Not Bleach.</li><li>Wash Gently.</li><li>Avoid Direct Contact</li><li>Between The Iron And Fabric.</li><li>Lay Flat To Dry.</li><li>Do Not Dry Clean.</li></ul>",
+            "content": "<ul><li>15+ Strategic Pockets </li><li>Clamshell Opening</li><li>Weatherproof 210D Nylon</li><li>YKK® AquaGuard Zippers</li><li>FIDLOCK® Magnetic Buckle</li><li>Luggage Strap<br/><br/></li></ul>",
             "page": "",
             "image_alt": "",
             "image_width": 50
