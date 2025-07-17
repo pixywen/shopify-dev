@@ -92,9 +92,9 @@
         "collapsible_tab_yAPYME": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Details",
+            "heading": "Description",
             "icon": "none",
-            "content": "<ul><li>A refined essential.</li><li>Made from <strong>Solotex® waffle-knit</strong> fabric for<strong> superior breathability and stretch</strong>.</li><li><strong>Quick-dry</strong>, <strong>ultra-soft</strong>, and built to move.</li><li>Plant-based polymers reduce environmental impact.</li><li><strong>Comfort. Performance. Responsibility.</strong></li></ul>",
+            "content": "<p>Your go-to backpack for everyday life and short travels. </p><p>The Alpargali All-Day Backpack is built for modern mobility—featuring over 15 smart compartments, a clamshell opening for effortless organization, and full weather protection with waterproof fabrics and zippers. </p><p>Designed to handle your tech, essentials, and even unexpected rain, this backpack blends minimalist aesthetics with everyday utility.</p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
@@ -105,7 +105,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "<p>Model: 180cm / 5'11\", 73kg / 161lbs. Wearing size XL.</p><p>Fabric Composition</p><ul><li>Body: 60% Solotex®, 40% Polyester</li><li>Pocket Lining: 90% Nylon, 10% Spandex</li><li>Rib Knit Collar: 70% Cotton, 30% Polyester</li></ul><p>Design Features</p><ul><li>One chest pocket</li></ul>",
+            "content": "<p><strong>Volume ：</strong>22L</p><p><strong>Max Laptop Carry：</strong>Fits up to <strong>16” laptop</strong></p><p><strong>Max Tablet Carry：</strong>Fits up to <strong>12.9” iPad Pro</strong></p><p><strong>Weight：</strong>1.09 kg / 2.4 lbs</p><p><strong>Dimensions：</strong>11.4'' x 7.1'' x 19.3'' (29 cm x 18 cm x 49 cm)</p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
