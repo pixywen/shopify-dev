@@ -328,9 +328,26 @@
       ],
       "settings": {
         "show_description": true,
-        "show_video": false,
+        "show_video": true,
         "show_reviews": true,
         "show_faq": true
+      }
+    },
+    "video_yF3mjt": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify://files/videos/大包-主视频 (1).mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify://shop_images/1_pc.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "featured_collection_w7t6Hb": {
@@ -410,6 +427,7 @@
     "main",
     "related-products",
     "gg_product_detail_Mg4rJH",
+    "video_yF3mjt",
     "featured_collection_w7t6Hb",
     "gg_newsletter_TdjgNt"
   ]
