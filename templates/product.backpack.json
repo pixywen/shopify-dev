@@ -203,8 +203,8 @@
         "image_banner_bDhrwk": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/2_pc.jpg",
-            "image_mobile": "shopify://shop_images/2_7afe04fd-47b7-4ad1-8582-3244adfa5ddc.jpg",
+            "image_desktop": "shopify://shop_images/alpargali_backpack_description_2_pc.jpg",
+            "image_mobile": "shopify://shop_images/alpargali_backpack_description_2.jpg",
             "margin_top": 32,
             "margin_bottom": 0,
             "padding_x_desktop": 0,
