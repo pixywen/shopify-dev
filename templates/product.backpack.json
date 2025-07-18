@@ -339,9 +339,9 @@
       "settings": {
         "heading": "",
         "heading_size": "h1",
-        "enable_video_looping": false,
+        "enable_video_looping": true,
         "video": "shopify://files/videos/大包-主视频 (1).mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_url": "",
         "cover_image": "shopify://shop_images/1_pc.jpg",
         "description": "",
         "full_width": false,
