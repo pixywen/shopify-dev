@@ -1,0 +1,434 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gg_breadcrumb_yr7zeq": {
+      "type": "gg-breadcrumb",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "square"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_ex_c7QqTL": {
+          "type": "buy_buttons_ex",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "divider_3i4EF3": {
+          "type": "divider",
+          "settings": {
+            "margin_top": 20,
+            "margin_bottom": 20
+          }
+        },
+        "gg_icon_text_grid_TGCbKj": {
+          "type": "gg-icon-text-grid",
+          "settings": {
+            "icon_1": "shopify://shop_images/44b61d202bfd560e13169f625177a644.png",
+            "text_1": "Clamshell Opening",
+            "icon_2": "shopify://shop_images/f0b92390d1215d2a8525fa5d5b6de819.png",
+            "text_2": "Durable Water Repellent",
+            "icon_3": "shopify://shop_images/d2b3397782b28b681af20aa604f25cdc.png",
+            "text_3": "Fits up to 16” laptop",
+            "text_4": ""
+          }
+        },
+        "divider_FHRHjn": {
+          "type": "divider",
+          "settings": {
+            "margin_top": 20,
+            "margin_bottom": 20
+          }
+        },
+        "gg_heading_image_Lh8bEX": {
+          "type": "gg-heading-image",
+          "settings": {
+            "heading": "As Featured In:",
+            "image": "shopify://shop_images/product-info-b-hi-01_f193a6ad-01f8-4116-b5f2-e3d38b60c9a9.png",
+            "image_mobile": "shopify://shop_images/product-info-b-hi-01-m.png"
+          }
+        },
+        "complementary_MMXapa": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs Great With:",
+            "make_collapsible_row": false,
+            "icon": "none",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": true
+          }
+        },
+        "collapsible_tab_yAPYME": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Description",
+            "icon": "none",
+            "content": "<p>Your go-to backpack for everyday life and short travels. </p><p>The Alpargali All-Day Backpack is built for modern mobility—featuring over 15 smart compartments, a clamshell opening for effortless organization, and full weather protection with waterproof fabrics and zippers. </p><p>Designed to handle your tech, essentials, and even unexpected rain, this backpack blends minimalist aesthetics with everyday utility.</p>",
+            "page": "",
+            "image_alt": "",
+            "image_width": 50
+          }
+        },
+        "collapsible_tab_GyWCqX": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Specs",
+            "icon": "none",
+            "content": "<p><strong>Volume ：</strong></p><p>22L</p><p><strong>Max Laptop Carry：</strong></p><p>Fits up to 16” laptop</p><p><strong>Max Tablet Carry：</strong></p><p>Fits up to 12.9” iPad Pro</p><p><strong>Weight：</strong></p><p>1.09 kg / 2.4 lbs</p><p><strong>Dimensions：</strong></p><p>11.4'' x 7.1'' x 19.3'' (29 cm x 18 cm x 49 cm)</p>",
+            "page": "",
+            "image_alt": "",
+            "image_width": 50
+          }
+        },
+        "collapsible_tab_4bGyQa": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Design Details",
+            "icon": "none",
+            "content": "<p><strong>Clamshell Opening</strong>：180° full-open structure for suitcase-style access.</p><p><strong>Top Access Quick Pocket</strong>：Ideal for passport, wallet, or phone.</p><p><strong>Magnetic Top Flap</strong>：FIDLOCK® magnetic buckle for quick access.</p><p><strong>External Cord Hook™ System</strong>：Secure jackets, chest bags, or gear externally.</p><p><strong>Luggage Pass-Through</strong>：Easily slides onto roller bag handles.</p><p><strong>Ergonomic Build</strong>：Padded back panel + shoulder straps for long-wear comfort.<br/><br/></p>",
+            "page": "",
+            "image_alt": "",
+            "image_width": 50
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons_ex_c7QqTL",
+        "divider_3i4EF3",
+        "gg_icon_text_grid_TGCbKj",
+        "divider_FHRHjn",
+        "gg_heading_image_Lh8bEX",
+        "complementary_MMXapa",
+        "collapsible_tab_yAPYME",
+        "collapsible_tab_GyWCqX",
+        "collapsible_tab_4bGyQa"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12,
+        "size_guide_image": "shopify://shop_images/T_3.jpg"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "gg_product_detail_Mg4rJH": {
+      "type": "gg-product-detail",
+      "blocks": {
+        "content_block_JphTVU": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "heading": "<p>Your Go-To Backpack For Everyday Living</p>",
+            "content": "<p>The Alpargali All-Day Backpack is built for modern mobility—featuring over 15 smart compartments, a clamshell opening for effortless organization, and full weather protection with waterproof fabrics and zippers. </p><p>Designed to handle your tech, essentials, and even unexpected rain, this backpack blends minimalist aesthetics with everyday utility.</p>",
+            "target_tab": "description"
+          }
+        },
+        "image_banner_WhzCRX": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/1_pc.jpg",
+            "image_mobile": "shopify://shop_images/1_e184b404-4325-4632-8adb-877d5a4086d4.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "image_banner_bDhrwk": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/alpargali_backpack_description_2_pc.jpg",
+            "image_mobile": "shopify://shop_images/alpargali_backpack_description_2.jpg",
+            "margin_top": 32,
+            "margin_bottom": 0,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "carousel_zcQVxA": {
+          "type": "carousel",
+          "settings": {
+            "title": "",
+            "image_1": "shopify://shop_images/alpargali_backpack_pockets_1.jpg",
+            "caption_1": "Top & Bottom Quick-Grab Pockets",
+            "hover_text_1": "",
+            "image_2": "shopify://shop_images/alpargali_backpack_pockets_2.jpg",
+            "caption_2": "Hidden Midsection Zipper Pocket",
+            "hover_text_2": "",
+            "image_3": "shopify://shop_images/alpargali_backpack_pockets_3.jpg",
+            "caption_3": "Expandable side Pockets (x2)",
+            "hover_text_3": "",
+            "image_4": "shopify://shop_images/alpargali_backpack_pockets_4.jpg",
+            "caption_4": "Hidden Anti-Theft Pocket (Back Panel)",
+            "hover_text_4": "",
+            "image_5": "shopify://shop_images/alpargali_backpack_pockets_5.jpg",
+            "caption_5": "Top Internal Quick-AccessPocket",
+            "hover_text_5": "",
+            "image_6": "shopify://shop_images/alpargali_backpack_pockets_6.jpg",
+            "caption_6": "Mid-section Mesh Pocket",
+            "hover_text_6": "",
+            "image_7": "shopify://shop_images/alpargali_backpack_pockets_7.jpg",
+            "caption_7": "Stretch Mesh Side Pockets",
+            "hover_text_7": "",
+            "image_8": "shopify://shop_images/alpargali_backpack_pockets_8.jpg",
+            "caption_8": "Padded Laptop Sleeve (Fits Up to 16\")",
+            "hover_text_8": "",
+            "image_9": "shopify://shop_images/alpargali_backpack_pockets_9.jpg",
+            "caption_9": "Shockproof Tablet Pocket",
+            "hover_text_9": "",
+            "image_10": "shopify://shop_images/alpargali_backpack_pockets_10.jpg",
+            "caption_10": "Air Tag Holder Pocket",
+            "hover_text_10": "",
+            "image_11": "shopify://shop_images/alpargali_backpack_pockets_11.jpg",
+            "caption_11": "Extended Side Compression Straps",
+            "hover_text_11": "",
+            "image_12": "shopify://shop_images/alpargali_backpack_pockets_12.jpg",
+            "caption_12": "Sunglasses Pocket With Secure Strap",
+            "hover_text_12": "",
+            "autoplay_speed": 3,
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 32
+          }
+        },
+        "collage_byQmgc": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/1_pc_7c8dba70-c446-4a60-941e-9a73facbee1d.jpg",
+            "heading": "Smart Organization Meets Everyday Carry",
+            "subheading": "",
+            "text": "<p>More than just pockets. This is intelligent organization, designed to move with you — smarter, faster, lighter.</p>",
+            "target_tab": "description",
+            "margin_top": 20,
+            "margin_bottom": 0
+          }
+        },
+        "collage_dLqxPW": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_right",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/2_pc_0ea432c0-24f5-4454-a37f-ab6818151f82.jpg",
+            "heading": "Waterproof. Worry-Free.",
+            "subheading": "",
+            "text": "<p>Crafted from durable 210D waterproof nylon and equipped with YKK® AquaGuard zippers to keep your essentials safe and dry—rain or shine.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "collage_WXNq9Y": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/3_pc.jpg",
+            "heading": "Comfort, but More Comfortable",
+            "subheading": "",
+            "text": "<p>Experience next-level comfort with every carry. <strong>3-Zone Load Distribution</strong> – <strong>30% less shoulder strain</strong>, keeping your posture natural, healthy, and pressure-free.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "faq_i3m3aL": {
+          "type": "faq",
+          "settings": {
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "gap": 0,
+            "faq_content": "<title>1. What Is Waffle Knit Fabric?</title>\n<p>Waffle knit—also known as thermal or honeycomb knit—is a textured fabric characterized by a distinctive square or grid-like weave. This 3D texture not only gives the fabric a unique appearance but also enhances breathability, moisture-wicking, and structure retention.</p>\n<title>2. Why Is Waffle Knit Perfect for Summer?</title>\n<p>Waffle knit fabric features a unique honeycomb texture that increases airflow, making it breathable and sweat-wicking—perfect for staying cool in summer.</p>\n<title>3. Is waffle knit fabric soft against the skin?</title>\n<p>Absolutely. The small air pockets created by the waffle weave provide a gentle cushion, making it soft, cozy, and comfortable for all-day wear.</p>",
+            "target_tab": "faq"
+          }
+        },
+        "judge_me_reviews_review_widget_JctMNU": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "content_block_JphTVU",
+        "image_banner_WhzCRX",
+        "image_banner_bDhrwk",
+        "carousel_zcQVxA",
+        "collage_byQmgc",
+        "collage_dLqxPW",
+        "collage_WXNq9Y",
+        "faq_i3m3aL",
+        "judge_me_reviews_review_widget_JctMNU"
+      ],
+      "settings": {
+        "show_description": true,
+        "show_video": true,
+        "show_reviews": true,
+        "show_faq": false
+      }
+    },
+    "video_yF3mjt": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/大包-主视频 (1).mp4",
+        "video_url": "",
+        "cover_image": "shopify://shop_images/1_pc.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_w7t6Hb": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "You May Also Like",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "more-products",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "gg_newsletter_TdjgNt": {
+      "type": "gg-newsletter",
+      "blocks": {
+        "heading_KB8Abx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_pUAXP6": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
+          }
+        },
+        "email_form_FqiyNA": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_KB8Abx",
+        "paragraph_pUAXP6",
+        "email_form_FqiyNA"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "show_bottom_content": true,
+        "feature1_icon": "shopify://shop_images/icon-index-email-bottom-1.svg",
+        "feature1_text": "Free Shipping over $169",
+        "feature2_icon": "shopify://shop_images/icon-index-email-bottom-2.svg",
+        "feature2_text": "2 Kickstarter Successful Campaigns",
+        "feature3_icon": "shopify://shop_images/icon-index-email-bottom-3.svg",
+        "feature3_text": "30-Day Returns & Exchanges",
+        "feature4_icon": "shopify://shop_images/icon-index-email-bottom-4.svg",
+        "feature4_text": "Trusted By 15,000+ Customers"
+      }
+    }
+  },
+  "order": [
+    "gg_breadcrumb_yr7zeq",
+    "main",
+    "related-products",
+    "gg_product_detail_Mg4rJH",
+    "video_yF3mjt",
+    "featured_collection_w7t6Hb",
+    "gg_newsletter_TdjgNt"
+  ]
+}
