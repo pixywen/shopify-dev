@@ -44,6 +44,7 @@
         },
         "divider_3i4EF3": {
           "type": "divider",
+          "disabled": true,
           "settings": {
             "margin_top": 20,
             "margin_bottom": 20
@@ -51,6 +52,7 @@
         },
         "gg_icon_text_grid_TGCbKj": {
           "type": "gg-icon-text-grid",
+          "disabled": true,
           "settings": {
             "icon_1": "shopify://shop_images/44b61d202bfd560e13169f625177a644.png",
             "text_1": "Clamshell Opening",
@@ -105,7 +107,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "<p><strong>Volume ：</strong></p><p>22L</p><p><strong>Max Laptop Carry：</strong></p><p>Fits up to 16” laptop</p><p><strong>Max Tablet Carry：</strong></p><p>Fits up to 12.9” iPad Pro</p><p><strong>Weight：</strong></p><p>1.09 kg / 2.4 lbs</p><p><strong>Dimensions：</strong></p><p>11.4'' x 7.1'' x 19.3'' (29 cm x 18 cm x 49 cm)</p>",
+            "content": "<ul><li><strong>Material:</strong> 210D Nylon (Water-repellent coating, tear-resistant)</li><li><strong>Zippers:</strong> <strong>Full YKK AquaGuard® Zippers</strong></li><li><strong>Closures:</strong> FIDLOCK magnetic buckle</li><li><strong>Capacity:</strong> 2.5L</li><li><strong>Pockets:</strong> 7</li><li><strong>Weight</strong>: 0.34kg (0.75lbs)</li><li><strong>Dimensions</strong>:  14.96\" D × 5.51\" H × 2.76\" W (38 × 14 × 7 cm)</li></ul>",
             "page": "",
             "image_alt": "",
             "image_width": 50
@@ -114,9 +116,9 @@
         "collapsible_tab_4bGyQa": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Design Details",
+            "heading": "Key Features",
             "icon": "none",
-            "content": "<p><strong>Clamshell Opening</strong>：180° full-open structure for suitcase-style access.</p><p><strong>Top Access Quick Pocket</strong>：Ideal for passport, wallet, or phone.</p><p><strong>Magnetic Top Flap</strong>：FIDLOCK® magnetic buckle for quick access.</p><p><strong>External Cord Hook™ System</strong>：Secure jackets, chest bags, or gear externally.</p><p><strong>Luggage Pass-Through</strong>：Easily slides onto roller bag handles.</p><p><strong>Ergonomic Build</strong>：Padded back panel + shoulder straps for long-wear comfort.<br/><br/></p>",
+            "content": "<p><strong>Compact but Spacious</strong> – 2.5L capacity fits everything from your phone to your e-reader or portable charger.<br/><strong>FIDLOCK® Magnetic Buckle</strong> – Open and close with one hand<br/><strong>Adjustable Chest Strap</strong> – Designed to fit most body types comfortably<br/><strong>Exterior Utility Loops ×2</strong> – Clip on sunglasses, caps, or carabiners<br/><strong>7 Smart Compartments</strong></p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
@@ -191,8 +193,8 @@
         "image_banner_WhzCRX": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/1_pc.jpg",
-            "image_mobile": "shopify://shop_images/1_e184b404-4325-4632-8adb-877d5a4086d4.jpg",
+            "image_desktop": "shopify://shop_images/chest_bag-pc1.jpg",
+            "image_mobile": "shopify://shop_images/chest_bag-1.jpg",
             "margin_top": 32,
             "margin_bottom": 32,
             "padding_x_desktop": 0,
@@ -203,8 +205,8 @@
         "image_banner_bDhrwk": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/alpargali_backpack_description_2_pc.jpg",
-            "image_mobile": "shopify://shop_images/alpargali_backpack_description_2.jpg",
+            "image_desktop": "shopify://shop_images/chest_bag-pc2.jpg",
+            "image_mobile": "shopify://shop_images/chest_bag-2.jpg",
             "margin_top": 32,
             "margin_bottom": 0,
             "padding_x_desktop": 0,
@@ -263,10 +265,10 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/1_pc_7c8dba70-c446-4a60-941e-9a73facbee1d.jpg",
-            "heading": "Smart Organization Meets Everyday Carry",
+            "image": "shopify://shop_images/chest_bag-pc4.jpg",
+            "heading": "Adjustable Exterior Loops x2",
             "subheading": "",
-            "text": "<p>More than just pockets. This is intelligent organization, designed to move with you — smarter, faster, lighter.</p>",
+            "text": "<p>Attach sunglasses, caps, orclips for versatile carry.</p>",
             "target_tab": "description",
             "margin_top": 20,
             "margin_bottom": 0
@@ -277,7 +279,7 @@
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/2_pc_0ea432c0-24f5-4454-a37f-ab6818151f82.jpg",
+            "image": "shopify://shop_images/chest_bag-pc3.jpg",
             "heading": "Waterproof. Worry-Free.",
             "subheading": "",
             "text": "<p>Crafted from durable 210D waterproof nylon and equipped with YKK® AquaGuard zippers to keep your essentials safe and dry—rain or shine.</p>",
@@ -291,10 +293,10 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/3_pc.jpg",
-            "heading": "Comfort, but More Comfortable",
+            "image": "shopify://shop_images/chest_bag-pc5.jpg",
+            "heading": "Interior Key Leash",
             "subheading": "",
-            "text": "<p>Experience next-level comfort with every carry. <strong>3-Zone Load Distribution</strong> – <strong>30% less shoulder strain</strong>, keeping your posture natural, healthy, and pressure-free.</p>",
+            "text": "<p>Easily locate keys orsmall items when needed.</p>",
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 0
@@ -331,23 +333,6 @@
         "show_video": true,
         "show_reviews": true,
         "show_faq": false
-      }
-    },
-    "video_yF3mjt": {
-      "type": "video",
-      "name": "t:sections.video.presets.name",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": true,
-        "video": "shopify://files/videos/大包-主视频 (1).mp4",
-        "video_url": "",
-        "cover_image": "shopify://shop_images/1_pc.jpg",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "featured_collection_w7t6Hb": {
@@ -427,7 +412,6 @@
     "main",
     "related-products",
     "gg_product_detail_Mg4rJH",
-    "video_yF3mjt",
     "featured_collection_w7t6Hb",
     "gg_newsletter_TdjgNt"
   ]
