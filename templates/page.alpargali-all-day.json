@@ -23,6 +23,7 @@
         "image_BRBcL3": {
           "type": "image",
           "name": "1",
+          "disabled": true,
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -192,7 +193,7 @@
             "subtitle_color": "#000000",
             "custom_html_content": "",
             "btn": "",
-            "link": ""
+            "link": "shopify://products/everyday-backpack"
           }
         },
         "image_iEmUGr": {
@@ -1016,7 +1017,7 @@
             "subtitle_color": "#000000",
             "custom_html_content": "",
             "btn": "",
-            "link": ""
+            "link": "shopify://products/everyday-backpack"
           }
         },
         "image_GW9kzM": {
