@@ -187,14 +187,14 @@
             "video_url_desktop": "",
             "cover_desktop": "shopify://shop_images/1_pc.jpg",
             "video_url_mobile": "",
-            "autoplay": true,
+            "autoplay": false,
             "loop": true,
             "controls": true,
             "muted": true,
             "target_tab": "video",
             "margin_top": 52,
             "margin_bottom": 52,
-            "padding_x": 0
+            "padding_x": 4
           }
         },
         "image_banner_WhzCRX": {
