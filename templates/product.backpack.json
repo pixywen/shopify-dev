@@ -186,8 +186,8 @@
             "image_mobile": "shopify://shop_images/alldaybackpack-1.png",
             "margin_top": 32,
             "margin_bottom": 32,
-            "padding_x_desktop": 0,
-            "padding_x_mobile": 0,
+            "padding_x_desktop": 8,
+            "padding_x_mobile": 7,
             "target_tab": "description"
           }
         },
@@ -210,7 +210,7 @@
             "margin_top": 32,
             "margin_bottom": 32,
             "padding_x_desktop": 0,
-            "padding_x_mobile": 0,
+            "padding_x_mobile": 5,
             "target_tab": "description"
           }
         },
@@ -229,7 +229,7 @@
         "carousel_zcQVxA": {
           "type": "carousel",
           "settings": {
-            "title": "15+ POCKETS",
+            "title": "SMART ORGANIZATION",
             "image_1": "shopify://shop_images/alpargali_backpack_pockets_1.jpg",
             "caption_1": "Top Quick-Grab Pockets",
             "hover_text_1": "",
