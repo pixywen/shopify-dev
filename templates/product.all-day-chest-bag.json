@@ -181,6 +181,22 @@
     "gg_product_detail_Mg4rJH": {
       "type": "gg-product-detail",
       "blocks": {
+        "video_tW673K": {
+          "type": "video",
+          "settings": {
+            "title": "",
+            "video_url_desktop": "",
+            "video_url_mobile": "",
+            "autoplay": true,
+            "loop": true,
+            "controls": true,
+            "muted": true,
+            "target_tab": "video",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x": 0
+          }
+        },
         "image_banner_WhzCRX": {
           "type": "image_banner",
           "settings": {
@@ -274,6 +290,7 @@
         }
       },
       "block_order": [
+        "video_tW673K",
         "image_banner_WhzCRX",
         "content_block_JphTVU",
         "image_banner_bDhrwk",
@@ -285,7 +302,7 @@
       ],
       "settings": {
         "show_description": true,
-        "show_video": true,
+        "show_video": false,
         "show_reviews": true,
         "show_faq": false
       }
