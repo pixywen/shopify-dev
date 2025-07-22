@@ -109,7 +109,7 @@
           "settings": {
             "heading": "Materials & Tech",
             "icon": "none",
-            "content": "<p><strong>Material:</strong> 210D Nylon with water-repellent coating<br/><strong>Zippers:</strong> Full YKK AquaGuard® zippers<br/><strong>Closure:</strong> German-engineered FIDLOCK® magnetic buckle<br/><strong>Capacity:</strong> 2.5L<br/><strong>Weight:</strong> 0.34kg / 0.75lbs<br/><strong>Dimensions:</strong> 14.96\" D × 5.51\" H × 2.76\" W (38 × 14 × 7 cm)</p>",
+            "content": "<ul><li><strong>Material:</strong> 210D Nylon with water-repellent coating</li></ul><p></p><ul><li><strong>Zippers:</strong> Full YKK AquaGuard® zippers</li></ul><p></p><ul><li><strong>Closure:</strong> German-engineered FIDLOCK® magnetic buckle</li></ul><p></p><ul><li><strong>Capacity:</strong> 2.5L</li></ul><p></p><ul><li><strong>Weight:</strong> 0.34kg / 0.75lbs</li></ul>",
             "page": "",
             "image_alt": "",
             "image_width": 50
