@@ -183,7 +183,7 @@
           "type": "image_banner",
           "settings": {
             "image_desktop": "shopify://shop_images/1_pc.jpg",
-            "image_mobile": "shopify://shop_images/1_e184b404-4325-4632-8adb-877d5a4086d4.jpg",
+            "image_mobile": "shopify://shop_images/alldaybackpack-1.png",
             "margin_top": 32,
             "margin_bottom": 32,
             "padding_x_desktop": 0,
@@ -256,7 +256,7 @@
             "hover_text_12": "",
             "autoplay_speed": 3,
             "target_tab": "description",
-            "margin_top": 0,
+            "margin_top": 32,
             "margin_bottom": 32
           }
         },
