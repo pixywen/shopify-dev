@@ -185,8 +185,8 @@
             "image_desktop": "shopify://shop_images/1_pc.jpg",
             "image_mobile": "shopify://shop_images/alldaybackpack-1.png",
             "margin_top": 32,
-            "margin_bottom": 32,
-            "padding_x_desktop": 8,
+            "margin_bottom": 52,
+            "padding_x_desktop": 5,
             "padding_x_mobile": 5,
             "target_tab": "description"
           }
@@ -196,7 +196,7 @@
           "settings": {
             "block_type": "heading_text",
             "margin_top": 32,
-            "margin_bottom": 32,
+            "margin_bottom": 52,
             "heading": "<p>Your Go-To Backpack For Everyday Living</p>",
             "content": "<p>The Alpargali All-Day Backpack is built for modern mobility—featuring over 15 smart compartments, a clamshell opening for effortless organization, and full weather protection with waterproof fabrics and zippers. </p><p>Designed to handle your tech, essentials, and even unexpected rain, this backpack blends minimalist aesthetics with everyday utility.</p>",
             "target_tab": "description"
