@@ -222,7 +222,7 @@
             "margin_top": 32,
             "margin_bottom": 32,
             "padding_x_desktop": 20,
-            "padding_x_mobile": 15,
+            "padding_x_mobile": 8,
             "target_tab": "description"
           }
         },
