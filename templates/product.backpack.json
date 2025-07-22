@@ -206,7 +206,7 @@
             "image_desktop": "shopify://shop_images/alpargali_backpack_description_2_pc.jpg",
             "image_mobile": "shopify://shop_images/alpargali_backpack_description_2.jpg",
             "margin_top": 32,
-            "margin_bottom": 0,
+            "margin_bottom": 32,
             "padding_x_desktop": 0,
             "padding_x_mobile": 0,
             "target_tab": "description"
