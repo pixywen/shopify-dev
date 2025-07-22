@@ -65,6 +65,7 @@
         },
         "divider_FHRHjn": {
           "type": "divider",
+          "disabled": true,
           "settings": {
             "margin_top": 20,
             "margin_bottom": 20
@@ -72,6 +73,7 @@
         },
         "gg_heading_image_Lh8bEX": {
           "type": "gg-heading-image",
+          "disabled": true,
           "settings": {
             "heading": "As Featured In:",
             "image": "shopify://shop_images/product-info-b-hi-01_f193a6ad-01f8-4116-b5f2-e3d38b60c9a9.png",
@@ -311,7 +313,7 @@
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36

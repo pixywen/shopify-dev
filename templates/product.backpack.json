@@ -179,17 +179,6 @@
     "gg_product_detail_Mg4rJH": {
       "type": "gg-product-detail",
       "blocks": {
-        "content_block_JphTVU": {
-          "type": "content_block",
-          "settings": {
-            "block_type": "heading_text",
-            "margin_top": 32,
-            "margin_bottom": 32,
-            "heading": "<p>Your Go-To Backpack For Everyday Living</p>",
-            "content": "<p>The Alpargali All-Day Backpack is built for modern mobility—featuring over 15 smart compartments, a clamshell opening for effortless organization, and full weather protection with waterproof fabrics and zippers. </p><p>Designed to handle your tech, essentials, and even unexpected rain, this backpack blends minimalist aesthetics with everyday utility.</p>",
-            "target_tab": "description"
-          }
-        },
         "image_banner_WhzCRX": {
           "type": "image_banner",
           "settings": {
@@ -199,6 +188,17 @@
             "margin_bottom": 32,
             "padding_x_desktop": 0,
             "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "content_block_JphTVU": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "heading": "<p>Your Go-To Backpack For Everyday Living</p>",
+            "content": "<p>The Alpargali All-Day Backpack is built for modern mobility—featuring over 15 smart compartments, a clamshell opening for effortless organization, and full weather protection with waterproof fabrics and zippers. </p><p>Designed to handle your tech, essentials, and even unexpected rain, this backpack blends minimalist aesthetics with everyday utility.</p>",
             "target_tab": "description"
           }
         },
@@ -318,8 +318,8 @@
         }
       },
       "block_order": [
-        "content_block_JphTVU",
         "image_banner_WhzCRX",
+        "content_block_JphTVU",
         "image_banner_bDhrwk",
         "carousel_zcQVxA",
         "collage_byQmgc",
