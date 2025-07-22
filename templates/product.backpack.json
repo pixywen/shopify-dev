@@ -220,7 +220,7 @@
             "image_desktop": "shopify://shop_images/icon-pc.png",
             "image_mobile": "shopify://shop_images/icon-phone.png",
             "margin_top": 32,
-            "margin_bottom": 32,
+            "margin_bottom": 20,
             "padding_x_desktop": 20,
             "padding_x_mobile": 8,
             "target_tab": "description"
