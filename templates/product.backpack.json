@@ -179,6 +179,24 @@
     "gg_product_detail_Mg4rJH": {
       "type": "gg-product-detail",
       "blocks": {
+        "video_yb8JJc": {
+          "type": "video",
+          "settings": {
+            "title": "",
+            "video_desktop": "shopify://files/videos/大包-主视频 (1).mp4",
+            "video_url_desktop": "",
+            "cover_desktop": "shopify://shop_images/1_pc.jpg",
+            "video_url_mobile": "",
+            "autoplay": true,
+            "loop": true,
+            "controls": true,
+            "muted": true,
+            "target_tab": "video",
+            "margin_top": 52,
+            "margin_bottom": 52,
+            "padding_x": 0
+          }
+        },
         "image_banner_WhzCRX": {
           "type": "image_banner",
           "settings": {
@@ -330,6 +348,7 @@
         }
       },
       "block_order": [
+        "video_yb8JJc",
         "image_banner_WhzCRX",
         "content_block_JphTVU",
         "image_banner_bDhrwk",
@@ -346,23 +365,6 @@
         "show_video": true,
         "show_reviews": true,
         "show_faq": false
-      }
-    },
-    "video_yF3mjt": {
-      "type": "video",
-      "name": "t:sections.video.presets.name",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": true,
-        "video": "shopify://files/videos/大包-主视频 (1).mp4",
-        "video_url": "",
-        "cover_image": "shopify://shop_images/1_pc.jpg",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 32,
-        "padding_bottom": 32
       }
     },
     "featured_collection_w7t6Hb": {
@@ -442,7 +444,6 @@
     "main",
     "related-products",
     "gg_product_detail_Mg4rJH",
-    "video_yF3mjt",
     "featured_collection_w7t6Hb",
     "gg_newsletter_TdjgNt"
   ]
