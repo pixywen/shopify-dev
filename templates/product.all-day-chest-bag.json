@@ -181,6 +181,17 @@
     "gg_product_detail_Mg4rJH": {
       "type": "gg-product-detail",
       "blocks": {
+        "content_block_JphTVU": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 52,
+            "margin_bottom": 32,
+            "heading": "<p>MEET ALPARGALI ALL-DAY CHEST BAG</p>",
+            "content": "<p>Your Sole Companion for Everyday Mobility.</p><p>Designed for <strong>urban denizens</strong> and <strong>curious adventurers</strong>, the All-day Chest-bag is <strong>compact </strong>yet<strong> highly functional.</strong> You can be on a bike, a train, or just out for the day, and this sleek companion keeps your essentials <strong>shielded and well-organized</strong>.<br/><br/></p>",
+            "target_tab": "description"
+          }
+        },
         "image_banner_WhzCRX": {
           "type": "image_banner",
           "settings": {
@@ -193,14 +204,14 @@
             "target_tab": "description"
           }
         },
-        "content_block_JphTVU": {
+        "content_block_gtTFnD": {
           "type": "content_block",
           "settings": {
             "block_type": "heading_text",
             "margin_top": 52,
             "margin_bottom": 32,
-            "heading": "<p>MEET ALPARGALI ALL-DAY CHEST BAG</p>",
-            "content": "<p>Your Sole Companion for Everyday Mobility.</p><p>Designed for <strong>urban denizens</strong> and <strong>curious adventurers</strong>, the All-day Chest-bag is <strong>compact </strong>yet<strong> highly functional.</strong> You can be on a bike, a train, or just out for the day, and this sleek companion keeps your essentials <strong>shielded and well-organized</strong>.<br/><br/></p>",
+            "heading": "<p>SMART COMPARTMENTS FOR EFFORTLESS ACCESS</p>",
+            "content": "",
             "target_tab": "description"
           }
         },
@@ -274,8 +285,9 @@
         }
       },
       "block_order": [
-        "image_banner_WhzCRX",
         "content_block_JphTVU",
+        "image_banner_WhzCRX",
+        "content_block_gtTFnD",
         "image_banner_bDhrwk",
         "collage_byQmgc",
         "collage_dLqxPW",
