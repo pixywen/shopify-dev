@@ -282,11 +282,11 @@
             "product": "all-day-chest-bag",
             "color_name_1": "Black",
             "color_1": "shopify://shop_images/sku-black.png",
-            "main_image_1": "shopify://shop_images/blackchestbag_2.jpg",
+            "main_image_1": "shopify://shop_images/sku-black.png",
             "model_image_1": "shopify://shop_images/blackchestbag_5.jpg",
             "color_name_2": "Brown",
             "color_2": "shopify://shop_images/brownchestbag_1.jpg",
-            "main_image_2": "shopify://shop_images/brownchestbag_2.jpg",
+            "main_image_2": "shopify://shop_images/brownchestbag_1.jpg",
             "color_name_3": ""
           }
         },
