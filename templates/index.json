@@ -213,21 +213,6 @@
             "model_image_3": "shopify://shop_images/3_a237e1f1-7903-40ed-b6c0-a41b90fdca01.jpg"
           }
         },
-        "product_FQmGnt": {
-          "type": "product",
-          "settings": {
-            "product": "aerosolis-aether-mesa-flex-pants",
-            "color_name_1": "Polar Night",
-            "color_1": "shopify://shop_images/swatch-Polar_Night.png",
-            "main_image_1": "shopify://shop_images/PolarNight1.jpg",
-            "model_image_1": "shopify://shop_images/PolarNight9.jpg",
-            "color_name_2": "Rime Pod",
-            "color_2": "shopify://shop_images/watch-Rime_Pod.png",
-            "main_image_2": "shopify://shop_images/Rime_Pod4.jpg",
-            "model_image_2": "shopify://shop_images/Rime_Pod2.jpg",
-            "color_name_3": ""
-          }
-        },
         "product_mUUiyn": {
           "type": "product",
           "settings": {
@@ -245,13 +230,28 @@
             "main_image_3": "shopify://shop_images/Moss_Whisper_01.jpg",
             "model_image_3": "shopify://shop_images/Moss_Whisper_main.jpg"
           }
+        },
+        "product_FQmGnt": {
+          "type": "product",
+          "settings": {
+            "product": "aerosolis-aether-mesa-flex-pants",
+            "color_name_1": "Polar Night",
+            "color_1": "shopify://shop_images/swatch-Polar_Night.png",
+            "main_image_1": "shopify://shop_images/PolarNight1.jpg",
+            "model_image_1": "shopify://shop_images/PolarNight9.jpg",
+            "color_name_2": "Rime Pod",
+            "color_2": "shopify://shop_images/watch-Rime_Pod.png",
+            "main_image_2": "shopify://shop_images/Rime_Pod4.jpg",
+            "model_image_2": "shopify://shop_images/Rime_Pod2.jpg",
+            "color_name_3": ""
+          }
         }
       },
       "block_order": [
         "product_dRYwKP",
         "product_FAGLWH",
-        "product_FQmGnt",
-        "product_mUUiyn"
+        "product_mUUiyn",
+        "product_FQmGnt"
       ],
       "custom_css": [],
       "settings": {
