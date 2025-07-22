@@ -311,7 +311,7 @@
             "text": "<p>Experience next-level comfort with every carry. <strong>3-Zone Load Distribution</strong> – <strong>30% less shoulder strain</strong>, keeping your posture natural, healthy, and pressure-free.</p>",
             "target_tab": "description",
             "margin_top": 0,
-            "margin_bottom": 0
+            "margin_bottom": 32
           }
         },
         "faq_i3m3aL": {
@@ -361,8 +361,8 @@
         "description": "",
         "full_width": false,
         "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 32,
+        "padding_bottom": 32
       }
     },
     "featured_collection_w7t6Hb": {
