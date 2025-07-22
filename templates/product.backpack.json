@@ -107,7 +107,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "<p><strong>Volume ：</strong></p><p>22L</p><p><strong>Max Laptop Carry：</strong></p><p>Fits up to 16” laptop</p><p><strong>Max Tablet Carry：</strong></p><p>Fits up to 12.9” iPad Pro</p><p><strong>Weight：</strong></p><p>1.09 kg / 2.4 lbs</p><p><strong>Dimensions：</strong></p><p>11.4'' x 7.1'' x 19.3'' (29 cm x 18 cm x 49 cm)</p>",
+            "content": "<ul><li><strong>Volume ：</strong>22L</li><li><strong>Max Laptop Carry：</strong>Fits up to 16” laptop</li><li><strong>Max Tablet Carry：</strong>Fits up to 12.9” iPad Pro</li><li><strong>Weight：</strong>1.09 kg / 2.4 lbs</li><li><strong>Dimensions：</strong>11.4'' x 7.1'' x 19.3'' (29 cm x 18 cm x 49 cm)</li></ul>",
             "page": "",
             "image_alt": "",
             "image_width": 50
