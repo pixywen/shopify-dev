@@ -185,9 +185,9 @@
           "type": "content_block",
           "settings": {
             "block_type": "heading_text",
-            "margin_top": 52,
+            "margin_top": 32,
             "margin_bottom": 32,
-            "heading": "<p>MEET ALPARGALI ALL-DAY CHEST BAG</p>",
+            "heading": "<p>MEET  ALL-DAY CHEST BAG</p>",
             "content": "<p>Your Sole Companion for Everyday Mobility.</p><p>Designed for <strong>urban denizens</strong> and <strong>curious adventurers</strong>, the All-day Chest-bag is <strong>compact </strong>yet<strong> highly functional.</strong> You can be on a bike, a train, or just out for the day, and this sleek companion keeps your essentials <strong>shielded and well-organized</strong>.<br/><br/></p>",
             "target_tab": "description"
           }
@@ -209,8 +209,8 @@
           "settings": {
             "block_type": "heading_text",
             "margin_top": 52,
-            "margin_bottom": 32,
-            "heading": "<p>SMART COMPARTMENTS FOR EFFORTLESS ACCESS</p>",
+            "margin_bottom": 52,
+            "heading": "<p>SMART COMPARTMENTS </p>",
             "content": "",
             "target_tab": "description"
           }
