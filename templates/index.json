@@ -269,7 +269,7 @@
         "description_style": "body",
         "collection": "packs",
         "products_to_show": 4,
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
@@ -285,6 +285,32 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "gg_featured_products_NVq696": {
+      "type": "gg-featured-products",
+      "blocks": {
+        "product_GmarWH": {
+          "type": "product",
+          "settings": {
+            "product": "everyday-backpack",
+            "color_name_1": "Black",
+            "color_1": "shopify://shop_images/sku.png",
+            "main_image_1": "shopify://shop_images/blackbackpack_9.jpg",
+            "model_image_1": "shopify://shop_images/blackbackpack_6.jpg",
+            "color_name_2": "Brown",
+            "color_2": "shopify://shop_images/6_b5140381-ace3-47ff-a2b2-1279d94a9979.jpg",
+            "main_image_2": "shopify://shop_images/1_4bc5e903-9c15-45aa-bcd6-5036daadfa89.jpg",
+            "color_name_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_GmarWH"
+      ],
+      "name": "GG-热卖商品",
+      "settings": {
+        "title": "Best Seller"
       }
     },
     "gg_image_banner_common_ARcgWG": {
@@ -393,6 +419,7 @@
     "gg_double_image_banner_YFmVwF",
     "gg_featured_products_McEQBe",
     "featured_collection_JeAPFD",
+    "gg_featured_products_NVq696",
     "gg_image_banner_common_ARcgWG",
     "gg_image_banner_common_XyH39W",
     "gg_image_banner_common_CHdPGU",
