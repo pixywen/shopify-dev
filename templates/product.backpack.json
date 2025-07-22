@@ -287,7 +287,7 @@
             "autoplay_speed": 5,
             "target_tab": "description",
             "margin_top": 32,
-            "margin_bottom": 32
+            "margin_bottom": 52
           }
         },
         "collage_byQmgc": {
@@ -300,7 +300,7 @@
             "subheading": "",
             "text": "<p>More than just pockets. This is intelligent organization, designed to move with you — smarter, faster, lighter.</p>",
             "target_tab": "description",
-            "margin_top": 20,
+            "margin_top": 32,
             "margin_bottom": 0
           }
         },
