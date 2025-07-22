@@ -183,6 +183,7 @@
           "settings": {
             "product": "nixcore-aerowool-nexus-t-shirt",
             "color_name_1": "Moon Veil",
+            "color_1": "shopify://shop_images/color_Moon_Veil.png",
             "main_image_1": "shopify://shop_images/Moon_Veil_01.jpg",
             "model_image_1": "shopify://shop_images/Moon_Veil_06.jpg",
             "color_name_2": "Abyss Pearl",
