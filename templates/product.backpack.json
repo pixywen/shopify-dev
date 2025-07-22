@@ -214,12 +214,24 @@
             "target_tab": "description"
           }
         },
+        "image_banner_3kkPXc": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/icon-pc.png",
+            "image_mobile": "shopify://shop_images/icon-phone.png",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
         "carousel_zcQVxA": {
           "type": "carousel",
           "settings": {
             "title": "",
             "image_1": "shopify://shop_images/alpargali_backpack_pockets_1.jpg",
-            "caption_1": "Top & Bottom Quick-Grab Pockets",
+            "caption_1": "Top Quick-Grab Pockets",
             "hover_text_1": "",
             "image_2": "shopify://shop_images/alpargali_backpack_pockets_2.jpg",
             "caption_2": "Hidden Midsection Zipper Pocket",
@@ -321,6 +333,7 @@
         "image_banner_WhzCRX",
         "content_block_JphTVU",
         "image_banner_bDhrwk",
+        "image_banner_3kkPXc",
         "carousel_zcQVxA",
         "collage_byQmgc",
         "collage_dLqxPW",
