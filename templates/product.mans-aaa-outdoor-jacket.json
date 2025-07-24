@@ -20,7 +20,7 @@
           "type": "title",
           "settings": {}
         },
-        "price": {
+        "price_8GJUk7": {
           "type": "price",
           "settings": {}
         },
@@ -127,7 +127,7 @@
       },
       "block_order": [
         "title",
-        "price",
+        "price_8GJUk7",
         "variant_picker",
         "quantity_selector",
         "buy_buttons_ex_c7QqTL",
