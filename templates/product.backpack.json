@@ -49,8 +49,9 @@
             "margin_bottom": 20
           }
         },
-        "gg_icon_text_grid_TGCbKj": {
+        "gg_icon_text_grid_CwERfK": {
           "type": "gg-icon-text-grid",
+          "disabled": true,
           "settings": {
             "icon_1": "shopify://shop_images/44b61d202bfd560e13169f625177a644.png",
             "text_1": "Clamshell Opening",
@@ -59,6 +60,21 @@
             "icon_3": "shopify://shop_images/d2b3397782b28b681af20aa604f25cdc.png",
             "text_3": "Fits up to 16” laptop",
             "text_4": ""
+          }
+        },
+        "icon_with_text_NnUwUq": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "icon_1": "none",
+            "image_1": "shopify://shop_images/44b61d202bfd560e13169f625177a644.png",
+            "heading_1": "Clamshell Opening",
+            "icon_2": "return",
+            "image_2": "shopify://shop_images/d2b3397782b28b681af20aa604f25cdc.png",
+            "heading_2": "Fits up to 16\" laptop",
+            "icon_3": "none",
+            "image_3": "shopify://shop_images/f0b92390d1215d2a8525fa5d5b6de819_66c65bc1-c385-4d66-89c0-e9c5d205ea9b.png",
+            "heading_3": "Durable Water Repellent"
           }
         },
         "divider_FHRHjn": {
@@ -144,7 +160,8 @@
         "quantity_selector",
         "buy_buttons_ex_c7QqTL",
         "divider_3i4EF3",
-        "gg_icon_text_grid_TGCbKj",
+        "gg_icon_text_grid_CwERfK",
+        "icon_with_text_NnUwUq",
         "divider_FHRHjn",
         "gg_heading_image_Lh8bEX",
         "complementary_MMXapa",
