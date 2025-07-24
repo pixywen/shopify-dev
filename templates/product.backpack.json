@@ -95,7 +95,7 @@
         "collapsible_tab_yAPYME": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Description",
+            "heading": "DESCRIPTION",
             "icon": "none",
             "content": "<ul><li>Your go-to backpack for everyday life and short travels. </li></ul><p></p><ul><li>The Alpargali All-Day Backpack is built for modern mobility—featuring over 15 smart compartments, a clamshell opening for effortless organization, and full weather protection with waterproof fabrics and zippers. </li></ul><p></p><ul><li>Designed to handle your tech, essentials, and even unexpected rain, this backpack blends minimalist aesthetics with everyday utility.</li></ul>",
             "page": "",
@@ -106,7 +106,7 @@
         "collapsible_tab_GyWCqX": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Specs",
+            "heading": "SPECS",
             "icon": "none",
             "content": "<ul><li><strong>Volume ：</strong>22L</li></ul><p></p><ul><li><strong>Max Laptop Carry：</strong>Fits up to 16” laptop</li></ul><p></p><ul><li><strong>Max Tablet Carry：</strong>Fits up to 12.9” iPad Pro</li></ul><p></p><ul><li><strong>Weight：</strong>1.09 kg / 2.4 lbs</li></ul><p></p><ul><li><strong>Dimensions：</strong>11.4'' x 7.1'' x 19.3'' (29 cm x 18 cm x 49 cm)</li></ul>",
             "page": "",
@@ -117,9 +117,20 @@
         "collapsible_tab_4bGyQa": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Design Details",
+            "heading": "DESIGN DETAILS",
             "icon": "none",
             "content": "<ul><li><strong>Clamshell Opening</strong>：180° full-open structure for suitcase-style access.</li></ul><p></p><ul><li><strong>Top Access Quick Pocket</strong>：Ideal for passport, wallet, or phone.</li></ul><p></p><ul><li><strong>Magnetic Top Flap</strong>：FIDLOCK® magnetic buckle for quick access.</li></ul><p></p><ul><li><strong>External Cord Hook™ System</strong>：Secure jackets, chest bags, or gear externally.</li></ul><p></p><ul><li><strong>Luggage Pass-Through</strong>：Easily slides onto roller bag handles.</li></ul><p></p><ul><li><strong>Ergonomic Build</strong>：Padded back panel + shoulder straps for long-wear comfort.<br/><br/></li></ul>",
+            "page": "",
+            "image_alt": "",
+            "image_width": 50
+          }
+        },
+        "collapsible_tab_Rb9c8q": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "SHIPPING & RETURNS",
+            "icon": "none",
+            "content": "",
             "page": "",
             "image_alt": "",
             "image_width": 50
@@ -139,7 +150,8 @@
         "complementary_MMXapa",
         "collapsible_tab_yAPYME",
         "collapsible_tab_GyWCqX",
-        "collapsible_tab_4bGyQa"
+        "collapsible_tab_4bGyQa",
+        "collapsible_tab_Rb9c8q"
       ],
       "settings": {
         "enable_sticky_info": true,
