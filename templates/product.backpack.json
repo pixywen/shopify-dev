@@ -188,7 +188,7 @@
             "video_url_desktop": "",
             "cover_desktop": "shopify://shop_images/1_pc.jpg",
             "video_url_mobile": "",
-            "autoplay": false,
+            "autoplay": true,
             "loop": true,
             "controls": true,
             "muted": true,
@@ -196,6 +196,22 @@
             "margin_top": 52,
             "margin_bottom": 52,
             "padding_x": 4
+          }
+        },
+        "video_gdw83U": {
+          "type": "video",
+          "settings": {
+            "title": "",
+            "video_url_desktop": "",
+            "video_url_mobile": "",
+            "autoplay": true,
+            "loop": true,
+            "controls": true,
+            "muted": true,
+            "target_tab": "video",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x": 0
           }
         },
         "image_banner_WhzCRX": {
@@ -350,6 +366,7 @@
       },
       "block_order": [
         "video_yb8JJc",
+        "video_gdw83U",
         "image_banner_WhzCRX",
         "content_block_JphTVU",
         "image_banner_bDhrwk",
