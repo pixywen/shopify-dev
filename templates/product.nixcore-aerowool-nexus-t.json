@@ -81,7 +81,7 @@
           "settings": {
             "heading": "Care",
             "icon": "none",
-            "content": "<ul><li>Hand wash cold with like colors.</li><li>Use mild or neutral detergent.</li><li>Do not bleach.</li><li>Remove promptly.</li><li>Dry flat in shade.</li><li>Cool iron if needed.</li><li>Do not wring or twist.<br/><br/></li></ul>",
+            "content": "<ul><li>Hand wash cold with like colors.</li></ul><p></p><ul><li>Use mild or neutral detergent.</li></ul><p></p><ul><li>Do not bleach.</li></ul><p></p><ul><li>Remove promptly.</li></ul><p></p><ul><li>Dry flat in shade.</li></ul><p></p><ul><li>Cool iron if needed.</li></ul><p></p><ul><li>Do not wring or twist.<br/><br/></li></ul>",
             "page": "",
             "image_alt": "",
             "image_width": 50
