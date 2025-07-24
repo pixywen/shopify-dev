@@ -130,7 +130,7 @@
           "settings": {
             "heading": "SHIPPING & RETURNS",
             "icon": "none",
-            "content": "",
+            "content": "<ul><li><strong>Free Shipping</strong> on orders over <strong>$169</strong><br/></li><li><strong>30-Day Returns & Exchanges</strong> — try it on, no worries<br/></li><li>Fast & trackable delivery <br/></li><li>Easy return process via our support team<br/></li></ul><p>Need help? <a>Contact us</a></p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
