@@ -54,8 +54,8 @@
           "settings": {
             "icon_1": "shopify://shop_images/product-block-001-001.svg",
             "text_1": "Buy 2,Ship Free",
-            "icon_2": "shopify://shop_images/product-block-001-002.svg",
-            "text_2": "Payment Security",
+            "icon_2": "shopify://shop_images/icon-index-email-bottom-3.svg",
+            "text_2": "30-Day Return & Exchanges",
             "icon_3": "shopify://shop_images/product-block-001-003.svg",
             "text_3": "Eco-Friendly Packaging",
             "text_4": ""
@@ -78,6 +78,7 @@
         },
         "complementary_MMXapa": {
           "type": "complementary",
+          "disabled": true,
           "settings": {
             "block_heading": "Pairs Great With:",
             "make_collapsible_row": false,
