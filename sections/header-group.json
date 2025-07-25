@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "🚗 Summer New Arrivals: Free Shipping on 2 Items + 10% Off",
+            "text": "🚗 Summer New Arrivals: Free Shipping on 2 Items + 15% Off",
             "link": "shopify://collections/summer-new-arrivals"
           }
         }
@@ -53,7 +53,7 @@
         "menu_image_KYFgwt": {
           "type": "menu_image",
           "settings": {
-            "menu_title": "Packs",
+            "menu_title": "PACKS",
             "menu_image": "shopify://shop_images/2_038da1ab-4982-4276-8d07-e84a659b9f98.jpg",
             "menu_link": "shopify://products/everyday-backpack"
           }
