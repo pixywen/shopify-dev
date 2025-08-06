@@ -73,7 +73,6 @@
             "image_2": "shopify://shop_images/d2b3397782b28b681af20aa604f25cdc.png",
             "heading_2": "Fits up to 16\" laptop",
             "icon_3": "none",
-            "image_3": "shopify://shop_images/f0b92390d1215d2a8525fa5d5b6de819_66c65bc1-c385-4d66-89c0-e9c5d205ea9b.png",
             "heading_3": "Durable Water Repellent"
           }
         },
@@ -182,8 +181,8 @@
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 12,
+        "padding_top": 24,
+        "padding_bottom": 16,
         "size_guide_image": "shopify://shop_images/T_3.jpg"
       }
     },
@@ -416,6 +415,7 @@
     },
     "featured_collection_w7t6Hb": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "title": "You May Also Like",
