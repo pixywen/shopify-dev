@@ -383,7 +383,7 @@
             "margin_top": 32,
             "margin_bottom": 32,
             "gap": 0,
-            "faq_content": "<title>1. What Is Waffle Knit Fabric?</title>\n<p>Waffle knit—also known as thermal or honeycomb knit—is a textured fabric characterized by a distinctive square or grid-like weave. This 3D texture not only gives the fabric a unique appearance but also enhances breathability, moisture-wicking, and structure retention.</p>\n<title>2. Why Is Waffle Knit Perfect for Summer?</title>\n<p>Waffle knit fabric features a unique honeycomb texture that increases airflow, making it breathable and sweat-wicking—perfect for staying cool in summer.</p>\n<title>3. Is waffle knit fabric soft against the skin?</title>\n<p>Absolutely. The small air pockets created by the waffle weave provide a gentle cushion, making it soft, cozy, and comfortable for all-day wear.</p>",
+            "faq_content": "<title>What is the capacity of the Alpargali All‑Day backpack?</title>\n<p>The backpack has a total volume of <strong>22L</strong>, making it ideal for everyday use, commuting, and short trips.</p>\n\n<title>How much does the backpack weigh?</title>\n<p><strong>All‑Day Backpack:</strong> 1.09 kg<br></p>\n\n<title>Can the All‑Day backpack fit under the seat on a plane?</title>\n<p>Absolutely. It meets personal item size requirements for approximately <strong>95% of airlines</strong>, making it perfect for travel.</p>\n\n<title>Does the top quick-access pocket have internal organization?</title>\n<p>The top pocket is a simple, open compartment designed for speed and ease of access. It now includes a <strong>built-in key holder strap</strong> for added functionality.</p>\n\n<title>Does the bottom quick-access pocket have dividers?</title>\n<p>No, the bottom pocket is an <strong>open and spacious compartment</strong> ideal for quick storage on the go.</p>\n\n<title>What material is used for the inner lining?</title>\n<p>The lining is made from <strong>durable polyester</strong> for long-lasting performance and resistance to wear and tear.</p>\n\n<title>Can the expandable side pockets fit a 32oz bottle?</title>\n<p>Yes, the side pockets are designed to accommodate most <strong>32oz water bottles</strong>, unless the diameter is unusually large.</p>\n\n<title>Is there a luggage pass-through strap?</title>\n<p>Yes, there is a <strong>reinforced luggage strap</strong> on the back panel, allowing you to secure the backpack to your suitcase handle for easy airport navigation.</p>\n\n<title>Is there a dedicated AirTag holder?</title>\n<p>Yes, we've added a <strong>hidden AirTag pocket</strong> to help you keep track of your bag securely.</p>\n\n<title>Have there been any updates to the side compression straps?</title>\n<p>Yes, the <strong>side compression straps have been extended by 4cm</strong> to better accommodate bulkier loads and provide improved versatility.</p>\n\n<title>Does the backpack include a key holder or leash?</title>\n<p>Yes! The <strong>top quick-access pocket includes a built-in key strap</strong>, so your keys are always within reach and secure.</p>",
             "target_tab": "faq"
           }
         },
@@ -410,7 +410,7 @@
         "show_description": true,
         "show_video": true,
         "show_reviews": true,
-        "show_faq": false
+        "show_faq": true
       }
     },
     "featured_collection_w7t6Hb": {
