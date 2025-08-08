@@ -1,0 +1,47 @@
+{% comment %}
+  Section: Product Bundle
+  Description: Fixed bundle of multiple products (e.g., backpack + sling bag)
+{% endcomment %}
+
+<div class="product-bundle" style="border:1px solid #ddd; padding: 30px; border-radius: 12px; max-width: 960px; margin: 0 auto; font-family: sans-serif;">
+
+  <h2 style="font-size: 28px; margin-bottom: 20px;">背包 + 胸包组合</h2>
+  <p style="font-size: 16px; color: #666;">打包你的日常出行装备，一次购买享受包邮优惠！</p>
+
+  <div class="bundle-products" style="display: flex; flex-wrap: wrap; gap: 30px; margin-top: 30px;">
+    
+    {% assign backpack = all_products['backpack-all-day'] %}
+    {% assign slingbag = all_products['slingbag-mini'] %}
+
+    <!-- Backpack -->
+    <div style="flex: 1 1 45%;">
+      <a href="{{ backpack.url }}">
+        <img src="{{ backpack.featured_image | img_url: 'medium' }}" alt="{{ backpack.title }}" style="width: 100%; border-radius: 8px;">
+      </a>
+      <h3 style="font-size: 18px; margin-top: 10px;">{{ backpack.title }}</h3>
+      <p style="color: #888;">{{ backpack.price | money }}</p>
+    </div>
+
+    <!-- Sling Bag -->
+    <div style="flex: 1 1 45%;">
+      <a href="{{ slingbag.url }}">
+        <img src="{{ slingbag.featured_image | img_url: 'medium' }}" alt="{{ slingbag.title }}" style="width: 100%; border-radius: 8px;">
+      </a>
+      <h3 style="font-size: 18px; margin-top: 10px;">{{ slingbag.title }}</h3>
+      <p style="color: #888;">{{ slingbag.price | money }}</p>
+    </div>
+
+  </div>
+
+  <!-- Add to Cart -->
+  <form method="post" action="/cart/add" enctype="multipart/form-data" style="margin-top: 40px; text-align: center;">
+    <input type="hidden" name="items[0][id]" value="{{ backpack.variants.first.id }}">
+    <input type="hidden" name="items[0][quantity]" value="1">
+    <input type="hidden" name="items[1][id]" value="{{ slingbag.variants.first.id }}">
+    <input type="hidden" name="items[1][quantity]" value="1">
+    <button type="submit" style="padding: 15px 30px; font-size: 18px; background-color: black; color: white; border: none; border-radius: 8px; cursor: pointer;">
+      加入组合到购物车（包邮）
+    </button>
+  </form>
+
+</div>
