@@ -52,8 +52,7 @@
         "gg_icon_text_grid_CwERfK": {
           "type": "gg-icon-text-grid",
           "settings": {
-            "icon_1": "shopify://shop_images/44b61d202bfd560e13169f625177a644.png",
-            "text_1": "Clamshell Opening",
+            "text_1": "",
             "icon_2": "shopify://shop_images/f0b92390d1215d2a8525fa5d5b6de819.png",
             "text_2": "Durable Water Repellent",
             "icon_3": "shopify://shop_images/d2b3397782b28b681af20aa604f25cdc.png",
@@ -145,7 +144,7 @@
           "settings": {
             "heading": "SHIPPING & RETURNS",
             "icon": "none",
-            "content": "<ul><li><strong>Free Shipping</strong> on orders over <strong>$169</strong></li></ul><p></p><ul><li><strong>30-Day</strong> Returns & Exchanges<strong> </strong></li></ul><p></p><ul><li>Fast & trackable delivery </li></ul><p></p><ul><li>Easy return process via our support team</li></ul><p></p><p>Need help? <a>Contact us</a></p>",
+            "content": "<ul><li><strong>Free Shipping</strong> </li></ul><p></p><ul><li><strong>30-Day</strong> Returns & Exchanges<strong> </strong></li></ul><p></p><ul><li>Fast & trackable delivery </li></ul><p></p><ul><li>Easy return process via our support team</li></ul><p></p><p>Need help? <a>Contact us</a></p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
