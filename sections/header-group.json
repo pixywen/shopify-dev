@@ -17,13 +17,21 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "🚗 Summer New Arrivals: Free Shipping on 2 Items + 15% Off",
+            "text": "☀️ Summer Sale — Up to 30% Off + Free Shipping on 2 Items",
             "link": "shopify://collections/sale"
+          }
+        },
+        "announcement_peTVYX": {
+          "type": "announcement",
+          "settings": {
+            "text": "🎒 Outdoor Backpacks New Arrival",
+            "link": "shopify://products/everyday-backpack"
           }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_peTVYX"
       ],
       "settings": {
         "color_scheme": "scheme-1",
