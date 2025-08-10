@@ -173,6 +173,81 @@
       ],
       "settings": {}
     },
+    "gg_featured_products_UPNhBN": {
+      "type": "gg-featured-products",
+      "blocks": {
+        "product_ikrFYd": {
+          "type": "product",
+          "settings": {
+            "product": "mens-all-weather-outdoor-jacket",
+            "color_name_1": "Black",
+            "color_1": "shopify://shop_images/black_01.png",
+            "main_image_1": "shopify://shop_images/product-shell-black-01.jpg",
+            "model_image_1": "shopify://shop_images/05_3x_381259f8-a074-4dce-b722-17d31adaf151.png",
+            "color_name_2": "Blue",
+            "color_2": "shopify://shop_images/blue_01.png",
+            "main_image_2": "shopify://shop_images/product-shell-blue-04.jpg",
+            "model_image_2": "shopify://shop_images/blue04.png",
+            "color_name_3": ""
+          }
+        },
+        "product_EtHtt4": {
+          "type": "product",
+          "settings": {
+            "product": "graphene-lightweight-jacket",
+            "color_name_1": "Black",
+            "color_1": "shopify://shop_images/color_0d038829-ed7f-4dbb-988a-d39926844447.png",
+            "main_image_1": "shopify://shop_images/product-aa-1.png",
+            "model_image_1": "shopify://shop_images/product-aa-3.png",
+            "color_name_2": "Sand",
+            "color_2": "shopify://shop_images/color_a51c3b5d-1b64-4b5d-aa0a-507f31549ebc.png",
+            "main_image_2": "shopify://shop_images/product-aa-s-3.png",
+            "model_image_2": "shopify://shop_images/product-aa-s-5.png",
+            "color_name_3": ""
+          }
+        },
+        "product_NcBp6N": {
+          "type": "product",
+          "settings": {
+            "product": "graphene-lightweight-jacket",
+            "color_name_1": "Black",
+            "color_1": "shopify://shop_images/color.png",
+            "main_image_1": "shopify://shop_images/product-midlayers-black-01.png",
+            "model_image_1": "shopify://shop_images/product-midlayers-black-03.png",
+            "color_name_2": "Sand",
+            "color_2": "shopify://shop_images/color_4e214455-21ab-41a5-abbb-b07b0860f7e5.png",
+            "main_image_2": "shopify://shop_images/product-midlayers-sandstorm-04.png",
+            "model_image_2": "shopify://shop_images/3_5ede7656-43e8-44be-a699-ed1019929f6f.jpg",
+            "color_name_3": ""
+          }
+        },
+        "product_HjLb7h": {
+          "type": "product",
+          "settings": {
+            "product": "graphene-vest",
+            "color_name_1": "Black",
+            "color_1": "shopify://shop_images/color_08aba2e8-a248-4467-a044-3daa0a4deabb.png",
+            "main_image_1": "shopify://shop_images/product-vests-black-04.png",
+            "model_image_1": "shopify://shop_images/product-vests-black-02.png",
+            "color_name_2": "Sand",
+            "color_2": "shopify://shop_images/color_5ad3148b-ff64-46d4-a8a6-89f5146f9a9d.png",
+            "main_image_2": "shopify://shop_images/product-vests-sandstorm-04.png",
+            "model_image_2": "shopify://shop_images/product-vests-sandstorm-03.png",
+            "color_name_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_ikrFYd",
+        "product_EtHtt4",
+        "product_NcBp6N",
+        "product_HjLb7h"
+      ],
+      "name": "GG-热卖商品",
+      "settings": {
+        "title": "Best Seller"
+      }
+    },
     "gg_featured_products_McEQBe": {
       "type": "gg-featured-products",
       "blocks": {
@@ -254,7 +329,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "title": "Summer New Arrivals"
+        "title": "Summer Sale"
       }
     },
     "gg_featured_products_NVq696": {
@@ -415,6 +490,7 @@
     "gg_scroll_image_zqhRNf",
     "gg_double_image_banner_mobile_YXnVpE",
     "gg_double_image_banner_YFmVwF",
+    "gg_featured_products_UPNhBN",
     "gg_featured_products_McEQBe",
     "gg_featured_products_NVq696",
     "gg_image_banner_common_ARcgWG",
