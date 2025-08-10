@@ -81,73 +81,16 @@
         "section_css": ""
       }
     },
-    "slideshow_WTEqDr": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_b3rjrB": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/2_038da1ab-4982-4276-8d07-e84a659b9f98.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_VJigNN": {
-          "type": "slide",
-          "settings": {
-            "heading": "Image slide",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "slide_b3rjrB",
-        "slide_VJigNN"
-      ],
-      "name": "t:sections.slideshow.presets.name",
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "medium",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
     "gg_image_banner_V4rbFP": {
       "type": "gg-image-banner",
       "settings": {
-        "small_heading_above": "🌍 Users from 61 countries and regions, 984 cities worldwide.",
-        "heading": "New Season, New Essentials.",
-        "small_heading_below": "Minimal. Functional. Effortlessly cool. Discover our latest summer-ready tees now.",
-        "button_label": "just in",
-        "button_link": "shopify://collections/summer-new-arrivals",
-        "image": "shopify://shop_images/vedio-pc.jpg",
-        "video": "shopify://files/videos/首页banner视频 -新品.mov",
-        "mobile_image": "shopify://shop_images/bedio-750x1104.jpg",
-        "mobile_video": "shopify://files/videos/首页banner视频-新品手机 1.mov",
+        "small_heading_above": "URBAN PERFORMANCE GEAR",
+        "heading": "From City Streets to Mountain Peaks",
+        "small_heading_below": "The Everyday Backpack –  Waterproof, versatile, and designed to move with you.",
+        "button_label": "Shop Now",
+        "button_link": "shopify://products/everyday-backpack",
+        "image": "shopify://shop_images/2_038da1ab-4982-4276-8d07-e84a659b9f98.jpg",
+        "mobile_image": "shopify://shop_images/08b99f4b3b711fe03d5ed359784155a6.jpg",
         "description": ""
       }
     },
@@ -468,7 +411,6 @@
   },
   "order": [
     "common_media_BrHjtL",
-    "slideshow_WTEqDr",
     "gg_image_banner_V4rbFP",
     "gg_scroll_image_zqhRNf",
     "gg_double_image_banner_mobile_YXnVpE",
