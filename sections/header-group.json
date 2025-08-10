@@ -18,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "text": "🚗 Summer New Arrivals: Free Shipping on 2 Items + 15% Off",
-            "link": "shopify://collections/summer-new-arrivals"
+            "link": "shopify://collections/sale"
           }
         }
       },
@@ -47,7 +47,7 @@
           "settings": {
             "menu_title": "CLOTHING",
             "menu_image": "shopify://shop_images/banner_fcadaa3a-15f4-4878-a9bb-11958af9db5c.jpg",
-            "menu_link": "shopify://collections/summer-new-arrivals"
+            "menu_link": "shopify://collections/sale"
           }
         },
         "menu_image_KYFgwt": {
