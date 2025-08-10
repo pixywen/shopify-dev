@@ -54,8 +54,8 @@
           "type": "menu_image",
           "settings": {
             "menu_title": "CLOTHING",
-            "menu_image": "shopify://shop_images/banner_fcadaa3a-15f4-4878-a9bb-11958af9db5c.jpg",
-            "menu_link": "shopify://collections/sale"
+            "menu_image": "shopify://shop_images/banner.jpg",
+            "menu_link": "shopify://collections/coats-jackets"
           }
         },
         "menu_image_KYFgwt": {
