@@ -23,13 +23,13 @@
         "color_scheme": "scheme-1"
       }
     },
-    "gg_image_banner_common_DJrP9H": {
+    "gg_image_banner_common_HdgxgY": {
       "type": "gg-image-banner-common",
       "name": "GG-通用视频横幅",
       "settings": {
-        "small_heading_above": "Alpargali",
-        "heading": "All-Day Pack",
-        "small_heading_below": "Your Go-To Pack for Everyday Living",
+        "small_heading_above": "",
+        "heading": "ALL-DAY PACKS",
+        "small_heading_below": "Your go-to pack for city commutes and wild escapes.",
         "button_label": "",
         "button_link": "",
         "image": "shopify://shop_images/all_day_pack_banner.jpg",
@@ -61,7 +61,7 @@
   "order": [
     "gg_breadcrumb_nBKrrq",
     "banner",
-    "gg_image_banner_common_DJrP9H",
+    "gg_image_banner_common_HdgxgY",
     "product-grid"
   ]
 }
