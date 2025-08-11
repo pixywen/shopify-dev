@@ -80,6 +80,7 @@
         "menu_image_KYFgwt",
         "menu_image_68jr6X"
       ],
+      "disabled": true,
       "settings": {
         "logo_position": "middle-left",
         "menu": "aurora-main-menu",
