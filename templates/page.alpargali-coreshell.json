@@ -1808,7 +1808,6 @@
     },
     "custom_liquid_YjLJdw": {
       "type": "custom-liquid",
-      "disabled": true,
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
         "custom_liquid": "<style>\n.announcement-bar-section,\n.shopify-section-group-header-group\n{\ndisplay:none!important;\n}\n</style>",
