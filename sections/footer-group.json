@@ -16,6 +16,7 @@
       "blocks": {
         "heading_FYW7hw": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Subscribe to our emails",
             "heading_size": "h1"
@@ -23,12 +24,14 @@
         },
         "paragraph_XDXcBQ": {
           "type": "paragraph",
+          "disabled": true,
           "settings": {
             "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
           }
         },
         "email_form_md3BBF": {
           "type": "email_form",
+          "disabled": true,
           "settings": {}
         }
       },
@@ -37,7 +40,6 @@
         "paragraph_XDXcBQ",
         "email_form_md3BBF"
       ],
-      "disabled": true,
       "name": "GG-电子邮件注册信息",
       "settings": {
         "color_scheme": "",
