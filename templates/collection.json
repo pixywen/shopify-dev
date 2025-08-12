@@ -11,12 +11,10 @@
   "sections": {
     "gg_breadcrumb_nBKrrq": {
       "type": "gg-breadcrumb",
-      "disabled": true,
       "settings": {}
     },
     "banner": {
       "type": "main-collection-banner",
-      "disabled": true,
       "settings": {
         "show_collection_description": false,
         "show_collection_image": false,
