@@ -23,8 +23,58 @@
         "color_scheme": "scheme-1"
       }
     },
+    "image_banner_JUG97D": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_GEaxmF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Pack Smarter, Move Freely",
+            "heading_size": "h1"
+          }
+        },
+        "text_hMnKzt": {
+          "type": "text",
+          "settings": {
+            "text": "Save 15% When You Bundle",
+            "text_style": "body"
+          }
+        },
+        "buttons_87HWcY": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop the Bundle",
+            "button_link_1": "shopify://collections/alpargali-all-day-pack",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_GEaxmF",
+        "text_hMnKzt",
+        "buttons_87HWcY"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/black-backpack-_9.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "gg_image_banner_common_HdgxgY": {
       "type": "gg-image-banner-common",
+      "disabled": true,
       "name": "GG-通用视频横幅",
       "settings": {
         "small_heading_above": "",
@@ -61,6 +111,7 @@
   "order": [
     "gg_breadcrumb_nBKrrq",
     "banner",
+    "image_banner_JUG97D",
     "gg_image_banner_common_HdgxgY",
     "product-grid"
   ]
