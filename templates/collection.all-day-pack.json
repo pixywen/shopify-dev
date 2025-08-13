@@ -57,6 +57,7 @@
         "text_hMnKzt",
         "buttons_87HWcY"
       ],
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/black-backpack-_9.jpg",
