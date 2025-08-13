@@ -42,6 +42,12 @@
             "show_gift_card_recipient": true
           }
         },
+        "buy_buttons_nHxztL": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
         "divider_3i4EF3": {
           "type": "divider",
           "settings": {
@@ -157,6 +163,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons_ex_c7QqTL",
+        "buy_buttons_nHxztL",
         "divider_3i4EF3",
         "gg_icon_text_grid_CwERfK",
         "icon_with_text_NnUwUq",
