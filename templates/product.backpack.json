@@ -52,7 +52,7 @@
         "icon_with_text_XLgjY7": {
           "type": "icon-with-text",
           "settings": {
-            "layout": "vertical",
+            "layout": "horizontal",
             "icon_1": "truck",
             "heading_1": "Free Shipping",
             "icon_2": "return",
