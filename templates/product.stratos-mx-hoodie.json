@@ -28,7 +28,7 @@
           "type": "variant_picker",
           "settings": {
             "picker_type": "button",
-            "swatch_shape": "square"
+            "swatch_shape": "circle"
           }
         },
         "quantity_selector": {
@@ -95,7 +95,7 @@
           "settings": {
             "heading": "Details",
             "icon": "none",
-            "content": "<p>Designed for urban explorers and globetrotters alike, Alpargali is the era-defining jacket that combines style and functionality. With <strong>14 waterproof pockets </strong>and <strong>15k breathability</strong>, it seamlessly transitions between <strong>everyday wear</strong>, travel, business meetings, leisure rides, and outdoor adventures. One jacket for every occasion.</p>",
+            "content": "<p>Infrared-Enhanced Comfort for All-Day Wear</p><p>This sweatshirt features a unique textured exterior for enhanced durability and wind resistance. The soft, skin-friendly fleece interior is combined with far-infrared heating technology for warmth, while moisture-wicking and quick-drying properties keep you comfortable and dry. Anti-static technology minimizes winter static, making it ideal for both daily wear and outdoor activities.</p>",
             "page": "",
             "image_alt": "",
             "image_width": 100
@@ -106,7 +106,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "<p>Fabric: 100% Nylon 70D, 2 layer</p><p>Breathability: <strong>10K</strong></p><p>Waterproof: <strong>10K</strong></p><p>Pockets: <strong>14</strong></p>",
+            "content": "<p><strong>Fabric Composition</strong></p><ul><li><strong>Body</strong>: 98% Polyester, 2% Spandex</li><li><strong>Rib Knit Collar</strong>: 95% Cotton, 5% Spandex</li></ul><p><strong>Design Features</strong></p><ul><li>One Large Capacity Pocket </li></ul>",
             "page": "",
             "image_alt": "",
             "image_width": 100
@@ -117,9 +117,8 @@
           "settings": {
             "heading": "Care",
             "icon": "none",
-            "content": "<p>Clean regularly, please use a mild, neutral detergent that does not contain fabric softener.</p><p>- Hand wash maximum temperature <strong>40°C</strong><br/>- Do not bleach<br/>- Do not tumble dry<br/>- Do not iron<br/>- Do not dry clean<br/>- Line dry in shade</p><p><strong>Usage and Cleaning Frequency:</strong></p><p>- Intensive Use: Deep clean after 10 uses.</p><p>- Low-Intensity Use: Deep clean every 1-2 months.</p>",
+            "content": "<ul><li>Do Not Bleach.</li><li>Wash Gently.</li><li>Avoid Direct Contact.</li><li>Between The Iron And Fabric.</li><li>Lay Flat To Dry.</li><li>Do Not Dry Clean.<br/><br/></li></ul>",
             "page": "",
-            "image": "shopify://shop_images/aao-info-icon-01.png",
             "image_alt": "",
             "image_width": 50
           }
@@ -465,7 +464,10 @@
         },
         "judge_me_reviews_review_widget_JctMNU": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
         }
       },
       "block_order": [
