@@ -49,21 +49,8 @@
             "margin_bottom": 20
           }
         },
-        "icon_with_text_XLgjY7": {
-          "type": "icon-with-text",
-          "settings": {
-            "layout": "horizontal",
-            "icon_1": "truck",
-            "heading_1": "Free Shipping",
-            "icon_2": "return",
-            "heading_2": "<strong>Easy Returns & Exchanges</strong>",
-            "icon_3": "none",
-            "heading_3": ""
-          }
-        },
         "gg_icon_text_grid_CwERfK": {
           "type": "gg-icon-text-grid",
-          "disabled": true,
           "settings": {
             "text_1": "",
             "icon_2": "shopify://shop_images/icon-index-email-bottom-1.svg",
@@ -71,21 +58,6 @@
             "icon_3": "shopify://shop_images/d2b3397782b28b681af20aa604f25cdc.png",
             "text_3": "Fits up to 16” laptop",
             "text_4": ""
-          }
-        },
-        "icon_with_text_NnUwUq": {
-          "type": "icon-with-text",
-          "disabled": true,
-          "settings": {
-            "layout": "vertical",
-            "icon_1": "none",
-            "image_1": "shopify://shop_images/44b61d202bfd560e13169f625177a644.png",
-            "heading_1": "Clamshell Opening",
-            "icon_2": "return",
-            "image_2": "shopify://shop_images/d2b3397782b28b681af20aa604f25cdc.png",
-            "heading_2": "Fits up to 16\" laptop",
-            "icon_3": "none",
-            "heading_3": "Durable Water Repellent"
           }
         },
         "divider_FHRHjn": {
@@ -140,7 +112,6 @@
         },
         "collapsible_tab_Rb9c8q": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
             "heading": "SHIPPING & RETURNS",
             "icon": "none",
@@ -161,10 +132,10 @@
           "type": "complementary",
           "settings": {
             "block_heading": "Pairs Great With:",
-            "make_collapsible_row": false,
+            "make_collapsible_row": true,
             "icon": "none",
-            "product_list_limit": 1,
-            "products_per_page": 1,
+            "product_list_limit": 5,
+            "products_per_page": 2,
             "pagination_style": "dots",
             "image_ratio": "square",
             "enable_quick_add": true
@@ -178,9 +149,7 @@
         "quantity_selector",
         "buy_buttons_ex_c7QqTL",
         "divider_3i4EF3",
-        "icon_with_text_XLgjY7",
         "gg_icon_text_grid_CwERfK",
-        "icon_with_text_NnUwUq",
         "divider_FHRHjn",
         "gg_heading_image_Lh8bEX",
         "collapsible_tab_yAPYME",
