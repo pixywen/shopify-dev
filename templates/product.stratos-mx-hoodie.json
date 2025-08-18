@@ -16,6 +16,13 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "text_qQN7nj": {
+          "type": "text",
+          "settings": {
+            "text": "Urbaneon Stratos MX",
+            "text_style": "subtitle"
+          }
+        },
         "title": {
           "type": "title",
           "settings": {}
@@ -125,6 +132,7 @@
         }
       },
       "block_order": [
+        "text_qQN7nj",
         "title",
         "price_8GJUk7",
         "variant_picker",
