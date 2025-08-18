@@ -189,18 +189,6 @@
             "target_tab": "description"
           }
         },
-        "image_banner_MYRGBE": {
-          "type": "image_banner",
-          "settings": {
-            "image_desktop": "shopify://shop_images/aao-desc-001.png",
-            "image_mobile": "shopify://shop_images/aao-desc-001-m.png",
-            "margin_top": 32,
-            "margin_bottom": 32,
-            "padding_x_desktop": 0,
-            "padding_x_mobile": 0,
-            "target_tab": "description"
-          }
-        },
         "image_banner_DDQQKc": {
           "type": "image_banner",
           "settings": {
@@ -472,7 +460,6 @@
       },
       "block_order": [
         "content_block_MGACxw",
-        "image_banner_MYRGBE",
         "image_banner_DDQQKc",
         "image_banner_kkiFwQ",
         "content_block_7M4XLL",
@@ -492,7 +479,7 @@
       ],
       "settings": {
         "show_description": true,
-        "show_video": true,
+        "show_video": false,
         "show_reviews": true,
         "show_faq": true
       }
