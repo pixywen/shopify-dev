@@ -203,10 +203,10 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/1-Model_wearing_Urbaneon_Stratos_MX_Hoody_in_dark_grey_relaxed_outdoor_fit..jpg",
-            "heading": "Relaxed, Layer-Friendly Fit",
+            "image": "shopify://shop_images/0002s_0000_5.jpg",
+            "heading": "Relaxed Fit",
             "subheading": "",
-            "text": "<p>Slightly loose cut for easy layering, outdoor activities, or everyday comfort—designed to move with you.<br/><br/></p>",
+            "text": "<p>Slightly loose silhouette ensures ultimate comfort and a modern, versatile look.</p><p></p>",
             "target_tab": "description",
             "margin_top": 32,
             "margin_bottom": 36
@@ -217,10 +217,10 @@
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/6-Close-up_of_soft_brushed_fleece_lining_in_Urbaneon_Stratos_MX_Hoody_skin-friendly_warmth..jpg",
-            "heading": "Skin-friendly Fabric with Far-Infrared Technology",
+            "image": "shopify://shop_images/0002s_0004_1.jpg",
+            "heading": "All-Day Comfort & Performance",
             "subheading": "",
-            "text": "<p>Soft, plush fleece feels gentle on the skin and features far-infrared thermal technology, keeping you warm while wicking moisture for all-day dryness during outdoor activities.<br/><br/></p>",
+            "text": "<p>Crafted for softness, warmth, and lasting durability, these sweatpants move with you for effortless comfort and easy care.</p><p></p>",
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 32
@@ -231,10 +231,10 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/5-Model_showing_soft_fleece_lining_of_Urbaneon_Stratos_MX_Hoody_infrared_thermal_comfort..jpg",
-            "heading": "Durable & Wind-Resistant",
+            "image": "shopify://shop_images/0000s_0007_2.jpg",
+            "heading": "Natural Merino Warmth",
             "subheading": "",
-            "text": "<p>Unique textured fabric resists wear and wind, and stays smooth without pilling.<br/><br/></p>",
+            "text": "<p>Infused with merino wool to keep you cozy while its natural breathability prevents overheating.<br/><br/></p>",
             "target_tab": "description",
             "margin_top": 32,
             "margin_bottom": 32
@@ -245,10 +245,10 @@
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/2-Close-up_of_ribbed_cuff_design_on_Urbaneon_Stratos_MX_Hoody_flexible_and_durable..jpg",
-            "heading": "Flexible Rib-Knit Panels",
+            "image": "shopify://shop_images/0002s_0002_3.jpg",
+            "heading": "Stretch Without Limits",
             "subheading": "",
-            "text": "<p>Cuffs and hem feature rib-knit construction for natural stretch and unrestricted movement.<br/><br/></p>",
+            "text": "<p>Sorona® bio-based fibers deliver excellent stretch and recovery, perfect for daily wear, workouts, or active lifestyles—no restrictions, just freedom.<br/><br/></p>",
             "target_tab": "description",
             "margin_top": 32,
             "margin_bottom": 32
@@ -259,24 +259,10 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/3-Thumbhole_cuff_detail_on_Urbaneon_Stratos_MX_Hoody_for_added_warmth_and_comfort..jpg",
-            "heading": "Thumbhole Cuffs",
+            "image": "shopify://shop_images/0002s_0001_4.jpg",
+            "heading": "Smart Design Details",
             "subheading": "",
-            "text": "<p>Keeps sleeves in place while adding extra warmth for your hands, so you can move freely without compromise.<br/><br/></p>",
-            "target_tab": "description",
-            "margin_top": 32,
-            "margin_bottom": 32
-          }
-        },
-        "collage_qNUXWP": {
-          "type": "collage",
-          "settings": {
-            "desktop_layout": "image_right",
-            "mobile_layout": "image_top",
-            "image": "shopify://shop_images/4-Textured_fabric_close-up_of_Urbaneon_Stratos_MX_Hoody_wind_resistant_and_durable..jpg",
-            "heading": "Anti-Static Performance",
-            "subheading": "",
-            "text": "<p>No more lint or dust clinging—stay clean and effortless even in dry conditions.<br/></p>",
+            "text": "<p>Elastic cuffs block wind and lock in warmth, letting you move freely with style.<br/><br/></p>",
             "target_tab": "description",
             "margin_top": 32,
             "margin_bottom": 32
@@ -343,7 +329,6 @@
         "collage_qJBxVE",
         "collage_64tWmQ",
         "collage_VCtB6U",
-        "collage_qNUXWP",
         "video_a7qDtK",
         "video_VL79Dy",
         "faq_yqgwMK",
