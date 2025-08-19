@@ -194,8 +194,8 @@
             "block_type": "heading_text",
             "margin_top": 40,
             "margin_bottom": 60,
-            "heading": "<p>All-Day Comfort Jogger Pant</p>",
-            "content": "<p>Crafted with premium merino wool and Sorona® bio-based stretch fibers, these sweatpants deliver unmatched softness, warmth, and durability with a perfect stretch. Thoughtfully designed with elasticized waistband and cuffs, they move with you for effortless comfort, easy wear, and low-maintenance care—all while supporting a sustainable, eco-conscious lifestyle.</p>",
+            "heading": "<p>All-Day Comfort Base Layer</p>",
+            "content": "<p>The <strong>Alpargali LITHERMO® Base Layer</strong> is designed for versatility and comfort through the colder months. Crafted with a premium blend of <strong>Lyocell, cotton, polyester, and elastane</strong>, it combines <strong>softness, stretch, and durability</strong>. The fabric is brushed on the inside for a <strong>cozy touch</strong>, while <strong>Japan-imported LITHERMO® fibers</strong> trap heat to keep you warm.</p><p>Wear it solo on mild days, or layer it under jackets when temperatures drop. The <strong>ribbed neckline</strong> ensures a snug fit without sagging or tightness, while the <strong>hidden zip pocket</strong> discreetly stores your essentials. Its <strong>tailored fit</strong> gives a modern silhouette, making it a perfect base for everyday wear.</p>",
             "target_tab": "description"
           }
         },
@@ -204,10 +204,10 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/0002s_0000_5.jpg",
-            "heading": "Relaxed Fit",
+            "image": "shopify://shop_images/0001s_0004_1.jpg",
+            "heading": "LITHERMO® Warmth",
             "subheading": "",
-            "text": "<p>Slightly loose silhouette ensures ultimate comfort and a modern, versatile look.</p><p></p>",
+            "text": "<p>Soft brushed fabric with <strong>LITHERMO®</strong> technology traps heat for all-day comfort. Wear it alone on cool days or layer under jackets for versatile warmth.<br/><br/></p>",
             "target_tab": "description",
             "margin_top": 32,
             "margin_bottom": 36
@@ -218,10 +218,10 @@
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/0002s_0004_1.jpg",
-            "heading": "All-Day Comfort & Performance",
+            "image": "shopify://shop_images/0001s_0003_2.jpg",
+            "heading": "Freedom of Movement",
             "subheading": "",
-            "text": "<p>Crafted for softness, warmth, and lasting durability, these sweatpants move with you for effortless comfort and easy care.</p><p></p>",
+            "text": "<p>Added elastane ensures perfect stretch and recovery—move freely without restriction.<br/><br/></p>",
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 32
@@ -232,10 +232,10 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/0000s_0007_2.jpg",
-            "heading": "Natural Merino Warmth",
+            "image": "shopify://shop_images/0001s_0001_4.jpg",
+            "heading": "Smart Storage",
             "subheading": "",
-            "text": "<p>Infused with merino wool to keep you cozy while its natural breathability prevents overheating.<br/><br/></p>",
+            "text": "<p>Right-side hidden zipper pocket keeps essentials secure and easily accessible.<br/><br/></p>",
             "target_tab": "description",
             "margin_top": 32,
             "margin_bottom": 32
@@ -246,10 +246,10 @@
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/0002s_0002_3.jpg",
-            "heading": "Stretch Without Limits",
+            "image": "shopify://shop_images/0001s_0002_3.jpg",
+            "heading": "Snug Ribbed Neckline",
             "subheading": "",
-            "text": "<p>Sorona® bio-based fibers deliver excellent stretch and recovery, perfect for daily wear, workouts, or active lifestyles—no restrictions, just freedom.<br/><br/></p>",
+            "text": "<p>Engineered to hug your neck comfortably, preventing sagging or tightness while keeping a clean silhouette.<br/><br/></p>",
             "target_tab": "description",
             "margin_top": 32,
             "margin_bottom": 32
@@ -260,10 +260,10 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/0002s_0001_4.jpg",
-            "heading": "Smart Design Details",
+            "image": "shopify://shop_images/0001s_0000_5.jpg",
+            "heading": "Flattering Fit",
             "subheading": "",
-            "text": "<p>Elastic cuffs block wind and lock in warmth, letting you move freely with style.<br/><br/></p>",
+            "text": "<p>Tailored for a sleek, modern silhouette that works for layering or solo wear.<br/><br/></p>",
             "target_tab": "description",
             "margin_top": 32,
             "margin_bottom": 32
