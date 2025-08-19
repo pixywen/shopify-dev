@@ -45,7 +45,7 @@
         "buy_buttons_ex_c7QqTL": {
           "type": "buy_buttons_ex",
           "settings": {
-            "show_dynamic_checkout": false,
+            "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
         },
@@ -102,7 +102,7 @@
           "settings": {
             "heading": "Details",
             "icon": "none",
-            "content": "<ul><li>Unique textured exterior for enhanced durability and wind resistance.</li></ul><p></p><ul><li>Luxuriously soft fleece lining with far-infrared warmth that moves with you.</li></ul><p></p><ul><li>Moisture-wicking and quick-drying for all-day comfort.</li></ul><p></p><ul><li>Anti-static technology for a smooth, static-free experience.</li></ul><p></p><ul><li>Sustainable. Comfortable. High-performance.</li></ul><p></p>",
+            "content": "<ul><li>Soft, warm, and stretchy—ideal for everyday wear, lounging, or light training</li></ul><p></p><ul><li>Infused with Merino wool for natural insulation and breathability</li></ul><p></p><ul><li>Enhanced with Sorona® bio-based fibers for excellent stretch and recovery</li></ul><p></p><ul><li>Elastic waistband with adjustable drawstring for a custom fit</li></ul><p></p><ul><li>Tapered cuffs block wind and stay in place while on the move</li></ul><p></p><ul><li>Rear pocket + 2 front pockets for convenient storage</li></ul><p></p><ul><li>Relaxed fit for modern comfort</li></ul>",
             "page": "",
             "image_alt": "",
             "image_width": 100
@@ -113,7 +113,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "<p><strong>Fabric Composition</strong></p><ul><li><strong>Body</strong>: 98% Polyester, 2% Spandex</li><li><strong>Rib Knit Collar</strong>: 95% Cotton, 5% Spandex</li></ul><p><strong>Design Features</strong></p><ul><li>One Large Capacity Pocket </li></ul><p></p>",
+            "content": "<p><strong>Fabric Composition</strong></p><ul><li><strong>Body</strong>: 5% Merino Wool, 50% Cotton, 19% Viscose, 15% Polyester, 11% Solotex®</li><li><strong>Pocket Lining</strong>: 100% Cotton</li></ul><p><strong>Design Features</strong></p><ul><li><strong>Functional Pocket Design:</strong> 2 spacious front pockets and 1 secure back pocket for effortless storage on the go.</li></ul>",
             "page": "",
             "image_alt": "",
             "image_width": 100
@@ -124,8 +124,9 @@
           "settings": {
             "heading": "Care",
             "icon": "none",
-            "content": "<ul><li>Do Not Bleach.</li></ul><p></p><ul><li>Wash Gently.</li></ul><p></p><ul><li>Avoid Direct Contact.</li></ul><p></p><ul><li>Between The Iron And Fabric.</li></ul><p></p><ul><li>Lay Flat To Dry.</li></ul><p></p><ul><li>Do Not Dry Clean.<br/><br/></li></ul>",
+            "content": "<ul><li>Do Not Bleach.</li></ul><p></p><ul><li>Wash Gently.</li></ul><p></p><ul><li>Avoid Direct Contact Between Iron And Fabric.</li></ul><p></p><ul><li>Lay Flat To Dry.</li></ul><p></p><ul><li>Do Not Dry Clean.<br/><br/></li></ul>",
             "page": "",
+            "image": "shopify://shop_images/FALL.png",
             "image_alt": "",
             "image_width": 50
           }
@@ -323,7 +324,7 @@
             "margin_top": 32,
             "margin_bottom": 32,
             "gap": 0,
-            "faq_content": "<title>Is the Urbaneon Stratos MX Hoody warm enough for winter?</title>\n<p>Yes, the hoodie features far-infrared thermal fleece lining that locks in warmth, combined with wind-resistant textured fabric, making it suitable for cold-weather wear.</p>\n\n<title>What activities is this hoodie best for?</title>\n<p>It’s designed for versatile use—ideal for outdoor activities like hiking, camping, and travel, as well as everyday urban wear.</p>\n\n<title>Is the fabric breathable and moisture-wicking?</title>\n<p>Yes, the fleece lining is moisture-wicking and quick-drying, keeping you fresh and dry during all-day wear.</p>\n\n<title>Does it prevent static in dry weather?</title>\n<p>Yes, the hoodie features anti-static finishing that helps reduce lint and dust build-up during dry winter conditions.</p>\n\n<title>How does the fit run?</title>\n<p>It has a relaxed fit that allows easy layering over base layers or under jackets. We recommend checking the size chart for the best fit.</p>\n\n<title>How do I care for this hoodie?</title>\n<p>Gentle wash, do not bleach, lay flat to dry, and avoid direct contact between the iron and fabric. Do not dry clean.</p>\n\n<title>Do you ship internationally?</title>\n<p>Yes, we ship worldwide. Shipping costs and delivery times may vary by destination.</p>\n\n<title>What is your return policy?</title>\n<p>We offer a 30-day return policy. Items must be unworn, unwashed, and in original condition with tags.</p>",
+            "faq_content": "<title>Q1: What makes these joggers different from regular sweatpants?</title>\n<p>They combine Merino wool for natural warmth with Sorona® fibers for stretch and sustainability, offering comfort without overheating.</p>\n\n<title>Q2: Are they warm enough for winter?</title>\n<p>Yes. Merino wool adds insulation, while the cotton blend ensures durability and breathability for cooler weather.</p>\n\n<title>Q3: Can I wear them for workouts or light training?</title>\n<p>Absolutely. Sorona® fibers provide excellent stretch and rebound, making them ideal for movement and activity.</p>\n\n<title>Q4: Do they shrink or lose shape after washing?</title>\n<p>No. With proper care, the joggers retain their shape and softness thanks to the durable cotton blend and Sorona® fibers.</p>\n\n<title>Q5: How should I wash and care for them?</title>\n<p>Gentle wash, lay flat to dry, avoid bleach and dry cleaning.</p>\n\n<title>Q6: What fit are these joggers?</title>\n<p>They feature a relaxed fit with elastic cuffs, combining comfort with a modern silhouette.</p>\n\n<title>Q7: Do they have pockets?</title>\n<p>Yes. Two spacious front pockets and one secure back pocket for convenient storage.</p>\n\n<title>Q8: Are they suitable for travel?</title>\n<p>Yes. Lightweight, durable, and breathable, they’re perfect for commuting, flights, and long days on the go.</p>\n\n<title>Q9: Do they work as casual wear as well as lounge wear?</title>\n<p>Definitely. The design transitions seamlessly from city streets to at-home comfort.</p>",
             "target_tab": "faq"
           }
         },
