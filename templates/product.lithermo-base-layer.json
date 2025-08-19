@@ -18,6 +18,7 @@
       "blocks": {
         "text_qQN7nj": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Urbaneon MerinoFlux Sorona",
             "text_style": "subtitle"
@@ -102,7 +103,7 @@
           "settings": {
             "heading": "Details",
             "icon": "none",
-            "content": "<ul><li>Soft, warm, and stretchy—ideal for everyday wear, lounging, or light training</li></ul><p></p><ul><li>Infused with Merino wool for natural insulation and breathability</li></ul><p></p><ul><li>Enhanced with Sorona® bio-based fibers for excellent stretch and recovery</li></ul><p></p><ul><li>Elastic waistband with adjustable drawstring for a custom fit</li></ul><p></p><ul><li>Tapered cuffs block wind and stay in place while on the move</li></ul><p></p><ul><li>Rear pocket + 2 front pockets for convenient storage</li></ul><p></p><ul><li>Relaxed fit for modern comfort</li></ul>",
+            "content": "<p>This long-sleeve base layer blends the softness and breathability of lyocell and cotton with Japan-imported <strong>LITHERMO®</strong> for superior warmth. Added elastane ensures stretch, while a single-sided brushed finish delivers the perfect combination of softness, warmth, and flexibility. Ideal for autumn and winter, it can be worn as a cozy inner layer or on its own.</p>",
             "page": "",
             "image_alt": "",
             "image_width": 100
@@ -113,7 +114,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "<p><strong>Fabric Composition</strong></p><ul><li><strong>Body</strong>: 5% Merino Wool, 50% Cotton, 19% Viscose, 15% Polyester, 11% Solotex®</li><li><strong>Pocket Lining</strong>: 100% Cotton</li></ul><p><strong>Design Features</strong></p><ul><li><strong>Functional Pocket Design:</strong> 2 spacious front pockets and 1 secure back pocket for effortless storage on the go.</li></ul>",
+            "content": "<p><strong>Fabric Composition</strong></p><ul><li><strong>Body</strong>: 29% Lyocell, 29% Cotton, 30% Polyester, 12% Spandex</li><li><strong>Rib Knit</strong>: 70% Cotton, 30% Silk</li></ul><p><strong>Design Features</strong></p><ul><li>1 <strong>Secure Hidden Zipper Pocket</strong> </li></ul>",
             "page": "",
             "image_alt": "",
             "image_width": 100
@@ -162,7 +163,7 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12,
-        "size_guide_image": "shopify://shop_images/JOGGER.jpg"
+        "size_guide_image": "shopify://shop_images/Base_Layer.jpg"
       }
     },
     "related-products": {
