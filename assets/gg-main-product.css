@@ -155,8 +155,35 @@
 
 .product-form__buttons {
   display: flex;
+  flex-direction: column;
   gap: 23px;
   align-items: center;
+  width: 100%;
+}
+
+.product-form__buttons-row {
+  display: flex;
+  gap: 23px;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.product-form__dynamic-checkout {
+  width: 100%;
+  max-width: calc(74px + 23px + 448px);
+}
+
+.product-form__dynamic-checkout .shopify-payment-button {
+  width: 100%;
+}
+
+.product-form__dynamic-checkout .shopify-payment-button__button {
+  width: 100% !important;
+  height: 70px !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
 }
 
 .swym-button.swym-add-to-wishlist {
@@ -240,6 +267,10 @@
   line-height: 24.38px;
   color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
+}
+
+.product-form__submit.button--secondary {
+  color: rgba(0, 0, 0, 1) !important;
 }
 @media screen and (max-width: 750px) {
   section.product__info-container .product-form__input--pill input[type='radio'] + label {
@@ -333,9 +364,31 @@
     font-size: 3.2vw;
     font-weight: 600;
   }
+  
+  .product-form__submit.button--secondary {
+    color: rgba(0, 0, 0, 1) !important;
+  }
   .product-form__buttons {
     max-width: none;
     gap: 3.46vw;
+    flex-direction: column;
+  }
+  
+  .product-form__buttons-row {
+    gap: 3.46vw;
+  }
+  
+  .product-form__dynamic-checkout {
+    width: 100%;
+    max-width: calc(11.2vw + 3.46vw + 68vw);
+  }
+  
+  .product-form__dynamic-checkout .shopify-payment-button__button {
+    width: 100% !important;
+    height: 10.66vw !important;
+    font-size: 3.2vw !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
   }
   .product__info-container .product-form {
     margin: 6.66vw 0;
@@ -372,3 +425,4 @@
     height: 4vw !important;
   }
 }
+
