@@ -121,13 +121,6 @@
             "image_width": 50
           }
         },
-        "divider_YGTx6P": {
-          "type": "divider",
-          "settings": {
-            "margin_top": 20,
-            "margin_bottom": 20
-          }
-        },
         "complementary_MMXapa": {
           "type": "complementary",
           "settings": {
@@ -156,7 +149,6 @@
         "collapsible_tab_GyWCqX",
         "collapsible_tab_4bGyQa",
         "collapsible_tab_Rb9c8q",
-        "divider_YGTx6P",
         "complementary_MMXapa"
       ],
       "settings": {
