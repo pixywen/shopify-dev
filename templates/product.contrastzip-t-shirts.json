@@ -18,9 +18,8 @@
       "blocks": {
         "text_qQN7nj": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "Urbaneon MerinoFlux Sorona",
+            "text": "Urbaneon",
             "text_style": "subtitle"
           }
         },
@@ -103,7 +102,7 @@
           "settings": {
             "heading": "Details",
             "icon": "none",
-            "content": "<p>This long-sleeve base layer blends the softness and breathability of lyocell and cotton with Japan-imported <strong>LITHERMO®</strong> for superior warmth. Added elastane ensures stretch, while a single-sided brushed finish delivers the perfect combination of softness, warmth, and flexibility. Ideal for autumn and winter, it can be worn as a cozy inner layer or on its own.</p>",
+            "content": "<p>Crafted from eco-friendly, biodegradable Tercel® Lyocell fibers, enhanced with Australian wool for a rich, soft feel. This long-sleeve offers excellent warmth retention and moisture-wicking breathability. Featuring a zippered collar for adjustable comfort, contrast stitching, and durable cuffs, it seamlessly blends outdoor performance with refined style, adding a vibrant edge to your active lifestyle.</p><p>Sustainability. Comfort. Performance.<br/><br/></p>",
             "page": "",
             "image_alt": "",
             "image_width": 100
@@ -114,7 +113,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "<p><strong>Fabric Composition</strong></p><ul><li><strong>Body</strong>: 29% Lyocell, 29% Cotton, 30% Polyester, 12% Spandex</li><li><strong>Rib Knit</strong>: 70% Cotton, 30% Silk</li></ul><p><strong>Design Features</strong></p><ul><li>1 <strong>Secure Hidden Zipper Pocket</strong> </li></ul>",
+            "content": "<p><strong>Fabric Composition</strong></p><ul><li><strong>Body</strong>: 85% Tencel Lyocell, 5% Wool, 10% Spandex</li><li><strong>Panel</strong>: 88% Nylon, 12% Spandex</li></ul><p><strong>Design Features</strong></p><ul><li>1 Secure Hidden Zipper Pocket</li></ul>",
             "page": "",
             "image_alt": "",
             "image_width": 100
@@ -125,9 +124,9 @@
           "settings": {
             "heading": "Care",
             "icon": "none",
-            "content": "<ul><li>Do Not Bleach.</li></ul><p></p><ul><li>Wash Gently.</li></ul><p></p><ul><li>Avoid Direct Contact Between Iron And Fabric.</li></ul><p></p><ul><li>Lay Flat To Dry.</li></ul><p></p><ul><li>Do Not Dry Clean.<br/><br/></li></ul>",
+            "content": "<ul><li>Hand Wash Cold With Like Colors.</li></ul><p></p><ul><li>Use Mild Or Neutral Detergent.</li></ul><p></p><ul><li>Do Not Bleach.</li></ul><p></p><ul><li>Remove Promptly.</li></ul><p></p><ul><li>Dry Flat In Shade.</li></ul><p></p><ul><li>Avoid Direct Contact Between Iron And Fabric.</li></ul><p></p><ul><li>Do Not Dry Clean.<br/><br/></li></ul>",
             "page": "",
-            "image": "shopify://shop_images/FALL.png",
+            "image": "shopify://shop_images/fall-red_shirt.png",
             "image_alt": "",
             "image_width": 50
           }
