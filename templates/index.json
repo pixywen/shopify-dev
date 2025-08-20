@@ -47,21 +47,21 @@
         "banner_tja83h": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/2025-06-24_115438_905.jpg",
-            "subtitle": "S/S 2025 Collection",
-            "title": "Nixcore Aerowool Nexus T-Shirt",
-            "button_label": "SHOP NOW",
-            "button_link": "shopify://products/nixcore-aerowool-nexus-t-shirt"
+            "image": "shopify://shop_images/LEFT_f5ef1d34-032e-4758-8a76-66bfc4c02099.jpg",
+            "subtitle": "F/W 2025 Collection",
+            "title": "New Season. New Mood.",
+            "button_label": "See More",
+            "button_link": "shopify://collections/new-arrivals"
           }
         },
         "banner_FWeBpK": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/2025-06-24_115432_876.jpg",
-            "subtitle": "S/S 2025 Collection",
-            "title": "Urbaneon Solotex GridWave Tee",
-            "button_label": "SHOP NOW",
-            "button_link": "shopify://products/urbaneon-solotex-gridwave-tee"
+            "image": "shopify://shop_images/RIGHT_28d9df8f-9df4-4a2d-ba7f-febcd84fe0b6.jpg",
+            "subtitle": "End-of-Summer Sale",
+            "title": "Get Up to 30% on Summer Gear",
+            "button_label": "Shop Now",
+            "button_link": "shopify://collections/sale"
           }
         }
       },
@@ -69,7 +69,6 @@
         "banner_tja83h",
         "banner_FWeBpK"
       ],
-      "disabled": true,
       "settings": {}
     },
     "gg_double_image_banner_YFmVwF": {
@@ -101,6 +100,49 @@
         "banner_xrUmaj"
       ],
       "settings": {}
+    },
+    "featured_collection_TxRkxB": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "New Arrivals",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-arrivals",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "gg_image_banner_common_ARcgWG": {
+      "type": "gg-image-banner-common",
+      "settings": {
+        "small_heading_above": "",
+        "heading": "Shell Jackets",
+        "small_heading_below": "",
+        "button_label": "SHOP NOW",
+        "button_link": "shopify://collections/shell-jackets",
+        "image": "shopify://shop_images/sib-shell_jackets.jpg",
+        "mobile_image": "shopify://shop_images/sib-m-shell_jackets.jpg",
+        "video": "shopify://files/videos/sib-shell jackets.mp4",
+        "description": ""
+      }
     },
     "gg_featured_products_UPNhBN": {
       "type": "gg-featured-products",
@@ -175,6 +217,19 @@
       "name": "GG-热卖商品",
       "settings": {
         "title": "Best Seller"
+      }
+    },
+    "gg_image_banner_common_rnwYrY": {
+      "type": "gg-image-banner-common",
+      "name": "GG-通用视频横幅",
+      "settings": {
+        "small_heading_above": "",
+        "heading": "Gear for Every Adventure",
+        "small_heading_below": "",
+        "button_label": "Explore",
+        "button_link": "shopify://collections/bags",
+        "image": "shopify://shop_images/2_038da1ab-4982-4276-8d07-e84a659b9f98.jpg",
+        "description": ""
       }
     },
     "gg_featured_products_McEQBe": {
@@ -316,51 +371,9 @@
         "title": "Packs"
       }
     },
-    "featured_collection_TxRkxB": {
-      "type": "featured-collection",
-      "name": "t:sections.featured-collection.presets.name",
-      "settings": {
-        "title": "New Arrivals",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "new-arrivals",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "gg_image_banner_common_ARcgWG": {
-      "type": "gg-image-banner-common",
-      "settings": {
-        "small_heading_above": "",
-        "heading": "Shell Jackets",
-        "small_heading_below": "",
-        "button_label": "SHOP NOW",
-        "button_link": "shopify://collections/shell-jackets",
-        "image": "shopify://shop_images/sib-shell_jackets.jpg",
-        "mobile_image": "shopify://shop_images/sib-m-shell_jackets.jpg",
-        "video": "shopify://files/videos/sib-shell jackets.mp4",
-        "description": ""
-      }
-    },
     "gg_image_banner_common_XyH39W": {
       "type": "gg-image-banner-common",
+      "disabled": true,
       "settings": {
         "small_heading_above": "",
         "heading": "Insulated Jackets",
@@ -375,6 +388,7 @@
     },
     "gg_image_banner_common_CHdPGU": {
       "type": "gg-image-banner-common",
+      "disabled": true,
       "settings": {
         "small_heading_above": "",
         "heading": "Vests",
@@ -406,11 +420,12 @@
     "gg_scroll_image_zqhRNf",
     "gg_double_image_banner_mobile_YXnVpE",
     "gg_double_image_banner_YFmVwF",
-    "gg_featured_products_UPNhBN",
-    "gg_featured_products_McEQBe",
-    "gg_featured_products_NVq696",
     "featured_collection_TxRkxB",
     "gg_image_banner_common_ARcgWG",
+    "gg_featured_products_UPNhBN",
+    "gg_image_banner_common_rnwYrY",
+    "gg_featured_products_McEQBe",
+    "gg_featured_products_NVq696",
     "gg_image_banner_common_XyH39W",
     "gg_image_banner_common_CHdPGU",
     "gg_three_image_banner_wVXhhw"
