@@ -1,0 +1,352 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gg_breadcrumb_yr7zeq": {
+      "type": "gg-breadcrumb",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "text_qQN7nj": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Urbaneon MerinoFlux Sorona",
+            "text_style": "subtitle"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price_8GJUk7": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "square"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_ex_c7QqTL": {
+          "type": "buy_buttons_ex",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "divider_3i4EF3": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "margin_top": 20,
+            "margin_bottom": 20
+          }
+        },
+        "gg_icon_text_grid_TGCbKj": {
+          "type": "gg-icon-text-grid",
+          "settings": {
+            "icon_1": "shopify://shop_images/product-block-001-001.svg",
+            "text_1": "$169  Free Shipping",
+            "icon_2": "shopify://shop_images/product-block-001-002.svg",
+            "text_2": "Payment Security",
+            "icon_3": "shopify://shop_images/product-block-001-003.svg",
+            "text_3": "Eco-Friendly Packaging",
+            "text_4": ""
+          }
+        },
+        "divider_FHRHjn": {
+          "type": "divider",
+          "settings": {
+            "margin_top": 20,
+            "margin_bottom": 20
+          }
+        },
+        "gg_heading_image_Lh8bEX": {
+          "type": "gg-heading-image",
+          "settings": {
+            "heading": "As Featured In:",
+            "image": "shopify://shop_images/product-info-b-hi-01_f193a6ad-01f8-4116-b5f2-e3d38b60c9a9.png",
+            "image_mobile": "shopify://shop_images/product-info-b-hi-01-m.png"
+          }
+        },
+        "complementary_jJRN7f": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs well with:",
+            "make_collapsible_row": false,
+            "icon": "none",
+            "product_list_limit": 6,
+            "products_per_page": 2,
+            "pagination_style": "dots",
+            "image_ratio": "square",
+            "enable_quick_add": true
+          }
+        },
+        "collapsible_tab_yAPYME": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Details",
+            "icon": "none",
+            "content": "<p>This long-sleeve base layer blends the softness and breathability of lyocell and cotton with Japan-imported <strong>LITHERMO®</strong> for superior warmth. Added elastane ensures stretch, while a single-sided brushed finish delivers the perfect combination of softness, warmth, and flexibility. Ideal for autumn and winter, it can be worn as a cozy inner layer or on its own.</p>",
+            "page": "",
+            "image_alt": "",
+            "image_width": 100
+          }
+        },
+        "collapsible_tab_GyWCqX": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Specs",
+            "icon": "none",
+            "content": "<p><strong>Fabric Composition</strong></p><ul><li><strong>Body</strong>: 29% Lyocell, 29% Cotton, 30% Polyester, 12% Spandex</li><li><strong>Rib Knit</strong>: 70% Cotton, 30% Silk</li></ul><p><strong>Design Features</strong></p><ul><li>1 <strong>Secure Hidden Zipper Pocket</strong> </li></ul>",
+            "page": "",
+            "image_alt": "",
+            "image_width": 100
+          }
+        },
+        "collapsible_tab_4bGyQa": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care",
+            "icon": "none",
+            "content": "<ul><li>Do Not Bleach.</li></ul><p></p><ul><li>Wash Gently.</li></ul><p></p><ul><li>Avoid Direct Contact Between Iron And Fabric.</li></ul><p></p><ul><li>Lay Flat To Dry.</li></ul><p></p><ul><li>Do Not Dry Clean.<br/><br/></li></ul>",
+            "page": "",
+            "image": "shopify://shop_images/FALL.png",
+            "image_alt": "",
+            "image_width": 50
+          }
+        }
+      },
+      "block_order": [
+        "text_qQN7nj",
+        "title",
+        "price_8GJUk7",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons_ex_c7QqTL",
+        "divider_3i4EF3",
+        "gg_icon_text_grid_TGCbKj",
+        "divider_FHRHjn",
+        "gg_heading_image_Lh8bEX",
+        "complementary_jJRN7f",
+        "collapsible_tab_yAPYME",
+        "collapsible_tab_GyWCqX",
+        "collapsible_tab_4bGyQa"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12,
+        "size_guide_image": "shopify://shop_images/Base_Layer.jpg"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "gg_product_detail_Mg4rJH": {
+      "type": "gg-product-detail",
+      "blocks": {
+        "content_block_MGACxw": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 40,
+            "margin_bottom": 60,
+            "heading": "<p>All-Day Comfort Base Layer</p>",
+            "content": "<p>The <strong>Alpargali LITHERMO® Base Layer</strong> is designed for versatility and comfort through the colder months. Crafted with a premium blend of <strong>Lyocell, cotton, polyester, and elastane</strong>, it combines <strong>softness, stretch, and durability</strong>. The fabric is brushed on the inside for a <strong>cozy touch</strong>, while <strong>Japan-imported LITHERMO® fibers</strong> trap heat to keep you warm.</p><p>Wear it solo on mild days, or layer it under jackets when temperatures drop. The <strong>ribbed neckline</strong> ensures a snug fit without sagging or tightness, while the <strong>hidden zip pocket</strong> discreetly stores your essentials. Its <strong>tailored fit</strong> gives a modern silhouette, making it a perfect base for everyday wear.</p>",
+            "target_tab": "description"
+          }
+        },
+        "collage_y7J6gW": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/0001s_0004_1.jpg",
+            "heading": "LITHERMO® Warmth",
+            "subheading": "",
+            "text": "<p>Soft brushed fabric with <strong>LITHERMO®</strong> technology traps heat for all-day comfort. Wear it alone on cool days or layer under jackets for versatile warmth.<br/><br/></p>",
+            "target_tab": "description",
+            "margin_top": 32,
+            "margin_bottom": 36
+          }
+        },
+        "collage_RULhdH": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_right",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/0001s_0003_2.jpg",
+            "heading": "Freedom of Movement",
+            "subheading": "",
+            "text": "<p>Added elastane ensures perfect stretch and recovery—move freely without restriction.<br/><br/></p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 32
+          }
+        },
+        "collage_qJBxVE": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/0001s_0001_4.jpg",
+            "heading": "Smart Storage",
+            "subheading": "",
+            "text": "<p>Right-side hidden zipper pocket keeps essentials secure and easily accessible.<br/><br/></p>",
+            "target_tab": "description",
+            "margin_top": 32,
+            "margin_bottom": 32
+          }
+        },
+        "collage_64tWmQ": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_right",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/0001s_0002_3.jpg",
+            "heading": "Snug Ribbed Neckline",
+            "subheading": "",
+            "text": "<p>Engineered to hug your neck comfortably, preventing sagging or tightness while keeping a clean silhouette.<br/><br/></p>",
+            "target_tab": "description",
+            "margin_top": 32,
+            "margin_bottom": 32
+          }
+        },
+        "collage_VCtB6U": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/0001s_0000_5.jpg",
+            "heading": "Flattering Fit",
+            "subheading": "",
+            "text": "<p>Tailored for a sleek, modern silhouette that works for layering or solo wear.<br/><br/></p>",
+            "target_tab": "description",
+            "margin_top": 32,
+            "margin_bottom": 32
+          }
+        },
+        "video_a7qDtK": {
+          "type": "video",
+          "settings": {
+            "title": "",
+            "video_desktop": "shopify://files/videos/视频2.mp4",
+            "video_url_desktop": "",
+            "cover_desktop": "shopify://shop_images/2_d325ce94-ba02-4399-ad00-f31ad9600e79.jpg",
+            "video_url_mobile": "",
+            "autoplay": true,
+            "loop": true,
+            "controls": true,
+            "muted": true,
+            "target_tab": "video",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x": 0
+          }
+        },
+        "video_VL79Dy": {
+          "type": "video",
+          "settings": {
+            "title": "",
+            "video_desktop": "shopify://files/videos/视频3.mp4",
+            "video_url_desktop": "",
+            "cover_desktop": "shopify://shop_images/3_409105f5-7734-4db7-9abc-39e16fa592dd.jpg",
+            "video_url_mobile": "",
+            "autoplay": true,
+            "loop": true,
+            "controls": true,
+            "muted": true,
+            "target_tab": "video",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x": 0
+          }
+        },
+        "faq_yqgwMK": {
+          "type": "faq",
+          "settings": {
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "gap": 0,
+            "faq_content": "<title>Q1: What makes these joggers different from regular sweatpants?</title>\n<p>They combine Merino wool for natural warmth with Sorona® fibers for stretch and sustainability, offering comfort without overheating.</p>\n\n<title>Q2: Are they warm enough for winter?</title>\n<p>Yes. Merino wool adds insulation, while the cotton blend ensures durability and breathability for cooler weather.</p>\n\n<title>Q3: Can I wear them for workouts or light training?</title>\n<p>Absolutely. Sorona® fibers provide excellent stretch and rebound, making them ideal for movement and activity.</p>\n\n<title>Q4: Do they shrink or lose shape after washing?</title>\n<p>No. With proper care, the joggers retain their shape and softness thanks to the durable cotton blend and Sorona® fibers.</p>\n\n<title>Q5: How should I wash and care for them?</title>\n<p>Gentle wash, lay flat to dry, avoid bleach and dry cleaning.</p>\n\n<title>Q6: What fit are these joggers?</title>\n<p>They feature a relaxed fit with elastic cuffs, combining comfort with a modern silhouette.</p>\n\n<title>Q7: Do they have pockets?</title>\n<p>Yes. Two spacious front pockets and one secure back pocket for convenient storage.</p>\n\n<title>Q8: Are they suitable for travel?</title>\n<p>Yes. Lightweight, durable, and breathable, they’re perfect for commuting, flights, and long days on the go.</p>\n\n<title>Q9: Do they work as casual wear as well as lounge wear?</title>\n<p>Definitely. The design transitions seamlessly from city streets to at-home comfort.</p>",
+            "target_tab": "faq"
+          }
+        },
+        "judge_me_reviews_review_widget_JctMNU": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "content_block_MGACxw",
+        "collage_y7J6gW",
+        "collage_RULhdH",
+        "collage_qJBxVE",
+        "collage_64tWmQ",
+        "collage_VCtB6U",
+        "video_a7qDtK",
+        "video_VL79Dy",
+        "faq_yqgwMK",
+        "judge_me_reviews_review_widget_JctMNU"
+      ],
+      "settings": {
+        "show_description": true,
+        "show_video": false,
+        "show_reviews": true,
+        "show_faq": true
+      }
+    }
+  },
+  "order": [
+    "gg_breadcrumb_yr7zeq",
+    "main",
+    "related-products",
+    "gg_product_detail_Mg4rJH"
+  ]
+}
