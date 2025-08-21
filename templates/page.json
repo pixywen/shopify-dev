@@ -12,7 +12,7 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "padding_top": 28,
+        "padding_top": 64,
         "padding_bottom": 28
       }
     }
