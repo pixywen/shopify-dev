@@ -76,12 +76,13 @@
             "subtitle_color": "#000000",
             "custom_html_content": "",
             "btn": "",
-            "link": ""
+            "link": "https://www.kickstarter.com/projects/alpargalipuffer/alpargali-coreshell-jacket-advanced-corelock-thermal-armor?ref=d05umg"
           }
         },
         "image_6MCwmQ": {
           "type": "image",
           "name": "sign up",
+          "disabled": true,
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -391,6 +392,7 @@
         "image_MfmeN4": {
           "type": "image",
           "name": "sign up",
+          "disabled": true,
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -700,6 +702,7 @@
         "image_GWahYg": {
           "type": "image",
           "name": "sign up",
+          "disabled": true,
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -1186,6 +1189,7 @@
         "image_zFANat": {
           "type": "image",
           "name": "sign up",
+          "disabled": true,
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -1495,6 +1499,7 @@
         "image_6WjLPD": {
           "type": "image",
           "name": "sign up",
+          "disabled": true,
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -1686,6 +1691,7 @@
         "image_PqppeF": {
           "type": "image",
           "name": "sign up",
+          "disabled": true,
           "settings": {
             "block_css": "",
             "custom_html_css": "",
