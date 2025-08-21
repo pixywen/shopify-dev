@@ -69,6 +69,7 @@
         },
         "menu_image_68jr6X": {
           "type": "menu_image",
+          "disabled": true,
           "settings": {
             "menu_title": "ABOUT US",
             "menu_image": "shopify://shop_images/ALPARGALI.jpg",
