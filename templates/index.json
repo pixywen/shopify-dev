@@ -9,17 +9,74 @@
  */
 {
   "sections": {
-    "gg_image_banner_V4rbFP": {
-      "type": "gg-image-banner",
+    "common_media_7FrkH7": {
+      "type": "common-media",
+      "blocks": {
+        "image_MJ9Hfz": {
+          "type": "image",
+          "settings": {
+            "block_css": "",
+            "custom_html_css": "",
+            "section_bg_color": "",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_top_pad": 50,
+            "padding_bottom_pad": 50,
+            "padding_top_mb": 20,
+            "padding_bottom_mb": 20,
+            "text_color": "#000000",
+            "is_video_banner": false,
+            "is_page_banner": false,
+            "media_page": true,
+            "media_page_pad": true,
+            "media_page_mb": true,
+            "product_name": "",
+            "show_header": false,
+            "header_text_align": "center",
+            "header_mb_text_align": "center",
+            "section_title": "",
+            "section_text": "",
+            "section_header_custom_html": "",
+            "header_margin_bottom": "80",
+            "text_align": "left",
+            "text_align_mb": "center",
+            "text_width": 100,
+            "text_alignment": "vertical-center horizontal-left",
+            "text_alignment_mb": "mb-vertical-top mb-horizontal-left",
+            "text_position_mb": false,
+            "media_type": "image",
+            "image": "shopify://shop_images/99724a902443a5bcacff7288403b2ad3.jpg",
+            "image_mb": "shopify://shop_images/41f969e67f0e6498a86563a5ed2442bb.jpg",
+            "video_url": "",
+            "youtube_video": "",
+            "section_logo": "",
+            "section_logo_width": 0,
+            "text_position": "bottom",
+            "title": "",
+            "title_size_big": "60",
+            "title_size": "60",
+            "title_size_pad": "60",
+            "title_size_mb": "30",
+            "title_color": "#000",
+            "subtitle": "",
+            "subtitle_size_big": "16",
+            "subtitle_size": "16",
+            "subtitle_size_pad": "16",
+            "subtitle_size_mb": "14",
+            "subtitle_color": "#000",
+            "custom_html_content": "",
+            "btn": "",
+            "link": "https://www.kickstarter.com/projects/alpargalipuffer/alpargali-coreshell-jacket-advanced-corelock-thermal-armor"
+          }
+        }
+      },
+      "block_order": [
+        "image_MJ9Hfz"
+      ],
+      "name": "Common media",
       "settings": {
-        "small_heading_above": "Fall Arrivals 2025",
-        "heading": "Ready for Every Terrain",
-        "small_heading_below": "",
-        "button_label": "Explore",
-        "button_link": "shopify://collections/new-arrivals",
-        "image": "shopify://shop_images/banner_5886e98a-b6b9-4914-bab6-ab4d5502e27e.jpg",
-        "mobile_image": "shopify://shop_images/BANNER_54f5a323-013a-40c0-a580-e59308f9d1bc.jpg",
-        "description": ""
+        "show_section": true,
+        "section_css": ""
       }
     },
     "gg_scroll_image_zqhRNf": {
@@ -39,6 +96,19 @@
       "settings": {
         "scroll_speed": 30,
         "gap": 30
+      }
+    },
+    "gg_image_banner_V4rbFP": {
+      "type": "gg-image-banner",
+      "settings": {
+        "small_heading_above": "Fall Arrivals 2025",
+        "heading": "Ready for Every Terrain",
+        "small_heading_below": "",
+        "button_label": "Explore",
+        "button_link": "shopify://collections/new-arrivals",
+        "image": "shopify://shop_images/banner_5886e98a-b6b9-4914-bab6-ab4d5502e27e.jpg",
+        "mobile_image": "shopify://shop_images/BANNER_54f5a323-013a-40c0-a580-e59308f9d1bc.jpg",
+        "description": ""
       }
     },
     "gg_double_image_banner_mobile_YXnVpE": {
@@ -449,8 +519,9 @@
     }
   },
   "order": [
-    "gg_image_banner_V4rbFP",
+    "common_media_7FrkH7",
     "gg_scroll_image_zqhRNf",
+    "gg_image_banner_V4rbFP",
     "gg_double_image_banner_mobile_YXnVpE",
     "gg_double_image_banner_YFmVwF",
     "featured_collection_TxRkxB",
