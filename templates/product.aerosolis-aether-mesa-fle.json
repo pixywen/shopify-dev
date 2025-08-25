@@ -117,7 +117,7 @@
           "settings": {
             "heading": "Care",
             "icon": "none",
-            "content": "<ul><li>Do Not Bleach.</li><li>Wash Gently.</li><li>Avoid Direct Contact</li><li>Between The Iron And Fabric.</li><li>Lay Flat To Dry. </li><li>Do Not Dry Clean.<br/><br/></li></ul>",
+            "content": "<ul><li>Do Not Bleach.</li><li>Wash Gently.</li><li>Avoid Direct Contact Between Iron And Fabric.</li><li>Lay Flat To Dry. </li><li>Do Not Dry Clean.<br/><br/></li></ul>",
             "page": "",
             "image_alt": "",
             "image_width": 50
@@ -288,7 +288,10 @@
         },
         "judge_me_reviews_review_widget_JctMNU": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
         }
       },
       "block_order": [
