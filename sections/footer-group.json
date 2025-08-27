@@ -84,8 +84,8 @@
           "type": "gg_menu_accordion",
           "settings": {
             "small_hide": false,
-            "medium_hide": true,
-            "large_up_hide": true,
+            "medium_hide": false,
+            "large_up_hide": false,
             "heading": "About Us",
             "menu": "about-us"
           }
@@ -93,7 +93,7 @@
         "gg_social_icons_ce8MtR": {
           "type": "gg_social_icons",
           "settings": {
-            "small_hide": false,
+            "small_hide": true,
             "medium_hide": true,
             "large_up_hide": true
           }
@@ -133,6 +133,7 @@
         },
         "gg_menu_social_UP6GrN": {
           "type": "gg_menu_social",
+          "disabled": true,
           "settings": {
             "small_hide": true,
             "medium_hide": false,
@@ -157,14 +158,14 @@
       ],
       "settings": {
         "color_scheme": "scheme-4",
-        "newsletter_enable": false,
+        "newsletter_enable": true,
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": true,
-        "show_social": false,
+        "show_social": true,
         "enable_country_selector": false,
         "enable_language_selector": false,
-        "payment_enable": false,
-        "show_policy": false,
+        "payment_enable": true,
+        "show_policy": true,
         "margin_top": 0,
         "padding_top": 36,
         "padding_bottom": 36
