@@ -60,14 +60,17 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "gg_menu_accordion_YRVh8w": {
-          "type": "gg_menu_accordion",
+        "footer_newsletter_Ad7QGr": {
+          "type": "footer_newsletter",
           "settings": {
             "small_hide": false,
-            "medium_hide": true,
-            "large_up_hide": true,
-            "heading": "NeedHelp",
-            "menu": "aurora-footer-needhelp"
+            "medium_hide": false,
+            "large_up_hide": false,
+            "heading": "Newsletter Signup",
+            "subtext": "Sign up for exclusive offers, original stories, events and more.",
+            "placeholder": "E-mail*",
+            "button_label": "SIGN ME UP",
+            "success_message": "感谢订阅！"
           }
         },
         "gg_menu_accordion_CqPb7t": {
@@ -80,12 +83,22 @@
             "menu": "aurora-main-menu"
           }
         },
-        "gg_menu_accordion_dFUVcJ": {
+        "gg_menu_accordion_YRVh8w": {
           "type": "gg_menu_accordion",
           "settings": {
             "small_hide": false,
-            "medium_hide": false,
-            "large_up_hide": false,
+            "medium_hide": true,
+            "large_up_hide": true,
+            "heading": "NeedHelp",
+            "menu": "aurora-footer-needhelp"
+          }
+        },
+        "gg_menu_accordion_dFUVcJ": {
+          "type": "gg_menu_accordion",
+          "settings": {
+            "small_hide": true,
+            "medium_hide": true,
+            "large_up_hide": true,
             "heading": "About Us",
             "menu": "about-us"
           }
@@ -96,19 +109,6 @@
             "small_hide": true,
             "medium_hide": true,
             "large_up_hide": true
-          }
-        },
-        "footer_newsletter_Ad7QGr": {
-          "type": "footer_newsletter",
-          "settings": {
-            "small_hide": true,
-            "medium_hide": false,
-            "large_up_hide": false,
-            "heading": "Newsletter Signup",
-            "subtext": "Sign up for exclusive offers, original stories, events and more.",
-            "placeholder": "E-mail*",
-            "button_label": "SIGN ME UP",
-            "success_message": "感谢订阅！"
           }
         },
         "gg_menu_list_zyjMtP": {
@@ -147,11 +147,11 @@
         }
       },
       "block_order": [
-        "gg_menu_accordion_YRVh8w",
+        "footer_newsletter_Ad7QGr",
         "gg_menu_accordion_CqPb7t",
+        "gg_menu_accordion_YRVh8w",
         "gg_menu_accordion_dFUVcJ",
         "gg_social_icons_ce8MtR",
-        "footer_newsletter_Ad7QGr",
         "gg_menu_list_zyjMtP",
         "gg_menu_list_nested_b3f9EN",
         "gg_menu_social_UP6GrN"
