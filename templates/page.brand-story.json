@@ -31,6 +31,19 @@
     "gg_rich_text_page_R7exfe": {
       "type": "gg-rich-text-page",
       "blocks": {
+        "heading_P74LMf": {
+          "type": "heading",
+          "settings": {
+            "text": "Aurora Brand Story",
+            "font": "montserrat_n4",
+            "font_size": 32,
+            "font_weight": 600,
+            "letter_spacing": 0,
+            "line_height": 40,
+            "margin_top": 25,
+            "margin_bottom": 25
+          }
+        },
         "text_kGpEAH": {
           "type": "text",
           "settings": {
@@ -85,6 +98,7 @@
         }
       },
       "block_order": [
+        "heading_P74LMf",
         "text_kGpEAH",
         "text_HXA9RX",
         "text_wxn7dP",
