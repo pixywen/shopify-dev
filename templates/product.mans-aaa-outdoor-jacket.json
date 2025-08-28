@@ -38,7 +38,7 @@
         "buy_buttons_ex_c7QqTL": {
           "type": "buy_buttons_ex",
           "settings": {
-            "show_dynamic_checkout": false,
+            "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
         },
@@ -79,12 +79,13 @@
         },
         "complementary_jJRN7f": {
           "type": "complementary",
+          "disabled": true,
           "settings": {
             "block_heading": "Pairs well with:",
-            "make_collapsible_row": false,
+            "make_collapsible_row": true,
             "icon": "none",
-            "product_list_limit": 6,
-            "products_per_page": 2,
+            "product_list_limit": 1,
+            "products_per_page": 1,
             "pagination_style": "dots",
             "image_ratio": "square",
             "enable_quick_add": true
