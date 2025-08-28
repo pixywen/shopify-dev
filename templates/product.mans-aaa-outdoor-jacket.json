@@ -106,7 +106,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "<p>Fabric: 100% Nylon 70D, 2 layer</p><p>Breathability: <strong>10K</strong></p><p>Waterproof: <strong>10K</strong></p><p>Pockets: <strong>14</strong></p>",
+            "content": "<p>Fabric: 100% Nylon 70D, 2 layer</p><p>Breathability: <strong>15K</strong></p><p>Waterproof: <strong>15K</strong></p><p>Pockets: <strong>14</strong></p>",
             "page": "",
             "image_alt": "",
             "image_width": 100
@@ -465,7 +465,10 @@
         },
         "judge_me_reviews_review_widget_JctMNU": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
         }
       },
       "block_order": [
