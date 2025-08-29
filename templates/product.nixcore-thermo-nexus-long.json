@@ -39,7 +39,7 @@
           "type": "buy_buttons_ex",
           "settings": {
             "show_dynamic_checkout": false,
-            "show_gift_card_recipient": true
+            "show_gift_card_recipient": false
           }
         },
         "divider_3i4EF3": {
@@ -274,7 +274,10 @@
         },
         "judge_me_reviews_review_widget_JctMNU": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
         }
       },
       "block_order": [
