@@ -39,7 +39,7 @@
           "type": "buy_buttons_ex",
           "settings": {
             "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
+            "show_gift_card_recipient": false
           }
         },
         "divider_3i4EF3": {
