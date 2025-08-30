@@ -45,7 +45,7 @@
         "buy_buttons_ex_c7QqTL": {
           "type": "buy_buttons_ex",
           "settings": {
-            "show_dynamic_checkout": false,
+            "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
         },
