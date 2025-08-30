@@ -38,7 +38,7 @@
         "buy_buttons_ex_c7QqTL": {
           "type": "buy_buttons_ex",
           "settings": {
-            "show_dynamic_checkout": false,
+            "show_dynamic_checkout": true,
             "show_gift_card_recipient": false
           }
         },
@@ -146,15 +146,15 @@
             "swym_atw_button_alignment": "center",
             "swym_add_to_wishlist_color": "#000000",
             "swym_added_to_wishlist_color": "#222222",
-            "swym_button_text_color": "#fff",
-            "swym_atw_border_color": "#000",
+            "swym_button_text_color": "#ffffff",
+            "swym_atw_border_color": "#000000",
             "swym_atw_border_thickness": 0,
             "swym_atw_button_border_radius": 0,
             "swym_enable_hover_customization": false,
             "swym_hover_add_to_wishlist_color": "#000000",
             "swym_hover_added_to_wishlist_color": "#222222",
-            "swym_hover_button_text_color": "#fff",
-            "swym_hover_atw_border_color": "#000",
+            "swym_hover_button_text_color": "#ffffff",
+            "swym_hover_atw_border_color": "#000000",
             "swym_hover_atw_border_thickness": 0,
             "swym_hover_atw_button_border_radius": 0,
             "swym_custom_css": ""
