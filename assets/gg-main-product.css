@@ -80,9 +80,7 @@
 .gg-heading-image {
   margin: 29px 0 20px 0;
 }
-.accordion {
-
-}
+/* Accordion styles will be added here if needed */
 .heading-text {
   font-size: 18px;
   font-weight: 600;
@@ -246,10 +244,10 @@
   display: none !important;
 }
 
-/* 隐藏 Swym 插件自动注入的整个按钮容器 */
-.swym-atw-btn-wrapper,
-#swym-embed-pdp-btn-wrapper,
-#swym-atw-button-container,
+/* 隐藏 Swym 插件自动注入的收藏按钮，但保留购物车按钮 */
+.swym-atw-btn-wrapper .swym-button,
+#swym-embed-pdp-btn-wrapper .swym-button,
+#swym-atw-button-container .swym-button,
 #swym-atw-pdp-button {
   display: none !important;
 }
@@ -262,9 +260,16 @@
   display: none !important;
 }
 
+/* 确保购物车按钮容器和按钮本身不被隐藏 */
+.swym-atw-btn-wrapper,
+#swym-embed-pdp-btn-wrapper,
+#swym-atw-button-container {
+  display: block !important;
+}
+
 /* 只隐藏 Swym 容器中的定位类，不影响添加购物车按钮 */
-.swym-atw-btn-wrapper .add_to_cart_button_left-position,
-#swym-embed-pdp-btn-wrapper .add_to_cart_button_left-position {
+.swym-atw-btn-wrapper .add_to_cart_button_left-position:not(.product-form__submit),
+#swym-embed-pdp-btn-wrapper .add_to_cart_button_left-position:not(.product-form__submit) {
   display: none !important;
 }
 
@@ -284,7 +289,10 @@
 }
 
 /* 确保添加购物车按钮显示和尺寸固定 */
-.product-form__buttons-row .product-form__submit {
+.product-form__buttons-row .product-form__submit,
+.swym-atw-btn-wrapper .product-form__submit,
+#swym-embed-pdp-btn-wrapper .product-form__submit,
+#swym-atw-button-container .product-form__submit {
   width: 448px !important;
   height: 70px !important;
   flex: 0 0 448px !important;
