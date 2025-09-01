@@ -256,20 +256,36 @@
   display: none !important;
 }
 
+/* 隐藏 Swym 插件添加的按钮栏容器，防止影响布局 */
+.swym-button-bar,
+.swym-wishlist-button-bar,
+.swym-inject {
+  display: none !important;
+}
+
 /* 确保按钮容器和按钮尺寸固定，防止被 Swym 插件影响 */
 .product-form__buttons-row {
   display: flex !important;
   align-items: center !important;
   gap: 12px !important;
 }
-
-.product-form__buttons-row .swym-button.swym-add-to-wishlist[data-with-epi="true"] {
+/* 
+/* .product-form__buttons-row .swym-button.swym-add-to-wishlist[data-with-epi="true"] {
   width: 74px !important;
   height: 69px !important;
   flex: 0 0 74px !important;
   min-width: 74px !important;
   max-width: 74px !important;
 }
+
+
+/* .product-form__buttons-row .product-form__submit {
+  width: 448px !important;
+  height: 70px !important;
+  flex: 0 0 448px !important;
+  min-width: 448px !important;
+  max-width: 448px !important;
+}  */
 
 /* 隐藏 Swym 插件自动注入的按钮，只保留手动添加的按钮 */
 .product-form__buttons-row .swym-button.swym-add-to-wishlist:not([data-with-epi="true"]) {
