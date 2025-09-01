@@ -246,9 +246,7 @@
   display: none !important;
 }
 
-/* 隐藏 Swym 插件自动注入的按钮容器 */
-.swym-atw-btn-wrapper,
-.swym-atw-button-container,
+/* 只隐藏 Swym 插件自动注入的收藏按钮，不影响添加购物车按钮 */
 #swym-atw-pdp-button {
   display: none !important;
 }
