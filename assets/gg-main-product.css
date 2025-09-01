@@ -169,7 +169,7 @@
 
 .product-form__dynamic-checkout {
   width: 100%;
-  max-width: calc(74px + 23px + 448px);
+  max-width: calc(74px + 12px + 448px);
 }
 
 .product-form__dynamic-checkout .shopify-payment-button {
@@ -512,7 +512,7 @@
 
 .product-form__custom-fit-button-wrapper {
   width: 100%;
-  max-width: calc(74px + 23px + 448px);
+  max-width: calc(74px + 12px + 448px);
   margin-bottom: 23px;
 }
 
