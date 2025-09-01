@@ -241,6 +241,11 @@
   display: none !important;
 }
 
+/* 简单方案：隐藏所有没有 data-with-epi 属性的 Swym 按钮 */
+.swym-button.swym-add-to-wishlist:not([data-with-epi="true"]) {
+  display: none !important;
+}
+
 /* 隐藏 Swym 插件自动注入的按钮，只保留手动添加的按钮 */
 .product-form__buttons-row .swym-button.swym-add-to-wishlist:not([data-with-epi="true"]) {
   display: none !important;
