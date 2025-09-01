@@ -251,7 +251,10 @@
   display: none !important;
 }
 
-/* 只隐藏 Swym 插件自动注入的收藏按钮，不影响添加购物车按钮 */
+/* 隐藏 Swym 插件自动注入的整个按钮容器 */
+.swym-atw-btn-wrapper,
+#swym-embed-pdp-btn-wrapper,
+#swym-atw-button-container,
 #swym-atw-pdp-button {
   display: none !important;
 }
@@ -260,6 +263,11 @@
 .swym-button-bar,
 .swym-wishlist-button-bar,
 .swym-inject {
+  display: none !important;
+}
+
+/* 隐藏所有 Swym 相关的定位类，防止影响布局 */
+.add_to_cart_button_left-position {
   display: none !important;
 }
 
