@@ -266,8 +266,9 @@
   display: none !important;
 }
 
-/* 隐藏所有 Swym 相关的定位类，防止影响布局 */
-.add_to_cart_button_left-position {
+/* 只隐藏 Swym 容器中的定位类，不影响添加购物车按钮 */
+.swym-atw-btn-wrapper .add_to_cart_button_left-position,
+#swym-embed-pdp-btn-wrapper .add_to_cart_button_left-position {
   display: none !important;
 }
 
