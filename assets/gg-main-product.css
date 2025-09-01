@@ -274,11 +274,11 @@
 }
 
 /* 确保按钮容器和按钮尺寸固定，防止被 Swym 插件影响 */
-.product-form__buttons-row {
+/* .product-form__buttons-row {
   display: flex !important;
   align-items: center !important;
   gap: 12px !important;
-}
+} */
 /* 确保手动添加的收藏按钮尺寸固定 */
 /* .product-form__buttons-row .swym-button.swym-add-to-wishlist[data-with-epi="true"] {
   width: 74px !important;
@@ -301,6 +301,10 @@
   display: block !important;
   visibility: visible !important;
 } */
+
+.product-form__buttons {
+  max-width: 44rem !important;
+}
 
 
 /* 隐藏 Swym 插件自动注入的按钮，只保留手动添加的按钮 */
