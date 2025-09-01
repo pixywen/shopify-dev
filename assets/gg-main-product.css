@@ -246,6 +246,13 @@
   display: none !important;
 }
 
+/* 隐藏 Swym 插件自动注入的按钮容器 */
+.swym-atw-btn-wrapper,
+.swym-atw-button-container,
+#swym-atw-pdp-button {
+  display: none !important;
+}
+
 /* 隐藏 Swym 插件自动注入的按钮，只保留手动添加的按钮 */
 .product-form__buttons-row .swym-button.swym-add-to-wishlist:not([data-with-epi="true"]) {
   display: none !important;
