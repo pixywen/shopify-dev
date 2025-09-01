@@ -274,8 +274,8 @@
   align-items: center !important;
   gap: 12px !important;
 }
-/* 
-/* .product-form__buttons-row .swym-button.swym-add-to-wishlist[data-with-epi="true"] {
+/* 确保手动添加的收藏按钮尺寸固定 */
+.product-form__buttons-row .swym-button.swym-add-to-wishlist[data-with-epi="true"] {
   width: 74px !important;
   height: 69px !important;
   flex: 0 0 74px !important;
@@ -283,14 +283,16 @@
   max-width: 74px !important;
 }
 
-
-/* .product-form__buttons-row .product-form__submit {
+/* 确保添加购物车按钮显示和尺寸固定 */
+.product-form__buttons-row .product-form__submit {
   width: 448px !important;
   height: 70px !important;
   flex: 0 0 448px !important;
   min-width: 448px !important;
   max-width: 448px !important;
-}  */
+  display: block !important;
+  visibility: visible !important;
+}
 
 
 /* 隐藏 Swym 插件自动注入的按钮，只保留手动添加的按钮 */
