@@ -254,7 +254,7 @@
   display: none !important;
 }
 
-<<<<<<< HEAD
+
 /* 隐藏 Swym 插件添加的按钮栏容器，防止影响布局 */
 .swym-button-bar,
 .swym-wishlist-button-bar,
@@ -292,8 +292,7 @@
   max-width: 448px !important;
 }  */
 
-=======
->>>>>>> parent of 778b8ed (调试)
+
 /* 隐藏 Swym 插件自动注入的按钮，只保留手动添加的按钮 */
 .product-form__buttons-row .swym-button.swym-add-to-wishlist:not([data-with-epi="true"]) {
   display: none !important;
