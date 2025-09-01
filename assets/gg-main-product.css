@@ -241,6 +241,16 @@
   display: none !important;
 }
 
+/* 隐藏 Swym 插件自动注入的按钮，只保留手动添加的按钮 */
+.product-form__buttons-row .swym-button.swym-add-to-wishlist:not([data-with-epi="true"]) {
+  display: none !important;
+}
+
+/* 更精确的选择器：隐藏没有特定属性的自动注入按钮 */
+.swym-button.swym-add-to-wishlist:not([data-product-id]):not([data-variant-id]) {
+  display: none !important;
+}
+
 .product-form__custom-button {
   flex: 0 0 auto;
   min-width: 120px;
@@ -390,6 +400,18 @@
     font-weight: 600 !important;
     text-transform: uppercase !important;
   }
+  
+  .product-form__custom-fit-button-wrapper {
+    width: 100%;
+    max-width: calc(11.2vw + 3.46vw + 68vw);
+    margin-bottom: 3.46vw;
+  }
+  
+  .product-form__custom-fit-button {
+    height: 10.66vw;
+    font-size: 3.2vw;
+    line-height: 10.66vw;
+  }
   .product__info-container .product-form {
     margin: 6.66vw 0;
   }
@@ -424,5 +446,26 @@
     width: 4.66vw !important;
     height: 4vw !important;
   }
+}
+
+.product-form__custom-fit-button-wrapper {
+  width: 100%;
+  max-width: calc(74px + 23px + 448px);
+  margin-bottom: 23px;
+}
+
+.product-form__custom-fit-button {
+  width: 100%;
+  height: 70px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 24.38px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
