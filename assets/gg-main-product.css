@@ -239,8 +239,8 @@
   display: none !important;
 }
 
-/* 简单方案：隐藏所有没有 data-with-epi 属性的 Swym 按钮 */
-.swym-button.swym-add-to-wishlist:not([data-with-epi="true"]) {
+/* 简单方案：隐藏所有没有 data-with-epi 属性的 Swym 按钮，但排除商品页顶部的按钮 */
+.swym-button.swym-add-to-wishlist:not([data-with-epi="true"]):not(.swym-wishlist) {
   display: none !important;
 }
 
@@ -307,13 +307,13 @@
 }
 
 
-/* 隐藏 Swym 插件自动注入的按钮，只保留手动添加的按钮 */
-.product-form__buttons-row .swym-button.swym-add-to-wishlist:not([data-with-epi="true"]) {
+/* 隐藏 Swym 插件自动注入的按钮，只保留手动添加的按钮，但排除商品页顶部的按钮 */
+.product-form__buttons-row .swym-button.swym-add-to-wishlist:not([data-with-epi="true"]):not(.swym-wishlist) {
   display: none !important;
 }
 
-/* 更精确的选择器：隐藏没有特定属性的自动注入按钮 */
-.swym-button.swym-add-to-wishlist:not([data-product-id]):not([data-variant-id]) {
+/* 更精确的选择器：隐藏没有特定属性的自动注入按钮，但排除商品页顶部的按钮 */
+.swym-button.swym-add-to-wishlist:not([data-product-id]):not([data-variant-id]):not(.swym-wishlist) {
   display: none !important;
 }
 
