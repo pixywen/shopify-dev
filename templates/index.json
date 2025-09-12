@@ -285,9 +285,39 @@
         "product_NcBp6N",
         "product_HjLb7h"
       ],
+      "disabled": true,
       "name": "GG-热卖商品",
       "settings": {
         "title": "Best Seller"
+      }
+    },
+    "featured_collection_niEPwA": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Best  Seller",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "best-seller",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 72,
+        "padding_bottom": 60
       }
     },
     "gg_image_banner_common_rnwYrY": {
@@ -527,6 +557,7 @@
     "featured_collection_TxRkxB",
     "gg_image_banner_common_ARcgWG",
     "gg_featured_products_UPNhBN",
+    "featured_collection_niEPwA",
     "gg_image_banner_common_rnwYrY",
     "gg_featured_products_McEQBe",
     "featured_collection_7qii9g",
