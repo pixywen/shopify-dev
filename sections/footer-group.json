@@ -71,34 +71,34 @@
             "success_message": "感谢订阅！"
           }
         },
-        "gg_menu_accordion_CqPb7t": {
-          "type": "gg_menu_accordion",
-          "settings": {
-            "small_hide": false,
-            "medium_hide": true,
-            "large_up_hide": true,
-            "heading": "Shop",
-            "menu": "aurora-main-menu"
-          }
-        },
         "gg_menu_accordion_YRVh8w": {
           "type": "gg_menu_accordion",
           "settings": {
             "small_hide": false,
-            "medium_hide": true,
-            "large_up_hide": true,
-            "heading": "NeedHelp",
+            "medium_hide": false,
+            "large_up_hide": false,
+            "heading": "Support",
             "menu": "aurora-footer-needhelp"
           }
         },
         "gg_menu_accordion_dFUVcJ": {
           "type": "gg_menu_accordion",
           "settings": {
-            "small_hide": true,
-            "medium_hide": true,
-            "large_up_hide": true,
+            "small_hide": false,
+            "medium_hide": false,
+            "large_up_hide": false,
             "heading": "About Us",
             "menu": "about-us"
+          }
+        },
+        "gg_menu_accordion_CqPb7t": {
+          "type": "gg_menu_accordion",
+          "settings": {
+            "small_hide": false,
+            "medium_hide": false,
+            "large_up_hide": false,
+            "heading": "Shop",
+            "menu": "shop-footer-menu"
           }
         },
         "gg_social_icons_ce8MtR": {
@@ -111,6 +111,7 @@
         },
         "gg_menu_list_zyjMtP": {
           "type": "gg_menu_list",
+          "disabled": true,
           "settings": {
             "small_hide": true,
             "medium_hide": false,
@@ -121,6 +122,7 @@
         },
         "gg_menu_list_nested_b3f9EN": {
           "type": "gg_menu_list_nested",
+          "disabled": true,
           "settings": {
             "small_hide": true,
             "medium_hide": false,
@@ -146,9 +148,9 @@
       },
       "block_order": [
         "footer_newsletter_Ad7QGr",
-        "gg_menu_accordion_CqPb7t",
         "gg_menu_accordion_YRVh8w",
         "gg_menu_accordion_dFUVcJ",
+        "gg_menu_accordion_CqPb7t",
         "gg_social_icons_ce8MtR",
         "gg_menu_list_zyjMtP",
         "gg_menu_list_nested_b3f9EN",
