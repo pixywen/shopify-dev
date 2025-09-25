@@ -14,13 +14,6 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement-bar-0": {
-          "type": "announcement",
-          "settings": {
-            "text": "Alpargali CoreShell is live on Kickstarter! Back now!",
-            "link": "https://www.kickstarter.com/projects/alpargalipuffer/alpargali-coreshell-jacket-advanced-corelock-thermal-armor?ref=d05umg"
-          }
-        },
         "announcement_peTVYX": {
           "type": "announcement",
           "settings": {
@@ -30,7 +23,6 @@
         }
       },
       "block_order": [
-        "announcement-bar-0",
         "announcement_peTVYX"
       ],
       "settings": {
