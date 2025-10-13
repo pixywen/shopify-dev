@@ -310,10 +310,10 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/aao-detail-b-collage-01.jpg",
-            "heading": "DWR",
-            "subheading": "Durable Water Repellent",
-            "text": "<p>Our DWR coating mimics the water-resistant lotus leaf. Polymer technology creates a waterproof surface, causing water to simply bead and slide off.</p>",
+            "image": "shopify://shop_images/Jacquard_Fleece_Lining.jpg",
+            "heading": "Jacquard Fleece Lining",
+            "subheading": "",
+            "text": "<p>Made from 100% recycled polyester yarn, the fleece features a <strong>raised jacquard texture</strong> that forms 20,000+ air chambers.</p>",
             "target_tab": "description",
             "margin_top": 32,
             "margin_bottom": 0
