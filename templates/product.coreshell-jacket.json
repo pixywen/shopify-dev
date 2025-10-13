@@ -509,6 +509,7 @@
         },
         "video_GcYqEt": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "title": "",
             "video_desktop": "shopify://files/videos/视频1-主.mp4",
@@ -527,6 +528,7 @@
         },
         "video_a7qDtK": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "title": "",
             "video_desktop": "shopify://files/videos/视频2.mp4",
@@ -545,6 +547,7 @@
         },
         "video_VL79Dy": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "title": "",
             "video_desktop": "shopify://files/videos/视频3.mp4",
@@ -625,7 +628,7 @@
       ],
       "settings": {
         "show_description": true,
-        "show_video": true,
+        "show_video": false,
         "show_reviews": true,
         "show_faq": true
       }
