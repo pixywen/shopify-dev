@@ -180,18 +180,30 @@
     "gg_product_detail_Mg4rJH": {
       "type": "gg-product-detail",
       "blocks": {
+        "image_banner_MYRGBE": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/Introducing_Alpargali_CoreShell-1.jpg",
+            "image_mobile": "shopify://shop_images/Introducing_Alpargali_CoreShell-1-m.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
         "content_block_MGACxw": {
           "type": "content_block",
           "settings": {
             "block_type": "heading_text",
             "margin_top": 60,
             "margin_bottom": 60,
-            "heading": "<p>Your Ultimate All-season Jacket</p>",
-            "content": "<p>Designed for city living, globetrotting, and everything in between, Alpargali is an era-defining jacket that will keep all your adventures organized. It’s mobile storage for the modern  explorer. The dozens of features - including 14 waterproof pockets and 15k breathability - give Alpargali ultimate versatility as an everyday jacket, travel jacket, going-out jacket AND activewear. Business meetings. Leisure rides. Country hikes. Any occasion. One piece of outerwear.</p>",
+            "heading": "<p><strong>Alpargali CoreShell</strong></p>",
+            "content": "<p>Introducing <strong>Alpargali CoreShell</strong> — not just an upgrade, a re-imagining. Powered by <strong>CoreLock insulation</strong> and <strong>2mm  jacquard fleece</strong>, it delivers <strong>30% more warmth</strong> than traditional fleece jackets.<strong>Windproof. Waterproof. Barrierproof.</strong>A <strong>10K-rated TPUmembrane</strong>, <strong>high-density exterior</strong>, and <strong>anti-static material </strong>keeps you dry and warm, from downtown to the summit and everywhere in between.<strong>13 purposeful pockets. Zero compromise.</strong>Thoughtfully designed for daily carry–including features like magnetic access, layered mesh and secure zip-ups.<strong>Eco-conscious. Adventure-ready.</strong>Made from <strong>recycled, fluorine-free materials</strong>, equipped with <strong>4-way stretch</strong>, <strong>YKK zippers</strong>, and reinforced durability.This is CoreShell. Softshell the way it should be.<br/><br/></p>",
             "target_tab": "description"
           }
         },
-        "image_banner_MYRGBE": {
+        "image_banner_4KMT9M": {
           "type": "image_banner",
           "settings": {
             "image_desktop": "shopify://shop_images/aao-desc-001.png",
@@ -468,13 +480,16 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget",
             "max_width": 1200
           }
         }
       },
       "block_order": [
-        "content_block_MGACxw",
         "image_banner_MYRGBE",
+        "content_block_MGACxw",
+        "image_banner_4KMT9M",
         "image_banner_DDQQKc",
         "image_banner_kkiFwQ",
         "content_block_7M4XLL",
