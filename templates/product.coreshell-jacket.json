@@ -252,6 +252,7 @@
         },
         "carousel_JgqD6V": {
           "type": "carousel",
+          "disabled": true,
           "settings": {
             "title": "14+ Pockets",
             "image_1": "shopify://shop_images/1_b5ccf2b1-7cb4-4176-ae74-27e17151b04c.png",
@@ -293,6 +294,7 @@
         },
         "image_banner_xnEjDM": {
           "type": "image_banner",
+          "disabled": true,
           "settings": {
             "image_desktop": "shopify://shop_images/aao-detail-b-ib-04.jpg",
             "image_mobile": "shopify://shop_images/aao-detail-b-ib-04-m.jpg",
