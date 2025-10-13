@@ -333,6 +333,20 @@
             "margin_bottom": 32
           }
         },
+        "collage_PMAQj8": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/Anti-static.jpg",
+            "heading": "Far-infrared additives",
+            "subheading": "",
+            "text": "<p><strong>Anti-static treatment for frictionless winter layering</strong></p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 32
+          }
+        },
         "carousel_fzniPB": {
           "type": "carousel",
           "settings": {
@@ -499,6 +513,7 @@
         "image_banner_xnEjDM",
         "collage_y7J6gW",
         "collage_RULhdH",
+        "collage_PMAQj8",
         "carousel_fzniPB",
         "collage_cfpQpc",
         "content_block_RiEbHT",
