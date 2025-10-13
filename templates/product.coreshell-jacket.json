@@ -218,8 +218,8 @@
         "image_banner_DDQQKc": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/aao-detail-b-ib-02.png",
-            "image_mobile": "shopify://shop_images/aao-detail-b-ib-02-m.png",
+            "image_desktop": "shopify://shop_images/function_icon-pc.png",
+            "image_mobile": "shopify://shop_images/function_icon-m.png",
             "margin_top": 0,
             "margin_bottom": 32,
             "padding_x_desktop": 25,
