@@ -387,12 +387,12 @@
         "collage_CjANny": {
           "type": "collage",
           "settings": {
-            "desktop_layout": "image_left",
+            "desktop_layout": "image_right",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/Anti-static.jpg",
-            "heading": "Anti-Static Comfort",
+            "image": "shopify://shop_images/Waterproof-pc.jpg",
+            "heading": "10K Waterproof Rating",
             "subheading": "",
-            "text": "<p><strong>Anti-static treatment for frictionless winter layering</strong></p>",
+            "text": "<p>A built-in TPU membrane effectively blocks rain and snow, protecting you from everyday wet conditions.</p>",
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 32
@@ -403,10 +403,10 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/Anti-static.jpg",
-            "heading": "Anti-Static Comfort",
+            "image": "shopify://shop_images/wind_resistance-pc.jpg",
+            "heading": "Reinforced Wind Protection",
             "subheading": "",
-            "text": "<p><strong>Anti-static treatment for frictionless winter layering</strong></p>",
+            "text": "<p>Reinforced <strong>wind resistance</strong> to maintain body temperature during blustery conditions</p>",
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 32
