@@ -339,7 +339,72 @@
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
             "image": "shopify://shop_images/Anti-static.jpg",
-            "heading": "Far-infrared additives",
+            "heading": "Anti-Static Comfort",
+            "subheading": "",
+            "text": "<p><strong>Anti-static treatment for frictionless winter layering</strong></p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 32
+          }
+        },
+        "image_banner_TjCbxi": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/3-layer-pc.jpg",
+            "image_mobile": "shopify://shop_images/3-layer-m.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "content_block_zat93J": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 12,
+            "margin_bottom": 32,
+            "heading": "",
+            "content": "<p>Alpargali CoreShell features a <strong>3-layer storm defense system</strong> engineered to handle real-world weather — from sudden rain to biting wind — while keeping your body dry, fresh, and comfortable.</p>",
+            "target_tab": "description"
+          }
+        },
+        "collage_iqryEz": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/TPU_Membrane-pc.jpg",
+            "heading": "High-Performance  TPU Membrane",
+            "subheading": "",
+            "text": "<p>20% Higher Breathability Than Standard Fleece<strong>10,000g/m²/24h Breathability: </strong>Microporous structure allows sweat vapor to escape, preventing clamminess during active movement.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 32
+          }
+        },
+        "collage_CjANny": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/Anti-static.jpg",
+            "heading": "Anti-Static Comfort",
+            "subheading": "",
+            "text": "<p><strong>Anti-static treatment for frictionless winter layering</strong></p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 32
+          }
+        },
+        "collage_F3RWhV": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/Anti-static.jpg",
+            "heading": "Anti-Static Comfort",
             "subheading": "",
             "text": "<p><strong>Anti-static treatment for frictionless winter layering</strong></p>",
             "target_tab": "description",
@@ -514,6 +579,11 @@
         "collage_y7J6gW",
         "collage_RULhdH",
         "collage_PMAQj8",
+        "image_banner_TjCbxi",
+        "content_block_zat93J",
+        "collage_iqryEz",
+        "collage_CjANny",
+        "collage_F3RWhV",
         "carousel_fzniPB",
         "collage_cfpQpc",
         "content_block_RiEbHT",
