@@ -206,8 +206,8 @@
         "image_banner_4KMT9M": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/aao-desc-001.png",
-            "image_mobile": "shopify://shop_images/aao-desc-001-m.png",
+            "image_desktop": "shopify://shop_images/Introducing_Alpargali_CoreShell-2.jpg",
+            "image_mobile": "shopify://shop_images/Introducing_Alpargali_CoreShell-2-m.jpg",
             "margin_top": 32,
             "margin_bottom": 32,
             "padding_x_desktop": 0,
