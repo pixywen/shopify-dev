@@ -118,7 +118,7 @@
           "settings": {
             "heading": "Care",
             "icon": "none",
-            "content": "<p>Clean regularly, please use a mild, neutral detergent that does not contain fabric softener.</p><p>- Hand wash maximum temperature <strong>40°C</strong><br/>- Do not bleach<br/>- Do not tumble dry<br/>- Do not iron<br/>- Do not dry clean<br/>- Line dry in shade</p><p><strong>Usage and Cleaning Frequency:</strong></p><p>- Intensive Use: Deep clean after 10 uses.</p><p>- Low-Intensity Use: Deep clean every 1-2 months.</p>",
+            "content": "<ul><li><strong>Wash:</strong> Mild detergent, gentle cycle, no bleach</li><li><strong>Dry: </strong>Air dry, avoid direct sun & high heat</li><li><strong>Maintain Waterproofing:</strong> Spray fluorine-free water-repellent regularly to extend performance</li></ul>",
             "page": "",
             "image": "shopify://shop_images/aao-info-icon-01.png",
             "image_alt": "",
