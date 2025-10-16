@@ -29,12 +29,12 @@
         "slide_K7KMTT": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/2_038da1ab-4982-4276-8d07-e84a659b9f98.jpg",
+            "image": "shopify://shop_images/shell_bannerpc.png",
             "heading": "Everyday Carry",
             "heading_size": "h1",
             "subheading": "Built for movement, travel, and life on the go",
             "button_label": "Shop Now",
-            "link": "shopify://products/everyday-backpack",
+            "link": "shopify://collections/clothing",
             "button_style_secondary": true,
             "box_align": "middle-center",
             "show_text_box": false,
