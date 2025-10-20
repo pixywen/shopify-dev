@@ -124,7 +124,7 @@
           "settings": {
             "heading": "Care",
             "icon": "none",
-            "content": "<ul><li>Do Not Bleach.</li></ul><p></p><ul><li>Wash Gently.</li></ul><p></p><ul><li>Avoid Direct Contact Between Iron And Fabric.</li></ul><p></p><ul><li>Lay Flat To Dry.</li></ul><p></p><ul><li>Do Not Dry Clean.<br/><br/></li></ul>",
+            "content": "<ul><li>Do Not Bleach.</li><li>Wash Gently.</li><li>Avoid Direct Contact Between Iron And Fabric.</li><li>Lay Flat To Dry.</li><li>Do Not Dry Clean.</li></ul><p><strong>First Wash Tip</strong><br/></p><p>Use <strong>cold water (&lt;30°C)</strong> with <strong>mild detergent</strong>. Hand wash or machine wash on <strong>delicate mode</strong> (max 600 r/min).<br/><strong>Lay flat to dry</strong> to remove loose fibers and keep it soft.<br/><br/></p>",
             "page": "",
             "image": "shopify://shop_images/FALL.png",
             "image_alt": "",
@@ -318,6 +318,8 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget",
             "max_width": 1200
           }
         }
