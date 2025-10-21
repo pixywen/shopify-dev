@@ -30,9 +30,9 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/shell_bannerpc.png",
-            "heading": "Everyday Carry",
+            "heading": "Adventure Jacket",
             "heading_size": "h1",
-            "subheading": "Built for movement, travel, and life on the go",
+            "subheading": "Built to endure the wild, ready for any adventure.",
             "button_label": "Shop Now",
             "link": "shopify://collections/clothing",
             "button_style_secondary": true,
