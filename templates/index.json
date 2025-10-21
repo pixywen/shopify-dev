@@ -29,8 +29,8 @@
         "slide_K7KMTT": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/shell_bannerpc.png",
-            "heading": "Adventure Jacket",
+            "image": "shopify://shop_images/coreshell-banner.jpg",
+            "heading": "CoreShell Jacket",
             "heading_size": "h1",
             "subheading": "Built to endure the wild, ready for any adventure.",
             "button_label": "Shop Now",
