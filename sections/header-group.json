@@ -17,13 +17,21 @@
         "announcement_peTVYX": {
           "type": "announcement",
           "settings": {
-            "text": "🎒 Outdoor Backpacks New Arrival",
-            "link": "shopify://products/everyday-backpack"
+            "text": "Discover the All-New CoreShell Jacket",
+            "link": "shopify://products/alpargali-coreshell-jacket"
+          }
+        },
+        "announcement_diVnMr": {
+          "type": "announcement",
+          "settings": {
+            "text": "Free Shipping on Orders Over $169",
+            "link": "shopify://pages/shipping-policy"
           }
         }
       },
       "block_order": [
-        "announcement_peTVYX"
+        "announcement_peTVYX",
+        "announcement_diVnMr"
       ],
       "settings": {
         "color_scheme": "scheme-1",
