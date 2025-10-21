@@ -188,11 +188,11 @@
         "banner_xrUmaj": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/right.jpg",
-            "subtitle": "End-of-Summer Sale",
-            "title": "Up to 30% Off",
-            "button_label": "Shop the Sale",
-            "button_link": "shopify://collections/sale"
+            "image": "shopify://shop_images/black-backpack-_3.jpg",
+            "subtitle": "Carry Everything, Conquer Anywhere",
+            "title": "Pack Light. Travel Right.",
+            "button_label": "Shop Bags",
+            "button_link": "shopify://collections/bags"
           }
         }
       },
