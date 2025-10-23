@@ -183,8 +183,8 @@
         "image_banner_MYRGBE": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/Titanium_Travel_Bottle-PC1.jpg",
-            "image_mobile": "shopify://shop_images/Titanium_Travel_Bottle-PC1.jpg",
+            "image_desktop": "shopify://shop_images/Wool_Beanie-PC1.jpg",
+            "image_mobile": "shopify://shop_images/Wool_Beanie-m1.jpg",
             "margin_top": 32,
             "margin_bottom": 32,
             "padding_x_desktop": 0,
@@ -303,10 +303,10 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/Titanium_Travel_Bottle-info-1-PC.jpg",
-            "heading": "Titanium Travel Bottle – Lightweight, Durable, and Adventure-Ready",
+            "image": "shopify://shop_images/Wool_Beanie-PC1-1-PC.jpg",
+            "heading": "Merino Wool Beanie – Warm, Comfortable & Durable",
             "subheading": "",
-            "text": "<p>Take your adventures anywhere with the Titanium Travel Bottle. Made from 99.92% pure titanium, it’s lightweight, durable, and features a sleek matte finish. Leak-proof with a wide-mouth spout and internal rubber gasket, it’s easy to drink from on the go. The convenient handle makes it portable, perfect for cycling, hiking, or off-roading.</p>",
+            "text": "<p>Stay warm and comfortable with the Merino Wool Beanie. Made from a premium acrylic and merino wool blend, it provides superior warmth, softness, and durability. Acrylic adds extra warmth and is antibacterial, insect- and UV-resistant, while merino wool blocks cold winds. The inner lining ensures a snug fit, and its anti-wrinkle properties make it easy to care for.</p>",
             "target_tab": "description",
             "margin_top": 32,
             "margin_bottom": 0
@@ -317,7 +317,7 @@
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/Titanium_Travel_Bottle-info-2-PC.jpg",
+            "image": "shopify://shop_images/Wool_Beanie-PC1-2-PC.jpg",
             "heading": "Durable Titanium Bottle – Sleek Design for Outdoor Adventures",
             "subheading": "",
             "text": "<p>Single-layer titanium construction with matte finish and minimalist design. Leak-proof with internal rubber gasketWide-mouth direct-drink spout for easy hydration. Convenient carrying handlePerfect for cycling, hiking, off-roading, and outdoor sports.</p>",
