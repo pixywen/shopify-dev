@@ -1,0 +1,673 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gg_breadcrumb_yr7zeq": {
+      "type": "gg-breadcrumb",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price_8GJUk7": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "square"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_ex_c7QqTL": {
+          "type": "buy_buttons_ex",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "divider_3i4EF3": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "margin_top": 20,
+            "margin_bottom": 20
+          }
+        },
+        "gg_icon_text_grid_TGCbKj": {
+          "type": "gg-icon-text-grid",
+          "settings": {
+            "icon_1": "shopify://shop_images/product-block-001-001.svg",
+            "text_1": "$169  Free Shipping",
+            "icon_2": "shopify://shop_images/product-block-001-002.svg",
+            "text_2": "Payment Security",
+            "icon_3": "shopify://shop_images/product-block-001-003.svg",
+            "text_3": "Eco-Friendly Packaging",
+            "text_4": ""
+          }
+        },
+        "divider_FHRHjn": {
+          "type": "divider",
+          "settings": {
+            "margin_top": 20,
+            "margin_bottom": 20
+          }
+        },
+        "gg_heading_image_Lh8bEX": {
+          "type": "gg-heading-image",
+          "settings": {
+            "heading": "As Featured In:",
+            "image": "shopify://shop_images/product-info-b-hi-01_f193a6ad-01f8-4116-b5f2-e3d38b60c9a9.png",
+            "image_mobile": "shopify://shop_images/product-info-b-hi-01-m.png"
+          }
+        },
+        "complementary_jJRN7f": {
+          "type": "complementary",
+          "disabled": true,
+          "settings": {
+            "block_heading": "Pairs well with:",
+            "make_collapsible_row": true,
+            "icon": "none",
+            "product_list_limit": 1,
+            "products_per_page": 1,
+            "pagination_style": "dots",
+            "image_ratio": "square",
+            "enable_quick_add": true
+          }
+        },
+        "collapsible_tab_yAPYME": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Details",
+            "icon": "none",
+            "content": "<p>The Alpargali CoreShell jacket combines CoreLock insulation and 2mm jacquard fleece for 30% more warmth, featuring windproof and abrasion-resistant fabric, a 13-pocket utility system, and eco-certified, fluorine-free materials — versatile for commuting, light hiking, and travel.</p>",
+            "page": "",
+            "image_alt": "",
+            "image_width": 100
+          }
+        },
+        "collapsible_tab_GyWCqX": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Specs",
+            "icon": "none",
+            "content": "<ul><li> Waterproof rating: 10,000 mmH₂O (10K)</li><li>Breathability: 10,000 g/m²/24h</li><li>Outer fabric: 70D 4-way stretch nylon (fluorine-free WR)</li><li>Lining: 100% recycled polyester fleece</li><li> Durability: 20,000 Martindale rubs abrasion resistance</li><li>Temperature range:<br/>- With base layer: 0°C to -8°C / 32°F to 17.6°F (static), -5°C to -12°C / 23°F to 10.4°F (active)<br/>- With layering: as low as -30°C / -22°F</li></ul>",
+            "page": "",
+            "image_alt": "",
+            "image_width": 100
+          }
+        },
+        "collapsible_tab_4bGyQa": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care",
+            "icon": "none",
+            "content": "<ul><li><strong>Wash:</strong> Mild detergent, gentle cycle, no bleach</li><li><strong>Dry: </strong>Air dry, avoid direct sun & high heat</li><li><strong>Maintain Waterproofing:</strong> Spray fluorine-free water-repellent regularly to extend performance</li></ul>",
+            "page": "",
+            "image": "shopify://shop_images/aao-info-icon-01.png",
+            "image_alt": "",
+            "image_width": 50
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price_8GJUk7",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons_ex_c7QqTL",
+        "divider_3i4EF3",
+        "gg_icon_text_grid_TGCbKj",
+        "divider_FHRHjn",
+        "gg_heading_image_Lh8bEX",
+        "complementary_jJRN7f",
+        "collapsible_tab_yAPYME",
+        "collapsible_tab_GyWCqX",
+        "collapsible_tab_4bGyQa"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12,
+        "size_guide_image": "shopify://shop_images/coreshell_size.jpg"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "gg_product_detail_Mg4rJH": {
+      "type": "gg-product-detail",
+      "blocks": {
+        "image_banner_MYRGBE": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/Introducing_Alpargali_CoreShell-1.jpg",
+            "image_mobile": "shopify://shop_images/Introducing_Alpargali_CoreShell-1-m.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "content_block_MGACxw": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 60,
+            "margin_bottom": 60,
+            "heading": "<p><strong>Alpargali CoreShell</strong></p>",
+            "content": "<p>Introducing <strong>Alpargali CoreShell</strong> — not just an upgrade, a re-imagining. Powered by <strong>CoreLock insulation</strong> and <strong>2mm  jacquard fleece</strong>, it delivers <strong>30% more warmth</strong> than traditional fleece jackets. <strong>Windproof. Waterproof. Barrierproof. </strong>A <strong>10K-rated TPUmembrane</strong>, <strong>high-density exterior</strong>, and <strong>anti-static material </strong>keeps you dry and warm, from downtown to the summit and everywhere in between.<strong>13 purposeful pockets. Zero compromise. </strong>Thoughtfully designed for daily carry–including features like magnetic access, layered mesh and secure zip-ups. <strong>Eco-conscious. Adventure-ready. </strong>Made from <strong>recycled, fluorine-free materials</strong>, equipped with <strong>4-way stretch</strong>, <strong>YKK zippers</strong>, and reinforced durability. This is CoreShell. Softshell the way it should be.<br/><br/></p>",
+            "target_tab": "description"
+          }
+        },
+        "image_banner_4KMT9M": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/Introducing_Alpargali_CoreShell-2.jpg",
+            "image_mobile": "shopify://shop_images/Introducing_Alpargali_CoreShell-2-m.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "image_banner_DDQQKc": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/function_icon-pc.png",
+            "image_mobile": "shopify://shop_images/function_icon-m.png",
+            "margin_top": 0,
+            "margin_bottom": 32,
+            "padding_x_desktop": 25,
+            "padding_x_mobile": 5,
+            "target_tab": "description"
+          }
+        },
+        "image_banner_kkiFwQ": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/three-layer-pc.jpg",
+            "image_mobile": "shopify://shop_images/three-layer-m.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "content_block_7M4XLL": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 12,
+            "margin_bottom": 32,
+            "heading": "",
+            "content": "<p>Alpargali CoreShell uses an integrated <strong>three-layer thermal system</strong>, combining warmness, windproofing, and breathability — all in one streamlined design.</p>",
+            "target_tab": "description"
+          }
+        },
+        "carousel_JgqD6V": {
+          "type": "carousel",
+          "disabled": true,
+          "settings": {
+            "title": "14+ Pockets",
+            "image_1": "shopify://shop_images/1_b5ccf2b1-7cb4-4176-ae74-27e17151b04c.png",
+            "caption_1": "Arm Pocketswith RFID",
+            "hover_text_1": "",
+            "image_2": "shopify://shop_images/2_fdf02d3f-5849-4d65-923c-7084fda63d87.png",
+            "caption_2": "4 DUAL-ACCESSCHEST POCKETS",
+            "hover_text_2": "",
+            "image_3": "shopify://shop_images/3_c2893055-7a15-447c-b6b2-4fae47f7680b.jpg",
+            "caption_3": "Hidden BackPocket",
+            "hover_text_3": "",
+            "image_4": "shopify://shop_images/Sleeve_Pocket_5861b38f-caa8-4550-8de3-711495261fe4.jpg",
+            "caption_4": "Faster Transit Card Access with Sleeve Pocket",
+            "hover_text_4": "",
+            "image_5": "shopify://shop_images/hANDYRONTF_PocketS_346dc5b0-f17b-4b76-afab-6680fb3ae046.jpg",
+            "caption_5": "2 Handy Front Pockets",
+            "hover_text_5": "",
+            "image_6": "shopify://shop_images/Interior_Zip_Pockets_e4657f2a-08d5-496a-8e8b-6dae7db951a7.jpg",
+            "caption_6": "Secure Interior Zip Pockets",
+            "hover_text_6": "",
+            "image_7": "shopify://shop_images/Stretchable_Mesh_Pockets_70beb283-e560-4c3f-91e2-5ecf5796ab21.jpg",
+            "caption_7": "Stretchable Interior Mesh Pockets",
+            "hover_text_7": "",
+            "caption_8": "",
+            "hover_text_8": "",
+            "caption_9": "",
+            "hover_text_9": "",
+            "caption_10": "",
+            "hover_text_10": "",
+            "caption_11": "",
+            "hover_text_11": "",
+            "caption_12": "",
+            "hover_text_12": "",
+            "autoplay_speed": 8,
+            "target_tab": "description",
+            "margin_top": 32,
+            "margin_bottom": 32
+          }
+        },
+        "image_banner_xnEjDM": {
+          "type": "image_banner",
+          "disabled": true,
+          "settings": {
+            "image_desktop": "shopify://shop_images/aao-detail-b-ib-04.jpg",
+            "image_mobile": "shopify://shop_images/aao-detail-b-ib-04-m.jpg",
+            "margin_top": 40,
+            "margin_bottom": 48,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "collage_y7J6gW": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/Jacquard_Fleece_Lining.jpg",
+            "heading": "Jacquard Fleece Lining",
+            "subheading": "",
+            "text": "<p>Made from 100% recycled polyester yarn, the fleece features a <strong>raised jacquard texture</strong> that forms 20,000+ air chambers.</p>",
+            "target_tab": "description",
+            "margin_top": 32,
+            "margin_bottom": 0
+          }
+        },
+        "collage_RULhdH": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_right",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/Far-infrared_additives.jpg",
+            "heading": "Far-infrared additives",
+            "subheading": "",
+            "text": "<p>Far-infrared additives reflect body heat and enhance insulationActively absorbs and converts infrared rays (from the body and environment) into heat.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "collage_PMAQj8": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/Anti-static.jpg",
+            "heading": "Anti-Static Comfort",
+            "subheading": "",
+            "text": "<p><strong>Anti-static treatment for frictionless winter layering</strong></p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 32
+          }
+        },
+        "image_banner_TjCbxi": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/3-layer-pc.jpg",
+            "image_mobile": "shopify://shop_images/3-layer-m.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "content_block_zat93J": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 12,
+            "margin_bottom": 32,
+            "heading": "",
+            "content": "<p>Alpargali CoreShell features a <strong>3-layer storm defense system</strong> engineered to handle real-world weather — from sudden rain to biting wind — while keeping your body dry, fresh, and comfortable.</p>",
+            "target_tab": "description"
+          }
+        },
+        "collage_iqryEz": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/TPU_Membrane-pc.jpg",
+            "heading": "High-Performance  TPU Membrane",
+            "subheading": "",
+            "text": "<p>20% Higher Breathability Than Standard Fleece<strong>10,000g/m²/24h Breathability: </strong>Microporous structure allows sweat vapor to escape, preventing clamminess during active movement.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "collage_CjANny": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_right",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/Waterproof-pc.jpg",
+            "heading": "10K Waterproof Rating",
+            "subheading": "",
+            "text": "<p>A built-in TPU membrane effectively blocks rain and snow, protecting you from everyday wet conditions.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "collage_F3RWhV": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/wind_resistance-pc.jpg",
+            "heading": "Reinforced Wind Protection",
+            "subheading": "",
+            "text": "<p>Reinforced <strong>wind resistance</strong> to maintain body temperature during blustery conditions</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 32
+          }
+        },
+        "image_banner_xxwTbm": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/occasion-pc.jpg",
+            "image_mobile": "shopify://shop_images/occasion-m.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "content_block_XqbKax": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 12,
+            "margin_bottom": 32,
+            "heading": "",
+            "content": "<p><strong>Alpargali CoreShell is purpose-built for the cold-weather we face— frosty mornings, windy walks, surprise rainfall, and everything in between.</strong>Whether you're weaving through sidewalk traffic, biking to work, hiking light trails, or traversing climates, <strong>CoreShell adapts</strong> — no bulk, no stiffness, just protection, warmth, and breathability where it counts.<strong>Ideal for those “indecisive” transitional seasons like early winter, late fall, or spring chill. It’s windproof, water-repellent, and thermo-efficient — all in a sleek silhouette that moves with you.</strong></p>",
+            "target_tab": "description"
+          }
+        },
+        "carousel_fzniPB": {
+          "type": "carousel",
+          "disabled": true,
+          "settings": {
+            "title": "30+ Features",
+            "image_1": "shopify://shop_images/aao-detail-b-c-02-01.jpg",
+            "caption_1": "Fortified Windproof Warmth with Stand-Up Collar",
+            "hover_text_1": "1",
+            "image_2": "shopify://shop_images/aao-detail-b-c-02-02.jpg",
+            "caption_2": "Adjustable Hood for 180° Field of View",
+            "hover_text_2": "",
+            "image_3": "shopify://shop_images/aao-detail-b-c-02-03.jpg",
+            "caption_3": "Extended Rain Visor with Water-Repellent Coating",
+            "hover_text_3": "",
+            "image_4": "shopify://shop_images/aao-detail-b-c-02-04.jpg",
+            "caption_4": "Underarm Ventilation Keeps Things Cool and Comfortable",
+            "hover_text_4": "",
+            "image_5": "shopify://shop_images/aao-detail-b-c-02-05.jpg",
+            "caption_5": "Rear Reflective Stripes Keep Nighttime Safe",
+            "hover_text_5": "",
+            "image_6": "shopify://shop_images/aao-detail-b-c-02-06.jpg",
+            "caption_6": "Front Zipper Slanted for Comfort and Style",
+            "hover_text_6": "",
+            "image_7": "shopify://shop_images/aao-detail-b-c-02-07.jpg",
+            "caption_7": "Immediate Warmth with Built-In Fingerless Gloves",
+            "hover_text_7": "",
+            "image_8": "shopify://shop_images/aao-detail-b-c-02-08.jpg",
+            "caption_8": "Revolutionary Shoulder Strap System",
+            "hover_text_8": "",
+            "image_9": "shopify://shop_images/aao-detail-b-c-02-09.jpg",
+            "caption_9": "13 Waterproof YKK Zippers",
+            "hover_text_9": "",
+            "image_10": "shopify://shop_images/aao-detail-b-c-02-10.jpg",
+            "caption_10": "Multi-purpose Holder Loop",
+            "hover_text_10": "",
+            "caption_11": "",
+            "hover_text_11": "",
+            "caption_12": "",
+            "hover_text_12": "",
+            "autoplay_speed": 8,
+            "target_tab": "description",
+            "margin_top": 32,
+            "margin_bottom": 60
+          }
+        },
+        "collage_cfpQpc": {
+          "type": "collage",
+          "disabled": true,
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/aao-detail-b-collage-03.jpg",
+            "heading": "Built for Performance",
+            "subheading": "",
+            "text": "<p>Expert craftsma nship is at the heart of Alpargali, with over 92 fabric panels and more 40,000 stitches applies. The flexibility and comfort born of this tailoring negates the restrictive feel of traditional garments. Alpargali adapts to your body’s movements, optimizing your comfort and performance.</p>",
+            "target_tab": "description",
+            "margin_top": 60,
+            "margin_bottom": 32
+          }
+        },
+        "content_block_RiEbHT": {
+          "type": "content_block",
+          "disabled": true,
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 80,
+            "margin_bottom": 24,
+            "heading": "<p>The Difference is Clear</p>",
+            "content": "",
+            "target_tab": "description"
+          }
+        },
+        "video_GcYqEt": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "video_desktop": "shopify://files/videos/视频1-主.mp4",
+            "video_url_desktop": "",
+            "cover_desktop": "shopify://shop_images/1_ab13366d-9030-4f45-892f-9fd40d12fafa.jpg",
+            "video_url_mobile": "",
+            "autoplay": true,
+            "loop": true,
+            "controls": true,
+            "muted": true,
+            "target_tab": "video",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x": 0
+          }
+        },
+        "video_a7qDtK": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "video_desktop": "shopify://files/videos/视频2.mp4",
+            "video_url_desktop": "",
+            "cover_desktop": "shopify://shop_images/2_d325ce94-ba02-4399-ad00-f31ad9600e79.jpg",
+            "video_url_mobile": "",
+            "autoplay": true,
+            "loop": true,
+            "controls": true,
+            "muted": true,
+            "target_tab": "video",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x": 0
+          }
+        },
+        "video_VL79Dy": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "video_desktop": "shopify://files/videos/视频3.mp4",
+            "video_url_desktop": "",
+            "cover_desktop": "shopify://shop_images/3_409105f5-7734-4db7-9abc-39e16fa592dd.jpg",
+            "video_url_mobile": "",
+            "autoplay": true,
+            "loop": true,
+            "controls": true,
+            "muted": true,
+            "target_tab": "video",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x": 0
+          }
+        },
+        "image_banner_XfyKGt": {
+          "type": "image_banner",
+          "disabled": true,
+          "settings": {
+            "image_desktop": "shopify://shop_images/aao-detail-b-ib-05.png",
+            "image_mobile": "shopify://shop_images/aao-detail-b-ib-05-m.png",
+            "margin_top": 0,
+            "margin_bottom": 56,
+            "padding_x_desktop": 6,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "faq_yqgwMK": {
+          "type": "faq",
+          "settings": {
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "gap": 0,
+            "faq_content": "<title>Why Alpargali CoreShell?</title>\n<p>CoreShell redefines the softshell jacket. With CoreLock insulation + 2mm jacquard fleece, it delivers 30% more warmth than traditional fleece jackets.\n- 10K Waterproof / 10K Breathable TPU membrane\n- Windproof &amp; abrasion resistant (20,000 Martindale cycles)\n- 13-pocket utility system for everyday carry\n- Eco-certified fabrics with fluorine-free water repellent\n- Versatility: ideal for commuting, light hiking, and travel\nIt’s the perfect balance of style, performance, and sustainability.</p>\n<title>How do l select the correct size?</title>\n<p>Our size range runs from XS to 4XL. The sizing chart (available in both cm and inches) is based on body measurement values, aligned with international standards. We recommend choosing the size you normally wear. If you are between two sizes, please consider your layering preference.\nYou’ll receive a survey after the campaign to confirm your exact size. For personalized guidance, feel free to contact us at hello@alpargali.com.</p>\n<title>Should l size up?</title>\n<p>Alpargali CoreShell is designed with a relaxed fit for urban commuting and light outdoor activity. It provides enough space for layering without feeling bulky. If you intend to wear multiple thick mid-layers, consider sizing up. Otherwise, select your usual size.</p>\n<title>What is Alpargali CoreShell's waterproof grade and other specifications?</title>\n<p>- Waterproof rating: 10,000 mmH₂O (10K)\n- Breathability: 10,000 g/m²/24h\n- Outer fabric: 70D 4-way stretch nylon (fluorine-free WR)\n- Lining: 100% recycled polyester fleece\n- Durability: 20,000 Martindale rubs abrasion resistance\n- Temperature range:\n- With base layer: 0°C to -8°C / 32°F to 17.6°F (static), -5°C to -12°C / 23°F to 10.4°F (active)\n- With layering: as low as -30°C / -22°F</p>\n<title>Can l exchange the Alpargali CoreShell for a different size?</title>\n<p>Yes. If the jacket you receive doesn’t fit despite following our sizing guide and survey, we will arrange an exchange.\nWe strongly recommend using our official Sizing Guide instead of relying on other brands’ sizing.</p>",
+            "target_tab": "faq"
+          }
+        },
+        "judge_me_reviews_review_widget_JctMNU": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "image_banner_MYRGBE",
+        "content_block_MGACxw",
+        "image_banner_4KMT9M",
+        "image_banner_DDQQKc",
+        "image_banner_kkiFwQ",
+        "content_block_7M4XLL",
+        "carousel_JgqD6V",
+        "image_banner_xnEjDM",
+        "collage_y7J6gW",
+        "collage_RULhdH",
+        "collage_PMAQj8",
+        "image_banner_TjCbxi",
+        "content_block_zat93J",
+        "collage_iqryEz",
+        "collage_CjANny",
+        "collage_F3RWhV",
+        "image_banner_xxwTbm",
+        "content_block_XqbKax",
+        "carousel_fzniPB",
+        "collage_cfpQpc",
+        "content_block_RiEbHT",
+        "video_GcYqEt",
+        "video_a7qDtK",
+        "video_VL79Dy",
+        "image_banner_XfyKGt",
+        "faq_yqgwMK",
+        "judge_me_reviews_review_widget_JctMNU"
+      ],
+      "settings": {
+        "show_description": true,
+        "show_video": false,
+        "show_reviews": true,
+        "show_faq": true
+      }
+    },
+    "featured_collection_9FUAnF": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "You May Also Like",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "more-products",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "gg_breadcrumb_yr7zeq",
+    "main",
+    "related-products",
+    "gg_product_detail_Mg4rJH",
+    "featured_collection_9FUAnF"
+  ]
+}
