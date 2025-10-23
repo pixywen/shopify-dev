@@ -183,8 +183,8 @@
         "image_banner_MYRGBE": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/Introducing_Alpargali_CoreShell-1.jpg",
-            "image_mobile": "shopify://shop_images/Introducing_Alpargali_CoreShell-1-m.jpg",
+            "image_desktop": "shopify://shop_images/Titanium_Travel_Bottle-PC1.jpg",
+            "image_mobile": "shopify://shop_images/Titanium_Travel_Bottle-PC1.jpg",
             "margin_top": 32,
             "margin_bottom": 32,
             "padding_x_desktop": 0,
@@ -192,19 +192,9 @@
             "target_tab": "description"
           }
         },
-        "content_block_MGACxw": {
-          "type": "content_block",
-          "settings": {
-            "block_type": "heading_text",
-            "margin_top": 60,
-            "margin_bottom": 60,
-            "heading": "<p><strong>Alpargali CoreShell</strong></p>",
-            "content": "<p>Introducing <strong>Alpargali CoreShell</strong> — not just an upgrade, a re-imagining. Powered by <strong>CoreLock insulation</strong> and <strong>2mm  jacquard fleece</strong>, it delivers <strong>30% more warmth</strong> than traditional fleece jackets. <strong>Windproof. Waterproof. Barrierproof. </strong>A <strong>10K-rated TPUmembrane</strong>, <strong>high-density exterior</strong>, and <strong>anti-static material </strong>keeps you dry and warm, from downtown to the summit and everywhere in between.<strong>13 purposeful pockets. Zero compromise. </strong>Thoughtfully designed for daily carry–including features like magnetic access, layered mesh and secure zip-ups. <strong>Eco-conscious. Adventure-ready. </strong>Made from <strong>recycled, fluorine-free materials</strong>, equipped with <strong>4-way stretch</strong>, <strong>YKK zippers</strong>, and reinforced durability. This is CoreShell. Softshell the way it should be.<br/><br/></p>",
-            "target_tab": "description"
-          }
-        },
         "image_banner_4KMT9M": {
           "type": "image_banner",
+          "disabled": true,
           "settings": {
             "image_desktop": "shopify://shop_images/Introducing_Alpargali_CoreShell-2.jpg",
             "image_mobile": "shopify://shop_images/Introducing_Alpargali_CoreShell-2-m.jpg",
@@ -217,6 +207,7 @@
         },
         "image_banner_DDQQKc": {
           "type": "image_banner",
+          "disabled": true,
           "settings": {
             "image_desktop": "shopify://shop_images/function_icon-pc.png",
             "image_mobile": "shopify://shop_images/function_icon-m.png",
@@ -229,6 +220,7 @@
         },
         "image_banner_kkiFwQ": {
           "type": "image_banner",
+          "disabled": true,
           "settings": {
             "image_desktop": "shopify://shop_images/three-layer-pc.jpg",
             "image_mobile": "shopify://shop_images/three-layer-m.jpg",
@@ -241,6 +233,7 @@
         },
         "content_block_7M4XLL": {
           "type": "content_block",
+          "disabled": true,
           "settings": {
             "block_type": "heading_text",
             "margin_top": 12,
@@ -310,10 +303,10 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/Jacquard_Fleece_Lining.jpg",
-            "heading": "Jacquard Fleece Lining",
+            "image": "shopify://shop_images/Titanium_Travel_Bottle-info-1-PC.jpg",
+            "heading": "Titanium Travel Bottle – Lightweight, Durable, and Adventure-Ready",
             "subheading": "",
-            "text": "<p>Made from 100% recycled polyester yarn, the fleece features a <strong>raised jacquard texture</strong> that forms 20,000+ air chambers.</p>",
+            "text": "<p>Take your adventures anywhere with the Titanium Travel Bottle. Made from 99.92% pure titanium, it’s lightweight, durable, and features a sleek matte finish. Leak-proof with a wide-mouth spout and internal rubber gasket, it’s easy to drink from on the go. The convenient handle makes it portable, perfect for cycling, hiking, or off-roading.</p>",
             "target_tab": "description",
             "margin_top": 32,
             "margin_bottom": 0
@@ -324,10 +317,10 @@
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/Far-infrared_additives.jpg",
-            "heading": "Far-infrared additives",
+            "image": "shopify://shop_images/Titanium_Travel_Bottle-info-2-PC.jpg",
+            "heading": "Durable Titanium Bottle – Sleek Design for Outdoor Adventures",
             "subheading": "",
-            "text": "<p>Far-infrared additives reflect body heat and enhance insulationActively absorbs and converts infrared rays (from the body and environment) into heat.</p>",
+            "text": "<p>Single-layer titanium construction with matte finish and minimalist design. Leak-proof with internal rubber gasketWide-mouth direct-drink spout for easy hydration. Convenient carrying handlePerfect for cycling, hiking, off-roading, and outdoor sports.</p>",
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 0
@@ -335,6 +328,7 @@
         },
         "collage_PMAQj8": {
           "type": "collage",
+          "disabled": true,
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
@@ -349,6 +343,7 @@
         },
         "image_banner_TjCbxi": {
           "type": "image_banner",
+          "disabled": true,
           "settings": {
             "image_desktop": "shopify://shop_images/3-layer-pc.jpg",
             "image_mobile": "shopify://shop_images/3-layer-m.jpg",
@@ -361,6 +356,7 @@
         },
         "content_block_zat93J": {
           "type": "content_block",
+          "disabled": true,
           "settings": {
             "block_type": "heading_text",
             "margin_top": 12,
@@ -372,6 +368,7 @@
         },
         "collage_iqryEz": {
           "type": "collage",
+          "disabled": true,
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
@@ -386,6 +383,7 @@
         },
         "collage_CjANny": {
           "type": "collage",
+          "disabled": true,
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
@@ -400,6 +398,7 @@
         },
         "collage_F3RWhV": {
           "type": "collage",
+          "disabled": true,
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
@@ -414,6 +413,7 @@
         },
         "image_banner_xxwTbm": {
           "type": "image_banner",
+          "disabled": true,
           "settings": {
             "image_desktop": "shopify://shop_images/occasion-pc.jpg",
             "image_mobile": "shopify://shop_images/occasion-m.jpg",
@@ -426,6 +426,7 @@
         },
         "content_block_XqbKax": {
           "type": "content_block",
+          "disabled": true,
           "settings": {
             "block_type": "heading_text",
             "margin_top": 12,
@@ -440,7 +441,7 @@
           "disabled": true,
           "settings": {
             "title": "30+ Features",
-            "image_1": "shopify://shop_images/aao-detail-b-c-02-01.jpg",
+            "image_1": "shopify://shop_images/Titanium_Travel_Bottle-pc-slide.jpg",
             "caption_1": "Fortified Windproof Warmth with Stand-Up Collar",
             "hover_text_1": "1",
             "image_2": "shopify://shop_images/aao-detail-b-c-02-02.jpg",
@@ -599,7 +600,6 @@
       },
       "block_order": [
         "image_banner_MYRGBE",
-        "content_block_MGACxw",
         "image_banner_4KMT9M",
         "image_banner_DDQQKc",
         "image_banner_kkiFwQ",
