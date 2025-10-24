@@ -14,6 +14,7 @@
       "blocks": {
         "ai_gen_block_28bafcf_nCJGwr": {
           "type": "ai_gen_block_28bafcf",
+          "disabled": true,
           "settings": {
             "desktop_height": 900,
             "desktop_image_fit": "cover",
@@ -36,10 +37,10 @@
             "slide_1_desktop_video": "",
             "slide_1_mobile_video": "",
             "slide_1_link": "shopify://collections/clothing",
-            "slide_1_heading": "",
-            "slide_1_subheading": "",
+            "slide_1_heading": "CoreShell Jacket",
+            "slide_1_subheading": "Built to endure the wild, ready for any adventure.",
             "slide_1_text_position": "middle_left",
-            "slide_1_text_align": "left",
+            "slide_1_text_align": "center",
             "slide_1_text_color": "#ffffff",
             "slide_2_enabled": true,
             "slide_2_media_type": "image",
