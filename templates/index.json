@@ -49,7 +49,7 @@
           "settings": {
             "image": "shopify://shop_images/banner_5886e98a-b6b9-4914-bab6-ab4d5502e27e.jpg",
             "heading": "FALL ARRIVALS 2025",
-            "heading_size": "h2",
+            "heading_size": "h1",
             "subheading": "Ready for Every Terrain",
             "button_label": "Learn More",
             "link": "shopify://collections/new-arrivals",
@@ -70,7 +70,7 @@
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "large",
+        "slide_height": "adapt_image",
         "slider_visual": "dots",
         "auto_rotate": false,
         "change_slides_speed": 5,
