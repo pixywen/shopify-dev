@@ -104,6 +104,7 @@
         },
         "collapsible_tab_GyWCqX": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Specs",
             "icon": "none",
@@ -118,7 +119,7 @@
           "settings": {
             "heading": "Care",
             "icon": "none",
-            "content": "<ul><li><strong>Wash:</strong> Mild detergent, gentle cycle, no bleach</li><li><strong>Dry: </strong>Air dry, avoid direct sun & high heat</li><li><strong>Maintain Waterproofing:</strong> Spray fluorine-free water-repellent regularly to extend performance</li></ul>",
+            "content": "<p>Hand wash with mild soap and warm water. Air dry completely before storing.</p>",
             "page": "",
             "image": "shopify://shop_images/aao-info-icon-01.png",
             "image_alt": "",
@@ -306,7 +307,7 @@
             "image": "shopify://shop_images/Titanium_Travel_Bottle-info-1-PC.jpg",
             "heading": "Titanium Travel Bottle – Lightweight, Durable, and Adventure-Ready",
             "subheading": "",
-            "text": "<p>Take your adventures anywhere with the Titanium Travel Bottle. Made from 99.92% pure titanium, it’s lightweight, durable, and features a sleek matte finish. Leak-proof with a wide-mouth spout and internal rubber gasket, it’s easy to drink from on the go. The convenient handle makes it portable, perfect for cycling, hiking, or off-roading.</p>",
+            "text": "<p>Embark on your adventure with the Titanium Travel Bottle—a perfect blend of lightweight durability and sleek design. Crafted from 99.92% pure titanium, it features a minimalist matte finish that exudes sophistication while remaining tough enough for everyday use. Designed for outdoor enthusiasts, this bottle combines elegance with exceptional strength, making it your reliable companion wherever the journey takes you.</p>",
             "target_tab": "description",
             "margin_top": 32,
             "margin_bottom": 0
@@ -320,7 +321,7 @@
             "image": "shopify://shop_images/Titanium_Travel_Bottle-info-2-PC.jpg",
             "heading": "Durable Titanium Bottle – Sleek Design for Outdoor Adventures",
             "subheading": "",
-            "text": "<ul><li>Single-layer titanium construction with matte finish and minimalist design</li><li>Leak-proof with internal rubber gasket</li><li>Wide-mouth direct-drink spout for easy hydration</li><li>Convenient carrying handle</li><li>Perfect for cycling, hiking, off-roading, and outdoor sports</li></ul>",
+            "text": "<p>Built for performance, the Titanium Travel Bottle ensures a leak-proof experience with its internal rubber gasket. The wide-mouth, direct-drink spout design allows for effortless hydration on the go, while the convenient handle enhances portability. Whether you’re cycling, hiking, or off-roading, this bottle is ready to keep up with your most demanding adventures.</p>",
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 0
