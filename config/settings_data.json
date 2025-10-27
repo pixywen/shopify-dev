@@ -228,7 +228,7 @@
       },
       "6603664506335945664": {
         "type": "shopify://apps/transtore/blocks/switcher_embed_block/afeffe82-e563-4f78-90f4-f1e3d96286c3",
-        "disabled": true,
+        "disabled": false,
         "settings": {}
       }
     },
