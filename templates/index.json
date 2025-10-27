@@ -14,6 +14,7 @@
       "blocks": {
         "ai_gen_block_693ab62_eF6kf4": {
           "type": "ai_gen_block_693ab62",
+          "disabled": true,
           "settings": {
             "desktop_height": 750,
             "mobile_height": 400,
