@@ -107,7 +107,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "<ul><li> Waterproof rating: 10,000 mmH₂O (10K)</li><li>Breathability: 10,000 g/m²/24h</li><li>Outer fabric: 70D 4-way stretch nylon (fluorine-free WR)</li><li>Lining: 100% recycled polyester fleece</li><li> Durability: 20,000 Martindale rubs abrasion resistance</li><li>Temperature range:<br/>- With base layer: 0°C to -8°C / 32°F to 17.6°F (static), -5°C to -12°C / 23°F to 10.4°F (active)<br/>- With layering: as low as -30°C / -22°F</li></ul>",
+            "content": "<p><strong>70% acrylic and 30% merino wool</strong></p>",
             "page": "",
             "image_alt": "",
             "image_width": 100
@@ -118,7 +118,7 @@
           "settings": {
             "heading": "Care",
             "icon": "none",
-            "content": "<ul><li><strong>Wash:</strong> Mild detergent, gentle cycle, no bleach</li><li><strong>Dry: </strong>Air dry, avoid direct sun & high heat</li><li><strong>Maintain Waterproofing:</strong> Spray fluorine-free water-repellent regularly to extend performance</li></ul>",
+            "content": "<ul><li>Do not wash</li><li>Do not bleach</li><li>Do not tumble dry</li><li>Iron at low temperature</li><li>Professional Dry Cleaning<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></li></ul>",
             "page": "",
             "image": "shopify://shop_images/aao-info-icon-01.png",
             "image_alt": "",
