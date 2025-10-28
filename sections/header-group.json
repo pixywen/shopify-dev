@@ -84,13 +84,13 @@
         "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
-        "color_scheme": "scheme-3",
-        "menu_color_scheme": "scheme-3",
+        "color_scheme": "scheme-1",
+        "menu_color_scheme": "scheme-1",
         "enable_country_selector": false,
         "enable_language_selector": false,
         "enable_customer_avatar": true,
         "mobile_logo_position": "center",
-        "margin_bottom": 80,
+        "margin_bottom": 0,
         "padding_top": 20,
         "padding_bottom": 20
       }
