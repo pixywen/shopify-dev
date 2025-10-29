@@ -22,6 +22,7 @@
       "blocks": {
         "image_dKnKTz": {
           "type": "image",
+          "name": "1",
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -54,6 +55,7 @@
             "text_position_mb": false,
             "media_type": "image",
             "image": "shopify://shop_images/new_PC-1.jpg",
+            "image_pad": "shopify://shop_images/new_MB-1.jpg",
             "video_url": "",
             "youtube_video": "",
             "section_logo": "",
@@ -76,8 +78,65 @@
             "link": ""
           }
         },
+        "image_tagcJD": {
+          "type": "image",
+          "name": "sign up",
+          "settings": {
+            "block_css": "",
+            "custom_html_css": "",
+            "section_bg_color": "#000000",
+            "padding_top": 20,
+            "padding_bottom": 20,
+            "padding_top_pad": 20,
+            "padding_bottom_pad": 20,
+            "padding_top_mb": 20,
+            "padding_bottom_mb": 20,
+            "text_color": "#000000",
+            "is_video_banner": false,
+            "is_page_banner": false,
+            "media_page": true,
+            "media_page_pad": true,
+            "media_page_mb": true,
+            "product_name": "",
+            "show_header": true,
+            "header_text_align": "center",
+            "header_mb_text_align": "center",
+            "section_title": "<div class=\"klaviyo-form-Unjvk6\"></div>\n<style>\n.needsclick.go3686473644,\n.needsclick.go369028268{ \n    max-width: 300px !important;\n    margin: 0 auto !important;\n    width: 100% !important;\n}\n#rich-text-01JPHJ8HXZRD05T8QRKRD5ETB5,\n.kl-private-reset-css-Xuajs1.go3176171171{\ncolor:#fff;\n}\n</style>",
+            "section_text": "",
+            "section_header_custom_html": "",
+            "header_margin_bottom": "80",
+            "text_align": "left",
+            "text_align_mb": "center",
+            "text_width": 100,
+            "text_alignment": "vertical-center horizontal-left",
+            "text_alignment_mb": "mb-vertical-top mb-horizontal-left",
+            "text_position_mb": false,
+            "media_type": "image",
+            "video_url": "",
+            "youtube_video": "",
+            "section_logo": "",
+            "section_logo_width": 0,
+            "text_position": "bottom",
+            "title": "",
+            "title_size_big": "60",
+            "title_size": "60",
+            "title_size_pad": "60",
+            "title_size_mb": "30",
+            "title_color": "#000000",
+            "subtitle": "",
+            "subtitle_size_big": "16",
+            "subtitle_size": "16",
+            "subtitle_size_pad": "16",
+            "subtitle_size_mb": "14",
+            "subtitle_color": "#000000",
+            "custom_html_content": "",
+            "btn": "",
+            "link": ""
+          }
+        },
         "image_QfcKaD": {
           "type": "image",
+          "name": "2",
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -134,6 +193,7 @@
         },
         "image_3UhXb8": {
           "type": "image",
+          "name": "3",
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -190,6 +250,7 @@
         },
         "image_aW4jag": {
           "type": "image",
+          "name": "4",
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -247,6 +308,7 @@
       },
       "block_order": [
         "image_dKnKTz",
+        "image_tagcJD",
         "image_QfcKaD",
         "image_3UhXb8",
         "image_aW4jag"
@@ -262,6 +324,7 @@
       "blocks": {
         "image_m3e6Yc": {
           "type": "image",
+          "name": "5",
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -316,8 +379,65 @@
             "link": ""
           }
         },
+        "image_TLjMAD": {
+          "type": "image",
+          "name": "sign up",
+          "settings": {
+            "block_css": "",
+            "custom_html_css": "",
+            "section_bg_color": "#000000",
+            "padding_top": 20,
+            "padding_bottom": 20,
+            "padding_top_pad": 20,
+            "padding_bottom_pad": 20,
+            "padding_top_mb": 20,
+            "padding_bottom_mb": 20,
+            "text_color": "#000000",
+            "is_video_banner": false,
+            "is_page_banner": false,
+            "media_page": true,
+            "media_page_pad": true,
+            "media_page_mb": true,
+            "product_name": "",
+            "show_header": true,
+            "header_text_align": "center",
+            "header_mb_text_align": "center",
+            "section_title": "<div class=\"klaviyo-form-Unjvk6\"></div>\n<style>\n.needsclick.go3686473644,\n.needsclick.go369028268{ \n    max-width: 300px !important;\n    margin: 0 auto !important;\n    width: 100% !important;\n}\n#rich-text-01JPHJ8HXZRD05T8QRKRD5ETB5,\n.kl-private-reset-css-Xuajs1.go3176171171{\ncolor:#fff;\n}\n</style>",
+            "section_text": "",
+            "section_header_custom_html": "",
+            "header_margin_bottom": "80",
+            "text_align": "left",
+            "text_align_mb": "center",
+            "text_width": 100,
+            "text_alignment": "vertical-center horizontal-left",
+            "text_alignment_mb": "mb-vertical-top mb-horizontal-left",
+            "text_position_mb": false,
+            "media_type": "image",
+            "video_url": "",
+            "youtube_video": "",
+            "section_logo": "",
+            "section_logo_width": 0,
+            "text_position": "bottom",
+            "title": "",
+            "title_size_big": "60",
+            "title_size": "60",
+            "title_size_pad": "60",
+            "title_size_mb": "30",
+            "title_color": "#000000",
+            "subtitle": "",
+            "subtitle_size_big": "16",
+            "subtitle_size": "16",
+            "subtitle_size_pad": "16",
+            "subtitle_size_mb": "14",
+            "subtitle_color": "#000000",
+            "custom_html_content": "",
+            "btn": "",
+            "link": ""
+          }
+        },
         "image_6Gwxek": {
           "type": "image",
+          "name": "6",
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -374,6 +494,7 @@
         },
         "image_6QpRr7": {
           "type": "image",
+          "name": "7",
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -430,6 +551,7 @@
         },
         "image_dtgQbc": {
           "type": "image",
+          "name": "8",
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -487,6 +609,7 @@
       },
       "block_order": [
         "image_m3e6Yc",
+        "image_TLjMAD",
         "image_6Gwxek",
         "image_6QpRr7",
         "image_dtgQbc"
@@ -502,6 +625,7 @@
       "blocks": {
         "image_8chAyb": {
           "type": "image",
+          "name": "9",
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -558,6 +682,7 @@
         },
         "image_KnjBQx": {
           "type": "image",
+          "name": "10",
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -614,6 +739,7 @@
         },
         "image_JaKTUC": {
           "type": "image",
+          "name": "11",
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -670,6 +796,7 @@
         },
         "image_kPEmUG": {
           "type": "image",
+          "name": "12",
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -742,6 +869,7 @@
       "blocks": {
         "image_WydKfT": {
           "type": "image",
+          "name": "13",
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -798,6 +926,7 @@
         },
         "image_JBLCtK": {
           "type": "image",
+          "name": "14",
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -854,6 +983,7 @@
         },
         "image_6F9DxR": {
           "type": "image",
+          "name": "15",
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -910,6 +1040,7 @@
         },
         "image_YxPV7U": {
           "type": "image",
+          "name": "16",
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -982,6 +1113,7 @@
       "blocks": {
         "image_hCH8jL": {
           "type": "image",
+          "name": "17",
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -1038,6 +1170,7 @@
         },
         "image_PWt4gV": {
           "type": "image",
+          "name": "18",
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -1069,6 +1202,7 @@
             "text_alignment_mb": "mb-vertical-top mb-horizontal-left",
             "text_position_mb": false,
             "media_type": "image",
+            "image": "shopify://shop_images/new_PC-18.jpg",
             "video_url": "",
             "youtube_video": "",
             "section_logo": "",
@@ -1093,6 +1227,7 @@
         },
         "image_VWPgNW": {
           "type": "image",
+          "name": "19",
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -1124,6 +1259,7 @@
             "text_alignment_mb": "mb-vertical-top mb-horizontal-left",
             "text_position_mb": false,
             "media_type": "image",
+            "image": "shopify://shop_images/new_PC-19.jpg",
             "video_url": "",
             "youtube_video": "",
             "section_logo": "",
@@ -1148,6 +1284,7 @@
         },
         "image_FLpqUj": {
           "type": "image",
+          "name": "20",
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -1179,6 +1316,7 @@
             "text_alignment_mb": "mb-vertical-top mb-horizontal-left",
             "text_position_mb": false,
             "media_type": "image",
+            "image": "shopify://shop_images/new_PC-20.jpg",
             "video_url": "",
             "youtube_video": "",
             "section_logo": "",
@@ -1219,6 +1357,7 @@
       "blocks": {
         "image_GnWzB6": {
           "type": "image",
+          "name": "21",
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -1250,7 +1389,7 @@
             "text_alignment_mb": "mb-vertical-top mb-horizontal-left",
             "text_position_mb": false,
             "media_type": "image",
-            "image": "shopify://shop_images/new_PC-13.jpg",
+            "image": "shopify://shop_images/new_PC-21.jpg",
             "video_url": "",
             "youtube_video": "",
             "section_logo": "",
@@ -1275,6 +1414,7 @@
         },
         "image_kEmdTG": {
           "type": "image",
+          "name": "22",
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -1306,6 +1446,7 @@
             "text_alignment_mb": "mb-vertical-top mb-horizontal-left",
             "text_position_mb": false,
             "media_type": "image",
+            "image": "shopify://shop_images/new_PC-22.jpg",
             "video_url": "",
             "youtube_video": "",
             "section_logo": "",
@@ -1330,6 +1471,7 @@
         },
         "image_FynfDW": {
           "type": "image",
+          "name": "23",
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -1361,6 +1503,7 @@
             "text_alignment_mb": "mb-vertical-top mb-horizontal-left",
             "text_position_mb": false,
             "media_type": "image",
+            "image": "shopify://shop_images/new_PC-23.jpg",
             "video_url": "",
             "youtube_video": "",
             "section_logo": "",
@@ -1385,6 +1528,7 @@
         },
         "image_X8rytF": {
           "type": "image",
+          "name": "24",
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -1416,6 +1560,7 @@
             "text_alignment_mb": "mb-vertical-top mb-horizontal-left",
             "text_position_mb": false,
             "media_type": "image",
+            "image": "shopify://shop_images/new_PC-24.jpg",
             "video_url": "",
             "youtube_video": "",
             "section_logo": "",
@@ -1450,6 +1595,320 @@
         "show_section": true,
         "section_css": ""
       }
+    },
+    "common_media_EbGmCp": {
+      "type": "common-media",
+      "blocks": {
+        "image_p99XjY": {
+          "type": "image",
+          "name": "25",
+          "settings": {
+            "block_css": "",
+            "custom_html_css": "",
+            "section_bg_color": "",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_top_pad": 0,
+            "padding_bottom_pad": 0,
+            "padding_top_mb": 0,
+            "padding_bottom_mb": 0,
+            "text_color": "#000000",
+            "is_video_banner": false,
+            "is_page_banner": false,
+            "media_page": true,
+            "media_page_pad": true,
+            "media_page_mb": true,
+            "product_name": "",
+            "show_header": false,
+            "header_text_align": "center",
+            "header_mb_text_align": "center",
+            "section_title": "",
+            "section_text": "",
+            "section_header_custom_html": "",
+            "header_margin_bottom": "80",
+            "text_align": "left",
+            "text_align_mb": "center",
+            "text_width": 100,
+            "text_alignment": "vertical-center horizontal-left",
+            "text_alignment_mb": "mb-vertical-top mb-horizontal-left",
+            "text_position_mb": false,
+            "media_type": "image",
+            "image": "shopify://shop_images/new_PC-25.jpg",
+            "video_url": "",
+            "youtube_video": "",
+            "section_logo": "",
+            "section_logo_width": 0,
+            "text_position": "bottom",
+            "title": "",
+            "title_size_big": "60",
+            "title_size": "60",
+            "title_size_pad": "60",
+            "title_size_mb": "30",
+            "title_color": "#000",
+            "subtitle": "",
+            "subtitle_size_big": "16",
+            "subtitle_size": "16",
+            "subtitle_size_pad": "16",
+            "subtitle_size_mb": "14",
+            "subtitle_color": "#000",
+            "custom_html_content": "",
+            "btn": "",
+            "link": ""
+          }
+        },
+        "image_EBA8aa": {
+          "type": "image",
+          "name": "26",
+          "settings": {
+            "block_css": "",
+            "custom_html_css": "",
+            "section_bg_color": "",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_top_pad": 0,
+            "padding_bottom_pad": 0,
+            "padding_top_mb": 0,
+            "padding_bottom_mb": 0,
+            "text_color": "#000000",
+            "is_video_banner": false,
+            "is_page_banner": false,
+            "media_page": true,
+            "media_page_pad": true,
+            "media_page_mb": true,
+            "product_name": "",
+            "show_header": false,
+            "header_text_align": "center",
+            "header_mb_text_align": "center",
+            "section_title": "",
+            "section_text": "",
+            "section_header_custom_html": "",
+            "header_margin_bottom": "80",
+            "text_align": "left",
+            "text_align_mb": "center",
+            "text_width": 100,
+            "text_alignment": "vertical-center horizontal-left",
+            "text_alignment_mb": "mb-vertical-top mb-horizontal-left",
+            "text_position_mb": false,
+            "media_type": "image",
+            "image": "shopify://shop_images/new_PC-26.jpg",
+            "video_url": "",
+            "youtube_video": "",
+            "section_logo": "",
+            "section_logo_width": 0,
+            "text_position": "bottom",
+            "title": "",
+            "title_size_big": "60",
+            "title_size": "60",
+            "title_size_pad": "60",
+            "title_size_mb": "30",
+            "title_color": "#000",
+            "subtitle": "",
+            "subtitle_size_big": "16",
+            "subtitle_size": "16",
+            "subtitle_size_pad": "16",
+            "subtitle_size_mb": "14",
+            "subtitle_color": "#000",
+            "custom_html_content": "",
+            "btn": "",
+            "link": ""
+          }
+        },
+        "image_9y3BPk": {
+          "type": "image",
+          "name": "27",
+          "settings": {
+            "block_css": "",
+            "custom_html_css": "",
+            "section_bg_color": "",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_top_pad": 0,
+            "padding_bottom_pad": 0,
+            "padding_top_mb": 0,
+            "padding_bottom_mb": 0,
+            "text_color": "#000000",
+            "is_video_banner": false,
+            "is_page_banner": false,
+            "media_page": true,
+            "media_page_pad": true,
+            "media_page_mb": true,
+            "product_name": "",
+            "show_header": false,
+            "header_text_align": "center",
+            "header_mb_text_align": "center",
+            "section_title": "",
+            "section_text": "",
+            "section_header_custom_html": "",
+            "header_margin_bottom": "80",
+            "text_align": "left",
+            "text_align_mb": "center",
+            "text_width": 100,
+            "text_alignment": "vertical-center horizontal-left",
+            "text_alignment_mb": "mb-vertical-top mb-horizontal-left",
+            "text_position_mb": false,
+            "media_type": "image",
+            "image": "shopify://shop_images/new_PC-27.jpg",
+            "video_url": "",
+            "youtube_video": "",
+            "section_logo": "",
+            "section_logo_width": 0,
+            "text_position": "bottom",
+            "title": "",
+            "title_size_big": "60",
+            "title_size": "60",
+            "title_size_pad": "60",
+            "title_size_mb": "30",
+            "title_color": "#000",
+            "subtitle": "",
+            "subtitle_size_big": "16",
+            "subtitle_size": "16",
+            "subtitle_size_pad": "16",
+            "subtitle_size_mb": "14",
+            "subtitle_color": "#000",
+            "custom_html_content": "",
+            "btn": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_p99XjY",
+        "image_EBA8aa",
+        "image_9y3BPk"
+      ],
+      "name": "Common media",
+      "settings": {
+        "show_section": true,
+        "section_css": ""
+      }
+    },
+    "common_media_z7nzyK": {
+      "type": "common-media",
+      "blocks": {
+        "image_hVY9Bq": {
+          "type": "image",
+          "name": "28",
+          "settings": {
+            "block_css": "",
+            "custom_html_css": "",
+            "section_bg_color": "",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_top_pad": 0,
+            "padding_bottom_pad": 0,
+            "padding_top_mb": 0,
+            "padding_bottom_mb": 0,
+            "text_color": "#000000",
+            "is_video_banner": false,
+            "is_page_banner": false,
+            "media_page": true,
+            "media_page_pad": true,
+            "media_page_mb": true,
+            "product_name": "",
+            "show_header": false,
+            "header_text_align": "center",
+            "header_mb_text_align": "center",
+            "section_title": "",
+            "section_text": "",
+            "section_header_custom_html": "",
+            "header_margin_bottom": "80",
+            "text_align": "left",
+            "text_align_mb": "center",
+            "text_width": 100,
+            "text_alignment": "vertical-center horizontal-left",
+            "text_alignment_mb": "mb-vertical-top mb-horizontal-left",
+            "text_position_mb": false,
+            "media_type": "image",
+            "image": "shopify://shop_images/new_PC-28.jpg",
+            "video_url": "",
+            "youtube_video": "",
+            "section_logo": "",
+            "section_logo_width": 0,
+            "text_position": "bottom",
+            "title": "",
+            "title_size_big": "60",
+            "title_size": "60",
+            "title_size_pad": "60",
+            "title_size_mb": "30",
+            "title_color": "#000",
+            "subtitle": "",
+            "subtitle_size_big": "16",
+            "subtitle_size": "16",
+            "subtitle_size_pad": "16",
+            "subtitle_size_mb": "14",
+            "subtitle_color": "#000",
+            "custom_html_content": "",
+            "btn": "",
+            "link": ""
+          }
+        },
+        "image_JPLX9d": {
+          "type": "image",
+          "name": "29",
+          "settings": {
+            "block_css": "",
+            "custom_html_css": "",
+            "section_bg_color": "",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_top_pad": 0,
+            "padding_bottom_pad": 0,
+            "padding_top_mb": 0,
+            "padding_bottom_mb": 0,
+            "text_color": "#000000",
+            "is_video_banner": false,
+            "is_page_banner": false,
+            "media_page": true,
+            "media_page_pad": true,
+            "media_page_mb": true,
+            "product_name": "",
+            "show_header": false,
+            "header_text_align": "center",
+            "header_mb_text_align": "center",
+            "section_title": "",
+            "section_text": "",
+            "section_header_custom_html": "",
+            "header_margin_bottom": "80",
+            "text_align": "left",
+            "text_align_mb": "center",
+            "text_width": 100,
+            "text_alignment": "vertical-center horizontal-left",
+            "text_alignment_mb": "mb-vertical-top mb-horizontal-left",
+            "text_position_mb": false,
+            "media_type": "image",
+            "image": "shopify://shop_images/new_PC-29.jpg",
+            "video_url": "",
+            "youtube_video": "",
+            "section_logo": "",
+            "section_logo_width": 0,
+            "text_position": "bottom",
+            "title": "",
+            "title_size_big": "60",
+            "title_size": "60",
+            "title_size_pad": "60",
+            "title_size_mb": "30",
+            "title_color": "#000",
+            "subtitle": "",
+            "subtitle_size_big": "16",
+            "subtitle_size": "16",
+            "subtitle_size_pad": "16",
+            "subtitle_size_mb": "14",
+            "subtitle_color": "#000",
+            "custom_html_content": "",
+            "btn": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_hVY9Bq",
+        "image_JPLX9d"
+      ],
+      "name": "Common media",
+      "settings": {
+        "show_section": true,
+        "section_css": ""
+      }
     }
   },
   "order": [
@@ -1459,6 +1918,8 @@
     "common_media_qt8gez",
     "common_media_NUUcfG",
     "common_media_BxemTg",
-    "common_media_Pfiz7G"
+    "common_media_Pfiz7G",
+    "common_media_EbGmCp",
+    "common_media_z7nzyK"
   ]
 }
