@@ -16,16 +16,15 @@
       "blocks": {
         "footer_newsletter_Ad7QGr": {
           "type": "footer_newsletter",
-          "disabled": true,
           "settings": {
             "small_hide": false,
             "medium_hide": false,
             "large_up_hide": false,
-            "heading": "Newsletter Signup",
+            "heading": "Signup for 15% OFF",
             "subtext": "Sign up for exclusive offers, original stories, events and more.",
             "placeholder": "E-mail*",
             "button_label": "SIGN ME UP",
-            "success_message": "感谢订阅！"
+            "success_message": "CODE: WELCOME15"
           }
         },
         "gg_menu_accordion_YRVh8w": {
