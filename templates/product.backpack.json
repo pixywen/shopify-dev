@@ -337,9 +337,9 @@
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
             "image": "shopify://shop_images/2_pc_0ea432c0-24f5-4454-a37f-ab6818151f82.jpg",
-            "heading": "Waterproof. Worry-Free.",
+            "heading": "Water-Resistant. Worry-Free.",
             "subheading": "",
-            "text": "<p>Crafted from durable 210D waterproof nylon and equipped with YKK® AquaGuard zippers to keep your essentials safe and dry—rain or shine.</p>",
+            "text": "<p>Crafted from durable 210D water-resistant nylon and equipped with YKK® AquaGuard zippers to help keep your essentials protected from light rain and splashes—though not fully waterproof for heavy downpours.</p>",
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 0
@@ -373,7 +373,9 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
-            "max_width": 1200
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
           }
         }
       },
