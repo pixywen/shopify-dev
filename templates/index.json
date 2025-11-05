@@ -674,10 +674,10 @@
         "ai_gen_block_9e47a03_xpJ4bY": {
           "type": "ai_gen_block_9e47a03",
           "settings": {
-            "section_title": "What Our Customers Are Saying",
+            "section_title": "Hear from Our Customers",
             "section_subtitle": "Honest Reviews from Real People Who Love Our Products",
             "section_padding": 60,
-            "max_width": 900,
+            "max_width": 950,
             "background_color": "#f3f3f3",
             "heading_size": 36,
             "heading_color": "#121212",
