@@ -689,7 +689,7 @@
             "star_size": 24,
             "star_color": "#ffc107",
             "star_empty_color": "#e0e0e0",
-            "review_title_size": 28,
+            "review_title_size": 30,
             "review_title_color": "#121212",
             "review_text_size": 16,
             "review_text_color": "#555555",
