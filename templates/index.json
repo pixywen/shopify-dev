@@ -667,6 +667,79 @@
         "image_2": "shopify://shop_images/s-tib-02.jpg",
         "image_3": "shopify://shop_images/s-tib-03.jpg"
       }
+    },
+    "17623291379c48e057": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_9e47a03_xpJ4bY": {
+          "type": "ai_gen_block_9e47a03",
+          "settings": {
+            "section_title": "What Our Customers Say",
+            "section_subtitle": "Real reviews from real customers",
+            "section_padding": 60,
+            "max_width": 900,
+            "background_color": "#f9f9f9",
+            "heading_size": 36,
+            "heading_color": "#121212",
+            "subtitle_size": 16,
+            "subtitle_color": "#666666",
+            "card_background": "#ffffff",
+            "card_padding": 50,
+            "card_border_radius": 12,
+            "star_size": 24,
+            "star_color": "#ffc107",
+            "star_empty_color": "#e0e0e0",
+            "review_title_size": 28,
+            "review_title_color": "#121212",
+            "review_text_size": 16,
+            "review_text_color": "#555555",
+            "expand_button_color": "#121212",
+            "expand_button_hover_color": "#555555",
+            "author_name_size": 16,
+            "author_name_color": "#121212",
+            "author_date_size": 14,
+            "author_date_color": "#999999",
+            "placeholder_color": "#cccccc",
+            "button_background": "#121212",
+            "button_hover_background": "#333333",
+            "button_icon_color": "#ffffff",
+            "dot_color": "#cccccc",
+            "dot_active_color": "#121212",
+            "autoplay": true,
+            "autoplay_speed": 5000,
+            "review_1_title": "Exceeded All Expectations!",
+            "review_1_text": "I was shocked to see that the jacket arrived so quickly after I submitted my pledge. I have spent x2-x3 times more on jackets from many of the major clothing companies and have never had a jacket with such an incredible main zipper and fit and feel. It feels very durable but not at the expense of comfort. The stretch and form are great and it's very stylish with a subtle logo. Besides the fit and materials my personal favorite thing about the jacket are all the features! Truthfully, it was a gamble because for the price it seemed too good to be true but after getting it so quickly and having an incredible experience as soon as I put it on I am glad I bought it and will gladly keep an eye out for future campaigns!",
+            "review_1_rating": 5,
+            "review_1_author": "Michael",
+            "review_1_date": "Oct 19, 2025",
+            "review_2_title": "Perfect Fit — My Third Alpergali Jacket!",
+            "review_2_text": "This is the 3rd kind of Alpergali jacket I own !! It arrived about 2 weeks ago in Canada. It fits great, your fit charts are accurate even if the sizing scales of each jacket is not the same ie: customers refer to the charts not the size letter. Jacket is warm BUT after a while in near freezing breezy wet weather, with only a flannel shirt and tshirt on, this starts to get cold. So this is not comparable to a snow jacket unless a woolen sweater under, but it is a warm quality fleece. My small complaint is the fleece surface underneath is not smooth entry for my arms. But I understand the inner fleece lining promotes warm air pockets. Happy with all 3 Aplergali jackets of mine.",
+            "review_2_rating": 5,
+            "review_2_author": "Carlo A",
+            "review_2_date": "Oct 31, 2025",
+            "review_3_title": "Arrived Fast, Feels Even Better!",
+            "review_3_text": "I'm very happy with my jacket. It arrived so quickly!! Been wearing it for 2 or 3 weeks now and it's great. The pockets and zippers are all fantastic. I followed your upcoming puffer jacket as well. This core shell is probably plenty warm enough for the Netherlands though. I'm already sweating in it.",
+            "review_3_rating": 5,
+            "review_3_author": "Martin Schlüter",
+            "review_3_date": "NOV 4, 2025",
+            "review_4_title": "",
+            "review_4_text": "",
+            "review_4_rating": 5,
+            "review_4_author": "",
+            "review_4_date": "",
+            "review_5_title": "",
+            "review_5_text": "",
+            "review_5_rating": 5,
+            "review_5_author": "",
+            "review_5_date": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_9e47a03_xpJ4bY"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -687,6 +760,7 @@
     "gg_featured_products_NVq696",
     "gg_image_banner_common_XyH39W",
     "gg_image_banner_common_CHdPGU",
-    "gg_three_image_banner_wVXhhw"
+    "gg_three_image_banner_wVXhhw",
+    "17623291379c48e057"
   ]
 }
