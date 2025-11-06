@@ -105,7 +105,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "<p>Pockets: <strong>6</strong></p><p>Fabric: <strong>1800D </strong>Polyester</p>",
+            "content": "<ul><li>Pockets: <strong>6</strong></li><li>Fabric: <strong>1800D </strong>Polyester</li><li>Maximum Load Capacity: <strong>8 kg</strong></li></ul>",
             "page": "",
             "image_alt": "",
             "image_width": 50
@@ -230,7 +230,12 @@
         },
         "judge_me_reviews_review_widget_JctMNU": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
         }
       },
       "block_order": [
