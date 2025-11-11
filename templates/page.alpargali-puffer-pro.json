@@ -54,9 +54,9 @@
             "text_alignment_mb": "mb-vertical-top mb-horizontal-left",
             "text_position_mb": false,
             "media_type": "image",
-            "image": "shopify://shop_images/new_PC-1.jpg",
-            "image_pad": "shopify://shop_images/new_MB-1.jpg",
-            "image_mb": "shopify://shop_images/new_MB-1.jpg",
+            "image": "shopify://shop_images/puffer_pro.jpg",
+            "image_pad": "shopify://shop_images/puffer_pro.jpg",
+            "image_mb": "shopify://shop_images/puffer_pro-m.jpg",
             "video_url": "",
             "youtube_video": "",
             "section_logo": "",
@@ -76,12 +76,13 @@
             "subtitle_color": "#000000",
             "custom_html_content": "",
             "btn": "",
-            "link": ""
+            "link": "https://www.kickstarter.com/projects/alpargalipuffer/alpargali-puffer-pro-aerogel-graphene-and-et-down-insulation?ref=6nakb8"
           }
         },
         "image_tagcJD": {
           "type": "image",
           "name": "sign up",
+          "disabled": true,
           "settings": {
             "block_css": "",
             "custom_html_css": "",
