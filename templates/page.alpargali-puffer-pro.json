@@ -392,6 +392,7 @@
         "image_TLjMAD": {
           "type": "image",
           "name": "sign up",
+          "disabled": true,
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -642,6 +643,7 @@
         "image_AJBaW8": {
           "type": "image",
           "name": "sign up",
+          "disabled": true,
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -951,6 +953,7 @@
         "image_9g4hAh": {
           "type": "image",
           "name": "sign up",
+          "disabled": true,
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -1184,6 +1187,7 @@
         "image_JbkEhF": {
           "type": "image",
           "name": "sign up",
+          "disabled": true,
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -1553,6 +1557,7 @@
         "image_FYPEth": {
           "type": "image",
           "name": "sign up",
+          "disabled": true,
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -1803,6 +1808,7 @@
         "image_fTggPk": {
           "type": "image",
           "name": "sign up",
+          "disabled": true,
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -2245,6 +2251,7 @@
         "image_7WDFBg": {
           "type": "image",
           "name": "sign up",
+          "disabled": true,
           "settings": {
             "block_css": "",
             "custom_html_css": "",
