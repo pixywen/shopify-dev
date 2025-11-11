@@ -1,6 +1,734 @@
+{% doc %}
+  @prompt
+    Create an image slideshow component that can display multiple sets of images simultaneously, and allows for separate configurations for desktop and mobile versions.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-slideshow-container-{{ ai_gen_id }} {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: {{ block.settings.background_color }};
+    padding: {{ block.settings.section_padding }}px 0;
+  }
+
+  .ai-slideshow-wrapper-{{ ai_gen_id }} {
+    max-width: {{ block.settings.max_width }}px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .ai-slideshow-heading-{{ ai_gen_id }} {
+    text-align: {{ block.settings.heading_alignment }};
+    margin-bottom: 30px;
+    color: {{ block.settings.heading_color }};
+    font-size: {{ block.settings.heading_size }}px;
+  }
+
+  .ai-slideshow-track-{{ ai_gen_id }} {
+    display: flex;
+    gap: {{ block.settings.image_gap }}px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .ai-slideshow-track-{{ ai_gen_id }}::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ai-slideshow-set-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: calc((100% - ({{ block.settings.sets_per_row_desktop | minus: 1 }} * {{ block.settings.image_gap }}px)) / {{ block.settings.sets_per_row_desktop }});
+  }
+
+  .ai-slideshow-set-images-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: {{ block.settings.image_gap }}px;
+  }
+
+  .ai-slideshow-image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    background-color: #f4f4f4;
+  }
+
+  .ai-slideshow-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: {{ block.settings.image_aspect_ratio }};
+  }
+
+  .ai-slideshow-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: {{ block.settings.image_aspect_ratio }};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+  }
+
+  .ai-slideshow-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    opacity: 0.3;
+  }
+
+  .ai-slideshow-controls-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .ai-slideshow-button-{{ ai_gen_id }} {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: {{ block.settings.button_color }};
+    color: {{ block.settings.button_icon_color }};
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+  }
+
+  .ai-slideshow-button-{{ ai_gen_id }}:hover {
+    opacity: 0.8;
+  }
+
+  .ai-slideshow-button-{{ ai_gen_id }}:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .ai-slideshow-dots-{{ ai_gen_id }} {
+    display: flex;
+    gap: 8px;
+  }
+
+  .ai-slideshow-dot-{{ ai_gen_id }} {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: {{ block.settings.dot_color }};
+    opacity: 0.3;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .ai-slideshow-dot-{{ ai_gen_id }}.active {
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-slideshow-set-{{ ai_gen_id }} {
+      width: calc((100% - ({{ block.settings.sets_per_row_mobile | minus: 1 }} * {{ block.settings.image_gap }}px)) / {{ block.settings.sets_per_row_mobile }});
+    }
+
+    .ai-slideshow-heading-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.heading_size }}px * 0.8);
+    }
+  }
+{% endstyle %}
+
+<image-slideshow-{{ ai_gen_id }} class="ai-slideshow-container-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-slideshow-wrapper-{{ ai_gen_id }}">
+    {% if block.settings.heading != blank %}
+      <h2 class="ai-slideshow-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+    {% endif %}
+
+    <div class="ai-slideshow-track-{{ ai_gen_id }}" data-track>
+      {% for i in (1..6) %}
+        {% liquid
+          assign set_enabled_key = 'set_' | append: i | append: '_enabled'
+          assign image_1_key = 'set_' | append: i | append: '_image_1'
+          assign image_2_key = 'set_' | append: i | append: '_image_2'
+          assign image_3_key = 'set_' | append: i | append: '_image_3'
+
+          assign set_enabled = block.settings[set_enabled_key]
+          assign image_1 = block.settings[image_1_key]
+          assign image_2 = block.settings[image_2_key]
+          assign image_3 = block.settings[image_3_key]
+        %}
+
+        {% if set_enabled %}
+          <div class="ai-slideshow-set-{{ ai_gen_id }}" data-set="{{ i }}">
+            <div class="ai-slideshow-set-images-{{ ai_gen_id }}">
+              <div class="ai-slideshow-image-wrapper-{{ ai_gen_id }}">
+                {% if image_1 %}
+                  <img
+                    src="{{ image_1 | image_url: width: 800 }}"
+                    alt="{{ image_1.alt | escape }}"
+                    loading="lazy"
+                    width="{{ image_1.width }}"
+                    height="{{ image_1.height }}"
+                    class="ai-slideshow-image-{{ ai_gen_id }}"
+                  >
+                {% else %}
+                  <div class="ai-slideshow-placeholder-{{ ai_gen_id }}">
+                    {{ 'image' | placeholder_svg_tag }}
+                  </div>
+                {% endif %}
+              </div>
+
+              {% if block.settings.images_per_set >= 2 %}
+                <div class="ai-slideshow-image-wrapper-{{ ai_gen_id }}">
+                  {% if image_2 %}
+                    <img
+                      src="{{ image_2 | image_url: width: 800 }}"
+                      alt="{{ image_2.alt | escape }}"
+                      loading="lazy"
+                      width="{{ image_2.width }}"
+                      height="{{ image_2.height }}"
+                      class="ai-slideshow-image-{{ ai_gen_id }}"
+                    >
+                  {% else %}
+                    <div class="ai-slideshow-placeholder-{{ ai_gen_id }}">
+                      {{ 'image' | placeholder_svg_tag }}
+                    </div>
+                  {% endif %}
+                </div>
+              {% endif %}
+
+              {% if block.settings.images_per_set == 3 %}
+                <div class="ai-slideshow-image-wrapper-{{ ai_gen_id }}">
+                  {% if image_3 %}
+                    <img
+                      src="{{ image_3 | image_url: width: 800 }}"
+                      alt="{{ image_3.alt | escape }}"
+                      loading="lazy"
+                      width="{{ image_3.width }}"
+                      height="{{ image_3.height }}"
+                      class="ai-slideshow-image-{{ ai_gen_id }}"
+                    >
+                  {% else %}
+                    <div class="ai-slideshow-placeholder-{{ ai_gen_id }}">
+                      {{ 'image' | placeholder_svg_tag }}
+                    </div>
+                  {% endif %}
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    {% if block.settings.show_controls %}
+      <div class="ai-slideshow-controls-{{ ai_gen_id }}">
+        <button
+          class="ai-slideshow-button-{{ ai_gen_id }}"
+          data-prev
+          aria-label="Previous"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <div class="ai-slideshow-dots-{{ ai_gen_id }}" data-dots></div>
+
+        <button
+          class="ai-slideshow-button-{{ ai_gen_id }}"
+          data-next
+          aria-label="Next"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+    {% endif %}
+  </div>
+</image-slideshow-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class ImageSlideshow{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.track = this.querySelector('[data-track]');
+        this.sets = this.querySelectorAll('[data-set]');
+        this.prevButton = this.querySelector('[data-prev]');
+        this.nextButton = this.querySelector('[data-next]');
+        this.dotsContainer = this.querySelector('[data-dots]');
+        this.currentIndex = 0;
+        this.setsPerView = this.getSetsPerView();
+      }
+
+      connectedCallback() {
+        this.createDots();
+        this.updateButtons();
+        this.setupEventListeners();
+        window.addEventListener('resize', () => this.handleResize());
+      }
+
+      getSetsPerView() {
+        if (window.innerWidth <= 749) {
+          return {{ block.settings.sets_per_row_mobile }};
+        }
+        return {{ block.settings.sets_per_row_desktop }};
+      }
+
+      createDots() {
+        if (!this.dotsContainer) return;
+        
+        this.dotsContainer.innerHTML = '';
+        const totalPages = Math.ceil(this.sets.length / this.setsPerView);
+        
+        for (let i = 0; i < totalPages; i++) {
+          const dot = document.createElement('button');
+          dot.className = 'ai-slideshow-dot-{{ ai_gen_id }}';
+          dot.setAttribute('aria-label', `Go to page ${i + 1}`);
+          if (i === 0) dot.classList.add('active');
+          dot.addEventListener('click', () => this.goToPage(i));
+          this.dotsContainer.appendChild(dot);
+        }
+      }
+
+      setupEventListeners() {
+        if (this.prevButton) {
+          this.prevButton.addEventListener('click', () => this.prev());
+        }
+        if (this.nextButton) {
+          this.nextButton.addEventListener('click', () => this.next());
+        }
+      }
+
+      handleResize() {
+        const newSetsPerView = this.getSetsPerView();
+        if (newSetsPerView !== this.setsPerView) {
+          this.setsPerView = newSetsPerView;
+          this.currentIndex = 0;
+          this.createDots();
+          this.scrollToIndex(0);
+          this.updateButtons();
+        }
+      }
+
+      prev() {
+        if (this.currentIndex > 0) {
+          this.currentIndex--;
+          this.scrollToIndex(this.currentIndex);
+          this.updateButtons();
+          this.updateDots();
+        }
+      }
+
+      next() {
+        const maxIndex = Math.ceil(this.sets.length / this.setsPerView) - 1;
+        if (this.currentIndex < maxIndex) {
+          this.currentIndex++;
+          this.scrollToIndex(this.currentIndex);
+          this.updateButtons();
+          this.updateDots();
+        }
+      }
+
+      goToPage(index) {
+        this.currentIndex = index;
+        this.scrollToIndex(index);
+        this.updateButtons();
+        this.updateDots();
+      }
+
+      scrollToIndex(index) {
+        const setWidth = this.sets[0].offsetWidth;
+        const gap = {{ block.settings.image_gap }};
+        const scrollPosition = index * this.setsPerView * (setWidth + gap);
+        this.track.scrollTo({
+          left: scrollPosition,
+          behavior: 'smooth'
+        });
+      }
+
+      updateButtons() {
+        if (!this.prevButton || !this.nextButton) return;
+        
+        const maxIndex = Math.ceil(this.sets.length / this.setsPerView) - 1;
+        this.prevButton.disabled = this.currentIndex === 0;
+        this.nextButton.disabled = this.currentIndex >= maxIndex;
+      }
+
+      updateDots() {
+        if (!this.dotsContainer) return;
+        
+        const dots = this.dotsContainer.querySelectorAll('.ai-slideshow-dot-{{ ai_gen_id }}');
+        dots.forEach((dot, index) => {
+          if (index === this.currentIndex) {
+            dot.classList.add('active');
+          } else {
+            dot.classList.remove('active');
+          }
+        });
+      }
+    }
+
+    customElements.define('image-slideshow-{{ ai_gen_id }}', ImageSlideshow{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Image slideshow",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "General"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Image Gallery"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "Heading alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size",
+      "default": 32
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Section padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 1000,
+      "max": 1920,
+      "step": 20,
+      "unit": "px",
+      "label": "Maximum width",
+      "default": 1920
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "images_per_set",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "label": "Images per set",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "sets_per_row_desktop",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "label": "Sets per row (desktop)",
+      "default": 3
+    },
+    {
+      "type": "select",
+      "id": "sets_per_row_mobile",
+      "label": "Sets per row (mobile)",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "default": "1"
+    },
+    {
+      "type": "range",
+      "id": "image_gap",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "label": "Gap between images",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Image style"
+    },
+    {
+      "type": "select",
+      "id": "image_aspect_ratio",
+      "label": "Image aspect ratio",
+      "options": [
+        {
+          "value": "1 / 1",
+          "label": "Square (1:1)"
+        },
+        {
+          "value": "4 / 3",
+          "label": "Landscape (4:3)"
+        },
+        {
+          "value": "3 / 4",
+          "label": "Portrait (3:4)"
+        },
+        {
+          "value": "16 / 9",
+          "label": "Wide (16:9)"
+        }
+      ],
+      "default": "3 / 4"
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Controls"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_controls",
+      "label": "Show navigation controls",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button color",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "button_icon_color",
+      "label": "Button icon color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "dot_color",
+      "label": "Dot color",
+      "default": "#121212"
+    },
+    {
+      "type": "header",
+      "content": "Set 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "set_1_enabled",
+      "label": "Enable set 1",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "set_1_image_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "set_1_image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "set_1_image_3",
+      "label": "Image 3"
+    },
+    {
+      "type": "header",
+      "content": "Set 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "set_2_enabled",
+      "label": "Enable set 2",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "set_2_image_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "set_2_image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "set_2_image_3",
+      "label": "Image 3"
+    },
+    {
+      "type": "header",
+      "content": "Set 3"
+    },
+    {
+      "type": "checkbox",
+      "id": "set_3_enabled",
+      "label": "Enable set 3",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "set_3_image_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "set_3_image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "set_3_image_3",
+      "label": "Image 3"
+    },
+    {
+      "type": "header",
+      "content": "Set 4"
+    },
+    {
+      "type": "checkbox",
+      "id": "set_4_enabled",
+      "label": "Enable set 4",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "set_4_image_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "set_4_image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "set_4_image_3",
+      "label": "Image 3"
+    },
+    {
+      "type": "header",
+      "content": "Set 5"
+    },
+    {
+      "type": "checkbox",
+      "id": "set_5_enabled",
+      "label": "Enable set 5",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "set_5_image_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "set_5_image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "set_5_image_3",
+      "label": "Image 3"
+    },
+    {
+      "type": "header",
+      "content": "Set 6"
+    },
+    {
+      "type": "checkbox",
+      "id": "set_6_enabled",
+      "label": "Enable set 6",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "set_6_image_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "set_6_image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "set_6_image_3",
+      "label": "Image 3"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image slideshow"
+    }
+  ]
+}
 {% endschema %}
