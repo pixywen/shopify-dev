@@ -21,7 +21,7 @@
             "mobile_image_fit": "cover",
             "heading_size": 48,
             "subheading_size": 18,
-            "show_arrows": false,
+            "show_arrows": true,
             "arrow_size": 50,
             "arrow_background": "#ffffff",
             "arrow_color": "#121212",
@@ -42,7 +42,7 @@
             "slide_1_text_position": "middle_left",
             "slide_1_text_align": "center",
             "slide_1_text_color": "#ffffff",
-            "slide_2_enabled": false,
+            "slide_2_enabled": true,
             "slide_2_media_type": "image",
             "slide_2_desktop_image": "shopify://shop_images/banner_5886e98a-b6b9-4914-bab6-ab4d5502e27e.jpg",
             "slide_2_desktop_video": "",
@@ -90,7 +90,6 @@
       "block_order": [
         "ai_gen_block_28bafcf_nCJGwr"
       ],
-      "disabled": true,
       "settings": {}
     },
     "gg_image_banner_V4rbFP": {
@@ -171,6 +170,7 @@
         "slide_6pyKqd",
         "slide_kNwNzd"
       ],
+      "disabled": true,
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "full_bleed",
