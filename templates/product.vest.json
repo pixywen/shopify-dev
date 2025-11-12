@@ -105,7 +105,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "<p>Shell: Teflon-coated</p><p>Insulation: Graphene, Sorona</p><p>Pockets: <strong>2</strong></p>",
+            "content": "<p>Shell: Teflon-coated</p><p>Insulation: Graphene, Sorona</p><p>Pockets: <strong>3</strong></p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
@@ -261,7 +261,9 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
-            "max_width": 1200
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
           }
         }
       },
