@@ -21,7 +21,7 @@
             "mobile_image_fit": "cover",
             "heading_size": 48,
             "subheading_size": 18,
-            "show_arrows": true,
+            "show_arrows": false,
             "arrow_size": 50,
             "arrow_background": "#ffffff",
             "arrow_color": "#121212",
