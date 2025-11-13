@@ -9,6 +9,35 @@
  */
 {
   "sections": {
+    "176302059220ea58dd": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_332fa37_7nhxFg": {
+          "type": "ai_gen_block_332fa37",
+          "settings": {
+            "collection": "",
+            "products_to_show": 8,
+            "show_labels": true,
+            "sale_label": "Sale",
+            "sold_out_label": "Sold Out",
+            "custom_label_tag": "",
+            "custom_label_text": "New",
+            "label_bg_color": "#121212",
+            "label_text_color": "#ffffff",
+            "add_to_cart_text": "Add to Cart",
+            "sold_out_text": "Sold Out",
+            "button_bg_color": "#121212",
+            "button_hover_bg_color": "#000000",
+            "button_text_color": "#ffffff"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_332fa37_7nhxFg"
+      ],
+      "settings": {}
+    },
     "gg_breadcrumb_nBKrrq": {
       "type": "gg-breadcrumb",
       "disabled": true,
@@ -59,6 +88,7 @@
     }
   },
   "order": [
+    "176302059220ea58dd",
     "gg_breadcrumb_nBKrrq",
     "banner",
     "gg_image_banner_common_p7drjC",

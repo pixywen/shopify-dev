@@ -9,6 +9,73 @@
  */
 {
   "sections": {
+    "17630207528a8ba28e": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c8cf4c0_6JhEGb": {
+          "type": "ai_gen_block_c8cf4c0",
+          "disabled": true,
+          "settings": {
+            "collection": "pre-black-friday",
+            "products_to_show": 8,
+            "heading": "Featured collection",
+            "description": "",
+            "heading_alignment": "center",
+            "heading_size": 32,
+            "description_size": 16,
+            "heading_spacing": 30,
+            "heading_color": "#121212",
+            "description_color": "#666666",
+            "columns_desktop": 4,
+            "columns_tablet": 3,
+            "columns_mobile": "2",
+            "grid_gap": 20,
+            "section_padding": 40,
+            "show_custom_label": false,
+            "custom_label_text": "",
+            "label_offset": 12,
+            "label_font_size": 12,
+            "label_font_weight": "700",
+            "label_text_transform": "uppercase",
+            "label_padding_vertical": 4,
+            "label_padding_horizontal": 10,
+            "label_border_radius": 4,
+            "label_background": "#121212",
+            "label_text_color": "#ffffff",
+            "show_vendor": false,
+            "show_price": true,
+            "show_sale_badge": true,
+            "show_sold_out_badge": true,
+            "card_padding": 16,
+            "card_border_radius": 8,
+            "card_background": "#ffffff",
+            "product_title_size": 16,
+            "product_title_color": "#121212",
+            "product_title_hover_color": "#666666",
+            "price_size": 16,
+            "price_color": "#121212",
+            "show_add_to_cart": false,
+            "add_to_cart_text": "Add to cart",
+            "sold_out_text": "Sold out",
+            "button_padding": 12,
+            "button_font_size": 14,
+            "button_text_transform": "uppercase",
+            "button_border_radius": 4,
+            "button_border_width": 1,
+            "button_background": "#121212",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#121212",
+            "button_hover_background": "#000000",
+            "button_hover_text_color": "#ffffff"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c8cf4c0_6JhEGb"
+      ],
+      "settings": {}
+    },
     "gg_breadcrumb_nBKrrq": {
       "type": "gg-breadcrumb",
       "disabled": true,
@@ -128,6 +195,7 @@
     }
   },
   "order": [
+    "17630207528a8ba28e",
     "gg_breadcrumb_nBKrrq",
     "banner",
     "blocks_eRBWRV",
