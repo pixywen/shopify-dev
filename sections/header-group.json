@@ -102,10 +102,64 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "17630198984c951c9a": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_70642fe_wRyQtF": {
+          "type": "ai_gen_block_70642fe",
+          "settings": {
+            "collection": "pre-black-friday",
+            "products_to_show": 12,
+            "show_heading": true,
+            "heading": "Free Gifts Collection",
+            "description": "",
+            "heading_alignment": "center",
+            "heading_size": 32,
+            "description_size": 16,
+            "heading_spacing": 32,
+            "columns_desktop": 4,
+            "columns_mobile": "2",
+            "grid_gap": 16,
+            "section_padding": 40,
+            "show_labels": true,
+            "sale_label": "Sale",
+            "sold_out_label": "Sold out",
+            "show_custom_label": false,
+            "custom_label_text": "New",
+            "label_background": "#121212",
+            "label_text_color": "#ffffff",
+            "label_font_size": 12,
+            "label_padding_horizontal": 10,
+            "label_padding_vertical": 5,
+            "label_border_radius": 4,
+            "label_offset": 12,
+            "show_vendor": false,
+            "show_price": true,
+            "card_background": "#ffffff",
+            "card_border_radius": 8,
+            "card_padding": 16,
+            "heading_color": "#121212",
+            "description_color": "#666666",
+            "vendor_color": "#999999",
+            "vendor_font_size": 11,
+            "product_title_color": "#121212",
+            "product_title_size": 16,
+            "price_color": "#121212",
+            "price_font_size": 15
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_70642fe_wRyQtF"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "17630198984c951c9a"
   ]
 }
