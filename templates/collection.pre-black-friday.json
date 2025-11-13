@@ -21,6 +21,20 @@
         "color_scheme": "scheme-1"
       }
     },
+    "gg_image_banner_common_iJAcjq": {
+      "type": "gg-image-banner-common",
+      "name": "GG-通用视频横幅",
+      "settings": {
+        "small_heading_above": "",
+        "heading": "",
+        "small_heading_below": "",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify://shop_images/preblackfriday-PC.jpg",
+        "mobile_image": "shopify://shop_images/preblackfriday-m.jpg",
+        "description": ""
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -45,6 +59,7 @@
   "order": [
     "gg_breadcrumb_nBKrrq",
     "banner",
+    "gg_image_banner_common_iJAcjq",
     "product-grid"
   ]
 }
