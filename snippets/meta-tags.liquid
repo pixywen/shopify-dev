@@ -1,4 +1,4 @@
-{% if request.path contains '/products/' and request.url contains '?' %}
+{% if request.page_type == 'product' and product.selected_or_first_available_variant.id != product.variants.first.id %}
   <meta name="robots" content="noindex, follow">
 {% endif %}
 
