@@ -28,10 +28,10 @@
     {% endif %}
 
     {% render 'meta-tags' %}
-{% if request.path contains '/products/' and request.path != product.url %}
+{% if template.name contains 'product' and request.url contains '?' %}
   <meta name="robots" content="noindex, follow">
-  <link rel="canonical" href="{{ product.url }}">
 {% endif %}
+
 
 
 
