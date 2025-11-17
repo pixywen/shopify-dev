@@ -28,12 +28,6 @@
     {% endif %}
 
     {% render 'meta-tags' %}
-{% if template.name contains 'product' and request.url contains '?' %}
-  <meta name="robots" content="noindex, follow">
-{% endif %}
-
-
-
 
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
