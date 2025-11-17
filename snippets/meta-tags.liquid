@@ -1,3 +1,6 @@
+{% if request.page_type == 'product' and request.query_string != blank %}
+  <meta name="robots" content="noindex, follow">
+{% endif %}
 {%- liquid
   assign og_title = page_title | default: shop.name
   assign og_url = canonical_url | default: request.origin
