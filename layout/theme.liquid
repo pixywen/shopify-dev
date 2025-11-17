@@ -302,6 +302,15 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+  {% if request.query_params.country or request.query_params.currency %}
+  <meta name="robots" content="noindex, follow">
+  {% if canonical_url %}
+    <link rel="canonical" href="{{ canonical_url }}">
+  {% else %}
+    <link rel="canonical" href="{{ shop.url }}{{ product.url }}">
+  {% endif %}
+{% endif %}
+
   {% include 'pagefly-app-header' %}</head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
