@@ -39,10 +39,10 @@
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-    {% if template.name contains 'product' and (request.query_string contains 'country=' or request.query_string contains 'currency=') %}
-  <meta name="robots" content="noindex, follow">
-  {% if product %}
-  <link rel="canonical" href="{{ shop.url }}{{ product.url }}">
+{% if template.name contains 'product' %}
+  {% if request.query_string contains 'country=' or request.query_string contains 'currency=' %}
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="{{ shop.url }}{{ product.url }}">
   {% endif %}
 {% endif %}
 
