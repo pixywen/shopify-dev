@@ -1,7 +1,7 @@
-{%- if request.url contains '?variant=' -%}
+{% if request.page_type == 'product' and product.variants.size > 1 %}
   <meta name="robots" content="noindex, follow">
-  <link rel="canonical" href="{{ product.url }}">
-{%- endif -%}
+{% endif %}
+
 
 
 {%- liquid
