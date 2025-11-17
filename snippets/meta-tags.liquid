@@ -1,6 +1,8 @@
-{% if request.page_type == 'product' %}
+{%- if request.url contains '?variant=' -%}
   <meta name="robots" content="noindex, follow">
-{% endif %}
+  <link rel="canonical" href="{{ product.url }}">
+{%- endif -%}
+
 
 {%- liquid
   assign og_title = page_title | default: shop.name
