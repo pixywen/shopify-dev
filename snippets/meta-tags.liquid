@@ -1,7 +1,6 @@
-{% if request.page_type == 'product' and product.variants.size > 1 %}
+{% if request.page_type == 'product' and request.url contains 'currency=' %}
   <meta name="robots" content="noindex, follow">
 {% endif %}
-
 
 
 {%- liquid
