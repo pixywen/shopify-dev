@@ -1,4 +1,4 @@
-{% if request.page_type == 'product' and request.url contains 'currency=' %}
+{% if request.page_type == 'product' and canonical_url != request.url %}
   <meta name="robots" content="noindex, follow">
 {% endif %}
 
