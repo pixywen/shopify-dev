@@ -28,6 +28,12 @@
     {% endif %}
 
     {% render 'meta-tags' %}
+    {% if template.name contains 'product' %}
+  {% if request.query_string contains 'country=' or request.query_string contains 'currency=' %}
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="{{ shop.url }}{{ product.url }}">
+  {% endif %}
+{% endif %}
 
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
@@ -39,12 +45,6 @@
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-{% if template.name contains 'product' %}
-  {% if request.query_string contains 'country=' or request.query_string contains 'currency=' %}
-    <meta name="robots" content="noindex, follow">
-    <link rel="canonical" href="{{ shop.url }}{{ product.url }}">
-  {% endif %}
-{% endif %}
 
     {{ content_for_header }}
 
