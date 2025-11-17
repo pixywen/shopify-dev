@@ -302,13 +302,6 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
-{% if template.name contains 'product' and (request.query_string contains 'country=' or request.query_string contains 'currency=') %}
-  <meta name="robots" content="noindex, follow">
-  <link rel="canonical" href="{{ shop.url }}{{ product.url }}">
-{% endif %}
-
-
-
 
   {% include 'pagefly-app-header' %}</head>
 
