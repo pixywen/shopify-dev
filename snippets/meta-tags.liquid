@@ -1,6 +1,7 @@
-{% if request.page_type == 'product' and canonical_url != request.url %}
+{% if request.page_type == 'product' and request.query_string != blank %}
   <meta name="robots" content="noindex, follow">
 {% endif %}
+
 
 
 {%- liquid
