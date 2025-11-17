@@ -28,12 +28,11 @@
     {% endif %}
 
     {% render 'meta-tags' %}
-    {% if template.name contains 'product' %}
-  {% if request.query_string contains 'country=' or request.query_string contains 'currency=' %}
-    <meta name="robots" content="noindex, follow">
-    <link rel="canonical" href="{{ shop.url }}{{ product.url }}">
-  {% endif %}
+{% if request.path contains '/products/' and request.query_string != blank %}
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="{{ product.url }}">
 {% endif %}
+
 
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
