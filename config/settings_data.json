@@ -230,6 +230,11 @@
         "type": "shopify://apps/transtore/blocks/switcher_embed_block/afeffe82-e563-4f78-90f4-f1e3d96286c3",
         "disabled": true,
         "settings": {}
+      },
+      "4215564508307704909": {
+        "type": "shopify://apps/sitemap-noindex-pro-seo/blocks/app-embed/4d815e2c-5af0-46ba-8301-d0f9cf660031",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
