@@ -25,7 +25,7 @@
             "arrow_size": 50,
             "arrow_background": "#ffffff",
             "arrow_color": "#121212",
-            "show_dots": true,
+            "show_dots": false,
             "dot_size": 10,
             "dot_color": "#ffffff",
             "autoplay": true,
