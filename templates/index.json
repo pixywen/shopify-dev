@@ -55,7 +55,6 @@
         "mobile_slide_mrijEN",
         "mobile_slide_EATQH4"
       ],
-      "disabled": true,
       "name": "GT-首页-头部横幅(图片轮播)",
       "settings": {
         "small_heading_above": "",
@@ -154,6 +153,7 @@
       "block_order": [
         "ai_gen_block_28bafcf_nCJGwr"
       ],
+      "disabled": true,
       "settings": {}
     },
     "gg_image_banner_V4rbFP": {
