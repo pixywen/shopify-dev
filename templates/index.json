@@ -63,8 +63,8 @@
         "button_label": "",
         "button_link": "",
         "auto_play": true,
-        "default_duration": 10,
-        "transition_type": "slide",
+        "default_duration": 5,
+        "transition_type": "fade",
         "show_indicators": true
       }
     },
