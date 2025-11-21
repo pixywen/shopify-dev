@@ -2,113 +2,15 @@
 
 .gt-banner-image-container {
   position: relative;
-  width: 100vw; /* 使用视口宽度 */
-  margin-left: calc(50% - 50vw); /* 突破父容器限制，向左扩展 */
-  margin-right: calc(50% - 50vw); /* 突破父容器限制，向右扩展 */
+  width: 100%;
+  padding-top: 57.5%;
   overflow: hidden;
-  aspect-ratio: 16/9;
 }
 
-@media screen and (orientation: portrait) {
-  .gt-banner-content {
-    top: 80% !important;
+@media screen and (max-width: 749px) {
+  .gt-banner-image-container {
+    padding-top: 147.2%;
   }
-}
-
-/* 内容区域样式 */
-.gt-banner-content {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-  text-align: center;
-  color: #ffffff;
-  max-width: 600px;
-  padding: 0 20px;
-  pointer-events: none;
-}
-
-.gt-banner-content .small-heading-above {
-  font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  opacity: 0.9;
-}
-
-.gt-banner-content .banner-heading {
-  width: 590px;
-  height: 53px;
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  line-height: 1.5;
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 36px;
-  color: rgba(255, 255, 255, 1);
-  text-align: center;
-  font-family: var(--font-flynnmono-family);
-  margin-top: 0;
-}
-
-.gt-banner-content .banner-heading_one {
-  width: 590px;
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  line-height: 1;
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 25px;
-  color: rgba(255, 255, 255, 1);
-  text-align: center;
-  font-family: var(--font-flynnmono-family);
-  white-space: nowrap;
-}
-
-.gt-banner-content .small-heading-below {
-  font-size: 18px;
-  margin-bottom: 30px;
-  opacity: 0.8;
-  line-height: 36px;
-}
-
-.gt-banner-content .banner-button-wrapper {
-  margin-top: 20px;
-  pointer-events: auto;
-}
-
-@media screen and (orientation: portrait) {
-  .gt-banner-content .button {
-    width: 140px !important;
-    padding: 0 30px !important;
-    font-weight: 400 !important;
-    border: 1px solid #fff !important;
-    white-space: nowrap;
-  }
-}
-
-.gt-banner-content .button {
-  width: 222px;
-  display: inline-flex;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0); 
-  gap: 8px;
-  padding: 10px 30px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  border: 2px solid #fff;
-  font-family: var(--font-flynnmono-family);
-}
-
-
-.gt-banner-content .button:hover {
-  background-color: #f5f5f5;
-  transform: translateY(-2px);
-  color: #000000;
 }
 
 /* 轮播容器样式 */

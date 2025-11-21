@@ -1,6 +1,7 @@
 <!-- GT-首页-头部横幅(图片轮播) -->
 <!-- 头部图片轮播Banner -->
 
+{{ 'gg-section-image-banner.css' | asset_url | stylesheet_tag }}
 {{ 'gt-top-banner-image.css' | asset_url | stylesheet_tag }}
 
 {%- liquid
@@ -16,7 +17,7 @@
   assign transition_type = section.settings.transition_type | default: 'fade'
 -%}
 
-<div class="gt-banner-image-container" 
+<div class="gt-banner-image-container gg-banner-container"
      data-section-id="{{ section_id }}"
      data-auto-play="{{ auto_play }}"
      data-default-duration="{{ default_duration }}"
@@ -25,24 +26,24 @@
      data-show-indicators-bool="{{ show_indicators | json }}">
   
   <!-- 内容区域 -->
-  <div class="gt-banner-content">
+  <div class="gg-banner-content">
     {%- if section.settings.small_heading_above != blank -%}
-      {% comment %} <p class="small-heading-above">{{ section.settings.small_heading_above | escape }}</p> {% endcomment %}
+      <p class="small-heading-above">{{ section.settings.small_heading_above | escape }}</p>
     {%- endif -%}
 
     {%- if section.settings.heading != blank -%}
-      <h2 class="banner-heading_one">{{ section.settings.heading | escape }}</h2>
-      <h2 class="banner-heading">{{ section.settings.heading_below | escape }}</h2>
+      <h2 class="banner-heading">{{ section.settings.heading | escape }}</h2>
     {%- endif -%}
 
-    {%- if section.settings.small_heading_below != blank -%}
-      {% comment %} <p class="small-heading-below">{{ section.settings.small_heading_below | escape }}</p> {% endcomment %}
+    {%- if section.settings.heading_below != blank -%}
+      <p class="small-heading-below">{{ section.settings.heading_below | escape }}</p>
     {%- endif -%}
 
     {%- if section.settings.button_label != blank -%}
       <div class="banner-button-wrapper">
         <a href="{{ section.settings.button_link }}" class="button">
           {{ section.settings.button_label | escape }}
+          {{ 'icon-button-arrow.svg' | inline_asset_content }}
         </a>
       </div>
     {%- endif -%}
@@ -422,6 +423,12 @@
     },
     {
       "type": "text",
+      "id": "small_heading_above",
+      "label": "上方小标题",
+      "default": "TRUSTED BY 1,500 CUSTOMERS"
+    },
+    {
+      "type": "text",
       "id": "heading",
       "label": "主标题",
       "default": "TAILORED FOR PRECISION."
@@ -429,7 +436,7 @@
     {
       "type": "text",
       "id": "heading_below",
-      "label": "下方副标题",
+      "label": "下方小标题",
       "default": "DESIGNED FOR MOVEMENT."
     },
     {
