@@ -411,7 +411,7 @@
 }
 
 /* 全屏宽度突破容器限制的备选方案 */
-.gt-banner-image-container.full-width {
+/* .gt-banner-image-container.full-width {
   position: relative;
   left: 50%;
   right: 50%;
@@ -419,4 +419,4 @@
   margin-right: -50vw;
   width: 100vw;
   max-width: none;
-}
+} */
