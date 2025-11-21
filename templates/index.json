@@ -17,7 +17,7 @@
           "settings": {
             "image": "shopify://shop_images/pre-day1-pc.jpg",
             "alt_text": "",
-            "custom_duration": 3,
+            "custom_duration": 5,
             "image_link": ""
           }
         },
@@ -26,7 +26,7 @@
           "settings": {
             "image": "shopify://shop_images/pre-day1.jpg",
             "alt_text": "",
-            "custom_duration": 3,
+            "custom_duration": 5,
             "image_link": ""
           }
         },
@@ -35,7 +35,7 @@
           "settings": {
             "image": "shopify://shop_images/ks-pro-pc.jpg",
             "alt_text": "",
-            "custom_duration": 3,
+            "custom_duration": 5,
             "image_link": ""
           }
         },
@@ -44,7 +44,7 @@
           "settings": {
             "image": "shopify://shop_images/ks-pro-m.jpg",
             "alt_text": "",
-            "custom_duration": 3,
+            "custom_duration": 5,
             "image_link": ""
           }
         }
