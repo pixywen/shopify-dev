@@ -9,6 +9,46 @@
  */
 {
   "sections": {
+    "gt_top_banner_image_abgczQ": {
+      "type": "gt-top-banner-image",
+      "blocks": {
+        "desktop_slide_FBrYf6": {
+          "type": "desktop_slide",
+          "settings": {
+            "image": "shopify://shop_images/banner-PC_-4_8a4718ee-1f65-49a9-ba2c-83d79e566256.jpg",
+            "alt_text": "",
+            "custom_duration": 3,
+            "image_link": ""
+          }
+        },
+        "mobile_slide_mrijEN": {
+          "type": "mobile_slide",
+          "settings": {
+            "image": "shopify://shop_images/banner-m.jpg",
+            "alt_text": "",
+            "custom_duration": 3,
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "desktop_slide_FBrYf6",
+        "mobile_slide_mrijEN"
+      ],
+      "disabled": true,
+      "name": "GT-首页-头部横幅(图片轮播)",
+      "settings": {
+        "small_heading_above": "",
+        "heading": "",
+        "heading_below": "",
+        "button_label": "",
+        "button_link": "",
+        "auto_play": true,
+        "default_duration": 3,
+        "transition_type": "fade",
+        "show_indicators": true
+      }
+    },
     "1761291178533c8302": {
       "type": "_blocks",
       "blocks": {
@@ -718,6 +758,7 @@
     }
   },
   "order": [
+    "gt_top_banner_image_abgczQ",
     "1761291178533c8302",
     "gg_image_banner_V4rbFP",
     "slideshow_HaTCQb",
