@@ -1,0 +1,324 @@
+/* GT-首页-头部横幅(图片轮播)样式 */
+
+.gt-banner-image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 57.5%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 749px) {
+  .gt-banner-image-container {
+    padding-top: 147.2%;
+  }
+}
+
+/* 轮播容器样式 */
+.gt-banner-carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.carousel-slide:first-child {
+  opacity: 1;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* 根据设置动态调整图片显示方式 */
+.gt-banner-image-container[data-image-fit="cover"] .carousel-image {
+  object-fit: cover;
+}
+
+.gt-banner-image-container[data-image-fit="contain"] .carousel-image {
+  object-fit: contain;
+}
+
+/* 隐藏指示器当设置为false时 */
+.gt-banner-image-container[data-show-indicators="false"] .carousel-indicators {
+  display: none !important;
+}
+
+/* 当指示器被禁用时，确保不显示 */
+.gt-banner-image-container[data-show-indicators="false"] .carousel-indicators,
+.gt-banner-image-container[data-show-indicators=false] .carousel-indicators,
+.gt-banner-image-container[data-show-indicators-bool="false"] .carousel-indicators {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* 指示器样式 */
+.carousel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.indicator:hover {
+  border-color: rgba(255, 255, 255, 0.8);
+  transform: scale(1.1);
+}
+
+.indicator.active {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* 淡入淡出过渡效果 */
+.gt-banner-image-container[data-transition-type="fade"] .carousel-slide {
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* 滑动过渡效果 */
+.gt-banner-image-container[data-transition-type="slide"] .carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gt-banner-image-container[data-transition-type="slide"] .carousel-slide {
+  position: relative;
+  flex: 0 0 100%;
+  opacity: 1;
+  transition: none;
+}
+
+/* 响应式设计 */
+@media (max-width: 749px) {
+  .gt-banner-image-container {
+    aspect-ratio: 9/16;
+  }
+  
+  .gt-banner-content .banner-heading {
+    font-size: 1.6rem !important;
+    line-height: 1.2 !important;
+    height: auto;
+    font-family: var(--font-flynnmono-family);
+  }
+  
+  .gt-banner-content .banner-heading_one {
+    font-size: 1.6rem !important;
+    line-height: 1.2 !important;
+    height: auto;
+    font-family: var(--font-flynnmono-family);
+  }
+  
+  .gt-banner-content {
+    width: 380px !important;
+  }
+ 
+  
+  .gt-banner-content .small-heading-below {
+    font-size: 16px;
+  }
+  
+  .gt-banner-content .button {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+  
+  .carousel-indicators {
+    bottom: 15px;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gt-banner-content .banner-heading {
+    font-size: 18px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    vertical-align: top;
+    width: 100% !important;
+  }
+  
+  .gt-banner-content .banner-heading_one {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    vertical-align: top;
+    width: 100% !important;
+    font-family: var(--font-flynnmono-family);
+  }
+  
+  .gt-banner-content .small-heading-above {
+    font-size: 12px;
+  }
+  
+  .gt-banner-content .small-heading-below {
+    font-size: 14px;
+  }
+  
+  .gt-banner-content .button {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+  
+  .carousel-indicators {
+    bottom: 10px;
+    gap: 6px;
+  }
+  
+  .indicator {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* 桌面端和移动端显示控制 */
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 749px) {
+  .desktop-only {
+    display: none;
+  }
+  
+  .mobile-only {
+    display: block;
+  }
+}
+
+/* 加载状态 */
+.carousel-slide:not(:first-child) {
+  opacity: 0;
+}
+
+.carousel-slide.loaded {
+  opacity: 1;
+}
+
+/* 暂停状态指示 */
+.gt-banner-image-container.paused .carousel-indicators {
+  opacity: 0.7;
+}
+
+/* 无障碍访问优化 */
+.indicator:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.carousel-slide:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: -2px;
+}
+
+/* 高对比度模式支持 */
+@media (prefers-contrast: high) {
+  .indicator {
+    border-width: 3px;
+  }
+  
+  .indicator.active {
+    background-color: #000000;
+    border-color: #000000;
+  }
+}
+
+/* 减少动画模式支持 */
+@media (prefers-reduced-motion: reduce) {
+  .carousel-slide {
+    transition: none;
+  }
+  
+  .indicator {
+    transition: none;
+  }
+  
+  .gt-banner-content .button {
+    transition: none;
+  }
+}
+
+/* 打印样式 */
+@media print {
+  .gt-banner-image-container {
+    min-height: auto;
+  }
+  
+  .carousel-indicators {
+    display: none;
+  }
+  
+  .carousel-slide:not(:first-child) {
+    display: none;
+  }
+}
+
+/* 全屏宽度突破容器限制的备选方案 */
+/* .gt-banner-image-container.full-width {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  max-width: none;
+} */

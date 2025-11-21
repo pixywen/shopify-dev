@@ -1,0 +1,582 @@
+<!-- GT-首页-头部横幅(图片轮播) -->
+<!-- 头部图片轮播Banner -->
+
+{{ 'gg-section-image-banner.css' | asset_url | stylesheet_tag }}
+{{ 'gt-top-banner-image.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign section_id = 'banner-image-' | append: section.id
+  assign desktop_slides = section.blocks | where: 'type', 'desktop_slide'
+  assign mobile_slides = section.blocks | where: 'type', 'mobile_slide'
+  assign default_duration = section.settings.default_duration | default: 3
+  assign auto_play = section.settings.auto_play | default: true
+  assign show_indicators = section.settings.show_indicators
+  if show_indicators == blank
+    assign show_indicators = false
+  endif
+  assign transition_type = section.settings.transition_type | default: 'fade'
+-%}
+
+<div class="gt-banner-image-container gg-banner-container"
+     data-section-id="{{ section_id }}"
+     data-auto-play="{{ auto_play }}"
+     data-default-duration="{{ default_duration }}"
+     data-transition-type="{{ transition_type }}"
+     data-show-indicators="{{ show_indicators }}"
+     data-show-indicators-bool="{{ show_indicators | json }}">
+  
+  <!-- 内容区域 -->
+  <div class="gg-banner-content">
+    {%- if section.settings.small_heading_above != blank -%}
+      <p class="small-heading-above">{{ section.settings.small_heading_above | escape }}</p>
+    {%- endif -%}
+
+    {%- if section.settings.heading != blank -%}
+      <h2 class="banner-heading">{{ section.settings.heading | escape }}</h2>
+    {%- endif -%}
+
+    {%- if section.settings.heading_below != blank -%}
+      <p class="small-heading-below">{{ section.settings.heading_below | escape }}</p>
+    {%- endif -%}
+
+    {%- if section.settings.button_label != blank -%}
+      <div class="banner-button-wrapper">
+        <a href="{{ section.settings.button_link }}" class="button">
+          {{ section.settings.button_label | escape }}
+          {{ 'icon-button-arrow.svg' | inline_asset_content }}
+        </a>
+      </div>
+    {%- endif -%}
+  </div>
+
+  <!-- 桌面端轮播 -->
+  {%- if desktop_slides.size > 0 -%}
+    <div class="gt-banner-carousel desktop-only" data-section-id="{{ section_id }}" data-device="desktop">
+      <div class="carousel-wrapper">
+        <div class="carousel-track">
+          {%- for block in desktop_slides -%}
+            {%- assign slide_duration = block.settings.custom_duration | default: default_duration -%}
+            <div class="carousel-slide" 
+                 data-duration="{{ slide_duration }}"
+                 data-block-id="{{ block.id }}"
+                 {%- if block.settings.image_link != blank -%}data-link="{{ block.settings.image_link }}"{%- endif -%}>
+              {%- if block.settings.image != blank -%}
+                {%- if forloop.first -%}
+                  {{ block.settings.image | image_url: width: 1920 | image_tag:
+                    loading: 'eager',
+                    width: block.settings.image.width,
+                    height: block.settings.image.height,
+                    class: "carousel-image",
+                    alt: block.settings.alt_text | default: block.settings.image.alt | default: "轮播图片",
+                    sizes: "100vw"
+                  }}
+                {%- else -%}
+                  {{ block.settings.image | image_url: width: 1920 | image_tag:
+                    loading: 'lazy',
+                    width: block.settings.image.width,
+                    height: block.settings.image.height,
+                    class: "carousel-image",
+                    alt: block.settings.alt_text | default: block.settings.image.alt | default: "轮播图片",
+                    sizes: "100vw"
+                  }}
+                {%- endif -%}
+              {%- endif -%}
+            </div>
+          {%- endfor -%}
+        </div>
+        
+        <!-- 指示器 -->
+        {%- if show_indicators and desktop_slides.size > 1 -%}
+          <div class="carousel-indicators">
+            {%- for block in desktop_slides -%}
+              <button class="indicator" data-slide="{{ forloop.index0 }}" aria-label="跳转到第{{ forloop.index }}张图片"></button>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  <!-- 移动端轮播 -->
+  {%- if mobile_slides.size > 0 -%}
+    <div class="gt-banner-carousel mobile-only" data-section-id="{{ section_id }}" data-device="mobile">
+      <div class="carousel-wrapper">
+        <div class="carousel-track">
+          {%- for block in mobile_slides -%}
+            {%- assign slide_duration = block.settings.custom_duration | default: default_duration -%}
+            <div class="carousel-slide" 
+                 data-duration="{{ slide_duration }}"
+                 data-block-id="{{ block.id }}"
+                 {%- if block.settings.image_link != blank -%}data-link="{{ block.settings.image_link }}"{%- endif -%}>
+              {%- if block.settings.image != blank -%}
+                {%- if forloop.first -%}
+                  {{ block.settings.image | image_url: width: 750 | image_tag:
+                    loading: 'eager',
+                    width: block.settings.image.width,
+                    height: block.settings.image.height,
+                    class: "carousel-image",
+                    alt: block.settings.alt_text | default: block.settings.image.alt | default: "轮播图片",
+                    sizes: "(max-width: 750px) 100vw, 750px"
+                  }}
+                {%- else -%}
+                  {{ block.settings.image | image_url: width: 750 | image_tag:
+                    loading: 'lazy',
+                    width: block.settings.image.width,
+                    height: block.settings.image.height,
+                    class: "carousel-image",
+                    alt: block.settings.alt_text | default: block.settings.image.alt | default: "轮播图片",
+                    sizes: "(max-width: 750px) 100vw, 750px"
+                  }}
+                {%- endif -%}
+              {%- endif -%}
+            </div>
+          {%- endfor -%}
+        </div>
+        
+        <!-- 指示器 -->
+        {%- if show_indicators and mobile_slides.size > 1 -%}
+          <div class="carousel-indicators">
+            {%- for block in mobile_slides -%}
+              <button class="indicator" data-slide="{{ forloop.index0 }}" aria-label="跳转到第{{ forloop.index }}张图片"></button>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const sectionId = '{{ section_id }}';
+    const carouselContainer = document.querySelector('.gt-banner-image-container[data-section-id="' + sectionId + '"]');
+    
+    if (!carouselContainer) return;
+    
+    const autoPlay = carouselContainer.dataset.autoPlay === 'true';
+    const defaultDuration = parseInt(carouselContainer.dataset.defaultDuration) * 1000;
+    const transitionType = carouselContainer.dataset.transitionType;
+    const showIndicators = carouselContainer.dataset.showIndicators !== 'false';
+    
+    let currentCarousel = null;
+    let observer = null;
+    
+    function initCarousel() {
+      const isMobile = window.matchMedia('(max-width: 749px)').matches;
+      const carousel = carouselContainer.querySelector('.gt-banner-carousel[data-device="' + (isMobile ? 'mobile' : 'desktop') + '"]');
+      
+      if (!carousel) return;
+      
+      // 清理之前的轮播
+      if (currentCarousel) {
+        currentCarousel.destroy();
+        currentCarousel = null;
+      }
+      if (observer) {
+        observer.disconnect();
+        observer = null;
+      }
+      
+      currentCarousel = new ImageCarousel(carousel, {
+        autoPlay: autoPlay,
+        defaultDuration: defaultDuration,
+        transitionType: transitionType,
+        showIndicators: showIndicators
+      });
+      
+      // 创建 Intersection Observer
+      observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            currentCarousel.play();
+          } else {
+            currentCarousel.pause();
+          }
+        });
+      }, {
+        threshold: 0.3
+      });
+      observer.observe(carouselContainer);
+    }
+    
+    // 等待页面完全加载后再初始化
+    window.addEventListener('load', initCarousel);
+    
+    // 处理窗口大小改变
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(initCarousel, 250);
+    });
+  });
+  
+  class ImageCarousel {
+    constructor(container, options) {
+      this.container = container;
+      this.options = options;
+      this.track = container.querySelector('.carousel-track');
+      this.slides = container.querySelectorAll('.carousel-slide');
+      this.indicators = container.querySelectorAll('.indicator');
+      this.currentIndex = 0;
+      this.timer = null;
+      this.isPlaying = false;
+      this.isPaused = false;
+      this.remainingTime = 0;
+      this.slideStartTime = 0;
+      
+      this.init();
+    }
+    
+    init() {
+      if (this.slides.length === 0) return;
+      
+      this.setupSlides();
+      this.setupIndicators();
+      this.setupEventListeners();
+      this.showSlide(0);
+      
+      if (this.options.autoPlay) {
+        this.play();
+      }
+    }
+    
+    setupSlides() {
+      this.slides.forEach((slide, index) => {
+        slide.style.display = index === 0 ? 'block' : 'none';
+        slide.style.opacity = index === 0 ? '1' : '0';
+        
+        // 添加点击事件
+        slide.addEventListener('click', () => {
+          const link = slide.dataset.link;
+          if (link) {
+            window.location.href = link;
+          }
+        });
+      });
+    }
+    
+    setupIndicators() {
+      this.indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+          this.goToSlide(index);
+        });
+      });
+    }
+    
+    setupEventListeners() {
+      // 鼠标悬停暂停
+      this.container.addEventListener('mouseenter', () => {
+        this.pause();
+      });
+      
+      this.container.addEventListener('mouseleave', () => {
+        if (this.isPaused) {
+          this.resume();
+        }
+      });
+      
+      // 触摸事件（移动端）
+      let startX = 0;
+      let startY = 0;
+      let isDragging = false;
+      
+      this.container.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
+        isDragging = false;
+        this.pause();
+      });
+      
+      this.container.addEventListener('touchmove', (e) => {
+        if (!isDragging) {
+          const deltaX = Math.abs(e.touches[0].clientX - startX);
+          const deltaY = Math.abs(e.touches[0].clientY - startY);
+          isDragging = deltaX > deltaY && deltaX > 10;
+        }
+      });
+      
+      this.container.addEventListener('touchend', (e) => {
+        if (isDragging) {
+          const deltaX = e.changedTouches[0].clientX - startX;
+          if (Math.abs(deltaX) > 50) {
+            if (deltaX > 0) {
+              this.previousSlide();
+            } else {
+              this.nextSlide();
+            }
+          }
+        }
+        this.resume();
+      });
+    }
+    
+    showSlide(index) {
+      if (index < 0 || index >= this.slides.length) return;
+      
+      // 隐藏当前幻灯片
+      this.slides[this.currentIndex].style.display = 'none';
+      this.slides[this.currentIndex].style.opacity = '0';
+      
+      // 显示新幻灯片
+      this.slides[index].style.display = 'block';
+      this.slides[index].style.opacity = '0';
+      
+      // 触发重排
+      this.slides[index].offsetHeight;
+      
+      // 淡入效果
+      this.slides[index].style.opacity = '1';
+      
+      this.currentIndex = index;
+      this.updateIndicators();
+      this.slideStartTime = Date.now();
+    }
+    
+    updateIndicators() {
+      this.indicators.forEach((indicator, index) => {
+        indicator.classList.toggle('active', index === this.currentIndex);
+      });
+    }
+    
+    nextSlide() {
+      const nextIndex = (this.currentIndex + 1) % this.slides.length;
+      this.goToSlide(nextIndex);
+    }
+    
+    previousSlide() {
+      const prevIndex = this.currentIndex === 0 ? this.slides.length - 1 : this.currentIndex - 1;
+      this.goToSlide(prevIndex);
+    }
+    
+    goToSlide(index) {
+      this.showSlide(index);
+      this.startTimer();
+    }
+    
+    startTimer() {
+      this.clearTimer();
+      
+      if (!this.options.autoPlay || this.isPaused) return;
+      
+      const currentSlide = this.slides[this.currentIndex];
+      const customDuration = currentSlide.dataset.duration;
+      const duration = customDuration ? parseInt(customDuration) * 1000 : this.options.defaultDuration;
+      
+      this.timer = setTimeout(() => {
+        this.nextSlide();
+      }, duration);
+    }
+    
+    clearTimer() {
+      if (this.timer) {
+        clearTimeout(this.timer);
+        this.timer = null;
+      }
+    }
+    
+    play() {
+      this.isPlaying = true;
+      this.isPaused = false;
+      this.startTimer();
+    }
+    
+    pause() {
+      this.isPaused = true;
+      this.clearTimer();
+      
+      if (this.timer) {
+        const currentSlide = this.slides[this.currentIndex];
+        const customDuration = currentSlide.dataset.duration;
+        const duration = customDuration ? parseInt(customDuration) * 1000 : this.options.defaultDuration;
+        this.remainingTime = duration - (Date.now() - this.slideStartTime);
+      }
+    }
+    
+    resume() {
+      if (this.isPaused && this.isPlaying) {
+        this.isPaused = false;
+        if (this.remainingTime > 0) {
+          this.timer = setTimeout(() => {
+            this.nextSlide();
+          }, this.remainingTime);
+        } else {
+          this.startTimer();
+        }
+      }
+    }
+    
+    destroy() {
+      this.clearTimer();
+      this.isPlaying = false;
+      this.isPaused = false;
+    }
+  }
+</script>
+
+{% schema %}
+{
+  "name": "GT-首页-头部横幅(图片轮播)",
+  "settings": [
+    {
+      "type": "header",
+      "content": "横幅内容"
+    },
+    {
+      "type": "text",
+      "id": "small_heading_above",
+      "label": "上方小标题",
+      "default": "TRUSTED BY 1,500 CUSTOMERS"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "主标题",
+      "default": "TAILORED FOR PRECISION."
+    },
+    {
+      "type": "text",
+      "id": "heading_below",
+      "label": "下方小标题",
+      "default": "DESIGNED FOR MOVEMENT."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "按钮文本",
+      "default": "SHOP NOW"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "按钮链接"
+    },
+    {
+      "type": "header",
+      "content": "轮播设置"
+    },
+    {
+      "type": "checkbox",
+      "id": "auto_play",
+      "label": "自动播放",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "default_duration",
+      "label": "默认展示时长",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "unit": "秒",
+      "default": 3
+    },
+    {
+      "type": "select",
+      "id": "transition_type",
+      "label": "过渡动画",
+      "options": [
+        {
+          "value": "fade",
+          "label": "淡入淡出"
+        },
+        {
+          "value": "slide",
+          "label": "滑动"
+        }
+      ],
+      "default": "fade"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_indicators",
+      "label": "显示指示器",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "desktop_slide",
+      "name": "桌面端轮播图片",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "轮播图片",
+          "info": "建议尺寸: 1920px * 1281px"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "图片描述",
+          "info": "用于无障碍访问"
+        },
+        {
+          "type": "range",
+          "id": "custom_duration",
+          "label": "自定义展示时长",
+          "min": 1,
+          "max": 10,
+          "step": 1,
+          "unit": "秒",
+          "info": "留空则使用全局设置",
+          "default": 3
+        },
+        {
+          "type": "url",
+          "id": "image_link",
+          "label": "图片链接",
+          "info": "点击图片时的跳转链接"
+        }
+      ]
+    },
+    {
+      "type": "mobile_slide",
+      "name": "移动端轮播图片",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "轮播图片",
+          "info": "建议尺寸: 750px * 1100px"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "图片描述",
+          "info": "用于无障碍访问"
+        },
+        {
+          "type": "range",
+          "id": "custom_duration",
+          "label": "自定义展示时长",
+          "min": 1,
+          "max": 10,
+          "step": 1,
+          "unit": "秒",
+          "info": "留空则使用全局设置",
+          "default": 3
+        },
+        {
+          "type": "url",
+          "id": "image_link",
+          "label": "图片链接",
+          "info": "点击图片时的跳转链接"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "GT-首页-头部横幅(图片轮播)",
+      "blocks": [
+        {
+          "type": "desktop_slide"
+        },
+        {
+          "type": "mobile_slide"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
