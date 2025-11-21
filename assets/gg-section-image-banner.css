@@ -715,6 +715,14 @@
     overflow: hidden;
   }
 
+  .gt-banner-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 0;
+    overflow: hidden;
+  }
+
   .gg-banner-image,
   .gg-banner-video {
     position: absolute;
