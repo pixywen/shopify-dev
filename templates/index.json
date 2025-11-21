@@ -7,10 +7,11 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "gg_image_banner_V4rbFP": {
       "type": "gg-image-banner",
+      "disabled": true,
       "settings": {
         "small_heading_above": "🌍 Tursted By 1,500 Customers",
         "heading": "Gear for Every Adventure",
@@ -22,6 +23,63 @@
         "mobile_image": "shopify://shop_images/banner_0e64b2de-0137-43de-99bf-925006c649de.jpg",
         "mobile_video": "shopify://files/videos/首页banner视频-手机.mov",
         "description": ""
+      }
+    },
+    "gt_top_banner_image_ECNy4H": {
+      "type": "gt-top-banner-image",
+      "blocks": {
+        "desktop_slide_hJEhjt": {
+          "type": "desktop_slide",
+          "settings": {
+            "image": "shopify://shop_images/tpi-03.jpg",
+            "alt_text": "",
+            "custom_duration": 3,
+            "image_link": ""
+          }
+        },
+        "desktop_slide_bwaGd8": {
+          "type": "desktop_slide",
+          "settings": {
+            "image": "shopify://shop_images/tpi-02.jpg",
+            "alt_text": "",
+            "custom_duration": 3,
+            "image_link": ""
+          }
+        },
+        "desktop_slide_UwYkai": {
+          "type": "desktop_slide",
+          "settings": {
+            "alt_text": "",
+            "custom_duration": 3,
+            "image_link": ""
+          }
+        },
+        "mobile_slide_wtynRy": {
+          "type": "mobile_slide",
+          "settings": {
+            "image": "shopify://shop_images/tpi-03.jpg",
+            "alt_text": "",
+            "custom_duration": 3,
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "desktop_slide_hJEhjt",
+        "desktop_slide_bwaGd8",
+        "desktop_slide_UwYkai",
+        "mobile_slide_wtynRy"
+      ],
+      "name": "GT-首页-头部横幅(图片轮播)",
+      "settings": {
+        "heading": "TAILORED FOR PRECISION.",
+        "heading_below": "DESIGNED FOR MOVEMENT.",
+        "button_label": "SHOP NOW",
+        "button_link": "",
+        "auto_play": true,
+        "default_duration": 3,
+        "transition_type": "fade",
+        "show_indicators": true
       }
     },
     "gg_scroll_image_zqhRNf": {
@@ -280,6 +338,7 @@
   },
   "order": [
     "gg_image_banner_V4rbFP",
+    "gt_top_banner_image_ECNy4H",
     "gg_scroll_image_zqhRNf",
     "gg_double_image_banner_mobile_YXnVpE",
     "gg_double_image_banner_YFmVwF",
