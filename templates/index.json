@@ -15,7 +15,7 @@
         "desktop_slide_FBrYf6": {
           "type": "desktop_slide",
           "settings": {
-            "image": "shopify://shop_images/banner-PC_-4_8a4718ee-1f65-49a9-ba2c-83d79e566256.jpg",
+            "image": "shopify://shop_images/pre-day1-pc.jpg",
             "alt_text": "",
             "custom_duration": 3,
             "image_link": ""
@@ -24,7 +24,25 @@
         "mobile_slide_mrijEN": {
           "type": "mobile_slide",
           "settings": {
-            "image": "shopify://shop_images/banner-m.jpg",
+            "image": "shopify://shop_images/pre-day1.jpg",
+            "alt_text": "",
+            "custom_duration": 3,
+            "image_link": ""
+          }
+        },
+        "desktop_slide_kDjina": {
+          "type": "desktop_slide",
+          "settings": {
+            "image": "shopify://shop_images/ks-pro-pc.jpg",
+            "alt_text": "",
+            "custom_duration": 3,
+            "image_link": ""
+          }
+        },
+        "mobile_slide_fNf3QQ": {
+          "type": "mobile_slide",
+          "settings": {
+            "image": "shopify://shop_images/ks-pro-m.jpg",
             "alt_text": "",
             "custom_duration": 3,
             "image_link": ""
@@ -33,9 +51,10 @@
       },
       "block_order": [
         "desktop_slide_FBrYf6",
-        "mobile_slide_mrijEN"
+        "mobile_slide_mrijEN",
+        "desktop_slide_kDjina",
+        "mobile_slide_fNf3QQ"
       ],
-      "disabled": true,
       "name": "GT-首页-头部横幅(图片轮播)",
       "settings": {
         "small_heading_above": "",
@@ -134,6 +153,7 @@
       "block_order": [
         "ai_gen_block_28bafcf_nCJGwr"
       ],
+      "disabled": true,
       "settings": {}
     },
     "gg_image_banner_V4rbFP": {
