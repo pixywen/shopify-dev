@@ -9,8 +9,8 @@
 
 @media screen and (max-width: 749px) {
   .gt-banner-image-container {
-    padding-top: 147.2%;
-    height: auto;
+    height: auto; /* 移动端高度自适应 */
+    padding-top: 0; /* 移除固定高度比例 */
   }
 }
 
@@ -137,7 +137,32 @@
 /* 响应式设计 */
 @media (max-width: 749px) {
   .gt-banner-image-container {
-    aspect-ratio: 9/16;
+
+  }
+
+  .gt-banner-carousel {
+    position: relative;
+    height: auto;
+  }
+  
+  .carousel-wrapper {
+    height: auto;
+  }
+  
+  .carousel-track {
+    height: auto;
+  }
+  
+  .carousel-slide {
+    position: relative;
+    height: auto;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: auto; 
+    object-fit: contain;
+    display: block;
   }
   
   .gt-banner-content .banner-heading {
