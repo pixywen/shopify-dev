@@ -576,6 +576,19 @@
   pointer-events: none;
 }
 
+/* 确保遮罩层在视频之上，内容之下GT */
+.gt-banner-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 2;
+  pointer-events: none;
+}
+
 .small-heading-above {
   font-size: 20px;
   text-transform: uppercase;

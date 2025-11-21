@@ -3,13 +3,14 @@
 .gt-banner-image-container {
   position: relative;
   width: 100%;
-  padding-top: 57.5%;
+  height: 1104px; /* 固定高度 720px */
   overflow: hidden;
 }
 
 @media screen and (max-width: 749px) {
   .gt-banner-image-container {
     padding-top: 147.2%;
+    height: auto;
   }
 }
 
