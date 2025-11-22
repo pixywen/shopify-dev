@@ -3,7 +3,7 @@
 .gt-banner-image-container {
   position: relative;
   width: 100%;
-  height: 1104px; /* 固定高度 720px */
+  height: auto; /* 高度由图片撑起 */
   overflow: hidden;
 }
 
@@ -16,47 +16,66 @@
 
 /* 轮播容器样式 */
 .gt-banner-carousel {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
   z-index: 1;
 }
 
 .carousel-wrapper {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .carousel-track {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .carousel-slide {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   cursor: pointer;
 }
 
+/* 第一张图片使用相对定位，撑起容器高度 */
 .carousel-slide:first-child {
+  position: relative;
+  height: auto;
   opacity: 1;
+}
+
+/* 其他图片绝对定位，覆盖在第一张图片上方 */
+.carousel-slide:not(:first-child) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%; /* 填满容器高度（由第一张图片撑起） */
 }
 
 .carousel-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto; /* 高度自适应，保持图片原始比例 */
+  object-fit: contain; /* 改为 contain，避免裁剪 */
   object-position: center;
   display: block;
+}
+
+/* 第一张图片保持原始比例 */
+.carousel-slide:first-child .carousel-image {
+  height: auto;
+  object-fit: contain;
+}
+
+/* 其他图片填满容器 */
+.carousel-slide:not(:first-child) .carousel-image {
+  height: 100%;
+  object-fit: cover; /* 其他图片使用 cover 填满 */
 }
 
 /* 根据设置动态调整图片显示方式 */
