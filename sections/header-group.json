@@ -14,6 +14,13 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_cWcU7U": {
+          "type": "announcement",
+          "settings": {
+            "text": "BF Flash Sale! Nov 24 – 50% Off!",
+            "link": "shopify://collections/black-friday-flash-sale-day1"
+          }
+        },
         "announcement_peTVYX": {
           "type": "announcement",
           "settings": {
@@ -37,6 +44,7 @@
         }
       },
       "block_order": [
+        "announcement_cWcU7U",
         "announcement_peTVYX",
         "announcement_RNpTTn",
         "announcement_diVnMr"
