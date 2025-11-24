@@ -203,20 +203,20 @@
             "box_border_width": 1,
             "box_border_color": "#121212",
             "box_radius": 0,
-            "box_padding": 20,
-            "box_min_width": 80,
-            "heading_size": 32,
-            "number_size": 48,
-            "label_size": 14,
-            "message_size": 16,
+            "box_padding": 16,
+            "box_min_width": 65,
+            "heading_size": 22,
+            "number_size": 30,
+            "label_size": 13,
+            "message_size": 15,
             "padding_top": 40,
             "padding_bottom": 40,
             "heading_spacing": 24,
             "label_spacing": 8,
             "message_spacing": 20,
             "timer_gap": 20,
-            "max_width": 800,
-            "unit_width": 100
+            "max_width": 600,
+            "unit_width": 85
           },
           "blocks": {}
         }
