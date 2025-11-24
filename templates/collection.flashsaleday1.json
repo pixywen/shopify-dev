@@ -76,6 +76,59 @@
       ],
       "settings": {}
     },
+    "1763967202517ad7ff": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c49fae2_GmcXRP": {
+          "type": "ai_gen_block_c49fae2",
+          "settings": {
+            "end_date": "2025-11-25",
+            "end_time": "14:20:00",
+            "show_days": true,
+            "show_hours": true,
+            "show_minutes": true,
+            "show_seconds": true,
+            "heading": "LIMITED TIME SALE-DAY 1",
+            "message": "",
+            "expired_message": "<p>This offer has ended</p>",
+            "days_label": "Days",
+            "hours_label": "Hours",
+            "minutes_label": "Minutes",
+            "seconds_label": "Seconds",
+            "label_transform": "uppercase",
+            "background_color": "#f3f3f3",
+            "heading_color": "#ef2525",
+            "number_color": "#ffffff",
+            "label_color": "#121212",
+            "message_color": "#121212",
+            "box_background": "#121212",
+            "show_box_border": false,
+            "box_border_width": 1,
+            "box_border_color": "#121212",
+            "box_radius": 0,
+            "box_padding": 20,
+            "box_min_width": 80,
+            "heading_size": 32,
+            "number_size": 48,
+            "label_size": 14,
+            "message_size": 16,
+            "padding_top": 40,
+            "padding_bottom": 40,
+            "heading_spacing": 24,
+            "label_spacing": 8,
+            "message_spacing": 20,
+            "timer_gap": 20,
+            "max_width": 800,
+            "unit_width": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c49fae2_GmcXRP"
+      ],
+      "settings": {}
+    },
     "gg_breadcrumb_nBKrrq": {
       "type": "gg-breadcrumb",
       "disabled": true,
@@ -196,6 +249,7 @@
   },
   "order": [
     "17630207528a8ba28e",
+    "1763967202517ad7ff",
     "gg_breadcrumb_nBKrrq",
     "banner",
     "blocks_eRBWRV",
