@@ -180,7 +180,7 @@
           "type": "ai_gen_block_c49fae2",
           "settings": {
             "end_date": "2025-11-25",
-            "end_time": "13:00:00",
+            "end_time": "00:00:00",
             "show_days": true,
             "show_hours": true,
             "show_minutes": true,
