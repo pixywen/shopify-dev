@@ -1,0 +1,258 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "17630207528a8ba28e": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c8cf4c0_6JhEGb": {
+          "type": "ai_gen_block_c8cf4c0",
+          "disabled": true,
+          "settings": {
+            "collection": "pre-black-friday",
+            "products_to_show": 8,
+            "heading": "Featured collection",
+            "description": "",
+            "heading_alignment": "center",
+            "heading_size": 32,
+            "description_size": 16,
+            "heading_spacing": 30,
+            "heading_color": "#121212",
+            "description_color": "#666666",
+            "columns_desktop": 4,
+            "columns_tablet": 3,
+            "columns_mobile": "2",
+            "grid_gap": 20,
+            "section_padding": 40,
+            "show_custom_label": false,
+            "custom_label_text": "",
+            "label_offset": 12,
+            "label_font_size": 12,
+            "label_font_weight": "700",
+            "label_text_transform": "uppercase",
+            "label_padding_vertical": 4,
+            "label_padding_horizontal": 10,
+            "label_border_radius": 4,
+            "label_background": "#121212",
+            "label_text_color": "#ffffff",
+            "show_vendor": false,
+            "show_price": true,
+            "show_sale_badge": true,
+            "show_sold_out_badge": true,
+            "card_padding": 16,
+            "card_border_radius": 8,
+            "card_background": "#ffffff",
+            "product_title_size": 16,
+            "product_title_color": "#121212",
+            "product_title_hover_color": "#666666",
+            "price_size": 16,
+            "price_color": "#121212",
+            "show_add_to_cart": false,
+            "add_to_cart_text": "Add to cart",
+            "sold_out_text": "Sold out",
+            "button_padding": 12,
+            "button_font_size": 14,
+            "button_text_transform": "uppercase",
+            "button_border_radius": 4,
+            "button_border_width": 1,
+            "button_background": "#121212",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#121212",
+            "button_hover_background": "#000000",
+            "button_hover_text_color": "#ffffff"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c8cf4c0_6JhEGb"
+      ],
+      "settings": {}
+    },
+    "gg_breadcrumb_nBKrrq": {
+      "type": "gg-breadcrumb",
+      "disabled": true,
+      "settings": {}
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "blocks_eRBWRV": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_28bafcf_czWwk6": {
+          "type": "ai_gen_block_28bafcf",
+          "settings": {
+            "desktop_height": 500,
+            "desktop_image_fit": "cover",
+            "mobile_height": 350,
+            "mobile_image_fit": "cover",
+            "heading_size": 48,
+            "subheading_size": 18,
+            "show_arrows": false,
+            "arrow_size": 50,
+            "arrow_background": "#ffffff",
+            "arrow_color": "#121212",
+            "show_dots": false,
+            "dot_size": 10,
+            "dot_color": "#ffffff",
+            "autoplay": true,
+            "autoplay_speed": 5,
+            "slide_1_enabled": true,
+            "slide_1_media_type": "image",
+            "slide_1_desktop_image": "shopify://shop_images/landing-pc-day1.jpg",
+            "slide_1_mobile_image": "shopify://shop_images/landing-m-day1.jpg",
+            "slide_1_desktop_video": "",
+            "slide_1_mobile_video": "",
+            "slide_1_link": "",
+            "slide_1_heading": "",
+            "slide_1_subheading": "",
+            "slide_1_text_position": "middle_left",
+            "slide_1_text_align": "left",
+            "slide_1_text_color": "#ffffff",
+            "slide_2_enabled": false,
+            "slide_2_media_type": "image",
+            "slide_2_desktop_video": "",
+            "slide_2_mobile_video": "",
+            "slide_2_link": "",
+            "slide_2_heading": "",
+            "slide_2_subheading": "",
+            "slide_2_text_position": "middle_left",
+            "slide_2_text_align": "left",
+            "slide_2_text_color": "#ffffff",
+            "slide_3_enabled": false,
+            "slide_3_media_type": "image",
+            "slide_3_desktop_video": "",
+            "slide_3_mobile_video": "",
+            "slide_3_link": "",
+            "slide_3_heading": "",
+            "slide_3_subheading": "",
+            "slide_3_text_position": "middle_left",
+            "slide_3_text_align": "left",
+            "slide_3_text_color": "#ffffff",
+            "slide_4_enabled": false,
+            "slide_4_media_type": "image",
+            "slide_4_desktop_video": "",
+            "slide_4_mobile_video": "",
+            "slide_4_link": "",
+            "slide_4_heading": "",
+            "slide_4_subheading": "",
+            "slide_4_text_position": "middle_left",
+            "slide_4_text_align": "left",
+            "slide_4_text_color": "#ffffff",
+            "slide_5_enabled": false,
+            "slide_5_media_type": "image",
+            "slide_5_desktop_video": "",
+            "slide_5_mobile_video": "",
+            "slide_5_link": "",
+            "slide_5_heading": "",
+            "slide_5_subheading": "",
+            "slide_5_text_position": "middle_left",
+            "slide_5_text_align": "left",
+            "slide_5_text_color": "#ffffff"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_28bafcf_czWwk6"
+      ],
+      "name": "Carousel banner",
+      "settings": {}
+    },
+    "1763967202517ad7ff": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c49fae2_GmcXRP": {
+          "type": "ai_gen_block_c49fae2",
+          "settings": {
+            "end_date": "2025-11-25",
+            "end_time": "00:00:00",
+            "show_days": true,
+            "show_hours": true,
+            "show_minutes": true,
+            "show_seconds": true,
+            "heading": "LIMITED TIME SALE-DAY 1",
+            "message": "",
+            "expired_message": "<p>This offer has ended</p>",
+            "days_label": "Days",
+            "hours_label": "Hours",
+            "minutes_label": "Minutes",
+            "seconds_label": "Seconds",
+            "label_transform": "uppercase",
+            "background_color": "#f3f3f3",
+            "heading_color": "#ef2525",
+            "number_color": "#ffffff",
+            "label_color": "#121212",
+            "message_color": "#121212",
+            "box_background": "#121212",
+            "show_box_border": false,
+            "box_border_width": 1,
+            "box_border_color": "#121212",
+            "box_radius": 0,
+            "box_padding": 16,
+            "box_min_width": 70,
+            "heading_size": 26,
+            "number_size": 38,
+            "label_size": 13,
+            "message_size": 15,
+            "padding_top": 36,
+            "padding_bottom": 28,
+            "heading_spacing": 24,
+            "label_spacing": 8,
+            "message_spacing": 20,
+            "timer_gap": 26,
+            "max_width": 600,
+            "unit_width": 85
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c49fae2_GmcXRP"
+      ],
+      "settings": {}
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "17630207528a8ba28e",
+    "gg_breadcrumb_nBKrrq",
+    "banner",
+    "blocks_eRBWRV",
+    "1763967202517ad7ff",
+    "product-grid"
+  ]
+}
