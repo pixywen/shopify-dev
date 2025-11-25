@@ -15,19 +15,19 @@
         "desktop_slide_FBrYf6": {
           "type": "desktop_slide",
           "settings": {
-            "image": "shopify://shop_images/day1-banner-pc.jpg",
+            "image": "shopify://shop_images/flashday2-PC.jpg",
             "alt_text": "",
             "custom_duration": 5,
-            "image_link": "shopify://collections/black-friday-flash-sale-day1"
+            "image_link": "shopify://collections/black-friday-flash-sale-day2"
           }
         },
         "mobile_slide_mrijEN": {
           "type": "mobile_slide",
           "settings": {
-            "image": "shopify://shop_images/day1-banner-m.jpg",
+            "image": "shopify://shop_images/flashday2-m.jpg",
             "alt_text": "",
             "custom_duration": 5,
-            "image_link": "shopify://collections/black-friday-flash-sale-day1"
+            "image_link": "shopify://collections/black-friday-flash-sale-day2"
           }
         },
         "desktop_slide_kDjina": {
