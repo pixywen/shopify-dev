@@ -24,10 +24,10 @@
         "mobile_slide_mrijEN": {
           "type": "mobile_slide",
           "settings": {
-            "image": "shopify://shop_images/flashday2-m.jpg",
+            "image": "shopify://shop_images/day3banner-m.jpg",
             "alt_text": "",
             "custom_duration": 5,
-            "image_link": "shopify://collections/black-friday-flash-sale-day2"
+            "image_link": "shopify://collections/black-friday-flash-sale-day3"
           }
         },
         "desktop_slide_kDjina": {
