@@ -24,8 +24,15 @@
         "announcement_VcD7WV": {
           "type": "announcement",
           "settings": {
-            "text": "Spend $300, Get a FREE Gift.",
+            "text": "Spend USD $300, Get a FREE Gift.",
             "link": "shopify://collections/spend-300-get-a-free-gift"
+          }
+        },
+        "announcement_W8crFB": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
           }
         },
         "announcement_peTVYX": {
@@ -54,6 +61,7 @@
       "block_order": [
         "announcement_cWcU7U",
         "announcement_VcD7WV",
+        "announcement_W8crFB",
         "announcement_peTVYX",
         "announcement_RNpTTn",
         "announcement_diVnMr"
