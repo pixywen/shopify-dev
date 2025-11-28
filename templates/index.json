@@ -15,19 +15,19 @@
         "desktop_slide_FBrYf6": {
           "type": "desktop_slide",
           "settings": {
-            "image": "shopify://shop_images/day4banner-PC.jpg",
+            "image": "shopify://shop_images/banner-PC_399347c2-0234-4f0f-80e0-b5ba42ebd8c2.jpg",
             "alt_text": "",
             "custom_duration": 5,
-            "image_link": "shopify://collections/black-friday-flash-sale-day4"
+            "image_link": "shopify://collections/all"
           }
         },
         "mobile_slide_mrijEN": {
           "type": "mobile_slide",
           "settings": {
-            "image": "shopify://shop_images/day4banner-m.jpg",
+            "image": "shopify://shop_images/banner-m_b64dba54-a6bd-4756-abab-009d37b2785b.jpg",
             "alt_text": "",
             "custom_duration": 5,
-            "image_link": "shopify://collections/black-friday-flash-sale-day4"
+            "image_link": "shopify://collections/all"
           }
         },
         "desktop_slide_kDjina": {
@@ -408,7 +408,6 @@
             "product": "mens-all-weather-outdoor-jacket",
             "color_name_1": "Black",
             "color_1": "shopify://shop_images/black_01.png",
-            "main_image_1": "shopify://shop_images/product-shell-black-01.jpg",
             "model_image_1": "shopify://shop_images/05_3x_381259f8-a074-4dce-b722-17d31adaf151.png",
             "color_name_2": "Blue",
             "color_2": "shopify://shop_images/blue_01.png",
@@ -517,7 +516,6 @@
             "product": "urbaneon-solotex-gridwave-tee",
             "color_name_1": "Fjord Amber",
             "color_1": "shopify://shop_images/Fjord_Amber.png",
-            "main_image_1": "shopify://shop_images/1_38e32ac4-94e4-4816-bc66-4cd661e8f064.jpg",
             "model_image_1": "shopify://shop_images/7_1432e747-526d-4b88-b8f3-9164c2efdbf3.jpg",
             "color_name_2": "Tundra Resin",
             "color_2": "shopify://shop_images/Tundra_Resin.png",
