@@ -497,5 +497,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      "figure {display: inline-block;}"
+    ]
   }
 }
