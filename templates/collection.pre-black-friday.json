@@ -195,10 +195,10 @@
             "label_transform": "uppercase",
             "background_color": "#ffffff",
             "heading_color": "#f12d2d",
-            "number_color": "#121212",
+            "number_color": "#ffffff",
             "label_color": "#121212",
             "message_color": "#121212",
-            "box_background": "#f3f3f3",
+            "box_background": "#121212",
             "show_box_border": false,
             "box_border_width": 1,
             "box_border_color": "#121212",
@@ -216,7 +216,7 @@
             "message_spacing": 20,
             "timer_gap": 26,
             "max_width": 600,
-            "unit_width": 100
+            "unit_width": 85
           },
           "blocks": {}
         }
