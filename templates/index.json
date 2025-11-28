@@ -30,6 +30,24 @@
             "image_link": "shopify://collections/all"
           }
         },
+        "desktop_slide_ihrdJC": {
+          "type": "desktop_slide",
+          "settings": {
+            "image": "shopify://shop_images/banner-PC_f1c5283f-c1a2-4695-93b2-bf59d8520aba.jpg",
+            "alt_text": "",
+            "custom_duration": 3,
+            "image_link": "https://www.alpargali.com/collections/spend-300-get-a-free-gift"
+          }
+        },
+        "mobile_slide_ijW4XL": {
+          "type": "mobile_slide",
+          "settings": {
+            "image": "shopify://shop_images/banner-m_6f0348eb-7bd3-4d69-8e4b-a95676894642.jpg",
+            "alt_text": "",
+            "custom_duration": 3,
+            "image_link": "https://www.alpargali.com/collections/spend-300-get-a-free-gift"
+          }
+        },
         "desktop_slide_kDjina": {
           "type": "desktop_slide",
           "settings": {
@@ -52,6 +70,8 @@
       "block_order": [
         "desktop_slide_FBrYf6",
         "mobile_slide_mrijEN",
+        "desktop_slide_ihrdJC",
+        "mobile_slide_ijW4XL",
         "desktop_slide_kDjina",
         "mobile_slide_fNf3QQ"
       ],
