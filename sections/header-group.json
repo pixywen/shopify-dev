@@ -21,8 +21,16 @@
             "link": "shopify://collections/all"
           }
         },
+        "announcement_VcD7WV": {
+          "type": "announcement",
+          "settings": {
+            "text": "Spend $300, Get a FREE Gift.",
+            "link": "shopify://collections/spend-300-get-a-free-gift"
+          }
+        },
         "announcement_peTVYX": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Discover the All-New CoreShell Jacket",
             "link": "shopify://products/alpargali-coreshell-jacket"
@@ -45,6 +53,7 @@
       },
       "block_order": [
         "announcement_cWcU7U",
+        "announcement_VcD7WV",
         "announcement_peTVYX",
         "announcement_RNpTTn",
         "announcement_diVnMr"
