@@ -500,7 +500,8 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "figure {display: inline-block;}"
+      ".rte figure {margin: 0; padding: 0; display: block; max-width: 100%;}",
+      ".rte figure img {width: 100%; height: auto;}"
     ]
   }
 }
