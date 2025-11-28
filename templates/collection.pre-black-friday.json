@@ -173,6 +173,60 @@
       "name": "Carousel banner",
       "settings": {}
     },
+    "blocks_PgPzJU": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c49fae2_eMDYKx": {
+          "type": "ai_gen_block_c49fae2",
+          "settings": {
+            "end_date": "2025-12-1",
+            "end_time": "23:59:59",
+            "show_days": true,
+            "show_hours": true,
+            "show_minutes": true,
+            "show_seconds": true,
+            "heading": "Free Gift Offer",
+            "message": "",
+            "expired_message": "<p>This offer has ended</p>",
+            "days_label": "Days",
+            "hours_label": "Hours",
+            "minutes_label": "Minutes",
+            "seconds_label": "Seconds",
+            "label_transform": "uppercase",
+            "background_color": "#ffffff",
+            "heading_color": "#f12d2d",
+            "number_color": "#121212",
+            "label_color": "#121212",
+            "message_color": "#121212",
+            "box_background": "#f3f3f3",
+            "show_box_border": false,
+            "box_border_width": 1,
+            "box_border_color": "#121212",
+            "box_radius": 0,
+            "box_padding": 16,
+            "box_min_width": 70,
+            "heading_size": 26,
+            "number_size": 38,
+            "label_size": 13,
+            "message_size": 15,
+            "padding_top": 36,
+            "padding_bottom": 28,
+            "heading_spacing": 24,
+            "label_spacing": 8,
+            "message_spacing": 20,
+            "timer_gap": 26,
+            "max_width": 600,
+            "unit_width": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c49fae2_eMDYKx"
+      ],
+      "name": "Countdown timer",
+      "settings": {}
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -199,6 +253,7 @@
     "gg_breadcrumb_nBKrrq",
     "banner",
     "blocks_eRBWRV",
+    "blocks_PgPzJU",
     "product-grid"
   ]
 }
