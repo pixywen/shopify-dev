@@ -15,7 +15,7 @@
         "desktop_slide_FBrYf6": {
           "type": "desktop_slide",
           "settings": {
-            "image": "shopify://shop_images/banner-PC_399347c2-0234-4f0f-80e0-b5ba42ebd8c2.jpg",
+            "image": "shopify://shop_images/cy-banner-PC.jpg",
             "alt_text": "",
             "custom_duration": 5,
             "image_link": "shopify://collections/all"
@@ -24,7 +24,7 @@
         "mobile_slide_mrijEN": {
           "type": "mobile_slide",
           "settings": {
-            "image": "shopify://shop_images/banner-m_b64dba54-a6bd-4756-abab-009d37b2785b.jpg",
+            "image": "shopify://shop_images/cy-banner-m.jpg",
             "alt_text": "",
             "custom_duration": 5,
             "image_link": "shopify://collections/all"
@@ -472,7 +472,6 @@
             "product": "graphene-vest",
             "color_name_1": "Black",
             "color_1": "shopify://shop_images/color_08aba2e8-a248-4467-a044-3daa0a4deabb.png",
-            "main_image_1": "shopify://shop_images/product-vests-black-04.png",
             "model_image_1": "shopify://shop_images/product-vests-black-02.png",
             "color_name_2": "Sand",
             "color_2": "shopify://shop_images/color_5ad3148b-ff64-46d4-a8a6-89f5146f9a9d.png",
