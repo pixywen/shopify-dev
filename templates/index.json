@@ -15,10 +15,10 @@
         "desktop_slide_FBrYf6": {
           "type": "desktop_slide",
           "settings": {
-            "image": "shopify://shop_images/cy-banner-PC.jpg",
+            "image": "shopify://shop_images/banner-coreshell-pc.jpg",
             "alt_text": "",
             "custom_duration": 5,
-            "image_link": "shopify://collections/all"
+            "image_link": "shopify://collections/insulated-jackets"
           }
         },
         "mobile_slide_mrijEN": {
@@ -32,6 +32,7 @@
         },
         "desktop_slide_ihrdJC": {
           "type": "desktop_slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/banner-PC_f1c5283f-c1a2-4695-93b2-bf59d8520aba.jpg",
             "alt_text": "",
@@ -41,6 +42,7 @@
         },
         "mobile_slide_ijW4XL": {
           "type": "mobile_slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/banner-m_6f0348eb-7bd3-4d69-8e4b-a95676894642.jpg",
             "alt_text": "",
