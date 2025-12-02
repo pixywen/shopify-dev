@@ -170,6 +170,7 @@
       "block_order": [
         "ai_gen_block_28bafcf_czWwk6"
       ],
+      "disabled": true,
       "name": "Carousel banner",
       "settings": {}
     },
@@ -224,6 +225,7 @@
       "block_order": [
         "ai_gen_block_c49fae2_GmcXRP"
       ],
+      "disabled": true,
       "settings": {}
     },
     "product-grid": {
