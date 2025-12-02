@@ -24,10 +24,10 @@
         "mobile_slide_mrijEN": {
           "type": "mobile_slide",
           "settings": {
-            "image": "shopify://shop_images/cy-banner-m.jpg",
+            "image": "shopify://shop_images/banner-coreshell-m.jpg",
             "alt_text": "",
             "custom_duration": 5,
-            "image_link": "shopify://collections/all"
+            "image_link": "shopify://collections/insulated-jackets"
           }
         },
         "desktop_slide_ihrdJC": {
