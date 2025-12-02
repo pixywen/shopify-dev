@@ -65,15 +65,6 @@
             "custom_duration": 5,
             "image_link": "https://www.kickstarter.com/projects/alpargalipuffer/alpargali-puffer-pro-aerogel-graphene-and-et-down-insulation?ref=6nakb8"
           }
-        },
-        "mobile_slide_zMibgG": {
-          "type": "mobile_slide",
-          "settings": {
-            "image": "shopify://shop_images/banner-coreshell-m.jpg",
-            "alt_text": "",
-            "custom_duration": 5,
-            "image_link": "https://www.kickstarter.com/projects/alpargalipuffer/alpargali-puffer-pro-aerogel-graphene-and-et-down-insulation?ref=6nakb8"
-          }
         }
       },
       "block_order": [
@@ -82,8 +73,7 @@
         "desktop_slide_ihrdJC",
         "mobile_slide_ijW4XL",
         "desktop_slide_kDjina",
-        "mobile_slide_fNf3QQ",
-        "mobile_slide_zMibgG"
+        "mobile_slide_fNf3QQ"
       ],
       "name": "GT-首页-头部横幅(图片轮播)",
       "settings": {
