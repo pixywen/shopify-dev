@@ -16,6 +16,7 @@
       "blocks": {
         "announcement_cWcU7U": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "BF Mega Sale Now Live! 50% Off",
             "link": "shopify://collections/all"
@@ -23,6 +24,7 @@
         },
         "announcement_VcD7WV": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Spend USD $300, Get a FREE Gift.",
             "link": "shopify://collections/spend-300-get-a-free-gift"
@@ -30,6 +32,7 @@
         },
         "announcement_W8crFB": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Welcome to our store",
             "link": ""
@@ -37,7 +40,6 @@
         },
         "announcement_peTVYX": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "Discover the All-New CoreShell Jacket",
             "link": "shopify://products/alpargali-coreshell-jacket"
