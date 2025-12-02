@@ -18,7 +18,7 @@
             "image": "shopify://shop_images/banner-coreshell-pc.jpg",
             "alt_text": "",
             "custom_duration": 5,
-            "image_link": "shopify://collections/insulated-jackets"
+            "image_link": "shopify://collections/jackets-vests"
           }
         },
         "mobile_slide_mrijEN": {
@@ -27,7 +27,7 @@
             "image": "shopify://shop_images/banner-coreshell-m.jpg",
             "alt_text": "",
             "custom_duration": 5,
-            "image_link": "shopify://collections/insulated-jackets"
+            "image_link": "shopify://collections/jackets-vests"
           }
         },
         "desktop_slide_ihrdJC": {
