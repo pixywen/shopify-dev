@@ -183,8 +183,8 @@
         "image_banner_MYRGBE": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/Wool_Beanie-PC1.jpg",
-            "image_mobile": "shopify://shop_images/Wool_Beanie-m1.jpg",
+            "image_desktop": "shopify://shop_images/Carabiner-PC.jpg",
+            "image_mobile": "shopify://shop_images/Carabiner-M.jpg",
             "margin_top": 32,
             "margin_bottom": 32,
             "padding_x_desktop": 0,
@@ -300,6 +300,7 @@
         },
         "collage_y7J6gW": {
           "type": "collage",
+          "disabled": true,
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
@@ -314,6 +315,7 @@
         },
         "collage_RULhdH": {
           "type": "collage",
+          "disabled": true,
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
@@ -584,7 +586,7 @@
             "margin_top": 32,
             "margin_bottom": 32,
             "gap": 0,
-            "faq_content": "<title>What materials is this beanie made of?</title>\n<p>This beanie is made from a high-quality blend of merino wool and acrylic. The acrylic adds warmth and durability, while merino wool provides softness and blocks cold winds.</p>\n<title>How warm is this beanie?</title>\n<p>Acrylic in the blend provides 15% more warmth than regular wool, making it ideal for cold winter days and outdoor activities.</p>\n<title>Does this beanie fit well?</title>\n<p>The inner lining ensures a snug and comfortable fit for most head sizes.</p>\n<title>Are there any special features?</title>\n<p>Yes! The acrylic component is antibacterial, insect-resistant, and UV-resistant, while the merino wool adds extra softness, durability, and wind protection.</p>\n<title>Can I wear this beanie for everyday use?</title>\n<p>Absolutely! This beanie is perfect for daily commutes, casual outings, and outdoor winter activities.</p>",
+            "faq_content": "<title>What is this carabiner?</title>\n<p>This carabiner is a lightweight metal loop with a spring gate, perfect for hanging accessories, keys, or attaching items to backpacks.</p>\n<title>Can this carabiner support heavy loads?</title>\n<p>No, this carabiner is for light-duty use only. Do not use for climbing, safety, or load-bearing applications.</p>\n<title>What material is it made of?</title>\n<p>Made from lightweight aluminum alloy, it is durable yet easy to carry, ideal for everyday use.</p>\n<title>What is a nut lock design?</title>\n<p>The nut lock prevents accidental opening, keeping your keys, accessories, or lightweight items securely attached.</p>\n<title>What is a self-returning linkage?</title>\n<p>The self-returning linkage automatically resets the gate after opening, making it easier and faster to use.</p>",
             "target_tab": "faq"
           }
         },
@@ -592,9 +594,9 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
+            "max_width": 1200,
             "show_shop_reviews": false,
-            "empty_state": "empty_widget",
-            "max_width": 1200
+            "empty_state": "empty_widget"
           }
         }
       },
