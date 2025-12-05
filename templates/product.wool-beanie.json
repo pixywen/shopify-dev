@@ -96,7 +96,7 @@
           "settings": {
             "heading": "Details",
             "icon": "none",
-            "content": "<ul><li>Acrylic provides 15% more warmth than wool, with antibacterial and insect-resistant properties</li><li>Merino wool blend enhances warmth, softness, and durability</li><li>Anti-wrinkle and easy to care for, resistant to deformation</li><li>Ideal for winter outdoor activities or daily wear</li></ul>",
+            "content": "<ul><li>Acrylic provides 15% more warmth than wool, with antibacterial and insect-resistant properties</li><li>Wool blend enhances warmth, softness, and durability</li><li>Anti-wrinkle and easy to care for, resistant to deformation</li><li>Ideal for winter outdoor activities or daily wear</li></ul>",
             "page": "",
             "image_alt": "",
             "image_width": 100
@@ -107,7 +107,7 @@
           "settings": {
             "heading": "Specs",
             "icon": "none",
-            "content": "<p>70% acrylic and 30% merino wool</p>",
+            "content": "<p>70% acrylic and 30% wool</p>",
             "page": "",
             "image_alt": "",
             "image_width": 100
@@ -592,9 +592,9 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
+            "max_width": 1200,
             "show_shop_reviews": false,
-            "empty_state": "empty_widget",
-            "max_width": 1200
+            "empty_state": "empty_widget"
           }
         }
       },
