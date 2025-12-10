@@ -67,6 +67,7 @@
         },
         "announcement_peTVYX": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Discover the All-New CoreShell Jacket",
             "link": "shopify://products/alpargali-coreshell-jacket"
@@ -74,6 +75,7 @@
         },
         "announcement_RNpTTn": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Alpargali Puffer Pro is now live on Kickstarter!",
             "link": "https://www.kickstarter.com/projects/alpargalipuffer/alpargali-puffer-pro-aerogel-graphene-and-et-down-insulation?ref=6nakb8"
