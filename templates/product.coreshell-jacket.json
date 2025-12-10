@@ -22,7 +22,7 @@
             "desktop_height": 250,
             "desktop_image_fit": "cover",
             "mobile_height": 200,
-            "mobile_image_fit": "contain",
+            "mobile_image_fit": "cover",
             "heading_size": 40,
             "subheading_size": 18,
             "show_arrows": false,
@@ -236,7 +236,7 @@
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
-        "padding_top": 36,
+        "padding_top": 24,
         "padding_bottom": 12,
         "size_guide_image": "shopify://shop_images/coreshellsize-11.11.jpg"
       }
