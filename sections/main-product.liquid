@@ -343,6 +343,21 @@
                                 </dd>
                               </dl>
                             {%- endif -%}
+                            <div class="buy-more-save-more" style="
+    margin-top:8px;
+    font-size:14px;
+    color:#222;
+    background:#f5f5f5;
+    padding:8px;
+    border-radius:6px;
+">
+  <strong>⭐ Buy More, Save More</strong><br>
+  Buy 1 — 10% OFF<br>
+  Buy 2 — 15% OFF<br>
+  Buy 3 — 20% OFF<br>
+  <em>No code needed.</em>
+</div>
+
                             {%- if current_qty_for_volume_pricing < volume_pricing_array.last.minimum_quantity -%}
                               {%- assign variant_price = product.selected_or_first_available_variant.price
                                 | money_with_currency
