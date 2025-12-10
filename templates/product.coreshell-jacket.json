@@ -18,13 +18,12 @@
       "blocks": {
         "ai_gen_block_28bafcf_LqBRPy": {
           "type": "ai_gen_block_28bafcf",
-          "disabled": true,
           "settings": {
-            "desktop_height": 600,
+            "desktop_height": 250,
             "desktop_image_fit": "cover",
-            "mobile_height": 400,
-            "mobile_image_fit": "cover",
-            "heading_size": 48,
+            "mobile_height": 200,
+            "mobile_image_fit": "contain",
+            "heading_size": 40,
             "subheading_size": 18,
             "show_arrows": false,
             "arrow_size": 50,
