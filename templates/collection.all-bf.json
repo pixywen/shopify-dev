@@ -113,8 +113,8 @@
             "autoplay_speed": 5,
             "slide_1_enabled": true,
             "slide_1_media_type": "image",
-            "slide_1_desktop_image": "shopify://shop_images/langding-cm-PC.jpg",
-            "slide_1_mobile_image": "shopify://shop_images/langding-cm-m.jpg",
+            "slide_1_desktop_image": "shopify://shop_images/x-langding-pc.png",
+            "slide_1_mobile_image": "shopify://shop_images/x-langding-m.png",
             "slide_1_desktop_video": "",
             "slide_1_mobile_video": "",
             "slide_1_link": "",
@@ -170,7 +170,6 @@
       "block_order": [
         "ai_gen_block_28bafcf_czWwk6"
       ],
-      "disabled": true,
       "name": "Carousel banner",
       "settings": {}
     },
