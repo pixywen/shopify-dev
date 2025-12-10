@@ -19,10 +19,10 @@
         "ai_gen_block_28bafcf_LqBRPy": {
           "type": "ai_gen_block_28bafcf",
           "settings": {
-            "desktop_height": 250,
+            "desktop_height": 350,
             "desktop_image_fit": "cover",
             "mobile_height": 200,
-            "mobile_image_fit": "cover",
+            "mobile_image_fit": "contain",
             "heading_size": 40,
             "subheading_size": 18,
             "show_arrows": false,
@@ -36,7 +36,7 @@
             "autoplay_speed": 5,
             "slide_1_enabled": true,
             "slide_1_media_type": "image",
-            "slide_1_desktop_image": "shopify://shop_images/detail-pc.jpg",
+            "slide_1_desktop_image": "shopify://shop_images/detail-pc_ce77043c-fcca-4bca-a870-83135a801aff.jpg",
             "slide_1_mobile_image": "shopify://shop_images/detail-m.jpg",
             "slide_1_desktop_video": "",
             "slide_1_mobile_video": "",
