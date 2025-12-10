@@ -20,7 +20,7 @@
             "banner_text": "Buy 1 — 10% OFF · Buy 2 — 15% OFF · Buy 3 — 20% OFF. No code needed.",
             "spacing_top": 36,
             "spacing_bottom": 12,
-            "item_spacing": 40,
+            "item_spacing": 30,
             "background_color": "#000000",
             "text_color": "#ed1e1e",
             "font_size": 24,
