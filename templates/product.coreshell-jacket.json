@@ -18,6 +18,7 @@
       "blocks": {
         "ai_gen_block_28bafcf_LqBRPy": {
           "type": "ai_gen_block_28bafcf",
+          "disabled": true,
           "settings": {
             "desktop_height": 600,
             "desktop_image_fit": "cover",
