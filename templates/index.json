@@ -15,7 +15,7 @@
         "desktop_slide_FBrYf6": {
           "type": "desktop_slide",
           "settings": {
-            "image": "shopify://shop_images/banner-coreshell-pc.jpg",
+            "image": "shopify://shop_images/x-pc.png",
             "alt_text": "",
             "custom_duration": 5,
             "image_link": "shopify://collections/jackets-vests"
@@ -24,10 +24,10 @@
         "mobile_slide_mrijEN": {
           "type": "mobile_slide",
           "settings": {
-            "image": "shopify://shop_images/banner-coreshell-m.jpg",
+            "image": "shopify://shop_images/x-m.png",
             "alt_text": "",
             "custom_duration": 5,
-            "image_link": "shopify://collections/jackets-vests"
+            "image_link": "shopify://collections/all"
           }
         },
         "desktop_slide_ihrdJC": {
