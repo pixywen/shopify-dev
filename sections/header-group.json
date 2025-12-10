@@ -16,9 +16,8 @@
       "blocks": {
         "announcement_cWcU7U": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "BF Mega Sale Now Live! 50% Off",
+            "text": "Christmas Sale — Buy More, Save More",
             "link": "shopify://collections/all"
           }
         },
