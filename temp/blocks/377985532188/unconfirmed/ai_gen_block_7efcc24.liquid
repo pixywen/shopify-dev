@@ -1,6 +1,245 @@
+{% doc %}
+  @prompt
+    Generate a top scrolling banner with adjustable spacing between top and bottom components, and adjustable banner font and background color.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-scrolling-banner-{{ ai_gen_id }} {
+    width: 100%;
+    overflow: hidden;
+    background-color: {{ block.settings.background_color }};
+    padding-top: {{ block.settings.spacing_top }}px;
+    padding-bottom: {{ block.settings.spacing_bottom }}px;
+  }
+
+  .ai-scrolling-banner-track-{{ ai_gen_id }} {
+    display: flex;
+    width: max-content;
+    animation: ai-scroll-{{ ai_gen_id }} {{ block.settings.scroll_speed }}s linear infinite;
+  }
+
+  .ai-scrolling-banner-content-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: {{ block.settings.item_spacing }}px;
+    padding: 0 {{ block.settings.item_spacing | divided_by: 2 }}px;
+  }
+
+  .ai-scrolling-banner-item-{{ ai_gen_id }} {
+    white-space: nowrap;
+    font-size: {{ block.settings.font_size }}px;
+    color: {{ block.settings.text_color }};
+    font-weight: {{ block.settings.font_weight }};
+  }
+
+  .ai-scrolling-banner-separator-{{ ai_gen_id }} {
+    width: {{ block.settings.separator_size }}px;
+    height: {{ block.settings.separator_size }}px;
+    background-color: {{ block.settings.separator_color }};
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  @keyframes ai-scroll-{{ ai_gen_id }} {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .ai-scrolling-banner-track-{{ ai_gen_id }}:hover {
+    animation-play-state: paused;
+  }
+{% endstyle %}
+
+<scrolling-banner-{{ ai_gen_id }} class="ai-scrolling-banner-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-scrolling-banner-track-{{ ai_gen_id }}">
+    <div class="ai-scrolling-banner-content-{{ ai_gen_id }}">
+      {% for i in (1..10) %}
+        <span class="ai-scrolling-banner-item-{{ ai_gen_id }}">{{ block.settings.banner_text }}</span>
+        {% if block.settings.show_separator %}
+          <span class="ai-scrolling-banner-separator-{{ ai_gen_id }}"></span>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="ai-scrolling-banner-content-{{ ai_gen_id }}" aria-hidden="true">
+      {% for i in (1..10) %}
+        <span class="ai-scrolling-banner-item-{{ ai_gen_id }}">{{ block.settings.banner_text }}</span>
+        {% if block.settings.show_separator %}
+          <span class="ai-scrolling-banner-separator-{{ ai_gen_id }}"></span>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</scrolling-banner-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class ScrollingBanner{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.track = this.querySelector('.ai-scrolling-banner-track-{{ ai_gen_id }}');
+      }
+    }
+
+    customElements.define('scrolling-banner-{{ ai_gen_id }}', ScrollingBanner{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Scrolling banner",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "banner_text",
+      "label": "Banner text",
+      "default": "Free shipping on orders over $50"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "spacing_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top spacing",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "spacing_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom spacing",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "item_spacing",
+      "min": 20,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "label": "Item spacing",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "min": 12,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Font size",
+      "default": 14
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "label": "Font weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "400"
+    },
+    {
+      "type": "header",
+      "content": "Separator"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_separator",
+      "label": "Show separator",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "separator_size",
+      "min": 2,
+      "max": 10,
+      "step": 2,
+      "unit": "px",
+      "label": "Separator size",
+      "default": 4
+    },
+    {
+      "type": "color",
+      "id": "separator_color",
+      "label": "Separator color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Animation"
+    },
+    {
+      "type": "range",
+      "id": "scroll_speed",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "s",
+      "label": "Scroll speed",
+      "default": 30
+    }
+  ],
+  "presets": [
+    {
+      "name": "Scrolling banner"
+    }
+  ]
+}
 {% endschema %}
