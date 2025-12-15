@@ -387,7 +387,7 @@
     {% render 'gg-scroll-to-top-button' %}
   </body>
 </html>
-{% if request.path == '/blogs/buying-guide/best-softshell' %}
+{% if template == 'article' and article.handle == 'best-softshell' %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
