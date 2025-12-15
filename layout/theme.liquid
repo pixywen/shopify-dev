@@ -430,45 +430,126 @@
 </script>
 {% endif %}
 
+{% if request.path == '/blogs/buying-guide/best-down-jackets' %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Best Down Jackets of 2025",
-  "description": "A comprehensive guide to the best down jackets of 2025. Find top picks for various use cases like extreme cold, travel, and budget-friendly options.",
-  "image": "https://www.example.com/images/best-down-jackets.jpg", 
-  "url": "https://www.alpargali.com/blogs/buying-guide/best-down-jackets",
-  "brand": {
-    "@type": "Brand",
-    "name": "Alpargali"
-  },
-  "offers": {
-    "@type": "Offer",
-    "url": "https://www.alpargali.com/collections/clothing",
-    "priceCurrency": "USD",
-    "price": "From $90",
-    "priceValidUntil": "2025-12-31",
-    "itemCondition": "https://schema.org/NewCondition",
-    "availability": "https://schema.org/InStock"
-  },
-  "productID": "Best-Down-Jacket-2025",
-  "review": {
-    "@type": "Review",
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": "4.5",
-      "bestRating": "5",
-      "worstRating": "1"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://alpargali.com/#org",
+      "name": "Alpargali",
+      "url": "https://alpargali.com",
+      "logo": "https://alpargali.com/logo.png",
+      "sameAs": [
+        "https://instagram.com/alpargali",
+        "https://youtube.com/@alpargali"
+      ]
     },
-    "author": {
-      "@type": "Person",
-      "name": "Alpargali Team"
+    
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://alpargali.com/down-jackets-2025/#breadcrumbs",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://alpargali.com" },
+        { "@type": "ListItem", "position": 2, "name": "Gear", "item": "https://alpargali.com/gear" },
+        { "@type": "ListItem", "position": 3, "name": "Guides", "item": "https://alpargali.com/guides" },
+        { "@type": "ListItem", "position": 4, "name": "Best Down Jackets 2025", "item": "https://www.alpargali.com/blogs/buying-guide/best-down-jackets" }
+      ]
     },
-    "datePublished": "2025-12-15",
-    "description": "An in-depth review of the best down jackets for winter 2025, covering a wide variety of options suited for all types of wearers."
-  }
+    
+    {
+      "@type": "Article",
+      "@id": "https://www.alpargali.com/blogs/buying-guide/best-down-jackets/#article",
+      "headline": "Best Down Jackets for 2025: Top 10 Picks for Every Need",
+      "description": "A detailed guide to the best down jackets of 2025, offering expert reviews on the top jackets for travel, extreme cold, wet climates, and budget options.",
+      "author": { "@id": "https://alpargali.com/#org" },
+      "publisher": { "@id": "https://alpargali.com/#org" },
+      "mainEntity": { "@id": "https://alpargali.com/blogs/buying-guide/best-down-jackets/#top-list" },
+      "image": "https://alpargali.com/images/down-jacket-guide-2025.jpg",
+      "datePublished": "2025-12-15",
+      "dateModified": "2025-12-15"
+    },
+    
+    {
+      "@type": "ItemList",
+      "@id": "https://alpargali.com/blogs/buying-guide/best-down-jackets/#top-list",
+      "name": "Top 10 Down Jackets of 2025",
+      "itemListOrder": "Ordered",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "item": { "@id": "#patagonia-down-sweater" } },
+        { "@type": "ListItem", "position": 2, "item": { "@id": "#alpargali-aerogel" } },
+        { "@type": "ListItem", "position": 3, "item": { "@id": "#rab-neutrino" } },
+        { "@type": "ListItem", "position": 4, "item": { "@id": "#montbell-alpine" } },
+        { "@type": "ListItem", "position": 5, "item": { "@id": "#rei-co-op" } },
+        { "@type": "ListItem", "position": 6, "item": { "@id": "#arcteryx-cerium" } },
+        { "@type": "ListItem", "position": 7, "item": { "@id": "#outdoor-research" } },
+        { "@type": "ListItem", "position": 8, "item": { "@id": "#rab-microlight" } },
+        { "@type": "ListItem", "position": 9, "item": { "@id": "#cotopaxi-fuego" } }
+      ]
+    },
+    
+    {
+      "@type": "Dataset",
+      "@id": "https://alpargali.com/blogs/buying-guide/best-down-jackets/#comparison",
+      "name": "Down Jacket Comparison Table",
+      "description": "A comparative dataset evaluating warmth, weight, weather protection, durability, and other features of the top 2025 down jackets.",
+      "variableMeasured": [
+        "Warmth Level",
+        "Weight",
+        "Weather Resistance",
+        "Packability",
+        "Durability",
+        "Sustainability"
+      ]
+    },
+
+    {
+      "@type": "HowTo",
+      "@id": "https://alpargali.com/blogs/buying-guide/best-down-jackets/#howto",
+      "name": "How to Choose the Right Down Jacket",
+      "step": [
+        { "@type": "HowToStep", "text": "Identify your primary activity: hiking, mountaineering, commuting, or skiing." },
+        { "@type": "HowToStep", "text": "Check insulation type and fill power for warmth and packability." },
+        { "@type": "HowToStep", "text": "Determine the required weather resistance and shell durability." },
+        { "@type": "HowToStep", "text": "Choose the right fit based on layering and movement needs." }
+      ]
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://alpargali.com/blogs/buying-guide/best-down-jackets/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What Is the Best Down Jacket for Extreme Cold?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Jackets like the Rab Neutrino Pro and Alpargali Puffer Pro are designed for extreme cold, offering high fill power and weather resistance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are Down Jackets Suitable for Wet Conditions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some down jackets, like the Outdoor Research Helium Down Hoodie and Rab Microlight, offer enhanced water resistance, making them suitable for damp conditions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How Do I Choose the Right Down Jacket for My Needs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Choose a down jacket based on your intended use, temperature range, packability, and desired features like water resistance or windproofing."
+          }
+        }
+      ]
+    }
+  ]
 }
 </script>
+{% endif %}
 
   {% include 'pagefly-app-header' %}</head>
 
