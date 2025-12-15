@@ -387,7 +387,7 @@
     {% render 'gg-scroll-to-top-button' %}
   </body>
 </html>
-{% if template == 'article' and article.handle == 'best-softshell' %}
+{% if request.path == '/blogs/buying-guide/best-softshell' %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -563,6 +563,57 @@
           "Primary Use"
         ]
       }
+    ]
+  }
+  </script>
+{% endif %}
+{% if request.path == '/blogs/buying-guide/best-ultralight-down-jacket' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Best Ultralight Down Jackets for 2025",
+    "description": "Explore the best ultralight down jackets of 2025 with detailed product reviews, specifications, and recommendations.",
+    "author": {
+      "@type": "Organization",
+      "name": "Alpargali"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Alpargali"
+    },
+    "mainEntity": {
+      "@id": "https://www.alpargali.com/blogs/buying-guide/best-ultralight-down-jacket/#top-picks"
+    },
+    "image": "https://www.alpargali.com/path-to-image.jpg",
+    "datePublished": "2025-12-15",
+    "dateModified": "2025-12-15"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": "https://www.alpargali.com/blogs/buying-guide/best-ultralight-down-jacket/#top-picks",
+    "name": "Top 15 Ultralight Down Jackets of 2025",
+    "itemListOrder": "Ordered",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "item": { "@id": "#mountain-hardwear-ghost-whisperer" } },
+      { "@type": "ListItem", "position": 2, "item": { "@id": "#alpargali-graphene-lightweight-jacket" } },
+      { "@type": "ListItem", "position": 3, "item": { "@id": "#montbell-plasma-1000-alpine-parka" } },
+      { "@type": "ListItem", "position": 4, "item": { "@id": "#zpacks-ultra-light-down-jacket" } },
+      { "@type": "ListItem", "position": 5, "item": { "@id": "#black-diamond-deploy-down-0-5" } },
+      { "@type": "ListItem", "position": 6, "item": { "@id": "#patagonia-down-sweater-hoody" } },
+      { "@type": "ListItem", "position": 7, "item": { "@id": "#arcteryx-cerium-hoody" } },
+      { "@type": "ListItem", "position": 8, "item": { "@id": "#rei-co-op-magma-850-down-hoodie" } },
+      { "@type": "ListItem", "position": 9, "item": { "@id": "#decathlon-simond-mt100-hooded-down-jacket" } },
+      { "@type": "ListItem", "position": 10, "item": { "@id": "#outdoor-research-helium-down-hoodie" } },
+      { "@type": "ListItem", "position": 11, "item": { "@id": "#rab-neutrino-pro" } },
+      { "@type": "ListItem", "position": 12, "item": { "@id": "#feathered-friends-eos" } },
+      { "@type": "ListItem", "position": 13, "item": { "@id": "#rab-mythic-alpine-light" } },
+      { "@type": "ListItem", "position": 14, "item": { "@id": "#the-north-face-summit-breithorn" } },
+      { "@type": "ListItem", "position": 15, "item": { "@id": "#stellar-equipment-guide-hyperlight" } }
     ]
   }
   </script>
