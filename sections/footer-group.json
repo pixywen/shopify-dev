@@ -11,6 +11,52 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "gg_newsletter_4Fa7Cm": {
+      "type": "gg-newsletter",
+      "blocks": {
+        "heading_YnnH7c": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_yFDWM9": {
+          "type": "paragraph",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
+          }
+        },
+        "email_form_BXDhHc": {
+          "type": "email_form",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_YnnH7c",
+        "paragraph_yFDWM9",
+        "email_form_BXDhHc"
+      ],
+      "name": "GG-电子邮件注册信息",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_bottom_content": true,
+        "feature1_icon": "shopify://shop_images/icon-index-email-bottom-1.svg",
+        "feature1_text": "Free Shipping over $169",
+        "feature2_icon": "shopify://shop_images/icon-index-email-bottom-2.svg",
+        "feature2_text": "4 Kickstarter Successful Campaigns",
+        "feature3_icon": "shopify://shop_images/icon-index-email-bottom-3.svg",
+        "feature3_text": "30-Day Returns & Exchanges",
+        "feature4_icon": "shopify://shop_images/icon-index-email-bottom-4.svg",
+        "feature4_text": "Trusted By 15,000+ Customers"
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -129,6 +175,7 @@
     }
   },
   "order": [
+    "gg_newsletter_4Fa7Cm",
     "footer"
   ]
 }
