@@ -2632,6 +2632,51 @@
         "section_css": ""
       }
     },
+    "rich_text_fEANAB": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_R7hUaV": {
+          "type": "heading",
+          "settings": {
+            "heading": "13-Pocket Utility System",
+            "heading_size": "h2"
+          }
+        },
+        "text_xfkwmL": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_a3n3nc": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_R7hUaV",
+        "text_xfkwmL",
+        "button_a3n3nc"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 16
+      }
+    },
     "common_media_y7qHzm": {
       "type": "common-media",
       "blocks": {
@@ -3247,6 +3292,7 @@
     "common_media_zdrAYz",
     "rich_text_TnUfjT",
     "common_media_bMRBaB",
+    "rich_text_fEANAB",
     "common_media_y7qHzm",
     "common_media_X6GxRp",
     "custom_liquid_YjLJdw",
