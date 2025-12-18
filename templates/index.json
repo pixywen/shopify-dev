@@ -340,21 +340,21 @@
         "banner_tja83h": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/LEFT_f5ef1d34-032e-4758-8a76-66bfc4c02099.jpg",
-            "subtitle": "F/W 2025 Collection",
-            "title": "New Season. New Mood.",
-            "button_label": "See More",
-            "button_link": "shopify://collections/new-arrivals"
+            "image": "shopify://shop_images/coll-m-1.jpg",
+            "subtitle": "Windproof. Tough. Eco.",
+            "title": "Warm. Tough. Ready.",
+            "button_label": "Shop Coreshell",
+            "button_link": "shopify://products/alpargali-coreshell-jacket"
           }
         },
         "banner_FWeBpK": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/backpack-m.jpg",
-            "subtitle": "Carry All, Go Anywhere",
-            "title": "Pack Light. Travel Right.",
-            "button_label": "Shop Bags",
-            "button_link": "shopify://collections/bags"
+            "image": "shopify://shop_images/coll-m-2.jpg",
+            "subtitle": "Stay Warm. Stay Light.",
+            "title": "NASA-Inspired Warmth",
+            "button_label": "Shop Puffer",
+            "button_link": "shopify://products/alpargali-aerogel-graphene-puffer-jacket"
           }
         }
       },
@@ -370,21 +370,21 @@
         "banner_npKCK9": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/left.jpg",
-            "subtitle": "F/W 2025 Collection",
-            "title": "New Season. New Mood.",
-            "button_label": "See What’s New",
-            "button_link": "shopify://collections/new-arrivals"
+            "image": "shopify://shop_images/coll-PC-1.jpg",
+            "subtitle": "Windproof. Tough. Eco.",
+            "title": "Warm. Tough. Ready.",
+            "button_label": "Shop Coreshell",
+            "button_link": "shopify://products/alpargali-coreshell-jacket"
           }
         },
         "banner_xrUmaj": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/black-backpack-_3.jpg",
-            "subtitle": "Carry Everything, Conquer Anywhere",
-            "title": "Pack Light. Travel Right.",
-            "button_label": "Shop Bags",
-            "button_link": "shopify://collections/bags"
+            "image": "shopify://shop_images/coll-PC-2.jpg",
+            "subtitle": "Stay Warm. Stay Light.",
+            "title": "NASA-Inspired Warmth",
+            "button_label": "Shop Puffer",
+            "button_link": "shopify://products/alpargali-aerogel-graphene-puffer-jacket"
           }
         }
       },
