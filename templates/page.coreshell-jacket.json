@@ -17,12 +17,58 @@
         "padding_bottom": 28
       }
     },
+    "rich_text_awLz9B": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GxgLJN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Meet the Alpargali CoreShell",
+            "heading_size": "h2"
+          }
+        },
+        "text_K3phYR": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": ""
+          }
+        },
+        "button_8NTRjV": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Shop CoreShell",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_GxgLJN",
+        "text_K3phYR",
+        "button_8NTRjV"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 16
+      }
+    },
     "common_media_wjcrdk": {
       "type": "common-media",
       "blocks": {
         "image_E9AwQn": {
           "type": "image",
           "name": "1",
+          "disabled": true,
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -134,6 +180,65 @@
             "custom_html_content": "",
             "btn": "",
             "link": ""
+          }
+        },
+        "image_AtJ3xw": {
+          "type": "image",
+          "name": "4",
+          "settings": {
+            "block_css": "",
+            "custom_html_css": "",
+            "section_bg_color": "",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_top_pad": 0,
+            "padding_bottom_pad": 0,
+            "padding_top_mb": 0,
+            "padding_bottom_mb": 0,
+            "text_color": "#000000",
+            "is_video_banner": false,
+            "is_page_banner": false,
+            "media_page": true,
+            "media_page_pad": true,
+            "media_page_mb": true,
+            "product_name": "",
+            "show_header": false,
+            "header_text_align": "center",
+            "header_mb_text_align": "center",
+            "section_title": "",
+            "section_text": "",
+            "section_header_custom_html": "",
+            "header_margin_bottom": "80",
+            "text_align": "left",
+            "text_align_mb": "center",
+            "text_width": 100,
+            "text_alignment": "vertical-center horizontal-left",
+            "text_alignment_mb": "mb-vertical-top mb-horizontal-left",
+            "text_position_mb": false,
+            "media_type": "image",
+            "image": "shopify://shop_images/CoreShellPC4.jpg",
+            "image_pad": "shopify://shop_images/CoreShellMB4.jpg",
+            "image_mb": "shopify://shop_images/CoreShellMB4.jpg",
+            "video_url": "",
+            "youtube_video": "",
+            "section_logo": "",
+            "section_logo_width": 0,
+            "text_position": "bottom",
+            "title": "",
+            "title_size_big": "60",
+            "title_size": "60",
+            "title_size_pad": "60",
+            "title_size_mb": "30",
+            "title_color": "#000000",
+            "subtitle": "",
+            "subtitle_size_big": "16",
+            "subtitle_size": "16",
+            "subtitle_size_pad": "16",
+            "subtitle_size_mb": "14",
+            "subtitle_color": "#000000",
+            "custom_html_content": "",
+            "btn": "",
+            "link": "shopify://products/alpargali-coreshell-jacket"
           }
         },
         "image_TeefRC": {
@@ -253,73 +358,14 @@
             "btn": "",
             "link": ""
           }
-        },
-        "image_AtJ3xw": {
-          "type": "image",
-          "name": "4",
-          "settings": {
-            "block_css": "",
-            "custom_html_css": "",
-            "section_bg_color": "",
-            "padding_top": 0,
-            "padding_bottom": 0,
-            "padding_top_pad": 0,
-            "padding_bottom_pad": 0,
-            "padding_top_mb": 0,
-            "padding_bottom_mb": 0,
-            "text_color": "#000000",
-            "is_video_banner": false,
-            "is_page_banner": false,
-            "media_page": true,
-            "media_page_pad": true,
-            "media_page_mb": true,
-            "product_name": "",
-            "show_header": false,
-            "header_text_align": "center",
-            "header_mb_text_align": "center",
-            "section_title": "",
-            "section_text": "",
-            "section_header_custom_html": "",
-            "header_margin_bottom": "80",
-            "text_align": "left",
-            "text_align_mb": "center",
-            "text_width": 100,
-            "text_alignment": "vertical-center horizontal-left",
-            "text_alignment_mb": "mb-vertical-top mb-horizontal-left",
-            "text_position_mb": false,
-            "media_type": "image",
-            "image": "shopify://shop_images/CoreShellPC4.jpg",
-            "image_pad": "shopify://shop_images/CoreShellMB4.jpg",
-            "image_mb": "shopify://shop_images/CoreShellMB4.jpg",
-            "video_url": "",
-            "youtube_video": "",
-            "section_logo": "",
-            "section_logo_width": 0,
-            "text_position": "bottom",
-            "title": "",
-            "title_size_big": "60",
-            "title_size": "60",
-            "title_size_pad": "60",
-            "title_size_mb": "30",
-            "title_color": "#000000",
-            "subtitle": "",
-            "subtitle_size_big": "16",
-            "subtitle_size": "16",
-            "subtitle_size_pad": "16",
-            "subtitle_size_mb": "14",
-            "subtitle_color": "#000000",
-            "custom_html_content": "",
-            "btn": "",
-            "link": ""
-          }
         }
       },
       "block_order": [
         "image_E9AwQn",
         "image_6MCwmQ",
+        "image_AtJ3xw",
         "image_TeefRC",
-        "image_3pf8xJ",
-        "image_AtJ3xw"
+        "image_3pf8xJ"
       ],
       "name": "Common media",
       "settings": {
@@ -1769,6 +1815,7 @@
     },
     "video_zLEYdd": {
       "type": "video",
+      "disabled": true,
       "name": "t:sections.video.presets.name",
       "settings": {
         "heading": "Video",
@@ -1851,10 +1898,135 @@
         "padding_top": 20,
         "padding_bottom": 24
       }
+    },
+    "common_media_cNwWbz": {
+      "type": "common-media",
+      "blocks": {
+        "image_zPhhGF": {
+          "type": "image",
+          "settings": {
+            "block_css": "",
+            "custom_html_css": "",
+            "section_bg_color": "",
+            "padding_top": 50,
+            "padding_bottom": 50,
+            "padding_top_pad": 50,
+            "padding_bottom_pad": 50,
+            "padding_top_mb": 20,
+            "padding_bottom_mb": 20,
+            "text_color": "#000000",
+            "is_video_banner": false,
+            "is_page_banner": false,
+            "media_page": true,
+            "media_page_pad": true,
+            "media_page_mb": true,
+            "product_name": "",
+            "show_header": false,
+            "header_text_align": "center",
+            "header_mb_text_align": "center",
+            "section_title": "",
+            "section_text": "",
+            "section_header_custom_html": "",
+            "header_margin_bottom": "80",
+            "text_align": "left",
+            "text_align_mb": "center",
+            "text_width": 100,
+            "text_alignment": "vertical-center horizontal-left",
+            "text_alignment_mb": "mb-vertical-top mb-horizontal-left",
+            "text_position_mb": false,
+            "media_type": "image",
+            "video_url": "",
+            "youtube_video": "",
+            "section_logo": "",
+            "section_logo_width": 0,
+            "text_position": "bottom",
+            "title": "",
+            "title_size_big": "60",
+            "title_size": "60",
+            "title_size_pad": "60",
+            "title_size_mb": "30",
+            "title_color": "#000",
+            "subtitle": "",
+            "subtitle_size_big": "16",
+            "subtitle_size": "16",
+            "subtitle_size_pad": "16",
+            "subtitle_size_mb": "14",
+            "subtitle_color": "#000",
+            "custom_html_content": "",
+            "btn": "",
+            "link": ""
+          }
+        },
+        "image_Xefzip": {
+          "type": "image",
+          "settings": {
+            "block_css": "",
+            "custom_html_css": "",
+            "section_bg_color": "",
+            "padding_top": 50,
+            "padding_bottom": 50,
+            "padding_top_pad": 50,
+            "padding_bottom_pad": 50,
+            "padding_top_mb": 20,
+            "padding_bottom_mb": 20,
+            "text_color": "#000000",
+            "is_video_banner": false,
+            "is_page_banner": false,
+            "media_page": true,
+            "media_page_pad": true,
+            "media_page_mb": true,
+            "product_name": "",
+            "show_header": false,
+            "header_text_align": "center",
+            "header_mb_text_align": "center",
+            "section_title": "",
+            "section_text": "",
+            "section_header_custom_html": "",
+            "header_margin_bottom": "80",
+            "text_align": "left",
+            "text_align_mb": "center",
+            "text_width": 100,
+            "text_alignment": "vertical-center horizontal-left",
+            "text_alignment_mb": "mb-vertical-top mb-horizontal-left",
+            "text_position_mb": false,
+            "media_type": "image",
+            "video_url": "",
+            "youtube_video": "",
+            "section_logo": "",
+            "section_logo_width": 0,
+            "text_position": "bottom",
+            "title": "",
+            "title_size_big": "60",
+            "title_size": "60",
+            "title_size_pad": "60",
+            "title_size_mb": "30",
+            "title_color": "#000",
+            "subtitle": "",
+            "subtitle_size_big": "16",
+            "subtitle_size": "16",
+            "subtitle_size_pad": "16",
+            "subtitle_size_mb": "14",
+            "subtitle_color": "#000",
+            "custom_html_content": "",
+            "btn": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_zPhhGF",
+        "image_Xefzip"
+      ],
+      "name": "Common media",
+      "settings": {
+        "show_section": true,
+        "section_css": ""
+      }
     }
   },
   "order": [
     "main",
+    "rich_text_awLz9B",
     "common_media_wjcrdk",
     "common_media_NxMgBK",
     "common_media_TAkGbz",
@@ -1863,6 +2035,7 @@
     "common_media_X6GxRp",
     "custom_liquid_YjLJdw",
     "video_zLEYdd",
-    "featured_product_T6wbge"
+    "featured_product_T6wbge",
+    "common_media_cNwWbz"
   ]
 }
