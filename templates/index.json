@@ -52,6 +52,7 @@
         },
         "desktop_slide_kDjina": {
           "type": "desktop_slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/puffer-ks-pc.png",
             "alt_text": "",
@@ -61,6 +62,7 @@
         },
         "mobile_slide_fNf3QQ": {
           "type": "mobile_slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/puffer-ks-m.jpg",
             "alt_text": "",
