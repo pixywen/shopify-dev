@@ -68,11 +68,11 @@
       "settings": {
         "heading": "",
         "heading_size": "h2",
-        "enable_video_looping": false,
+        "enable_video_looping": true,
         "video": "shopify://files/videos/08-14 Alpargali 冲锋衣 - 完整版1080p.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
-        "full_width": false,
+        "full_width": true,
         "color_scheme": "",
         "padding_top": 4,
         "padding_bottom": 4
