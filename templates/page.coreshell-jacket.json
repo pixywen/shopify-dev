@@ -1766,6 +1766,91 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "video_zLEYdd": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_product_T6wbge": {
+      "type": "featured-product",
+      "blocks": {
+        "text_HGp67r": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_FY8kXQ": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_fabdpz": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_h4PMii": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_LcQgqU": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_ChH6WU": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_hAWY9d": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_HGp67r",
+        "title_FY8kXQ",
+        "price_fabdpz",
+        "variant_picker_h4PMii",
+        "quantity_selector_LcQgqU",
+        "buy_buttons_ChH6WU",
+        "share_hAWY9d"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "alpargali-coreshell-jacket",
+        "color_scheme": "scheme-1",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 20,
+        "padding_bottom": 24
+      }
     }
   },
   "order": [
@@ -1776,6 +1861,8 @@
     "common_media_zdrAYz",
     "common_media_y7qHzm",
     "common_media_X6GxRp",
-    "custom_liquid_YjLJdw"
+    "custom_liquid_YjLJdw",
+    "video_zLEYdd",
+    "featured_product_T6wbge"
   ]
 }
