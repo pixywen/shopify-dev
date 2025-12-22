@@ -35,7 +35,7 @@
           "settings": {
             "image": "shopify://shop_images/banner_-puffer-pc.jpg",
             "alt_text": "",
-            "custom_duration": 3,
+            "custom_duration": 5,
             "image_link": "shopify://products/alpargali-aerogel-graphene-puffer-jacket"
           }
         },
@@ -44,7 +44,7 @@
           "settings": {
             "image": "shopify://shop_images/banner-m_-puffer.jpg",
             "alt_text": "",
-            "custom_duration": 3,
+            "custom_duration": 5,
             "image_link": "shopify://products/alpargali-aerogel-graphene-puffer-jacket"
           }
         },
