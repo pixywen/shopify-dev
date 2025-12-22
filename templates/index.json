@@ -32,22 +32,20 @@
         },
         "desktop_slide_ihrdJC": {
           "type": "desktop_slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/banner-PC_f1c5283f-c1a2-4695-93b2-bf59d8520aba.jpg",
+            "image": "shopify://shop_images/banner_-puffer-pc.jpg",
             "alt_text": "",
             "custom_duration": 3,
-            "image_link": "https://www.alpargali.com/collections/spend-300-get-a-free-gift"
+            "image_link": "shopify://products/alpargali-aerogel-graphene-puffer-jacket"
           }
         },
         "mobile_slide_ijW4XL": {
           "type": "mobile_slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/banner-m_6f0348eb-7bd3-4d69-8e4b-a95676894642.jpg",
+            "image": "shopify://shop_images/banner-m_-puffer.jpg",
             "alt_text": "",
             "custom_duration": 3,
-            "image_link": "https://www.alpargali.com/collections/spend-300-get-a-free-gift"
+            "image_link": "shopify://products/alpargali-aerogel-graphene-puffer-jacket"
           }
         },
         "desktop_slide_kDjina": {
