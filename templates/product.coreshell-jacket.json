@@ -592,12 +592,11 @@
         },
         "video_GcYqEt": {
           "type": "video",
-          "disabled": true,
           "settings": {
             "title": "",
-            "video_desktop": "shopify://files/videos/视频1-主.mp4",
+            "video_desktop": "shopify://files/videos/08-14 Alpargali 冲锋衣 - 完整版1080p.mp4",
             "video_url_desktop": "",
-            "cover_desktop": "shopify://shop_images/1_ab13366d-9030-4f45-892f-9fd40d12fafa.jpg",
+            "cover_desktop": "shopify://shop_images/coreshell-banner.jpg",
             "video_url_mobile": "",
             "autoplay": true,
             "loop": true,
@@ -611,12 +610,10 @@
         },
         "video_a7qDtK": {
           "type": "video",
-          "disabled": true,
           "settings": {
             "title": "",
-            "video_desktop": "shopify://files/videos/视频2.mp4",
+            "video_desktop": "shopify://files/videos/coreshell-1.mp4",
             "video_url_desktop": "",
-            "cover_desktop": "shopify://shop_images/2_d325ce94-ba02-4399-ad00-f31ad9600e79.jpg",
             "video_url_mobile": "",
             "autoplay": true,
             "loop": true,
@@ -630,12 +627,11 @@
         },
         "video_VL79Dy": {
           "type": "video",
-          "disabled": true,
           "settings": {
             "title": "",
-            "video_desktop": "shopify://files/videos/视频3.mp4",
+            "video_desktop": "shopify://files/videos/coreshell-2.mp4",
             "video_url_desktop": "",
-            "cover_desktop": "shopify://shop_images/3_409105f5-7734-4db7-9abc-39e16fa592dd.jpg",
+            "cover_desktop": "shopify://shop_images/Introducing_Alpargali_CoreShell-2.jpg",
             "video_url_mobile": "",
             "autoplay": true,
             "loop": true,
@@ -711,7 +707,7 @@
       ],
       "settings": {
         "show_description": true,
-        "show_video": false,
+        "show_video": true,
         "show_reviews": true,
         "show_faq": true
       }
