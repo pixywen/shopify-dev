@@ -314,17 +314,25 @@
       if (index < 0 || index >= this.slides.length) return;
       
       // 隐藏当前幻灯片
-      this.slides[this.currentIndex].style.display = 'none';
-      this.slides[this.currentIndex].style.opacity = '0';
+      if (this.currentIndex === 0) {
+        this.slides[0].style.opacity = '0';
+      } else {
+        this.slides[this.currentIndex].style.display = 'none';
+        this.slides[this.currentIndex].style.opacity = '0';
+      }
       
-      // 显示新幻灯片
-      this.slides[index].style.display = 'block';
-      this.slides[index].style.opacity = '0';
+      if (index === 0) {
+        this.slides[0].style.display = 'block';
+        this.slides[0].style.opacity = '0';
+      } else {
+        // 切换到其他图片
+        this.slides[index].style.display = 'block';
+        this.slides[index].style.opacity = '0';
+      }
       
       // 触发重排
       this.slides[index].offsetHeight;
       
-      // 淡入效果
       this.slides[index].style.opacity = '1';
       
       this.currentIndex = index;
