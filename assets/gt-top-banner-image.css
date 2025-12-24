@@ -5,6 +5,11 @@
   width: 100%;
   height: 1104px; /* 固定高度 720px */
   overflow: hidden;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+  max-width: none;
 }
 
 @media screen and (max-width: 749px) {
