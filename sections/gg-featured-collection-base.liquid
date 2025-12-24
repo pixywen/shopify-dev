@@ -36,6 +36,21 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  /* ====== GG 特色产品系列 Badge 定制样式 ====== */
+  /* 位置：左上角 */
+  #collection-{{ section.id }} .card__badge {
+    align-self: flex-start !important;
+    grid-row-start: 1 !important;
+  }
+  
+  /* 颜色：红色（仅促销标签，排除 Sold out） */
+  #collection-{{ section.id }} .badge:not([class*="sold_out"]) {
+    background-color: #ff0000 !important;
+    border-color: #ff0000 !important;
+    color: #ffffff !important;
+  }
+  /* ============================================= */
 {%- endstyle -%}
 
 {%- liquid
