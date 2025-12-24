@@ -444,13 +444,11 @@ i.icon-swym-wishlist {
         {%- endif -%}
       </div>
 
-      <a href="#swym-wishlist" class="swym-wishlist">
+      {% comment %} <a href="#swym-wishlist" class="swym-wishlist">
         <i aria-hidden="true" focusable="false" role="presentation" class="icon icon-swym-wishlist"></i>
-      </a>
+      </a> {% endcomment %}
       
-      {% comment %}
-        {% render 'header-search', input_id: 'Search-In-Modal' %}
-      {% endcomment %}
+      {% render 'header-search', input_id: 'Search-In-Modal' %}
       {% comment %} 购物车 {% endcomment %}
 
       

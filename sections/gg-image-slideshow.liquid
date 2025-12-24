@@ -1,0 +1,501 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign desktop_blocks = section.blocks | where: 'type', 'desktop_slide'
+  assign mobile_blocks = section.blocks | where: 'type', 'mobile_slide'
+  assign desktop_section_id = section.id | append: '-desktop'
+  assign mobile_section_id = section.id | append: '-mobile'
+-%}
+
+{%- style -%}
+  /* 基础样式：默认全部隐藏，防止闪烁和重叠 */
+  .gg-slideshow-desktop, 
+  .gg-slideshow-mobile {
+      display: none !important;
+  }
+
+  /* 确保图片填满 */
+  .gg-slideshow {
+      position: relative; 
+      display: block;
+  }
+
+  .gg-slideshow .slideshow__media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .gg-slideshow .slideshow__media img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* 让 Slider 容器填满 wrapper */
+  .gg-slideshow .slider {
+      position: absolute !important;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      scrollbar-width: none; /* 隐藏滚动条 */
+      -ms-overflow-style: none;
+      
+      /* 强制轮播布局 */
+      display: flex !important;
+      flex-wrap: nowrap !important;
+      overflow-x: auto !important;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+  }
+  .gg-slideshow .slider::-webkit-scrollbar {
+      display: none;
+  }
+  
+  /* 强制每个 slide 占满宽度 */
+  .gg-slideshow .slider__slide {
+      min-width: 100%;
+      width: 100%;
+      flex: 0 0 100%;
+      scroll-snap-align: start;
+      position: relative; /* 确保内部绝对定位正常 */
+      height: 100%;
+  }
+
+  /* 隐藏默认的控制按钮 */
+  .gg-slideshow .slideshow__controls--top {
+    display: none !important;
+  }
+
+  /* 自定义指示点样式 */
+  .gg-slideshow .slider-counter__link--dots .dot {
+    background-color: transparent !important;
+    border: 1px solid #ffffff !important;
+    width: 10px;
+    height: 10px;
+    display: block;
+    border-radius: 50%;
+  }
+
+  .gg-slideshow .slider-counter__link--active .dot {
+    background-color: #ffffff !important;
+    border: 1px solid #ffffff !important;
+  }
+
+  /* 指示点容器绝对定位到底部 */
+  .gg-slideshow .slideshow__controls {
+    position: absolute;
+    bottom: {{ section.settings.dots_position_bottom }}px;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    border: none;
+    background: transparent;
+    pointer-events: none;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gg-slideshow .slider-counter {
+      display: flex;
+      justify-content: center;
+  }
+
+  .gg-slideshow .slideshow__control-wrapper {
+      pointer-events: auto;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+  }
+
+  /* 组件间距设置 */
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  /* =========================================
+     响应式显示逻辑 (放在最后以确保覆盖)
+     ========================================= */
+
+  /* 桌面端显示逻辑 (> 750px) */
+  @media screen and (min-width: 750px) {
+    .gg-slideshow-desktop {
+      display: block !important; /* 显示桌面端 */
+      position: relative;
+      width: 100%;
+      height: 0;
+      {%- if desktop_blocks.first.settings.image != blank -%}
+        padding-bottom: {{ 1 | divided_by: desktop_blocks.first.settings.image.aspect_ratio | times: 100 }}%;
+      {%- else -%}
+        padding-bottom: 40%;
+      {%- endif -%}
+    }
+
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  /* 移动端显示逻辑 (<= 749px) */
+  @media screen and (max-width: 749px) {
+    .gg-slideshow-mobile {
+      display: block !important; /* 显示移动端 */
+      position: relative;
+      width: 100%;
+      height: 0;
+      {%- if mobile_blocks.first.settings.image != blank -%}
+        padding-bottom: {{ 1 | divided_by: mobile_blocks.first.settings.image.aspect_ratio | times: 100 }}%;
+      {%- else -%}
+        padding-bottom: 100%;
+      {%- endif -%}
+    }
+  }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }}-padding">
+
+<!-- 桌面端轮播 (使用自定义容器，不使用 slideshow-component) -->
+{%- if desktop_blocks.size > 0 -%}
+<div class="slider-mobile-gutter gg-slideshow gg-slideshow-desktop gg-js-slideshow"
+     data-autoplay="{{ section.settings.auto_rotate }}"
+     data-speed="{{ section.settings.change_slides_speed }}"
+>
+  <div
+    class="slideshow banner grid grid--1-col slider slider--everywhere"
+    id="Slider-{{ desktop_section_id }}"
+    style="scroll-behavior: smooth;"
+  >
+    {%- for block in desktop_blocks -%}
+      <div
+        class="slideshow__slide grid__item grid--1-col slider__slide"
+        id="Slide-{{ desktop_section_id }}-{{ forloop.index }}"
+        {{ block.shopify_attributes }}
+      >
+        <a 
+          {% if block.settings.link != blank %}href="{{ block.settings.link }}"{% else %}role="link" aria-disabled="true"{% endif %} 
+          class="slideshow__link"
+          style="display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1;"
+        >
+        </a>
+        <div class="slideshow__media banner__media media{% if block.settings.image == blank %} placeholder{% endif %}">
+          {%- if block.settings.image -%}
+            {{
+                block.settings.image
+                | image_url: width: 3840
+                | image_tag:
+                loading: 'lazy',
+                widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                sizes: '100vw'
+            }}
+          {%- else -%}
+            {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+
+  {%- if desktop_blocks.size > 1 -%}
+    <div class="slideshow__controls slider-buttons" style="justify-content: center; padding: 0;">
+        <div class="slider-counter caption">
+            <div class="slideshow__control-wrapper">
+                {%- for block in desktop_blocks -%}
+                <button
+                    type="button"
+                    class="slider-counter__link slider-counter__link--dots link {% if forloop.first %}slider-counter__link--active{% endif %}"
+                    data-slide-index="{{ forloop.index0 }}"
+                    aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
+                >
+                    <span class="dot"></span>
+                </button>
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>
+  {%- endif -%}
+</div>
+{%- endif -%}
+
+<!-- 移动端轮播 -->
+{%- if mobile_blocks.size > 0 -%}
+<div class="slider-mobile-gutter gg-slideshow gg-slideshow-mobile gg-js-slideshow"
+     data-autoplay="{{ section.settings.auto_rotate }}"
+     data-speed="{{ section.settings.change_slides_speed }}"
+>
+  <div
+    class="slideshow banner grid grid--1-col slider slider--everywhere"
+    id="Slider-{{ mobile_section_id }}"
+    style="scroll-behavior: smooth;"
+  >
+    {%- for block in mobile_blocks -%}
+      <div
+        class="slideshow__slide grid__item grid--1-col slider__slide"
+        id="Slide-{{ mobile_section_id }}-{{ forloop.index }}"
+        {{ block.shopify_attributes }}
+      >
+        <a 
+          {% if block.settings.link != blank %}href="{{ block.settings.link }}"{% else %}role="link" aria-disabled="true"{% endif %} 
+          class="slideshow__link"
+          style="display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1;"
+        >
+        </a>
+        <div class="slideshow__media banner__media media{% if block.settings.image == blank %} placeholder{% endif %}">
+          {%- if block.settings.image -%}
+            {{
+                block.settings.image
+                | image_url: width: 1500
+                | image_tag:
+                loading: 'lazy',
+                widths: '375, 550, 750, 1100, 1500',
+                sizes: '100vw'
+            }}
+          {%- else -%}
+            {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+
+  {%- if mobile_blocks.size > 1 -%}
+    <div class="slideshow__controls slider-buttons" style="justify-content: center; padding: 0;">
+        <div class="slider-counter caption">
+            <div class="slideshow__control-wrapper">
+                {%- for block in mobile_blocks -%}
+                <button
+                    type="button"
+                    class="slider-counter__link slider-counter__link--dots link {% if forloop.first %}slider-counter__link--active{% endif %}"
+                    data-slide-index="{{ forloop.index0 }}"
+                    aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
+                >
+                    <span class="dot"></span>
+                </button>
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>
+  {%- endif -%}
+</div>
+{%- endif -%}
+
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const slideshows = document.querySelectorAll('.gg-js-slideshow');
+    
+    slideshows.forEach(slideshow => {
+        const slider = slideshow.querySelector('.slider');
+        const dots = slideshow.querySelectorAll('.slider-counter__link--dots');
+        const autoPlay = slideshow.dataset.autoplay === 'true';
+        const speed = parseInt(slideshow.dataset.speed) * 1000;
+        let timer;
+        
+        // 1. 点击切换
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                // 计算滚动位置
+                const slideWidth = slider.clientWidth;
+                slider.scrollTo({
+                    left: slideWidth * index,
+                    behavior: 'smooth'
+                });
+                updateActiveDot(index);
+                resetTimer();
+            });
+        });
+        
+        // 2. 监听滚动更新指示点 (支持触摸滑动)
+        slider.addEventListener('scroll', debounce(() => {
+            const slideWidth = slider.clientWidth;
+            const scrollLeft = slider.scrollLeft;
+            const index = Math.round(scrollLeft / slideWidth);
+            updateActiveDot(index);
+        }, 100));
+
+        // 3. 自动播放
+        if (autoPlay && dots.length > 1) {
+            startTimer();
+            
+            // 鼠标悬停暂停
+            slideshow.addEventListener('mouseenter', stopTimer);
+            slideshow.addEventListener('mouseleave', startTimer);
+            // 触摸暂停
+            slideshow.addEventListener('touchstart', stopTimer);
+            slideshow.addEventListener('touchend', startTimer);
+        }
+
+        function updateActiveDot(index) {
+            dots.forEach(dot => dot.classList.remove('slider-counter__link--active'));
+            if(dots[index]) {
+                dots[index].classList.add('slider-counter__link--active');
+            }
+        }
+
+        function startTimer() {
+            stopTimer();
+            timer = setInterval(() => {
+                const slideWidth = slider.clientWidth;
+                const scrollLeft = slider.scrollLeft;
+                let index = Math.round(scrollLeft / slideWidth);
+                
+                let nextIndex = index + 1;
+                if (nextIndex >= dots.length) {
+                    nextIndex = 0;
+                }
+                
+                slider.scrollTo({
+                    left: slideWidth * nextIndex,
+                    behavior: 'smooth'
+                });
+                updateActiveDot(nextIndex);
+            }, speed);
+        }
+
+        function stopTimer() {
+            if (timer) clearInterval(timer);
+        }
+        
+        function resetTimer() {
+            if (autoPlay) {
+                stopTimer();
+                startTimer();
+            }
+        }
+    });
+
+    // 防抖函数
+    function debounce(func, wait) {
+        let timeout;
+        return function() {
+            const context = this, args = arguments;
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(context, args), wait);
+        };
+    }
+});
+</script>
+
+{% schema %}
+{
+  "name": "GG-图片轮播",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "change_slides_speed",
+      "min": 3,
+      "max": 9,
+      "step": 2,
+      "unit": "s",
+      "label": "轮播速度",
+      "default": 5
+    },
+    {
+      "type": "checkbox",
+      "id": "auto_rotate",
+      "label": "自动轮播",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "dots_position_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "指示点底部距离",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "间距设置"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "上边距",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "下边距",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "desktop_slide",
+      "name": "桌面端图片 (横屏)",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "图片"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "跳转链接"
+        }
+      ]
+    },
+    {
+      "type": "mobile_slide",
+      "name": "移动端图片 (竖屏)",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "图片"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "跳转链接"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "GG-图片轮播",
+      "blocks": [
+        {
+          "type": "desktop_slide"
+        },
+        {
+          "type": "desktop_slide"
+        },
+        {
+          "type": "mobile_slide"
+        },
+        {
+          "type": "mobile_slide"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
