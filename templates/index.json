@@ -186,7 +186,7 @@
         "show_rating": false,
         "quick_add": "standard",
         "show_sale_badge": true,
-        "sale_badge_type": "text",
+        "sale_badge_type": "percentage",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
