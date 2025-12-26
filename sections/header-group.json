@@ -158,11 +158,58 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "gg_image_slideshow_XmRN9y": {
+      "type": "gg-image-slideshow",
+      "blocks": {
+        "desktop_slide_3GFNfV": {
+          "type": "desktop_slide",
+          "settings": {
+            "image": "shopify://shop_images/newyear-landing-PC.jpg",
+            "link": ""
+          }
+        },
+        "desktop_slide_LnfjBm": {
+          "type": "desktop_slide",
+          "disabled": true,
+          "settings": {
+            "link": ""
+          }
+        },
+        "mobile_slide_eYmkrW": {
+          "type": "mobile_slide",
+          "settings": {
+            "image": "shopify://shop_images/newyear-landing-m.jpg",
+            "link": ""
+          }
+        },
+        "mobile_slide_gcy6YQ": {
+          "type": "mobile_slide",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "desktop_slide_3GFNfV",
+        "desktop_slide_LnfjBm",
+        "mobile_slide_eYmkrW",
+        "mobile_slide_gcy6YQ"
+      ],
+      "name": "GG-图片轮播",
+      "settings": {
+        "change_slides_speed": 5,
+        "auto_rotate": true,
+        "dots_position_bottom": 10,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "176535244354a15f46",
     "announcement-bar",
-    "header"
+    "header",
+    "gg_image_slideshow_XmRN9y"
   ]
 }

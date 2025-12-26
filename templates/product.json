@@ -51,6 +51,7 @@
         "mobile_slide_TWWC4V",
         "mobile_slide_jAFbfX"
       ],
+      "disabled": true,
       "name": "GG-图片轮播",
       "settings": {
         "change_slides_speed": 5,
