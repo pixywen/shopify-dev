@@ -3,6 +3,11 @@
   padding: 12px 0 65px;
   overflow: hidden;
   position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+  max-width: none;
 }
 
 .scroll-image-container {
