@@ -2,6 +2,11 @@ footer.footer {
   border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
   padding-top: 88px !important;
   background: rgba(0, 0, 0, 1) !important;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+  max-width: none;
 }
 footer.footer .gg-list-social {
     justify-content: flex-start;
