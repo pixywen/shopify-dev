@@ -76,7 +76,11 @@
   opacity: 1;
   transform: translateY(0);
   margin: auto;
-  max-width: 1397px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+  max-width: none;
 }
 details:hover {
   cursor: pointer;
@@ -233,6 +237,11 @@ div.scrolled-past-header sticky-header.header-wrapper,
 .gradient.overflow-hidden sticky-header.header-wrapper {
   background: white;
   transition: .5s;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+  max-width: none;
 }
 @media screen and (min-width: 990px) {
   .header--middle-left {

@@ -5,6 +5,9 @@
   width: 100%;
   height: auto; /* 高度由图片撑起 */
   overflow: hidden;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  max-width: none;
 }
 
 @media screen and (max-width: 749px) {

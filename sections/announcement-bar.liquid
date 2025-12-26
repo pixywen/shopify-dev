@@ -164,6 +164,17 @@
   </div>
 </div>
 
+<style>
+  /* 强制 Announcement Bar 突破父容器宽度限制 */
+  .announcement-bar-section .utility-bar {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
+    max-width: none;
+  }
+</style>
+
 {% schema %}
 {
   "name": "t:sections.announcement-bar.name",

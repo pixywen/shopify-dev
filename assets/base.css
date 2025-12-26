@@ -142,7 +142,7 @@
 
 /* base */
 body {
-  background: rgba(240, 240, 240, 1) !important;
+  background: rgba(255, 255, 255, 1) !important;
 }
 
 .page-width {
@@ -821,6 +821,7 @@ summary::-webkit-details-marker {
 .focus-none {
   box-shadow: none !important;
   outline: 0 !important;
+  background: rgba(240, 240, 240, 1) !important;
 }
 
 .focus-offset:focus-visible {
@@ -2427,6 +2428,11 @@ input[type='checkbox'] {
   grid-template-areas: 'left-icons heading icons';
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+  max-width: none;
 }
 
 @media screen and (max-width: 749px) {

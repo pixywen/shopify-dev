@@ -80,7 +80,9 @@
 .gg-heading-image {
   margin: 29px 0 20px 0;
 }
-/* Accordion styles will be added here if needed */
+.accordion {
+
+}
 .heading-text {
   font-size: 18px;
   font-weight: 600;
@@ -169,7 +171,7 @@
 
 .product-form__dynamic-checkout {
   width: 100%;
-  max-width: calc(74px + 12px + 448px);
+  max-width: calc(74px + 23px + 448px);
 }
 
 .product-form__dynamic-checkout .shopify-payment-button {
@@ -200,6 +202,7 @@
   padding: 0;
   background-color: rgb(var(--color-foreground)) !important;
   opacity: 1 !important;
+  display: none;
 }
 
 /* 禁用状态和激活状态保持一致的样式 */
@@ -236,84 +239,6 @@
 /* 确保没有额外的背景遮罩 */
 .swym-button.swym-add-to-wishlist::before,
 .swym-button.swym-add-to-wishlist::after {
-  display: none !important;
-}
-
-/* 简单方案：隐藏所有没有 data-with-epi 属性的 Swym 按钮 */
-.swym-button.swym-add-to-wishlist:not([data-with-epi="true"]) {
-  display: none !important;
-}
-
-/* 隐藏 Swym 插件自动注入的收藏按钮，但保留购物车按钮 */
-.swym-atw-btn-wrapper .swym-button,
-#swym-embed-pdp-btn-wrapper .swym-button,
-#swym-atw-button-container .swym-button,
-#swym-atw-pdp-button {
-  display: none !important;
-}
-
-
-/* 隐藏 Swym 插件添加的按钮栏容器，防止影响布局 */
-.swym-button-bar,
-.swym-wishlist-button-bar,
-.swym-inject {
-  display: none !important;
-}
-
-/* 确保购物车按钮容器和按钮本身不被隐藏 */
-.swym-atw-btn-wrapper,
-#swym-embed-pdp-btn-wrapper,
-#swym-atw-button-container {
-  display: block !important;
-}
-
-/* 只隐藏 Swym 容器中的定位类，不影响添加购物车按钮 */
-.swym-atw-btn-wrapper .add_to_cart_button_left-position:not(.product-form__submit),
-#swym-embed-pdp-btn-wrapper .add_to_cart_button_left-position:not(.product-form__submit) {
-  display: none !important;
-}
-
-/* 确保按钮容器和按钮尺寸固定，防止被 Swym 插件影响 */
-/* .product-form__buttons-row {
-  display: flex !important;
-  align-items: center !important;
-  gap: 12px !important;
-} */
-/* 确保手动添加的收藏按钮尺寸固定 */
-/* .product-form__buttons-row .swym-button.swym-add-to-wishlist[data-with-epi="true"] {
-  width: 74px !important;
-  height: 69px !important;
-  flex: 0 0 74px !important;
-  min-width: 74px !important;
-  max-width: 74px !important;
-} */
-
-/* 确保添加购物车按钮显示和尺寸固定 */
-/* .product-form__buttons-row .product-form__submit,
-.swym-atw-btn-wrapper .product-form__submit,
-#swym-embed-pdp-btn-wrapper .product-form__submit,
-#swym-atw-button-container .product-form__submit {
-  width: 448px !important;
-  height: 70px !important;
-  flex: 0 0 448px !important;
-  min-width: 448px !important;
-  max-width: 448px !important;
-  display: block !important;
-  visibility: visible !important;
-} */
-
-.product-form__buttons {
-  max-width: 44rem !important;
-}
-
-
-/* 隐藏 Swym 插件自动注入的按钮，只保留手动添加的按钮 */
-.product-form__buttons-row .swym-button.swym-add-to-wishlist:not([data-with-epi="true"]) {
-  display: none !important;
-}
-
-/* 更精确的选择器：隐藏没有特定属性的自动注入按钮 */
-.swym-button.swym-add-to-wishlist:not([data-product-id]):not([data-variant-id]) {
   display: none !important;
 }
 
@@ -466,18 +391,6 @@
     font-weight: 600 !important;
     text-transform: uppercase !important;
   }
-  
-  .product-form__custom-fit-button-wrapper {
-    width: 100%;
-    max-width: calc(11.2vw + 3.46vw + 68vw);
-    margin-bottom: 3.46vw;
-  }
-  
-  .product-form__custom-fit-button {
-    height: 10.66vw;
-    font-size: 3.2vw;
-    line-height: 10.66vw;
-  }
   .product__info-container .product-form {
     margin: 6.66vw 0;
   }
@@ -512,26 +425,5 @@
     width: 4.66vw !important;
     height: 4vw !important;
   }
-}
-
-.product-form__custom-fit-button-wrapper {
-  width: 100%;
-  max-width: calc(74px + 12px + 448px);
-  margin-bottom: 23px;
-}
-
-.product-form__custom-fit-button {
-  width: 100%;
-  height: 70px;
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 0px;
-  line-height: 24.38px;
-  color: rgba(255, 255, 255, 1);
-  text-transform: uppercase;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
