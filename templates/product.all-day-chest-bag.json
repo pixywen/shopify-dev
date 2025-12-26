@@ -9,6 +9,10 @@
  */
 {
   "sections": {
+    "gg_breadcrumb_yr7zeq": {
+      "type": "gg-breadcrumb",
+      "settings": {}
+    },
     "blocks_VcFdMB": {
       "type": "_blocks",
       "blocks": {
@@ -90,10 +94,6 @@
         "ai_gen_block_28bafcf_iULpRH"
       ],
       "name": "Carousel banner",
-      "settings": {}
-    },
-    "gg_breadcrumb_yr7zeq": {
-      "type": "gg-breadcrumb",
       "settings": {}
     },
     "main": {
