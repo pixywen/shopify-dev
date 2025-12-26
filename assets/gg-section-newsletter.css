@@ -6,7 +6,8 @@
 .newsletter .newsletter__wrapper{
   padding-top: 127px;
   padding-bottom: 123px;
-  background: rgba(233, 233, 233, 1);
+  /* background: rgba(233, 233, 233, 1); */
+  background: #FFF;
 }
 .newsletter .inline-richtext {
   font-size: 28px;
@@ -57,6 +58,7 @@
 .newsletter-form__field-wrapper .field__input {
   padding: 0 3.2rem;
   height: 5.6rem;
+  border: 1px solid #000;
 }
 
 .newsletter-form__field-wrapper .field {
