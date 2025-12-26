@@ -355,7 +355,7 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "quick_add": "none",
+        "quick_add": "standard",
         "show_sale_badge": true,
         "sale_badge_type": "percentage",
         "columns_mobile": "2",
