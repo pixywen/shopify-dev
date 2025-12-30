@@ -36,6 +36,21 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  /* ====== GG 特色产品系列 Badge 定制样式 ====== */
+  /* 位置：左上角 */
+  #collection-{{ section.id }} .card__badge {
+    align-self: flex-start !important;
+    /* grid-row-start: 1 !important; */
+  }
+  
+  /* 颜色：红色（仅促销标签，排除 Sold out） */
+  #collection-{{ section.id }} .badge:not([class*="sold_out"]) {
+    background-color: #ff0000 !important;
+    border-color: #ff0000 !important;
+    color: #ffffff !important;
+  }
+  /* ============================================= */
 {%- endstyle -%}
 
 {%- liquid
@@ -104,7 +119,7 @@
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
-            {% render 'card-product',
+            {% render 'gg-card-product-base',
               card_product: product,
               media_aspect_ratio: section.settings.image_ratio,
               image_shape: section.settings.image_shape,
@@ -113,7 +128,9 @@
               show_rating: section.settings.show_rating,
               skip_styles: skip_card_product_styles,
               section_id: section.id,
-              quick_add: section.settings.quick_add
+              quick_add: section.settings.quick_add,
+              show_sale_badge: section.settings.show_sale_badge,
+              sale_badge_type: section.settings.sale_badge_type
             %}
           </li>
           {%- assign skip_card_product_styles = true -%}
@@ -136,11 +153,13 @@
                 endcase
               %}
               {%- assign placeholder_image = 'product-apparel-' | append: ridx -%}
-              {% render 'card-product',
+              {% render 'gg-card-product-base',
                 show_vendor: section.settings.show_vendor,
                 media_aspect_ratio: section.settings.image_ratio,
                 image_shape: section.settings.image_shape,
-                placeholder_image: placeholder_image
+                placeholder_image: placeholder_image,
+                show_sale_badge: section.settings.show_sale_badge,
+                sale_badge_type: section.settings.sale_badge_type
               %}
             </li>
           {%- endfor -%}
@@ -443,6 +462,38 @@
           "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_3"
         }
       ]
+    },
+    {
+      "type": "header",
+      "content": "促销标签设置"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_sale_badge",
+      "label": "显示促销标签",
+      "default": true,
+      "info": "开启后，在有折扣的产品左上角显示促销标签"
+    },
+    {
+      "type": "select",
+      "id": "sale_badge_type",
+      "label": "标签显示模式",
+      "options": [
+        {
+          "value": "percentage",
+          "label": "百分比折扣 (Save XX%)"
+        },
+        {
+          "value": "amount",
+          "label": "金额折扣 (Save $XX.XX)"
+        },
+        {
+          "value": "text",
+          "label": "文本标签 (Sale)"
+        }
+      ],
+      "default": "percentage",
+      "info": "选择促销标签的显示方式"
     },
     {
       "type": "header",

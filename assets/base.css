@@ -3011,10 +3011,29 @@ details-disclosure > details {
   line-height: 1;
   padding: 0.5rem 1.3rem 0.6rem 1.3rem;
   text-align: center;
+  background-color: red;
+  border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
+  color: rgb(var(--color-badge-foreground));
+  word-break: break-word;
+}
+
+@media screen and (max-width: 990px) {
+  .badge {
+  border: 1px solid transparent;
+  border-radius: var(--badge-corner-radius);
+  display: inline-block;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  line-height: 1;
+  padding: 0.2rem 0.8rem 0.3rem 0.8rem !important;
+  text-align: center;
   background-color: rgb(var(--color-badge-background));
   border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
   color: rgb(var(--color-badge-foreground));
   word-break: break-word;
+  position: relative;
+  top: -8px;
+}
 }
 
 .gradient {

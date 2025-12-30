@@ -87,3 +87,9 @@
     display: block !important;
   }
 }
+
+.badge--custom-red {
+  background-color: #D42F2F !important;
+  color: #FFFFFF !important;
+  border-color: #D42F2F !important;
+}
