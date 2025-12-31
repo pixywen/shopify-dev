@@ -1,0 +1,28 @@
+# ------------------------------------------------------------
+# Shopify Theme Ignore File (.shopifyignore)
+# ------------------------------------------------------------
+
+# 🔹 店铺私有的布局与配置
+/templates/*.json
+/config/settings_data.json
+/templates/template/*
+
+# 🔹 开发环境文件
+/node_modules/*
+/package.json
+/package-lock.json
+/yarn.lock
+/pnpm-lock.yaml
+
+# 🔹 构建产物
+/dist/*
+/build/*
+*.map
+
+# 🔹 系统文件
+.DS_Store
+Thumbs.db
+
+# 🔹 Git 相关
+.git/*
+.gitignore
