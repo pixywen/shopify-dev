@@ -596,3 +596,82 @@
     clip-path: polygon(var(--shape--blob-5));
   }
 }
+
+/* Reset positioning for quick-add inside card image area */
+.card__inner .quick-add {
+  position: static;
+  margin: 0;
+}
+
+.quick-add__submit.button--circle-quick-add {
+  position: absolute;
+  bottom: 1.4rem;
+  right: 1.4rem;
+  z-index: 30 !important;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 0;
+  border: none !important;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
+  outline: none !important;
+  pointer-events: auto !important;
+}
+
+.quick-add__submit.button--circle-quick-add::after,
+.quick-add__submit.button--circle-quick-add::before {
+  content: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  display: none !important;
+}
+
+.quick-add__submit.button--circle-quick-add:hover {
+  border: none !important;
+  box-shadow: 0 6px 8px rgba(0,0,0,0.15) !important;
+  outline: none !important;
+}
+
+.quick-add__submit.button--circle-quick-add svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.quick-add__submit.button--circle-quick-add .icon-wrap {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile specific styles for circular quick add button */
+@media screen and (max-width: 749px) {
+  .quick-add__submit.button--circle-quick-add {
+    width: 3.2rem;
+    height: 3.2rem;
+    bottom: 0.8rem;
+    right: 0.8rem;
+  }
+
+  .quick-add__submit.button--circle-quick-add svg {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}
+
+/* Fix for quick-add button being unclickable due to link overlay */
+.card__inner--quick-add-fix {
+  z-index: 10 !important;
+  pointer-events: none;
+  position: relative !important;
+}
+
+.card__inner--quick-add-fix .quick-add,
+.card__inner--quick-add-fix a {
+  pointer-events: auto;
+}
