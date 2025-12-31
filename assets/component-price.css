@@ -21,6 +21,10 @@
 .price .price-item {
   display: inline-block;
   margin: 0 1rem 0 0;
+  color: rgb(var(--color-foreground));
+}
+
+.price .price-item--sale {
   color: red;
 }
 

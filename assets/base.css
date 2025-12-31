@@ -3027,7 +3027,7 @@ details-disclosure > details {
   line-height: 1;
   padding: 0.2rem 0.8rem 0.3rem 0.8rem !important;
   text-align: center;
-  background-color: rgb(var(--color-badge-background));
+  background-color: red;
   border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
   color: rgb(var(--color-badge-foreground));
   word-break: break-word;
