@@ -15,7 +15,7 @@
         "desktop_slide_FBrYf6": {
           "type": "desktop_slide",
           "settings": {
-            "image": "shopify://shop_images/x-banner-PC.jpg",
+            "image": "shopify://shop_images/newyear-banner-PC.jpg",
             "alt_text": "",
             "custom_duration": 5,
             "image_link": "shopify://collections/all"
@@ -24,7 +24,7 @@
         "mobile_slide_mrijEN": {
           "type": "mobile_slide",
           "settings": {
-            "image": "shopify://shop_images/x-banner-m.jpg",
+            "image": "shopify://shop_images/newyear-banner-m.jpg",
             "alt_text": "",
             "custom_duration": 5,
             "image_link": "shopify://collections/all"
@@ -327,6 +327,8 @@
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "standard",
+        "show_sale_badge": true,
+        "sale_badge_type": "percentage",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 72,
@@ -448,6 +450,8 @@
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "standard",
+        "show_sale_badge": true,
+        "sale_badge_type": "percentage",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 72,
@@ -525,7 +529,9 @@
       "disabled": true,
       "name": "GG-热卖商品",
       "settings": {
-        "title": "Best Seller"
+        "title": "Best Seller",
+        "show_sale_badge": true,
+        "sale_badge_type": "percentage"
       }
     },
     "gg_image_banner_common_rnwYrY": {
@@ -624,7 +630,9 @@
       "disabled": true,
       "custom_css": [],
       "settings": {
-        "title": "Summer Sale"
+        "title": "Summer Sale",
+        "show_sale_badge": true,
+        "sale_badge_type": "percentage"
       }
     },
     "featured_collection_7qii9g": {
@@ -651,6 +659,8 @@
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
+        "show_sale_badge": true,
+        "sale_badge_type": "percentage",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 76,
@@ -740,7 +750,9 @@
       "disabled": true,
       "name": "GG-热卖商品",
       "settings": {
-        "title": "Packs"
+        "title": "Packs",
+        "show_sale_badge": true,
+        "sale_badge_type": "percentage"
       }
     },
     "gg_image_banner_common_XyH39W": {
