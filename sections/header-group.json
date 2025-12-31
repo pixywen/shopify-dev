@@ -244,6 +244,7 @@
         "mobile_slide_4HGfwy",
         "mobile_slide_wTFmGV"
       ],
+      "disabled": true,
       "name": "GG-图片轮播(头部固定)",
       "settings": {
         "change_slides_speed": 5,
