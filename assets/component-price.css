@@ -21,6 +21,7 @@
 .price .price-item {
   display: inline-block;
   margin: 0 1rem 0 0;
+  color: red;
 }
 
 .price__regular .price-item--regular {
@@ -85,9 +86,23 @@
 }
 
 .price--on-sale .price-item--regular {
-  text-decoration: line-through;
   color: rgba(var(--color-foreground), 0.75);
   font-size: 1.3rem;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.price--on-sale .price-item--regular::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 0.1rem;
+  background-color: #ff0000;
+  transform: rotate(-8deg);
+  pointer-events: none;
 }
 
 .unit-price {

@@ -274,6 +274,9 @@
   align-self: flex-end;
   grid-row-start: 3;
   justify-self: flex-start;
+  position: absolute;
+  top: -94%;
+  left: 4%;
 }
 
 .card__badge.top {

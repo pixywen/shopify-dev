@@ -159,12 +159,22 @@
                 >
                   {{- 'products.product.sold_out' | t -}}
                 </span>
-              {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
+              {%- elsif show_sale_badge != false and card_product.compare_at_price > card_product.price and card_product.available -%}
+                {%- liquid
+                  assign discount_percent = card_product.compare_at_price | minus: card_product.price | times: 100.0 | divided_by: card_product.compare_at_price | floor
+                  assign discount_amount = card_product.compare_at_price | minus: card_product.price
+                -%}
                 <span
                   id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
                   class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
                 >
-                  {{- 'products.product.on_sale' | t -}}
+                  {%- if sale_badge_type == 'percentage' or sale_badge_type == blank or sale_badge_type == '' -%}
+                    Save {{ discount_percent }}%
+                  {%- elsif sale_badge_type == 'amount' -%}
+                    Save {{ discount_amount | money_without_trailing_zeros }}
+                  {%- else -%}
+                    Sale
+                  {%- endif -%}
                 </span>
               {%- endif -%}
             </div>
@@ -641,7 +651,7 @@
             {% endif %}
           {% endif %}
 
-          <div class="card__badge {{ settings.badge_position }}">
+          <div class="card__badge top">
             {%- if card_product.available == false -%}
               <span
                 id="Badge-{{ section_id }}-{{ card_product.id }}"
@@ -649,12 +659,22 @@
               >
                 {{- 'products.product.sold_out' | t -}}
               </span>
-            {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
+            {%- elsif show_sale_badge != false and card_product.compare_at_price > card_product.price and card_product.available -%}
+              {%- liquid
+                assign discount_percent = card_product.compare_at_price | minus: card_product.price | times: 100.0 | divided_by: card_product.compare_at_price | floor
+                assign discount_amount = card_product.compare_at_price | minus: card_product.price
+              -%}
               <span
                 id="Badge-{{ section_id }}-{{ card_product.id }}"
-                class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
+                class="badge badge--bottom-left badge--custom-red"
               >
-                {{- 'products.product.on_sale' | t -}}
+                {%- if sale_badge_type == 'percentage' or sale_badge_type == blank or sale_badge_type == '' -%}
+                  Save {{ discount_percent }}%
+                {%- elsif sale_badge_type == 'amount' -%}
+                  Save {{ discount_amount | money_without_trailing_zeros }}
+                {%- else -%}
+                  Sale
+                {%- endif -%}
               </span>
             {%- endif -%}
           </div>

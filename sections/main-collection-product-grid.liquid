@@ -187,6 +187,8 @@
                     show_secondary_image: section.settings.show_secondary_image,
                     show_vendor: section.settings.show_vendor,
                     show_rating: section.settings.show_rating,
+                    show_sale_badge: section.settings.show_sale_badge,
+                    sale_badge_type: section.settings.sale_badge_type,
                     lazy_load: lazy_load,
                     skip_styles: skip_card_product_styles,
                     quick_add: section.settings.quick_add,
@@ -344,6 +346,32 @@
           "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_3"
         }
       ]
+    },
+    {
+      "type": "checkbox",
+      "id": "show_sale_badge",
+      "default": true,
+      "label": "显示促销标签"
+    },
+    {
+      "type": "select",
+      "id": "sale_badge_type",
+      "options": [
+        {
+          "value": "percentage",
+          "label": "百分比"
+        },
+        {
+          "value": "amount",
+          "label": "金额"
+        },
+        {
+          "value": "text",
+          "label": "文本"
+        }
+      ],
+      "default": "percentage",
+      "label": "促销标签类型"
     },
     {
       "type": "header",

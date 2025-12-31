@@ -1,5 +1,49 @@
 {{ 'gg-section-featured-products.css' | asset_url | stylesheet_tag }}
 
+{%- style -%}
+  /* ====== GG 特色产品系列 Badge 定制样式 ====== */
+  /* 位置：左上角，绝对定位覆盖在图片上 */
+  .gg-featured-products .product-media-container {
+    position: relative; /* 确保父容器是定位基准 */
+  }
+
+  .gg-featured-products .card__badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+  
+  /* 颜色：红色（仅促销标签，排除 Sold out） */
+  .gg-featured-products .badge.badge--sale {
+    background-color: #ff0000 !important;
+    border-color: #ff0000 !important;
+    color: #ffffff !important;
+    border-radius: var(--badge-corner-radius);
+    padding: 0.6rem 1.2rem;
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  /* Sold out 标签保持原样或微调 */
+  .gg-featured-products .badge {
+    border: 1px solid transparent;
+    border-radius: var(--badge-corner-radius);
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    text-align: center;
+    background-color: rgb(var(--color-background));
+    color: rgb(var(--color-foreground));
+    word-break: break-word;
+  }
+{%- endstyle -%}
+
 <div class="gg-featured-products">
   <div class="featured-products-header">
     {%- if section.settings.title != blank -%}
@@ -14,6 +58,27 @@
         <div class="featured-product-card" {{ block.shopify_attributes }}>
           <a href="{{ product.url }}" class="product-link">
             <div class="product-media-container">
+              <div class="card__badge">
+                {%- if product.available == false -%}
+                  <span class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }} badge--sold-out">
+                    {{- 'products.product.sold_out' | t -}}
+                  </span>
+                {%- elsif section.settings.show_sale_badge != false and product.compare_at_price > product.price and product.available -%}
+                  {%- liquid
+                    assign discount_percent = product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round
+                    assign discount_amount = product.compare_at_price | minus: product.price
+                  -%}
+                  <span class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }} badge--sale">
+                    {%- if section.settings.sale_badge_type == 'percentage' or section.settings.sale_badge_type == blank or section.settings.sale_badge_type == '' -%}
+                      Save {{ discount_percent }}%
+                    {%- elsif section.settings.sale_badge_type == 'amount' -%}
+                      Save {{ discount_amount | money_without_trailing_zeros }}
+                    {%- else -%}
+                      Sale
+                    {%- endif -%}
+                  </span>
+                {%- endif -%}
+              </div>
               {%- for i in (1..3) -%}
                 {%- capture main_image_key -%}main_image_{{ i }}{%- endcapture -%}
                 {%- capture model_image_key -%}model_image_{{ i }}{%- endcapture -%}
@@ -212,6 +277,38 @@
       "id": "title",
       "label": "栏目标题",
       "default": "Best Seller"
+    },
+    {
+      "type": "header",
+      "content": "促销标签设置"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_sale_badge",
+      "label": "显示促销标签",
+      "default": true,
+      "info": "开启后，在有折扣的产品左上角显示促销标签"
+    },
+    {
+      "type": "select",
+      "id": "sale_badge_type",
+      "label": "标签显示模式",
+      "options": [
+        {
+          "value": "percentage",
+          "label": "百分比折扣 (Save XX%)"
+        },
+        {
+          "value": "amount",
+          "label": "金额折扣 (Save $XX.XX)"
+        },
+        {
+          "value": "text",
+          "label": "文本标签 (Sale)"
+        }
+      ],
+      "default": "percentage",
+      "info": "选择促销标签的显示方式"
     }
   ],
   "blocks": [

@@ -104,12 +104,26 @@
   margin-right: 8px;
   font-size: 20px;
   font-weight: 300;
-  color: rgba(0, 0, 0, 1);
+  color: red;
 }
 
 .price-compare {
-  text-decoration: line-through;
+  text-decoration: none;
   color: #999;
+  position: relative;
+  display: inline-block;
+}
+
+.price-compare::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 0.1rem;
+  background-color: #ff0000;
+  transform: rotate(-8deg);
+  pointer-events: none;
 }
 
 /* 颜色选择器样式 */
