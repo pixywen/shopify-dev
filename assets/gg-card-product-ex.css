@@ -89,7 +89,7 @@
 }
 
 .badge--custom-red {
-  background-color: #D42F2F !important;
+  background-color: var(--color-custom-red) !important;
   color: #FFFFFF !important;
-  border-color: #D42F2F !important;
+  border-color: var(--color-custom-red) !important;
 }

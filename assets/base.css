@@ -9,6 +9,7 @@
   --focused-base-outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   --focused-base-outline-offset: 0.3rem;
   --focused-base-box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
+  --color-custom-red: #c50102;
 } 
 
 .product-card-wrapper .card,
@@ -3011,7 +3012,7 @@ details-disclosure > details {
   line-height: 1;
   padding: 0.5rem 1.3rem 0.6rem 1.3rem;
   text-align: center;
-  background-color: red;
+  background-color: #c50102;
   border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
   color: rgb(var(--color-badge-foreground));
   word-break: break-word;
@@ -3027,7 +3028,7 @@ details-disclosure > details {
   line-height: 1;
   padding: 0.2rem 0.8rem 0.3rem 0.8rem !important;
   text-align: center;
-  background-color: red;
+  background-color: #c50102;
   border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
   color: rgb(var(--color-badge-foreground));
   word-break: break-word;
