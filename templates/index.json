@@ -192,83 +192,6 @@
         "description": ""
       }
     },
-    "slideshow_HaTCQb": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_K7KMTT": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/coreshell-banner.jpg",
-            "heading": "CoreShell Jacket",
-            "heading_size": "h1",
-            "subheading": "Built to endure the wild, ready for any adventure.",
-            "button_label": "Shop Now",
-            "link": "shopify://collections/clothing",
-            "button_style_secondary": true,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 10,
-            "color_scheme": "scheme-4",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_6pyKqd": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/banner_5886e98a-b6b9-4914-bab6-ab4d5502e27e.jpg",
-            "heading": "FALL ARRIVALS 2025",
-            "heading_size": "h1",
-            "subheading": "Ready for Every Terrain",
-            "button_label": "Learn More",
-            "link": "shopify://collections/new-arrivals",
-            "button_style_secondary": true,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 20,
-            "color_scheme": "scheme-4",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_kNwNzd": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/puffer_pro1.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify://collections/new-arrivals",
-            "button_style_secondary": true,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-4",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "slide_K7KMTT",
-        "slide_6pyKqd",
-        "slide_kNwNzd"
-      ],
-      "disabled": true,
-      "name": "t:sections.slideshow.presets.name",
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "large",
-        "slider_visual": "dots",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": false,
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
     "gg_scroll_image_zqhRNf": {
       "type": "gg-scroll-image",
       "blocks": {
@@ -875,7 +798,6 @@
     "gt_top_banner_image_abgczQ",
     "1761291178533c8302",
     "gg_image_banner_V4rbFP",
-    "slideshow_HaTCQb",
     "gg_scroll_image_zqhRNf",
     "gg_image_banner_common_ARcgWG",
     "featured_collection_niEPwA",
