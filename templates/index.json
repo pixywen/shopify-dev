@@ -792,6 +792,178 @@
         "ai_gen_block_9e47a03_xpJ4bY"
       ],
       "settings": {}
+    },
+    "1767690491d9709aed": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_32576cf_whXJW6": {
+          "type": "ai_gen_block_32576cf",
+          "settings": {
+            "columns_desktop": 3,
+            "columns_mobile": "2",
+            "gap": 8,
+            "aspect_ratio": "177.78",
+            "show_controls": false,
+            "border_radius": 0,
+            "icon_size": 40,
+            "icon_color": "#ffffff",
+            "icon_background_color": "#000000",
+            "icon_opacity": 20,
+            "icon_border_radius": 8,
+            "icon_position_bottom": 10,
+            "icon_position_right": 10,
+            "video_1_enabled": true,
+            "video_1_url": "https://www.instagram.com/p/DSDJOvxCGTh/",
+            "video_1_product_link": "",
+            "video_1_instagram_link": "",
+            "video_2_enabled": true,
+            "video_2_url": "",
+            "video_2_product_link": "",
+            "video_2_instagram_link": "",
+            "video_3_enabled": true,
+            "video_3_url": "",
+            "video_3_product_link": "",
+            "video_3_instagram_link": "",
+            "video_4_enabled": false,
+            "video_4_url": "",
+            "video_4_product_link": "",
+            "video_4_instagram_link": "",
+            "video_5_enabled": false,
+            "video_5_url": "",
+            "video_5_product_link": "",
+            "video_5_instagram_link": "",
+            "video_6_enabled": false,
+            "video_6_url": "",
+            "video_6_product_link": "",
+            "video_6_instagram_link": "",
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_32576cf_whXJW6"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "17676910098a7c8d7c": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_9fff68d_7aYeN3": {
+          "type": "ai_gen_block_9fff68d",
+          "settings": {
+            "title": "Shop the feed",
+            "subtitle": "Tap to shop our latest looks",
+            "items_count": 12,
+            "max_width": 1200,
+            "columns_desktop": 4,
+            "columns_tablet": "3",
+            "columns_mobile": "2",
+            "grid_gap": 12,
+            "background_color": "#ffffff",
+            "title_color": "#121212",
+            "title_size": 32,
+            "subtitle_color": "#666666",
+            "subtitle_size": 16,
+            "image_radius": 8,
+            "overlay_color": "#000000",
+            "overlay_opacity": 40,
+            "icon_color": "#ffffff",
+            "tag_background": "#ffffff",
+            "tag_text_color": "#121212",
+            "tag_radius": 4,
+            "product_1": "",
+            "product_2": "",
+            "product_3": "",
+            "product_4": "",
+            "product_5": "",
+            "product_6": "",
+            "product_7": "",
+            "product_8": "",
+            "product_9": "",
+            "product_10": "",
+            "product_11": "",
+            "product_12": "",
+            "product_13": "",
+            "product_14": "",
+            "product_15": "",
+            "product_16": "",
+            "product_17": "",
+            "product_18": "",
+            "product_19": "",
+            "product_20": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_9fff68d_7aYeN3"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "176769188581344e59": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_de09eb8_bBKJi9": {
+          "type": "ai_gen_block_de09eb8",
+          "settings": {
+            "title": "Shop the Feed",
+            "title_size": 32,
+            "title_color": "#121212",
+            "subtitle": "<a href=\"https://www.instagram.com/alpargali_official/\" target=\"_blank\" title=\"alpargali_official\">Follow us @alpargali_official</a>",
+            "subtitle_size": 16,
+            "subtitle_color": "#666666",
+            "max_width": 1200,
+            "columns_desktop": 4,
+            "columns_tablet": 3,
+            "columns_mobile": "2",
+            "grid_gap": 12,
+            "item_border_radius": 8,
+            "overlay_color": "#000000",
+            "overlay_opacity": 20,
+            "show_watermark": true,
+            "watermark_position": "top: 12px; right",
+            "watermark_size": 36,
+            "watermark_bg_color": "#ffffff",
+            "watermark_icon_color": "#121212",
+            "item_1_enabled": true,
+            "item_1_image": "shopify://shop_images/Jacket_and_backpack_15_off_with_code_TEAGANSAMUELSEN_Or_alpargali_official_Any_purchase_at_h.jpg",
+            "item_1_link": "shopify://products/mens-all-weather-outdoor-jacket",
+            "item_2_enabled": true,
+            "item_2_image": "shopify://shop_images/alpargali_official.jpg",
+            "item_2_link": "shopify://products/everyday-backpack",
+            "item_3_enabled": true,
+            "item_3_image": "shopify://shop_images/The_alpargali_official_ContrastZip_Long_Sleeve_T-Shirt_might_just_be_my_new_favourite_for_trave.jpg",
+            "item_3_link": "shopify://products/contrastzip-long-sleeve-t-shirt",
+            "item_4_enabled": true,
+            "item_4_image": "shopify://shop_images/alpargali_officialIntroducing_the_Alpargali_Urban_Chest_Bag_where_refined_design_meets_everyd.jpg",
+            "item_4_link": "shopify://products/all-day-chest-bag",
+            "item_5_enabled": false,
+            "item_5_link": "",
+            "item_6_enabled": false,
+            "item_6_link": "",
+            "item_7_enabled": false,
+            "item_7_link": "",
+            "item_8_enabled": false,
+            "item_8_link": "",
+            "item_9_enabled": false,
+            "item_9_link": "",
+            "item_10_enabled": false,
+            "item_10_link": "",
+            "item_11_enabled": false,
+            "item_11_link": "",
+            "item_12_enabled": false,
+            "item_12_link": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_de09eb8_bBKJi9"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -814,6 +986,9 @@
     "gg_image_banner_common_XyH39W",
     "gg_image_banner_common_CHdPGU",
     "gg_three_image_banner_wVXhhw",
-    "17623291379c48e057"
+    "17623291379c48e057",
+    "1767690491d9709aed",
+    "17676910098a7c8d7c",
+    "176769188581344e59"
   ]
 }
