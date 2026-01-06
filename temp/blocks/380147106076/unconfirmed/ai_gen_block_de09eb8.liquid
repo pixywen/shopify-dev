@@ -1,6 +1,761 @@
+{% doc %}
+  @prompt
+    Generate a "Shop the Feed" component. This component allows you to add videos or images, and also add links. The number of items can be increased or decreased as needed, and the component includes an Instagram icon watermark., Videos can be uploaded directly in MP4 format.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-shop-feed-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .ai-shop-feed-container-{{ ai_gen_id }} {
+    max-width: {{ block.settings.max_width }}px;
+    margin: 0 auto;
+  }
+
+  .ai-shop-feed-header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .ai-shop-feed-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 10px;
+    font-weight: 600;
+  }
+
+  .ai-shop-feed-subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    color: {{ block.settings.subtitle_color }};
+    margin: 0;
+  }
+
+  .ai-shop-feed-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat({{ block.settings.columns_desktop }}, 1fr);
+    gap: {{ block.settings.grid_gap }}px;
+  }
+
+  .ai-shop-feed-item-{{ ai_gen_id }} {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: {{ block.settings.item_border_radius }}px;
+    cursor: pointer;
+  }
+
+  .ai-shop-feed-item-link-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .ai-shop-feed-media-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-shop-feed-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-shop-feed-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-shop-feed-empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  .ai-shop-feed-overlay-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: {{ block.settings.overlay_color }};
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .ai-shop-feed-item-{{ ai_gen_id }}:hover .ai-shop-feed-overlay-{{ ai_gen_id }} {
+    opacity: {{ block.settings.overlay_opacity | divided_by: 100.0 }};
+  }
+
+  .ai-shop-feed-watermark-{{ ai_gen_id }} {
+    position: absolute;
+    {{ block.settings.watermark_position }}: 12px;
+    width: {{ block.settings.watermark_size }}px;
+    height: {{ block.settings.watermark_size }}px;
+    background-color: {{ block.settings.watermark_bg_color }};
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .ai-shop-feed-watermark-{{ ai_gen_id }} svg {
+    width: calc({{ block.settings.watermark_size }}px * 0.55);
+    height: calc({{ block.settings.watermark_size }}px * 0.55);
+    fill: {{ block.settings.watermark_icon_color }};
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-shop-feed-grid-{{ ai_gen_id }} {
+      grid-template-columns: repeat({{ block.settings.columns_tablet }}, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-shop-feed-grid-{{ ai_gen_id }} {
+      grid-template-columns: repeat({{ block.settings.columns_mobile }}, 1fr);
+    }
+
+    .ai-shop-feed-title-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.title_size }}px * 0.8);
+    }
+
+    .ai-shop-feed-subtitle-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.subtitle_size }}px * 0.9);
+    }
+  }
+{% endstyle %}
+
+<shop-the-feed-{{ ai_gen_id }} class="ai-shop-feed-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-shop-feed-container-{{ ai_gen_id }}">
+    {% if block.settings.title != blank or block.settings.subtitle != blank %}
+      <div class="ai-shop-feed-header-{{ ai_gen_id }}">
+        {% if block.settings.title != blank %}
+          <h2 class="ai-shop-feed-title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+        {% endif %}
+        {% if block.settings.subtitle != blank %}
+          <p class="ai-shop-feed-subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="ai-shop-feed-grid-{{ ai_gen_id }}">
+      {% for i in (1..12) %}
+        {% liquid
+          assign item_enabled_key = 'item_' | append: i | append: '_enabled'
+          assign item_image_key = 'item_' | append: i | append: '_image'
+          assign item_video_key = 'item_' | append: i | append: '_video'
+          assign item_link_key = 'item_' | append: i | append: '_link'
+
+          assign item_enabled = block.settings[item_enabled_key]
+          assign item_image = block.settings[item_image_key]
+          assign item_video = block.settings[item_video_key]
+          assign item_link = block.settings[item_link_key]
+        %}
+
+        {% if item_enabled %}
+          <div class="ai-shop-feed-item-{{ ai_gen_id }}">
+            {% if item_link != blank %}
+              <a href="{{ item_link }}" class="ai-shop-feed-item-link-{{ ai_gen_id }}">
+            {% else %}
+              <div class="ai-shop-feed-item-link-{{ ai_gen_id }}">
+            {% endif %}
+
+              {% if item_video != blank %}
+                {{ item_video | video_tag: class: 'ai-shop-feed-media-' | append: ai_gen_id, autoplay: true, loop: true, muted: true, controls: false }}
+              {% elsif item_image != blank %}
+                <img
+                  src="{{ item_image | image_url: width: 600 }}"
+                  alt="{{ item_image.alt | escape }}"
+                  class="ai-shop-feed-media-{{ ai_gen_id }}"
+                  loading="lazy"
+                  width="600"
+                  height="600"
+                >
+              {% else %}
+                <div class="ai-shop-feed-placeholder-{{ ai_gen_id }}">
+                  {{ 'image' | placeholder_svg_tag }}
+                  <div class="ai-shop-feed-empty-state-{{ ai_gen_id }}">
+                    Add image or video
+                  </div>
+                </div>
+              {% endif %}
+
+              <div class="ai-shop-feed-overlay-{{ ai_gen_id }}"></div>
+
+              {% if block.settings.show_watermark %}
+                <div class="ai-shop-feed-watermark-{{ ai_gen_id }}">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
+                  </svg>
+                </div>
+              {% endif %}
+
+            {% if item_link != blank %}
+              </a>
+            {% else %}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</shop-the-feed-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class ShopTheFeed{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.videos = this.querySelectorAll('video');
+        this.setupVideoPlayback();
+      }
+
+      setupVideoPlayback() {
+        this.videos.forEach((video) => {
+          video.addEventListener('mouseenter', () => {
+            video.play();
+          });
+
+          video.addEventListener('mouseleave', () => {
+            video.pause();
+            video.currentTime = 0;
+          });
+        });
+      }
+    }
+
+    customElements.define('shop-the-feed-{{ ai_gen_id }}', ShopTheFeed{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Shop the feed",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Title",
+      "default": "Shop the Feed"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 16,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Title size",
+      "default": 32
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "#121212"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Follow us @yourhandle"
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Subtitle size",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Subtitle color",
+      "default": "#666666"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1920,
+      "step": 20,
+      "unit": "px",
+      "label": "Maximum width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "label": "Columns on desktop",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "columns_tablet",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "label": "Columns on tablet",
+      "default": 3
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Columns on mobile",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "min": 4,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "label": "Grid gap",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "item_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Item border radius",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Hover overlay"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 0,
+      "max": 80,
+      "step": 5,
+      "unit": "%",
+      "label": "Overlay opacity",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Instagram watermark"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_watermark",
+      "label": "Show watermark",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "watermark_position",
+      "label": "Watermark position",
+      "options": [
+        {
+          "value": "top: 12px; left",
+          "label": "Top left"
+        },
+        {
+          "value": "top: 12px; right",
+          "label": "Top right"
+        },
+        {
+          "value": "bottom: 12px; left",
+          "label": "Bottom left"
+        },
+        {
+          "value": "bottom: 12px; right",
+          "label": "Bottom right"
+        }
+      ],
+      "default": "top: 12px; right"
+    },
+    {
+      "type": "range",
+      "id": "watermark_size",
+      "min": 24,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "label": "Watermark size",
+      "default": 36
+    },
+    {
+      "type": "color",
+      "id": "watermark_bg_color",
+      "label": "Watermark background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "watermark_icon_color",
+      "label": "Watermark icon color",
+      "default": "#121212"
+    },
+    {
+      "type": "header",
+      "content": "Item 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "item_1_enabled",
+      "label": "Enable item 1",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "item_1_image",
+      "label": "Image"
+    },
+    {
+      "type": "video",
+      "id": "item_1_video",
+      "label": "Video"
+    },
+    {
+      "type": "url",
+      "id": "item_1_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Item 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "item_2_enabled",
+      "label": "Enable item 2",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "item_2_image",
+      "label": "Image"
+    },
+    {
+      "type": "video",
+      "id": "item_2_video",
+      "label": "Video"
+    },
+    {
+      "type": "url",
+      "id": "item_2_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Item 3"
+    },
+    {
+      "type": "checkbox",
+      "id": "item_3_enabled",
+      "label": "Enable item 3",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "item_3_image",
+      "label": "Image"
+    },
+    {
+      "type": "video",
+      "id": "item_3_video",
+      "label": "Video"
+    },
+    {
+      "type": "url",
+      "id": "item_3_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Item 4"
+    },
+    {
+      "type": "checkbox",
+      "id": "item_4_enabled",
+      "label": "Enable item 4",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "item_4_image",
+      "label": "Image"
+    },
+    {
+      "type": "video",
+      "id": "item_4_video",
+      "label": "Video"
+    },
+    {
+      "type": "url",
+      "id": "item_4_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Item 5"
+    },
+    {
+      "type": "checkbox",
+      "id": "item_5_enabled",
+      "label": "Enable item 5",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "item_5_image",
+      "label": "Image"
+    },
+    {
+      "type": "video",
+      "id": "item_5_video",
+      "label": "Video"
+    },
+    {
+      "type": "url",
+      "id": "item_5_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Item 6"
+    },
+    {
+      "type": "checkbox",
+      "id": "item_6_enabled",
+      "label": "Enable item 6",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "item_6_image",
+      "label": "Image"
+    },
+    {
+      "type": "video",
+      "id": "item_6_video",
+      "label": "Video"
+    },
+    {
+      "type": "url",
+      "id": "item_6_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Item 7"
+    },
+    {
+      "type": "checkbox",
+      "id": "item_7_enabled",
+      "label": "Enable item 7",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "item_7_image",
+      "label": "Image"
+    },
+    {
+      "type": "video",
+      "id": "item_7_video",
+      "label": "Video"
+    },
+    {
+      "type": "url",
+      "id": "item_7_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Item 8"
+    },
+    {
+      "type": "checkbox",
+      "id": "item_8_enabled",
+      "label": "Enable item 8",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "item_8_image",
+      "label": "Image"
+    },
+    {
+      "type": "video",
+      "id": "item_8_video",
+      "label": "Video"
+    },
+    {
+      "type": "url",
+      "id": "item_8_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Item 9"
+    },
+    {
+      "type": "checkbox",
+      "id": "item_9_enabled",
+      "label": "Enable item 9",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "item_9_image",
+      "label": "Image"
+    },
+    {
+      "type": "video",
+      "id": "item_9_video",
+      "label": "Video"
+    },
+    {
+      "type": "url",
+      "id": "item_9_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Item 10"
+    },
+    {
+      "type": "checkbox",
+      "id": "item_10_enabled",
+      "label": "Enable item 10",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "item_10_image",
+      "label": "Image"
+    },
+    {
+      "type": "video",
+      "id": "item_10_video",
+      "label": "Video"
+    },
+    {
+      "type": "url",
+      "id": "item_10_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Item 11"
+    },
+    {
+      "type": "checkbox",
+      "id": "item_11_enabled",
+      "label": "Enable item 11",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "item_11_image",
+      "label": "Image"
+    },
+    {
+      "type": "video",
+      "id": "item_11_video",
+      "label": "Video"
+    },
+    {
+      "type": "url",
+      "id": "item_11_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Item 12"
+    },
+    {
+      "type": "checkbox",
+      "id": "item_12_enabled",
+      "label": "Enable item 12",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "item_12_image",
+      "label": "Image"
+    },
+    {
+      "type": "video",
+      "id": "item_12_video",
+      "label": "Video"
+    },
+    {
+      "type": "url",
+      "id": "item_12_link",
+      "label": "Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shop the feed"
+    }
+  ]
+}
 {% endschema %}
