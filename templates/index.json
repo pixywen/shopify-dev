@@ -709,6 +709,7 @@
     },
     "gg_three_image_banner_wVXhhw": {
       "type": "gg-three-image-banner",
+      "disabled": true,
       "settings": {
         "small_heading_above": "ALPARGALI",
         "heading": "Gallary",
