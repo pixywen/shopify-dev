@@ -107,6 +107,11 @@
   document.addEventListener("DOMContentLoaded", function () {
     // 处理 dropdown 菜单的悬停和点击
     document.querySelectorAll(".header__inline-menu header-menu details").forEach((details) => {
+      // 检查初始状态
+      if (details.matches(':hover')) {
+        details.setAttribute("open", "true");
+      }
+
       // 悬停展开
       details.addEventListener("mouseenter", function () {
         this.setAttribute("open", "true");

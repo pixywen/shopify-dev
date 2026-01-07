@@ -135,6 +135,11 @@
   const scrolledPastHeader = document.querySelector('.section-header')
   document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".mega-menu").forEach((menu) => {
+      // 检查初始状态：如果鼠标已经在元素上（例如刷新页面或跳转后位置未变），直接展开
+      if (menu.matches(':hover')) {
+         menu.setAttribute("open", "true");
+      }
+
       menu.addEventListener("mouseenter", function () {
         this.setAttribute("open", "true"); // 悬停时展开
       });
