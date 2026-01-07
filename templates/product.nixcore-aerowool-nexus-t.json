@@ -93,6 +93,7 @@
       "block_order": [
         "ai_gen_block_28bafcf_jKDmFt"
       ],
+      "disabled": true,
       "name": "Carousel banner",
       "settings": {}
     },
@@ -398,6 +399,8 @@
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
+        "show_sale_badge": true,
+        "sale_badge_type": "percentage",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 36,
