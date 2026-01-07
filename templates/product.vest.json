@@ -93,6 +93,7 @@
       "block_order": [
         "ai_gen_block_28bafcf_UadpWA"
       ],
+      "disabled": true,
       "name": "Carousel banner",
       "settings": {}
     },
