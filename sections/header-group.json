@@ -165,7 +165,14 @@
         "desktop_slide_C4p7cL": {
           "type": "desktop_slide",
           "settings": {
-            "image": "shopify://shop_images/newyear-details-PC.jpg",
+            "image": "shopify://shop_images/detail-PC_4dfbcd0e-3caf-473e-8f5f-c27c2e9a3377.jpg",
+            "link": ""
+          }
+        },
+        "mobile_slide_4HGfwy": {
+          "type": "mobile_slide",
+          "settings": {
+            "image": "shopify://shop_images/detail-m_34a5a823-ad72-4193-9726-b7eeae86c1f2.jpg",
             "link": ""
           }
         },
@@ -173,13 +180,6 @@
           "type": "desktop_slide",
           "disabled": true,
           "settings": {
-            "link": ""
-          }
-        },
-        "mobile_slide_4HGfwy": {
-          "type": "mobile_slide",
-          "settings": {
-            "image": "shopify://shop_images/newyear-details-m.jpg",
             "link": ""
           }
         },
@@ -193,11 +193,10 @@
       },
       "block_order": [
         "desktop_slide_C4p7cL",
-        "desktop_slide_jTk3cz",
         "mobile_slide_4HGfwy",
+        "desktop_slide_jTk3cz",
         "mobile_slide_wTFmGV"
       ],
-      "disabled": true,
       "name": "GG-图片轮播(头部固定)",
       "settings": {
         "change_slides_speed": 5,
