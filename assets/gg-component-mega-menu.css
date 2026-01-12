@@ -45,6 +45,10 @@
   position: static;
 }
 
+header-menu > details.mega-menu {
+  position: static;
+}
+
 .header-wrapper .list-menu .mega-menu__content {
   background-color: rgb(var(--color-background));
   border-left: 0;
@@ -75,11 +79,10 @@
 .mega-menu[open] .mega-menu__content {
   opacity: 1;
   transform: translateY(0);
-  margin: auto;
+  left: 0;
+  right: auto;
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  padding-left: calc(50vw - 50%);
-  padding-right: calc(50vw - 50%);
   max-width: none;
 }
 details:hover {
@@ -237,8 +240,9 @@ div.scrolled-past-header sticky-header.header-wrapper,
 .gradient.overflow-hidden sticky-header.header-wrapper {
   background: white;
   /* transition: .5s; */
-  width: 100%;
-  margin-left: 0;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
   padding-left: 0;
   padding-right: 0;
   max-width: none;
