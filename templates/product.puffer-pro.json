@@ -375,7 +375,7 @@
             "image": "shopify://shop_images/6.Dermizax_membrane.jpg",
             "heading": "",
             "subheading": "Japanese Dermizax® Waterproof-Breathable Shell",
-            "text": "<p>Shell featuring Japanese Dermizax® waterproof-breathable membrane — the same elite technology trusted in high-altitude alpine gear.</p>",
+            "text": "<p>Shell featuring <strong>Japanese Dermizax® waterproof-breathable membrane</strong> — the same elite technology trusted in high-altitude alpine gear.</p>",
             "target_tab": "description",
             "margin_top": 72,
             "margin_bottom": 0
@@ -417,7 +417,7 @@
             "image": "shopify://shop_images/9.windproof.jpg",
             "heading": "",
             "subheading": "Windproof 3-Layer Dermizax® Shell",
-            "text": "<p>Its windproof 3-layer Dermizax® shell seals out cutting winds, preserving warmth and comfort even in extreme cold.</p>",
+            "text": "<p>Its windproof <strong>3-layer Dermizax® shell </strong>seals out cutting winds, preserving warmth and comfort even in extreme cold.</p>",
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 100
