@@ -299,6 +299,7 @@
         },
         "content_block_rN49nb": {
           "type": "content_block",
+          "disabled": true,
           "settings": {
             "block_type": "heading_text",
             "margin_top": 32,
@@ -311,8 +312,8 @@
         "image_banner_9AcLc8": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/aa-detail-b-ib-03.jpg",
-            "image_mobile": "shopify://shop_images/aa-detail-b-ib-03-m.jpg",
+            "image_desktop": "shopify://shop_images/3.icon-pc.png",
+            "image_mobile": "shopify://shop_images/3.icon-m.png",
             "margin_top": 0,
             "margin_bottom": 32,
             "padding_x_desktop": 0,
