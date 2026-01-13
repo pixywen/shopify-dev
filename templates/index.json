@@ -14,6 +14,7 @@
       "blocks": {
         "desktop_slide_FBrYf6": {
           "type": "desktop_slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/banner-PC_28024300-d788-411d-9d50-500a67491009.jpg",
             "alt_text": "",
@@ -23,6 +24,7 @@
         },
         "mobile_slide_mrijEN": {
           "type": "mobile_slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/banner-m_38f949e8-4fa7-4e47-9477-bd2f4c0c09c1.jpg",
             "alt_text": "",
