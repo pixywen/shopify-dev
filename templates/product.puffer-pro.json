@@ -333,6 +333,17 @@
             "target_tab": "description"
           }
         },
+        "content_block_KAzBzN": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 0,
+            "margin_bottom": 16,
+            "heading": "",
+            "content": "<p>Imagine a jacket powered by <strong>Aerogel</strong>, <strong>Graphene</strong>, and <strong>ET Bionic Down</strong> — engineered for exceptional warmth without bulk.</p><p><strong>Aerogel Air Fibers</strong> lock in heat in cold, wet conditions.<br/><br/><strong>Graphene lining</strong> reflects warmth and stays fresh.<br/><br/><strong>ET Bionic Down</strong> delivers soft, allergen-free insulation.</p><p>Wrapped in a <strong>3-layer Dermizax® waterproof shell</strong>, it blocks rain, snow, and wind.</p><p><strong>Extreme weather. Made easy.</strong></p>",
+            "target_tab": "description"
+          }
+        },
         "collage_byQmgc": {
           "type": "collage",
           "settings": {
@@ -593,6 +604,7 @@
         "content_block_rN49nb",
         "image_banner_9AcLc8",
         "image_banner_MFJcGH",
+        "content_block_KAzBzN",
         "collage_byQmgc",
         "collage_dLqxPW",
         "collage_WXNq9Y",
