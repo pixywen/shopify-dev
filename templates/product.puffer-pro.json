@@ -400,10 +400,10 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/aa-detail-b-collage-03.jpg",
-            "heading": "Sorona® Insulation",
-            "subheading": "High-performance Bio Polymer",
-            "text": "<p>Sorona® insulation is made in part with plant-based ingredients, it is a versatile fiber, and its long list of uses comes from a kink in the PTT polymer chain.</p>",
+            "image": "shopify://shop_images/8.360_seam.jpg",
+            "heading": "",
+            "subheading": "Fully Seam-Sealed Construction",
+            "text": "<p>360° waterproof protection</p>",
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 0
@@ -414,9 +414,9 @@
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/aa-detail-b-collage-04.jpg",
-            "heading": "Full-torso Defense",
-            "subheading": "Wins the War on Weather",
+            "image": "shopify://shop_images/9.windproof.jpg",
+            "heading": "",
+            "subheading": "Windproof",
             "text": "<p>The outer layer is crafted from Teflon™-coated fabric - resisting water, snow, and stains while remaining breathable. Tested to withstand 10,000mm of water, it’s engineered for the harshest conditions. And it’s fully machine washable for easy care.</p>",
             "target_tab": "description",
             "margin_top": 0,
