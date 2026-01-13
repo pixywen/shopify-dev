@@ -321,6 +321,18 @@
             "target_tab": "description"
           }
         },
+        "image_banner_MFJcGH": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/4.structure-pc.jpg",
+            "image_mobile": "shopify://shop_images/4.structure-m.jpg",
+            "margin_top": 0,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
         "collage_byQmgc": {
           "type": "collage",
           "settings": {
@@ -580,6 +592,7 @@
         "image_banner_Me8tAB",
         "content_block_rN49nb",
         "image_banner_9AcLc8",
+        "image_banner_MFJcGH",
         "collage_byQmgc",
         "collage_dLqxPW",
         "collage_WXNq9Y",
