@@ -297,18 +297,6 @@
             "target_tab": "description"
           }
         },
-        "content_block_rN49nb": {
-          "type": "content_block",
-          "disabled": true,
-          "settings": {
-            "block_type": "heading_text",
-            "margin_top": 32,
-            "margin_bottom": 40,
-            "heading": "",
-            "content": "<p>The Alpargali Puffer defies the thermometer, effective from -40°C/-40°F to +10°C /50°F. It’s like having a premium down jacket without the fill. Add in a sleek, modern design with over 30 functions including 9 pockets and we’re talking a versatile, year-round outerwear solution for the city nomad and the natural explorer. Extreme cold or mild conditions, your comfort is the same. The weather may be unpredictable. This puffer’s elite performance is not.</p>",
-            "target_tab": "description"
-          }
-        },
         "image_banner_9AcLc8": {
           "type": "image_banner",
           "settings": {
@@ -421,6 +409,18 @@
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 100
+          }
+        },
+        "image_banner_BKFgNX": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/10.INSULATION.jpg",
+            "image_mobile": "shopify://shop_images/10.INSULATION-m.jpg",
+            "margin_top": 0,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
           }
         },
         "content_block_DPjhDm": {
@@ -624,7 +624,6 @@
         "image_banner_6EqhKf",
         "content_block_MGACxw",
         "image_banner_Me8tAB",
-        "content_block_rN49nb",
         "image_banner_9AcLc8",
         "image_banner_MFJcGH",
         "content_block_KAzBzN",
@@ -634,6 +633,7 @@
         "collage_dLqxPW",
         "collage_WXNq9Y",
         "collage_zR94Hn",
+        "image_banner_BKFgNX",
         "content_block_DPjhDm",
         "carousel_8hkzfc",
         "image_banner_agnmpQ",
