@@ -434,6 +434,20 @@
             "target_tab": "description"
           }
         },
+        "collage_P3AKrn": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/6.Dermizax_membrane.jpg",
+            "heading": "",
+            "subheading": "Japanese Dermizax® Waterproof-Breathable Shell",
+            "text": "<p>Shell featuring <strong>Japanese Dermizax® waterproof-breathable membrane</strong> — the same elite technology trusted in high-altitude alpine gear.</p>",
+            "target_tab": "description",
+            "margin_top": 72,
+            "margin_bottom": 0
+          }
+        },
         "carousel_8hkzfc": {
           "type": "carousel",
           "settings": {
@@ -635,6 +649,7 @@
         "collage_zR94Hn",
         "image_banner_BKFgNX",
         "content_block_DPjhDm",
+        "collage_P3AKrn",
         "carousel_8hkzfc",
         "image_banner_agnmpQ",
         "image_banner_iGmkgq",
