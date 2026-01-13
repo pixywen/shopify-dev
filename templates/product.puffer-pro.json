@@ -281,15 +281,15 @@
             "margin_top": 20,
             "margin_bottom": 40,
             "heading": "",
-            "content": "<p>Lightweight puffer? Incredibly warm puffer? How about both. Introducing the Alpargali Puffer, and your best winter life. Inspired by no less than <strong>NASA technology</strong>, this jacket excels at the urban life as well as outdoor adventures. Cutting-edge materials like aerogel and graphene delivers a weight-to-warmth ratio that’s unmatched.</p>",
+            "content": "<p>At <strong>-40°</strong>, Celsius and Fahrenheit meet — and so does the <strong>Alpargali Puffer Pro</strong>.</p><p>Built to expedition standards, it combines <strong>NASA-inspired insulation</strong> with lightweight comfort. <strong>ET Bionic Down™</strong> and <strong>Aerogel fibers</strong> deliver exceptional warmth without bulk.</p><p>A <strong>Dermizax® waterproof shell</strong> and <strong>graphene lining</strong> keep you dry, warm, and comfortable — from city streets to mountain trails.</p>",
             "target_tab": "description"
           }
         },
         "image_banner_Me8tAB": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/mianyi-002-pc.png",
-            "image_mobile": "shopify://shop_images/mianyi-002-m.jpg",
+            "image_desktop": "shopify://shop_images/2.compare-pc.jpg",
+            "image_mobile": "shopify://shop_images/2.compare-m.jpg",
             "margin_top": 0,
             "margin_bottom": 0,
             "padding_x_desktop": 0,
