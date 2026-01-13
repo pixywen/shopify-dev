@@ -265,8 +265,8 @@
         "image_banner_6EqhKf": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/aa-detail-b-ib-01.jpg",
-            "image_mobile": "shopify://shop_images/aa-detail-b-ib-01-m.jpg",
+            "image_desktop": "shopify://shop_images/1.function-pc.jpg",
+            "image_mobile": "shopify://shop_images/1.function-m.jpg",
             "margin_top": 32,
             "margin_bottom": 0,
             "padding_x_desktop": 0,
