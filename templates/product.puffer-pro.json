@@ -490,6 +490,18 @@
             "margin_bottom": 0
           }
         },
+        "image_banner_TedKYU": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/15.pocket.jpg",
+            "image_mobile": "shopify://shop_images/15.pocket-m.jpg",
+            "margin_top": 0,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
         "carousel_8hkzfc": {
           "type": "carousel",
           "settings": {
@@ -695,6 +707,7 @@
         "collage_DtKjqe",
         "collage_EPgPxm",
         "collage_e3Bjnd",
+        "image_banner_TedKYU",
         "carousel_8hkzfc",
         "image_banner_agnmpQ",
         "image_banner_iGmkgq",
