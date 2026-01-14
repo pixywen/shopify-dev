@@ -302,7 +302,7 @@
           "settings": {
             "image_desktop": "shopify://shop_images/3.icon-pc.png",
             "image_mobile": "shopify://shop_images/3.icon-m.png",
-            "margin_top": 0,
+            "margin_top": 20,
             "margin_bottom": 32,
             "padding_x_desktop": 25,
             "padding_x_mobile": 5,
@@ -349,7 +349,7 @@
           "settings": {
             "block_type": "heading_text",
             "margin_top": 0,
-            "margin_bottom": 16,
+            "margin_bottom": 56,
             "heading": "",
             "content": "<ul><li>The Alpargali Puffer Pro is engineered with a 3-layer technical shell featuring Japanese Dermizax® waterproof-breathable membrane — the same elite technology trusted in high-altitude alpine gear.</li><li> Every seam is fully sealed, creating an all-encompassing barrier that blocks out wetness, snow, and icy wind.</li><li>With a 20,000+ mm waterproof rating and 10,000+ g/m²/24h Moisture Release, it keeps you perfectly dry while letting moisture escape — no overheating, no stuffiness, just lasting comfort.</li></ul>",
             "target_tab": "description"
