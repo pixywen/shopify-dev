@@ -315,7 +315,7 @@
             "image_desktop": "shopify://shop_images/4.structure-pc.jpg",
             "image_mobile": "shopify://shop_images/4.structure-m.jpg",
             "margin_top": 0,
-            "margin_bottom": 32,
+            "margin_bottom": 0,
             "padding_x_desktop": 0,
             "padding_x_mobile": 0,
             "target_tab": "description"
@@ -326,7 +326,7 @@
           "settings": {
             "block_type": "heading_text",
             "margin_top": 0,
-            "margin_bottom": 16,
+            "margin_bottom": 56,
             "heading": "",
             "content": "<p>Imagine a jacket powered by <strong>Aerogel</strong>, <strong>Graphene</strong>, and <strong>ET Bionic Down</strong> — engineered for exceptional warmth without bulk.</p><p><strong>Aerogel Air Fibers</strong> lock in heat in cold, wet conditions.<br/><br/><strong>Graphene lining</strong> reflects warmth and stays fresh.<br/><br/><strong>ET Bionic Down</strong> delivers soft, allergen-free insulation.</p><p>Wrapped in a <strong>3-layer Dermizax® waterproof shell</strong>, it blocks rain, snow, and wind.</p><p><strong>Extreme weather. Made easy.</strong></p>",
             "target_tab": "description"
@@ -337,7 +337,7 @@
           "settings": {
             "image_desktop": "shopify://shop_images/5.waterproof.jpg",
             "image_mobile": "shopify://shop_images/5.waterproof-m.jpg",
-            "margin_top": 0,
+            "margin_top": 24,
             "margin_bottom": 32,
             "padding_x_desktop": 0,
             "padding_x_mobile": 0,
@@ -472,7 +472,7 @@
             "subheading": "NASA-Grade Aerogel Back Panel",
             "text": "<p>The back panel is insulated with <strong>Aerogel-infused microfibers</strong>, inspired by the same technology used in <strong>NASA aerospace insulation</strong>.Nicknamed “solid smoke,” Aerogel is the <strong>world’s lightest solid</strong> — a nano-porous structure that traps air better than any other material on Earth.</p>",
             "target_tab": "description",
-            "margin_top": 72,
+            "margin_top": 0,
             "margin_bottom": 0
           }
         },
