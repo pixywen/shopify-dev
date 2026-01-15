@@ -972,6 +972,23 @@
         "ai_gen_block_de09eb8_bBKJi9"
       ],
       "settings": {}
+    },
+    "video_QrdAnN": {
+      "type": "video",
+      "disabled": true,
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/11-08 Alpargali 棉服-完整版_da1cf748-7092-486f-9cbf-bc4e61add2a0.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -997,6 +1014,7 @@
     "17623291379c48e057",
     "1767690491d9709aed",
     "17676910098a7c8d7c",
-    "176769188581344e59"
+    "176769188581344e59",
+    "video_QrdAnN"
   ]
 }
