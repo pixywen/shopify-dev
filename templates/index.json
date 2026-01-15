@@ -978,9 +978,9 @@
       "name": "GG-通用视频横幅",
       "settings": {
         "small_heading_above": "",
-        "heading": "Gear for Every Adventure",
-        "small_heading_below": "From freezing cold to rainy days, Alpargali has you covered.",
-        "button_label": "SHOP NOW",
+        "heading": "",
+        "small_heading_below": "",
+        "button_label": "",
         "button_link": "",
         "image": "shopify://shop_images/16-1_Outdoor_Exploration.jpg",
         "video": "shopify://files/videos/20260115-015456.mp4",
