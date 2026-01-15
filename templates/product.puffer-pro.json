@@ -550,6 +550,7 @@
         },
         "image_banner_agnmpQ": {
           "type": "image_banner",
+          "disabled": true,
           "settings": {
             "image_desktop": "shopify://shop_images/16.situation.jpg",
             "image_mobile": "shopify://shop_images/16.situation-m.jpg",
