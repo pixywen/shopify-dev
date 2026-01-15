@@ -975,6 +975,7 @@
     },
     "gg_image_banner_common_xkbPDW": {
       "type": "gg-image-banner-common",
+      "disabled": true,
       "name": "GG-通用视频横幅",
       "settings": {
         "small_heading_above": "",
