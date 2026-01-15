@@ -262,6 +262,44 @@
     "gg_product_detail_Mg4rJH": {
       "type": "gg-product-detail",
       "blocks": {
+        "carousel_fhAyVL": {
+          "type": "carousel",
+          "settings": {
+            "title": "",
+            "image_1": "shopify://shop_images/16-1_Outdoor_Exploration.jpg",
+            "caption_1": "Outdoor Exploration",
+            "hover_text_1": "",
+            "image_2": "shopify://shop_images/16-1City_Commutes_Urban_Life.jpg",
+            "caption_2": "City Commutes & Urban Life",
+            "hover_text_2": "",
+            "image_3": "shopify://shop_images/16-1Skiing_in_Alpine_Conditions.jpg",
+            "caption_3": "Skiing in Alpine Conditions",
+            "hover_text_3": "",
+            "image_4": "shopify://shop_images/16-2Traveling_Between_Climates.jpg",
+            "caption_4": "Traveling Between Climate",
+            "hover_text_4": "",
+            "caption_5": "",
+            "hover_text_5": "",
+            "caption_6": "Left Mesh Pouch",
+            "hover_text_6": "",
+            "caption_7": "Left Forearm Pocket",
+            "hover_text_7": "",
+            "caption_8": "Detachable  Snow Skirt",
+            "hover_text_8": "",
+            "caption_9": "Dual Adjustment Hood System",
+            "hover_text_9": "",
+            "caption_10": "Underarm &  Back Ventilation",
+            "hover_text_10": "",
+            "caption_11": "Reflective  Details",
+            "hover_text_11": "",
+            "caption_12": "Soft Brushed Collar",
+            "hover_text_12": "",
+            "autoplay_speed": 8,
+            "target_tab": "description",
+            "margin_top": 40,
+            "margin_bottom": 100
+          }
+        },
         "image_banner_6EqhKf": {
           "type": "image_banner",
           "settings": {
@@ -699,6 +737,7 @@
         }
       },
       "block_order": [
+        "carousel_fhAyVL",
         "image_banner_6EqhKf",
         "content_block_MGACxw",
         "image_banner_Me8tAB",
