@@ -1,0 +1,225 @@
+.gg-banner-container--home-video {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  min-height: 100px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  max-width: none;
+}
+
+.gg-banner-image--home-video,
+.gg-banner-video--home-video {
+  width: 100%;
+  height: auto;
+}
+
+.gg-banner-image--home-video {
+  position: relative;
+  z-index: 1;
+}
+
+.gg-banner-video--home-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+}
+
+.gg-banner-video--home-video.video-active {
+  position: relative;
+  height: auto;
+}
+
+.banner__media-image--home-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* 移动端和桌面端显示控制 */
+@media screen and (min-width: 750px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .desktop-only {
+    display: none !important;
+  }
+}
+
+/* 确保视频和iframe正确填充容器 */
+.gg-banner-video--home-video iframe,
+.gg-banner-video--home-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gg-banner-video--home-video:not(.video-active) iframe,
+.gg-banner-video--home-video:not(.video-active) video {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* 确保内容始终在最上层 */
+.gg-banner-content--home-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.gg-banner-container--home-video::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* 当不显示内容时，隐藏遮罩层 */
+.gg-banner-container--home-video[data-no-overlay]::after {
+  display: none;
+}
+
+.small-heading-above--home-video {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+.banner-heading--home-video {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 16px;
+  color: #FFF;
+  letter-spacing: 0px;
+}
+
+.small-heading-below--home-video {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner-button-wrapper--home-video {
+  margin-top: 32px;
+}
+
+.banner-button-wrapper--home-video .button--home-video {
+  width: 212.96px;
+  height: 54.84px;
+  display: inline-block;
+  padding: 14px 28px;
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  position: relative;
+  line-height: 26px;
+}
+.banner-button-wrapper--home-video .button--home-video svg {
+  width: 11px;
+  height: 13px;
+  position: absolute;
+  top: 21px;
+  bottom: 21px;
+  right: 24px;
+}
+.banner-button-wrapper--home-video .button--home-video svg path {
+  fill: #FFF;
+}
+
+.banner-button-wrapper--home-video .button--home-video:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transform: translateY(-2px);
+}
+.banner-button-wrapper--home-video .button--home-video:hover svg path {
+  fill: #000000;
+}
+
+/* 响应式样式 */
+@media screen and (max-width: 768px) {
+  .banner-heading--home-video {
+    font-size: 6.4vw;
+    margin: 0;
+  }
+
+  .small-heading-above--home-video {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+
+  .small-heading-below--home-video {
+    font-size: 16px;
+  }
+
+  .banner-button-wrapper--home-video .button--home-video {
+    padding: 1.86vw 3.2vw 1.86vw 6vw;
+    font-size: 2.4vw;
+    width: 28.4vw;
+    height: 7.33vw;
+    display: flex;
+    align-items: center;
+  }
+
+  .banner-button-wrapper--home-video .button--home-video svg {
+    width: 1.46vw;
+    top: 0;
+    bottom: 0;
+    right: 3vw;
+    margin: auto;
+  }
+
+  .banner-button-wrapper--home-video {
+    margin-top: 4.39vw;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gg-banner-content--home-video {
+    padding: 0 15px;
+  }
+
+  .small-heading-above--home-video {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .small-heading-below--home-video {
+    font-size: 14px;
+  }
+} 
