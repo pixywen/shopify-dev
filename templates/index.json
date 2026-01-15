@@ -973,21 +973,18 @@
       ],
       "settings": {}
     },
-    "video_QrdAnN": {
-      "type": "video",
-      "disabled": true,
-      "name": "t:sections.video.presets.name",
+    "gg_image_banner_common_xkbPDW": {
+      "type": "gg-image-banner-common",
+      "name": "GG-通用视频横幅",
       "settings": {
-        "heading": "Video",
-        "heading_size": "h1",
-        "enable_video_looping": true,
-        "video": "shopify://files/videos/11-08 Alpargali 棉服-完整版_da1cf748-7092-486f-9cbf-bc4e61add2a0.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "small_heading_above": "",
+        "heading": "Gear for Every Adventure",
+        "small_heading_below": "From freezing cold to rainy days, Alpargali has you covered.",
+        "button_label": "SHOP NOW",
+        "button_link": "",
+        "image": "shopify://shop_images/16-1_Outdoor_Exploration.jpg",
+        "video": "shopify://files/videos/20260115-015456.mp4",
+        "description": ""
       }
     }
   },
@@ -1015,6 +1012,6 @@
     "1767690491d9709aed",
     "17676910098a7c8d7c",
     "176769188581344e59",
-    "video_QrdAnN"
+    "gg_image_banner_common_xkbPDW"
   ]
 }
