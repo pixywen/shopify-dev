@@ -95,6 +95,7 @@
       "blocks": {
         "ai_gen_block_28bafcf_czWwk6": {
           "type": "ai_gen_block_28bafcf",
+          "disabled": true,
           "settings": {
             "desktop_height": 500,
             "desktop_image_fit": "cover",
