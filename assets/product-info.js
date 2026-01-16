@@ -81,12 +81,13 @@ if (!customElements.get('product-info')) {
 
       resetProductFormState() {
         const productForm = this.productForm;
-        productForm?.toggleSubmitButton(true);
+        productForm?.setVariantUpdating(true);
         productForm?.handleErrorMessage();
       }
 
       handleSwapProduct(productUrl, updateFullPage) {
         return (html) => {
+          this.productForm?.setVariantUpdating(false);
           this.productModal?.remove();
 
           const selector = updateFullPage ? "product-info[id^='MainProduct']" : 'product-info';
@@ -132,6 +133,7 @@ if (!customElements.get('product-info')) {
             if (error.name === 'AbortError') {
               console.log('Fetch aborted by user');
             } else {
+              this.productForm?.setVariantUpdating(false);
               console.error(error);
             }
           });
@@ -171,6 +173,7 @@ if (!customElements.get('product-info')) {
           this.updateVariantInputs(variant?.id);
 
           if (!variant) {
+            this.productForm?.setVariantUpdating(false);
             this.setUnavailable();
             return;
           }
@@ -196,6 +199,7 @@ if (!customElements.get('product-info')) {
           this.querySelector(`#Quantity-Rules-${this.dataset.section}`)?.classList.remove('hidden');
           this.querySelector(`#Volume-Note-${this.dataset.section}`)?.classList.remove('hidden');
 
+          this.productForm?.setVariantUpdating(false);
           this.productForm?.toggleSubmitButton(
             html.getElementById(`ProductSubmitButton-${this.sectionId}`)?.hasAttribute('disabled') ?? true,
             window.variantStrings.soldOut

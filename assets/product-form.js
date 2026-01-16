@@ -19,6 +19,7 @@ if (!customElements.get('product-form')) {
 
       onSubmitHandler(evt) {
         evt.preventDefault();
+        if (this.submitButton.hasAttribute('data-variant-updating')) return;
         if (this.submitButton.getAttribute('aria-disabled') === 'true') return;
 
         this.handleErrorMessage();
@@ -122,6 +123,14 @@ if (!customElements.get('product-form')) {
         } else {
           this.submitButton.removeAttribute('disabled');
           this.submitButtonText.textContent = window.variantStrings.addToCart;
+        }
+      }
+
+      setVariantUpdating(isUpdating = true) {
+        if (isUpdating) {
+          this.submitButton.setAttribute('data-variant-updating', 'true');
+        } else {
+          this.submitButton.removeAttribute('data-variant-updating');
         }
       }
 

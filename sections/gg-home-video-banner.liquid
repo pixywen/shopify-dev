@@ -1,0 +1,260 @@
+<!-- GG-首页-视频横幅 -->
+<!-- 中段视频横幅 -->
+
+{{ 'gg-home-video-banner.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign section_id = 'banner-' | append: section.id
+  assign show_content = section.settings.show_content
+-%}
+
+<div class="gg-banner-container--home-video" 
+     data-section-id="{{ section_id }}"
+     {% if show_content == false %}data-no-overlay{% endif %}>
+  
+  {%- if show_content -%}
+  <div class="gg-banner-content--home-video">
+    {%- if section.settings.small_heading_above != blank -%}
+      <p class="small-heading-above--home-video">{{ section.settings.small_heading_above | escape }}</p>
+    {%- endif -%}
+
+    {%- if section.settings.heading != blank -%}
+      <h2 class="banner-heading--home-video">{{ section.settings.heading | escape }}</h2>
+    {%- endif -%}
+
+    {%- if section.settings.small_heading_below != blank -%}
+      <p class="small-heading-below--home-video">{{ section.settings.small_heading_below | escape }}</p>
+    {%- endif -%}
+
+    {%- if section.settings.button_label != blank -%}
+      <div class="banner-button-wrapper--home-video">
+        <a href="{{ section.settings.button_link }}" class="button--home-video">
+          {{ section.settings.button_label | escape }}
+          {{ 'icon-button-arrow.svg' | inline_asset_content }}
+        </a>
+      </div>
+    {%- endif -%}
+  </div>
+  {%- endif -%}
+
+  {%- if section.settings.image != blank or section.settings.mobile_image != blank -%}
+    <div class="gg-banner-image--home-video" data-section-id="{{ section_id }}">
+      {%- assign image_height = section.settings.image_height | default: 'medium' -%}
+      
+      {%- if section.settings.image != blank -%}
+        {{ section.settings.image | image_url: width: 1920 | image_tag:
+          loading: 'eager',
+          width: section.settings.image.width,
+          height: section.settings.image.height,
+          class: "banner__media-image--home-video desktop-only",
+          sizes: "100vw"
+        }}
+      {%- endif -%}
+
+      {%- if section.settings.mobile_image != blank -%}
+        {{ section.settings.mobile_image | image_url: width: 750 | image_tag:
+          loading: 'eager',
+          width: section.settings.mobile_image.width,
+          height: section.settings.mobile_image.height,
+          class: "banner__media-image--home-video mobile-only",
+          sizes: "(max-width: 750px) 100vw, 750px"
+        }}
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
+  {%- if section.settings.video != blank or section.settings.mobile_video != blank -%}
+    <div class="gg-banner-video--home-video" 
+      data-section-id="{{ section_id }}" 
+      style="display: none;"
+      data-desktop-video="{{ section.settings.video | json | escape }}"
+      data-mobile-video="{{ section.settings.mobile_video | json | escape }}">
+      <div class="desktop-only"></div>
+      <div class="mobile-only"></div>
+    </div>
+  {%- endif -%}
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const sectionId = '{{ section_id }}';
+    const imageContainer = document.querySelector('.gg-banner-image--home-video[data-section-id="' + sectionId + '"]');
+    const videoContainer = document.querySelector('.gg-banner-video--home-video[data-section-id="' + sectionId + '"]');
+
+    
+
+    if (!videoContainer) return;
+    
+    let currentVideo = null;
+    let observer = null;
+    
+    function loadVideo() {
+      const isMobile = window.matchMedia('(max-width: 749px)').matches;
+      const videoData = isMobile 
+        ? JSON.parse(videoContainer.dataset.mobileVideo || '{}')
+        : JSON.parse(videoContainer.dataset.desktopVideo || '{}');
+      
+      const container = isMobile 
+        ? videoContainer.querySelector('.mobile-only')
+        : videoContainer.querySelector('.desktop-only');
+      
+      if (!container) return;
+      if (!videoData.sources) return;
+      
+      // 清理之前的视频和观察者
+      if (currentVideo) {
+        currentVideo.pause();
+        currentVideo.remove();
+        currentVideo = null;
+      }
+      if (observer) {
+        observer.disconnect();
+        observer = null;
+      }
+      
+      // 创建新的视频元素
+      const video = document.createElement('video');
+      video.src = videoData.sources[1].url;
+      video.autoplay = true;
+      video.loop = true;
+      video.muted = true;
+      video.playsInline = true;
+      video.controls = false;
+      
+      container.innerHTML = '';
+      container.appendChild(video);
+      currentVideo = video;
+      
+      // 初始隐藏视频容器
+      videoContainer.style.opacity = '0';
+      videoContainer.style.display = 'block';
+
+      // 视频加载完成后显示
+      video.addEventListener('loadeddata', function() {
+        videoContainer.style.transition = 'opacity 0.3s ease';
+        videoContainer.style.opacity = '1';
+        videoContainer.classList.add('video-active');
+        if (imageContainer) {
+          imageContainer.style.display = 'none';
+        }
+      });
+      
+      // 错误处理
+      video.addEventListener('error', function(e) {
+        console.error('Video loading error:', e);
+        videoContainer.style.display = 'none';
+        videoContainer.classList.remove('video-active');
+        if (imageContainer) {
+          imageContainer.style.display = 'block';
+        }
+      });
+
+      // 创建新的 Intersection Observer
+      observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            video.play().catch(e => console.error('Video play error:', e));
+          } else {
+            video.pause();
+          }
+        });
+      }, {
+        threshold: 0.3
+      });
+      observer.observe(videoContainer);
+    }
+
+    // 等待页面完全加载后再加载视频
+    window.addEventListener('load', loadVideo);
+    
+    // 处理窗口大小改变
+    let resizeTimer;
+    const mediaQuery = window.matchMedia('(max-width: 749px)');
+    mediaQuery.addListener(function() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(loadVideo, 250);
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "GG-首页-视频横幅",
+  "settings": [
+    {
+      "type": "header",
+      "content": "横幅内容"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_content",
+      "label": "显示内容（标题、按钮和蒙层）",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "small_heading_above",
+      "label": "上方小标题",
+      "default": "Trusted By 1,500 Customers"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "主标题",
+      "default": "Gear for Every Adventure"
+    },
+    {
+      "type": "text",
+      "id": "small_heading_below",
+      "label": "下方小标题",
+      "default": "From freezing cold to rainy days, Alpargali has you covered."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "按钮文本",
+      "default": "SHOP NOW"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "按钮链接"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "桌面端横幅图片"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "移动端横幅图片"
+    },
+    {
+      "type": "header",
+      "content": "视频设置"
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "桌面端视频文件"
+    },
+    {
+      "type": "video",
+      "id": "mobile_video",
+      "label": "移动端视频文件"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "视频描述",
+      "info": "用于无障碍访问的描述"
+    }
+  ],
+  "presets": [
+    {
+      "name": "GG-首页-视频横幅"
+    }
+  ]
+}
+{% endschema %} 
