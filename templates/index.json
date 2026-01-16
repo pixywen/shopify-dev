@@ -985,6 +985,21 @@
         "video": "shopify://files/videos/20260115-015456.mp4",
         "description": ""
       }
+    },
+    "gg_home_video_banner_URhYWJ": {
+      "type": "gg-home-video-banner",
+      "name": "GG-首页-视频横幅",
+      "settings": {
+        "show_content": false,
+        "small_heading_above": "Trusted By 1,500 Customers",
+        "heading": "Gear for Every Adventure",
+        "small_heading_below": "From freezing cold to rainy days, Alpargali has you covered.",
+        "button_label": "SHOP NOW",
+        "button_link": "",
+        "video": "shopify://files/videos/pro-pc.mp4",
+        "mobile_video": "shopify://files/videos/pro-m1.mp4",
+        "description": ""
+      }
     }
   },
   "order": [
@@ -1011,6 +1026,7 @@
     "1767690491d9709aed",
     "17676910098a7c8d7c",
     "176769188581344e59",
-    "gg_image_banner_common_xkbPDW"
+    "gg_image_banner_common_xkbPDW",
+    "gg_home_video_banner_URhYWJ"
   ]
 }
