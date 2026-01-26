@@ -354,9 +354,9 @@
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
             "image": "shopify://shop_images/6.Dermizax_membrane.jpg",
-            "heading": "Dermizax®  Waterproof-Breathable Shell",
+            "heading": "Recycled Air Loft Fill — Warmth Without the Bulk",
             "subheading": "",
-            "text": "<p>Shell featuring <strong>Japanese Dermizax® waterproof-breathable membrane</strong> — the same elite technology trusted in high-altitude alpine gear.</p>",
+            "text": "<p><strong>100% Recycled Polyester Fiberfill;</strong> Insulated with high-loft Recycled Air Loft fibers, this jacket delivers down-like warmth — minus the weight and maintenance.</p>",
             "target_tab": "description",
             "margin_top": 56,
             "margin_bottom": 0
@@ -381,27 +381,13 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/8.360_seam.jpg",
+            "image": "shopify://shop_images/5.Inner_Comfort_System.jpg",
             "heading": "360° Seam-Sealed Waterproofing",
             "subheading": "",
             "text": "<p>Built with <strong>fully seam-sealed construction</strong>, the Alpargali Puffer Pro delivers <strong>360° waterproof protection</strong>, preventing moisture from entering through seams and stitching — keeping you dry in rain, snow, and wet conditions.</p>",
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 0
-          }
-        },
-        "collage_zR94Hn": {
-          "type": "collage",
-          "settings": {
-            "desktop_layout": "image_right",
-            "mobile_layout": "image_top",
-            "image": "shopify://shop_images/9.windproof.jpg",
-            "heading": "Windproof 3-Layer Dermizax® Shell",
-            "subheading": "",
-            "text": "<p>Its windproof <strong>3-layer Dermizax® shell </strong>seals out cutting winds, preserving warmth and comfort even in extreme cold.</p>",
-            "target_tab": "description",
-            "margin_top": 0,
-            "margin_bottom": 100
           }
         },
         "image_banner_BKFgNX": {
@@ -647,7 +633,6 @@
         "collage_byQmgc",
         "collage_dLqxPW",
         "collage_WXNq9Y",
-        "collage_zR94Hn",
         "image_banner_BKFgNX",
         "content_block_DPjhDm",
         "collage_P3AKrn",
