@@ -1,0 +1,825 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gg_breadcrumb_yr7zeq": {
+      "type": "gg-breadcrumb",
+      "settings": {}
+    },
+    "blocks_eweqUy": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_28bafcf_DRTtCU": {
+          "type": "ai_gen_block_28bafcf",
+          "settings": {
+            "desktop_height": 350,
+            "desktop_image_fit": "cover",
+            "mobile_height": 200,
+            "mobile_image_fit": "contain",
+            "heading_size": 48,
+            "subheading_size": 18,
+            "show_arrows": false,
+            "arrow_size": 50,
+            "arrow_background": "#ffffff",
+            "arrow_color": "#121212",
+            "show_dots": false,
+            "dot_size": 10,
+            "dot_color": "#ffffff",
+            "autoplay": false,
+            "autoplay_speed": 5,
+            "slide_1_enabled": true,
+            "slide_1_media_type": "image",
+            "slide_1_desktop_image": "shopify://shop_images/detail-pc_ce77043c-fcca-4bca-a870-83135a801aff.jpg",
+            "slide_1_mobile_image": "shopify://shop_images/detail-m.jpg",
+            "slide_1_desktop_video": "",
+            "slide_1_mobile_video": "",
+            "slide_1_link": "",
+            "slide_1_heading": "",
+            "slide_1_subheading": "",
+            "slide_1_text_position": "middle_left",
+            "slide_1_text_align": "left",
+            "slide_1_text_color": "#ffffff",
+            "slide_2_enabled": false,
+            "slide_2_media_type": "image",
+            "slide_2_desktop_video": "",
+            "slide_2_mobile_video": "",
+            "slide_2_link": "",
+            "slide_2_heading": "",
+            "slide_2_subheading": "",
+            "slide_2_text_position": "middle_left",
+            "slide_2_text_align": "left",
+            "slide_2_text_color": "#ffffff",
+            "slide_3_enabled": false,
+            "slide_3_media_type": "image",
+            "slide_3_desktop_video": "",
+            "slide_3_mobile_video": "",
+            "slide_3_link": "",
+            "slide_3_heading": "",
+            "slide_3_subheading": "",
+            "slide_3_text_position": "middle_left",
+            "slide_3_text_align": "left",
+            "slide_3_text_color": "#ffffff",
+            "slide_4_enabled": false,
+            "slide_4_media_type": "image",
+            "slide_4_desktop_video": "",
+            "slide_4_mobile_video": "",
+            "slide_4_link": "",
+            "slide_4_heading": "",
+            "slide_4_subheading": "",
+            "slide_4_text_position": "middle_left",
+            "slide_4_text_align": "left",
+            "slide_4_text_color": "#ffffff",
+            "slide_5_enabled": false,
+            "slide_5_media_type": "image",
+            "slide_5_desktop_video": "",
+            "slide_5_mobile_video": "",
+            "slide_5_link": "",
+            "slide_5_heading": "",
+            "slide_5_subheading": "",
+            "slide_5_text_position": "middle_left",
+            "slide_5_text_align": "left",
+            "slide_5_text_color": "#ffffff"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_28bafcf_DRTtCU"
+      ],
+      "disabled": true,
+      "name": "Carousel banner",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "square"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_ex_c7QqTL": {
+          "type": "buy_buttons_ex",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "divider_3i4EF3": {
+          "type": "divider",
+          "settings": {
+            "margin_top": 20,
+            "margin_bottom": 20
+          }
+        },
+        "gg_icon_text_grid_TGCbKj": {
+          "type": "gg-icon-text-grid",
+          "settings": {
+            "icon_1": "shopify://shop_images/product-block-001-001.svg",
+            "text_1": "$169  Free Shipping",
+            "icon_2": "shopify://shop_images/product-block-001-002.svg",
+            "text_2": "Payment Security",
+            "icon_3": "shopify://shop_images/product-block-001-003.svg",
+            "text_3": "Eco-Friendly Packaging",
+            "text_4": ""
+          }
+        },
+        "divider_FHRHjn": {
+          "type": "divider",
+          "settings": {
+            "margin_top": 20,
+            "margin_bottom": 20
+          }
+        },
+        "gg_heading_image_Lh8bEX": {
+          "type": "gg-heading-image",
+          "settings": {
+            "heading": "As Featured In:",
+            "image": "shopify://shop_images/product-info-b-hi-01_f193a6ad-01f8-4116-b5f2-e3d38b60c9a9.png",
+            "image_mobile": "shopify://shop_images/product-info-b-hi-01-m.png"
+          }
+        },
+        "complementary_MMXapa": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs Great With:",
+            "make_collapsible_row": false,
+            "icon": "none",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": true
+          }
+        },
+        "collapsible_tab_yAPYME": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Details",
+            "icon": "none",
+            "content": "<p>Engineered for extreme cold down to <strong>-40°</strong>, the <strong>Alpargali Puffer Pro</strong> delivers expedition-level warmth in a lightweight, everyday-ready design.</p><p>A dual-insulation system combines <strong>ET Bionic Down</strong> with <strong>Aerogel Air Fiber Clusters</strong>, providing exceptional warmth-to-weight performance while staying soft and flexible in sub-zero conditions.</p><p>The <strong>3-layer technical shell with Japanese Dermizax® membrane</strong> offers <strong>20K waterproof / 10K moisture management</strong>, blocking wind, rain, and snow.</p><p>Finished with a <strong>graphene-lined interior</strong> to reflect heat, resist bacteria, and keep you comfortable from city streets to mountain trails.</p>",
+            "page": "",
+            "image_alt": "",
+            "image_width": 50
+          }
+        },
+        "collapsible_tab_GyWCqX": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Specs",
+            "icon": "none",
+            "content": "<p><strong>Shell:</strong> 3-layer shell with Japanese Dermizax®</p><p><br/><strong>Insulation:</strong> ET Bionic Down + Aerogel<br/></p><p><br/><strong>Thickness:</strong> Ultra-light, flexible insulation<br/></p><p><br/><strong>Weight:</strong> Lightweight warmth-to-weight design<br/></p><p><br/><strong>Breathability:</strong> 10K moisture management<br/></p><p><br/><strong>Resistance:</strong> Wind & weather resistant<br/></p><p><br/><strong>Waterproof Rating:</strong> 20K waterproof<br/></p><p><br/><strong>Pockets:</strong> Functional multi-pocket design<br/></p><p><br/><strong>Suggested Temperature Range:</strong> Down to -40°<br/></p><p><br/><strong>Packability:</strong> Compressible for travel</p>",
+            "page": "",
+            "image_alt": "",
+            "image_width": 50
+          }
+        },
+        "collapsible_tab_4bGyQa": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care",
+            "icon": "none",
+            "content": "<p>Hand wash.</p><p>Maximum temperature 40C.</p><p>Do not bleach.</p><p>Do not tumble dry.</p><p>Do not iron.</p><p>Do not dry clean.</p><p>Line dry in shade</p>",
+            "page": "",
+            "image": "shopify://shop_images/care-pro.png",
+            "image_alt": "",
+            "image_width": 50
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons_ex_c7QqTL",
+        "divider_3i4EF3",
+        "gg_icon_text_grid_TGCbKj",
+        "divider_FHRHjn",
+        "gg_heading_image_Lh8bEX",
+        "complementary_MMXapa",
+        "collapsible_tab_yAPYME",
+        "collapsible_tab_GyWCqX",
+        "collapsible_tab_4bGyQa"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12,
+        "size_guide_image": "shopify://shop_images/size-pro1.jpg"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "gg_product_detail_Mg4rJH": {
+      "type": "gg-product-detail",
+      "blocks": {
+        "carousel_fhAyVL": {
+          "type": "carousel",
+          "settings": {
+            "title": "",
+            "image_1": "shopify://shop_images/16-1_Outdoor_Exploration.jpg",
+            "caption_1": "Outdoor Exploration",
+            "hover_text_1": "",
+            "image_2": "shopify://shop_images/16-1City_Commutes_Urban_Life.jpg",
+            "caption_2": "City Commutes & Urban Life",
+            "hover_text_2": "",
+            "image_3": "shopify://shop_images/16-1Skiing_in_Alpine_Conditions.jpg",
+            "caption_3": "Skiing in Alpine Conditions",
+            "hover_text_3": "",
+            "image_4": "shopify://shop_images/16-2Traveling_Between_Climates.jpg",
+            "caption_4": "Traveling Between Climates",
+            "hover_text_4": "",
+            "caption_5": "",
+            "hover_text_5": "",
+            "caption_6": "Left Mesh Pouch",
+            "hover_text_6": "",
+            "caption_7": "Left Forearm Pocket",
+            "hover_text_7": "",
+            "caption_8": "Detachable  Snow Skirt",
+            "hover_text_8": "",
+            "caption_9": "Dual Adjustment Hood System",
+            "hover_text_9": "",
+            "caption_10": "Underarm &  Back Ventilation",
+            "hover_text_10": "",
+            "caption_11": "Reflective  Details",
+            "hover_text_11": "",
+            "caption_12": "Soft Brushed Collar",
+            "hover_text_12": "",
+            "autoplay_speed": 8,
+            "target_tab": "description",
+            "margin_top": 40,
+            "margin_bottom": 100
+          }
+        },
+        "image_banner_6EqhKf": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/1.function-pc.jpg",
+            "image_mobile": "shopify://shop_images/1.function-m.jpg",
+            "margin_top": 32,
+            "margin_bottom": 0,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "content_block_MGACxw": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 0,
+            "margin_bottom": 40,
+            "heading": "",
+            "content": "<p>At <strong>-40°</strong>, Celsius and Fahrenheit meet — and so does the <strong>Alpargali Puffer Pro</strong>.</p><p>Built to expedition standards, it combines <strong>NASA-inspired insulation</strong> with lightweight comfort. <strong>ET Bionic Down™</strong> and <strong>Aerogel fibers</strong> deliver exceptional warmth without bulk.</p><p>A <strong>Dermizax® waterproof shell </strong>and <strong>graphene lining</strong> keep you dry, warm, and comfortable — from city streets to mountain trails.</p>",
+            "target_tab": "description"
+          }
+        },
+        "image_banner_Me8tAB": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/2.compare-pc.jpg",
+            "image_mobile": "shopify://shop_images/2.compare-m.jpg",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "image_banner_9AcLc8": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/3.icon-pc.png",
+            "image_mobile": "shopify://shop_images/3.icon-m.png",
+            "margin_top": 20,
+            "margin_bottom": 32,
+            "padding_x_desktop": 25,
+            "padding_x_mobile": 5,
+            "target_tab": "description"
+          }
+        },
+        "image_banner_TedKYU": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/15.pocket.jpg",
+            "image_mobile": "shopify://shop_images/15.pocket-m.jpg",
+            "margin_top": 28,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "carousel_8hkzfc": {
+          "type": "carousel",
+          "settings": {
+            "title": "",
+            "image_1": "shopify://shop_images/15-1.jpg",
+            "caption_1": "Right Arm Pocket",
+            "hover_text_1": "",
+            "image_2": "shopify://shop_images/15-2.jpg",
+            "caption_2": "Two Hand-Warmer Pockets",
+            "hover_text_2": "",
+            "image_3": "shopify://shop_images/15-3.jpg",
+            "caption_3": "Left Chest  Pocket",
+            "hover_text_3": "",
+            "image_4": "shopify://shop_images/15-4.jpg",
+            "caption_4": "Built-in Cuff Gloves",
+            "hover_text_4": "",
+            "image_5": "shopify://shop_images/15-5.jpg",
+            "caption_5": "Right Chest Zip Pocket",
+            "hover_text_5": "",
+            "image_6": "shopify://shop_images/15-6.jpg",
+            "caption_6": "Left Mesh Pouch",
+            "hover_text_6": "",
+            "image_7": "shopify://shop_images/15-7.jpg",
+            "caption_7": "Left Forearm Pocket",
+            "hover_text_7": "",
+            "image_8": "shopify://shop_images/15-8.jpg",
+            "caption_8": "Detachable  Snow Skirt",
+            "hover_text_8": "",
+            "image_9": "shopify://shop_images/15-9.jpg",
+            "caption_9": "Dual Adjustment Hood System",
+            "hover_text_9": "",
+            "image_10": "shopify://shop_images/15-10.jpg",
+            "caption_10": "Underarm &  Back Ventilation",
+            "hover_text_10": "",
+            "image_11": "shopify://shop_images/15-11.jpg",
+            "caption_11": "Reflective  Details",
+            "hover_text_11": "",
+            "image_12": "shopify://shop_images/15-12.jpg",
+            "caption_12": "Soft Brushed Collar",
+            "hover_text_12": "",
+            "autoplay_speed": 8,
+            "target_tab": "description",
+            "margin_top": 40,
+            "margin_bottom": 100
+          }
+        },
+        "image_banner_MFJcGH": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/4.structure-pc.jpg",
+            "image_mobile": "shopify://shop_images/4.structure-m.jpg",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "content_block_KAzBzN": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 0,
+            "margin_bottom": 40,
+            "heading": "",
+            "content": "<p>Imagine a jacket powered by <strong>Aerogel</strong>, <strong>Graphene</strong>, and <strong>ET Bionic Down</strong> — engineered for exceptional warmth without bulk.</p><p><strong>Aerogel Air Fibers</strong> lock in heat in cold, wet conditions.</p><p><strong>Graphene lining</strong> reflects warmth and stays fresh.</p><p><strong>ET Bionic Down</strong> delivers soft, allergen-free insulation.</p><p>Wrapped in a <strong>3-layer Dermizax® waterproof shell</strong>, it blocks rain, snow, and wind.</p>",
+            "target_tab": "description"
+          }
+        },
+        "image_banner_kY3Le9": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/5.waterproof.jpg",
+            "image_mobile": "shopify://shop_images/5.waterproof-m.jpg",
+            "margin_top": 24,
+            "margin_bottom": 0,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "content_block_xxPja6": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 0,
+            "margin_bottom": 40,
+            "heading": "",
+            "content": "<p>The Alpargali Puffer Pro is engineered with a <strong>3-layer technical shell </strong>featuring Japanese<strong> Dermizax® waterproof-breathable membrane</strong> — the same elite technology trusted in high-altitude alpine gear.</p><p> Every seam is fully sealed, creating an all-encompassing barrier that blocks out wetness, snow, and icy wind.</p><p>With a <strong>20,000+ mm waterproof</strong> rating and 10,000+ g/m²/24h Moisture Release, it keeps you perfectly dry while letting moisture escape — no overheating, no stuffiness, just lasting comfort.</p>",
+            "target_tab": "description"
+          }
+        },
+        "collage_byQmgc": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/6.Dermizax_membrane.jpg",
+            "heading": "Dermizax®  Waterproof-Breathable Shell",
+            "subheading": "",
+            "text": "<p>Shell featuring <strong>Japanese Dermizax® waterproof-breathable membrane</strong> — the same elite technology trusted in high-altitude alpine gear.</p>",
+            "target_tab": "description",
+            "margin_top": 56,
+            "margin_bottom": 0
+          }
+        },
+        "collage_dLqxPW": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_right",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/7.fluorine.jpg",
+            "heading": "Eco-Friendly Water Repellent Coating",
+            "subheading": "",
+            "text": "<p>Treated with an <strong>eco-friendly, fluorine-free water repellent coating</strong>, this jacket sheds moisture without harmful chemicals — delivering reliable protection while remaining environmentally responsible.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "collage_WXNq9Y": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/8.360_seam.jpg",
+            "heading": "360° Seam-Sealed Waterproofing",
+            "subheading": "",
+            "text": "<p>Built with <strong>fully seam-sealed construction</strong>, the Alpargali Puffer Pro delivers <strong>360° waterproof protection</strong>, preventing moisture from entering through seams and stitching — keeping you dry in rain, snow, and wet conditions.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "collage_zR94Hn": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_right",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/9.windproof.jpg",
+            "heading": "Windproof 3-Layer Dermizax® Shell",
+            "subheading": "",
+            "text": "<p>Its windproof <strong>3-layer Dermizax® shell </strong>seals out cutting winds, preserving warmth and comfort even in extreme cold.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 100
+          }
+        },
+        "image_banner_BKFgNX": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/10.INSULATION.jpg",
+            "image_mobile": "shopify://shop_images/10.INSULATION-m.jpg",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "content_block_DPjhDm": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 0,
+            "margin_bottom": 40,
+            "heading": "",
+            "content": "<p>The <strong>Alpargali Puffer Pro</strong> combines two advanced insulations for maximum warmth without bulk.</p><p><strong>ET Bionic Down</strong> in the front, sleeves, and hood is lightweight, soft, warmer than natural down, and hypoallergenic.<br/><br/><strong>Aerogel Clusters</strong> in the back panel provide aerospace-grade thermal protection, resisting heat loss in cold and damp conditions.</p><p>Together, they deliver lasting warmth — <strong>lighter, softer, and warmer than down</strong>.</p>",
+            "target_tab": "description"
+          }
+        },
+        "collage_P3AKrn": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/11.40.jpg",
+            "heading": "-40°C / -40°F Extreme Cold Protection",
+            "subheading": "",
+            "text": "<p>Engineered to perform where other puffers fail, the <strong>Alpargali Puffer Pro</strong> keeps you warm and comfortable even in <strong>sub-zero conditions</strong>. Lightweight yet highly insulated, it’s designed for <strong>extreme cold without bulk</strong>.</p>",
+            "target_tab": "description",
+            "margin_top": 72,
+            "margin_bottom": 0
+          }
+        },
+        "collage_DtKjqe": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_right",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/12.ET.jpg",
+            "heading": "Integrated Physical Molding Technology",
+            "subheading": "",
+            "text": "<p>Crafted with a <strong>one-piece long-fiber construction</strong>, this process eliminates dust, allergens, and fiber shedding — keeping the jacket clean, comfortable, and durable.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "collage_EPgPxm": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/13.AIR_FIBER.jpg",
+            "heading": "NASA-Grade Aerogel Back Panel",
+            "subheading": "",
+            "text": "<p>The back panel is insulated with <strong>Aerogel-infused microfibers</strong>, inspired by the same technology used in <strong>NASA aerospace insulation</strong>.Nicknamed “solid smoke,” Aerogel is the <strong>world’s lightest solid</strong> — a nano-porous structure that traps air better than any other material on Earth.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "collage_e3Bjnd": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_right",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/14.Far-Infrared.jpg",
+            "heading": "Integrated Physical Molding Technology",
+            "subheading": "",
+            "text": "<p>Crafted with a <strong>one-piece long-fiber construction</strong>, this process eliminates dust, allergens, and fiber shedding — keeping the jacket clean, comfortable, and durable.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "image_banner_agnmpQ": {
+          "type": "image_banner",
+          "disabled": true,
+          "settings": {
+            "image_desktop": "shopify://shop_images/16.situation.jpg",
+            "image_mobile": "shopify://shop_images/16.situation-m.jpg",
+            "margin_top": 40,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "image_banner_iGmkgq": {
+          "type": "image_banner",
+          "disabled": true,
+          "settings": {
+            "image_desktop": "shopify://shop_images/aa-detail-b-ib-05.jpg",
+            "image_mobile": "shopify://shop_images/aa-detail-b-ib-05-m.jpg",
+            "margin_top": 0,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "content_block_3WRjgm": {
+          "type": "content_block",
+          "disabled": true,
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 0,
+            "margin_bottom": 48,
+            "heading": "",
+            "content": "<p>From city commutes to alpine adventures, the <strong>Alpargali Puffer Pro </strong>adapts to wherever life takes you — with the warmth of an expedition parka and the freedom of everyday wear.</p><ul><li><strong>Skiing in Alpine Conditions</strong> — Stay shielded from snow, wind, and freezing air while keeping full range of motion.</li><li><strong>Traveling Between Climates</strong> — Move effortlessly from chilly airports to tropical destinations — one jacket that adapts with you.</li><li><strong>City Commutes & Urban Life</strong> — Sleek enough for the office, smart enough for sudden rain or cold snaps.</li><li><strong>Outdoor Exploration</strong> — Waterproof, breathable, and adventure-proof — built to perform on mountain trails and rainy forests alike.</li></ul>",
+            "target_tab": "description"
+          }
+        },
+        "content_block_TnnFCM": {
+          "type": "content_block",
+          "disabled": true,
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 100,
+            "margin_bottom": 0,
+            "heading": "<p>Alpargali Aerogel Puffer Jacket VS </p><p>Graphene Lightweight Jacket</p>",
+            "content": "",
+            "target_tab": "description"
+          }
+        },
+        "image_banner_xCeUjP": {
+          "type": "image_banner",
+          "disabled": true,
+          "settings": {
+            "image_desktop": "shopify://shop_images/mianyi-001-pc.png",
+            "image_mobile": "shopify://shop_images/mianyi-001-m.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "video_RrT8Rc": {
+          "type": "video",
+          "settings": {
+            "title": "",
+            "video_desktop": "shopify://files/videos/detail-1.mp4",
+            "video_url_desktop": "",
+            "cover_desktop": "shopify://shop_images/cover-1.jpg",
+            "video_url_mobile": "",
+            "autoplay": true,
+            "loop": true,
+            "controls": true,
+            "muted": true,
+            "target_tab": "video",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x": 0
+          }
+        },
+        "video_riQjAb": {
+          "type": "video",
+          "settings": {
+            "title": "",
+            "video_desktop": "shopify://files/videos/exper-video.mp4",
+            "video_url_desktop": "",
+            "cover_desktop": "shopify://shop_images/exper-cover.jpg",
+            "video_url_mobile": "",
+            "autoplay": true,
+            "loop": true,
+            "controls": true,
+            "muted": true,
+            "target_tab": "video",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x": 0
+          }
+        },
+        "video_wmc7R9": {
+          "type": "video",
+          "settings": {
+            "title": "",
+            "video_desktop": "shopify://files/videos/pocket-video.mp4",
+            "video_url_desktop": "",
+            "cover_desktop": "shopify://shop_images/pocket-cover.jpg",
+            "video_url_mobile": "",
+            "autoplay": true,
+            "loop": true,
+            "controls": true,
+            "muted": true,
+            "target_tab": "video",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x": 0
+          }
+        },
+        "video_Uqci7M": {
+          "type": "video",
+          "settings": {
+            "title": "",
+            "video_desktop": "shopify://files/videos/hoodie-video.mp4",
+            "video_url_desktop": "",
+            "cover_desktop": "shopify://shop_images/hoodie-cover.jpg",
+            "video_url_mobile": "",
+            "autoplay": true,
+            "loop": true,
+            "controls": true,
+            "muted": true,
+            "target_tab": "video",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x": 0
+          }
+        },
+        "faq_i3m3aL": {
+          "type": "faq",
+          "settings": {
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "gap": 0,
+            "faq_content": "<title>1. What makes the Alpargali Puffer Pro different from other puffers?</title>\n<p>We combine 3 next-generation insulation systems in one jacket: ET BionicDown (front/sleeves/hood), Aerogel Air Fiber Clusters (back panel), and agraphene comfort lining inside -then seal everything within a 20K waterproof Dermizax@ shell.\nThis gives you expedition-tier warmth with everyday mobility - without theweight.</p>\n<title>2. How cold can the Alpargali Puffer Pro handle?</title>\n<p>Designed to perform in extreme conditions down to -40°, where Celsius and Fahrenheit meet. Its expedition-grade construction and advanced insulation materials create a stable micro-climate even in sub-zero environments.</p>\n<title>3. Is the Alpargali Puffer Pro suitable for everyday city wear?</title>\n<p>Absolutely. While built to expedition-level standards, the streamlined design and lightweight construction make it ideal for urban commuting, travel, and outdoor adventures—no compromise between performance and versatility.</p><title>4. What is Aerogel insulation, and why is it used in this jacket?</title>\n<p>Aerogel, often called “solid smoke,” is the world’s lightest solid and is widely used in aerospace insulation. In the Puffer Pro, Aerogel Air Fiber Clusters trap heat efficiently while staying flexible and breathable, even in extreme cold.</p>\n<title>5. Is the jacket waterproof and windproof?</title>\n<p>Yes. The outer shell features a 3-layer technical fabric with a Japanese Dermizax® membrane, rated at 20K waterproof / 10K moisture management, providing full protection against rain, wind, and snow.</p>",
+            "target_tab": "faq"
+          }
+        },
+        "judge_me_reviews_review_widget_JctMNU": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "carousel_fhAyVL",
+        "image_banner_6EqhKf",
+        "content_block_MGACxw",
+        "image_banner_Me8tAB",
+        "image_banner_9AcLc8",
+        "image_banner_TedKYU",
+        "carousel_8hkzfc",
+        "image_banner_MFJcGH",
+        "content_block_KAzBzN",
+        "image_banner_kY3Le9",
+        "content_block_xxPja6",
+        "collage_byQmgc",
+        "collage_dLqxPW",
+        "collage_WXNq9Y",
+        "collage_zR94Hn",
+        "image_banner_BKFgNX",
+        "content_block_DPjhDm",
+        "collage_P3AKrn",
+        "collage_DtKjqe",
+        "collage_EPgPxm",
+        "collage_e3Bjnd",
+        "image_banner_agnmpQ",
+        "image_banner_iGmkgq",
+        "content_block_3WRjgm",
+        "content_block_TnnFCM",
+        "image_banner_xCeUjP",
+        "video_RrT8Rc",
+        "video_riQjAb",
+        "video_wmc7R9",
+        "video_Uqci7M",
+        "faq_i3m3aL",
+        "judge_me_reviews_review_widget_JctMNU"
+      ],
+      "settings": {
+        "show_description": true,
+        "show_video": true,
+        "show_reviews": true,
+        "show_faq": true
+      }
+    },
+    "featured_collection_FB8r4P": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "You May Also Like",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "more-products",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "show_sale_badge": true,
+        "sale_badge_type": "percentage",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "gg_breadcrumb_yr7zeq",
+    "blocks_eweqUy",
+    "main",
+    "related-products",
+    "gg_product_detail_Mg4rJH",
+    "featured_collection_FB8r4P"
+  ]
+}
