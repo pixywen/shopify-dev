@@ -178,7 +178,7 @@
           "settings": {
             "heading": "Details",
             "icon": "none",
-            "content": "<p>Engineered for extreme cold down to <strong>-40°</strong>, the <strong>Alpargali Puffer Pro</strong> delivers expedition-level warmth in a lightweight, everyday-ready design.</p><p>A dual-insulation system combines <strong>ET Bionic Down</strong> with <strong>Aerogel Air Fiber Clusters</strong>, providing exceptional warmth-to-weight performance while staying soft and flexible in sub-zero conditions.</p><p>The <strong>3-layer technical shell with Japanese Dermizax® membrane</strong> offers <strong>20K waterproof / 10K moisture management</strong>, blocking wind, rain, and snow.</p><p>Finished with a <strong>graphene-lined interior</strong> to reflect heat, resist bacteria, and keep you comfortable from city streets to mountain trails.</p>",
+            "content": "<p>The Alpargali Lightweight Jacket is crafted with advanced fabric from <strong>Toray Japan</strong> for effortless everyday wear.</p><p>Its <strong>30D ultra-light fabric</strong> is wind-resistant, breathable, and durable, while <strong>4-way stretch</strong> ensures natural movement throughout the day.</p><p>Made with <strong>83% recycled nylon</strong> and a <strong>fluorine-free water-repellent finish</strong>, it balances performance with sustainability.</p><p>Wrinkle-resistant, quick-drying, and <strong>machine washable</strong> for easy care.</p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
@@ -202,7 +202,7 @@
             "icon": "none",
             "content": "<p>Hand wash.</p><p>Maximum temperature 40C.</p><p>Do not bleach.</p><p>Do not tumble dry.</p><p>Do not iron.</p><p>Do not dry clean.</p><p>Line dry in shade</p>",
             "page": "",
-            "image": "shopify://shop_images/care-pro.png",
+            "image": "shopify://shop_images/care-light.png",
             "image_alt": "",
             "image_width": 50
           }
