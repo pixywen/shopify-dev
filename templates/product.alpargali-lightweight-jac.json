@@ -390,85 +390,6 @@
             "margin_bottom": 0
           }
         },
-        "image_banner_BKFgNX": {
-          "type": "image_banner",
-          "settings": {
-            "image_desktop": "shopify://shop_images/10.INSULATION.jpg",
-            "image_mobile": "shopify://shop_images/10.INSULATION-m.jpg",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "padding_x_desktop": 0,
-            "padding_x_mobile": 0,
-            "target_tab": "description"
-          }
-        },
-        "content_block_DPjhDm": {
-          "type": "content_block",
-          "settings": {
-            "block_type": "heading_text",
-            "margin_top": 0,
-            "margin_bottom": 40,
-            "heading": "",
-            "content": "<p>The <strong>Alpargali Puffer Pro</strong> combines two advanced insulations for maximum warmth without bulk.</p><p><strong>ET Bionic Down</strong> in the front, sleeves, and hood is lightweight, soft, warmer than natural down, and hypoallergenic.<br/><br/><strong>Aerogel Clusters</strong> in the back panel provide aerospace-grade thermal protection, resisting heat loss in cold and damp conditions.</p><p>Together, they deliver lasting warmth — <strong>lighter, softer, and warmer than down</strong>.</p>",
-            "target_tab": "description"
-          }
-        },
-        "collage_P3AKrn": {
-          "type": "collage",
-          "settings": {
-            "desktop_layout": "image_left",
-            "mobile_layout": "image_top",
-            "image": "shopify://shop_images/11.40.jpg",
-            "heading": "-40°C / -40°F Extreme Cold Protection",
-            "subheading": "",
-            "text": "<p>Engineered to perform where other puffers fail, the <strong>Alpargali Puffer Pro</strong> keeps you warm and comfortable even in <strong>sub-zero conditions</strong>. Lightweight yet highly insulated, it’s designed for <strong>extreme cold without bulk</strong>.</p>",
-            "target_tab": "description",
-            "margin_top": 72,
-            "margin_bottom": 0
-          }
-        },
-        "collage_DtKjqe": {
-          "type": "collage",
-          "settings": {
-            "desktop_layout": "image_right",
-            "mobile_layout": "image_top",
-            "image": "shopify://shop_images/12.ET.jpg",
-            "heading": "Integrated Physical Molding Technology",
-            "subheading": "",
-            "text": "<p>Crafted with a <strong>one-piece long-fiber construction</strong>, this process eliminates dust, allergens, and fiber shedding — keeping the jacket clean, comfortable, and durable.</p>",
-            "target_tab": "description",
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        },
-        "collage_EPgPxm": {
-          "type": "collage",
-          "settings": {
-            "desktop_layout": "image_left",
-            "mobile_layout": "image_top",
-            "image": "shopify://shop_images/13.AIR_FIBER.jpg",
-            "heading": "NASA-Grade Aerogel Back Panel",
-            "subheading": "",
-            "text": "<p>The back panel is insulated with <strong>Aerogel-infused microfibers</strong>, inspired by the same technology used in <strong>NASA aerospace insulation</strong>.Nicknamed “solid smoke,” Aerogel is the <strong>world’s lightest solid</strong> — a nano-porous structure that traps air better than any other material on Earth.</p>",
-            "target_tab": "description",
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        },
-        "collage_e3Bjnd": {
-          "type": "collage",
-          "settings": {
-            "desktop_layout": "image_right",
-            "mobile_layout": "image_top",
-            "image": "shopify://shop_images/14.Far-Infrared.jpg",
-            "heading": "Integrated Physical Molding Technology",
-            "subheading": "",
-            "text": "<p>Crafted with a <strong>one-piece long-fiber construction</strong>, this process eliminates dust, allergens, and fiber shedding — keeping the jacket clean, comfortable, and durable.</p>",
-            "target_tab": "description",
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        },
         "image_banner_agnmpQ": {
           "type": "image_banner",
           "disabled": true,
@@ -532,60 +453,6 @@
             "target_tab": "description"
           }
         },
-        "video_RrT8Rc": {
-          "type": "video",
-          "settings": {
-            "title": "",
-            "video_desktop": "shopify://files/videos/detail-1.mp4",
-            "video_url_desktop": "",
-            "cover_desktop": "shopify://shop_images/cover-1.jpg",
-            "video_url_mobile": "",
-            "autoplay": true,
-            "loop": true,
-            "controls": true,
-            "muted": true,
-            "target_tab": "video",
-            "margin_top": 32,
-            "margin_bottom": 32,
-            "padding_x": 0
-          }
-        },
-        "video_riQjAb": {
-          "type": "video",
-          "settings": {
-            "title": "",
-            "video_desktop": "shopify://files/videos/exper-video.mp4",
-            "video_url_desktop": "",
-            "cover_desktop": "shopify://shop_images/exper-cover.jpg",
-            "video_url_mobile": "",
-            "autoplay": true,
-            "loop": true,
-            "controls": true,
-            "muted": true,
-            "target_tab": "video",
-            "margin_top": 32,
-            "margin_bottom": 32,
-            "padding_x": 0
-          }
-        },
-        "video_wmc7R9": {
-          "type": "video",
-          "settings": {
-            "title": "",
-            "video_desktop": "shopify://files/videos/pocket-video.mp4",
-            "video_url_desktop": "",
-            "cover_desktop": "shopify://shop_images/pocket-cover.jpg",
-            "video_url_mobile": "",
-            "autoplay": true,
-            "loop": true,
-            "controls": true,
-            "muted": true,
-            "target_tab": "video",
-            "margin_top": 32,
-            "margin_bottom": 32,
-            "padding_x": 0
-          }
-        },
         "video_Uqci7M": {
           "type": "video",
           "settings": {
@@ -633,20 +500,11 @@
         "collage_byQmgc",
         "collage_dLqxPW",
         "collage_WXNq9Y",
-        "image_banner_BKFgNX",
-        "content_block_DPjhDm",
-        "collage_P3AKrn",
-        "collage_DtKjqe",
-        "collage_EPgPxm",
-        "collage_e3Bjnd",
         "image_banner_agnmpQ",
         "image_banner_iGmkgq",
         "content_block_3WRjgm",
         "content_block_TnnFCM",
         "image_banner_xCeUjP",
-        "video_RrT8Rc",
-        "video_riQjAb",
-        "video_wmc7R9",
         "video_Uqci7M",
         "faq_i3m3aL",
         "judge_me_reviews_review_widget_JctMNU"
