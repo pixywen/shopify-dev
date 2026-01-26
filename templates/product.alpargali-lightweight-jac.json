@@ -280,7 +280,7 @@
             "block_type": "heading_text",
             "margin_top": 12,
             "margin_bottom": 40,
-            "heading": "<p><strong>Alpargali Lightweight Jacket — Japanese Tech for Everyday Adventure</strong></p>",
+            "heading": "<p>Alpargali Lightweight Jacket — Japanese Tech for Everyday Adventure</p>",
             "content": "<p>The Alpargali Lightweight Jacket starts with its most essential layer — the fabric.<br/> Crafted by <strong>Toray Japan</strong>, this advanced shell balances <strong>lightness, durability, stretch, and sustainability</strong> to create comfort that moves with you.✨ <strong>What Makes It Special</strong></p><ul><li><strong>Ultra-Light Yet Durable:</strong><br/> 30D microfibers deliver a featherlight feel while resisting daily wear and tear.</li><li><strong>4-Way Stretch Freedom:</strong><br/> 17% polyurethane allows full mobility — perfect for city commutes, travel, and light outdoor activity.</li><li><strong>Wind-Resistant & Breathable:</strong><br/> The tight 30D weave blocks cold gusts yet stays breathable, keeping you comfortable in motion.</li><li><strong>Eco-Friendly Construction:</strong><br/> Made with <strong>83% recycled nylon</strong>, reducing dependence on virgin materials.</li><li><strong>Fluorine-Free Water Repellency:</strong><br/> Rain beads off instantly — without harmful chemicals.</li><li><strong>Easy Maintenance:</strong><br/> Wrinkle-resistant, quick-drying, and machine washable.</li></ul>",
             "target_tab": "description"
           }
@@ -288,90 +288,8 @@
         "image_banner_Me8tAB": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/2.compare-pc.jpg",
-            "image_mobile": "shopify://shop_images/2.compare-m.jpg",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "padding_x_desktop": 0,
-            "padding_x_mobile": 0,
-            "target_tab": "description"
-          }
-        },
-        "image_banner_9AcLc8": {
-          "type": "image_banner",
-          "settings": {
-            "image_desktop": "shopify://shop_images/3.icon-pc.png",
-            "image_mobile": "shopify://shop_images/3.icon-m.png",
-            "margin_top": 20,
-            "margin_bottom": 32,
-            "padding_x_desktop": 25,
-            "padding_x_mobile": 5,
-            "target_tab": "description"
-          }
-        },
-        "image_banner_TedKYU": {
-          "type": "image_banner",
-          "settings": {
-            "image_desktop": "shopify://shop_images/15.pocket.jpg",
-            "image_mobile": "shopify://shop_images/15.pocket-m.jpg",
-            "margin_top": 28,
-            "margin_bottom": 32,
-            "padding_x_desktop": 0,
-            "padding_x_mobile": 0,
-            "target_tab": "description"
-          }
-        },
-        "carousel_8hkzfc": {
-          "type": "carousel",
-          "settings": {
-            "title": "",
-            "image_1": "shopify://shop_images/15-1.jpg",
-            "caption_1": "Right Arm Pocket",
-            "hover_text_1": "",
-            "image_2": "shopify://shop_images/15-2.jpg",
-            "caption_2": "Two Hand-Warmer Pockets",
-            "hover_text_2": "",
-            "image_3": "shopify://shop_images/15-3.jpg",
-            "caption_3": "Left Chest  Pocket",
-            "hover_text_3": "",
-            "image_4": "shopify://shop_images/15-4.jpg",
-            "caption_4": "Built-in Cuff Gloves",
-            "hover_text_4": "",
-            "image_5": "shopify://shop_images/15-5.jpg",
-            "caption_5": "Right Chest Zip Pocket",
-            "hover_text_5": "",
-            "image_6": "shopify://shop_images/15-6.jpg",
-            "caption_6": "Left Mesh Pouch",
-            "hover_text_6": "",
-            "image_7": "shopify://shop_images/15-7.jpg",
-            "caption_7": "Left Forearm Pocket",
-            "hover_text_7": "",
-            "image_8": "shopify://shop_images/15-8.jpg",
-            "caption_8": "Detachable  Snow Skirt",
-            "hover_text_8": "",
-            "image_9": "shopify://shop_images/15-9.jpg",
-            "caption_9": "Dual Adjustment Hood System",
-            "hover_text_9": "",
-            "image_10": "shopify://shop_images/15-10.jpg",
-            "caption_10": "Underarm &  Back Ventilation",
-            "hover_text_10": "",
-            "image_11": "shopify://shop_images/15-11.jpg",
-            "caption_11": "Reflective  Details",
-            "hover_text_11": "",
-            "image_12": "shopify://shop_images/15-12.jpg",
-            "caption_12": "Soft Brushed Collar",
-            "hover_text_12": "",
-            "autoplay_speed": 8,
-            "target_tab": "description",
-            "margin_top": 40,
-            "margin_bottom": 100
-          }
-        },
-        "image_banner_MFJcGH": {
-          "type": "image_banner",
-          "settings": {
-            "image_desktop": "shopify://shop_images/4.structure-pc.jpg",
-            "image_mobile": "shopify://shop_images/4.structure-m.jpg",
+            "image_desktop": "shopify://shop_images/2.Function_Meets_Form.jpg",
+            "image_mobile": "shopify://shop_images/2-pe-Function_Meets_Form.jpg",
             "margin_top": 0,
             "margin_bottom": 0,
             "padding_x_desktop": 0,
@@ -383,34 +301,51 @@
           "type": "content_block",
           "settings": {
             "block_type": "heading_text",
-            "margin_top": 0,
+            "margin_top": 12,
             "margin_bottom": 40,
-            "heading": "",
-            "content": "<p>Imagine a jacket powered by <strong>Aerogel</strong>, <strong>Graphene</strong>, and <strong>ET Bionic Down</strong> — engineered for exceptional warmth without bulk.</p><p><strong>Aerogel Air Fibers</strong> lock in heat in cold, wet conditions.</p><p><strong>Graphene lining</strong> reflects warmth and stays fresh.</p><p><strong>ET Bionic Down</strong> delivers soft, allergen-free insulation.</p><p>Wrapped in a <strong>3-layer Dermizax® waterproof shell</strong>, it blocks rain, snow, and wind.</p>",
+            "heading": "<p>Function Meets Form — Smart Storage & Thoughtful Details</p>",
+            "content": "<p>Every detail of the <strong>Alpargali Lightweight Jacket</strong> serves a purpose — designed for versatility, utility, and movement.</p>",
             "target_tab": "description"
           }
         },
-        "image_banner_kY3Le9": {
-          "type": "image_banner",
+        "carousel_8hkzfc": {
+          "type": "carousel",
           "settings": {
-            "image_desktop": "shopify://shop_images/5.waterproof.jpg",
-            "image_mobile": "shopify://shop_images/5.waterproof-m.jpg",
-            "margin_top": 24,
-            "margin_bottom": 0,
-            "padding_x_desktop": 0,
-            "padding_x_mobile": 0,
-            "target_tab": "description"
-          }
-        },
-        "content_block_xxPja6": {
-          "type": "content_block",
-          "settings": {
-            "block_type": "heading_text",
-            "margin_top": 0,
-            "margin_bottom": 40,
-            "heading": "",
-            "content": "<p>The Alpargali Puffer Pro is engineered with a <strong>3-layer technical shell </strong>featuring Japanese<strong> Dermizax® waterproof-breathable membrane</strong> — the same elite technology trusted in high-altitude alpine gear.</p><p> Every seam is fully sealed, creating an all-encompassing barrier that blocks out wetness, snow, and icy wind.</p><p>With a <strong>20,000+ mm waterproof</strong> rating and 10,000+ g/m²/24h Moisture Release, it keeps you perfectly dry while letting moisture escape — no overheating, no stuffiness, just lasting comfort.</p>",
-            "target_tab": "description"
+            "title": "",
+            "image_1": "shopify://shop_images/2-1_ccdb49c4-8794-4a64-bff3-62a876daa905.jpg",
+            "caption_1": "Right Elastic Mesh Pocket",
+            "hover_text_1": "",
+            "image_2": "shopify://shop_images/2-2_a107bd3f-e743-470b-aa48-9857982b7f5b.jpg",
+            "caption_2": "Reflective Back Strip",
+            "hover_text_2": "",
+            "image_3": "shopify://shop_images/2-3_5d5a8414-cd0d-4972-836c-ac2ce3f2f861.jpg",
+            "caption_3": "Left Chest Zip Pocket",
+            "hover_text_3": "",
+            "image_4": "shopify://shop_images/2-4_5527608f-1b61-4a6f-821e-a6ebd6e3bb72.jpg",
+            "caption_4": "2 x Hand-Warmer Pockets",
+            "hover_text_4": "",
+            "image_5": "shopify://shop_images/2-5.jpg",
+            "caption_5": "Snap Collar Tab",
+            "hover_text_5": "",
+            "image_6": "shopify://shop_images/2-6.jpg",
+            "caption_6": "Elastic Cuffs",
+            "hover_text_6": "",
+            "caption_7": "",
+            "hover_text_7": "",
+            "caption_8": "",
+            "hover_text_8": "",
+            "caption_9": "",
+            "hover_text_9": "",
+            "caption_10": "",
+            "hover_text_10": "",
+            "caption_11": "",
+            "hover_text_11": "",
+            "caption_12": "",
+            "hover_text_12": "",
+            "autoplay_speed": 8,
+            "target_tab": "description",
+            "margin_top": 40,
+            "margin_bottom": 100
           }
         },
         "collage_byQmgc": {
@@ -707,13 +642,8 @@
         "image_banner_6EqhKf",
         "content_block_MGACxw",
         "image_banner_Me8tAB",
-        "image_banner_9AcLc8",
-        "image_banner_TedKYU",
-        "carousel_8hkzfc",
-        "image_banner_MFJcGH",
         "content_block_KAzBzN",
-        "image_banner_kY3Le9",
-        "content_block_xxPja6",
+        "carousel_8hkzfc",
         "collage_byQmgc",
         "collage_dLqxPW",
         "collage_WXNq9Y",
