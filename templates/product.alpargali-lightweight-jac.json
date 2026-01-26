@@ -455,6 +455,7 @@
         },
         "video_Uqci7M": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "title": "",
             "video_desktop": "shopify://files/videos/hoodie-video.mp4",
@@ -477,7 +478,7 @@
             "margin_top": 32,
             "margin_bottom": 32,
             "gap": 0,
-            "faq_content": "<title>1. What makes the Alpargali Puffer Pro different from other puffers?</title>\n<p>We combine 3 next-generation insulation systems in one jacket: ET BionicDown (front/sleeves/hood), Aerogel Air Fiber Clusters (back panel), and agraphene comfort lining inside -then seal everything within a 20K waterproof Dermizax@ shell.\nThis gives you expedition-tier warmth with everyday mobility - without theweight.</p>\n<title>2. How cold can the Alpargali Puffer Pro handle?</title>\n<p>Designed to perform in extreme conditions down to -40°, where Celsius and Fahrenheit meet. Its expedition-grade construction and advanced insulation materials create a stable micro-climate even in sub-zero environments.</p>\n<title>3. Is the Alpargali Puffer Pro suitable for everyday city wear?</title>\n<p>Absolutely. While built to expedition-level standards, the streamlined design and lightweight construction make it ideal for urban commuting, travel, and outdoor adventures—no compromise between performance and versatility.</p><title>4. What is Aerogel insulation, and why is it used in this jacket?</title>\n<p>Aerogel, often called “solid smoke,” is the world’s lightest solid and is widely used in aerospace insulation. In the Puffer Pro, Aerogel Air Fiber Clusters trap heat efficiently while staying flexible and breathable, even in extreme cold.</p>\n<title>5. Is the jacket waterproof and windproof?</title>\n<p>Yes. The outer shell features a 3-layer technical fabric with a Japanese Dermizax® membrane, rated at 20K waterproof / 10K moisture management, providing full protection against rain, wind, and snow.</p>",
+            "faq_content": "<title>1. Is the Alpargali Lightweight Jacket suitable for everyday wear?</title>\n<p>Yes. It’s designed specifically for everyday movement — from city commuting to travel and light outdoor activities. The ultra-light 30D fabric and 4-way stretch make it comfortable enough to wear all day.</p>\n<title>2. How weather-resistant is this jacket?</title>\n<p>The jacket features a wind-resistant 30D tight weave that helps block cold gusts, along with a fluorine-free water-repellent finish that causes light rain to bead off instantly. It’s ideal for unpredictable daily weather.</p>\n<title>3. Will the jacket restrict movement?</title>\n<p>Not at all. With 17% polyurethane and 4-way stretch, the fabric moves naturally with your body, allowing full mobility whether you’re walking, commuting, or on the go.</p><title>4. Is this jacket environmentally friendly?</title>\n<p>Yes. The shell fabric is made with 83% recycled nylon, reducing reliance on virgin materials, and uses a fluorine-free water-repellent treatment, making it a more responsible choice without compromising performance.</p>\n<title>5. How do I care for the jacket?</title>\n<p>The jacket is easy to maintain — it’s wrinkle-resistant, quick-drying, and machine washable. No special care is required, making it perfect for travel and daily use.</p>",
             "target_tab": "faq"
           }
         },
