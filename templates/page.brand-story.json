@@ -402,16 +402,34 @@
         "image_3": "shopify://shop_images/brand-11.jpg"
       }
     },
-    "gg_simple_image_banner_bHXLet": {
-      "type": "gg-simple-image-banner",
-      "name": "GG-基础图片横幅",
+    "gg_image_slideshow_LjNRKq": {
+      "type": "gg-image-slideshow",
+      "blocks": {
+        "desktop_slide_hy3jhC": {
+          "type": "desktop_slide",
+          "settings": {
+            "image": "shopify://shop_images/brand-7.jpg",
+            "link": "https://www.instagram.com/alpargali_official/"
+          }
+        },
+        "mobile_slide_4c8tGn": {
+          "type": "mobile_slide",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "desktop_slide_hy3jhC",
+        "mobile_slide_4c8tGn"
+      ],
+      "name": "GG-图片轮播",
       "settings": {
-        "image": "shopify://shop_images/brand-7.jpg",
-        "image_mobile": "shopify://shop_images/brand-7.jpg",
+        "change_slides_speed": 5,
+        "auto_rotate": true,
+        "dots_position_bottom": 10,
         "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_left": 0,
-        "padding_right": 0
+        "padding_bottom": 0
       }
     }
   },
@@ -427,6 +445,6 @@
     "multirow_7ipV3B",
     "multirow_WpJxfi",
     "gg_three_image_banner_htRqLK",
-    "gg_simple_image_banner_bHXLet"
+    "gg_image_slideshow_LjNRKq"
   ]
 }
