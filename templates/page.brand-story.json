@@ -213,11 +213,11 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/brand-5.jpg",
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
-            "button_link": ""
+            "caption": "",
+            "heading": "Alpargali CoreShell",
+            "text": "<ul><li>Windproof, water-repellent, </li><li>30% warmer with CoreLock insulation and 2mm fleece</li><li>13 functional pockets, recycled materialsreinforced durability, 4-way stretch</li></ul>",
+            "button_label": "LEARN MORE",
+            "button_link": "shopify://products/alpargali-coreshell-jacket"
           }
         }
       },
@@ -263,7 +263,7 @@
             "caption": "Caption",
             "heading": "Row",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
+            "button_label": "LEARN MORE",
             "button_link": ""
           }
         }
@@ -297,9 +297,9 @@
           "settings": {
             "image": "shopify://shop_images/brand-8.jpg",
             "caption": "",
-            "heading": "<strong>eeedfddd</strong>",
-            "text": "<p>    bbbbbb</p>",
-            "button_label": "Button label",
+            "heading": "All-Day Backpack",
+            "text": "<ul><li>Organized, weather-protected, and ready for daily life or short trips</li><li>15+ smart compartments, clamshell opening</li><li>Waterproof fabrics and zippers</li></ul>",
+            "button_label": "LEARN MORE",
             "button_link": ""
           }
         }
