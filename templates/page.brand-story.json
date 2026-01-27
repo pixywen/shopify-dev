@@ -222,9 +222,9 @@
         "heading_PWtkHe": {
           "type": "heading",
           "settings": {
-            "text": "Our Name, Our Heritage",
+            "text": "Our Name, Our Heritag",
             "font": "montserrat_n6",
-            "font_size": 20,
+            "font_size": 35,
             "font_weight": 600,
             "letter_spacing": 0,
             "line_height": 40,
