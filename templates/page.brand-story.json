@@ -254,7 +254,7 @@
       "settings": {
         "content_width": 1800,
         "padding_left": 0,
-        "padding_right": 0,
+        "padding_right": 8,
         "padding_top": 16,
         "padding_bottom": 24
       }
