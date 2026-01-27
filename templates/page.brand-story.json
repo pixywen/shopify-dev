@@ -203,10 +203,10 @@
           "settings": {
             "image": "shopify://shop_images/brand-6.jpg",
             "caption": "",
-            "heading": "<strong>eeedfddd</strong>",
-            "text": "<p>    bbbbbb</p>",
-            "button_label": "Button label",
-            "button_link": ""
+            "heading": "The CoreShell journey",
+            "text": "<p>is all about turning bold ideas into gear you can actually wear.</p><p>Every line, every detail, every test - built for adventure,tested for the elements.</p><p>This isn' t just design, it' s Alpargali' s obsession with making outdoor apparel smarter, tougher, and better.</p><p>From the seam to the shell, from alpine wind to city commutewe engineer protection, comfort, and style in one.</p>",
+            "button_label": "DISCOVER NOW",
+            "button_link": "shopify://products/alpargali-coreshell-jacket"
           }
         },
         "row_mF6Qca": {
