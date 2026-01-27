@@ -53,7 +53,7 @@
         "desktop_slide_kDjina": {
           "type": "desktop_slide",
           "settings": {
-            "image": "shopify://shop_images/social-pc_15ebb086-22f1-44a0-b320-bd731c2c511d.jpg",
+            "image": "shopify://shop_images/Men_s_All-Weather_Outdoor_Jacket-pc.jpg",
             "alt_text": "",
             "custom_duration": 5,
             "image_link": ""
@@ -62,7 +62,7 @@
         "mobile_slide_fNf3QQ": {
           "type": "mobile_slide",
           "settings": {
-            "image": "shopify://shop_images/social-m_b6dfabd9-67d3-4b1e-a1c3-93353e7ec496.jpg",
+            "image": "shopify://shop_images/Men_s_All-Weather_Outdoor_Jacket-m.jpg",
             "alt_text": "",
             "custom_duration": 5,
             "image_link": "https://www.alpargali.com/collections/jackets-vests"
