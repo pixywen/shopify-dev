@@ -9,7 +9,80 @@
 
 {% if template == 'index' %}
   <style>
-    .section-header{margin-bottom:0}.header-wrapper--border-bottom{border-bottom:.1rem solid rgba(255,255,255,.08)}.overflow-hidden-desktop .header-wrapper,.overflow-hidden-tablet .header-wrapper{position:initial;width:initial;background:initial;color:initial;background:var(--gradient-background)}.header-wrapper summary.header__menu-item+ul span,.header-wrapper summary.header__menu-item+ul svg,.overflow-hidden-desktop .header-wrapper .disclosure__button svg,.overflow-hidden-desktop .header-wrapper .disclosure__button>span,.overflow-hidden-desktop .header-wrapper .list-menu span,.overflow-hidden-desktop .header-wrapper a svg,.overflow-hidden-desktop .header-wrapper details>span,.overflow-hidden-desktop .header-wrapper h1.header__heading span.h2,.overflow-hidden-desktop .header-wrapper summary svg,.overflow-hidden-desktop details[open]>.header__menu-item,.overflow-hidden-tablet .header-wrapper .disclosure__button svg,.overflow-hidden-tablet .header-wrapper .disclosure__button>span,.overflow-hidden-tablet .header-wrapper .list-menu span,.overflow-hidden-tablet .header-wrapper a svg,.overflow-hidden-tablet .header-wrapper details>span,.overflow-hidden-tablet .header-wrapper h1.header__heading span.h2,.overflow-hidden-tablet .header-wrapper summary svg,.overflow-hidden-tablet details[open]>.header__menu-item,.scrolled-past-header .header-wrapper .disclosure__button svg,.scrolled-past-header .header-wrapper .disclosure__button>span,.scrolled-past-header .header-wrapper .list-menu span,.scrolled-past-header .header-wrapper a svg,.scrolled-past-header .header-wrapper details>span,.scrolled-past-header .header-wrapper h1.header__heading span.h2,.scrolled-past-header .header-wrapper summary svg,.scrolled-past-header details[open]>.header__menu-item{color:rgba(var(--color-foreground),.75)!important}.header-wrapper{position:absolute;width:100%;background:0 0;color:#fff}.header-wrapper .disclosure__button svg,.header-wrapper .disclosure__button>span,.header-wrapper .list-menu span,.header-wrapper a svg,.header-wrapper details>span,.header-wrapper h1.header__heading span.h2,.header-wrapper summary svg,details[open]>.header__menu-item{color:#fff!important}.scrolled-past-header .header-wrapper{position:absolute;width:100%;background:0 0;color:rgb(var(--color-foreground))!important}.header-localization .disclosure .localization-form__select:hover{text-decoration-color:white}
+    .section-header {
+      margin-bottom: 0
+    }
+  
+    .header-wrapper--border-bottom {
+      border-bottom: .1rem solid rgba(255, 255, 255, .08)
+    }
+  
+    .overflow-hidden-desktop .header-wrapper,
+    .overflow-hidden-tablet .header-wrapper {
+      position: initial;
+      width: initial;
+      background: initial;
+      color: initial;
+      background: var(--gradient-background)
+    }
+  
+    .header-wrapper summary.header__menu-item+ul span,
+    .header-wrapper summary.header__menu-item+ul svg,
+    .overflow-hidden-desktop .header-wrapper .disclosure__button svg,
+    .overflow-hidden-desktop .header-wrapper .disclosure__button>span,
+    .overflow-hidden-desktop .header-wrapper .list-menu span,
+    .overflow-hidden-desktop .header-wrapper a svg,
+    .overflow-hidden-desktop .header-wrapper details>span,
+    .overflow-hidden-desktop .header-wrapper h1.header__heading span.h2,
+    .overflow-hidden-desktop .header-wrapper summary svg,
+    .overflow-hidden-desktop details[open]>.header__menu-item,
+    .overflow-hidden-tablet .header-wrapper .disclosure__button svg,
+    .overflow-hidden-tablet .header-wrapper .disclosure__button>span,
+    .overflow-hidden-tablet .header-wrapper .list-menu span,
+    .overflow-hidden-tablet .header-wrapper a svg,
+    .overflow-hidden-tablet .header-wrapper details>span,
+    .overflow-hidden-tablet .header-wrapper h1.header__heading span.h2,
+    .overflow-hidden-tablet .header-wrapper summary svg,
+    .overflow-hidden-tablet details[open]>.header__menu-item,
+    .scrolled-past-header .header-wrapper .disclosure__button svg,
+    .scrolled-past-header .header-wrapper .disclosure__button>span,
+    .scrolled-past-header .header-wrapper .list-menu span,
+    .scrolled-past-header .header-wrapper a svg,
+    .scrolled-past-header .header-wrapper details>span,
+    .scrolled-past-header .header-wrapper h1.header__heading span.h2,
+    .scrolled-past-header .header-wrapper summary svg,
+    .scrolled-past-header details[open]>.header__menu-item {
+      color: rgba(var(--color-foreground), .75) !important
+    }
+  
+    .header-wrapper {
+      position: absolute;
+      width: 100%;
+      background: 0 0;
+      color: #fff
+    }
+  
+    .header-wrapper .disclosure__button svg,
+    .header-wrapper .disclosure__button>span,
+    .header-wrapper .list-menu span,
+    .header-wrapper a svg,
+    .header-wrapper details>span,
+    .header-wrapper h1.header__heading span.h2,
+    .header-wrapper summary svg,
+    details[open]>.header__menu-item {
+      color: #fff !important
+    }
+  
+    .scrolled-past-header .header-wrapper {
+      position: absolute;
+      width: 100%;
+      background: 0 0;
+      color: rgb(var(--color-foreground)) !important
+    }
+  
+    .header-localization .disclosure .localization-form__select:hover {
+      text-decoration-color: white
+    }
   </style>
 {% endif %}
 
@@ -306,6 +379,48 @@ i.icon-swym-wishlist {
     left: auto;
   }
 }
+
+  /* Login Icon Custom Styles */
+  .header__icon--login-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+  }
+
+  .header__icon--login-custom .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .header__icon--login-custom .svg-wrapper svg {
+    width: 20px;
+    height: 20px;
+    color: black; /* Default Black */
+    fill: currentColor;
+    transition: color 0.3s ease, fill 0.3s ease;
+  }
+  
+  .header__icon--login-custom .svg-wrapper svg path {
+    fill: currentColor;
+  }
+
+  /* Scrolled State: White */
+  .scrolled-past-header .login-icon-image,
+  .gradient.overflow-hidden .login-icon-image {
+    filter: brightness(0) invert(1);
+  }
+
+  .scrolled-past-header .header__icon--login-custom .svg-wrapper svg,
+  .gradient.overflow-hidden .header__icon--login-custom .svg-wrapper svg {
+    color: white;
+    fill: currentColor;
+  }
+
 {% endstyle %}
 
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
@@ -452,21 +567,19 @@ i.icon-swym-wishlist {
       {% comment %} 购物车 {% endcomment %}
 
       
-    
-      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
-        {% if cart == empty %}
-          <span class="svg-wrapper">{{'icon-cart-empty-ex.svg' | inline_asset_content }}</span>
-        {% else %}
-          <span class="svg-wrapper">{{'icon-cart-empty-ex.svg' | inline_asset_content }}</span>
-        {% endif %}
+    <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+      {% if cart == empty %}
+      <span class="svg-wrapper">{{'icon-cart-empty-ex.svg' | inline_asset_content }}</span>
+      {% else %}
+      <span class="svg-wrapper">{{'icon-cart-empty-ex.svg' | inline_asset_content }}</span>
+      {% endif %}
       <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
       {%- if cart != empty -%}
-        <div class="cart-count-bubble">
-          {%- if cart.item_count < 100 -%}
-            <span aria-hidden="true">{{ cart.item_count }}</span>
+      <div class="cart-count-bubble">
+        {%- if cart.item_count < 100 -%} <span aria-hidden="true">{{ cart.item_count }}</span>
           {%- endif -%}
           <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
-        </div>
+      </div>
       {%- endif -%}
     </a>
 
@@ -513,13 +626,21 @@ i.icon-swym-wishlist {
         class="header__icon header__icon--account link focus-inset login-button{% if section.settings.menu != blank %} small-hide{% endif %}"
         rel="nofollow"
       >
-        <span class="login-text">
-          {%- if customer -%}
-            {{ customer.first_name }}
-          {%- else -%}
-            {{ 'customer.log_in' | t }}
-          {%- endif -%}
-        </span>
+        {%- if section.settings.enable_login_icon -%}
+          <div class="header__icon--login-custom">
+            <span style="width: 28px; height: 28px;">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-account" viewBox="0 0 18 19"><path stroke="currentColor" stroke-width="0.3" fill="currentColor" fill-rule="evenodd" d="M6 4.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-4a4 4 0 1 0 0 8 4 4 0 0 0 0-8m5.58 12.15c1.12.82 1.83 2.24 1.91 4.85H1.51c.08-2.6.79-4.03 1.9-4.85C4.66 11.75 6.5 11.5 9 11.5s4.35.26 5.58 1.15M9 10.5c-2.5 0-4.65.24-6.17 1.35C1.27 12.98.5 14.93.5 18h17c0-3.07-.77-5.02-2.33-6.15-1.52-1.1-3.67-1.35-6.17-1.35" clip-rule="evenodd"/></svg>
+            </span>
+          </div>
+        {%- else -%}
+          <span class="login-text">
+            {%- if customer -%}
+              {{ customer.first_name }}
+            {%- else -%}
+              {{ 'customer.log_in' | t }}
+            {%- endif -%}
+          </span>
+        {%- endif -%}
       </a>
     {%- endif -%}
 
@@ -862,6 +983,12 @@ i.icon-swym-wishlist {
       "default": true,
       "label": "t:sections.header.settings.enable_customer_avatar.label",
       "info": "t:sections.header.settings.enable_customer_avatar.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_login_icon",
+      "default": false,
+      "label": "登录图标开关"
     },
     {
       "type": "header",

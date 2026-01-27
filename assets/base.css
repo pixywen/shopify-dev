@@ -81,7 +81,7 @@
   
 .login-button {
   background: white;
-  color: black;
+  color: white;
   padding: 8px 24px;
   border-radius: 50px;  /* 圆角按钮 */
   margin-left: 30px;    /* 与购物车的间距 */
@@ -139,6 +139,28 @@
     margin-left: 12px;
     padding: 6px 16px;
   }
+}
+
+/* 自定义登录图标颜色：默认黑色 */
+.header-wrapper .header__icon--login-custom .icon-account {
+  color: black !important;
+}
+.header-wrapper .header__icon--login-custom .icon-account path {
+  fill: black !important;
+  stroke: black !important;
+}
+
+/* 特殊状态（滚动后、非首页）：白色 */
+.scrolled-past-header .header-wrapper .header__icon--login-custom .icon-account,
+.non-home .header-wrapper .header__icon--login-custom .icon-account,
+.gradient.overflow-hidden .header-wrapper .header__icon--login-custom .icon-account {
+  color: white !important;
+}
+.scrolled-past-header .header-wrapper .header__icon--login-custom .icon-account path,
+.non-home .header-wrapper .header__icon--login-custom .icon-account path,
+.gradient.overflow-hidden .header-wrapper .header__icon--login-custom .icon-account path {
+  fill: white !important;
+  stroke: white !important;
 }
 
 /* base */
