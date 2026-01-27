@@ -20,8 +20,8 @@
     "gg_simple_image_banner_kPHg8h": {
       "type": "gg-simple-image-banner",
       "settings": {
-        "image": "shopify://shop_images/brand.jpg",
-        "image_mobile": "shopify://shop_images/brand.jpg",
+        "image": "shopify://shop_images/brand-1.jpg",
+        "image_mobile": "shopify://shop_images/brand-1.jpg",
         "padding_top": 0,
         "padding_bottom": 0,
         "padding_left": 0,
@@ -115,13 +115,93 @@
         "padding_bottom": 4
       }
     },
+    "slideshow_pEeKyr": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_HmP8CU": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/brand-2.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_HmP8CU"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "gg_rich_text_page_d7h8mc": {
+      "type": "gg-rich-text-page",
+      "blocks": {
+        "heading_PWtkHe": {
+          "type": "heading",
+          "settings": {
+            "text": "Our Name, Our Heritage",
+            "font": "montserrat_n6",
+            "font_size": 32,
+            "font_weight": 600,
+            "letter_spacing": 0,
+            "line_height": 40,
+            "margin_top": 25,
+            "margin_bottom": 25
+          }
+        },
+        "text_Wf8mnk": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Where resilience meets refinement.</strong></p><p>The name Alpargali unites two inspirations: \"Alpine\" - the steep, ever-changing high mountains,and \"Argali\" - the wild mountain sheep, a symbol of adaptability and strength.Together, they embody our ethos: engineered resilience, designed forreal life -from city streets to summits.<br/><br/></p>",
+            "font": "montserrat_n4",
+            "font_size": 16,
+            "font_weight": 400,
+            "letter_spacing": 1,
+            "line_height": 27,
+            "margin_top": 25,
+            "margin_bottom": 25
+          }
+        }
+      },
+      "block_order": [
+        "heading_PWtkHe",
+        "text_Wf8mnk"
+      ],
+      "name": "GG-二级页面-富文本组件",
+      "settings": {
+        "content_width": 1200,
+        "padding_left": 20,
+        "padding_right": 20,
+        "padding_top": 16,
+        "padding_bottom": 24
+      }
+    },
     "multirow_HtCDPM": {
       "type": "multirow",
       "blocks": {
         "row_Lxy4zj": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/best_winter_cycling_jacket.png",
+            "image": "shopify://shop_images/brand-6.jpg",
             "caption": "",
             "heading": "<strong>eeedfddd</strong>",
             "text": "<p>    bbbbbb</p>",
@@ -132,29 +212,7 @@
         "row_mF6Qca": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/3._Recycled_Air_Loft_Fill.jpg",
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        },
-        "row_gccxfB": {
-          "type": "row",
-          "disabled": true,
-          "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        },
-        "row_V8bgcU": {
-          "type": "row",
-          "disabled": true,
-          "settings": {
+            "image": "shopify://shop_images/brand-5.jpg",
             "caption": "Caption",
             "heading": "Row",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
@@ -165,9 +223,7 @@
       },
       "block_order": [
         "row_Lxy4zj",
-        "row_mF6Qca",
-        "row_gccxfB",
-        "row_V8bgcU"
+        "row_mF6Qca"
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
@@ -185,12 +241,113 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "multirow_7ipV3B": {
+      "type": "multirow",
+      "blocks": {
+        "row_axt6DJ": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/brand-4.jpg",
+            "caption": "",
+            "heading": "<strong>eeedfddd</strong>",
+            "text": "<p>    bbbbbb</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_ynRT6A": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/brand-3.jpg",
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_axt6DJ",
+        "row_ynRT6A"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "medium",
+        "heading_size": "h0",
+        "text_style": "subtitle",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "scheme-3",
+        "row_color_scheme": "scheme-a6683256-8fdd-45d8-9e31-804978a98cb6",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multirow_WpJxfi": {
+      "type": "multirow",
+      "blocks": {
+        "row_Lf6Kit": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/brand-8.jpg",
+            "caption": "",
+            "heading": "<strong>eeedfddd</strong>",
+            "text": "<p>    bbbbbb</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_Lf6Kit"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "medium",
+        "heading_size": "h0",
+        "text_style": "subtitle",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "scheme-3",
+        "row_color_scheme": "scheme-a6683256-8fdd-45d8-9e31-804978a98cb6",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "gg_three_image_banner_htRqLK": {
+      "type": "gg-three-image-banner",
+      "name": "GG-三图片横幅",
+      "settings": {
+        "small_heading_above": "",
+        "heading": "All-Day Backpack",
+        "small_heading_below": "The Alpargali All-Day Backpack is a minimalist, weatherproof everyday backpack with 15+ smart compartments and a clamshell design, built for daily carry and short trips.",
+        "button_label": "SHOP NOW",
+        "button_link": "shopify://products/everyday-backpack",
+        "image_1": "shopify://shop_images/brand-9.jpg",
+        "image_2": "shopify://shop_images/brand-10.jpg",
+        "image_3": "shopify://shop_images/brand-11.jpg"
+      }
     }
   },
   "order": [
     "main",
     "gg_simple_image_banner_kPHg8h",
     "gg_rich_text_page_R7exfe",
-    "multirow_HtCDPM"
+    "slideshow_pEeKyr",
+    "gg_rich_text_page_d7h8mc",
+    "multirow_HtCDPM",
+    "multirow_7ipV3B",
+    "multirow_WpJxfi",
+    "gg_three_image_banner_htRqLK"
   ]
 }
