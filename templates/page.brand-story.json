@@ -56,7 +56,40 @@
         "banner_GJri6x",
         "banner_Aze7kj"
       ],
+      "disabled": true,
       "name": "GG-双图片横幅",
+      "settings": {}
+    },
+    "gg_double_image_banner_mobile_czcpJB": {
+      "type": "gg-double-image-banner-mobile",
+      "blocks": {
+        "banner_qtwRLE": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/brand-12.jpg",
+            "subtitle": "副标题",
+            "title": "主标题",
+            "button_label": "SHOP NOW",
+            "button_link": ""
+          }
+        },
+        "banner_r4DGXF": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/brand-13.jpg",
+            "subtitle": "副标题",
+            "title": "主标题",
+            "button_label": "SHOP NOW",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "banner_qtwRLE",
+        "banner_r4DGXF"
+      ],
+      "disabled": true,
+      "name": "GG-双图片横幅-移动端",
       "settings": {}
     },
     "gg_rich_text_page_R7exfe": {
@@ -368,18 +401,32 @@
         "image_2": "shopify://shop_images/brand-10.jpg",
         "image_3": "shopify://shop_images/brand-11.jpg"
       }
+    },
+    "gg_simple_image_banner_bHXLet": {
+      "type": "gg-simple-image-banner",
+      "name": "GG-基础图片横幅",
+      "settings": {
+        "image": "shopify://shop_images/brand-7.jpg",
+        "image_mobile": "shopify://shop_images/brand-7.jpg",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0
+      }
     }
   },
   "order": [
     "main",
     "gg_simple_image_banner_kPHg8h",
     "gg_double_image_banner_dELCwb",
+    "gg_double_image_banner_mobile_czcpJB",
     "gg_rich_text_page_R7exfe",
     "slideshow_pEeKyr",
     "gg_rich_text_page_d7h8mc",
     "multirow_HtCDPM",
     "multirow_7ipV3B",
     "multirow_WpJxfi",
-    "gg_three_image_banner_htRqLK"
+    "gg_three_image_banner_htRqLK",
+    "gg_simple_image_banner_bHXLet"
   ]
 }
