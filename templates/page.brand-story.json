@@ -172,7 +172,7 @@
         "text_yMBwV7"
       ],
       "settings": {
-        "content_width": 1200,
+        "content_width": 1740,
         "padding_left": 0,
         "padding_right": 8,
         "padding_top": 16,
@@ -253,8 +253,8 @@
       "name": "GG-二级页面-富文本组件",
       "settings": {
         "content_width": 1200,
-        "padding_left": 20,
-        "padding_right": 20,
+        "padding_left": 0,
+        "padding_right": 0,
         "padding_top": 16,
         "padding_bottom": 24
       }
