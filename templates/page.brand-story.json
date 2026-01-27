@@ -21,7 +21,7 @@
       "type": "gg-simple-image-banner",
       "settings": {
         "image": "shopify://shop_images/brand-1.jpg",
-        "image_mobile": "shopify://shop_images/brand-1.jpg",
+        "image_mobile": "shopify://shop_images/brand-m-11.jpg",
         "padding_top": 0,
         "padding_bottom": 0,
         "padding_left": 0,
@@ -415,6 +415,7 @@
         "mobile_slide_4c8tGn": {
           "type": "mobile_slide",
           "settings": {
+            "image": "shopify://shop_images/brand-1-m.jpg",
             "link": ""
           }
         }
