@@ -278,7 +278,7 @@
           "settings": {
             "image": "shopify://shop_images/brand-5.jpg",
             "caption": "",
-            "heading": "<strong>Alpargali CoreShell</strong>",
+            "heading": "Alpargali CoreShell",
             "text": "<ul><li>Windproof, water-repellent, </li><li>30% warmer with CoreLock insulation and 2mm fleece</li><li>13 functional pockets, recycled materialsreinforced durability, 4-way stretch</li></ul>",
             "button_label": "LEARN MORE",
             "button_link": "shopify://products/alpargali-coreshell-jacket"
@@ -325,7 +325,7 @@
           "settings": {
             "image": "shopify://shop_images/brand-3.jpg",
             "caption": "",
-            "heading": "<strong>Alpargali Puffer Pro </strong>",
+            "heading": "Alpargali Puffer Pro",
             "text": "<ul><li>-40°C / -40°F Extreme Warmth</li><li>Expedition-Grade, Urban Ready</li><li>Ultra-Light, High Warmth-to-WeightDual</li><li>Insulation: Bionic Down + Aerogel</li><li>All-Weather Protection (20K / 10K Dermizax®)</li></ul>",
             "button_label": "LEARN MORE",
             "button_link": ""
@@ -364,7 +364,7 @@
             "heading": "All-Day Backpack",
             "text": "<ul><li>Organized, weather-protected, and ready for daily life or short trips</li><li>15+ smart compartments, clamshell opening</li><li>Waterproof fabrics and zippers</li></ul>",
             "button_label": "LEARN MORE",
-            "button_link": ""
+            "button_link": "shopify://products/everyday-backpack"
           }
         }
       },
@@ -416,7 +416,7 @@
           "type": "mobile_slide",
           "settings": {
             "image": "shopify://shop_images/brand-1-m.jpg",
-            "link": ""
+            "link": "https://www.instagram.com/alpargali_official/"
           }
         }
       },
