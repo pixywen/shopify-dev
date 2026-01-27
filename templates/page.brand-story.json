@@ -337,6 +337,37 @@
         "image_2": "shopify://shop_images/brand-10.jpg",
         "image_3": "shopify://shop_images/brand-11.jpg"
       }
+    },
+    "gg_double_image_banner_dELCwb": {
+      "type": "gg-double-image-banner",
+      "blocks": {
+        "banner_GJri6x": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/brand-12.jpg",
+            "subtitle": "",
+            "title": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "banner_Aze7kj": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/brand-13.jpg",
+            "subtitle": "",
+            "title": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "banner_GJri6x",
+        "banner_Aze7kj"
+      ],
+      "name": "GG-双图片横幅",
+      "settings": {}
     }
   },
   "order": [
@@ -348,6 +379,7 @@
     "multirow_HtCDPM",
     "multirow_7ipV3B",
     "multirow_WpJxfi",
-    "gg_three_image_banner_htRqLK"
+    "gg_three_image_banner_htRqLK",
+    "gg_double_image_banner_dELCwb"
   ]
 }
