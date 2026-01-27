@@ -37,7 +37,7 @@
           "settings": {
             "image": "shopify://shop_images/banner_-puffer-pc.jpg",
             "alt_text": "",
-            "custom_duration": 5,
+            "custom_duration": 4,
             "image_link": "shopify://products/alpargali-aerogel-graphene-puffer-jacket"
           }
         },
@@ -46,7 +46,7 @@
           "settings": {
             "image": "shopify://shop_images/banner-m_-puffer.jpg",
             "alt_text": "",
-            "custom_duration": 5,
+            "custom_duration": 4,
             "image_link": "shopify://products/alpargali-aerogel-graphene-puffer-jacket"
           }
         },
@@ -55,7 +55,7 @@
           "settings": {
             "image": "shopify://shop_images/Men_s_All-Weather_Outdoor_Jacket-pc.jpg",
             "alt_text": "",
-            "custom_duration": 5,
+            "custom_duration": 4,
             "image_link": ""
           }
         },
