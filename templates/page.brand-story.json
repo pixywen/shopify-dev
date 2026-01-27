@@ -267,8 +267,8 @@
           "settings": {
             "image": "shopify://shop_images/brand-6.jpg",
             "caption": "",
-            "heading": "",
-            "text": "<p><em><strong>The CoreShell journey</strong></em></p><p>Turning bold ideas into wearable performance.<br/><br/>Built for the elements, refined for everyday life.<br/><br/>Engineered protection, comfort, and style—by Alpargali.<br/></p>",
+            "heading": "The CoreShell journey",
+            "text": "<p>Turning bold ideas into wearable performance.<br/><br/>Built for the elements, refined for everyday life.<br/><br/>Engineered protection, comfort, and style—by Alpargali.<br/></p>",
             "button_label": "DISCOVER NOW",
             "button_link": "shopify://products/alpargali-coreshell-jacket"
           }
@@ -278,8 +278,8 @@
           "settings": {
             "image": "shopify://shop_images/brand-5.jpg",
             "caption": "",
-            "heading": "",
-            "text": "<p><strong>Alpargali CoreShell</strong></p><ul><li>Windproof, water-repellent, </li><li>30% warmer with CoreLock insulation and 2mm fleece</li><li>13 functional pockets, recycled materialsreinforced durability, 4-way stretch</li></ul>",
+            "heading": "<strong>Alpargali CoreShell</strong>",
+            "text": "<ul><li>Windproof, water-repellent, </li><li>30% warmer with CoreLock insulation and 2mm fleece</li><li>13 functional pockets, recycled materialsreinforced durability, 4-way stretch</li></ul>",
             "button_label": "LEARN MORE",
             "button_link": "shopify://products/alpargali-coreshell-jacket"
           }
@@ -314,8 +314,8 @@
           "settings": {
             "image": "shopify://shop_images/brand-4.jpg",
             "caption": "",
-            "heading": "",
-            "text": "<p><strong>How the Alpargali Puffer Pro came to life.</strong></p><p>Built for -40° performance, the Alpargali Puffer Pro delivers lightweight warmth and all-weather protection with dual insulation and a 3-layer Dermizax® shell—finished with a graphene-lined interior for everyday wear.</p>",
+            "heading": "Puffer Pro Origins",
+            "text": "<p>Built for -40° performance, the Alpargali Puffer Pro delivers lightweight warmth and all-weather protection with dual insulation and a 3-layer Dermizax® shell—finished with a graphene-lined interior for everyday wear.</p>",
             "button_label": "DISCOVER NOW",
             "button_link": ""
           }
@@ -325,7 +325,7 @@
           "settings": {
             "image": "shopify://shop_images/brand-3.jpg",
             "caption": "",
-            "heading": "Aerogel Graphene Puffer Pro Jacket",
+            "heading": "<strong>Alpargali Puffer Pro </strong>",
             "text": "<ul><li>-40°C / -40°F Extreme Warmth</li><li>Expedition-Grade, Urban Ready</li><li>Ultra-Light, High Warmth-to-WeightDual</li><li>Insulation: Bionic Down + Aerogel</li><li>All-Weather Protection (20K / 10K Dermizax®)</li></ul>",
             "button_label": "LEARN MORE",
             "button_link": ""
