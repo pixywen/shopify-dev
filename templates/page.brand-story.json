@@ -432,37 +432,6 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "gg_image_slideshow_CtTjCR": {
-      "type": "gg-image-slideshow",
-      "blocks": {
-        "desktop_slide_CExHyi": {
-          "type": "desktop_slide",
-          "settings": {
-            "image": "shopify://shop_images/brand-7.jpg",
-            "link": "https://www.instagram.com/alpargali_official/"
-          }
-        },
-        "mobile_slide_qzkpx3": {
-          "type": "mobile_slide",
-          "settings": {
-            "image": "shopify://shop_images/brand-1-m.jpg",
-            "link": "https://www.instagram.com/alpargali_official/"
-          }
-        }
-      },
-      "block_order": [
-        "desktop_slide_CExHyi",
-        "mobile_slide_qzkpx3"
-      ],
-      "name": "GG-图片轮播",
-      "settings": {
-        "change_slides_speed": 5,
-        "auto_rotate": true,
-        "dots_position_bottom": 10,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
@@ -477,7 +446,6 @@
     "multirow_7ipV3B",
     "multirow_WpJxfi",
     "gg_three_image_banner_htRqLK",
-    "gg_image_slideshow_LjNRKq",
-    "gg_image_slideshow_CtTjCR"
+    "gg_image_slideshow_LjNRKq"
   ]
 }
