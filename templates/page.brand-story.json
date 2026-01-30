@@ -459,6 +459,7 @@
       "block_order": [
         "slide_xhDHBz"
       ],
+      "disabled": true,
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "full_bleed",
