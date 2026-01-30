@@ -424,6 +424,7 @@
         "desktop_slide_hy3jhC",
         "mobile_slide_4c8tGn"
       ],
+      "disabled": true,
       "name": "GG-图片轮播",
       "settings": {
         "change_slides_speed": 5,
@@ -431,6 +432,43 @@
         "dots_position_bottom": 10,
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "slideshow_UhB94e": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_xhDHBz": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/brand-7.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "https://www.instagram.com/alpargali_official/",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_xhDHBz"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
       }
     }
   },
@@ -446,6 +484,7 @@
     "multirow_7ipV3B",
     "multirow_WpJxfi",
     "gg_three_image_banner_htRqLK",
-    "gg_image_slideshow_LjNRKq"
+    "gg_image_slideshow_LjNRKq",
+    "slideshow_UhB94e"
   ]
 }
