@@ -44,10 +44,10 @@
         "mobile_slide_ijW4XL": {
           "type": "mobile_slide",
           "settings": {
-            "image": "shopify://shop_images/banner-m_-puffer.jpg",
+            "image": "shopify://shop_images/pufferpro-m.jpg",
             "alt_text": "",
             "custom_duration": 4,
-            "image_link": "shopify://products/alpargali-aerogel-graphene-puffer-jacket"
+            "image_link": "shopify://products/alpargali-aerogel-graphene-puffer-pro-jacket"
           }
         },
         "desktop_slide_kDjina": {
