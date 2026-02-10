@@ -178,7 +178,7 @@
           "settings": {
             "heading": "Details",
             "icon": "none",
-            "content": "<p>The Alpargali Lightweight Jacket is crafted with advanced fabric from <strong>Toray Japan</strong> for effortless everyday wear.</p><p>Its <strong>30D ultra-light fabric</strong> is wind-resistant, breathable, and durable, while <strong>4-way stretch</strong> ensures natural movement throughout the day.</p><p>Made with <strong>83% recycled nylon</strong> and a <strong>fluorine-free water-repellent finish</strong>, it balances performance with sustainability.</p><p>Wrinkle-resistant, quick-drying, and <strong>machine washable</strong> for easy care.</p>",
+            "content": "<p>The Alpargali Lightweight Jacket is crafted with advanced fabric from Toray for effortless everyday wear.</p><p>Its <strong>30D ultra-light fabric</strong> is wind-resistant, breathable, and durable, while <strong>4-way stretch</strong> ensures natural movement throughout the day.</p><p>Made with <strong>83% recycled nylon</strong> and a <strong>fluorine-free water-repellent finish</strong>, it balances performance with sustainability.</p><p>Wrinkle-resistant, quick-drying, and <strong>machine washable</strong> for easy care.</p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
@@ -512,7 +512,7 @@
       ],
       "settings": {
         "show_description": true,
-        "show_video": true,
+        "show_video": false,
         "show_reviews": true,
         "show_faq": true
       }
