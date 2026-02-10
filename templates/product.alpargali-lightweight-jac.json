@@ -200,7 +200,7 @@
           "settings": {
             "heading": "Care",
             "icon": "none",
-            "content": "<p>Hand Wash</p><p><br/>Maximum Temperature 40°C<br/></p><p><br/>Do Not Bleach<br/></p><p><br/>Do Not Tumble Dry<br/></p><p><br/>Do Not Iron<br/></p><p><br/>Do Not Dry Clean<br/></p><p><br/>Line Dry In Shade</p>",
+            "content": "<p>Hand Wash<br/>Maximum Temperature 40°C<br/>Do Not Bleach<br/>Do Not Tumble Dry<br/>Do Not Iron<br/>Do Not Dry Clean<br/>Line Dry In Shade</p>",
             "page": "",
             "image": "shopify://shop_images/care-lightw.png",
             "image_alt": "",
