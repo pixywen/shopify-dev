@@ -265,8 +265,8 @@
         "image_banner_6EqhKf": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/1.Lightweight_Jacket.jpg",
-            "image_mobile": "shopify://shop_images/1-pe-Lightweight_Jacket.jpg",
+            "image_desktop": "shopify://shop_images/1-pc-Lightweight_Jacket.jpg",
+            "image_mobile": "shopify://shop_images/1.Lightweight_Jacket_596f14a7-1725-43fc-83dd-81d1cc0e3607.jpg",
             "margin_top": 32,
             "margin_bottom": 0,
             "padding_x_desktop": 0,
