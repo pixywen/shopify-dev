@@ -221,8 +221,8 @@
         "button_link": "shopify://collections/shell-jackets",
         "image": "shopify://shop_images/sib-shell_jackets.jpg",
         "mobile_image": "shopify://shop_images/sib-m-shell_jackets.jpg",
-        "video": "shopify://files/videos/sib-shell jackets.mp4",
-        "mobile_video": "shopify://files/videos/sib-m-insulated jackets.mov",
+        "video": "shopify://files/videos/exper-video.mp4",
+        "mobile_video": "shopify://files/videos/exper-video.mp4",
         "description": ""
       }
     },
@@ -680,6 +680,7 @@
     },
     "gg_image_banner_common_XyH39W": {
       "type": "gg-image-banner-common",
+      "disabled": true,
       "settings": {
         "small_heading_above": "",
         "heading": "Insulated Jackets",
