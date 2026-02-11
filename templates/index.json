@@ -101,6 +101,8 @@
         "small_heading_below": "Enjoy 15% Off During Launch Week",
         "button_label": "SHOP NOW",
         "button_link": "shopify://products/alpargali-aerogel-graphene-puffer-pro-jacket",
+        "image": "shopify://shop_images/pro-video-cover.jpg",
+        "mobile_image": "shopify://shop_images/pro-video-cover.jpg",
         "video": "shopify://files/videos/exper-video.mp4",
         "mobile_video": "shopify://files/videos/exper-video.mp4",
         "description": ""
