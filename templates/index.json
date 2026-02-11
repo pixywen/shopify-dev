@@ -989,7 +989,6 @@
     },
     "gg_home_video_banner_URhYWJ": {
       "type": "gg-home-video-banner",
-      "disabled": true,
       "name": "GG-首页-视频横幅",
       "settings": {
         "show_content": false,
