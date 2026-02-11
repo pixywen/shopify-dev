@@ -77,6 +77,7 @@
         "desktop_slide_kDjina",
         "mobile_slide_fNf3QQ"
       ],
+      "disabled": true,
       "name": "GT-首页-头部横幅(图片轮播)",
       "settings": {
         "small_heading_above": "",
@@ -243,7 +244,6 @@
     },
     "gg_home_video_banner_URhYWJ": {
       "type": "gg-home-video-banner",
-      "disabled": true,
       "name": "GG-首页-视频横幅",
       "settings": {
         "show_content": false,
@@ -782,11 +782,11 @@
   },
   "order": [
     "gt_top_banner_image_abgczQ",
+    "gg_home_video_banner_URhYWJ",
     "gg_scroll_image_zqhRNf",
     "1761291178533c8302",
     "gg_image_banner_V4rbFP",
     "gg_double_image_banner_YFmVwF",
-    "gg_home_video_banner_URhYWJ",
     "gg_image_banner_common_ARcgWG",
     "featured_collection_niEPwA",
     "gg_featured_collection_base_bfmKX3",
