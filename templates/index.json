@@ -91,6 +91,21 @@
         "show_indicators": true
       }
     },
+    "gg_home_video_banner_URhYWJ": {
+      "type": "gg-home-video-banner",
+      "name": "GG-首页-视频横幅",
+      "settings": {
+        "show_content": true,
+        "small_heading_above": "",
+        "heading": "",
+        "small_heading_below": "",
+        "button_label": "SHOP NOW",
+        "button_link": "shopify://products/alpargali-aerogel-graphene-puffer-pro-jacket",
+        "video": "shopify://files/videos/exper-video.mp4",
+        "mobile_video": "shopify://files/videos/exper-video.mp4",
+        "description": ""
+      }
+    },
     "gg_scroll_image_zqhRNf": {
       "type": "gg-scroll-image",
       "blocks": {
@@ -241,21 +256,6 @@
         "banner_npKCK9"
       ],
       "settings": {}
-    },
-    "gg_home_video_banner_URhYWJ": {
-      "type": "gg-home-video-banner",
-      "name": "GG-首页-视频横幅",
-      "settings": {
-        "show_content": false,
-        "small_heading_above": "Trusted By 1,500 Customers",
-        "heading": "Gear for Every Adventure",
-        "small_heading_below": "From freezing cold to rainy days, Alpargali has you covered.",
-        "button_label": "SHOP NOW",
-        "button_link": "",
-        "video": "shopify://files/videos/exper-video.mp4",
-        "mobile_video": "shopify://files/videos/exper-video.mp4",
-        "description": ""
-      }
     },
     "gg_image_banner_common_ARcgWG": {
       "type": "gg-image-banner-common",
@@ -488,7 +488,7 @@
         "change_slides_speed": 5,
         "auto_rotate": true,
         "dots_position_bottom": 10,
-        "padding_top": 0,
+        "padding_top": 12,
         "padding_bottom": 0
       }
     },
