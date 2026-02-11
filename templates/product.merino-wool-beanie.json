@@ -267,12 +267,23 @@
         "image_banner_MYRGBE": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/Wool_Beanie-PC1.jpg",
-            "image_mobile": "shopify://shop_images/Wool_Beanie-m1.jpg",
+            "image_desktop": "shopify://shop_images/pc-1-Premium_Merino_Wool.jpg",
+            "image_mobile": "shopify://shop_images/M-1-Premium_Merino_Wool.jpg",
             "margin_top": 32,
             "margin_bottom": 32,
             "padding_x_desktop": 0,
             "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "content_block_zat93J": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 12,
+            "margin_bottom": 32,
+            "heading": "<p>Warmer. Softer. Smarter. The Ultimate Merino Beanie.</p>",
+            "content": "<p>Superior Warmth Efficiency — Micro air pockets inside the Merino fibers enhance heat retention naturally.<br/></p><p>Soft & Skin-Friendly — Ultra-fine fibers feel gentle against the skin with no itch, no irritation — comfortable even in long wear.<br/></p><p>Moisture-Active Breathability — Merino naturally absorbs sweat vapor and releases it outwards, keeping your head dry, fresh, and comfortable — even after activity.<br/></p><p>Built to Last — 2/30nm yarn with ply-twisting increases strength, durability, and wash resistance — ready for years of winter use.<br/><br/>A Merino beanie designed for warmth, comfort, and long-lasting performance — finished with a modern contrast logo detail.</p>",
             "target_tab": "description"
           }
         },
@@ -387,10 +398,10 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/Wool_Beanie-PC1-1-PC.jpg",
-            "heading": "Wool Beanie – Adventure-Ready Comfort",
+            "image": "shopify://shop_images/100_Merino_Wool_yarn.jpg",
+            "heading": "Natural Thermal Barrier Powered by 100% Merino Wool",
             "subheading": "",
-            "text": "<p>The Wool Beanie, made from a high-quality blend of acrylic and wool, is your ultimate companion for winter outdoor activities and daily commutes, offering superior warmth and comfort.</p>",
+            "text": "<p>This beanie is knit with 2/30nm 100% Merino Wool yarn — a mid-fineness fiber that traps more still air between strands, forming a natural thermal barrier that keeps you warm in cold conditions.</p>",
             "target_tab": "description",
             "margin_top": 32,
             "margin_bottom": 0
@@ -398,6 +409,7 @@
         },
         "collage_RULhdH": {
           "type": "collage",
+          "disabled": true,
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
@@ -435,18 +447,6 @@
             "margin_bottom": 32,
             "padding_x_desktop": 0,
             "padding_x_mobile": 0,
-            "target_tab": "description"
-          }
-        },
-        "content_block_zat93J": {
-          "type": "content_block",
-          "disabled": true,
-          "settings": {
-            "block_type": "heading_text",
-            "margin_top": 12,
-            "margin_bottom": 32,
-            "heading": "",
-            "content": "<p>Alpargali CoreShell features a <strong>3-layer storm defense system</strong> engineered to handle real-world weather — from sudden rain to biting wind — while keeping your body dry, fresh, and comfortable.</p>",
             "target_tab": "description"
           }
         },
@@ -684,6 +684,7 @@
       },
       "block_order": [
         "image_banner_MYRGBE",
+        "content_block_zat93J",
         "image_banner_4KMT9M",
         "image_banner_DDQQKc",
         "image_banner_kkiFwQ",
@@ -694,7 +695,6 @@
         "collage_RULhdH",
         "collage_PMAQj8",
         "image_banner_TjCbxi",
-        "content_block_zat93J",
         "collage_iqryEz",
         "collage_CjANny",
         "collage_F3RWhV",
