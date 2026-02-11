@@ -90,6 +90,25 @@
         "show_indicators": true
       }
     },
+    "gg_scroll_image_zqhRNf": {
+      "type": "gg-scroll-image",
+      "blocks": {
+        "image_64Vaeb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/icon-index-brand-mark.png",
+            "mobile_image": "shopify://shop_images/icon-index-brand-mark-m.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_64Vaeb"
+      ],
+      "settings": {
+        "scroll_speed": 30,
+        "gap": 30
+      }
+    },
     "1761291178533c8302": {
       "type": "_blocks",
       "blocks": {
@@ -192,24 +211,35 @@
         "description": ""
       }
     },
-    "gg_scroll_image_zqhRNf": {
-      "type": "gg-scroll-image",
+    "gg_double_image_banner_YFmVwF": {
+      "type": "gg-double-image-banner",
       "blocks": {
-        "image_64Vaeb": {
-          "type": "image",
+        "banner_xrUmaj": {
+          "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/icon-index-brand-mark.png",
-            "mobile_image": "shopify://shop_images/icon-index-brand-mark-m.png"
+            "image": "shopify://shop_images/coll-PC-2.jpg",
+            "subtitle": "Stay Warm. Stay Light.",
+            "title": "NASA-Inspired Warmth",
+            "button_label": "Shop Puffer",
+            "button_link": "shopify://products/alpargali-aerogel-graphene-puffer-jacket"
+          }
+        },
+        "banner_npKCK9": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/coll-PC-1.jpg",
+            "subtitle": "Windproof. Tough. Eco.",
+            "title": "Warm. Tough. Ready.",
+            "button_label": "Shop Coreshell",
+            "button_link": "shopify://products/alpargali-coreshell-jacket"
           }
         }
       },
       "block_order": [
-        "image_64Vaeb"
+        "banner_xrUmaj",
+        "banner_npKCK9"
       ],
-      "settings": {
-        "scroll_speed": 30,
-        "gap": 30
-      }
+      "settings": {}
     },
     "gg_home_video_banner_URhYWJ": {
       "type": "gg-home-video-banner",
@@ -336,36 +366,6 @@
       ],
       "settings": {}
     },
-    "gg_double_image_banner_YFmVwF": {
-      "type": "gg-double-image-banner",
-      "blocks": {
-        "banner_npKCK9": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify://shop_images/coll-PC-1.jpg",
-            "subtitle": "Windproof. Tough. Eco.",
-            "title": "Warm. Tough. Ready.",
-            "button_label": "Shop Coreshell",
-            "button_link": "shopify://products/alpargali-coreshell-jacket"
-          }
-        },
-        "banner_xrUmaj": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify://shop_images/coll-PC-2.jpg",
-            "subtitle": "Stay Warm. Stay Light.",
-            "title": "NASA-Inspired Warmth",
-            "button_label": "Shop Puffer",
-            "button_link": "shopify://products/alpargali-aerogel-graphene-puffer-jacket"
-          }
-        }
-      },
-      "block_order": [
-        "banner_npKCK9",
-        "banner_xrUmaj"
-      ],
-      "settings": {}
-    },
     "featured_collection_TxRkxB": {
       "type": "featured-collection",
       "disabled": true,
@@ -398,82 +398,6 @@
         "padding_bottom": 60
       }
     },
-    "gg_featured_products_UPNhBN": {
-      "type": "gg-featured-products",
-      "blocks": {
-        "product_ikrFYd": {
-          "type": "product",
-          "settings": {
-            "product": "mens-all-weather-outdoor-jacket",
-            "color_name_1": "Black",
-            "color_1": "shopify://shop_images/black_01.png",
-            "model_image_1": "shopify://shop_images/05_3x_381259f8-a074-4dce-b722-17d31adaf151.png",
-            "color_name_2": "Blue",
-            "color_2": "shopify://shop_images/blue_01.png",
-            "main_image_2": "shopify://shop_images/product-shell-blue-04.jpg",
-            "model_image_2": "shopify://shop_images/blue04.png",
-            "color_name_3": ""
-          }
-        },
-        "product_EtHtt4": {
-          "type": "product",
-          "settings": {
-            "product": "alpargali-aerogel-graphene-puffer-jacket1",
-            "color_name_1": "Black",
-            "color_1": "shopify://shop_images/color_0d038829-ed7f-4dbb-988a-d39926844447.png",
-            "main_image_1": "shopify://shop_images/product-aa-1.png",
-            "model_image_1": "shopify://shop_images/product-aa-3.png",
-            "color_name_2": "Sand",
-            "color_2": "shopify://shop_images/color_a51c3b5d-1b64-4b5d-aa0a-507f31549ebc.png",
-            "main_image_2": "shopify://shop_images/product-aa-s-3.png",
-            "model_image_2": "shopify://shop_images/product-aa-s-5.png",
-            "color_name_3": ""
-          }
-        },
-        "product_NcBp6N": {
-          "type": "product",
-          "settings": {
-            "product": "graphene-lightweight-jacket",
-            "color_name_1": "Black",
-            "color_1": "shopify://shop_images/color.png",
-            "main_image_1": "shopify://shop_images/product-midlayers-black-01.png",
-            "model_image_1": "shopify://shop_images/product-midlayers-black-03.png",
-            "color_name_2": "Sand",
-            "color_2": "shopify://shop_images/color_4e214455-21ab-41a5-abbb-b07b0860f7e5.png",
-            "main_image_2": "shopify://shop_images/product-midlayers-sandstorm-04.png",
-            "model_image_2": "shopify://shop_images/3_5ede7656-43e8-44be-a699-ed1019929f6f.jpg",
-            "color_name_3": ""
-          }
-        },
-        "product_HjLb7h": {
-          "type": "product",
-          "settings": {
-            "product": "graphene-vest",
-            "color_name_1": "Black",
-            "color_1": "shopify://shop_images/color_08aba2e8-a248-4467-a044-3daa0a4deabb.png",
-            "model_image_1": "shopify://shop_images/product-vests-black-02.png",
-            "color_name_2": "Sand",
-            "color_2": "shopify://shop_images/color_5ad3148b-ff64-46d4-a8a6-89f5146f9a9d.png",
-            "main_image_2": "shopify://shop_images/product-vests-sandstorm-04.png",
-            "model_image_2": "shopify://shop_images/product-vests-sandstorm-03.png",
-            "color_name_3": ""
-          }
-        }
-      },
-      "block_order": [
-        "product_ikrFYd",
-        "product_EtHtt4",
-        "product_NcBp6N",
-        "product_HjLb7h"
-      ],
-      "disabled": true,
-      "name": "GG-热卖商品",
-      "settings": {
-        "title": "Best Seller",
-        "show_sale_badge": true,
-        "sale_badge_type": "percentage"
-      }
-    },
     "gg_image_banner_common_rnwYrY": {
       "type": "gg-image-banner-common",
       "disabled": true,
@@ -487,92 +411,6 @@
         "image": "shopify://shop_images/2_038da1ab-4982-4276-8d07-e84a659b9f98.jpg",
         "mobile_image": "shopify://shop_images/2_038da1ab-4982-4276-8d07-e84a659b9f98.jpg",
         "description": ""
-      }
-    },
-    "gg_featured_products_McEQBe": {
-      "type": "gg-featured-products",
-      "blocks": {
-        "product_dRYwKP": {
-          "type": "product",
-          "settings": {
-            "product": "nixcore-aerowool-nexus-t-shirt",
-            "color_name_1": "Moon Veil",
-            "color_1": "shopify://shop_images/color_Moon_Veil.png",
-            "main_image_1": "shopify://shop_images/Moon_Veil_01.jpg",
-            "model_image_1": "shopify://shop_images/Moon_Veil_06.jpg",
-            "color_name_2": "Abyss Pearl",
-            "color_2": "shopify://shop_images/swatch-Abyss_Pearl.png",
-            "main_image_2": "shopify://shop_images/Abyss_Pearl_01.jpg",
-            "model_image_2": "shopify://shop_images/Abyss_Pearl_08.jpg",
-            "color_name_3": "Tundra Sprout",
-            "color_3": "shopify://shop_images/swatch-Tundra_Sprout.png",
-            "main_image_3": "shopify://shop_images/Tundra_Sprout1.jpg",
-            "model_image_3": "shopify://shop_images/Tundra_Sprout3.jpg"
-          }
-        },
-        "product_FAGLWH": {
-          "type": "product",
-          "settings": {
-            "product": "urbaneon-solotex-gridwave-tee",
-            "color_name_1": "Fjord Amber",
-            "color_1": "shopify://shop_images/Fjord_Amber.png",
-            "model_image_1": "shopify://shop_images/7_1432e747-526d-4b88-b8f3-9164c2efdbf3.jpg",
-            "color_name_2": "Tundra Resin",
-            "color_2": "shopify://shop_images/Tundra_Resin.png",
-            "main_image_2": "shopify://shop_images/1_0f139672-f650-4e69-bfab-810024d1e976.jpg",
-            "model_image_2": "shopify://shop_images/3_202c81db-89ec-4b97-bc80-09cdf250a242.jpg",
-            "color_name_3": "Lichen Feldspar",
-            "color_3": "shopify://shop_images/Lichen_Feldspar.png",
-            "main_image_3": "shopify://shop_images/1_152f8e9f-d731-4d3c-97fb-ee3e743cac1d.jpg",
-            "model_image_3": "shopify://shop_images/3_a237e1f1-7903-40ed-b6c0-a41b90fdca01.jpg"
-          }
-        },
-        "product_mUUiyn": {
-          "type": "product",
-          "settings": {
-            "product": "nixcore-thermo-nexus-long-sleeve-t-shirt",
-            "color_name_1": "Sandgrove",
-            "color_1": "shopify://shop_images/Sandgrove.png",
-            "main_image_1": "shopify://shop_images/Sandgrove_01.jpg",
-            "model_image_1": "shopify://shop_images/Sandgrove_06.jpg",
-            "color_name_2": "Frost Ash",
-            "color_2": "shopify://shop_images/Frost_Ash.png",
-            "main_image_2": "shopify://shop_images/Frost_Ash_01.jpg",
-            "model_image_2": "shopify://shop_images/Frost_Ash_08.jpg",
-            "color_name_3": "Moss Whisper",
-            "color_3": "shopify://shop_images/Moss_Whisper.png",
-            "main_image_3": "shopify://shop_images/Moss_Whisper_01.jpg",
-            "model_image_3": "shopify://shop_images/Moss_Whisper_main.jpg"
-          }
-        },
-        "product_FQmGnt": {
-          "type": "product",
-          "settings": {
-            "product": "aerosolis-aether-mesa-flex-pants",
-            "color_name_1": "Polar Night",
-            "color_1": "shopify://shop_images/swatch-Polar_Night.png",
-            "main_image_1": "shopify://shop_images/PolarNight1.jpg",
-            "model_image_1": "shopify://shop_images/PolarNight9.jpg",
-            "color_name_2": "Rime Pod",
-            "color_2": "shopify://shop_images/watch-Rime_Pod.png",
-            "main_image_2": "shopify://shop_images/Rime_Pod4.jpg",
-            "model_image_2": "shopify://shop_images/Rime_Pod2.jpg",
-            "color_name_3": ""
-          }
-        }
-      },
-      "block_order": [
-        "product_dRYwKP",
-        "product_FAGLWH",
-        "product_mUUiyn",
-        "product_FQmGnt"
-      ],
-      "disabled": true,
-      "custom_css": [],
-      "settings": {
-        "title": "Summer Sale",
-        "show_sale_badge": true,
-        "sale_badge_type": "percentage"
       }
     },
     "featured_collection_7qii9g": {
@@ -605,6 +443,53 @@
         "swipe_on_mobile": true,
         "padding_top": 76,
         "padding_bottom": 36
+      }
+    },
+    "gg_image_slideshow_gdURJ8": {
+      "type": "gg-image-slideshow",
+      "blocks": {
+        "desktop_slide_hkz68e": {
+          "type": "desktop_slide",
+          "settings": {
+            "image": "shopify://shop_images/pro-1920-pc.jpg",
+            "link": "shopify://products/alpargali-aerogel-graphene-puffer-pro-jacket"
+          }
+        },
+        "mobile_slide_NpiC8A": {
+          "type": "mobile_slide",
+          "settings": {
+            "image": "shopify://shop_images/pro-1920-m.jpg",
+            "link": "shopify://products/alpargali-aerogel-graphene-puffer-pro-jacket"
+          }
+        },
+        "desktop_slide_tnWq7i": {
+          "type": "desktop_slide",
+          "settings": {
+            "image": "shopify://shop_images/allweather-1920-pc.jpg",
+            "link": "shopify://products/mens-all-weather-outdoor-jacket"
+          }
+        },
+        "mobile_slide_RUQNrR": {
+          "type": "mobile_slide",
+          "settings": {
+            "image": "shopify://shop_images/allweather-1920-m.jpg",
+            "link": "shopify://products/mens-all-weather-outdoor-jacket"
+          }
+        }
+      },
+      "block_order": [
+        "desktop_slide_hkz68e",
+        "mobile_slide_NpiC8A",
+        "desktop_slide_tnWq7i",
+        "mobile_slide_RUQNrR"
+      ],
+      "name": "GG-图片轮播",
+      "settings": {
+        "change_slides_speed": 5,
+        "auto_rotate": true,
+        "dots_position_bottom": 10,
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "gg_featured_collection_base_HyGgaR": {
@@ -813,116 +698,6 @@
       "disabled": true,
       "settings": {}
     },
-    "1767690491d9709aed": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_32576cf_whXJW6": {
-          "type": "ai_gen_block_32576cf",
-          "settings": {
-            "columns_desktop": 3,
-            "columns_mobile": "2",
-            "gap": 8,
-            "aspect_ratio": "177.78",
-            "show_controls": false,
-            "border_radius": 0,
-            "icon_size": 40,
-            "icon_color": "#ffffff",
-            "icon_background_color": "#000000",
-            "icon_opacity": 20,
-            "icon_border_radius": 8,
-            "icon_position_bottom": 10,
-            "icon_position_right": 10,
-            "video_1_enabled": true,
-            "video_1_url": "https://www.instagram.com/p/DSDJOvxCGTh/",
-            "video_1_product_link": "",
-            "video_1_instagram_link": "",
-            "video_2_enabled": true,
-            "video_2_url": "",
-            "video_2_product_link": "",
-            "video_2_instagram_link": "",
-            "video_3_enabled": true,
-            "video_3_url": "",
-            "video_3_product_link": "",
-            "video_3_instagram_link": "",
-            "video_4_enabled": false,
-            "video_4_url": "",
-            "video_4_product_link": "",
-            "video_4_instagram_link": "",
-            "video_5_enabled": false,
-            "video_5_url": "",
-            "video_5_product_link": "",
-            "video_5_instagram_link": "",
-            "video_6_enabled": false,
-            "video_6_url": "",
-            "video_6_product_link": "",
-            "video_6_instagram_link": "",
-            "desktop_width_percent": 100
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_32576cf_whXJW6"
-      ],
-      "disabled": true,
-      "settings": {}
-    },
-    "17676910098a7c8d7c": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_9fff68d_7aYeN3": {
-          "type": "ai_gen_block_9fff68d",
-          "settings": {
-            "title": "Shop the feed",
-            "subtitle": "Tap to shop our latest looks",
-            "items_count": 12,
-            "max_width": 1200,
-            "columns_desktop": 4,
-            "columns_tablet": "3",
-            "columns_mobile": "2",
-            "grid_gap": 12,
-            "background_color": "#ffffff",
-            "title_color": "#121212",
-            "title_size": 32,
-            "subtitle_color": "#666666",
-            "subtitle_size": 16,
-            "image_radius": 8,
-            "overlay_color": "#000000",
-            "overlay_opacity": 40,
-            "icon_color": "#ffffff",
-            "tag_background": "#ffffff",
-            "tag_text_color": "#121212",
-            "tag_radius": 4,
-            "product_1": "",
-            "product_2": "",
-            "product_3": "",
-            "product_4": "",
-            "product_5": "",
-            "product_6": "",
-            "product_7": "",
-            "product_8": "",
-            "product_9": "",
-            "product_10": "",
-            "product_11": "",
-            "product_12": "",
-            "product_13": "",
-            "product_14": "",
-            "product_15": "",
-            "product_16": "",
-            "product_17": "",
-            "product_18": "",
-            "product_19": "",
-            "product_20": ""
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_9fff68d_7aYeN3"
-      ],
-      "disabled": true,
-      "settings": {}
-    },
     "176769188581344e59": {
       "type": "_blocks",
       "blocks": {
@@ -1007,28 +782,25 @@
   },
   "order": [
     "gt_top_banner_image_abgczQ",
+    "gg_scroll_image_zqhRNf",
     "1761291178533c8302",
     "gg_image_banner_V4rbFP",
-    "gg_scroll_image_zqhRNf",
+    "gg_double_image_banner_YFmVwF",
     "gg_home_video_banner_URhYWJ",
     "gg_image_banner_common_ARcgWG",
     "featured_collection_niEPwA",
     "gg_featured_collection_base_bfmKX3",
     "gg_double_image_banner_mobile_YXnVpE",
-    "gg_double_image_banner_YFmVwF",
     "featured_collection_TxRkxB",
-    "gg_featured_products_UPNhBN",
     "gg_image_banner_common_rnwYrY",
-    "gg_featured_products_McEQBe",
     "featured_collection_7qii9g",
+    "gg_image_slideshow_gdURJ8",
     "gg_featured_collection_base_HyGgaR",
     "gg_featured_products_NVq696",
     "gg_image_banner_common_XyH39W",
     "gg_image_banner_common_CHdPGU",
     "gg_three_image_banner_wVXhhw",
     "17623291379c48e057",
-    "1767690491d9709aed",
-    "17676910098a7c8d7c",
     "176769188581344e59",
     "gg_image_banner_common_xkbPDW"
   ]
