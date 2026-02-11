@@ -96,9 +96,9 @@
       "name": "GG-首页-视频横幅",
       "settings": {
         "show_content": true,
-        "small_heading_above": "NEW PUFFER PRO",
+        "small_heading_above": "Enjoy 15% Off During Launch Week",
         "heading": "NEW PUFFER PRO",
-        "small_heading_below": "Enjoy 15% Off During Launch Week",
+        "small_heading_below": "",
         "button_label": "SHOP NOW",
         "button_link": "shopify://products/alpargali-aerogel-graphene-puffer-pro-jacket",
         "video": "shopify://files/videos/exper-video.mp4",
