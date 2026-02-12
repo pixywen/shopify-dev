@@ -54,6 +54,7 @@
     },
     "gg_image_banner_common_p7drjC": {
       "type": "gg-image-banner-common",
+      "disabled": true,
       "name": "GG-通用视频横幅",
       "settings": {
         "small_heading_above": "summer sale",
@@ -78,6 +79,8 @@
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "standard",
+        "show_sale_badge": true,
+        "sale_badge_type": "percentage",
         "enable_filtering": true,
         "filter_type": "horizontal",
         "enable_sorting": true,
