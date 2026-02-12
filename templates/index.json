@@ -163,7 +163,7 @@
         "banner_tja83h": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/collection-2.jpg",
+            "image": "shopify://shop_images/co-2-m.jpg",
             "subtitle": "Stay Warm. Stay Light.",
             "title": "Engineered for Extreme Cold.",
             "button_label": "Shop Puffer Pro",
@@ -173,7 +173,7 @@
         "banner_FWeBpK": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/collection-1.jpg",
+            "image": "shopify://shop_images/co-1-m.jpg",
             "subtitle": "Windproof. Tough. Eco.",
             "title": "Built for the Wild.",
             "button_label": "Shop Outdoor",
