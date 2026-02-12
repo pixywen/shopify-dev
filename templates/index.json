@@ -174,10 +174,10 @@
           "type": "banner",
           "settings": {
             "image": "shopify://shop_images/coll-m-2.jpg",
-            "subtitle": "Stay Warm. Stay Light.",
-            "title": "NASA-Inspired Warmth",
-            "button_label": "Shop Puffer",
-            "button_link": "shopify://products/alpargali-aerogel-graphene-puffer-jacket"
+            "subtitle": "Windproof. Tough. Eco.",
+            "title": "Built for the Wild.",
+            "button_label": "Shop Outdoor",
+            "button_link": "shopify://products/mens-all-weather-outdoor-jacket"
           }
         }
       },
