@@ -127,6 +127,36 @@
         "gap": 30
       }
     },
+    "gg_double_image_banner_YFmVwF": {
+      "type": "gg-double-image-banner",
+      "blocks": {
+        "banner_xrUmaj": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/coll-PC-2.jpg",
+            "subtitle": "Stay Warm. Stay Light.",
+            "title": "NASA-Inspired Warmth",
+            "button_label": "Shop Puffer",
+            "button_link": "shopify://products/alpargali-aerogel-graphene-puffer-jacket"
+          }
+        },
+        "banner_npKCK9": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/coll-PC-1.jpg",
+            "subtitle": "Windproof. Tough. Eco.",
+            "title": "Warm. Tough. Ready.",
+            "button_label": "Shop Coreshell",
+            "button_link": "shopify://products/alpargali-coreshell-jacket"
+          }
+        }
+      },
+      "block_order": [
+        "banner_xrUmaj",
+        "banner_npKCK9"
+      ],
+      "settings": {}
+    },
     "1761291178533c8302": {
       "type": "_blocks",
       "blocks": {
@@ -417,36 +447,6 @@
         "padding_bottom": 36
       }
     },
-    "gg_double_image_banner_YFmVwF": {
-      "type": "gg-double-image-banner",
-      "blocks": {
-        "banner_xrUmaj": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify://shop_images/coll-PC-2.jpg",
-            "subtitle": "Stay Warm. Stay Light.",
-            "title": "NASA-Inspired Warmth",
-            "button_label": "Shop Puffer",
-            "button_link": "shopify://products/alpargali-aerogel-graphene-puffer-jacket"
-          }
-        },
-        "banner_npKCK9": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify://shop_images/coll-PC-1.jpg",
-            "subtitle": "Windproof. Tough. Eco.",
-            "title": "Warm. Tough. Ready.",
-            "button_label": "Shop Coreshell",
-            "button_link": "shopify://products/alpargali-coreshell-jacket"
-          }
-        }
-      },
-      "block_order": [
-        "banner_xrUmaj",
-        "banner_npKCK9"
-      ],
-      "settings": {}
-    },
     "gg_image_slideshow_gdURJ8": {
       "type": "gg-image-slideshow",
       "blocks": {
@@ -486,7 +486,6 @@
         "desktop_slide_tnWq7i",
         "mobile_slide_RUQNrR"
       ],
-      "disabled": true,
       "name": "GG-图片轮播",
       "settings": {
         "change_slides_speed": 5,
@@ -788,6 +787,7 @@
     "gt_top_banner_image_abgczQ",
     "gg_home_video_banner_URhYWJ",
     "gg_scroll_image_zqhRNf",
+    "gg_double_image_banner_YFmVwF",
     "1761291178533c8302",
     "gg_image_banner_V4rbFP",
     "gg_image_banner_common_ARcgWG",
@@ -797,7 +797,6 @@
     "featured_collection_TxRkxB",
     "gg_image_banner_common_rnwYrY",
     "featured_collection_7qii9g",
-    "gg_double_image_banner_YFmVwF",
     "gg_image_slideshow_gdURJ8",
     "gg_featured_collection_base_HyGgaR",
     "gg_featured_products_NVq696",
