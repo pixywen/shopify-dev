@@ -164,16 +164,16 @@
           "type": "banner",
           "settings": {
             "image": "shopify://shop_images/collection-2.jpg",
-            "subtitle": "Windproof. Tough. Eco.",
-            "title": "Warm. Tough. Ready.",
-            "button_label": "Shop Coreshell",
-            "button_link": "shopify://products/alpargali-coreshell-jacket"
+            "subtitle": "Stay Warm. Stay Light.",
+            "title": "Engineered for Extreme Cold.",
+            "button_label": "Shop Puffer Pro",
+            "button_link": "shopify://products/alpargali-aerogel-graphene-puffer-pro-jacket"
           }
         },
         "banner_FWeBpK": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/collection-1.jpg",
+            "image": "shopify://shop_images/coll-m-2.jpg",
             "subtitle": "Stay Warm. Stay Light.",
             "title": "NASA-Inspired Warmth",
             "button_label": "Shop Puffer",
