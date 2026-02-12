@@ -77,6 +77,7 @@
         "desktop_slide_kDjina",
         "mobile_slide_fNf3QQ"
       ],
+      "disabled": true,
       "name": "GT-首页-头部横幅(图片轮播)",
       "settings": {
         "small_heading_above": "",
@@ -92,7 +93,6 @@
     },
     "gg_home_video_banner_URhYWJ": {
       "type": "gg-home-video-banner",
-      "disabled": true,
       "name": "GG-首页-视频横幅",
       "settings": {
         "show_content": true,
@@ -100,11 +100,11 @@
         "heading": "NEW PUFFER PRO",
         "small_heading_below": "Enjoy 15% Off During Launch Week",
         "button_label": "SHOP NOW",
-        "button_link": "shopify://products/alpargali-aerogel-graphene-puffer-pro-jacket",
-        "image": "shopify://shop_images/pro-video-cover.jpg",
-        "mobile_image": "shopify://shop_images/pro-video-cover.jpg",
-        "video": "shopify://files/videos/exper-video.mp4",
-        "mobile_video": "shopify://files/videos/exper-video.mp4",
+        "button_link": "shopify://collections/clothing",
+        "image": "shopify://shop_images/pro-video-cover-pc.jpg",
+        "mobile_image": "shopify://shop_images/pro-video-cover-pc.jpg",
+        "video": "shopify://files/videos/pro-video-pc.mp4",
+        "mobile_video": "shopify://files/videos/pro-video-m.mp4",
         "description": ""
       }
     },
@@ -126,36 +126,6 @@
         "scroll_speed": 30,
         "gap": 30
       }
-    },
-    "gg_double_image_banner_YFmVwF": {
-      "type": "gg-double-image-banner",
-      "blocks": {
-        "banner_xrUmaj": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify://shop_images/coll-PC-2.jpg",
-            "subtitle": "Stay Warm. Stay Light.",
-            "title": "NASA-Inspired Warmth",
-            "button_label": "Shop Puffer",
-            "button_link": "shopify://products/alpargali-aerogel-graphene-puffer-jacket"
-          }
-        },
-        "banner_npKCK9": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify://shop_images/coll-PC-1.jpg",
-            "subtitle": "Windproof. Tough. Eco.",
-            "title": "Warm. Tough. Ready.",
-            "button_label": "Shop Coreshell",
-            "button_link": "shopify://products/alpargali-coreshell-jacket"
-          }
-        }
-      },
-      "block_order": [
-        "banner_xrUmaj",
-        "banner_npKCK9"
-      ],
-      "settings": {}
     },
     "1761291178533c8302": {
       "type": "_blocks",
@@ -446,6 +416,36 @@
         "padding_top": 76,
         "padding_bottom": 36
       }
+    },
+    "gg_double_image_banner_YFmVwF": {
+      "type": "gg-double-image-banner",
+      "blocks": {
+        "banner_xrUmaj": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/coll-PC-2.jpg",
+            "subtitle": "Stay Warm. Stay Light.",
+            "title": "NASA-Inspired Warmth",
+            "button_label": "Shop Puffer",
+            "button_link": "shopify://products/alpargali-aerogel-graphene-puffer-jacket"
+          }
+        },
+        "banner_npKCK9": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/coll-PC-1.jpg",
+            "subtitle": "Windproof. Tough. Eco.",
+            "title": "Warm. Tough. Ready.",
+            "button_label": "Shop Coreshell",
+            "button_link": "shopify://products/alpargali-coreshell-jacket"
+          }
+        }
+      },
+      "block_order": [
+        "banner_xrUmaj",
+        "banner_npKCK9"
+      ],
+      "settings": {}
     },
     "gg_image_slideshow_gdURJ8": {
       "type": "gg-image-slideshow",
