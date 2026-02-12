@@ -136,7 +136,8 @@
   height: 54.84px;
   display: inline-block;
   padding: 14px 28px;
-  color: #FFF;
+  color: #000;
+  background-color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 18px;
@@ -157,17 +158,10 @@
   right: 24px;
 }
 .banner-button-wrapper--home-video .button--home-video svg path {
-  fill: #FFF;
+  fill: #000;
 }
 
-.banner-button-wrapper--home-video .button--home-video:hover {
-  background-color: #ffffff;
-  color: #000000;
-  transform: translateY(-2px);
-}
-.banner-button-wrapper--home-video .button--home-video:hover svg path {
-  fill: #000000;
-}
+
 
 /* 响应式样式 */
 @media screen and (max-width: 768px) {
