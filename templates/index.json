@@ -157,6 +157,36 @@
       ],
       "settings": {}
     },
+    "gg_double_image_banner_mobile_YXnVpE": {
+      "type": "gg-double-image-banner-mobile",
+      "blocks": {
+        "banner_tja83h": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/collection-2.jpg",
+            "subtitle": "Windproof. Tough. Eco.",
+            "title": "Warm. Tough. Ready.",
+            "button_label": "Shop Coreshell",
+            "button_link": "shopify://products/alpargali-coreshell-jacket"
+          }
+        },
+        "banner_FWeBpK": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/coll-m-2.jpg",
+            "subtitle": "Stay Warm. Stay Light.",
+            "title": "NASA-Inspired Warmth",
+            "button_label": "Shop Puffer",
+            "button_link": "shopify://products/alpargali-aerogel-graphene-puffer-jacket"
+          }
+        }
+      },
+      "block_order": [
+        "banner_tja83h",
+        "banner_FWeBpK"
+      ],
+      "settings": {}
+    },
     "1761291178533c8302": {
       "type": "_blocks",
       "blocks": {
@@ -306,36 +336,6 @@
         "padding_top": 72,
         "padding_bottom": 60
       }
-    },
-    "gg_double_image_banner_mobile_YXnVpE": {
-      "type": "gg-double-image-banner-mobile",
-      "blocks": {
-        "banner_tja83h": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify://shop_images/coll-m-1.jpg",
-            "subtitle": "Windproof. Tough. Eco.",
-            "title": "Warm. Tough. Ready.",
-            "button_label": "Shop Coreshell",
-            "button_link": "shopify://products/alpargali-coreshell-jacket"
-          }
-        },
-        "banner_FWeBpK": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify://shop_images/coll-m-2.jpg",
-            "subtitle": "Stay Warm. Stay Light.",
-            "title": "NASA-Inspired Warmth",
-            "button_label": "Shop Puffer",
-            "button_link": "shopify://products/alpargali-aerogel-graphene-puffer-jacket"
-          }
-        }
-      },
-      "block_order": [
-        "banner_tja83h",
-        "banner_FWeBpK"
-      ],
-      "settings": {}
     },
     "gg_featured_collection_base_bfmKX3": {
       "type": "gg-featured-collection-base",
@@ -787,11 +787,11 @@
     "gg_home_video_banner_URhYWJ",
     "gg_scroll_image_zqhRNf",
     "gg_double_image_banner_YFmVwF",
+    "gg_double_image_banner_mobile_YXnVpE",
     "1761291178533c8302",
     "gg_image_banner_V4rbFP",
     "gg_image_banner_common_ARcgWG",
     "featured_collection_niEPwA",
-    "gg_double_image_banner_mobile_YXnVpE",
     "gg_featured_collection_base_bfmKX3",
     "featured_collection_TxRkxB",
     "gg_image_banner_common_rnwYrY",
