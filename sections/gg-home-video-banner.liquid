@@ -19,7 +19,7 @@
     {%- endif -%}
 
     {%- if section.settings.heading != blank -%}
-      <h2 class="banner-heading--home-video">{{ section.settings.heading | escape }}</h2>
+      <h2 class="banner-heading--home-video" style="font-weight: {{ section.settings.heading_font_weight }}">{{ section.settings.heading | escape }}</h2>
     {%- endif -%}
 
     {%- if section.settings.small_heading_below != blank -%}
@@ -202,6 +202,20 @@
       "id": "heading",
       "label": "主标题",
       "default": "Gear for Every Adventure"
+    },
+    {
+      "type": "select",
+      "id": "heading_font_weight",
+      "label": "主标题字体粗细",
+      "options": [
+        { "value": "300", "label": "细 (Light)" },
+        { "value": "400", "label": "正常 (Normal)" },
+        { "value": "500", "label": "中等 (Medium)" },
+        { "value": "600", "label": "半粗 (Semi Bold)" },
+        { "value": "700", "label": "粗 (Bold)" },
+        { "value": "900", "label": "特粗 (Black)" }
+      ],
+      "default": "400"
     },
     {
       "type": "text",
