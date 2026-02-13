@@ -98,6 +98,7 @@
         "show_content": true,
         "small_heading_above": "",
         "heading": "NEW PUFFER PRO",
+        "heading_font_weight": "600",
         "small_heading_below": "Enjoy 15% Off During Launch Week",
         "button_label": "SHOP NOW",
         "button_link": "shopify://collections/clothing",
