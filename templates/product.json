@@ -13,53 +13,6 @@
       "type": "gg-breadcrumb",
       "settings": {}
     },
-    "gg_image_slideshow_kwdD6K": {
-      "type": "gg-image-slideshow",
-      "blocks": {
-        "desktop_slide_Y4mdgV": {
-          "type": "desktop_slide",
-          "settings": {
-            "image": "shopify://shop_images/PC_0b536a42-7226-4124-912a-116d5d44d8d7.jpg",
-            "link": ""
-          }
-        },
-        "mobile_slide_TWWC4V": {
-          "type": "mobile_slide",
-          "settings": {
-            "image": "shopify://shop_images/m_78704c52-4ab4-4881-b806-3418c026343a.jpg",
-            "link": ""
-          }
-        },
-        "desktop_slide_hXrW9U": {
-          "type": "desktop_slide",
-          "disabled": true,
-          "settings": {
-            "link": ""
-          }
-        },
-        "mobile_slide_jAFbfX": {
-          "type": "mobile_slide",
-          "disabled": true,
-          "settings": {
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "desktop_slide_Y4mdgV",
-        "mobile_slide_TWWC4V",
-        "desktop_slide_hXrW9U",
-        "mobile_slide_jAFbfX"
-      ],
-      "name": "GG-图片轮播",
-      "settings": {
-        "change_slides_speed": 5,
-        "auto_rotate": true,
-        "dots_position_bottom": 10,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -298,7 +251,6 @@
   },
   "order": [
     "gg_breadcrumb_yr7zeq",
-    "gg_image_slideshow_kwdD6K",
     "main",
     "related-products",
     "gg_product_detail_Mg4rJH"
