@@ -96,10 +96,10 @@
       "name": "GG-首页-视频横幅",
       "settings": {
         "show_content": true,
-        "small_heading_above": "",
-        "heading": "NEW PUFFER PRO",
+        "small_heading_above": "Wherever You Go, Stay Ready",
+        "heading": "Built for Every Condition",
         "heading_font_weight": "600",
-        "small_heading_below": "Enjoy 15% Off During Launch Week",
+        "small_heading_below": "",
         "button_label": "SHOP NOW",
         "button_link": "shopify://collections/clothing",
         "image": "shopify://shop_images/pro-video-cover-pc.jpg",
