@@ -159,60 +159,11 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
-    },
-    "gg_image_slideshow_head_wi8N84": {
-      "type": "gg-image-slideshow-head",
-      "blocks": {
-        "desktop_slide_C4p7cL": {
-          "type": "desktop_slide",
-          "settings": {
-            "image": "shopify://shop_images/PC_d32e2120-61e8-4908-8cae-8410416918c5.jpg",
-            "link": ""
-          }
-        },
-        "mobile_slide_4HGfwy": {
-          "type": "mobile_slide",
-          "settings": {
-            "image": "shopify://shop_images/m_e544374d-6f23-4ec8-ae8b-e4a47ee4a4a2.jpg",
-            "link": ""
-          }
-        },
-        "desktop_slide_jTk3cz": {
-          "type": "desktop_slide",
-          "disabled": true,
-          "settings": {
-            "link": ""
-          }
-        },
-        "mobile_slide_wTFmGV": {
-          "type": "mobile_slide",
-          "disabled": true,
-          "settings": {
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "desktop_slide_C4p7cL",
-        "mobile_slide_4HGfwy",
-        "desktop_slide_jTk3cz",
-        "mobile_slide_wTFmGV"
-      ],
-      "disabled": true,
-      "name": "GG-图片轮播(头部固定)",
-      "settings": {
-        "change_slides_speed": 5,
-        "auto_rotate": true,
-        "dots_position_bottom": 10,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
     "176535244354a15f46",
     "announcement-bar",
-    "header",
-    "gg_image_slideshow_head_wi8N84"
+    "header"
   ]
 }
