@@ -23,17 +23,17 @@
             "link": ""
           }
         },
-        "desktop_slide_hXrW9U": {
-          "type": "desktop_slide",
-          "disabled": true,
-          "settings": {
-            "link": ""
-          }
-        },
         "mobile_slide_TWWC4V": {
           "type": "mobile_slide",
           "settings": {
             "image": "shopify://shop_images/m_78704c52-4ab4-4881-b806-3418c026343a.jpg",
+            "link": ""
+          }
+        },
+        "desktop_slide_hXrW9U": {
+          "type": "desktop_slide",
+          "disabled": true,
+          "settings": {
             "link": ""
           }
         },
@@ -47,8 +47,8 @@
       },
       "block_order": [
         "desktop_slide_Y4mdgV",
-        "desktop_slide_hXrW9U",
         "mobile_slide_TWWC4V",
+        "desktop_slide_hXrW9U",
         "mobile_slide_jAFbfX"
       ],
       "name": "GG-图片轮播",
@@ -58,27 +58,6 @@
         "dots_position_bottom": 10,
         "padding_top": 0,
         "padding_bottom": 0
-      }
-    },
-    "gg_scroll_image_xgKGtj": {
-      "type": "gg-scroll-image",
-      "blocks": {
-        "image_RWwmFN": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/newyear-landing-PC.jpg",
-            "mobile_image": "shopify://shop_images/newyear-landing-m.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "image_RWwmFN"
-      ],
-      "disabled": true,
-      "name": "GG-品牌轮播组件",
-      "settings": {
-        "scroll_speed": 30,
-        "gap": 30
       }
     },
     "main": {
@@ -320,7 +299,6 @@
   "order": [
     "gg_breadcrumb_yr7zeq",
     "gg_image_slideshow_kwdD6K",
-    "gg_scroll_image_xgKGtj",
     "main",
     "related-products",
     "gg_product_detail_Mg4rJH"
