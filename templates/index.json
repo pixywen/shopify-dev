@@ -35,23 +35,24 @@
         "desktop_slide_ihrdJC": {
           "type": "desktop_slide",
           "settings": {
-            "image": "shopify://shop_images/pufferpro-pc.jpg",
+            "image": "shopify://shop_images/banner-PC_f6c0ed6f-9a48-44fd-90fa-f7fb2fc2852d.jpg",
             "alt_text": "",
             "custom_duration": 4,
-            "image_link": "shopify://products/alpargali-aerogel-graphene-puffer-pro-jacket"
+            "image_link": "shopify://collections/all"
           }
         },
         "mobile_slide_ijW4XL": {
           "type": "mobile_slide",
           "settings": {
-            "image": "shopify://shop_images/pufferpro-m.jpg",
+            "image": "shopify://shop_images/banner-m_3b286297-61d8-4085-b503-279d16d14ea0.jpg",
             "alt_text": "",
             "custom_duration": 4,
-            "image_link": "shopify://products/alpargali-aerogel-graphene-puffer-pro-jacket"
+            "image_link": "shopify://collections/all"
           }
         },
         "desktop_slide_kDjina": {
           "type": "desktop_slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Men_s_All-Weather_Outdoor_Jacket-pc.jpg",
             "alt_text": "",
@@ -61,6 +62,7 @@
         },
         "mobile_slide_fNf3QQ": {
           "type": "mobile_slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Men_s_All-Weather_Outdoor_Jacket-m.jpg",
             "alt_text": "",
@@ -77,7 +79,6 @@
         "desktop_slide_kDjina",
         "mobile_slide_fNf3QQ"
       ],
-      "disabled": true,
       "name": "GT-首页-头部横幅(图片轮播)",
       "settings": {
         "small_heading_above": "",
@@ -93,6 +94,7 @@
     },
     "gg_home_video_banner_URhYWJ": {
       "type": "gg-home-video-banner",
+      "disabled": true,
       "name": "GG-首页-视频横幅",
       "settings": {
         "show_content": true,
@@ -453,6 +455,7 @@
       "blocks": {
         "desktop_slide_hkz68e": {
           "type": "desktop_slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/pro-1920-pc.jpg",
             "link": "shopify://products/alpargali-aerogel-graphene-puffer-pro-jacket"
@@ -460,6 +463,7 @@
         },
         "mobile_slide_NpiC8A": {
           "type": "mobile_slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/pro-1920-m.jpg",
             "link": "shopify://products/alpargali-aerogel-graphene-puffer-pro-jacket"
