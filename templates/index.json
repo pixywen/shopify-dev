@@ -79,6 +79,7 @@
         "desktop_slide_kDjina",
         "mobile_slide_fNf3QQ"
       ],
+      "disabled": true,
       "name": "GT-首页-头部横幅(图片轮播)",
       "settings": {
         "small_heading_above": "",
@@ -94,7 +95,6 @@
     },
     "gg_home_video_banner_URhYWJ": {
       "type": "gg-home-video-banner",
-      "disabled": true,
       "name": "GG-首页-视频横幅",
       "settings": {
         "show_content": true,
