@@ -529,8 +529,8 @@
         "image_banner_XfyKGt": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/aao-detail-b-ib-05.png",
-            "image_mobile": "shopify://shop_images/aao-detail-b-ib-05-m.png",
+            "image_desktop": "shopify://shop_images/Water-resistant-pc.jpg",
+            "image_mobile": "shopify://shop_images/Water-resistant-m.jpg",
             "margin_top": 0,
             "margin_bottom": 56,
             "padding_x_desktop": 6,
