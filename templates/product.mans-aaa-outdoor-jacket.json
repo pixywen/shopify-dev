@@ -382,8 +382,8 @@
             "mobile_layout": "image_top",
             "image": "shopify://shop_images/aao-detail-b-collage-01.jpg",
             "heading": "DWR",
-            "subheading": "Durable Water Repellent",
-            "text": "<p>Our DWR coating mimics the water-resistant lotus leaf. Polymer technology creates a waterproof surface, causing water to simply bead and slide off.</p>",
+            "subheading": "Durable Water Resistant",
+            "text": "<p>Our DWR coating mimics the water-resistant lotus leaf. Polymer technology creates a water-resistant surface, causing water to simply bead and slide off.</p>",
             "target_tab": "description",
             "margin_top": 32,
             "margin_bottom": 0
