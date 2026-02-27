@@ -267,7 +267,7 @@
         "image_banner_MYRGBE": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/Introducing_Alpargali_CoreShell-1.jpg",
+            "image_desktop": "shopify://shop_images/coreshell-detail.jpg",
             "image_mobile": "shopify://shop_images/Introducing_Alpargali_CoreShell-1-m.jpg",
             "margin_top": 32,
             "margin_bottom": 32,
