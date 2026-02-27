@@ -51,10 +51,9 @@
         },
         "announcement_VcD7WV": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "Spend USD $300, Get a FREE Gift.",
-            "link": "shopify://collections/spend-300-get-a-free-gift"
+            "text": "End Of Season Sale - Up to 35% off",
+            "link": "shopify://collections/season-sale"
           }
         },
         "announcement_W8crFB": {
