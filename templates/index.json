@@ -472,15 +472,15 @@
         "desktop_slide_tnWq7i": {
           "type": "desktop_slide",
           "settings": {
-            "image": "shopify://shop_images/allweather-1920-pc.jpg",
+            "image": "shopify://shop_images/banner_-wintersale.jpg",
             "link": "shopify://products/mens-all-weather-outdoor-jacket"
           }
         },
         "mobile_slide_RUQNrR": {
           "type": "mobile_slide",
           "settings": {
-            "image": "shopify://shop_images/allweather-1920-m.jpg",
-            "link": "shopify://products/mens-all-weather-outdoor-jacket"
+            "image": "shopify://shop_images/banner-m-wintersale.jpg",
+            "link": "shopify://collections/sale"
           }
         }
       },
