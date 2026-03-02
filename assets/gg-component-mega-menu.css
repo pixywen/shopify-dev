@@ -155,6 +155,11 @@ details:hover {
   }
 }
 
+.header__inline-menu .list-menu--inline {
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
 header.header {
   padding-bottom: 0;
   padding-top: 0;
@@ -171,7 +176,7 @@ header.header .header__inline-menu {
 }
 summary.header__menu-item {
   height: 100px;
-  width: 184px;
+  width: 165px;
   font-size: 20px;
   font-weight: 600;
   text-decoration: none !important;
