@@ -44,6 +44,7 @@
       "blocks": {
         "announcement_cWcU7U": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Buy 1 — 10% OFF · Buy 2 — 15% OFF",
             "link": "shopify://collections/all"
