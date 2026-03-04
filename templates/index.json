@@ -841,10 +841,10 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/co-2-m.jpg",
-            "title": "shop all",
+            "title": "",
             "text": "",
-            "link_label": "",
-            "link": ""
+            "link_label": "Shop All",
+            "link": "shopify://collections/all"
           }
         },
         "column_FjPytd": {
