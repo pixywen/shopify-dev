@@ -612,7 +612,7 @@
         "change_slides_speed": 5,
         "auto_rotate": true,
         "dots_position_bottom": 10,
-        "padding_top": 12,
+        "padding_top": 24,
         "padding_bottom": 0
       }
     },
