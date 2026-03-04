@@ -278,6 +278,47 @@
       "disabled": true,
       "settings": {}
     },
+    "collection_list_7yAqAR": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_VVrWBw": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "clothing"
+          }
+        },
+        "featured_collection_9aCV4m": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "backpacks"
+          }
+        },
+        "featured_collection_Hxtgpe": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "accessories"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_VVrWBw",
+        "featured_collection_9aCV4m",
+        "featured_collection_Hxtgpe"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Travel & Everyday Essentials",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "gg_image_banner_V4rbFP": {
       "type": "gg-image-banner",
       "disabled": true,
@@ -794,6 +835,7 @@
     "gg_double_image_banner_YFmVwF",
     "gg_double_image_banner_mobile_YXnVpE",
     "1761291178533c8302",
+    "collection_list_7yAqAR",
     "gg_image_banner_V4rbFP",
     "gg_image_banner_common_ARcgWG",
     "featured_collection_niEPwA",
