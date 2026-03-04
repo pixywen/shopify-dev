@@ -312,6 +312,7 @@
         "featured_collection_9aCV4m",
         "featured_collection_Hxtgpe"
       ],
+      "disabled": true,
       "name": "t:sections.collection-list.presets.name",
       "settings": {
         "title": "Adventure-Ready Essentials",
@@ -911,6 +912,7 @@
     "gg_double_image_banner_mobile_YXnVpE",
     "1761291178533c8302",
     "collection_list_7yAqAR",
+    "multicolumn_hwt9Tp",
     "gg_image_banner_V4rbFP",
     "gg_image_banner_common_ARcgWG",
     "featured_collection_niEPwA",
@@ -926,7 +928,6 @@
     "gg_three_image_banner_wVXhhw",
     "17623291379c48e057",
     "176769188581344e59",
-    "gg_image_banner_common_xkbPDW",
-    "multicolumn_hwt9Tp"
+    "gg_image_banner_common_xkbPDW"
   ]
 }
