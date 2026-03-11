@@ -145,6 +145,19 @@
             "text_4": ""
           }
         },
+        "complementary_MMXapa": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs Great With:",
+            "make_collapsible_row": true,
+            "icon": "none",
+            "product_list_limit": 6,
+            "products_per_page": 2,
+            "pagination_style": "dots",
+            "image_ratio": "square",
+            "enable_quick_add": true
+          }
+        },
         "collapsible_tab_yAPYME": {
           "type": "collapsible_tab",
           "settings": {
@@ -199,20 +212,6 @@
             "margin_top": 20,
             "margin_bottom": 20
           }
-        },
-        "complementary_MMXapa": {
-          "type": "complementary",
-          "disabled": true,
-          "settings": {
-            "block_heading": "Pairs Great With:",
-            "make_collapsible_row": false,
-            "icon": "none",
-            "product_list_limit": 3,
-            "products_per_page": 1,
-            "pagination_style": "dots",
-            "image_ratio": "portrait",
-            "enable_quick_add": true
-          }
         }
       },
       "block_order": [
@@ -223,13 +222,13 @@
         "buy_buttons_ex_c7QqTL",
         "divider_jmpr8z",
         "gg_icon_text_grid_TGCbKj",
+        "complementary_MMXapa",
         "collapsible_tab_yAPYME",
         "collapsible_tab_GyWCqX",
         "collapsible_tab_4bGyQa",
         "divider_3i4EF3",
         "gg_heading_image_Lh8bEX",
-        "divider_FHRHjn",
-        "complementary_MMXapa"
+        "divider_FHRHjn"
       ],
       "settings": {
         "enable_sticky_info": true,
