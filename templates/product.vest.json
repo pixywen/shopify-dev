@@ -164,11 +164,11 @@
           "type": "complementary",
           "settings": {
             "block_heading": "Pairs Great With:",
-            "make_collapsible_row": false,
-            "icon": "price_tag",
-            "product_list_limit": 10,
-            "products_per_page": 3,
-            "pagination_style": "counter",
+            "make_collapsible_row": true,
+            "icon": "none",
+            "product_list_limit": 6,
+            "products_per_page": 2,
+            "pagination_style": "dots",
             "image_ratio": "square",
             "enable_quick_add": true
           }
