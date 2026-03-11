@@ -161,6 +161,19 @@
             "image_mobile": "shopify://shop_images/product-info-b-hi-01-m.png"
           }
         },
+        "complementary_MMXapa": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs Great With:",
+            "make_collapsible_row": true,
+            "icon": "none",
+            "product_list_limit": 6,
+            "products_per_page": 2,
+            "pagination_style": "dots",
+            "image_ratio": "square",
+            "enable_quick_add": true
+          }
+        },
         "collapsible_tab_yAPYME": {
           "type": "collapsible_tab",
           "settings": {
@@ -204,19 +217,6 @@
             "image_alt": "",
             "image_width": 50
           }
-        },
-        "complementary_MMXapa": {
-          "type": "complementary",
-          "settings": {
-            "block_heading": "Pairs Great With:",
-            "make_collapsible_row": true,
-            "icon": "none",
-            "product_list_limit": 6,
-            "products_per_page": 2,
-            "pagination_style": "dots",
-            "image_ratio": "square",
-            "enable_quick_add": true
-          }
         }
       },
       "block_order": [
@@ -229,11 +229,11 @@
         "gg_icon_text_grid_CwERfK",
         "divider_FHRHjn",
         "gg_heading_image_Lh8bEX",
+        "complementary_MMXapa",
         "collapsible_tab_yAPYME",
         "collapsible_tab_GyWCqX",
         "collapsible_tab_4bGyQa",
-        "collapsible_tab_Rb9c8q",
-        "complementary_MMXapa"
+        "collapsible_tab_Rb9c8q"
       ],
       "settings": {
         "enable_sticky_info": true,
