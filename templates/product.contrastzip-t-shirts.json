@@ -171,8 +171,8 @@
         "complementary_jJRN7f": {
           "type": "complementary",
           "settings": {
-            "block_heading": "Pairs well with:",
-            "make_collapsible_row": false,
+            "block_heading": "Pairs Great with:",
+            "make_collapsible_row": true,
             "icon": "none",
             "product_list_limit": 6,
             "products_per_page": 2,
