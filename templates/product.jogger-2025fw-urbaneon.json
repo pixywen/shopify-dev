@@ -172,7 +172,7 @@
           "type": "complementary",
           "settings": {
             "block_heading": "Pairs well with:",
-            "make_collapsible_row": false,
+            "make_collapsible_row": true,
             "icon": "none",
             "product_list_limit": 6,
             "products_per_page": 2,
