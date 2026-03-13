@@ -1,0 +1,234 @@
+.gg-redskins-display {
+  margin-top: 60px;
+  margin-bottom: 60px;
+    width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding-left: calc(50vw - 48%);
+  padding-right: calc(50vw - 48%);
+  max-width: none;
+}
+
+.gg-redskins-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gg-redskins-heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gg-redskins-header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.gg-redskins-subheading {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 1);
+  text-align: right;
+  vertical-align: top;
+  margin-bottom: 5px; /* Adjust spacing between subheading and button */
+}
+
+.gg-redskins-button {
+  background-color: #000;
+  color: #fff;
+  padding: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: opacity 0.3s;
+  min-width: 120px;
+  text-align: center;
+  height: 40px;
+  line-height: 50px;
+  display: inline-block;
+}
+
+.gg-redskins-button:hover {
+  opacity: 0.8;
+  color: #fff;
+}
+
+.gg-redskins-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+}
+
+.gg-redskins-item {
+  position: relative;
+  /* aspect-ratio: 3 / 4; Based on the image ratio */
+  overflow: hidden;
+  cursor: pointer;
+  height: auto;
+}
+
+.gg-redskins-item:hover .gg-redskins-overlay {
+  transform: scale(1.05);
+}
+
+.gg-redskins-item.hidden-desktop {
+  display: none;
+}
+
+.gg-redskins-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.gg-redskins-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gg-redskins-link:hover .gg-redskins-image {
+  transform: scale(1.05);
+}
+
+.gg-redskins-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gg-redskins-link:hover .gg-redskins-overlay {
+  opacity: 1;
+}
+
+.loading .gg-redskins-hover-text {
+  display: none;
+}
+
+.loading .loading__spinner {
+  display: block !important;
+  color: white;
+}
+
+.loading__spinner .spinner {
+  width: 24px;
+  height: 24px;
+}
+
+.loading__spinner .path {
+  stroke: white;
+}
+
+.gg-redskins-hover-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.gg-redskins-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  z-index: 2;
+}
+
+.gg-redskins-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.gg-redskins-load-more {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.gg-redskins-load-more button {
+  min-width: 150px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 990px) {
+  .gg-redskins-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .gg-redskins-item.hidden-desktop {
+    display: block; /* Show desktop hidden items on mobile if they are not hidden on mobile */
+  }
+  
+  .gg-redskins-item.hidden-mobile {
+    display: none;
+  }
+  
+  .gg-redskins-load-more.hidden-mobile {
+    display: none;
+  }
+  
+  .gg-redskins-load-more.hidden-desktop {
+    display: block; /* Show desktop hidden button on mobile if needed */
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .gg-redskins-header {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  
+  .gg-redskins-header-right {
+    align-items: flex-end;
+    width: auto;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .gg-redskins-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .gg-redskins-heading {
+    font-size: 28px;
+    font-weight: 900;
+  }
+  
+  .gg-redskins-subheading {
+    font-size: 20px;
+  }
+}

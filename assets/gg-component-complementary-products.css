@@ -86,23 +86,8 @@ product-recommendations.is-accordion + .accordion {
   padding: 0;
 }
 
-.complementary-products__container .card--horizontal {
-  display: flex;
-  flex-direction: column;
-}
 .complementary-products__container .card__information {
 overflow: hidden;
-}
-.complementary-products__container .card--horizontal .card__inner {
-  max-width: 100%;
-}
-
-.complementary-products__container .card--horizontal .card__content {
-  padding-top: 1rem;
-  width: 100%;
-  display: flex;
-  gap: 10px;
-  justify-content: space-between;
 }
 .card__information .full-unstyled-link{
  overflow: hidden;
