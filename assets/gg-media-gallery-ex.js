@@ -1,104 +1,144 @@
-class MediaGalleryEx extends HTMLElement {
-  constructor() {
-    super();
-    this.mediaItems = this.querySelectorAll('.media-item');
-    this.currentColor = this.dataset.currentColor;
-    this.hasColorVariant = this.dataset.hasColorVariant === 'true';
-    this.isMobile = window.innerWidth <= 990;
+if (!customElements.get('media-gallery-ex')) {
+  class MediaGalleryEx extends HTMLElement {
+    constructor() {
+      super();
+      this.mediaItems = this.querySelectorAll('.media-item');
+      this.currentColor = this.dataset.currentColor;
+      this.hasColorVariant = this.dataset.hasColorVariant === 'true';
+      this.isMobile = window.innerWidth <= 990;
 
-    // 为每个媒体项添加媒体类型标记
-    this.mediaItems.forEach(item => {
-      const mediaContainer = item.querySelector('.media-type-video, .media-type-external_video, .media-type-model, .media-type-image');
-      if (mediaContainer) {
-        const mediaType = mediaContainer.classList[1].split('-')[2];
-        item.setAttribute('data-media-type', mediaType);
-      }
-    });
+      // 为每个媒体项添加媒体类型标记
+      this.mediaItems.forEach(item => {
+        const mediaContainer = item.querySelector('.media-type-video, .media-type-external_video, .media-type-model, .media-type-image');
+        if (mediaContainer) {
+          const mediaType = mediaContainer.classList[1].split('-')[2];
+          item.setAttribute('data-media-type', mediaType);
+        }
+      });
 
-    // 优化视频和3D模型在移动端的显示
-    this.optimizeNonImageMedia();
-
-    // 只在有颜色变体时初始化颜色筛选
-    if (this.hasColorVariant) {
-      this.initColorFilter();
-    } else {
-      // 没有颜色变体时显示所有图片
-      this.showAllMedia();
-    }
-    
-    // 添加窗口大小变化监听
-    window.addEventListener('resize', this.handleResize.bind(this));
-
-    // 初始化移动端图片放大功能
-    if (this.isMobile) {
-      this.initMobileZoom();
-    }
-  }
-
-  // 显示所有媒体项
-  showAllMedia() {
-    this.mediaItems.forEach(item => {
-      item.style.display = 'block';
-      item.classList.add('is-active');
-    });
-  }
-
-  // 处理窗口大小变化
-  handleResize() {
-    const wasMobile = this.isMobile;
-    this.isMobile = window.innerWidth <= 990;
-    
-    // 如果设备类型发生变化，重新应用布局
-    if (wasMobile !== this.isMobile) {
-      if (this.hasColorVariant) {
-        this.filterMediaByColor(this.currentColor);
-      }
+      // 优化视频和3D模型在移动端的显示
       this.optimizeNonImageMedia();
+
+      // 只在有颜色变体时初始化颜色筛选
+      if (this.hasColorVariant) {
+        this.initColorFilter();
+      } else {
+        // 没有颜色变体时显示所有图片
+        this.showAllMedia();
+      }
       
-      // 根据设备类型初始化或销毁放大功能
+      // 添加窗口大小变化监听
+      window.addEventListener('resize', this.handleResize.bind(this));
+
+      // 初始化移动端图片放大功能
       if (this.isMobile) {
         this.initMobileZoom();
-      } else {
-        this.destroyMobileZoom();
       }
+    }
+
+    // 显示所有媒体项
+    showAllMedia() {
+      this.mediaItems.forEach(item => {
+        item.style.display = 'block';
+        item.classList.add('is-active');
+      });
+    }
+
+    // 处理窗口大小变化
+    handleResize() {
+      const wasMobile = this.isMobile;
+      this.isMobile = window.innerWidth <= 990;
+      
+      // 如果设备类型发生变化，重新应用布局
+      if (wasMobile !== this.isMobile) {
+        if (this.hasColorVariant) {
+          this.filterMediaByColor(this.currentColor);
+        }
+        this.optimizeNonImageMedia();
+        
+        // 根据设备类型初始化或销毁放大功能
+        if (this.isMobile) {
+          this.initMobileZoom();
+        } else {
+          this.destroyMobileZoom();
+        }
+      }
+    }
+
+    // 优化视频和3D模型在移动端的显示
+    optimizeNonImageMedia() {
+      if (!this.isMobile) return;
+
+      // 处理视频和3D模型
+      const nonImageItems = Array.from(this.mediaItems).filter(item => 
+        item.getAttribute('data-media-type') === 'video' || 
+        item.getAttribute('data-media-type') === 'external_video' || 
+        item.getAttribute('data-media-type') === 'model'
+      );
+
+      nonImageItems.forEach(item => {
+        // 确保视频和3D模型的容器高度与图片一致
+        const previewImage = item.querySelector('.product__media img');
+        if (previewImage) {
+          const aspectRatio = previewImage.naturalHeight / previewImage.naturalWidth;
+          item.style.aspectRatio = `1 / ${aspectRatio}`;
+        }
+      });
+    }
+
+    initColorFilter() {
+      // 改为监听标准的change事件
+      document.addEventListener('change', (event) => {
+        const radioInput = event.target.closest('input[type="radio"][name*="Color"], input[type="radio"][name*="Colour"], input[type="radio"][name*="颜色"]');
+        if (radioInput && radioInput.checked) {
+          const newColor = radioInput.value;
+          this.filterMediaByColor(newColor);
+        }
+      });
+
+      // 添加变体选择变化监听（兼容Shopify标准事件）
+      document.addEventListener('variant:change', (event) => {
+        if (!this.hasColorVariant) return;
+        const variant = event.detail.variant;
+        if (variant && variant.featured_media) {
+          // TODO: 根据变体切换图片
+        }
+      });
+    }
+
+    // 根据颜色筛选媒体
+    filterMediaByColor(color) {
+      if (!color) return;
+      
+      // 简单实现：隐藏不匹配颜色的图片
+      // 这里假设图片有 data-color 属性，实际可能需要根据 alt text 或其他方式匹配
+      /*
+      this.mediaItems.forEach(item => {
+        const itemColor = item.getAttribute('data-color');
+        if (itemColor && itemColor !== color) {
+          item.style.display = 'none';
+          item.classList.remove('is-active');
+        } else {
+          item.style.display = 'block';
+          item.classList.add('is-active');
+        }
+      });
+      */
+    }
+
+    // 初始化移动端放大功能
+    initMobileZoom() {
+      // TODO: 实现移动端双击放大或 pinch-to-zoom
+    }
+
+    // 销毁移动端放大功能
+    destroyMobileZoom() {
+      // TODO: 清理事件监听器等
     }
   }
 
-  // 优化视频和3D模型在移动端的显示
-  optimizeNonImageMedia() {
-    if (!this.isMobile) return;
-
-    // 处理视频和3D模型
-    const nonImageItems = Array.from(this.mediaItems).filter(item => 
-      item.getAttribute('data-media-type') === 'video' || 
-      item.getAttribute('data-media-type') === 'external_video' || 
-      item.getAttribute('data-media-type') === 'model'
-    );
-
-    nonImageItems.forEach(item => {
-      // 确保视频和3D模型的容器高度与图片一致
-      const previewImage = item.querySelector('.product__media img');
-      if (previewImage) {
-        const aspectRatio = previewImage.naturalHeight / previewImage.naturalWidth;
-        item.style.aspectRatio = `1 / ${aspectRatio}`;
-      }
-    });
-  }
-
-  initColorFilter() {
-    // 改为监听标准的change事件
-    document.addEventListener('change', (event) => {
-      const radioInput = event.target.closest('input[type="radio"][name*="Color"], input[type="radio"][name*="Colour"], input[type="radio"][name*="颜色"]');
-      if (radioInput && radioInput.checked) {
-        const newColor = radioInput.value;
-        this.filterMediaByColor(newColor);
-      }
-    });
-
-    // 添加变体选择变化监听（兼容Shopify标准事件）
-    document.addEventListener('variant:change', (event) => {
-      if (!this.hasColorVariant) return;
-      const newColor = event.detail.variant.option1;
+  customElements.define('media-gallery-ex', MediaGalleryEx);
+}      const newColor = event.detail.variant.option1;
       this.filterMediaByColor(newColor);
     });
 
