@@ -20,7 +20,7 @@
           "type": "ai_gen_block_28bafcf",
           "settings": {
             "desktop_height": 350,
-            "desktop_image_fit": "cover",
+            "desktop_image_fit": "contain",
             "mobile_height": 200,
             "mobile_image_fit": "contain",
             "heading_size": 48,
