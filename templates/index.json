@@ -902,6 +902,101 @@
         "video": "shopify://files/videos/20260115-015456.mp4",
         "description": ""
       }
+    },
+    "gg_redskins_display_FrrC8f": {
+      "type": "gg-redskins-display",
+      "blocks": {
+        "redskin_display_QY9iG4": {
+          "type": "redskin_display",
+          "settings": {
+            "image": "shopify://shop_images/1_f84e2904-4f20-4915-9e97-97cd690b01fc.jpg",
+            "product": "mens-all-weather-outdoor-jacket",
+            "hover_title": "Shop the Look",
+            "link": "shopify://products/mens-all-weather-outdoor-jacket"
+          }
+        },
+        "redskin_display_UyyM6F": {
+          "type": "redskin_display",
+          "settings": {
+            "image": "shopify://shop_images/2_44e10281-a105-43a2-ae62-7fde57be6ed0.jpg",
+            "product": "everyday-backpack",
+            "hover_title": "Shop the Look",
+            "link": "shopify://products/everyday-backpack"
+          }
+        },
+        "redskin_display_nPgYUB": {
+          "type": "redskin_display",
+          "settings": {
+            "image": "shopify://shop_images/3_316d9d41-6513-4d11-bd5b-24277fa0aff2.jpg",
+            "product": "mens-all-weather-outdoor-jacket",
+            "hover_title": "Shop the Look",
+            "link": "shopify://products/mens-all-weather-outdoor-jacket"
+          }
+        },
+        "redskin_display_LVk6ha": {
+          "type": "redskin_display",
+          "settings": {
+            "image": "shopify://shop_images/4_7099aae5-f0fe-4dae-bfec-b2a82eaf3174.jpg",
+            "product": "everyday-backpack",
+            "hover_title": "Shop the Look",
+            "link": "shopify://products/everyday-backpack"
+          }
+        },
+        "redskin_display_ptRWkz": {
+          "type": "redskin_display",
+          "settings": {
+            "image": "shopify://shop_images/5_5342489c-2068-4326-84fa-363566d84e03.jpg",
+            "product": "alpargali-aerogel-graphene-puffer-jacket",
+            "hover_title": "Shop the Look",
+            "link": "shopify://products/alpargali-aerogel-graphene-puffer-jacket"
+          }
+        },
+        "redskin_display_yG3U3K": {
+          "type": "redskin_display",
+          "settings": {
+            "image": "shopify://shop_images/6_95938719-4308-4294-9d94-db5157f4af5f.jpg",
+            "product": "mens-all-weather-outdoor-jacket",
+            "hover_title": "Shop the Look",
+            "link": "shopify://products/mens-all-weather-outdoor-jacket"
+          }
+        },
+        "redskin_display_UmrkqD": {
+          "type": "redskin_display",
+          "settings": {
+            "image": "shopify://shop_images/7_7c249428-8b83-44f4-879c-d230e305243a.jpg",
+            "product": "everyday-backpack",
+            "hover_title": "Shop the Look",
+            "link": "shopify://products/everyday-backpack"
+          }
+        },
+        "redskin_display_Gj4UfY": {
+          "type": "redskin_display",
+          "settings": {
+            "image": "shopify://shop_images/8_f670355f-d920-433d-91b9-a83b41751432.jpg",
+            "product": "everyday-backpack",
+            "hover_title": "Shop the Look",
+            "link": "shopify://products/everyday-backpack"
+          }
+        }
+      },
+      "block_order": [
+        "redskin_display_QY9iG4",
+        "redskin_display_UyyM6F",
+        "redskin_display_nPgYUB",
+        "redskin_display_LVk6ha",
+        "redskin_display_ptRWkz",
+        "redskin_display_yG3U3K",
+        "redskin_display_UmrkqD",
+        "redskin_display_Gj4UfY"
+      ],
+      "name": "GG-红人展示组件",
+      "settings": {
+        "heading_line_1": "#Never Stop",
+        "heading_line_2": "Exploring",
+        "subheading": "@Alpargali",
+        "button_label": "FOLLOW",
+        "button_link": "https://www.instagram.com/alpargali_official/"
+      }
     }
   },
   "order": [
@@ -928,6 +1023,7 @@
     "gg_three_image_banner_wVXhhw",
     "17623291379c48e057",
     "176769188581344e59",
-    "gg_image_banner_common_xkbPDW"
+    "gg_image_banner_common_xkbPDW",
+    "gg_redskins_display_FrrC8f"
   ]
 }
