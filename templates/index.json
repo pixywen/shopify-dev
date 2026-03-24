@@ -751,6 +751,78 @@
         "button_label": "FOLLOW",
         "button_link": "https://www.instagram.com/alpargali_official/"
       }
+    },
+    "1774338258c4e512dc": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_eebeeed_iPGxjr": {
+          "type": "ai_gen_block_eebeeed",
+          "settings": {
+            "heading": "What our customers say",
+            "subheading": "Trusted by thousands of happy customers",
+            "text_alignment": "center",
+            "desktop_width_percent": 100,
+            "columns_desktop": 3,
+            "columns_tablet": "2",
+            "grid_gap": 24,
+            "section_padding": 40,
+            "card_padding": 24,
+            "card_border_radius": 0,
+            "card_border_thickness": 1,
+            "background_color": "#ffffff",
+            "card_background": "#f3f3f3",
+            "card_border_color": "#e0e0e0",
+            "heading_color": "#121212",
+            "text_color": "#121212",
+            "star_color": "#FFB800",
+            "avatar_placeholder_color": "#e0e0e0",
+            "heading_size": 32,
+            "subheading_size": 16,
+            "review_text_size": 15,
+            "author_name_size": 14,
+            "author_title_size": 13,
+            "show_stars": true,
+            "star_size": 18,
+            "avatar_size": 48,
+            "review_1_enabled": true,
+            "review_1_text": "Absolutely love this product! The quality exceeded my expectations and the customer service was outstanding.",
+            "review_1_rating": 5,
+            "author_1_name": "Sarah Johnson",
+            "author_1_title": "Verified Customer",
+            "review_2_enabled": true,
+            "review_2_text": "Great experience from start to finish. Fast shipping and the product looks even better in person!",
+            "review_2_rating": 5,
+            "author_2_name": "Michael Chen",
+            "author_2_title": "Verified Customer",
+            "review_3_enabled": true,
+            "review_3_text": "I've been a customer for years and they never disappoint. Highly recommend to anyone looking for quality!",
+            "review_3_rating": 5,
+            "author_3_name": "Emily Rodriguez",
+            "author_3_title": "Verified Customer",
+            "review_4_enabled": false,
+            "review_4_text": "Outstanding quality and attention to detail. Will definitely be ordering again!",
+            "review_4_rating": 5,
+            "author_4_name": "David Thompson",
+            "author_4_title": "Verified Customer",
+            "review_5_enabled": false,
+            "review_5_text": "Perfect fit and amazing quality. Customer service was super helpful too!",
+            "review_5_rating": 4,
+            "author_5_name": "Jessica Lee",
+            "author_5_title": "Verified Customer",
+            "review_6_enabled": false,
+            "review_6_text": "Exceeded all my expectations. The best purchase I've made this year!",
+            "review_6_rating": 5,
+            "author_6_name": "Robert Martinez",
+            "author_6_title": "Verified Customer"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_eebeeed_iPGxjr"
+      ],
+      "disabled": true,
+      "settings": {}
     }
   },
   "order": [
@@ -772,6 +844,7 @@
     "17623291379c48e057",
     "176769188581344e59",
     "gg_image_banner_common_xkbPDW",
-    "gg_redskins_display_FrrC8f"
+    "gg_redskins_display_FrrC8f",
+    "1774338258c4e512dc"
   ]
 }
