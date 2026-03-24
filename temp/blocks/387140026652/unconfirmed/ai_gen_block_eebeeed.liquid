@@ -1,6 +1,769 @@
+{% doc %}
+  @prompt
+    生成一个顾客好评板块
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-testimonials-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    padding: {{ block.settings.section_padding }}px 20px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-testimonials-container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .ai-testimonials-header-{{ ai_gen_id }} {
+    text-align: {{ block.settings.text_alignment }};
+    margin-bottom: 40px;
+  }
+
+  .ai-testimonials-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.heading_size }}px;
+    font-weight: 600;
+    color: {{ block.settings.heading_color }};
+    margin: 0 0 12px;
+    font-family: var(--font-heading-family);
+  }
+
+  .ai-testimonials-subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subheading_size }}px;
+    color: {{ block.settings.text_color }};
+    margin: 0;
+    opacity: 0.8;
+  }
+
+  .ai-testimonials-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat({{ block.settings.columns_desktop }}, 1fr);
+    gap: {{ block.settings.grid_gap }}px;
+  }
+
+  .ai-testimonial-card-{{ ai_gen_id }} {
+    background-color: {{ block.settings.card_background }};
+    padding: {{ block.settings.card_padding }}px;
+    border-radius: {{ block.settings.card_border_radius }}px;
+    border: {{ block.settings.card_border_thickness }}px solid {{ block.settings.card_border_color }};
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .ai-testimonial-stars-{{ ai_gen_id }} {
+    display: flex;
+    gap: 4px;
+    color: {{ block.settings.star_color }};
+  }
+
+  .ai-testimonial-stars-{{ ai_gen_id }} svg {
+    width: {{ block.settings.star_size }}px;
+    height: {{ block.settings.star_size }}px;
+    fill: currentColor;
+  }
+
+  .ai-testimonial-text-{{ ai_gen_id }} {
+    font-size: {{ block.settings.review_text_size }}px;
+    line-height: 1.6;
+    color: {{ block.settings.text_color }};
+    margin: 0;
+  }
+
+  .ai-testimonial-author-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+  }
+
+  .ai-testimonial-avatar-{{ ai_gen_id }} {
+    width: {{ block.settings.avatar_size }}px;
+    height: {{ block.settings.avatar_size }}px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: {{ block.settings.avatar_placeholder_color }};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-testimonial-avatar-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-testimonial-avatar-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: {{ block.settings.avatar_size | divided_by: 2 }}px;
+    font-weight: 600;
+    color: {{ block.settings.text_color }};
+    opacity: 0.5;
+  }
+
+  .ai-testimonial-author-info-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .ai-testimonial-author-name-{{ ai_gen_id }} {
+    font-size: {{ block.settings.author_name_size }}px;
+    font-weight: 600;
+    color: {{ block.settings.heading_color }};
+    margin: 0;
+  }
+
+  .ai-testimonial-author-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.author_title_size }}px;
+    color: {{ block.settings.text_color }};
+    opacity: 0.7;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-testimonials-grid-{{ ai_gen_id }} {
+      grid-template-columns: repeat({{ block.settings.columns_tablet }}, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-testimonials-grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+    }
+
+    .ai-testimonials-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.heading_size | times: 0.8 }}px;
+    }
+
+    .ai-testimonials-{{ ai_gen_id }} {
+      padding: {{ block.settings.section_padding | times: 0.7 }}px 16px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-testimonials-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-testimonials-container-{{ ai_gen_id }}">
+    {% if block.settings.heading != blank or block.settings.subheading != blank %}
+      <div class="ai-testimonials-header-{{ ai_gen_id }}">
+        {% if block.settings.heading != blank %}
+          <h2 class="ai-testimonials-title-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+        {% endif %}
+        {% if block.settings.subheading != blank %}
+          <p class="ai-testimonials-subtitle-{{ ai_gen_id }}">{{ block.settings.subheading }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="ai-testimonials-grid-{{ ai_gen_id }}">
+      {% for i in (1..6) %}
+        {% liquid
+          assign review_enabled_key = 'review_' | append: i | append: '_enabled'
+          assign review_text_key = 'review_' | append: i | append: '_text'
+          assign review_rating_key = 'review_' | append: i | append: '_rating'
+          assign author_name_key = 'author_' | append: i | append: '_name'
+          assign author_title_key = 'author_' | append: i | append: '_title'
+          assign author_image_key = 'author_' | append: i | append: '_image'
+
+          assign review_enabled = block.settings[review_enabled_key]
+          assign review_text = block.settings[review_text_key]
+          assign review_rating = block.settings[review_rating_key]
+          assign author_name = block.settings[author_name_key]
+          assign author_title = block.settings[author_title_key]
+          assign author_image = block.settings[author_image_key]
+        %}
+
+        {% if review_enabled %}
+          <div class="ai-testimonial-card-{{ ai_gen_id }}">
+            {% if block.settings.show_stars %}
+              <div class="ai-testimonial-stars-{{ ai_gen_id }}">
+                {% for star in (1..5) %}
+                  {% if star <= review_rating %}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                  {% else %}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            {% endif %}
+
+            {% if review_text != blank %}
+              <p class="ai-testimonial-text-{{ ai_gen_id }}">{{ review_text }}</p>
+            {% endif %}
+
+            <div class="ai-testimonial-author-{{ ai_gen_id }}">
+              <div class="ai-testimonial-avatar-{{ ai_gen_id }}">
+                {% if author_image %}
+                  <img
+                    src="{{ author_image | image_url: width: 100 }}"
+                    alt="{{ author_name | escape }}"
+                    width="100"
+                    height="100"
+                    loading="lazy"
+                  >
+                {% else %}
+                  <div class="ai-testimonial-avatar-placeholder-{{ ai_gen_id }}">
+                    {% if author_name != blank %}
+                      {{ author_name | slice: 0 }}
+                    {% else %}
+                      ?
+                    {% endif %}
+                  </div>
+                {% endif %}
+              </div>
+              <div class="ai-testimonial-author-info-{{ ai_gen_id }}">
+                {% if author_name != blank %}
+                  <p class="ai-testimonial-author-name-{{ ai_gen_id }}">{{ author_name }}</p>
+                {% endif %}
+                {% if author_title != blank %}
+                  <p class="ai-testimonial-author-title-{{ ai_gen_id }}">{{ author_title }}</p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Customer testimonials",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "What our customers say"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Trusted by thousands of happy customers"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "label": "Columns on desktop",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "select",
+      "id": "columns_tablet",
+      "label": "Columns on tablet",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "label": "Grid gap",
+      "min": 8,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "label": "Section padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Card style"
+    },
+    {
+      "type": "range",
+      "id": "card_padding",
+      "label": "Card padding",
+      "min": 12,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "label": "Card border radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "card_border_thickness",
+      "label": "Card border thickness",
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "default": 1
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Card background",
+      "default": "#f3f3f3"
+    },
+    {
+      "type": "color",
+      "id": "card_border_color",
+      "label": "Card border",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "star_color",
+      "label": "Star",
+      "default": "#FFB800"
+    },
+    {
+      "type": "color",
+      "id": "avatar_placeholder_color",
+      "label": "Avatar placeholder",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 20,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "subheading_size",
+      "label": "Subheading size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "review_text_size",
+      "label": "Review text size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "author_name_size",
+      "label": "Author name size",
+      "min": 12,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "author_title_size",
+      "label": "Author title size",
+      "min": 10,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "default": 13
+    },
+    {
+      "type": "header",
+      "content": "Star rating"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_stars",
+      "label": "Show star ratings",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "star_size",
+      "label": "Star size",
+      "min": 12,
+      "max": 28,
+      "step": 2,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "header",
+      "content": "Avatar"
+    },
+    {
+      "type": "range",
+      "id": "avatar_size",
+      "label": "Avatar size",
+      "min": 32,
+      "max": 64,
+      "step": 4,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "header",
+      "content": "Review 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "review_1_enabled",
+      "label": "Enable review 1",
+      "default": true
+    },
+    {
+      "type": "textarea",
+      "id": "review_1_text",
+      "label": "Review text",
+      "default": "Absolutely love this product! The quality exceeded my expectations and the customer service was outstanding."
+    },
+    {
+      "type": "range",
+      "id": "review_1_rating",
+      "label": "Rating",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "text",
+      "id": "author_1_name",
+      "label": "Author name",
+      "default": "Sarah Johnson"
+    },
+    {
+      "type": "text",
+      "id": "author_1_title",
+      "label": "Author title",
+      "default": "Verified Customer"
+    },
+    {
+      "type": "image_picker",
+      "id": "author_1_image",
+      "label": "Author image"
+    },
+    {
+      "type": "header",
+      "content": "Review 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "review_2_enabled",
+      "label": "Enable review 2",
+      "default": true
+    },
+    {
+      "type": "textarea",
+      "id": "review_2_text",
+      "label": "Review text",
+      "default": "Great experience from start to finish. Fast shipping and the product looks even better in person!"
+    },
+    {
+      "type": "range",
+      "id": "review_2_rating",
+      "label": "Rating",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "text",
+      "id": "author_2_name",
+      "label": "Author name",
+      "default": "Michael Chen"
+    },
+    {
+      "type": "text",
+      "id": "author_2_title",
+      "label": "Author title",
+      "default": "Verified Customer"
+    },
+    {
+      "type": "image_picker",
+      "id": "author_2_image",
+      "label": "Author image"
+    },
+    {
+      "type": "header",
+      "content": "Review 3"
+    },
+    {
+      "type": "checkbox",
+      "id": "review_3_enabled",
+      "label": "Enable review 3",
+      "default": true
+    },
+    {
+      "type": "textarea",
+      "id": "review_3_text",
+      "label": "Review text",
+      "default": "I've been a customer for years and they never disappoint. Highly recommend to anyone looking for quality!"
+    },
+    {
+      "type": "range",
+      "id": "review_3_rating",
+      "label": "Rating",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "text",
+      "id": "author_3_name",
+      "label": "Author name",
+      "default": "Emily Rodriguez"
+    },
+    {
+      "type": "text",
+      "id": "author_3_title",
+      "label": "Author title",
+      "default": "Verified Customer"
+    },
+    {
+      "type": "image_picker",
+      "id": "author_3_image",
+      "label": "Author image"
+    },
+    {
+      "type": "header",
+      "content": "Review 4"
+    },
+    {
+      "type": "checkbox",
+      "id": "review_4_enabled",
+      "label": "Enable review 4",
+      "default": false
+    },
+    {
+      "type": "textarea",
+      "id": "review_4_text",
+      "label": "Review text",
+      "default": "Outstanding quality and attention to detail. Will definitely be ordering again!"
+    },
+    {
+      "type": "range",
+      "id": "review_4_rating",
+      "label": "Rating",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "text",
+      "id": "author_4_name",
+      "label": "Author name",
+      "default": "David Thompson"
+    },
+    {
+      "type": "text",
+      "id": "author_4_title",
+      "label": "Author title",
+      "default": "Verified Customer"
+    },
+    {
+      "type": "image_picker",
+      "id": "author_4_image",
+      "label": "Author image"
+    },
+    {
+      "type": "header",
+      "content": "Review 5"
+    },
+    {
+      "type": "checkbox",
+      "id": "review_5_enabled",
+      "label": "Enable review 5",
+      "default": false
+    },
+    {
+      "type": "textarea",
+      "id": "review_5_text",
+      "label": "Review text",
+      "default": "Perfect fit and amazing quality. Customer service was super helpful too!"
+    },
+    {
+      "type": "range",
+      "id": "review_5_rating",
+      "label": "Rating",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "text",
+      "id": "author_5_name",
+      "label": "Author name",
+      "default": "Jessica Lee"
+    },
+    {
+      "type": "text",
+      "id": "author_5_title",
+      "label": "Author title",
+      "default": "Verified Customer"
+    },
+    {
+      "type": "image_picker",
+      "id": "author_5_image",
+      "label": "Author image"
+    },
+    {
+      "type": "header",
+      "content": "Review 6"
+    },
+    {
+      "type": "checkbox",
+      "id": "review_6_enabled",
+      "label": "Enable review 6",
+      "default": false
+    },
+    {
+      "type": "textarea",
+      "id": "review_6_text",
+      "label": "Review text",
+      "default": "Exceeded all my expectations. The best purchase I've made this year!"
+    },
+    {
+      "type": "range",
+      "id": "review_6_rating",
+      "label": "Rating",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "text",
+      "id": "author_6_name",
+      "label": "Author name",
+      "default": "Robert Martinez"
+    },
+    {
+      "type": "text",
+      "id": "author_6_title",
+      "label": "Author title",
+      "default": "Verified Customer"
+    },
+    {
+      "type": "image_picker",
+      "id": "author_6_image",
+      "label": "Author image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Customer testimonials"
+    }
+  ]
+}
 {% endschema %}
