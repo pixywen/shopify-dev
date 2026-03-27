@@ -167,6 +167,7 @@
   align-items: center;
   width: 100%;
   justify-content: center;
+  max-width: calc(74px + 23px + 448px);
 }
 
 .product-form__dynamic-checkout {
@@ -259,7 +260,7 @@
 }
 
 .product-form__submit {
-  width: 448px;
+  width: 100%;
   height: 70px;
   margin-bottom: 0;
   font-size: 20px;
@@ -360,7 +361,7 @@
     height: 10.53vw;
   }
   .product-form__submit {
-    width: 68vw;
+    width: 100%;
     height: 10.66vw;
     font-size: 3.2vw;
     font-weight: 600;
@@ -377,6 +378,7 @@
   
   .product-form__buttons-row {
     gap: 3.46vw;
+    max-width: calc(11.2vw + 3.46vw + 68vw);
   }
   
   .product-form__dynamic-checkout {
