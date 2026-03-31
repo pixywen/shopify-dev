@@ -700,7 +700,6 @@
         "image_GWahYg": {
           "type": "image",
           "name": "sign up",
-          "disabled": true,
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -721,7 +720,7 @@
             "show_header": true,
             "header_text_align": "center",
             "header_mb_text_align": "center",
-            "section_title": "<div class=\"klaviyo-form-Unjvk6\"></div>\n<style>\n.needsclick.go3686473644,\n.needsclick.go369028268{ \n    max-width: 300px !important;\n    margin: 0 auto !important;\n    width: 100% !important;\n}\n#rich-text-01JPHJ8HXZRD05T8QRKRD5ETB5,\n.kl-private-reset-css-Xuajs1.go3176171171{\ncolor:#fff;\n}\n</style>",
+            "section_title": "<div class=\"klaviyo-form-XVJhGT\"></div>\n<style>\n.needsclick.go3686473644,\n.needsclick.go369028268{ \n    max-width: 300px !important;\n    margin: 0 auto !important;\n    width: 100% !important;\n}\n#rich-text-01JPHJ8HXZRD05T8QRKRD5ETB5,\n.kl-private-reset-css-Xuajs1.go3176171171{\ncolor:#fff;\n}\n</style>",
             "section_text": "",
             "section_header_custom_html": "",
             "header_margin_bottom": "80",
@@ -1187,7 +1186,6 @@
         "image_zFANat": {
           "type": "image",
           "name": "sign up",
-          "disabled": true,
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -1208,7 +1206,7 @@
             "show_header": true,
             "header_text_align": "center",
             "header_mb_text_align": "center",
-            "section_title": "<div class=\"klaviyo-form-Unjvk6\"></div>\n<style>\n.needsclick.go3686473644,\n.needsclick.go369028268{ \n    max-width: 300px !important;\n    margin: 0 auto !important;\n    width: 100% !important;\n}\n#rich-text-01JPHJ8HXZRD05T8QRKRD5ETB5,\n.kl-private-reset-css-Xuajs1.go3176171171{\ncolor:#fff;\n}\n</style>",
+            "section_title": "<div class=\"klaviyo-form-XVJhGT\"></div>\n<style>\n.needsclick.go3686473644,\n.needsclick.go369028268{ \n    max-width: 300px !important;\n    margin: 0 auto !important;\n    width: 100% !important;\n}\n#rich-text-01JPHJ8HXZRD05T8QRKRD5ETB5,\n.kl-private-reset-css-Xuajs1.go3176171171{\ncolor:#fff;\n}\n</style>",
             "section_text": "",
             "section_header_custom_html": "",
             "header_margin_bottom": "80",
