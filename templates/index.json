@@ -708,10 +708,10 @@
         "redskin_display_yG3U3K": {
           "type": "redskin_display",
           "settings": {
-            "image": "shopify://shop_images/6_95938719-4308-4294-9d94-db5157f4af5f.jpg",
-            "product": "mens-all-weather-outdoor-jacket",
+            "image": "shopify://shop_images/10_04b29efd-ff5f-4389-afa9-26c23f00623d.jpg",
+            "product": "alpargali-coreshell-jacket",
             "hover_title": "Shop the Look",
-            "link": "shopify://products/mens-all-weather-outdoor-jacket"
+            "link": "shopify://products/alpargali-coreshell-jacket"
           }
         },
         "redskin_display_UmrkqD": {
@@ -774,7 +774,7 @@
             "card_border_color": "#e0e0e0",
             "heading_color": "#121212",
             "text_color": "#121212",
-            "star_color": "#FFB800",
+            "star_color": "#ffb800",
             "avatar_placeholder_color": "#e0e0e0",
             "heading_size": 32,
             "subheading_size": 16,
