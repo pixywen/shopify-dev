@@ -269,6 +269,42 @@
     "gg_product_detail_Mg4rJH": {
       "type": "gg-product-detail",
       "blocks": {
+        "image_banner_n6bByL": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/Aerowool_Nexus_T-Shirt-detail-1.jpg",
+            "image_mobile": "shopify://shop_images/Aerowool_Nexus_T-Shirt-detail-1-m.jpg",
+            "margin_top": 0,
+            "margin_bottom": 4,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "image_banner_LC4tpG": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/Aerowool_Nexus_T-Shirt-detail-2.jpg",
+            "image_mobile": "shopify://shop_images/Aerowool_Nexus_T-Shirt-detail-2-m.jpg",
+            "margin_top": 8,
+            "margin_bottom": 8,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "image_banner_Eizcbb": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/Aerowool_Nexus_T-Shirt-detail-3.jpg",
+            "image_mobile": "shopify://shop_images/Aerowool_Nexus_T-Shirt-detail-3-m.jpg",
+            "margin_top": 4,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
         "collage_WXNq9Y": {
           "type": "collage",
           "settings": {
@@ -360,6 +396,9 @@
         }
       },
       "block_order": [
+        "image_banner_n6bByL",
+        "image_banner_LC4tpG",
+        "image_banner_Eizcbb",
         "collage_WXNq9Y",
         "collage_dLqxPW",
         "collage_byQmgc",
