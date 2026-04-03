@@ -286,8 +286,8 @@
           "settings": {
             "image_desktop": "shopify://shop_images/Aerowool_Nexus_T-Shirt-detail-2.jpg",
             "image_mobile": "shopify://shop_images/Aerowool_Nexus_T-Shirt-detail-2-m.jpg",
-            "margin_top": 8,
-            "margin_bottom": 8,
+            "margin_top": 0,
+            "margin_bottom": 0,
             "padding_x_desktop": 0,
             "padding_x_mobile": 0,
             "target_tab": "description"
@@ -299,7 +299,7 @@
             "image_desktop": "shopify://shop_images/Aerowool_Nexus_T-Shirt-detail-3.jpg",
             "image_mobile": "shopify://shop_images/Aerowool_Nexus_T-Shirt-detail-3-m.jpg",
             "margin_top": 4,
-            "margin_bottom": 32,
+            "margin_bottom": 8,
             "padding_x_desktop": 0,
             "padding_x_mobile": 0,
             "target_tab": "description"
