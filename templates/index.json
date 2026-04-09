@@ -196,7 +196,7 @@
         "column_9bm8jE": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/all-c.jpg",
+            "image": "shopify://shop_images/shop_all.jpg",
             "title": "",
             "text": "",
             "link_label": "Shop All",
@@ -206,7 +206,7 @@
         "column_FjPytd": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/clothing-c.jpg",
+            "image": "shopify://shop_images/clothing.jpg",
             "title": "",
             "text": "",
             "link_label": "Clothing",
@@ -216,7 +216,7 @@
         "column_8866Dt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/bag-c.jpg",
+            "image": "shopify://shop_images/bags.jpg",
             "title": "",
             "text": "",
             "link_label": "Bags",
@@ -226,7 +226,7 @@
         "column_xi3kKc": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/acc-c.jpg",
+            "image": "shopify://shop_images/Accessories.jpg",
             "title": "",
             "text": "",
             "link_label": "Accessories",
