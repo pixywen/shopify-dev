@@ -35,19 +35,19 @@
         "desktop_slide_ihrdJC": {
           "type": "desktop_slide",
           "settings": {
-            "image": "shopify://shop_images/banner-PC_f6c0ed6f-9a48-44fd-90fa-f7fb2fc2852d.jpg",
+            "image": "shopify://shop_images/summer-banner-pc.jpg",
             "alt_text": "",
             "custom_duration": 4,
-            "image_link": "shopify://collections/all"
+            "image_link": "https://www.alpargali.com/products/nixcore-aerowool-nexus-t-shirt-bundle?variant=54010321568028"
           }
         },
         "mobile_slide_ijW4XL": {
           "type": "mobile_slide",
           "settings": {
-            "image": "shopify://shop_images/banner-m_3b286297-61d8-4085-b503-279d16d14ea0.jpg",
+            "image": "shopify://shop_images/summer-banner-m.jpg",
             "alt_text": "",
             "custom_duration": 4,
-            "image_link": "shopify://collections/all"
+            "image_link": "https://www.alpargali.com/products/nixcore-aerowool-nexus-t-shirt-bundle?variant=54010321568028"
           }
         },
         "desktop_slide_kDjina": {
@@ -79,7 +79,6 @@
         "desktop_slide_kDjina",
         "mobile_slide_fNf3QQ"
       ],
-      "disabled": true,
       "name": "GT-首页-头部横幅(图片轮播)",
       "settings": {
         "small_heading_above": "",
@@ -95,6 +94,7 @@
     },
     "gg_home_video_banner_URhYWJ": {
       "type": "gg-home-video-banner",
+      "disabled": true,
       "name": "GG-首页-视频横幅",
       "settings": {
         "show_content": true,
