@@ -130,35 +130,54 @@
         "gap": 30
       }
     },
-    "gg_double_image_banner_YFmVwF": {
-      "type": "gg-double-image-banner",
+    "gg_image_slideshow_CmpFQt": {
+      "type": "gg-image-slideshow",
       "blocks": {
-        "banner_xrUmaj": {
-          "type": "banner",
+        "desktop_slide_QgXTp7": {
+          "type": "desktop_slide",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/collection-2.jpg",
-            "subtitle": "Stay Warm. Stay Light.",
-            "title": "Engineered for Extreme Cold.",
-            "button_label": "Shop Puffer Pro",
-            "button_link": "shopify://products/alpargali-aerogel-graphene-puffer-pro-jacket"
+            "image": "shopify://shop_images/pro-1920-pc.jpg",
+            "link": "shopify://products/alpargali-aerogel-graphene-puffer-pro-jacket"
           }
         },
-        "banner_npKCK9": {
-          "type": "banner",
+        "mobile_slide_ifnKkU": {
+          "type": "mobile_slide",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/collection-1.jpg",
-            "subtitle": "Windproof. Tough. Eco.",
-            "title": "Built for the Wild.",
-            "button_label": "Shop Outdoor",
-            "button_link": "shopify://products/mens-all-weather-outdoor-jacket"
+            "image": "shopify://shop_images/pro-1920-m.jpg",
+            "link": "shopify://products/alpargali-aerogel-graphene-puffer-pro-jacket"
+          }
+        },
+        "desktop_slide_jeEwGC": {
+          "type": "desktop_slide",
+          "settings": {
+            "image": "shopify://shop_images/wool-pc.jpg",
+            "link": "shopify://collections/basic-layers"
+          }
+        },
+        "mobile_slide_am3QdQ": {
+          "type": "mobile_slide",
+          "settings": {
+            "image": "shopify://shop_images/wool-m.jpg",
+            "link": "shopify://collections/basic-layers"
           }
         }
       },
       "block_order": [
-        "banner_xrUmaj",
-        "banner_npKCK9"
+        "desktop_slide_QgXTp7",
+        "mobile_slide_ifnKkU",
+        "desktop_slide_jeEwGC",
+        "mobile_slide_am3QdQ"
       ],
-      "settings": {}
+      "name": "GG-图片轮播",
+      "settings": {
+        "change_slides_speed": 5,
+        "auto_rotate": true,
+        "dots_position_bottom": 10,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
     },
     "gg_double_image_banner_mobile_YXnVpE": {
       "type": "gg-double-image-banner-mobile",
@@ -273,6 +292,36 @@
         "mobile_video": "shopify://files/videos/exper-video.mp4",
         "description": ""
       }
+    },
+    "gg_double_image_banner_YFmVwF": {
+      "type": "gg-double-image-banner",
+      "blocks": {
+        "banner_xrUmaj": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/collection-2.jpg",
+            "subtitle": "Stay Warm. Stay Light.",
+            "title": "Engineered for Extreme Cold.",
+            "button_label": "Shop Puffer Pro",
+            "button_link": "shopify://products/alpargali-aerogel-graphene-puffer-pro-jacket"
+          }
+        },
+        "banner_npKCK9": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/collection-1.jpg",
+            "subtitle": "Windproof. Tough. Eco.",
+            "title": "Built for the Wild.",
+            "button_label": "Shop Outdoor",
+            "button_link": "shopify://products/mens-all-weather-outdoor-jacket"
+          }
+        }
+      },
+      "block_order": [
+        "banner_xrUmaj",
+        "banner_npKCK9"
+      ],
+      "settings": {}
     },
     "gg_featured_collection_base_bfmKX3": {
       "type": "gg-featured-collection-base",
@@ -829,10 +878,11 @@
     "gt_top_banner_image_abgczQ",
     "gg_home_video_banner_URhYWJ",
     "gg_scroll_image_zqhRNf",
-    "gg_double_image_banner_YFmVwF",
+    "gg_image_slideshow_CmpFQt",
     "gg_double_image_banner_mobile_YXnVpE",
     "multicolumn_hwt9Tp",
     "gg_image_banner_common_ARcgWG",
+    "gg_double_image_banner_YFmVwF",
     "gg_featured_collection_base_bfmKX3",
     "gg_image_banner_common_rnwYrY",
     "gg_image_slideshow_gdURJ8",
