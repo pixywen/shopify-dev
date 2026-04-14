@@ -54,9 +54,9 @@
             "text_alignment_mb": "mb-vertical-top mb-horizontal-left",
             "text_position_mb": false,
             "media_type": "image",
-            "image": "shopify://shop_images/pc_1_563c3d15-d310-4fca-9117-5aa83d1351b9.jpg",
-            "image_pad": "shopify://shop_images/M_1.jpg",
-            "image_mb": "shopify://shop_images/M_1_e6afd53f-ace3-447a-a82b-051ebf11bd3f.jpg",
+            "image": "shopify://shop_images/omnishell-pc.jpg",
+            "image_pad": "shopify://shop_images/omnishell-m.jpg",
+            "image_mb": "shopify://shop_images/omnishell-m.jpg",
             "video_url": "",
             "youtube_video": "",
             "section_logo": "",
@@ -76,12 +76,13 @@
             "subtitle_color": "#000000",
             "custom_html_content": "",
             "btn": "",
-            "link": "https://www.kickstarter.com/projects/alpargalipuffer/alpargali-coreshell-jacket-advanced-corelock-thermal-armor?ref=d05umg"
+            "link": ""
           }
         },
         "image_6MCwmQ": {
           "type": "image",
           "name": "sign up",
+          "disabled": true,
           "settings": {
             "block_css": "",
             "custom_html_css": "",
