@@ -392,6 +392,7 @@
         "image_MfmeN4": {
           "type": "image",
           "name": "sign up",
+          "disabled": true,
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -701,6 +702,7 @@
         "image_GWahYg": {
           "type": "image",
           "name": "sign up",
+          "disabled": true,
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -1187,6 +1189,7 @@
         "image_zFANat": {
           "type": "image",
           "name": "sign up",
+          "disabled": true,
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -1496,6 +1499,7 @@
         "image_6WjLPD": {
           "type": "image",
           "name": "sign up",
+          "disabled": true,
           "settings": {
             "block_css": "",
             "custom_html_css": "",
@@ -2159,6 +2163,7 @@
         "image_PqppeF": {
           "type": "image",
           "name": "sign up",
+          "disabled": true,
           "settings": {
             "block_css": "",
             "custom_html_css": "",
