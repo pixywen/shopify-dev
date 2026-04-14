@@ -85,7 +85,7 @@
         "button_label": "",
         "button_link": "",
         "auto_play": true,
-        "default_duration": 5,
+        "default_duration": 4,
         "transition_type": "fade",
         "show_indicators": true
       }
