@@ -24,7 +24,7 @@
         "mobile_slide_mrijEN": {
           "type": "mobile_slide",
           "settings": {
-            "image": "shopify://shop_images/omnishell-pc.jpg",
+            "image": "shopify://shop_images/omnishell-m.jpg",
             "alt_text": "",
             "custom_duration": 5,
             "image_link": "https://www.kickstarter.com/projects/alpargalipuffer/alpargali-omnishell-jacket-from-city-streets-to-alpine-peaks?ref=a13ubi"
