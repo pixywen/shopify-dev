@@ -261,6 +261,30 @@
     "gg_product_detail_Mg4rJH": {
       "type": "gg-product-detail",
       "blocks": {
+        "image_banner_iGDnzk": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/GridWave_White_Tee_Bundle-banner-1-pc.jpg",
+            "image_mobile": "shopify://shop_images/GridWave_White_Tee_Bundle-banner-1-m.jpg",
+            "margin_top": 0,
+            "margin_bottom": 4,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 20,
+            "target_tab": "description"
+          }
+        },
+        "image_banner_C9QfWB": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/Aerowool_Nexus_T-Shirt-detail-3.jpg",
+            "image_mobile": "shopify://shop_images/Aerowool_Nexus_T-Shirt-detail-3-m.jpg",
+            "margin_top": 0,
+            "margin_bottom": 4,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 20,
+            "target_tab": "description"
+          }
+        },
         "collage_byQmgc": {
           "type": "collage",
           "settings": {
@@ -352,6 +376,8 @@
         }
       },
       "block_order": [
+        "image_banner_iGDnzk",
+        "image_banner_C9QfWB",
         "collage_byQmgc",
         "collage_dLqxPW",
         "collage_WXNq9Y",
