@@ -269,7 +269,7 @@
             "margin_top": 0,
             "margin_bottom": 4,
             "padding_x_desktop": 0,
-            "padding_x_mobile": 20,
+            "padding_x_mobile": 0,
             "target_tab": "description"
           }
         },
@@ -281,7 +281,7 @@
             "margin_top": 0,
             "margin_bottom": 4,
             "padding_x_desktop": 0,
-            "padding_x_mobile": 20,
+            "padding_x_mobile": 0,
             "target_tab": "description"
           }
         },
@@ -295,7 +295,7 @@
             "subheading": "",
             "text": "<p>Moisture-wicking waffle texture keeps you cool and dry — whether you're commuting, lounging, or on the move.</p>",
             "target_tab": "description",
-            "margin_top": 20,
+            "margin_top": 0,
             "margin_bottom": 0
           }
         },
