@@ -135,11 +135,12 @@
         "gg_icon_text_grid_CwERfK": {
           "type": "gg-icon-text-grid",
           "settings": {
-            "text_1": "",
-            "icon_2": "shopify://shop_images/icon-index-email-bottom-1.svg",
-            "text_2": "Durable Water Repellent",
-            "icon_3": "shopify://shop_images/d2b3397782b28b681af20aa604f25cdc.png",
-            "text_3": "Fits up to 16” laptop",
+            "icon_1": "shopify://shop_images/icon-index-email-bottom-1.svg",
+            "text_1": "Free Shipping",
+            "icon_2": "shopify://shop_images/icon-index-email-bottom-3.svg",
+            "text_2": "30-Day Returns & Exchanges",
+            "icon_3": "shopify://shop_images/icon-index-email-bottom-4.svg",
+            "text_3": "Trusted By 15,000+ Customers",
             "text_4": ""
           }
         },
