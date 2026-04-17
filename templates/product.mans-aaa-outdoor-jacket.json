@@ -137,12 +137,12 @@
         "gg_icon_text_grid_TGCbKj": {
           "type": "gg-icon-text-grid",
           "settings": {
-            "icon_1": "shopify://shop_images/product-block-001-001.svg",
-            "text_1": "$169  Free Shipping",
-            "icon_2": "shopify://shop_images/product-block-001-002.svg",
-            "text_2": "Payment Security",
-            "icon_3": "shopify://shop_images/product-block-001-003.svg",
-            "text_3": "Eco-Friendly Packaging",
+            "icon_1": "shopify://shop_images/icon-index-email-bottom-1.svg",
+            "text_1": "Free Shipping over $169",
+            "icon_2": "shopify://shop_images/icon-index-email-bottom-3.svg",
+            "text_2": "30-Day Returns & Exchanges",
+            "icon_3": "shopify://shop_images/icon-index-email-bottom-4.svg",
+            "text_3": "Trusted By 15,000+ Customers",
             "text_4": ""
           }
         },
