@@ -154,54 +154,6 @@
         "disabled": false,
         "settings": {}
       },
-      "pagefly-page-builder": {
-        "type": "shopify://apps/pagefly-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
-        "disabled": true,
-        "settings": {}
-      },
-      "10274264662263595587": {
-        "type": "shopify://apps/wishlist-plus/blocks/wishlist-collections-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
-        "disabled": true,
-        "settings": {
-          "swym_collections_icon_type": "heart",
-          "swym_collections_icon_thickness": 1.7,
-          "swym_collections_position": "top-right",
-          "swym_collections_vertical_offset": 0,
-          "swym_collections_horizontal_offset": 0,
-          "swym_collections_button_size": 25,
-          "swym_collections_icon_color": "#000000",
-          "swym_collections_product_link_selector": "-",
-          "swym_collections_product_tile_selector": "-",
-          "enable_variant_selector": false,
-          "swym_add_to_wishlist_title_color": "#333",
-          "swym_variant_selector_font_size_1": 14,
-          "swym_variant_selector_popup_bg_color": "#fff",
-          "swym_variant_selector_section_heading_color": "#000",
-          "swym_variant_selector_section_heading_font_size_2": 12,
-          "swym_variant_selector_choose_create_text": "Choose or Create new Wishlist",
-          "swym_variant_selector_wishlist_btn_bg_color": "#292929",
-          "swym_variant_selector_wishlist_btn_color": "#fff",
-          "swym_variant_selector_product_detail_font_color": "#fff",
-          "swym_variant_selector_create_list_placeholder_text": "Enter wishlist name",
-          "swym_variant_selector_create_list_title": "Name Your Wishlist"
-        }
-      },
-      "5946647744298494267": {
-        "type": "shopify://apps/wishlist-plus/blocks/wishlist-app-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
-        "disabled": true,
-        "settings": {
-          "storefront_layout_enabled": false,
-          "storefront_layout_primary_bg_color": "#000000",
-          "storefront_layout_primary_text_color": "#ffffff",
-          "storefront_layout_secondary_bg_color": "#f4f8fe",
-          "storefront_layout_secondary_text_color": "#333333",
-          "storefront_layout_ui_border_radius": 6,
-          "storefront_layout_notification_position": "left",
-          "storefront_layout_action_popup_position": "left",
-          "storefront_layout_drawer_position": "left",
-          "storefront_layout_as_section_page": ""
-        }
-      },
       "2567389343055140935": {
         "type": "shopify://apps/microsoft-clarity/blocks/clarity_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
         "disabled": false,
@@ -217,11 +169,6 @@
         "disabled": true,
         "settings": {}
       },
-      "4215564508307704909": {
-        "type": "shopify://apps/sitemap-noindex-pro-seo/blocks/app-embed/4d815e2c-5af0-46ba-8301-d0f9cf660031",
-        "disabled": false,
-        "settings": {}
-      },
       "15683396631634586217": {
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": false,
@@ -235,6 +182,11 @@
           "button_vertical_position": "lowest",
           "greeting_message": ""
         }
+      },
+      "6174324309569838175": {
+        "type": "shopify://apps/smile-io/blocks/smile-shopify-app/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
