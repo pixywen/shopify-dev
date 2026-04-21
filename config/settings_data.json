@@ -159,11 +159,6 @@
         "disabled": false,
         "settings": {}
       },
-      "17368511000352060744": {
-        "type": "shopify://apps/goaffpro-affiliate-marketing/blocks/goaffpro-embedded-pixel/2f4d802b-86c2-47e4-8096-ae1aa3efbab2",
-        "disabled": false,
-        "settings": {}
-      },
       "6603664506335945664": {
         "type": "shopify://apps/transtore/blocks/switcher_embed_block/afeffe82-e563-4f78-90f4-f1e3d96286c3",
         "disabled": true,
@@ -183,9 +178,18 @@
           "greeting_message": ""
         }
       },
+      "17368511000352060744": {
+        "type": "shopify://apps/goaffpro-affiliate-marketing/blocks/goaffpro-embedded-pixel/2f4d802b-86c2-47e4-8096-ae1aa3efbab2",
+        "disabled": true,
+        "settings": {
+          "enable_toolbar": false,
+          "enable_floating_widget": false,
+          "enable_popup": false
+        }
+      },
       "6174324309569838175": {
         "type": "shopify://apps/smile-io/blocks/smile-shopify-app/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
-        "disabled": false,
+        "disabled": true,
         "settings": {}
       }
     },
