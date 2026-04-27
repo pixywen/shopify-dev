@@ -45,6 +45,7 @@
     },
     "spring_bundle_builder_PHTiyA": {
       "type": "spring-bundle-builder",
+      "disabled": true,
       "name": "Spring Bundle Builder",
       "settings": {}
     }
