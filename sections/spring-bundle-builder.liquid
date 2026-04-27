@@ -1,0 +1,130 @@
+{% schema %}
+{
+  "name": "Spring Bundle Builder",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Spring Bundle Builder"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="bundle-section">
+  <h2>Build Your Setup</h2>
+
+  <div class="bundle-items">
+    
+    <label>
+      <input type="checkbox" class="bundle-item" data-price="199" data-id="9702437650716" checked>
+      Jacket — $199
+    </label>
+
+    <label>
+      <input type="checkbox" class="bundle-item" data-price="59" data-id="10186750492956" checked>
+      Wool T — $59
+    </label>
+
+    <label>
+      <input type="checkbox" class="bundle-item" data-price="129" data-id="10186771202332" checked>
+      Pants — $129
+    </label>
+
+    <label>
+      <input type="checkbox" class="bundle-item" data-price="159" data-id="10509413024028" checked>
+      Backpack — $159
+    </label>
+
+  </div>
+
+  <div class="bundle-summary">
+    <h3 id="bundle-price">$409</h3>
+    <p id="bundle-save">You Save: $137 (25%)</p>
+    <p id="bundle-tip" style="color: #d00;"></p>
+  </div>
+
+  <button class="bundle-btn" onclick="addBundleToCart()">
+    Add Selected to Cart
+  </button>
+</div>
+
+<style>
+.bundle-section {
+  padding: 40px;
+  border: 1px solid #eee;
+  max-width: 600px;
+}
+.bundle-items label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.bundle-summary {
+  margin-top: 20px;
+}
+.bundle-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+</style>
+
+<script>
+function calculateBundle() {
+  const items = document.querySelectorAll('.bundle-item:checked');
+  let total = 0;
+
+  items.forEach(item => {
+    total += parseFloat(item.dataset.price);
+  });
+
+  let discount = 0;
+  let message = "";
+
+  if (items.length === 4) {
+    discount = 0.25;
+  } else if (items.length === 3) {
+    discount = 0.15;
+    message = "Add 1 more item to unlock 25% OFF";
+  } else if (items.length === 2) {
+    discount = 0.10;
+    message = "Add 1 more item to unlock 15% OFF";
+  }
+
+  const finalPrice = total * (1 - discount);
+  const savings = total - finalPrice;
+
+  document.getElementById('bundle-price').innerText = `$${finalPrice.toFixed(0)}`;
+  document.getElementById('bundle-save').innerText = `You Save: $${savings.toFixed(0)} (${discount*100}%)`;
+  document.getElementById('bundle-tip').innerText = message;
+}
+
+document.querySelectorAll('.bundle-item').forEach(item => {
+  item.addEventListener('change', calculateBundle);
+});
+
+function addBundleToCart() {
+  const items = document.querySelectorAll('.bundle-item:checked');
+
+  items.forEach(item => {
+    fetch('/cart/add.js', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        id: item.dataset.id,
+        quantity: 1
+      })
+    });
+  });
+
+  alert("Added to cart!");
+}
+
+// 初始化
+document.addEventListener("DOMContentLoaded", function() {
+  calculateBundle();
+});
+</script>
