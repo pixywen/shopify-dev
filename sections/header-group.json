@@ -166,7 +166,14 @@
         "desktop_slide_t9iXKf": {
           "type": "desktop_slide",
           "settings": {
-            "image": "shopify://shop_images/PC_0b536a42-7226-4124-912a-116d5d44d8d7.jpg",
+            "image": "shopify://shop_images/Build_Your_3-Piece_Rotation--landing-m.jpg",
+            "link": ""
+          }
+        },
+        "mobile_slide_wd9dX8": {
+          "type": "mobile_slide",
+          "settings": {
+            "image": "shopify://shop_images/Build_Your_3-Piece_Rotation--landing-pc.jpg",
             "link": ""
           }
         },
@@ -174,13 +181,6 @@
           "type": "desktop_slide",
           "disabled": true,
           "settings": {
-            "link": ""
-          }
-        },
-        "mobile_slide_wd9dX8": {
-          "type": "mobile_slide",
-          "settings": {
-            "image": "shopify://shop_images/m_78704c52-4ab4-4881-b806-3418c026343a.jpg",
             "link": ""
           }
         },
@@ -194,11 +194,10 @@
       },
       "block_order": [
         "desktop_slide_t9iXKf",
-        "desktop_slide_iEzfCV",
         "mobile_slide_wd9dX8",
+        "desktop_slide_iEzfCV",
         "mobile_slide_L8dycK"
       ],
-      "disabled": true,
       "name": "GG-图片轮播(头部固定)",
       "settings": {
         "change_slides_speed": 5,
