@@ -163,7 +163,7 @@
         "desktop_slide_jeEwGC": {
           "type": "desktop_slide",
           "settings": {
-            "image": "shopify://shop_images/Build_Your_3-Piece_Rotation-pc.jpg",
+            "image": "shopify://shop_images/travel-PC-2.jpg",
             "link": "shopify://collections/basic-layers"
           }
         },
@@ -181,13 +181,12 @@
         "desktop_slide_jeEwGC",
         "mobile_slide_am3QdQ"
       ],
-      "disabled": true,
       "name": "GG-图片轮播",
       "settings": {
         "change_slides_speed": 5,
         "auto_rotate": true,
         "dots_position_bottom": 4,
-        "padding_top": 24,
+        "padding_top": 20,
         "padding_bottom": 0
       }
     },
@@ -884,6 +883,26 @@
       ],
       "disabled": true,
       "settings": {}
+    },
+    "17774518430ce5e7d3": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_155e9e0_EEanHM": {
+          "type": "ai_gen_block_155e9e0",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Build_Your_3-Piece_Rotation-pc.jpg",
+            "desktop_link": "",
+            "mobile_image": "shopify://shop_images/Build_Your_3-Piece_Rotation-m.jpg",
+            "mobile_link": "",
+            "open_in_new_tab": false
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_155e9e0_EEanHM"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -908,6 +927,7 @@
     "176769188581344e59",
     "gg_image_banner_common_xkbPDW",
     "gg_redskins_display_FrrC8f",
-    "1774338258c4e512dc"
+    "1774338258c4e512dc",
+    "17774518430ce5e7d3"
   ]
 }
