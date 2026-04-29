@@ -128,6 +128,19 @@
         "gap": 30
       }
     },
+    "gg_simple_image_banner_dhVqaH": {
+      "type": "gg-simple-image-banner",
+      "disabled": true,
+      "name": "GG-基础图片横幅",
+      "settings": {
+        "image": "shopify://shop_images/Build_Your_3-Piece_Rotation-pc.jpg",
+        "image_mobile": "shopify://shop_images/Build_Your_3-Piece_Rotation-m.jpg",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0
+      }
+    },
     "gg_image_slideshow_CmpFQt": {
       "type": "gg-image-slideshow",
       "blocks": {
@@ -150,14 +163,14 @@
         "desktop_slide_jeEwGC": {
           "type": "desktop_slide",
           "settings": {
-            "image": "shopify://shop_images/wool-pc.jpg",
+            "image": "shopify://shop_images/Build_Your_3-Piece_Rotation-pc.jpg",
             "link": "shopify://collections/basic-layers"
           }
         },
         "mobile_slide_am3QdQ": {
           "type": "mobile_slide",
           "settings": {
-            "image": "shopify://shop_images/wool-m.jpg",
+            "image": "shopify://shop_images/Build_Your_3-Piece_Rotation-m.jpg",
             "link": "shopify://collections/basic-layers"
           }
         }
@@ -168,13 +181,14 @@
         "desktop_slide_jeEwGC",
         "mobile_slide_am3QdQ"
       ],
+      "disabled": true,
       "name": "GG-图片轮播",
       "settings": {
         "change_slides_speed": 5,
         "auto_rotate": true,
-        "dots_position_bottom": 10,
-        "padding_top": 16,
-        "padding_bottom": 16
+        "dots_position_bottom": 4,
+        "padding_top": 24,
+        "padding_bottom": 0
       }
     },
     "gg_double_image_banner_mobile_YXnVpE": {
@@ -876,6 +890,7 @@
     "gt_top_banner_image_abgczQ",
     "gg_home_video_banner_URhYWJ",
     "gg_scroll_image_zqhRNf",
+    "gg_simple_image_banner_dhVqaH",
     "gg_image_slideshow_CmpFQt",
     "gg_double_image_banner_mobile_YXnVpE",
     "multicolumn_hwt9Tp",
