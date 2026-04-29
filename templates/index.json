@@ -441,6 +441,7 @@
         "desktop_slide_tnWq7i",
         "mobile_slide_RUQNrR"
       ],
+      "disabled": true,
       "name": "GG-图片轮播",
       "settings": {
         "change_slides_speed": 5,
@@ -913,13 +914,13 @@
     "gg_simple_image_banner_dhVqaH",
     "17774518430ce5e7d3",
     "gg_image_slideshow_CmpFQt",
-    "gg_double_image_banner_mobile_YXnVpE",
     "multicolumn_hwt9Tp",
     "gg_image_banner_common_ARcgWG",
-    "gg_double_image_banner_YFmVwF",
     "gg_featured_collection_base_bfmKX3",
     "gg_image_banner_common_rnwYrY",
     "gg_image_slideshow_gdURJ8",
+    "gg_double_image_banner_YFmVwF",
+    "gg_double_image_banner_mobile_YXnVpE",
     "gg_featured_collection_base_HyGgaR",
     "gg_featured_products_NVq696",
     "gg_image_banner_common_XyH39W",
