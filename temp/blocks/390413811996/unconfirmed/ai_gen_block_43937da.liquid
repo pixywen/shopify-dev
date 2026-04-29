@@ -1,6 +1,200 @@
+{% doc %}
+  @prompt
+    Generate a banner component with separate configurations for desktop and mobile devices, where the height and width adapt automatically to the image dimensions without any fixed constraints.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-responsive-banner-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+
+  .ai-responsive-banner__desktop-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+  }
+
+  .ai-responsive-banner__mobile-{{ ai_gen_id }} {
+    display: none;
+    width: 100%;
+  }
+
+  .ai-responsive-banner__image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .ai-responsive-banner__placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 400px;
+  }
+
+  .ai-responsive-banner__placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    max-height: 400px;
+  }
+
+  .ai-responsive-banner__empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-responsive-banner__desktop-{{ ai_gen_id }} {
+      display: none;
+    }
+
+    .ai-responsive-banner__mobile-{{ ai_gen_id }} {
+      display: block;
+    }
+
+    .ai-responsive-banner__placeholder-{{ ai_gen_id }} {
+      min-height: 300px;
+    }
+
+    .ai-responsive-banner__placeholder-{{ ai_gen_id }} svg {
+      max-height: 300px;
+    }
+  }
+{% endstyle %}
+
+<responsive-banner-{{ ai_gen_id }}
+  class="ai-responsive-banner-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-responsive-banner__desktop-{{ ai_gen_id }}">
+    {% if block.settings.desktop_image %}
+      <img
+        src="{{ block.settings.desktop_image | image_url: width: 2400 }}"
+        alt="{{ block.settings.desktop_image.alt | escape }}"
+        loading="lazy"
+        width="{{ block.settings.desktop_image.width }}"
+        height="{{ block.settings.desktop_image.height }}"
+        class="ai-responsive-banner__image-{{ ai_gen_id }}"
+      >
+    {% else %}
+      <div class="ai-responsive-banner__placeholder-{{ ai_gen_id }}">
+        {{ 'hero-apparel-1' | placeholder_svg_tag }}
+        <div class="ai-responsive-banner__empty-state-{{ ai_gen_id }}">
+          Add a desktop image
+        </div>
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="ai-responsive-banner__mobile-{{ ai_gen_id }}">
+    {% if block.settings.mobile_image %}
+      <img
+        src="{{ block.settings.mobile_image | image_url: width: 1200 }}"
+        alt="{{ block.settings.mobile_image.alt | escape }}"
+        loading="lazy"
+        width="{{ block.settings.mobile_image.width }}"
+        height="{{ block.settings.mobile_image.height }}"
+        class="ai-responsive-banner__image-{{ ai_gen_id }}"
+      >
+    {% elsif block.settings.desktop_image %}
+      <img
+        src="{{ block.settings.desktop_image | image_url: width: 1200 }}"
+        alt="{{ block.settings.desktop_image.alt | escape }}"
+        loading="lazy"
+        width="{{ block.settings.desktop_image.width }}"
+        height="{{ block.settings.desktop_image.height }}"
+        class="ai-responsive-banner__image-{{ ai_gen_id }}"
+      >
+    {% else %}
+      <div class="ai-responsive-banner__placeholder-{{ ai_gen_id }}">
+        {{ 'hero-apparel-1' | placeholder_svg_tag }}
+        <div class="ai-responsive-banner__empty-state-{{ ai_gen_id }}">
+          Add a mobile image
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</responsive-banner-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class ResponsiveBanner{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.updateImageDisplay();
+        window.addEventListener('resize', this.updateImageDisplay.bind(this));
+      }
+
+      disconnectedCallback() {
+        window.removeEventListener('resize', this.updateImageDisplay.bind(this));
+      }
+
+      updateImageDisplay() {
+        const desktopContainer = this.querySelector('.ai-responsive-banner__desktop-{{ ai_gen_id }}');
+        const mobileContainer = this.querySelector('.ai-responsive-banner__mobile-{{ ai_gen_id }}');
+        
+        if (window.innerWidth <= 749) {
+          if (desktopContainer) desktopContainer.style.display = 'none';
+          if (mobileContainer) mobileContainer.style.display = 'block';
+        } else {
+          if (desktopContainer) desktopContainer.style.display = 'block';
+          if (mobileContainer) mobileContainer.style.display = 'none';
+        }
+      }
+    }
+
+    customElements.define('responsive-banner-{{ ai_gen_id }}', ResponsiveBanner{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Responsive banner",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop image"
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile image"
+    },
+    {
+      "type": "paragraph",
+      "content": "If no mobile image is selected, the desktop image will be used on mobile devices."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Responsive banner"
+    }
+  ]
+}
 {% endschema %}
