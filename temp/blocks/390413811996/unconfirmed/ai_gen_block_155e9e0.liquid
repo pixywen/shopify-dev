@@ -1,6 +1,303 @@
+{% doc %}
+  @prompt
+    Generate a banner component with separate configurations for desktop and mobile devices, where the height and width adapt automatically to the image dimensions without any fixed constraints., Generate a banner component with separate configurations for desktop and mobile devices. Its height and width should adapt automatically based on the image dimensions (without fixed constraints), and it should support the addition of links.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-linked-banner-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+
+  .ai-linked-banner__desktop-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+  }
+
+  .ai-linked-banner__mobile-{{ ai_gen_id }} {
+    display: none;
+    width: 100%;
+  }
+
+  .ai-linked-banner__link-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .ai-linked-banner__link-{{ ai_gen_id }}:focus-visible {
+    outline: 2px solid #121212;
+    outline-offset: 2px;
+  }
+
+  .ai-linked-banner__image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+  }
+
+  .ai-linked-banner__link-{{ ai_gen_id }}:hover .ai-linked-banner__image-{{ ai_gen_id }} {
+    opacity: 0.9;
+  }
+
+  .ai-linked-banner__placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 400px;
+  }
+
+  .ai-linked-banner__placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    max-height: 400px;
+  }
+
+  .ai-linked-banner__empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-linked-banner__desktop-{{ ai_gen_id }} {
+      display: none;
+    }
+
+    .ai-linked-banner__mobile-{{ ai_gen_id }} {
+      display: block;
+    }
+
+    .ai-linked-banner__placeholder-{{ ai_gen_id }} {
+      min-height: 300px;
+    }
+
+    .ai-linked-banner__placeholder-{{ ai_gen_id }} svg {
+      max-height: 300px;
+    }
+  }
+{% endstyle %}
+
+<linked-banner-{{ ai_gen_id }}
+  class="ai-linked-banner-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-linked-banner__desktop-{{ ai_gen_id }}">
+    {% if block.settings.desktop_image %}
+      {% if block.settings.desktop_link != blank %}
+        <a
+          href="{{ block.settings.desktop_link }}"
+          class="ai-linked-banner__link-{{ ai_gen_id }}"
+          {% if block.settings.open_in_new_tab %}target="_blank" rel="noopener noreferrer"{% endif %}
+        >
+          <img
+            src="{{ block.settings.desktop_image | image_url: width: 2400 }}"
+            alt="{{ block.settings.desktop_image.alt | escape }}"
+            loading="lazy"
+            width="{{ block.settings.desktop_image.width }}"
+            height="{{ block.settings.desktop_image.height }}"
+            class="ai-linked-banner__image-{{ ai_gen_id }}"
+          >
+        </a>
+      {% else %}
+        <img
+          src="{{ block.settings.desktop_image | image_url: width: 2400 }}"
+          alt="{{ block.settings.desktop_image.alt | escape }}"
+          loading="lazy"
+          width="{{ block.settings.desktop_image.width }}"
+          height="{{ block.settings.desktop_image.height }}"
+          class="ai-linked-banner__image-{{ ai_gen_id }}"
+        >
+      {% endif %}
+    {% else %}
+      <div class="ai-linked-banner__placeholder-{{ ai_gen_id }}">
+        {{ 'hero-apparel-1' | placeholder_svg_tag }}
+        <div class="ai-linked-banner__empty-state-{{ ai_gen_id }}">
+          Add a desktop image
+        </div>
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="ai-linked-banner__mobile-{{ ai_gen_id }}">
+    {% if block.settings.mobile_image %}
+      {% if block.settings.mobile_link != blank %}
+        <a
+          href="{{ block.settings.mobile_link }}"
+          class="ai-linked-banner__link-{{ ai_gen_id }}"
+          {% if block.settings.open_in_new_tab %}target="_blank" rel="noopener noreferrer"{% endif %}
+        >
+          <img
+            src="{{ block.settings.mobile_image | image_url: width: 1200 }}"
+            alt="{{ block.settings.mobile_image.alt | escape }}"
+            loading="lazy"
+            width="{{ block.settings.mobile_image.width }}"
+            height="{{ block.settings.mobile_image.height }}"
+            class="ai-linked-banner__image-{{ ai_gen_id }}"
+          >
+        </a>
+      {% elsif block.settings.desktop_link != blank %}
+        <a
+          href="{{ block.settings.desktop_link }}"
+          class="ai-linked-banner__link-{{ ai_gen_id }}"
+          {% if block.settings.open_in_new_tab %}target="_blank" rel="noopener noreferrer"{% endif %}
+        >
+          <img
+            src="{{ block.settings.mobile_image | image_url: width: 1200 }}"
+            alt="{{ block.settings.mobile_image.alt | escape }}"
+            loading="lazy"
+            width="{{ block.settings.mobile_image.width }}"
+            height="{{ block.settings.mobile_image.height }}"
+            class="ai-linked-banner__image-{{ ai_gen_id }}"
+          >
+        </a>
+      {% else %}
+        <img
+          src="{{ block.settings.mobile_image | image_url: width: 1200 }}"
+          alt="{{ block.settings.mobile_image.alt | escape }}"
+          loading="lazy"
+          width="{{ block.settings.mobile_image.width }}"
+          height="{{ block.settings.mobile_image.height }}"
+          class="ai-linked-banner__image-{{ ai_gen_id }}"
+        >
+      {% endif %}
+    {% elsif block.settings.desktop_image %}
+      {% if block.settings.desktop_link != blank %}
+        <a
+          href="{{ block.settings.desktop_link }}"
+          class="ai-linked-banner__link-{{ ai_gen_id }}"
+          {% if block.settings.open_in_new_tab %}target="_blank" rel="noopener noreferrer"{% endif %}
+        >
+          <img
+            src="{{ block.settings.desktop_image | image_url: width: 1200 }}"
+            alt="{{ block.settings.desktop_image.alt | escape }}"
+            loading="lazy"
+            width="{{ block.settings.desktop_image.width }}"
+            height="{{ block.settings.desktop_image.height }}"
+            class="ai-linked-banner__image-{{ ai_gen_id }}"
+          >
+        </a>
+      {% else %}
+        <img
+          src="{{ block.settings.desktop_image | image_url: width: 1200 }}"
+          alt="{{ block.settings.desktop_image.alt | escape }}"
+          loading="lazy"
+          width="{{ block.settings.desktop_image.width }}"
+          height="{{ block.settings.desktop_image.height }}"
+          class="ai-linked-banner__image-{{ ai_gen_id }}"
+        >
+      {% endif %}
+    {% else %}
+      <div class="ai-linked-banner__placeholder-{{ ai_gen_id }}">
+        {{ 'hero-apparel-1' | placeholder_svg_tag }}
+        <div class="ai-linked-banner__empty-state-{{ ai_gen_id }}">
+          Add a mobile image
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</linked-banner-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class LinkedBanner{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.updateImageDisplay();
+        window.addEventListener('resize', this.updateImageDisplay.bind(this));
+      }
+
+      disconnectedCallback() {
+        window.removeEventListener('resize', this.updateImageDisplay.bind(this));
+      }
+
+      updateImageDisplay() {
+        const desktopContainer = this.querySelector('.ai-linked-banner__desktop-{{ ai_gen_id }}');
+        const mobileContainer = this.querySelector('.ai-linked-banner__mobile-{{ ai_gen_id }}');
+        
+        if (window.innerWidth <= 749) {
+          if (desktopContainer) desktopContainer.style.display = 'none';
+          if (mobileContainer) mobileContainer.style.display = 'block';
+        } else {
+          if (desktopContainer) desktopContainer.style.display = 'block';
+          if (mobileContainer) mobileContainer.style.display = 'none';
+        }
+      }
+    }
+
+    customElements.define('linked-banner-{{ ai_gen_id }}', LinkedBanner{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Responsive banner",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop image"
+    },
+    {
+      "type": "url",
+      "id": "desktop_link",
+      "label": "Desktop link"
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile image"
+    },
+    {
+      "type": "url",
+      "id": "mobile_link",
+      "label": "Mobile link"
+    },
+    {
+      "type": "paragraph",
+      "content": "If no mobile image is selected, the desktop image will be used. If no mobile link is set, the desktop link will be used."
+    },
+    {
+      "type": "header",
+      "content": "Link settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "open_in_new_tab",
+      "label": "Open link in new tab",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "Responsive banner"
+    }
+  ]
+}
 {% endschema %}
