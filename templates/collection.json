@@ -33,6 +33,8 @@
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "standard",
+        "show_sale_badge": true,
+        "sale_badge_type": "percentage",
         "enable_filtering": true,
         "filter_type": "horizontal",
         "enable_sorting": true,
@@ -40,11 +42,57 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "gg_image_slideshow_head_bLExN9": {
+      "type": "gg-image-slideshow-head",
+      "blocks": {
+        "desktop_slide_yHBdiT": {
+          "type": "desktop_slide",
+          "settings": {
+            "image": "shopify://shop_images/Build_Your_3-Piece_Rotation--landing-m.jpg",
+            "link": ""
+          }
+        },
+        "desktop_slide_9REUXh": {
+          "type": "desktop_slide",
+          "settings": {
+            "link": ""
+          }
+        },
+        "mobile_slide_CDpRdY": {
+          "type": "mobile_slide",
+          "settings": {
+            "image": "shopify://shop_images/Build_Your_3-Piece_Rotation--landing-pc.jpg",
+            "link": ""
+          }
+        },
+        "mobile_slide_hwf4ND": {
+          "type": "mobile_slide",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "desktop_slide_yHBdiT",
+        "desktop_slide_9REUXh",
+        "mobile_slide_CDpRdY",
+        "mobile_slide_hwf4ND"
+      ],
+      "name": "GG-图片轮播(头部固定)",
+      "settings": {
+        "change_slides_speed": 5,
+        "auto_rotate": true,
+        "dots_position_bottom": 10,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "gg_breadcrumb_nBKrrq",
     "banner",
-    "product-grid"
+    "product-grid",
+    "gg_image_slideshow_head_bLExN9"
   ]
 }
