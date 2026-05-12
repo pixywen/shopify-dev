@@ -211,36 +211,6 @@
         "padding_bottom": 0
       }
     },
-    "gg_double_image_banner_mobile_YXnVpE": {
-      "type": "gg-double-image-banner-mobile",
-      "blocks": {
-        "banner_tja83h": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify://shop_images/co-2-m.jpg",
-            "subtitle": "Stay Warm. Stay Light.",
-            "title": "Built for Extremes.",
-            "button_label": "Puffer Pro",
-            "button_link": "shopify://products/alpargali-aerogel-graphene-puffer-pro-jacket"
-          }
-        },
-        "banner_FWeBpK": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify://shop_images/co-1-m.jpg",
-            "subtitle": "Windproof. Tough. Eco.",
-            "title": "Built for the Wild.",
-            "button_label": "All-Weather",
-            "button_link": "shopify://products/mens-all-weather-outdoor-jacket"
-          }
-        }
-      },
-      "block_order": [
-        "banner_tja83h",
-        "banner_FWeBpK"
-      ],
-      "settings": {}
-    },
     "multicolumn_hwt9Tp": {
       "type": "multicolumn",
       "blocks": {
@@ -324,36 +294,6 @@
         "mobile_video": "shopify://files/videos/exper-video.mp4",
         "description": ""
       }
-    },
-    "gg_double_image_banner_YFmVwF": {
-      "type": "gg-double-image-banner",
-      "blocks": {
-        "banner_xrUmaj": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify://shop_images/collection-2.jpg",
-            "subtitle": "Stay Warm. Stay Light.",
-            "title": "Engineered for Extreme Cold.",
-            "button_label": "Shop Puffer Pro",
-            "button_link": "shopify://products/alpargali-aerogel-graphene-puffer-pro-jacket"
-          }
-        },
-        "banner_npKCK9": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify://shop_images/collection-1.jpg",
-            "subtitle": "Windproof. Tough. Eco.",
-            "title": "Built for the Wild.",
-            "button_label": "Shop Outdoor",
-            "button_link": "shopify://products/mens-all-weather-outdoor-jacket"
-          }
-        }
-      },
-      "block_order": [
-        "banner_xrUmaj",
-        "banner_npKCK9"
-      ],
-      "settings": {}
     },
     "gg_featured_collection_base_bfmKX3": {
       "type": "gg-featured-collection-base",
@@ -450,6 +390,66 @@
         "padding_top": 24,
         "padding_bottom": 0
       }
+    },
+    "gg_double_image_banner_YFmVwF": {
+      "type": "gg-double-image-banner",
+      "blocks": {
+        "banner_xrUmaj": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/collection-2.jpg",
+            "subtitle": "Stay Warm. Stay Light.",
+            "title": "Engineered for Extreme Cold.",
+            "button_label": "Shop Puffer Pro",
+            "button_link": "shopify://products/alpargali-aerogel-graphene-puffer-pro-jacket"
+          }
+        },
+        "banner_npKCK9": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/collection-1.jpg",
+            "subtitle": "Windproof. Tough. Eco.",
+            "title": "Built for the Wild.",
+            "button_label": "Shop Outdoor",
+            "button_link": "shopify://products/mens-all-weather-outdoor-jacket"
+          }
+        }
+      },
+      "block_order": [
+        "banner_xrUmaj",
+        "banner_npKCK9"
+      ],
+      "settings": {}
+    },
+    "gg_double_image_banner_mobile_YXnVpE": {
+      "type": "gg-double-image-banner-mobile",
+      "blocks": {
+        "banner_tja83h": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/co-2-m.jpg",
+            "subtitle": "Stay Warm. Stay Light.",
+            "title": "Built for Extremes.",
+            "button_label": "Puffer Pro",
+            "button_link": "shopify://products/alpargali-aerogel-graphene-puffer-pro-jacket"
+          }
+        },
+        "banner_FWeBpK": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/co-1-m.jpg",
+            "subtitle": "Windproof. Tough. Eco.",
+            "title": "Built for the Wild.",
+            "button_label": "All-Weather",
+            "button_link": "shopify://products/mens-all-weather-outdoor-jacket"
+          }
+        }
+      },
+      "block_order": [
+        "banner_tja83h",
+        "banner_FWeBpK"
+      ],
+      "settings": {}
     },
     "gg_featured_collection_base_HyGgaR": {
       "type": "gg-featured-collection-base",
@@ -827,7 +827,7 @@
       ],
       "name": "GG-红人展示组件",
       "settings": {
-        "heading_line_1": "#Never Stop Exploring",
+        "heading_line_1": "#Adventure Starts Here",
         "heading_line_2": "",
         "subheading": "@Alpargali",
         "button_label": "FOLLOW",
