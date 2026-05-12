@@ -311,8 +311,8 @@
         "image_banner_WhzCRX": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/1_pc.jpg",
-            "image_mobile": "shopify://shop_images/alldaybackpack-1.png",
+            "image_desktop": "shopify://shop_images/pc-backpack-1.jpg",
+            "image_mobile": "shopify://shop_images/m-backpack-1.jpg",
             "margin_top": 32,
             "margin_bottom": 52,
             "padding_x_desktop": 5,
@@ -406,7 +406,7 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/1_pc_7c8dba70-c446-4a60-941e-9a73facbee1d.jpg",
+            "image": "shopify://shop_images/pc-backpack-2.jpg",
             "heading": "Smart Organization Meets Everyday Carry",
             "subheading": "",
             "text": "<p>More than just pockets. This is intelligent organization, designed to move with you — smarter, faster, lighter.</p>",
