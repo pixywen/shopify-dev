@@ -315,7 +315,7 @@
             "image_mobile": "shopify://shop_images/UGC-backpack-m.jpg",
             "margin_top": 32,
             "margin_bottom": 52,
-            "padding_x_desktop": 5,
+            "padding_x_desktop": 0,
             "padding_x_mobile": 5,
             "target_tab": "description"
           }
