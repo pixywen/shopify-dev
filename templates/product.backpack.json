@@ -311,6 +311,19 @@
         "image_banner_WhzCRX": {
           "type": "image_banner",
           "settings": {
+            "image_desktop": "shopify://shop_images/UGC-backpack-pc.jpg",
+            "image_mobile": "shopify://shop_images/UGC-backpack-m.jpg",
+            "margin_top": 32,
+            "margin_bottom": 52,
+            "padding_x_desktop": 5,
+            "padding_x_mobile": 5,
+            "target_tab": "description"
+          }
+        },
+        "image_banner_mT7HMf": {
+          "type": "image_banner",
+          "disabled": true,
+          "settings": {
             "image_desktop": "shopify://shop_images/pc-backpack-1.jpg",
             "image_mobile": "shopify://shop_images/m-backpack-1.jpg",
             "margin_top": 32,
@@ -467,6 +480,7 @@
         "video_yb8JJc",
         "video_gdw83U",
         "image_banner_WhzCRX",
+        "image_banner_mT7HMf",
         "content_block_JphTVU",
         "image_banner_bDhrwk",
         "image_banner_3kkPXc",
