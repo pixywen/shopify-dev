@@ -743,6 +743,42 @@
     "gg_redskins_display_FrrC8f": {
       "type": "gg-redskins-display",
       "blocks": {
+        "redskin_display_FhUdjQ": {
+          "type": "redskin_display",
+          "settings": {
+            "image": "shopify://shop_images/13_7e3805bf-c066-4195-8b9a-293a3b197ca0.jpg",
+            "product": "nixcore-aerowool-nexus-t-shirt-bundle",
+            "hover_title": "Shop the Look",
+            "link": ""
+          }
+        },
+        "redskin_display_RXTdUF": {
+          "type": "redskin_display",
+          "settings": {
+            "image": "shopify://shop_images/14_33df2c86-f10e-4184-9615-c341d3356170.jpg",
+            "product": "aerosolis-aether-mesa-flex-pants",
+            "hover_title": "Shop the Look",
+            "link": ""
+          }
+        },
+        "redskin_display_WpJ7XW": {
+          "type": "redskin_display",
+          "settings": {
+            "image": "shopify://shop_images/11_7f169c6b-b06b-43d7-950d-56576da24a03.jpg",
+            "product": "everyday-backpack",
+            "hover_title": "Shop the Look",
+            "link": ""
+          }
+        },
+        "redskin_display_AW4zfC": {
+          "type": "redskin_display",
+          "settings": {
+            "image": "shopify://shop_images/12_27cc8891-f11f-48db-9ac1-14cf32924f2c.jpg",
+            "product": "urbaneon-solotex-gridwave-white-tee-bundle",
+            "hover_title": "Shop the Look",
+            "link": ""
+          }
+        },
         "redskin_display_QY9iG4": {
           "type": "redskin_display",
           "settings": {
@@ -817,6 +853,10 @@
         }
       },
       "block_order": [
+        "redskin_display_FhUdjQ",
+        "redskin_display_RXTdUF",
+        "redskin_display_WpJ7XW",
+        "redskin_display_AW4zfC",
         "redskin_display_QY9iG4",
         "redskin_display_UyyM6F",
         "redskin_display_nPgYUB",
