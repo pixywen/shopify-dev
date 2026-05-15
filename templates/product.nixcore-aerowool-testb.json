@@ -269,12 +269,23 @@
     "gg_product_detail_Mg4rJH": {
       "type": "gg-product-detail",
       "blocks": {
+        "image_banner_QK6LRj": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/Nixcore_Aerowool_Nexus_T-Shirt-test-1.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 20,
+            "target_tab": "description"
+          }
+        },
         "collage_WXNq9Y": {
           "type": "collage",
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/T_-3_30a6bb26-760d-45f1-bc4a-ef4ffe5f1500.jpg",
+            "image": "shopify://shop_images/Nixcore_Aerowool_Nexus_T-Shirt-test-2.jpg",
             "heading": "Built-In Stretch, Built For Movement",
             "subheading": "",
             "text": "<p>Enhanced with spandex to move with you — every stretch, step, and shift feels effortless.</p>",
@@ -288,7 +299,7 @@
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/T_-2_27bd5a69-82a5-4d79-86db-5cda7cb02247.jpg",
+            "image": "shopify://shop_images/Nixcore_Aerowool_Nexus_T-Shirt-test-3.jpg",
             "heading": "Antibacterial Confidence That Lasts",
             "subheading": "",
             "text": "<p>Naturally antibacterial and odor-resistant — so you feel fresh, confident, and comfortable, even after hours of wear.</p>",
@@ -302,7 +313,7 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/T_-1_d6c1fae2-a9e5-49bc-8d12-f8e5aa4ed8dc.jpg",
+            "image": "shopify://shop_images/Nixcore_Aerowool_Nexus_T-Shirt-test-4.jpg",
             "heading": "Featherlight Feel, Triple-Function Fabric",
             "subheading": "",
             "text": "<p>Ultralight, barely-there fabric engineered with a tri-blend of fibers for optimal moisture control, dynamic thermoregulation, and natural stretch. Performance and comfort, seamlessly combined.</p>",
@@ -313,6 +324,7 @@
         },
         "collage_zR94Hn": {
           "type": "collage",
+          "disabled": true,
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
@@ -327,6 +339,7 @@
         },
         "collage_VWdHAp": {
           "type": "collage",
+          "disabled": true,
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
@@ -360,6 +373,7 @@
         }
       },
       "block_order": [
+        "image_banner_QK6LRj",
         "collage_WXNq9Y",
         "collage_dLqxPW",
         "collage_byQmgc",
