@@ -273,10 +273,11 @@
           "type": "image_banner",
           "settings": {
             "image_desktop": "shopify://shop_images/Nixcore_Aerowool_Nexus_T-Shirt-test-1.jpg",
-            "margin_top": 32,
-            "margin_bottom": 32,
+            "image_mobile": "shopify://shop_images/Nixcore_Aerowool_Nexus_T-Shirt-test-1-m.jpg",
+            "margin_top": 0,
+            "margin_bottom": 8,
             "padding_x_desktop": 0,
-            "padding_x_mobile": 20,
+            "padding_x_mobile": 0,
             "target_tab": "description"
           }
         },
