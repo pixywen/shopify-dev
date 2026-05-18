@@ -448,7 +448,7 @@
           "settings": {
             "image_desktop": "shopify://shop_images/pc_1239a7d7-d256-4995-b936-10571fbd91e8.jpg",
             "image_mobile": "shopify://shop_images/m-backpack-1.jpg",
-            "margin_top": 4,
+            "margin_top": 0,
             "margin_bottom": 20,
             "padding_x_desktop": 5,
             "padding_x_mobile": 5,
