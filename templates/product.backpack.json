@@ -313,8 +313,8 @@
           "settings": {
             "image_desktop": "shopify://shop_images/UGC.jpg",
             "image_mobile": "shopify://shop_images/UGC_-_-m1.jpg",
-            "margin_top": 32,
-            "margin_bottom": 52,
+            "margin_top": 8,
+            "margin_bottom": 24,
             "padding_x_desktop": 0,
             "padding_x_mobile": 5,
             "target_tab": "description"
@@ -450,7 +450,7 @@
             "image_mobile": "shopify://shop_images/m-backpack-1.jpg",
             "margin_top": 0,
             "margin_bottom": 20,
-            "padding_x_desktop": 5,
+            "padding_x_desktop": 0,
             "padding_x_mobile": 5,
             "target_tab": "description"
           }
