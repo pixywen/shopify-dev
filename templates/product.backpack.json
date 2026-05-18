@@ -311,24 +311,11 @@
         "image_banner_WhzCRX": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/UGC-backpack-pc.jpg",
-            "image_mobile": "shopify://shop_images/UGC-backpack-m_6b958381-4860-4655-9188-3a43cf0cfa30.jpg",
+            "image_desktop": "shopify://shop_images/UGC.jpg",
+            "image_mobile": "shopify://shop_images/UGC_-_-m1.jpg",
             "margin_top": 32,
             "margin_bottom": 52,
             "padding_x_desktop": 0,
-            "padding_x_mobile": 5,
-            "target_tab": "description"
-          }
-        },
-        "image_banner_mT7HMf": {
-          "type": "image_banner",
-          "disabled": true,
-          "settings": {
-            "image_desktop": "shopify://shop_images/pc-backpack-1.jpg",
-            "image_mobile": "shopify://shop_images/m-backpack-1.jpg",
-            "margin_top": 32,
-            "margin_bottom": 52,
-            "padding_x_desktop": 5,
             "padding_x_mobile": 5,
             "target_tab": "description"
           }
@@ -347,8 +334,8 @@
         "image_banner_bDhrwk": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/alpargali_backpack_description_2_pc.jpg",
-            "image_mobile": "shopify://shop_images/alpargali_backpack_description_2.jpg",
+            "image_desktop": "shopify://shop_images/pc_aa966d63-0e0d-4d8a-9c0e-619d7ce2c01b.jpg",
+            "image_mobile": "shopify://shop_images/2_e2284779-167a-4d70-ae9f-17421806ccc1.jpg",
             "margin_top": 32,
             "margin_bottom": 32,
             "padding_x_desktop": 0,
@@ -456,6 +443,18 @@
             "margin_bottom": 32
           }
         },
+        "image_banner_mT7HMf": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/pc_1239a7d7-d256-4995-b936-10571fbd91e8.jpg",
+            "image_mobile": "shopify://shop_images/m-backpack-1.jpg",
+            "margin_top": 32,
+            "margin_bottom": 52,
+            "padding_x_desktop": 5,
+            "padding_x_mobile": 5,
+            "target_tab": "description"
+          }
+        },
         "faq_i3m3aL": {
           "type": "faq",
           "settings": {
@@ -480,7 +479,6 @@
         "video_yb8JJc",
         "video_gdw83U",
         "image_banner_WhzCRX",
-        "image_banner_mT7HMf",
         "content_block_JphTVU",
         "image_banner_bDhrwk",
         "image_banner_3kkPXc",
@@ -488,6 +486,7 @@
         "collage_byQmgc",
         "collage_dLqxPW",
         "collage_WXNq9Y",
+        "image_banner_mT7HMf",
         "faq_i3m3aL",
         "judge_me_reviews_review_widget_JctMNU"
       ],
