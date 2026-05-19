@@ -52,6 +52,7 @@
         },
         "announcement_VcD7WV": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Any 3 items, 20% OFF",
             "link": "shopify://collections/all"
