@@ -354,7 +354,7 @@
           "settings": {
             "review_data": "sample_data",
             "max_width": 1200,
-            "show_shop_reviews": false,
+            "show_shop_reviews": true,
             "empty_state": "empty_widget"
           }
         }
@@ -371,7 +371,7 @@
       "settings": {
         "show_description": true,
         "show_video": false,
-        "show_reviews": false,
+        "show_reviews": true,
         "show_faq": true
       }
     },
