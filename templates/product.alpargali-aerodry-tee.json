@@ -274,7 +274,7 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/T_-3_30a6bb26-760d-45f1-bc4a-ef4ffe5f1500.jpg",
+            "image": "shopify://shop_images/PC-Dark_Charcoal-Detail1.jpg",
             "heading": "Built-In Stretch, Built For Movement",
             "subheading": "",
             "text": "<p>Enhanced with spandex to move with you — every stretch, step, and shift feels effortless.</p>",
@@ -288,7 +288,7 @@
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/T_-2_27bd5a69-82a5-4d79-86db-5cda7cb02247.jpg",
+            "image": "shopify://shop_images/PC-deepteal-Detail.jpg",
             "heading": "Antibacterial Confidence That Lasts",
             "subheading": "",
             "text": "<p>Naturally antibacterial and odor-resistant — so you feel fresh, confident, and comfortable, even after hours of wear.</p>",
@@ -302,7 +302,7 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/T_-1_d6c1fae2-a9e5-49bc-8d12-f8e5aa4ed8dc.jpg",
+            "image": "shopify://shop_images/PC-Golden_Tan-Detail.jpg",
             "heading": "Featherlight Feel, Triple-Function Fabric",
             "subheading": "",
             "text": "<p>Ultralight, barely-there fabric engineered with a tri-blend of fibers for optimal moisture control, dynamic thermoregulation, and natural stretch. Performance and comfort, seamlessly combined.</p>",
@@ -316,7 +316,7 @@
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/T_-4_fb7ff356-d385-431f-954e-46acec7608ae.jpg",
+            "image": "shopify://shop_images/PC-Dark_Charcoal-Detail4.jpg",
             "heading": "Smart Details, Everyday Ease",
             "subheading": "",
             "text": "<p>Designed with a discreet back locker loop — simple, practical, and ready when you are.</p>",
@@ -327,6 +327,7 @@
         },
         "collage_VWdHAp": {
           "type": "collage",
+          "disabled": true,
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
