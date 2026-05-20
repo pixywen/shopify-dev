@@ -269,8 +269,21 @@
     "gg_product_detail_Mg4rJH": {
       "type": "gg-product-detail",
       "blocks": {
+        "image_banner_y7URcm": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/detail1-pc.jpg",
+            "image_mobile": "shopify://shop_images/detail1-m.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
         "collage_WXNq9Y": {
           "type": "collage",
+          "disabled": true,
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
@@ -361,6 +374,7 @@
         }
       },
       "block_order": [
+        "image_banner_y7URcm",
         "collage_WXNq9Y",
         "collage_dLqxPW",
         "collage_byQmgc",
