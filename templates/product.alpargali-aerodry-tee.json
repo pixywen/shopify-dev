@@ -275,7 +275,7 @@
             "image_desktop": "shopify://shop_images/detail1-pc.jpg",
             "image_mobile": "shopify://shop_images/detail1-m.jpg",
             "margin_top": 8,
-            "margin_bottom": 32,
+            "margin_bottom": 12,
             "padding_x_desktop": 0,
             "padding_x_mobile": 0,
             "target_tab": "description"
