@@ -14,6 +14,7 @@
       "blocks": {
         "desktop_slide_FBrYf6": {
           "type": "desktop_slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/omnishell-pc.jpg",
             "alt_text": "",
@@ -23,6 +24,7 @@
         },
         "mobile_slide_mrijEN": {
           "type": "mobile_slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/omnishell-m_a1bd9dd1-47fc-4a91-b8cb-145b7981af56.jpg",
             "alt_text": "",
@@ -33,7 +35,7 @@
         "desktop_slide_ihrdJC": {
           "type": "desktop_slide",
           "settings": {
-            "image": "shopify://shop_images/summer-banner-pc_f5c10da3-af0f-4952-8e3a-9d8b7081ef82.jpg",
+            "image": "shopify://shop_images/travel-banner-PC.jpg",
             "alt_text": "",
             "custom_duration": 4,
             "image_link": "https://www.alpargali.com/products/nixcore-aerowool-nexus-t-shirt-bundle?variant=54010321568028"
@@ -42,10 +44,10 @@
         "mobile_slide_ijW4XL": {
           "type": "mobile_slide",
           "settings": {
-            "image": "shopify://shop_images/summer-banner-m.jpg",
+            "image": "shopify://shop_images/travel-banner-m.jpg",
             "alt_text": "",
             "custom_duration": 4,
-            "image_link": "https://www.alpargali.com/products/nixcore-aerowool-nexus-t-shirt-bundle?variant=54010321568028"
+            "image_link": "shopify://collections/best-seller"
           }
         },
         "desktop_slide_kDjina": {
