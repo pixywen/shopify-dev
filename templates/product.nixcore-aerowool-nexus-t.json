@@ -269,6 +269,18 @@
     "gg_product_detail_Mg4rJH": {
       "type": "gg-product-detail",
       "blocks": {
+        "image_banner_xRpwmw": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/ugc-pc-merino.jpg",
+            "image_mobile": "shopify://shop_images/ugc-m-merino.jpg",
+            "margin_top": 0,
+            "margin_bottom": 16,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
         "collage_WXNq9Y": {
           "type": "collage",
           "settings": {
@@ -360,6 +372,7 @@
         }
       },
       "block_order": [
+        "image_banner_xRpwmw",
         "collage_WXNq9Y",
         "collage_dLqxPW",
         "collage_byQmgc",
