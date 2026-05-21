@@ -185,7 +185,7 @@
           "settings": {
             "heading": "Care",
             "icon": "none",
-            "content": "<ul><li>Hand wash cold with like colors.</li></ul><p></p><ul><li>Use mild or neutral detergent.</li></ul><p></p><ul><li>Do not bleach.</li></ul><p></p><ul><li>Remove promptly.</li></ul><p></p><ul><li>Dry flat in shade.</li></ul><p></p><ul><li>Cool iron if needed.</li></ul><p></p><ul><li>Do not wring or twist.<br/><br/></li></ul>",
+            "content": "<p>Move often. Care simply.</p><ul><li>Machine wash cold<br/></li><li>Wash with similar colors<br/></li><li>Turn inside out before washing<br/></li><li>Do not bleach<br/></li><li>Tumble dry low or line dry<br/></li><li>Do not iron<br/></li><li>Do not dry clean</li></ul><p>To preserve texture and performance, air drying is recommended.</p>",
             "page": "",
             "image_alt": "",
             "image_width": 50
