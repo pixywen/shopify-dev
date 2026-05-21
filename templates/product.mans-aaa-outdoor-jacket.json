@@ -263,6 +263,18 @@
     "gg_product_detail_Mg4rJH": {
       "type": "gg-product-detail",
       "blocks": {
+        "image_banner_dKrdma": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/ugc-pc-outdoor.jpg",
+            "image_mobile": "shopify://shop_images/ugc-m-outdoor.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 20,
+            "target_tab": "description"
+          }
+        },
         "content_block_MGACxw": {
           "type": "content_block",
           "settings": {
@@ -558,6 +570,7 @@
         }
       },
       "block_order": [
+        "image_banner_dKrdma",
         "content_block_MGACxw",
         "image_banner_MYRGBE",
         "image_banner_DDQQKc",
