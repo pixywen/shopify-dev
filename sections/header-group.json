@@ -166,15 +166,15 @@
         "desktop_slide_t9iXKf": {
           "type": "desktop_slide",
           "settings": {
-            "image": "shopify://shop_images/travel--PC.jpg",
-            "link": "shopify://products/all-day-chest-bag"
+            "image": "shopify://shop_images/20_-PC.jpg",
+            "link": "shopify://collections/all"
           }
         },
         "mobile_slide_wd9dX8": {
           "type": "mobile_slide",
           "settings": {
-            "image": "shopify://shop_images/travel-m.jpg",
-            "link": "shopify://products/all-day-chest-bag"
+            "image": "shopify://shop_images/20_-m.jpg",
+            "link": "shopify://collections/all"
           }
         },
         "desktop_slide_iEzfCV": {
