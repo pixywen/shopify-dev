@@ -35,16 +35,16 @@
         "desktop_slide_ihrdJC": {
           "type": "desktop_slide",
           "settings": {
-            "image": "shopify://shop_images/travel-banner-PC.jpg",
+            "image": "shopify://shop_images/banner-PC_a4291808-611b-4b07-b20d-adfd1695a557.jpg",
             "alt_text": "",
             "custom_duration": 4,
-            "image_link": "https://www.alpargali.com/products/nixcore-aerowool-nexus-t-shirt-bundle?variant=54010321568028"
+            "image_link": "shopify://collections/best-seller"
           }
         },
         "mobile_slide_ijW4XL": {
           "type": "mobile_slide",
           "settings": {
-            "image": "shopify://shop_images/travel-banner-m.jpg",
+            "image": "shopify://shop_images/banner-m_4fc2dd16-bacc-444b-944b-0c287f7754b6.jpg",
             "alt_text": "",
             "custom_duration": 4,
             "image_link": "shopify://collections/best-seller"
@@ -498,7 +498,6 @@
             "model_image_1": "shopify://shop_images/blackbackpack_6.jpg",
             "color_name_2": "Brown",
             "color_2": "shopify://shop_images/6_b5140381-ace3-47ff-a2b2-1279d94a9979.jpg",
-            "main_image_2": "shopify://shop_images/1_4bc5e903-9c15-45aa-bcd6-5036daadfa89.jpg",
             "color_name_3": ""
           }
         },
