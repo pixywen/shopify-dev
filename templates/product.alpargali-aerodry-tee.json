@@ -269,6 +269,18 @@
     "gg_product_detail_Mg4rJH": {
       "type": "gg-product-detail",
       "blocks": {
+        "image_banner_e8jY9q": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/Hour.jpg",
+            "image_mobile": "shopify://shop_images/Hour-m.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 20,
+            "target_tab": "description"
+          }
+        },
         "image_banner_6LW6yR": {
           "type": "image_banner",
           "settings": {
@@ -364,20 +376,6 @@
             "margin_bottom": 0
           }
         },
-        "collage_byQmgc": {
-          "type": "collage",
-          "settings": {
-            "desktop_layout": "image_left",
-            "mobile_layout": "image_top",
-            "image": "shopify://shop_images/5-VS.jpg",
-            "heading": "Less Absorption. More Performance.",
-            "subheading": "",
-            "text": "<p>Engineered for movement, not moisture—quick-dry, lightweight, and built for all-day performance.</p>",
-            "target_tab": "description",
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        },
         "collage_zR94Hn": {
           "type": "collage",
           "settings": {
@@ -387,6 +385,20 @@
             "heading": "Comfort Starts at the Collar",
             "subheading": "",
             "text": "<p>Soft back neck taping provides a smoother feel and everyday comfort.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "collage_byQmgc": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_left",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/5-VS.jpg",
+            "heading": "Less Absorption. More Performance.",
+            "subheading": "",
+            "text": "<p>Engineered for movement, not moisture—quick-dry, lightweight, and built for all-day performance.</p>",
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 0
@@ -428,6 +440,7 @@
         }
       },
       "block_order": [
+        "image_banner_e8jY9q",
         "image_banner_6LW6yR",
         "image_banner_y7URcm",
         "collage_WXNq9Y",
@@ -435,8 +448,8 @@
         "collage_edVYFW",
         "collage_emVQMa",
         "collage_aEWhKw",
-        "collage_byQmgc",
         "collage_zR94Hn",
+        "collage_byQmgc",
         "collage_VWdHAp",
         "faq_i3m3aL",
         "judge_me_reviews_review_widget_JctMNU"
