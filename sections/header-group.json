@@ -44,6 +44,7 @@
       "blocks": {
         "announcement_cWcU7U": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "20% OFF SITEWIDE",
             "link": "shopify://collections/all"
