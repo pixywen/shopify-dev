@@ -354,6 +354,7 @@
         },
         "collage_byQmgc": {
           "type": "collage",
+          "disabled": true,
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
@@ -369,7 +370,7 @@
         "collage_zR94Hn": {
           "type": "collage",
           "settings": {
-            "desktop_layout": "image_right",
+            "desktop_layout": "image_left",
             "mobile_layout": "image_top",
             "image": "shopify://shop_images/PC-Golden_Tan-Detail.jpg",
             "heading": "Comfort Starts at the Collar",
