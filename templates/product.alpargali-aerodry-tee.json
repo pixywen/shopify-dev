@@ -269,6 +269,18 @@
     "gg_product_detail_Mg4rJH": {
       "type": "gg-product-detail",
       "blocks": {
+        "image_banner_6LW6yR": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/Built_To_Keep_Up-pc.jpg",
+            "image_mobile": "shopify://shop_images/Built_To_Keep_Up-m.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 20,
+            "target_tab": "description"
+          }
+        },
         "image_banner_y7URcm": {
           "type": "image_banner",
           "settings": {
@@ -417,6 +429,7 @@
         }
       },
       "block_order": [
+        "image_banner_6LW6yR",
         "image_banner_y7URcm",
         "collage_WXNq9Y",
         "collage_dLqxPW",
