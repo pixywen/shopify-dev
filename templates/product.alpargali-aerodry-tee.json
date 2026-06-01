@@ -404,6 +404,20 @@
             "margin_bottom": 0
           }
         },
+        "collage_7p7TeQ": {
+          "type": "collage",
+          "settings": {
+            "desktop_layout": "image_right",
+            "mobile_layout": "image_top",
+            "image": "shopify://shop_images/environments.jpg",
+            "heading": "Less Absorption. More Performance.",
+            "subheading": "",
+            "text": "<p>Engineered for movement, not moisture—quick-dry, lightweight, and built for all-day performance.</p>",
+            "target_tab": "description",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
         "collage_VWdHAp": {
           "type": "collage",
           "disabled": true,
@@ -450,6 +464,7 @@
         "collage_aEWhKw",
         "collage_zR94Hn",
         "collage_byQmgc",
+        "collage_7p7TeQ",
         "collage_VWdHAp",
         "faq_i3m3aL",
         "judge_me_reviews_review_widget_JctMNU"
