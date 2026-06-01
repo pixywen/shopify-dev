@@ -366,14 +366,13 @@
         },
         "collage_byQmgc": {
           "type": "collage",
-          "disabled": true,
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/PC-Dark_Charcoal-Detail4.jpg",
-            "heading": "Stay Cool. Dry Fast.",
+            "image": "shopify://shop_images/5-VS.jpg",
+            "heading": "Less Absorption. More Performance.",
             "subheading": "",
-            "text": "<p>Snowflake-texture fabric promotes airflow and efficiently wicks moisture to keep you cool and dry.</p>",
+            "text": "<p>Engineered for movement, not moisture—quick-dry, lightweight, and built for all-day performance.</p>",
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 0
