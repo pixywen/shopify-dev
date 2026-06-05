@@ -289,7 +289,7 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/Built_For_Movement.jpg",
+            "image": "shopify://shop_images/SwiftDry_Shorts-detail-1.jpg",
             "heading": "Built For Movement",
             "subheading": "",
             "text": "<p>Lightweight performance built for travel, training, and everyday wear.</p>",
@@ -303,7 +303,7 @@
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/Snowflake-Texture_Fabric.jpg",
+            "image": "shopify://shop_images/SwiftDry_Shorts-detail-2.jpg",
             "heading": "Engineered To Let Air Move",
             "subheading": "",
             "text": "<p>Snowflake-texture fabric designed to maximize airflow and keep you cool.</p>",
@@ -317,7 +317,7 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/Quick-Dry_Performance.jpg",
+            "image": "shopify://shop_images/SwiftDry_Shorts-detail-3.jpg",
             "heading": "Quick-Dry Performance",
             "subheading": "",
             "text": "<p>Quick-dry tech that keeps you comfortable and ready again in no time.</p>",
