@@ -68,10 +68,9 @@
         },
         "announcement_peTVYX": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "Discover the All-New CoreShell Jacket",
-            "link": "shopify://products/alpargali-coreshell-jacket"
+            "text": "NEW ARRIVAL | TRACE SERIES Quick-Dry Tee",
+            "link": "shopify://products/alpargali-aerodry-tee"
           }
         },
         "announcement_RNpTTn": {
