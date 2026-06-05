@@ -354,6 +354,17 @@
             "margin_bottom": 0
           }
         },
+        "content_block_di8BDk": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "heading": "<p>FUNCTIONAL DETAILS</p>",
+            "content": "",
+            "target_tab": "description"
+          }
+        },
         "carousel_eaz7eM": {
           "type": "carousel",
           "settings": {
@@ -502,6 +513,7 @@
         "collage_emVQMa",
         "collage_aEWhKw",
         "collage_zR94Hn",
+        "content_block_di8BDk",
         "carousel_eaz7eM",
         "image_banner_6LW6yR",
         "collage_byQmgc",
