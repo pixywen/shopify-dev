@@ -17,6 +17,89 @@
         "padding_bottom": 28
       }
     },
+    "blocks_DGpzP7": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_28bafcf_zLUJXz": {
+          "type": "ai_gen_block_28bafcf",
+          "settings": {
+            "desktop_height": 800,
+            "desktop_image_fit": "cover",
+            "mobile_height": 500,
+            "mobile_image_fit": "cover",
+            "heading_size": 48,
+            "subheading_size": 18,
+            "show_arrows": false,
+            "arrow_size": 50,
+            "arrow_background": "#ffffff",
+            "arrow_color": "#121212",
+            "show_dots": false,
+            "dot_size": 10,
+            "dot_color": "#ffffff",
+            "autoplay": false,
+            "autoplay_speed": 5,
+            "slide_1_enabled": true,
+            "slide_1_media_type": "image",
+            "slide_1_desktop_image": "shopify://shop_images/Alpargali_Community-pc-1.jpg",
+            "slide_1_mobile_image": "shopify://shop_images/Alpargali_Community-1-m.jpg",
+            "slide_1_desktop_video": "",
+            "slide_1_mobile_video": "",
+            "slide_1_link": "shopify://collections/all",
+            "slide_1_heading": "",
+            "slide_1_subheading": "",
+            "slide_1_text_position": "middle_left",
+            "slide_1_text_align": "left",
+            "slide_1_text_color": "#ffffff",
+            "slide_2_enabled": false,
+            "slide_2_media_type": "image",
+            "slide_2_desktop_video": "",
+            "slide_2_mobile_video": "",
+            "slide_2_link": "",
+            "slide_2_heading": "",
+            "slide_2_subheading": "",
+            "slide_2_text_position": "middle_left",
+            "slide_2_text_align": "left",
+            "slide_2_text_color": "#ffffff",
+            "slide_3_enabled": false,
+            "slide_3_media_type": "image",
+            "slide_3_desktop_video": "",
+            "slide_3_mobile_video": "",
+            "slide_3_link": "",
+            "slide_3_heading": "",
+            "slide_3_subheading": "",
+            "slide_3_text_position": "middle_left",
+            "slide_3_text_align": "left",
+            "slide_3_text_color": "#ffffff",
+            "slide_4_enabled": false,
+            "slide_4_media_type": "image",
+            "slide_4_desktop_video": "",
+            "slide_4_mobile_video": "",
+            "slide_4_link": "",
+            "slide_4_heading": "",
+            "slide_4_subheading": "",
+            "slide_4_text_position": "middle_left",
+            "slide_4_text_align": "left",
+            "slide_4_text_color": "#ffffff",
+            "slide_5_enabled": false,
+            "slide_5_media_type": "image",
+            "slide_5_desktop_video": "",
+            "slide_5_mobile_video": "",
+            "slide_5_link": "",
+            "slide_5_heading": "",
+            "slide_5_subheading": "",
+            "slide_5_text_position": "middle_left",
+            "slide_5_text_align": "left",
+            "slide_5_text_color": "#ffffff"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_28bafcf_zLUJXz"
+      ],
+      "name": "Carousel banner",
+      "settings": {}
+    },
     "gg_image_slideshow_bTgHnF": {
       "type": "gg-image-slideshow",
       "blocks": {
@@ -27,16 +110,16 @@
             "link": "https://www.alpargali.com/collections/all"
           }
         },
-        "desktop_slide_ke3VGy": {
-          "type": "desktop_slide",
-          "disabled": true,
+        "mobile_slide_Yh3F88": {
+          "type": "mobile_slide",
           "settings": {
             "image": "shopify://shop_images/Alpargali_Community-1-m.jpg",
             "link": "https://www.alpargali.com/collections/all"
           }
         },
-        "mobile_slide_Yh3F88": {
-          "type": "mobile_slide",
+        "desktop_slide_ke3VGy": {
+          "type": "desktop_slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Alpargali_Community-1-m.jpg",
             "link": "https://www.alpargali.com/collections/all"
@@ -52,17 +135,17 @@
       },
       "block_order": [
         "desktop_slide_ypxYHg",
-        "desktop_slide_ke3VGy",
         "mobile_slide_Yh3F88",
+        "desktop_slide_ke3VGy",
         "mobile_slide_QajzNY"
       ],
       "name": "GG-图片轮播",
       "settings": {
         "change_slides_speed": 5,
         "auto_rotate": true,
-        "dots_position_bottom": 10,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "dots_position_bottom": 38,
+        "padding_top": 60,
+        "padding_bottom": 80
       }
     },
     "gg_simple_image_banner_kPHg8h": {
@@ -584,6 +667,7 @@
   },
   "order": [
     "main",
+    "blocks_DGpzP7",
     "gg_image_slideshow_bTgHnF",
     "gg_simple_image_banner_kPHg8h",
     "gg_simple_image_banner_AgjeTK",
