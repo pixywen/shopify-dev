@@ -29,6 +29,7 @@
         },
         "desktop_slide_ke3VGy": {
           "type": "desktop_slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Alpargali_Community-1-m.jpg",
             "link": "https://www.alpargali.com/collections/all"
@@ -37,11 +38,13 @@
         "mobile_slide_Yh3F88": {
           "type": "mobile_slide",
           "settings": {
-            "link": ""
+            "image": "shopify://shop_images/Alpargali_Community-1-m.jpg",
+            "link": "https://www.alpargali.com/collections/all"
           }
         },
         "mobile_slide_QajzNY": {
           "type": "mobile_slide",
+          "disabled": true,
           "settings": {
             "link": ""
           }
