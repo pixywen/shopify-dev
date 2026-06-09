@@ -277,17 +277,6 @@
       "name": "Carousel banner",
       "settings": {}
     },
-    "gg_simple_image_banner_wb8YMh": {
-      "type": "gg-simple-image-banner",
-      "settings": {
-        "image": "shopify://shop_images/Alpargali_Community-pc-4.jpg",
-        "image_mobile": "shopify://shop_images/Alpargali_Community-4-m.jpg",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_left": 0,
-        "padding_right": 0
-      }
-    },
     "gg_simple_image_banner_jbT3bh": {
       "type": "gg-simple-image-banner",
       "settings": {
@@ -767,7 +756,6 @@
     "blocks_4U8XBM",
     "gg_simple_image_banner_LfTUj8",
     "blocks_pgfa4r",
-    "gg_simple_image_banner_wb8YMh",
     "gg_simple_image_banner_jbT3bh",
     "gg_simple_image_banner_73ybtT",
     "gg_double_image_banner_dELCwb",
