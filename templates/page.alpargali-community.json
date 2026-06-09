@@ -28,6 +28,61 @@
         "padding_right": 0
       }
     },
+    "gg_simple_image_banner_AgjeTK": {
+      "type": "gg-simple-image-banner",
+      "settings": {
+        "image": "shopify://shop_images/Alpargali_Community-pc-2.jpg",
+        "image_mobile": "shopify://shop_images/Alpargali_Community-2-m.jpg",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0
+      }
+    },
+    "gg_simple_image_banner_LfTUj8": {
+      "type": "gg-simple-image-banner",
+      "settings": {
+        "image": "shopify://shop_images/Alpargali_Community-pc-3.jpg",
+        "image_mobile": "shopify://shop_images/Alpargali_Community-3_-m.jpg",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0
+      }
+    },
+    "gg_simple_image_banner_wb8YMh": {
+      "type": "gg-simple-image-banner",
+      "settings": {
+        "image": "shopify://shop_images/Alpargali_Community-pc-4.jpg",
+        "image_mobile": "shopify://shop_images/Alpargali_Community-4-m.jpg",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0
+      }
+    },
+    "gg_simple_image_banner_jbT3bh": {
+      "type": "gg-simple-image-banner",
+      "settings": {
+        "image": "shopify://shop_images/Alpargali_Community-pc-5.jpg",
+        "image_mobile": "shopify://shop_images/Alpargali_Community-5_-m.jpg",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0
+      }
+    },
+    "gg_simple_image_banner_73ybtT": {
+      "type": "gg-simple-image-banner",
+      "settings": {
+        "image": "shopify://shop_images/Alpargali_Community-pc-6.jpg",
+        "image_mobile": "shopify://shop_images/Alpargali_Community-6-m.jpg",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0
+      }
+    },
     "gg_double_image_banner_dELCwb": {
       "type": "gg-double-image-banner",
       "blocks": {
@@ -171,6 +226,7 @@
         "text_wxn7dP",
         "text_yMBwV7"
       ],
+      "disabled": true,
       "settings": {
         "content_width": 1500,
         "padding_left": 0,
@@ -204,6 +260,7 @@
       "block_order": [
         "slide_HmP8CU"
       ],
+      "disabled": true,
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "full_bleed",
@@ -250,6 +307,7 @@
         "heading_PWtkHe",
         "text_Wf8mnk"
       ],
+      "disabled": true,
       "name": "GG-二级页面-富文本组件",
       "settings": {
         "content_width": 1500,
@@ -289,6 +347,7 @@
         "row_Lxy4zj",
         "row_mF6Qca"
       ],
+      "disabled": true,
       "name": "t:sections.multirow.presets.name",
       "settings": {
         "image_height": "adapt",
@@ -336,6 +395,7 @@
         "row_axt6DJ",
         "row_ynRT6A"
       ],
+      "disabled": true,
       "name": "t:sections.multirow.presets.name",
       "settings": {
         "image_height": "adapt",
@@ -371,6 +431,7 @@
       "block_order": [
         "row_Lf6Kit"
       ],
+      "disabled": true,
       "name": "t:sections.multirow.presets.name",
       "settings": {
         "image_height": "adapt",
@@ -390,6 +451,7 @@
     },
     "gg_three_image_banner_htRqLK": {
       "type": "gg-three-image-banner",
+      "disabled": true,
       "name": "GG-三图片横幅",
       "settings": {
         "small_heading_above": "",
@@ -424,6 +486,7 @@
         "desktop_slide_hy3jhC",
         "mobile_slide_4c8tGn"
       ],
+      "disabled": true,
       "name": "GG-图片轮播",
       "settings": {
         "change_slides_speed": 5,
@@ -475,6 +538,11 @@
   "order": [
     "main",
     "gg_simple_image_banner_kPHg8h",
+    "gg_simple_image_banner_AgjeTK",
+    "gg_simple_image_banner_LfTUj8",
+    "gg_simple_image_banner_wb8YMh",
+    "gg_simple_image_banner_jbT3bh",
+    "gg_simple_image_banner_73ybtT",
     "gg_double_image_banner_dELCwb",
     "gg_double_image_banner_mobile_czcpJB",
     "gg_rich_text_page_R7exfe",
