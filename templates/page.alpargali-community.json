@@ -30,7 +30,8 @@
         "desktop_slide_ke3VGy": {
           "type": "desktop_slide",
           "settings": {
-            "link": ""
+            "image": "shopify://shop_images/Alpargali_Community-1-m.jpg",
+            "link": "https://www.alpargali.com/collections/all"
           }
         },
         "mobile_slide_Yh3F88": {
