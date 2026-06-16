@@ -345,7 +345,7 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/PC-Golden_Tan-Detail.jpg",
+            "image": "shopify://shop_images/ActiveDry_Base-5.jpg",
             "heading": "Comfort Starts at the Collar",
             "subheading": "",
             "text": "<p>Soft back neck taping provides a smoother feel and everyday comfort.</p>",
@@ -356,6 +356,7 @@
         },
         "image_banner_6LW6yR": {
           "type": "image_banner",
+          "disabled": true,
           "settings": {
             "image_desktop": "shopify://shop_images/Built_To_Keep_Up-pc.jpg",
             "image_mobile": "shopify://shop_images/Built_To_Keep_Up-m.jpg",
@@ -368,6 +369,7 @@
         },
         "collage_byQmgc": {
           "type": "collage",
+          "disabled": true,
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
@@ -382,6 +384,7 @@
         },
         "collage_7p7TeQ": {
           "type": "collage",
+          "disabled": true,
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
@@ -396,6 +399,7 @@
         },
         "image_banner_e8jY9q": {
           "type": "image_banner",
+          "disabled": true,
           "settings": {
             "image_desktop": "shopify://shop_images/Hour.jpg",
             "image_mobile": "shopify://shop_images/Hour-m.jpg",
