@@ -413,8 +413,8 @@
         "image_banner_y7URcm": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/detail1-pc.jpg",
-            "image_mobile": "shopify://shop_images/detail1-m.jpg",
+            "image_desktop": "shopify://shop_images/ActiveDry_Base-6-pc.jpg",
+            "image_mobile": "shopify://shop_images/ActiveDry_Base-6-m.jpg",
             "margin_top": 0,
             "margin_bottom": 8,
             "padding_x_desktop": 0,
