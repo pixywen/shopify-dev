@@ -446,8 +446,8 @@
         "image_banner_mT7HMf": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/UGC-backpack-pc.jpg",
-            "image_mobile": "shopify://shop_images/UGC-backpack-m_6b958381-4860-4655-9188-3a43cf0cfa30.jpg",
+            "image_desktop": "shopify://shop_images/1_pc.jpg",
+            "image_mobile": "shopify://shop_images/m-backpack-1.jpg",
             "margin_top": 0,
             "margin_bottom": 20,
             "padding_x_desktop": 0,
