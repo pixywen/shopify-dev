@@ -415,7 +415,7 @@
           "settings": {
             "image_desktop": "shopify://shop_images/ActiveDry_Base-6-pc.jpg",
             "image_mobile": "shopify://shop_images/ActiveDry_Base-6-m.jpg",
-            "margin_top": 0,
+            "margin_top": 12,
             "margin_bottom": 8,
             "padding_x_desktop": 0,
             "padding_x_mobile": 0,
