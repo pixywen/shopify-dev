@@ -34,6 +34,7 @@
         },
         "desktop_slide_ihrdJC": {
           "type": "desktop_slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/quickdry-pc.jpg",
             "alt_text": "",
@@ -43,6 +44,7 @@
         },
         "mobile_slide_ijW4XL": {
           "type": "mobile_slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/quickdry-m.jpg",
             "alt_text": "",
@@ -52,22 +54,20 @@
         },
         "desktop_slide_kDjina": {
           "type": "desktop_slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Men_s_All-Weather_Outdoor_Jacket-pc.jpg",
+            "image": "shopify://shop_images/banner_-setbundle.jpg",
             "alt_text": "",
             "custom_duration": 4,
-            "image_link": ""
+            "image_link": "https://www.alpargali.com/collections/buy-the-summer-set-save-20"
           }
         },
         "mobile_slide_fNf3QQ": {
           "type": "mobile_slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Men_s_All-Weather_Outdoor_Jacket-m.jpg",
+            "image": "shopify://shop_images/banner-m-setbundle.jpg",
             "alt_text": "",
             "custom_duration": 4,
-            "image_link": "https://www.alpargali.com/collections/jackets-vests"
+            "image_link": "https://www.alpargali.com/collections/buy-the-summer-set-save-20"
           }
         }
       },
