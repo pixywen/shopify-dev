@@ -460,8 +460,8 @@
             "block_type": "heading_text",
             "margin_top": 12,
             "margin_bottom": 32,
-            "heading": "",
-            "content": "<p>Alpargali CoreShell features a <strong>3-layer storm defense system</strong> engineered to handle real-world weather — from sudden rain to biting wind — while keeping your body dry, fresh, and comfortable.</p>",
+            "heading": "<p>Water Repellency Inspired by the Lotus Leaf</p>",
+            "content": "<p>OmniShell uses a <strong>PFAS-Free Durable Water Repellent (DWR)</strong> coating that  causes water to bead and roll off the surface.</p><p>Unlike traditional coatings, it contains no persistent chemicals, reducing environmental impact while maintaining reliable performance.</p>",
             "target_tab": "description"
           }
         },
@@ -470,10 +470,10 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/TPU_Membrane-pc.jpg",
-            "heading": "High-Performance  TPU Membrane",
+            "image": "shopify://shop_images/7-1.jpg",
+            "heading": "Eco-Friendly Water Protection",
             "subheading": "",
-            "text": "<p>20% Higher Breathability Than Standard Fleece<strong>10,000g/m²/24h Breathability: </strong>Microporous structure allows sweat vapor to escape, preventing clamminess during active movement.</p>",
+            "text": "<p>Unlike traditional coatings, it contains no persistent chemicals, reducing environmental impact while maintaining reliable performance.</p>",
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 0
@@ -484,7 +484,7 @@
           "settings": {
             "desktop_layout": "image_right",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/Waterproof-pc.jpg",
+            "image": "shopify://shop_images/7-2.jpg",
             "heading": "10K Waterproof Rating",
             "subheading": "",
             "text": "<p>The built-in TPU membrane provides water-resistant protection, helping to resist light rain and splashes. It is not fully waterproof and not intended for heavy or prolonged rainfall.</p>",
@@ -498,10 +498,10 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/wind_resistance-pc.jpg",
-            "heading": "Reinforced Wind Protection",
+            "image": "shopify://shop_images/7-3.jpg",
+            "heading": "Fully Seam-Sealed Construction",
             "subheading": "",
-            "text": "<p>Reinforced <strong>wind resistance</strong> to maintain body temperature during blustery conditions</p>",
+            "text": "<p>Every seam is sealed with waterproof tape to prevent water from entering through stitching holes — a professional hard-shell standard for reliable storm protection.</p><p>OmniShell uses <strong>PFAS-free seam tapes and treatments</strong>, delivering strong waterproof performance without harming the environment.</p>",
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 32
