@@ -313,8 +313,8 @@
         "image_banner_kkiFwQ": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/three-layer-pc.jpg",
-            "image_mobile": "shopify://shop_images/three-layer-m.jpg",
+            "image_desktop": "shopify://shop_images/4.Applicable_Scenarios.jpg",
+            "image_mobile": "shopify://shop_images/4.Applicable_Scenarios-m.jpg",
             "margin_top": 32,
             "margin_bottom": 32,
             "padding_x_desktop": 0,
