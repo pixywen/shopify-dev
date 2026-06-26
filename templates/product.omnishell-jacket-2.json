@@ -433,8 +433,8 @@
         "image_banner_TjCbxi": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/3-layer-pc.jpg",
-            "image_mobile": "shopify://shop_images/3-layer-m.jpg",
+            "image_desktop": "shopify://shop_images/6_Waterproof_Rating.jpg",
+            "image_mobile": "shopify://shop_images/6_Waterproof_Rating-m.jpg",
             "margin_top": 32,
             "margin_bottom": 32,
             "padding_x_desktop": 0,
