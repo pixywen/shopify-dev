@@ -442,6 +442,18 @@
             "target_tab": "description"
           }
         },
+        "image_banner_gVRtQg": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/7.Eco-friendly_waterproof_coating.jpg",
+            "image_mobile": "shopify://shop_images/7.Eco-friendly_waterproof_coating-m.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
         "content_block_zat93J": {
           "type": "content_block",
           "settings": {
@@ -689,6 +701,7 @@
         "collage_RULhdH",
         "collage_PMAQj8",
         "image_banner_TjCbxi",
+        "image_banner_gVRtQg",
         "content_block_zat93J",
         "collage_iqryEz",
         "collage_CjANny",
