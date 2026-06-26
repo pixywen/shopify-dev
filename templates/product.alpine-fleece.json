@@ -330,8 +330,8 @@
         "image_banner_6LW6yR": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/Built_To_Keep_Up-pc.jpg",
-            "image_mobile": "shopify://shop_images/Built_To_Keep_Up-m.jpg",
+            "image_desktop": "shopify://shop_images/Alpine_Fleece10-pc.jpg",
+            "image_mobile": "shopify://shop_images/Alpine_Fleece10-m.jpg",
             "margin_top": 32,
             "margin_bottom": 32,
             "padding_x_desktop": 0,
@@ -339,39 +339,11 @@
             "target_tab": "description"
           }
         },
-        "collage_byQmgc": {
-          "type": "collage",
-          "settings": {
-            "desktop_layout": "image_right",
-            "mobile_layout": "image_top",
-            "image": "shopify://shop_images/5-VS.jpg",
-            "heading": "Less Absorption. More Performance.",
-            "subheading": "",
-            "text": "<p>Engineered for movement, not moisture—quick-dry, lightweight, and built for all-day performance.</p>",
-            "target_tab": "description",
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        },
-        "collage_7p7TeQ": {
-          "type": "collage",
-          "settings": {
-            "desktop_layout": "image_left",
-            "mobile_layout": "image_top",
-            "image": "shopify://shop_images/environments.jpg",
-            "heading": "One Tee. All Conditions.",
-            "subheading": "",
-            "text": "<p>From travel to daily wear—built for every change in environment.</p>",
-            "target_tab": "description",
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        },
         "image_banner_e8jY9q": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/Hour.jpg",
-            "image_mobile": "shopify://shop_images/Hour-m.jpg",
+            "image_desktop": "shopify://shop_images/Alpine_Fleece11-pc.jpg",
+            "image_mobile": "shopify://shop_images/Alpine_Fleece11-m.jpg",
             "margin_top": 32,
             "margin_bottom": 32,
             "padding_x_desktop": 0,
@@ -432,8 +404,6 @@
         "collage_edVYFW",
         "collage_emVQMa",
         "image_banner_6LW6yR",
-        "collage_byQmgc",
-        "collage_7p7TeQ",
         "image_banner_e8jY9q",
         "image_banner_y7URcm",
         "collage_VWdHAp",
