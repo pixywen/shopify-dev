@@ -289,8 +289,8 @@
         "image_banner_4KMT9M": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/Introducing_Alpargali_CoreShell-2.jpg",
-            "image_mobile": "shopify://shop_images/Introducing_Alpargali_CoreShell-2-m.jpg",
+            "image_desktop": "shopify://shop_images/2.compare-pc_77bcf825-c4c6-4160-a44b-6d3e9d7afd09.jpg",
+            "image_mobile": "shopify://shop_images/2.compare-m_ed217825-bc13-4514-a8e5-33da44db54dc.jpg",
             "margin_top": 32,
             "margin_bottom": 32,
             "padding_x_desktop": 0,
@@ -301,7 +301,7 @@
         "image_banner_DDQQKc": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/function_icon-pc.png",
+            "image_desktop": "shopify://shop_images/3.icon-pc_f1a03169-9f78-473e-bcab-0db7d87188e6.png",
             "image_mobile": "shopify://shop_images/function_icon-m.png",
             "margin_top": 0,
             "margin_bottom": 32,
