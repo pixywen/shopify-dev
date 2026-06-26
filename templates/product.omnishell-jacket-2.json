@@ -421,10 +421,10 @@
           "settings": {
             "desktop_layout": "image_left",
             "mobile_layout": "image_top",
-            "image": "shopify://shop_images/Anti-static.jpg",
-            "heading": "Anti-Static Comfort",
-            "subheading": "",
-            "text": "<p><strong>Anti-static treatment for frictionless winter layering</strong></p>",
+            "image": "shopify://shop_images/5-3Inner_Layer.jpg",
+            "heading": "Inner Layer",
+            "subheading": "20D Reinforced Nylon Lining",
+            "text": "<ul><li>Protects the membrane from internal abrasion</li><li>Stays durable through backpack-strap and harness friction</li><li>Extends the jacket’s lifespan</li></ul><p>Endurance is engineered from the inside out.</p>",
             "target_tab": "description",
             "margin_top": 0,
             "margin_bottom": 32
