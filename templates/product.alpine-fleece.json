@@ -185,7 +185,7 @@
           "settings": {
             "heading": "Care",
             "icon": "none",
-            "content": "<p>Move often. Care simply.</p><ul><li>Wash gently</li><li>Do not bleach</li><li>Iron on low heat</li><li>Line dry in the shade</li><li>Do not dry clean</li><li>Wash separately, inside out</li><li>Do not soak</li></ul><p>To preserve texture and performance, air drying is recommended.</p>",
+            "content": "<ul><li>Do Not Bleach.</li><li>Wash Gently.</li><li>Avoid Direct Contact Between The Iron And Fabric.</li><li>Line Dry In The Shade.</li><li>Do Not Dry Clean.</li></ul>",
             "page": "",
             "image": "shopify://shop_images/wash_guide-quickdry.png",
             "image_alt": "",
