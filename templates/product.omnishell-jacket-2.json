@@ -333,6 +333,45 @@
             "target_tab": "description"
           }
         },
+        "carousel_AGxHJ4": {
+          "type": "carousel",
+          "settings": {
+            "title": "",
+            "image_1": "shopify://shop_images/4-1_Rainy_travel_days.jpg",
+            "caption_1": "Rainy travel days",
+            "hover_text_1": "",
+            "image_2": "shopify://shop_images/4-2_Hiking_trekking.jpg",
+            "caption_2": "Hiking & trekking",
+            "hover_text_2": "",
+            "image_3": "shopify://shop_images/4-3_Outdoor_adventuring.jpg",
+            "caption_3": "Outdoor adventuring",
+            "hover_text_3": "",
+            "image_4": "shopify://shop_images/4-4_Mountaineering_climbing.jpg",
+            "caption_4": "Mountaineering & climbing",
+            "hover_text_4": "",
+            "image_5": "shopify://shop_images/4-5_Alpine_skiing.jpg",
+            "caption_5": "Alpine skiing",
+            "hover_text_5": "",
+            "caption_6": "",
+            "hover_text_6": "",
+            "caption_7": "",
+            "hover_text_7": "",
+            "caption_8": "",
+            "hover_text_8": "",
+            "caption_9": "",
+            "hover_text_9": "",
+            "caption_10": "",
+            "hover_text_10": "",
+            "caption_11": "",
+            "hover_text_11": "",
+            "caption_12": "",
+            "hover_text_12": "",
+            "autoplay_speed": 3,
+            "target_tab": "description",
+            "margin_top": 32,
+            "margin_bottom": 32
+          }
+        },
         "carousel_JgqD6V": {
           "type": "carousel",
           "disabled": true,
@@ -442,7 +481,7 @@
             "target_tab": "description"
           }
         },
-        "carousel_AGxHJ4": {
+        "carousel_rA3Mwh": {
           "type": "carousel",
           "settings": {
             "title": "",
@@ -723,13 +762,14 @@
         "image_banner_DDQQKc",
         "image_banner_kkiFwQ",
         "content_block_7M4XLL",
+        "carousel_AGxHJ4",
         "carousel_JgqD6V",
         "image_banner_xnEjDM",
         "collage_y7J6gW",
         "collage_RULhdH",
         "collage_PMAQj8",
         "image_banner_TjCbxi",
-        "carousel_AGxHJ4",
+        "carousel_rA3Mwh",
         "image_banner_gVRtQg",
         "content_block_zat93J",
         "collage_iqryEz",
