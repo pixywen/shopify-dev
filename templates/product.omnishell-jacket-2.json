@@ -372,6 +372,29 @@
             "margin_bottom": 32
           }
         },
+        "image_banner_e8nXj6": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/5.3-Layer_System.jpg",
+            "image_mobile": "shopify://shop_images/5.3-Layer_System-m.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
+            "target_tab": "description"
+          }
+        },
+        "content_block_YJiizL": {
+          "type": "content_block",
+          "settings": {
+            "block_type": "heading_text",
+            "margin_top": 12,
+            "margin_bottom": 32,
+            "heading": "",
+            "content": "<p>OmniShell is built from a <strong>professional 3-layer laminate</strong>, where each layer cooperates together to balance protection, durability, and comfort.</p>",
+            "target_tab": "description"
+          }
+        },
         "carousel_JgqD6V": {
           "type": "carousel",
           "disabled": true,
@@ -763,6 +786,8 @@
         "image_banner_kkiFwQ",
         "content_block_7M4XLL",
         "carousel_AGxHJ4",
+        "image_banner_e8nXj6",
+        "content_block_YJiizL",
         "carousel_JgqD6V",
         "image_banner_xnEjDM",
         "collage_y7J6gW",
