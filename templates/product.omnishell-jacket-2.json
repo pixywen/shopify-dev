@@ -510,8 +510,8 @@
         "image_banner_xxwTbm": {
           "type": "image_banner",
           "settings": {
-            "image_desktop": "shopify://shop_images/occasion-pc.jpg",
-            "image_mobile": "shopify://shop_images/occasion-m.jpg",
+            "image_desktop": "shopify://shop_images/8_Functional_Storage_Design.jpg",
+            "image_mobile": "shopify://shop_images/8_Functional_Storage_Design_2.jpg",
             "margin_top": 32,
             "margin_bottom": 32,
             "padding_x_desktop": 0,
