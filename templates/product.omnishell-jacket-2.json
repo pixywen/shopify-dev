@@ -286,10 +286,10 @@
           "type": "content_block",
           "settings": {
             "block_type": "heading_text",
-            "margin_top": 60,
-            "margin_bottom": 60,
+            "margin_top": 20,
+            "margin_bottom": 28,
             "heading": "<p>Alpargali OmniShell：From Ski Slopes to Summit Scales</p>",
-            "content": "<p>Weather does what it wants — from sudden rain in the city to snowstorms in the mountains.OmniShell is designed to handle it all.</p><p>Built with <strong>3-Layer Laminated Fabric featuring a Dermizax™ Membrane</strong>, OmniShell delivers <strong>20K waterproof protection and 10K breathability</strong>, shielding you from the elements while allowing heat and moisture to escape when pushing yourself to the limit.</p><p><strong>Fully seam-sealed construction</strong> prevents wetness from entering through stitching gaps, while a <strong>PFAs-free DWR coating </strong>provides effective water repellency while reducing environmental impact.</p><p>A <strong>7-pocket storage system</strong> keeps essential gear secure and accessible, no matter the day ahead.</p><p>From daily commutes to demanding outdoor pursuits, OmniShell is poised for unpredictable conditions.</p>",
+            "content": "<p>Built with <strong>3-Layer Laminated Fabric</strong> and a <strong>Dermizax™ Membrane</strong>, OmniShell provides <strong>20K waterproofing</strong>, <strong>10K breathability</strong>, <strong>fully seam-sealed protection</strong>, a <strong>PFAs-free DWR finish</strong>, and <strong>7 functional pockets</strong>—keeping you dry, comfortable, and ready for any adventure.<br/></p>",
             "target_tab": "description"
           }
         },
