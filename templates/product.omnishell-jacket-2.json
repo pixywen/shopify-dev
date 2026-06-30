@@ -275,8 +275,8 @@
           "settings": {
             "image_desktop": "shopify://shop_images/1.20k-pc.jpg",
             "image_mobile": "shopify://shop_images/1.20k-m.jpg",
-            "margin_top": 12,
-            "margin_bottom": 32,
+            "margin_top": 8,
+            "margin_bottom": 16,
             "padding_x_desktop": 0,
             "padding_x_mobile": 0,
             "target_tab": "description"
@@ -689,7 +689,7 @@
           "settings": {
             "image_desktop": "shopify://shop_images/Orange_Version_Differences-pc.jpg",
             "image_mobile": "shopify://shop_images/Orange_Version_Differences-m.jpg",
-            "margin_top": 32,
+            "margin_top": 20,
             "margin_bottom": 32,
             "padding_x_desktop": 0,
             "padding_x_mobile": 0,
