@@ -275,7 +275,7 @@
           "settings": {
             "image_desktop": "shopify://shop_images/1.20k-pc.jpg",
             "image_mobile": "shopify://shop_images/1.20k-m.jpg",
-            "margin_top": 32,
+            "margin_top": 12,
             "margin_bottom": 32,
             "padding_x_desktop": 0,
             "padding_x_mobile": 0,
@@ -699,17 +699,16 @@
           "type": "video",
           "settings": {
             "title": "",
-            "video_desktop": "shopify://files/videos/08-14 Alpargali 冲锋衣 - 完整版1080p.mp4",
+            "video_desktop": "shopify://files/videos/防水.mp4",
             "video_url_desktop": "",
-            "cover_desktop": "shopify://shop_images/coreshell-banner.jpg",
             "video_url_mobile": "",
             "autoplay": true,
             "loop": true,
             "controls": true,
             "muted": true,
             "target_tab": "video",
-            "margin_top": 32,
-            "margin_bottom": 32,
+            "margin_top": 12,
+            "margin_bottom": 24,
             "padding_x": 0
           }
         },
@@ -717,26 +716,8 @@
           "type": "video",
           "settings": {
             "title": "",
-            "video_desktop": "shopify://files/videos/coreshell-1.mp4",
+            "video_desktop": "shopify://files/videos/口袋＋细节设计.mp4",
             "video_url_desktop": "",
-            "video_url_mobile": "",
-            "autoplay": true,
-            "loop": true,
-            "controls": true,
-            "muted": true,
-            "target_tab": "video",
-            "margin_top": 32,
-            "margin_bottom": 32,
-            "padding_x": 0
-          }
-        },
-        "video_VL79Dy": {
-          "type": "video",
-          "settings": {
-            "title": "",
-            "video_desktop": "shopify://files/videos/coreshell-2.mp4",
-            "video_url_desktop": "",
-            "cover_desktop": "shopify://shop_images/Introducing_Alpargali_CoreShell-2.jpg",
             "video_url_mobile": "",
             "autoplay": true,
             "loop": true,
@@ -809,7 +790,6 @@
         "image_banner_DgkbD3",
         "video_GcYqEt",
         "video_a7qDtK",
-        "video_VL79Dy",
         "image_banner_XfyKGt",
         "faq_yqgwMK",
         "judge_me_reviews_review_widget_JctMNU"
