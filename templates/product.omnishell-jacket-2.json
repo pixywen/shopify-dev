@@ -674,6 +674,7 @@
         },
         "content_block_RiEbHT": {
           "type": "content_block",
+          "disabled": true,
           "settings": {
             "block_type": "heading_text",
             "margin_top": 80,
