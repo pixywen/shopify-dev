@@ -266,7 +266,7 @@
           "type": "image_banner",
           "settings": {
             "image_desktop": "shopify://shop_images/Titanium_Travel_Bottle-PC1.jpg",
-            "image_mobile": "shopify://shop_images/Titanium_Travel_Bottle-PC1.jpg",
+            "image_mobile": "shopify://shop_images/Titanium_Travel_Bottle-m1.jpg",
             "margin_top": 32,
             "margin_bottom": 32,
             "padding_x_desktop": 0,
