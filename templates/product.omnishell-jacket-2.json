@@ -672,30 +672,26 @@
             "margin_bottom": 60
           }
         },
-        "collage_cfpQpc": {
-          "type": "collage",
-          "disabled": true,
-          "settings": {
-            "desktop_layout": "image_left",
-            "mobile_layout": "image_top",
-            "image": "shopify://shop_images/aao-detail-b-collage-03.jpg",
-            "heading": "Built for Performance",
-            "subheading": "",
-            "text": "<p>Expert craftsma nship is at the heart of Alpargali, with over 92 fabric panels and more 40,000 stitches applies. The flexibility and comfort born of this tailoring negates the restrictive feel of traditional garments. Alpargali adapts to your body’s movements, optimizing your comfort and performance.</p>",
-            "target_tab": "description",
-            "margin_top": 60,
-            "margin_bottom": 32
-          }
-        },
         "content_block_RiEbHT": {
           "type": "content_block",
-          "disabled": true,
           "settings": {
             "block_type": "heading_text",
             "margin_top": 80,
             "margin_bottom": 24,
-            "heading": "<p>The Difference is Clear</p>",
+            "heading": "<p>Orange Version Differences</p>",
             "content": "",
+            "target_tab": "description"
+          }
+        },
+        "image_banner_DgkbD3": {
+          "type": "image_banner",
+          "settings": {
+            "image_desktop": "shopify://shop_images/Orange_Version_Differences-pc.jpg",
+            "image_mobile": "shopify://shop_images/Orange_Version_Differences-m.jpg",
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "padding_x_desktop": 0,
+            "padding_x_mobile": 0,
             "target_tab": "description"
           }
         },
@@ -809,8 +805,8 @@
         "collage_F3RWhV",
         "image_banner_xxwTbm",
         "carousel_fzniPB",
-        "collage_cfpQpc",
         "content_block_RiEbHT",
+        "image_banner_DgkbD3",
         "video_GcYqEt",
         "video_a7qDtK",
         "video_VL79Dy",
