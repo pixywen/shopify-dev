@@ -60,6 +60,7 @@
         },
         "announcement_W8crFB": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Get the Quick-Dry Set & Save $20",
             "link": "shopify://collections/buy-the-summer-set-save-20"
@@ -67,10 +68,9 @@
         },
         "announcement_peTVYX": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "NEW ARRIVAL | TRACE SERIES Quick-Dry Tee",
-            "link": "shopify://products/alpargali-aerodry-tee"
+            "text": "NEW ARRIVAL | Quick-Dry Series",
+            "link": "shopify://collections/quick-dry"
           }
         },
         "announcement_RNpTTn": {
