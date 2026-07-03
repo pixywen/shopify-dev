@@ -78,8 +78,14 @@
               </thead>
 
               <tbody>
-                {%- for item in cart.items -%}
-                  <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
+                {%- for item in cart.items -%} 
+{% liquid
+  assign collections = ''
+  for collection in item.product.collections
+      assign collections = collections | append: collection.id | append: ','
+  endfor
+%}
+                  <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}" data-foxkit-product-id={{ item.product.id }} data-foxkit-collections="{{ collections }}">
                     <td class="cart-item__media">
                       {% if item.image %}
                         {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
