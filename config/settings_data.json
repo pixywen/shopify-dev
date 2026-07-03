@@ -182,14 +182,21 @@
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": false,
         "settings": {
+          "greeting_message": "",
           "button_color": "#000000",
           "secondary_color": "#ffffff",
           "ternary_color": "#6a6a6a",
           "button_icon": "chat_bubble",
           "button_text": "chat_with_us",
           "button_horizontal_position": "bottom_right",
-          "button_vertical_position": "highest",
-          "greeting_message": ""
+          "button_vertical_position": "highest"
+        }
+      },
+      "6868439170666289573": {
+        "type": "shopify://apps/foxkit-upsell-bundles/blocks/foxkit-theme-helper/13f41957-6b79-47c1-99a2-e52431f06fff",
+        "disabled": false,
+        "settings": {
+          "enable_ajax_atc": true
         }
       }
     },
