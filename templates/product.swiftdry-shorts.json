@@ -185,7 +185,7 @@
           "settings": {
             "heading": "Care",
             "icon": "none",
-            "content": "<ul><li>Wash gently</li><li>Do not bleach</li><li>Iron on low heat</li><li>Line dry in the shade</li><li>Do not dry clean</li><li>Wash separately, inside out</li><li>Do not soak</li></ul>",
+            "content": "<ul><li>Do not bleach.</li><li>Wash gently.</li><li>Iron on low heat.</li><li>Tumble dry low.</li><li>Do not dry clean.</li><li>Do not wring.</li></ul>",
             "page": "",
             "image_alt": "",
             "image_width": 50
