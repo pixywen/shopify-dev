@@ -167,14 +167,14 @@
           "type": "desktop_slide",
           "settings": {
             "image": "shopify://shop_images/3-Layer_Performance_System-PC.jpg",
-            "link": "shopify://collections/fall-ready-gear"
+            "link": "shopify://collections/sales"
           }
         },
         "mobile_slide_wd9dX8": {
           "type": "mobile_slide",
           "settings": {
             "image": "shopify://shop_images/3-Layer_Performance_System-m.jpg",
-            "link": "shopify://collections/fall-ready-gear"
+            "link": "shopify://collections/sales"
           }
         },
         "desktop_slide_iEzfCV": {
